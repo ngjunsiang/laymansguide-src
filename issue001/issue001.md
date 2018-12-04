@@ -16,7 +16,7 @@ A Readmill highlight on the Readmill webpage (with a permalink)
 
 These highlights (optionally) appeared in-location in the mobile apps. You could choose to have them off, for focused reading, or to have them on, for the serendipitous experience of meeting someone else who has something to say about what you are reading.
 
-![Screenshot of a Readmill highlight in the app](https://github.com/ngjunsiang/laymansguide/blob/master/issue002_02.png?raw=true)
+![Screenshot of a Readmill highlight in the app](https://github.com/ngjunsiang/laymansguide/blob/master/issue001/issue001_02.png?raw=true)
 A Readmill highlight in the Readmill app
 
 The social reading experience seemed gimmicky at first, but the turning point came for me when Clive Thompson, who had just published Smarter Than You Think, started replying to notes and comments in his book. Being able to speak with the books author on specific highlights was world-changing. You could ask questions about points in the book that weren’t clear to you, and have the author clarify it right there. You could mention something it reminds you of, and have the author point you to an article they read or wrote about the same idea. And these were available to other users of the service. Better yet, their correspondence with the author was available to you too! I regret not taking screenshots of some of the exchanges I had; I never expected I would need them at some point.
