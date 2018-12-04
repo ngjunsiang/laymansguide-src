@@ -1,4 +1,4 @@
-YOu would think that the first challenge in writing an app is learning the programming language. In my case, there was an even more fundamental challenge to overcome first: how to get my data.
+You would think that the first challenge in writing an app is learning the programming language. In my case, there was an even more fundamental challenge to overcome first: how to get my data.
 
 We don’t think about who actually owns the data you upload onto the internet until it is too late. You access your photos by logging in to Instagram, your tweets by logging in to Twitter, and everything else by logging in to something else. Until one of more of these services break down or you get tired of them and you want out, you would never even think about the fact that you often can’t get all this data out except by manually opening each and everyone one of them and saving them to your disk. But I will need some way to get my data out from Hypothes.is, or my app is not going to happen …
 
