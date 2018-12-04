@@ -36,6 +36,6 @@ Amid other competing standards, JSON won out and became a de facto standard for 
 ![Data from the Hypothes.is API, JSON](https://github.com/ngjunsiang/laymansguide/blob/master/issue005/issue005_02.png?raw=true)
 The same annotation, in JSON format
 
-Summary: JSON is the de facto data format for sending data over the web. Almost everything you use that was updated significantly in the last 5 years is probably using JSON-formatted data in some way.
+Issue summary: JSON is the de facto data format for sending data over the web. Almost everything you use that was updated significantly in the last 5 years is probably using JSON-formatted data in some way.
 
 Next issue: How do you use an API (to send/receive JSON)?

@@ -42,9 +42,11 @@ Okay, all kidding aside, obviously HTTP is not so simple. There’s a client who
 
 <hr/>
 
-Issue summary: HTTP is a set of rules for sending and receiving documents that link to other documents. According to the rules, if you want a document, you (the client) must send a (HTTP) request to a server, which will return a response.
+Issue summary: HTTP is a set of rules for sending and receiving webpages that link to other webpages. According to the rules, if you want a webpages, you (the client) must send a (HTTP) request to a server, which will return a response.
 
-Next few issues: How does a server let the client know if there’s something wrong with their HTTP request? What does an HTTP request look like? How do I make an HTTP request? What’s the difference between HTTP and HTTPS?
+## What I’ll be covering next
+
+**Next few issues:** How does a server let the client know if there’s something wrong with their HTTP request? What does an HTTP request look like? How do I make an HTTP request? What’s the difference between HTTP and HTTPS?
 
 <hr/>
 

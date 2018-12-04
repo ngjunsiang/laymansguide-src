@@ -8,16 +8,20 @@ Nope, I’m not going to tell you what REST (REpresentational State Transfer) is
 
 1. It is simpler and easier to use than what came before it (SOAP).
 2. It uses existing features of the internet as we know it, such as HTTP/HTTPS (okay, okay … I will get to this at some point), rather than trying to come up with yet more systems to build.
-3. Because of (2), it uses familiar methods from HTTP to send/receive data, such as GET, POST, DELETE. These were originally proposed by Tim Berners-Lee in 1996 (with PUT and DELETE in 1999) in the HTTP specification (okay, another issue on this sometime in the future …)
+3. Because of (2), it uses familiar methods from HTTP to send/receive data, such as GET, POST, DELETE. These were originally proposed by Tim Berners-Lee in 1996 (with PUT and DELETE in 1999) in the HTTP specification (what’s that? Another issue on this sometime in the future …)
 4. It uses error status codes (such as the all-too-familiar 404 error) to tell you if you succeeded or failed, and why. So you aren’t left guessing. Unlike some people you know.
 5. These days, everyone uses it. Just like they do with JSON.
 
 To receive data, you need to craft (and send) a GET request. To send data, you need to craft (and send) a PUT/POST/PATCH request. To remove data, you need to craft (and send) a DELETE request. Don’t know what these are? Don’t sweat it. We’ll get to them … sometime.
 
-Summary: There are different kinds of HTTP requests-GET, PUT, DELETE, for example. To use an API, you need something that can craft an HTTP request.
+Issue summary: There are different kinds of HTTP requests-GET, PUT, DELETE, for example. To use an API, you need something that can craft an HTTP request.
 
-Next few issues: What is HTTP? What does an HTTP request look like? What’s the difference between HTTP and HTTPS? How do I make an HTTP request? And what are error codes?
+## What I’ll be covering next
 
-Sometime in the future: What is a specification?
+**Next few issues:** What is HTTP? What does an HTTP request look like? What’s the difference between HTTP and HTTPS? How do I make an HTTP request? And what are error codes?
+
+**Sometime in the future:** What is a specification?
+
+<hr/>
 
 Am I going too fast? Any suggestions for clarity or ease of reading? What do you like/dislike? I would love to hear your comments.
