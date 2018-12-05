@@ -11,7 +11,7 @@ The rest of the first line in the request header is my request URL. The full URL
 
 This means that when I enter the full URL in the address bar, my client takes the full URL, notes that I want to use the HTTPS method (future issue!) to request the data from hypothes.is, and then sends the request (which is actually the `api/search?user=kureshii` bit). The full URL is not just one long string, but multiple bits containing information for the client and server.
 
-The third line, `Accept */*`, is the client’s way of saying “I understand anything you tell me, just go ahead”.
+The third line, `Accept */*`, is the client’s way of saying “send me anything”. If you are using image-browsing software, for example, it might send an HTTP header requesting only images.
 
 The last line is the interesting one.
 
@@ -19,9 +19,9 @@ The last line is the interesting one.
 
 As humans, we can’t speak computerese. If I asked the server for information, it would not understand what I said. I need software to help me translate my request in a way the server can understand. This software acts as an *agent* for me, the *user*. So any software that helps to form an HTTP request, send it to a server, and receive the response, is known as a **User Agent**. The user agent needs to identify itself in the HTTP header (because the HTTP, a set of rules for transferring webpages, says so).
 
-## What is my User-Agent?
+## What is my User Agent?
 
-You can find out your user-agent on websites like [whatismybrowser.com](https://www.whatismybrowser.com/detect/what-is-my-user-agent). Go ahead, it’s safe.
+You can find out what information your user agent is sending in its HTTP header on websites like [whatismybrowser.com](https://www.whatismybrowser.com/detect/what-is-my-user-agent). Go ahead, it’s safe.
 
 It is 2018, and there are all kinds of user agents out there. Some are highly advanced—think about your laptop web browser. Some are really simple and barebones and can’t handle very much—think of the web browser on your Kindle Paperwhite. A server can actually serve different user agents differently, but first it must be able to identify them. The user agent string, the fourth line in the request header, is how it identifies the user agent and delivers a response, hopefully an appropriate one with `200` in the header.
 
@@ -47,4 +47,4 @@ Issue summary: A user agent communicates with the server on your behalf. It take
 - a cache? [Issue 8]
 - XSS? [Issue 8]
 - a CDN? [Issue 8]
-- Unicode? And what does it have to do with emoji? [Issue 8] 
+- Unicode? And what does it have to do with emoji? [Issue 8]
