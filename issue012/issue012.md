@@ -11,7 +11,7 @@ We are going to get a little technical here, because I want to give you a view o
 Nah, I won’t do that. It would be merely decorative and not at all illustrative. Instead let’s focus your attention on one particular packet:
 
 <span align="center">
-![Highlighted screenshot of an HTTP packet in Wireshark](https://github.com/ngjunsiang/laymansguide/blob/master/issue010/issue012_01.png?raw=true)
+![Highlighted screenshot of an HTTP packet in Wireshark](https://github.com/ngjunsiang/laymansguide/blob/master/issue012/issue012_01.png?raw=true)
 An HTTP request captured in Wireshark. Notice the line `Authorization: Bearer [CENSORED]`. That’s my developer API key!
 </span>
 
@@ -36,17 +36,21 @@ That means we need a slightly different set of rules, that enable us to coordina
 HTTPS stands for **HTTP Secure**. Why is it secure? I think a screenshot will make it clear. This is a screenshot from Wireshark again, but this time capturing an HTTPS request packet:
 
 <span align="center">
-![Highlighted screenshot of an HTTPS packet in Wireshark](https://github.com/ngjunsiang/laymansguide/blob/master/issue010/issue012_02.png?raw=true)
+![Highlighted screenshot of an HTTPS packet in Wireshark](https://github.com/ngjunsiang/laymansguide/blob/master/issue012/issue012_02.png?raw=true)
 An HTTPS request captured in Wireshark. Notice that the packet header data is now encrypted, and an app would need to know the prearranged encryption code to be able to decode the data.
 </span>
 
 The `Authorization: Bearer` line is no longer visible; in fact, all the information we saw in the HTTP packet is no longer visible. It has all been encrypted! Any third party intercepting this packet will not be able to decode or modify it without knowing the encryption code that was prearranged between my laptop and the Hypothes.is server.
+
+<hr/>
 
 ## HTTP considered harmful
 
 In a more innocent time, it was perfectly all right for passwords to just be sent unencrypted, and for anything and everything to use HTTP. Online shopping wasn’t even a thing then, and there was no financial value to anything that happened on the internet. Hard to believe, I know.
 
 It is now the year 2018. That is no longer the case. We transmit all kinds of valuable data over the internet: financial transactions and credit card details, home addresses and email addresses and passwords, even pictures. If you are using HTTP, any data you send or receive is being broadcast unencrypted. If you are just browsing and not transmitting critical data, that is fine. But you are really much, much safer using HTTPS.
+
+Issue summary: HTTPS encrypts the request or response header and body, ensuring that anyone trying to intercept it will not be able to decode the data without knowing the encryption code. It is much safer to use HTTPS in general to protect your personal data from being snooped.
 
 ## What I’ll be covering next
 
@@ -60,4 +64,4 @@ It is now the year 2018. That is no longer the case. We transmit all kinds of va
 - XSS? [Issue 8]
 - a CDN? [Issue 8]
 - Unicode? And what does it have to do with emoji? [Issue 8]
-- What are those ‘\r\n’s in the HTTP request packet [Issue 12]? 
+- What are those ‘\r\n’s in the HTTP request packet [Issue 12]?
