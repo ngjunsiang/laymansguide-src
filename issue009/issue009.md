@@ -23,15 +23,15 @@ As humans, we can’t speak computerese. If I asked the server for information, 
 
 You can find out what information your user agent is sending in its HTTP header on websites like [whatismybrowser.com](https://www.whatismybrowser.com/detect/what-is-my-user-agent). Go ahead, it’s safe.
 
-It is 2018, and there are all kinds of user agents out there. Some are highly advanced—think about your laptop web browser. Some are really simple and barebones and can’t handle very much—think of the web browser on your Kindle Paperwhite. A server can actually serve different user agents differently, but first it must be able to identify them. The user agent string, the fourth line in the request header, is how it identifies the user agent and delivers a response, hopefully an appropriate one with `200` in the header.
+It is the year 2018, and there are all kinds of user agents out there. Some are highly advanced—think about your laptop web browser. Some are really simple and barebones and can’t handle very much—think of the web browser on your Kindle Paperwhite. A server can actually serve different user agents differently, but first it must be able to identify them. The user agent string, the fourth line in the request header, is how it identifies the user agent and delivers a response, hopefully an appropriate one with `200` in the header.
 
 Ever wondered how some websites or services seem to know what kind of web browser you are using, perhaps even what operating system you are using? If you have ever needed to install drivers or software, some websites figure out whether to give you the Linux version or the Windows version or the Mac version, and they do so through your user agent string.
 
-Yep, that means that on less scrupulous websites, the server can actually know something about you from your user agent declaration. It can, for example, know that you are using an iPhone and hence serve you more relevant ads. In the past, when the old version of Internet Explorer failed to render some pages correctly, some websites took to blocking it from visiting their site entirely, or serving a different, simpler site. They did so by detecting the user agent.
+Yep, that means that on less scrupulous websites, the server can actually know something about you from your user agent declaration. It can, for example, know that you are using an iPhone and hence serve you a different webpage format—or different ads. In the past, when the old version of Internet Explorer failed to render some pages correctly, some websites took to blocking it from visiting their site entirely, or serving a different, simpler site. They did so by detecting the user agent.
 
 Why does my user agent in the request look so weird? That’s because I’m using an API tester, [apitester.com](https://apitester.com/), to check if I am using Hypothes.is’s API correctly (by looking at the response status code, introduced in Issue 8). I need to do that because I am accessing some information that requires the API to know who I am, and the only way for the Hypothes.is server to know that is for me to provide the information in the header. I can’t do that easily with a regular web browser, so I need specialised software tools.
 
-And that will bring us to authentication and HTTPS.
+And that will bring us to authentication and HTTPS in the next few issues.
 
 <hr/>
 
