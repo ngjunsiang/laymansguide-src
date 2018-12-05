@@ -52,6 +52,11 @@ Status codes are always three digits. The first digit tells you the category of 
 
 **5XX status codes** are also bad news, but this time round the server is blaming itself. `500` means “something is wrong with me; I can’t fulfill your request”. `501` means “I don’t know how to do that yet”. `502` means “I was trying to help you but when I asked Server C it gave me nonsense so now I can’t help”. `503` usually means “all our customer service officers are currently busy, please try again later.” `504` is the worst: you’ve waited until the request timed out and didn’t get a response.
 
+<span align="center">
+![An HTTP response header from Hypothes.is](https://github.com/ngjunsiang/laymansguide/blob/master/issue008/issue008_01.png?raw=true)
+A 404 response header from Hypothes.is 
+</span>
+
 <hr/>
 
 Issue summary: A request or a response consists of a header and a body. The response header contains information about the response. The status code in the response header determines if the request was successful or unsuccessful.
