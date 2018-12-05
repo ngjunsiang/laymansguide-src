@@ -1,4 +1,4 @@
-An HTTP request header looks like this:
+Last issue, I talked about HTTP response headers, and how they inform the client about the request status using a status code. Let’s talk about the HTTP request today. An HTTP request header looks like this:
 
 <span align="center">
 ![An HTTP request header](https://github.com/ngjunsiang/laymansguide/blob/master/issue009/issue009_01.png?raw=true)
@@ -42,9 +42,12 @@ Issue summary: A user agent communicates with the server on your behalf. It take
 **Next few issues:** What’s the difference between HTTP and HTTPS? How do websites actually know if you are really you and not someone pretending to be you?
 
 **Sometime in the future:** What is:
+
 - a specification? [Issue 6,8]
 - a cookie? [Issue 8]
 - a cache? [Issue 8]
 - XSS? [Issue 8]
 - a CDN? [Issue 8]
 - Unicode? And what does it have to do with emoji? [Issue 8]
+
+We spent three bite-sized issues just talking about HTTP requests, responses, and their headers. Was it too much info? Too dry? Hit ‘Reply’ and let me know what you liked and what you didn’t :)
