@@ -15,7 +15,7 @@ What data is included in this annotation?
 - Permissions: is this annotation visible to public or only to certain groups?
 
 Besides the above, there is also some information my app may need to make things easier:
-- A unique id for the annotation so that I can refer to it again. That's the jumbled text you see in the URL, “4mN0juVuEeipmD-559uHoQ”
+- A unique id for the annotation so that I can refer to it again. That's the jumbled text you see in the URL, `4mN0juVuEeipmD-559uHoQ`
 - Whether there were any replies to the annotation (the picture above shows an annotation and a reply to it)
 - Document title
 - Tags, usually used for organising lots of annotations
@@ -26,7 +26,9 @@ It could do it with a bulleted list like I used above. But what if there were mu
 
 XML, which you saw in the previous issue, is one way to do it. JSON ([https://www.json.org/](https://www.json.org/)) is another way. The JSON way minimises the number of extra text you need to structure the data nicely. This is a big deal when you are sending data over the internet, for billions of users.
 
-XML, with its XML tags, often balloons in data size (see [this example](https://www.xml.com/pub/a/2004/12/15/deviant.html) where an Excel spreadsheet was exported to both XML [840MB!] and CSV [34MB]). Each bit of data that is sent has a cost with it; no doubt if you have a mobile data plan you will know what I mean. In software engineering, we have a term to describe this, borrowed from business: we say that it has **immense overhead**.
+XML, with its XML tags, often balloons in data size (see [this example](https://www.xml.com/pub/a/2004/12/15/deviant.html) where an Excel spreadsheet was exported to different file formats. The XML file was 840MB, while the same data in comma-separated value (CSV) format was only 34MB.
+
+Each bit of data that is sent has a cost with it; no doubt if you have a mobile data plan you will know what I mean. In software engineering, we have a term to describe this, borrowed from business: we say that it has **immense overhead**.
 
 What? You mean processing XML requires money? Of course! Think about it:
 - Visually, it takes longer to read and skim through XML, which takes up precious time for software engineers
