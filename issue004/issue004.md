@@ -1,6 +1,6 @@
-Short version: An Application Programming Interface (API) is a data browser for apps, a way for apps to talk to each other.
+**Short version:** An Application Programming Interface (API) is a data browser for apps, a way for apps to talk to each other.
 
-Long version: Imagine you're an app. You would rather have the data raw, without all the formatting that humans consider vital to their understanding.
+**Long version:** Imagine you're an app. You would rather have the data raw, without all the formatting that humans consider vital to their understanding.
 
 If a human wanted to access my Hypothes.is profile page, they would access [https://hypothes.is/users/kureshii](https://hypothes.is/users/kureshii) and see a nicely formatted profile page.
 
