@@ -14,7 +14,7 @@ Okay, this tells us that HTTP is a set of rules for transferring something. Most
 
 ### HyperText
 
-“HyperText” is a term coined by author Ted Nelson in 1963[^1] to describe documents that can reference each other. Today, we know these references as “hyperlinks” or “URLs” (Uniform Resource Locators. Not important.) So hypertext is what we simply know today as “webpage”.
+“HyperText” is a term coined by author Ted Nelson in 1963<sup>[1]</sup> to describe documents that can reference each other. Today, we know these references as “hyperlinks” or “URLs” (Uniform Resource Locators. Not important.) So hypertext is what we simply know today as “webpage”.
 
 [1]: https://en.wikipedia.org/wiki/Hypertext "Hypertext - Wikipedia"
 
