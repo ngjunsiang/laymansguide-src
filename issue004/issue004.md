@@ -1,6 +1,6 @@
-Short version: An Application Programming Interface (API) is a data browser for apps, a way for apps to talk to each other.
+**Short version:** An Application Programming Interface (API) is a data browser for apps, a way for apps to talk to each other.
 
-Long version: Imagine you're an app. You would rather have the data raw, without all the formatting that humans consider vital to their understanding.
+**Long version:** Imagine you're an app. You would rather have the data raw, without all the formatting that humans consider vital to their understanding.
 
 If a human wanted to access my Hypothes.is profile page, they would access [https://hypothes.is/users/kureshii](https://hypothes.is/users/kureshii) and see a nicely formatted profile page.
 
@@ -35,6 +35,14 @@ How do you pronounce JSON? [Here’s a Youtube video](https://www.youtube.com/wa
 
 By the way, I believe API is pronounced “ay-pee-aye”. Some people may pronounce it “ah-pee”, “ay-pee” or something. Try not to laugh.
 
-Oops, I got sidetracked. So, Hypothes.is is really cool because they got an API that makes it easier for my app to get data. How do we use this API thing? And what is JSON anyway?
+Oops, I got sidetracked. So, Hypothes.is is really cool because they got an API that makes it easier for my app to get raw data. How do we use this API thing? And what is JSON anyway?
 
 Next two issues: What is JSON? How do you use an API?
+
+<hr/>
+
+Four issues in, and I’ve just introduced the first technical term: API. This is going to be a pattern for this newsletter: I’ll illustrate some examples that highlight a problem or issue, before I introduce the incumbent solution and the term people use to refer to it. One drawback to this approach is that the introduction can sometimes seem obtuse or confusing: “where is he going with this example?” If this should occur, the fault is mine for the poor writing.
+
+How are the first four issues for you? Was it difficult grasping the examples and what they illustrate? Hit reply and let me know 📧 Even if you don’t think there’s anything to complain about, I would find it reassuring to know that the current format is okay.
+
+—Jun Siang
