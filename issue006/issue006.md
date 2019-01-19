@@ -24,4 +24,6 @@ Issue summary: There are different kinds of HTTP requests-GET, PUT, DELETE, for 
 
 <hr/>
 
+Okay, I am really starting to lay on the terminology thick in this issue. I did that consciously because I thought the HTTP request types (GET, PUT, DELETE, but there are others) would be clear enough even for non-techies. REST and SOAP are there on the off-chance that someone might want to Google it. You are also going to see REST commonly enough elsewhere on the internet once you start googling about APIs, and at least now you know it means it is easy to ask it nicely for data. HTTP requests are what I'm going into next, and while it isn't critical understanding for everyday digital life, it gives background understanding for the meat of Season 1: why HTTPS is important and how it protects you.
+
 Am I going too fast? Any suggestions for clarity or ease of reading? What do you like/dislike? I would love to hear your comments.
