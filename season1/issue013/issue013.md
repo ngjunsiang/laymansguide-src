@@ -5,13 +5,13 @@ Last issue I compared HTTPS and HTTP, and explained why you should use HTTPS as 
 Most web browsers now indicate whether you are using HTTP or HTTPS in the address bar.
 
 <span align="center">
-![The difference between Chrome 67 and 68](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue013/issue013_01.png?raw=true)
+![The difference between Chrome 67 and 68](https://github.com/ngjunsiang/laymansguide/blob/master/issue013/issue013_01.png?raw=true)
 Since version 68, Google Chrome marks HTTP sites as insecure in the address bar
 </span>
 
 <span align="center">
-![Firefox address bar: HTTP](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue013/issue013_02.png?raw=true)<br/>
-![Firefox address bar: HTTPS](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue013/issue013_03.png?raw=true)
+![Firefox address bar: HTTP](https://github.com/ngjunsiang/laymansguide/blob/master/issue013/issue013_02.png?raw=true)<br/>
+![Firefox address bar: HTTPS](https://github.com/ngjunsiang/laymansguide/blob/master/issue013/issue013_03.png?raw=true)
 Firefox uses a green lock icon in the address bar to indicate that you are using HTTPS to access the website
 </span>
 
@@ -20,7 +20,7 @@ I can’t possibly keep you updated on how every single browser informs you that
 If you are still not sure, click the green/lock icon for more information:
 
 <span align="center">
-![Firefox connection information dialog](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue013/issue013_04.png?raw=true)
+![Firefox connection information dialog](https://github.com/ngjunsiang/laymansguide/blob/master/issue013/issue013_04.png?raw=true)
 Firefox displays additional information when you click on the lock icon. Other browsers do this as well.
 </span>
 
@@ -46,7 +46,7 @@ Of course, this isn’t all there is to know about HTTP and HTTPS and APIs, but 
 
 1. APIs are really cool (I’ll likely touch on this again in future issue sets)
 2. Wifi is really unsafe if you are using HTTP
-3. You should really be using HTTPS as far as possible. You don’t need to worry too much, since you are likely already using it.
+3. You really should be using HTTPS as far as possible. You don’t need to worry about it too much, since you are likely already using it.
 
 In the next issue set, I’ll talk a bit about how software developers do their jobs. Again, the issue set will only cover the basic ideas. There are some really cool ideas that I want you to know already exist and are being used, even if I won’t be getting into the technical detail.
 
@@ -64,4 +64,4 @@ If you have ideas for things you would like to have a basic explanation of, let 
 - XSS? [Issue 8]
 - a CDN? [Issue 8]
 - Unicode? And what does it have to do with emoji? [Issue 8]
-- What are those ‘\r\n’s in the HTTP request packet [Issue 12]? 
+- What are those ‘\r\n’s in the HTTP request packet [Issue 12]?

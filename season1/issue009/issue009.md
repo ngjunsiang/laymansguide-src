@@ -7,11 +7,11 @@ A request header
 
 Really simple. In Issue 6, I said that to use an API we need to send a request using HTTP methods such as GET, POST, DELETE. You can see the GET method in use here. It’s literally just a word in the request header! Followed by the URL which we are requesting, in his case I’m searching for annotations made by me on Hypothes.is.
 
-The rest of the first line in the request header is my request URL. The full URL I am using is actually [`https://hypothes.is/api/search?user=kureshii`](https://hypothes.is/api/search?user=kureshii). Notice that the request header URL does not have the front bit. This request header is already being crafted according to HTTP (which is a protocol, a set of rules) so we don‘t need the https part. “hypothes.is” is known as the host because it is the server hosting the API.
+The rest of the first line in the request header is my request URL. The full URL I am using is actually [`https://hypothes.is/api/search?user=kureshii`](https://hypothes.is/api/search?user=kureshii). Notice that the request header URL does not have the front bit. This request header is already being crafted according to HTTP (which is a protocol, a set of rules) so we don‘t need the https part. “hypothes.is” is known as the host because it is the server *host*ing the API.
 
-This means that when I enter the full URL in the address bar, my client takes the full URL, notes that I want to use the HTTPS method (future issue!) to request the data from hypothes.is, and then sends the request (which is actually the `api/search?user=kureshii` bit). The full URL is not just one long string, but multiple bits containing information for the client and server.
+This means that when I enter the full URL in the address bar, my client takes the full URL, noticing that I want to use the HTTPS method (future issue!) to request the data from the host hypothes.is, and then sends the request (which is actually the `api/search?user=kureshii` bit). The full URL is not just one long string, but multiple bits containing information for the client and server.
 
-The third line, `Accept */*`, is the client’s way of saying “send me anything”. If you are using image-browsing software, for example, it might send an HTTP header requesting only images.
+The third line, `Accept */*`, is the client’s way of saying “send me anything”. A more limited client, for example image-browsing software, might send an HTTP header requesting only images.
 
 The last line is the interesting one.
 
@@ -29,7 +29,7 @@ Ever wondered how some websites or services seem to know what kind of web browse
 
 Yep, that means that on less scrupulous websites, the server can actually know something about you from your user agent declaration. It can, for example, know that you are using an iPhone and hence serve you a different webpage format—or different ads. In the past, when the old version of Internet Explorer failed to render some pages correctly, some websites took to blocking it from visiting their site entirely, or serving a different, simpler site. They did so by detecting the user agent.
 
-Why does my user agent in the request look so weird? That’s because I’m using an API tester, [apitester.com](https://apitester.com/), to check if I am using Hypothes.is’s API correctly (by looking at the response status code, introduced in Issue 8). I need to do that because I am accessing some information that requires the API to know who I am, and the only way for the Hypothes.is server to know that is for me to provide the information in the header. I can’t do that easily with a regular web browser, so I need specialised software tools.
+Why does my user agent in the request look so weird? That’s because I’m using an API tester, [apitester.com](https://apitester.com/), to check if I am using Hypothes.is’s API correctly (by looking at the response status code, introduced in Issue 8). I need to do that because I am accessing some information that is not available publicly. The Hypothes.is API needs to know who I am before it will serve that information, so I need to create a customised request header to include that identity. I can’t do that easily with a regular web browser, so I need specialised software tools.
 
 And that will bring us to authentication and HTTPS in the next few issues.
 
