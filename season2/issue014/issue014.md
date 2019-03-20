@@ -2,7 +2,7 @@ Last season, I used an app I was making to get into the differences between HTTP
 
 One question I get pretty often is: “I’m interested in Computing, but where should I start? What should I do?” The first thing I tell them is not to learn programming, but to understand what developers do, because this is not obvious knowledge. So I’m going to try to build up your picture of computing first, before we get back to networking.
 
-Season 2 is going to be about the work of developers: what they do, a bit of how they do it, and the cool things they get to play with. Yup, there’re 13 issues worth of things to talk about!
+Season 2 is going to be about the work of developers: what they do, a bit of how they do it, and the cool things they get to play with. Yup, there are 13 issues worth of things to talk about!
 
 Let’s start with the obvious: developers write code. They write code that runs all the services you use. The not-so-obvious part: not all code is the same. Just as the same letters can be used in different languages, the same keyboard can type code in different languages. The code serves different purposes.
 
@@ -57,7 +57,7 @@ Beyond writing apps, code is also written for many other purposes. I outline som
 Yes, code can be written to process data! This is one of the coolest uses of software, because manually searching through data and performing calculations is tedious, and computers can do it so much faster.
 
 **System administration**
-A sysadmin’s job is to make sure a server, or group of servers, remain up and running. I might detail the kinds of trouble a server can get up to once I have enough stories to tell, but I think [Rachel](https://rachelbythebay.com/w/) tells much more interesting stories about those, albeit with lots of technical detail.
+A sysadmin’s job is to make sure a server, or group of servers, remain up and running. I might detail the kinds of trouble a server can get up to once I have enough stories to tell, but I think [Rachel tells much more interesting stories](https://rachelbythebay.com/w/) about those, albeit with lots of technical detail.
 
 A sysadmin might have to write code to automate processes, to troubleshoot, to create new users, to manage files, and for many other reasons. They work primarily in the command line, because most system administration tools are written as commandline tools, although sometimes a user interface might be created to make a popular tool easier to use.
 
@@ -74,7 +74,7 @@ A server is designed to give administrators and managers more privileges, and gi
 
 Some developers like to work “close to the metal”; they write **low-level code**. They often have a deep understanding of the hardware they are working on and the algorithms that are being used, and are able to write code that is lean and efficient. They may be able to speed up a function by a few thousand times by rewriting it in low-level code! But this is tedious work to maintain, and can’t be done for an entire software project, so such code is often employed in strategic areas only.
 
-To manage low-level code, developers write compilers, interpreters, and debuggers that compile or interpret high-level instructions and break them down into lower-level instructions that get run instead. This makes it possible to write `open('file.txt','r')` and be able to open a text file without having to know all the code required to make it happen. **High-level code** is what most people learn when they learn programming, because it enables them to do cool things quickly without needing to understand all the intricate details; high-level code **abstracts** away the detail of low-level code and handle it for the developer.
+To manage low-level code, developers write compilers, interpreters, and debuggers that compile or interpret high-level instructions and break them down into lower-level instructions that get run instead. This makes it possible to write high-level code like `open('file.txt','r')` and be able to open a text file without having to know all the low-level code required to make it happen. **High-level code** is what most people learn when they learn programming, because it enables them to do cool things quickly without needing to understand all the intricate details; high-level code **abstracts** away the detail of low-level code and handle it for the developer.
 
 Low-level code and high-level code are not a classification; they are a sliding scale. You can place different programming languages on this scale to indicate what level of abstraction they work at.
 
@@ -89,11 +89,11 @@ Issue summary: Developers can specialise in frontend, backend, or full-stack dev
 
 Phew! This was a long issue, and I apologise for that. Subsequently I am not going to be covering such a broad scope, although the tools I talk about could potentially be used in any of the above areas.
 
-In the next issue, I want to talk about a tool that laypeople almost never encounter: the commandline. Because humans have a tendency to believe that what they see is what others see, I think it is important for people to understand that most of computing doesn’t happen with a graphical interface. And although laymansguide will not teach you how to program, it will hopefully help you to stop fearing the commandline.
+In the next issue, I want to talk about a tool that laypeople almost never encounter: the command line. Because humans have a tendency to believe that what they see is what others see, I think it is important for people to understand that most of computing doesn’t happen with a graphical interface. And although laymansguide will not teach you how to program, it will hopefully help you to stop fearing the command line.
 
 ## What I’ll be covering next
 
-**Next issue:** System administration and the commandline.
+**Next issue:** System administration and the command line.
 
 **Sometime in the future:** What is:
 
