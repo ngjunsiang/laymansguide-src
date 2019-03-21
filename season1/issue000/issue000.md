@@ -2,7 +2,7 @@ Where do I start?
 
 Someone I know just took up a (sponsored) course to learn HTML, CSS, and eventually maybe Javascript and maybe even Python!
 
-What does it meant to have been taught HTML? What does it mean to receive a certificate stating that you have learnt HTML? Why would anyone need to learn HTML? Will you be able to make a webpage, knowing some HTML? Will you be able to make a nice website with CSS? Many of these courses claim you can. That’s why you’re paying for them, right?
+What does it mean to have been taught HTML? What does it mean to receive a certificate stating that you have learnt HTML? Why would anyone need to learn HTML? Will you be able to make a webpage, knowing some HTML? Will you be able to make a nice website with CSS? Many of these courses claim you can. That’s why you’re paying for them, right?
 
 These courses often guarantee that in the course of 2 hours, you will learn how to write HTML. You will learn what CSS is. But here is what these courses cannot guarantee:
 
