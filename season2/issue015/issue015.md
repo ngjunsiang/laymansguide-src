@@ -8,7 +8,7 @@ Before graphical interfaces and the mouse cursor came about, there was a primiti
 
 A computer is just a box of chips waiting to do your bidding, and the command line is one way to give it commands (get the name now?) But of course, that means you’ll need to learn its language.
 
-First, some names/terms. You may see the commandline also referred to as a terminal (Mac/Linux), command prompt (Windows), or shell (also Windows). The differences are technical, they all refer to that window with the pointer waiting for you to enter your commands.
+First, some names/terms. You may see the command line also referred to as a **terminal** (Mac/Linux), command prompt (Windows), or shell (also Windows). The differences are technical, they all refer to that window with the pointer waiting for you to enter your commands.
 
 What does a command look like? It can look as simple as:
 
@@ -45,7 +45,7 @@ When you go camping, you sleep in/on a sleeping bag (or air mattress, or hammock
 
 When your usual powerful methods don’t work, you fall back to more primitive methods.
 
-The commandline is a fallback for graphical interfaces when they crash. If Windows encounters a problem while starting up (this process is known as **booting up**, we’ll get to this in a future series on hardware), it usually tells you to get a technician to look at it. But in Linux, when the computer encounters a bootup problem, it drops you to a command line so you can at least try to fix the problem. Any time the graphical interface in Linux starts getting glitchy, you can always drop to a terminal (another name for command line, remember?) to figure out what’s wrong. If even the terminal is glitching up, something really bad is happening … (probably a video driver issue, but we haven’t gotten to troubleshooting yet).
+The command line is a fallback for graphical interfaces when they crash. If Windows encounters a problem while starting up (this process is known as **booting up**, we’ll get to this in a future series on hardware), it usually tells you to get a technician to look at it. But in Linux, when the computer encounters a bootup problem, it drops you to a command line so you can at least try to fix the problem. Any time the graphical interface in Linux starts getting glitchy, you can always drop to a terminal (another name for command line, remember?) to figure out what’s wrong. If even the terminal is glitching up, something really bad is happening … (probably a video driver issue, but we haven’t gotten to troubleshooting yet).
 
 ### Remote work
 
@@ -99,4 +99,4 @@ I want to talk a little about how this automation is done in the next issue. Aga
 - Unicode? And what does it have to do with emoji? [Issue 8]
 - What are those ‘\r\n’s in the HTTP request packet [Issue 12]?
 
-(I know I’m taking a while to get to these. I’ll touch on specifications later in this series, but the rest will have to wait until we return to networking and the Internet again, probably.) 
+(I know I’m taking a while to get to these. I’ll touch on specifications later in this series, but the rest will have to wait until we return to networking and the Internet again, probably.)
