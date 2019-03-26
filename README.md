@@ -1,4 +1,4 @@
-#Layman's Guide to Computing
+# Layman's Guide to Computing
 
 Your friendly neighbourhood bite-sized newsletter introducing one computing idea a week.
 
