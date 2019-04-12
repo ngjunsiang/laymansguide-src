@@ -53,7 +53,7 @@ If you’ve ever thought “hmm, when did this part change? I don’t remember i
 
 If you don’t want your code being online, git can be installed on your own computer, but the far more popular way that developers use it is in the cloud. And the most popular platform for code today is [Github](https://github.com/about). It’s so popular that Microsoft, realising just [how much of their code is on Github](https://github.com/Microsoft), decided [to buy Github](https://blogs.microsoft.com/blog/2018/06/04/microsoft-github-empowering-developers/).
 
-When you create a Github account, you get a repository that you can put your code in. This repository is managed by a git server that you can push commits to, and pull changes from. You get complete change history for your code that is uploaded (here’s the [change history for LMG](https://github.com/ngjunsiang/laymansguide/commits/master)). You don’t have the same level of control you would over a git server that you run yourself, but it saves you much more time and hassle.
+When you create a Github account, you get a repository that you can put your code in. This repository is managed by a git server that you can push commits to, and pull changes from. You get complete change history for your code that is uploaded (here’s the [change history for this newsletter](https://github.com/ngjunsiang/laymansguide/commits/master)). You don’t have the same level of control you would over a git server that you run yourself, but it saves you much more time and hassle.
 
 ## Using a VCS for non-code purposes
 
@@ -63,8 +63,6 @@ People have tried to use git for writing academic papers. Here’s [a workflow f
 
 The cool part is not that they are all using git. Git works, but primarily for text-based mediums. But increasingly, people are seeing the value of a change history, and are trying to apply it in ways that make sense. Designers certainly are catching on. [Versions](https://versions.sympli.io/) and [Abstract](https://www.abstract.com/) are two platforms that try to apply the concept in a way that makes sense for designers.
 
-How can version control improve the way you work?
-
 **Issue summary:** A **version control system** (VCS) tracks changes to documents. Git is a version control system for source code. Keeping a change history enables a VCS to roll back code in a previous point in time. A change history can also be used in areas other than coding.
 
 <hr/>
@@ -73,7 +71,7 @@ Phew! I thought this was going to be short, but I was sorely wrong. In fact, I�
 
 This is the first big idea I’ve introduced this season: version control. Knowing about version control and not being able to introduce it into workflows that would really benefit from it is frustrating. If you use Google Docs, Dropbox, or anything that has simplified version control, and you’ve asked yourself questions that can actually be resolved by checking a change history, do try it out and get familiar with the idea!
 
-If you’ve got an idea for applying version control where no version control has boldly gone before, hit reply and let me know :)
+How can version control improve the way you work? If you’ve got an idea for applying version control where no version control has boldly gone before, hit reply and let me know :)
 
 To wrap up, I realised that this issue took me 1.5 hrs to write. That’s not what I promised when I started this newsletter, that each issue should be short and digestible and possible for me to write in an hour. I’ll look at how to further split up future issues to keep to this promise. If you do actually prefer longer issues, drop me an email and let me know!
 
