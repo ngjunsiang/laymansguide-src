@@ -1,6 +1,6 @@
 Last issue, I introduced **version control**, the idea that you can set things up in a way that lets you see the **change history** of a document. This lets you undo changes which you later come to regret, and compare the document to a previous point in history. If you have a version control system (VCS) set up, you can commit changes to it and view a list of those changes later.
 
-When one is just starting out in software development, one thing that often happens is this. You start writing code for an app-say, a todo list. You write code to set up a database, display a login and other stuff. You commit the changes to the . You add core features: add/remove/update a todo item; commit. You come up with more ideas: subtasks, recurring items, tags, filters, and all that jazz. Commit, commit, commit. You now have a complete app with bells and whistles, but the code is a sprawling mess: when you finally test the app, there are strange bugs everywhere, the lists don't filter properly, and the database gets messier and messier.
+When one is just starting out in software development, one thing that often happens is this. You start writing code for an app-say, a todo list. You write code to set up a database, display a login and other stuff. You commit the changes to the code. You add core features: add/remove/update a todo item; commit. You come up with more ideas: subtasks, recurring items, tags, filters, and all that jazz. Commit, commit, commit. You now have a complete app with bells and whistles, but the code is a sprawling mess: when you finally test the app, there are strange bugs everywhere, the lists don't filter properly, and the database gets messier and messier.
 
 Proper planning can make this more orderly to some extent, but it cannot eliminate one fact of programming: that there will always be bugs. And the only way to catch them is to test the app.
 
@@ -16,7 +16,7 @@ Being able to speed up the testing rate, and have something else do the testing 
 
 How exactly do you test a website? While there is no replacement (yet) for a human when it comes to judging look and feel, you can rely on software to get the functional parts tested. Software such as [Selenium](https://www.seleniumhq.org/) have a built-in browser that is able to [request webpages](https://buttondown.email/laymansguide/archive/a6941efd-86bf-4fd8-92c9-009fe14a8c2a) and check the webpage code to see if what is supposed to be there is actually there.
 
-For example, after I perform a login, I should be in my Home screen, the main section should display a welcome, the top right hand corner should be my avatar, etc. All of this can be tested for in the code.
+For example, after I perform a login, I should be in my Home screen, the main section should display a welcome, my avatar should be in the top right hand corner, etc. All of this can be tested for in the code.
 
 # Test suites and automated testing
 
