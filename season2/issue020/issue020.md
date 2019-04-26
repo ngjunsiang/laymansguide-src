@@ -12,13 +12,13 @@ If you are testing an app manually, it is human nature to not want to run 200 te
 
 Being able to speed up the testing rate, and have something else do the testing for you, eliminates these problems and lets you focus on writing code rather than typing inputs and checking outputs.
 
-# Web testing
+## Web testing
 
 How exactly do you test a website? While there is no replacement (yet) for a human when it comes to judging look and feel, you can rely on software to get the functional parts tested. Software such as [Selenium](https://www.seleniumhq.org/) have a built-in browser that is able to [request webpages](https://buttondown.email/laymansguide/archive/a6941efd-86bf-4fd8-92c9-009fe14a8c2a) and check the webpage code to see if what is supposed to be there is actually there.
 
 For example, after I perform a login, I should be in my Home screen, the main section should display a welcome, my avatar should be in the top right hand corner, etc. All of this can be tested for in the code.
 
-# Test suites and automated testing
+## Test suites and automated testing
 
 So after we have a bunch of tests, what happens? Write code, run the **test suite** (a collection of tests), check the result, and commit the code if the test passes. What happens when we have over 200 tests? Won’t that take a while?
 
