@@ -1,4 +1,6 @@
-Last week, we took a look at part of the (heavily simplified) software development pipeline: fork a repository → make changes → commit changes (and do automated testing) → merge changes when the branch is ready and all tests pass.
+Last week, we took a look at part of the (heavily simplified) software development pipeline:
+
+`fork a repository → make changes → commit changes (and do automated testing) → merge changes when the branch is ready and all tests pass.`
 
 At this point, it is time to ask a stupid question: how do developers know what they need to do?
 
@@ -30,7 +32,53 @@ The specification covers a few categories:
 
 The [HTTP specifications](https://www.w3.org/Protocols/Specs.html) are maintained by the [Internet Engineering Task Force (IETF)](https://www.ietf.org/), an open community of people who collectively make the technical decisions about what the Internet should be able to do, and how it is going to do them.
 
-[Take a look at some well-known specifications](https://www.rfc-editor.org/standards) that they have produced (click the ASCII links—yeah we’ll talk about ASCII sometime). It’s going to be way over your head, but don’t worry about that. Look at how specific these documents are about how data should be transmitted and received! These documents are how developers and programmers resolve arguments about who is writing their code correctly and who is responsible for a bug. The requirements have to be specific enough that the expected behaviour for a scenario is clear, yet leave enough room for better implementations to replace old ones.
+[Take a look at some well-known specifications](https://www.rfc-editor.org/standards) that they have produced (click the links that say “ASCII”—yeah we’ll talk about ASCII sometime). It’s going to be way over your head, but don’t worry about that. Here’s an example from TCP, the Transmission Control Protocol that describes how packets should be sent over the internet:
+
+```
+3.1.  Header Format
+
+  TCP segments are sent as internet datagrams.  The Internet Protocol
+  header carries several information fields, including the source and
+  destination host addresses [2].  A TCP header follows the internet
+  header, supplying information specific to the TCP protocol.  This
+  division allows for the existence of host level protocols other than
+  TCP.
+
+  TCP Header Format
+
+    0                   1                   2                   3   
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |          Source Port          |       Destination Port        |
+  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                        Sequence Number                        |
+  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                    Acknowledgment Number                      |
+  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |  Data |           |U|A|P|R|S|F|                               |
+   | Offset| Reserved  |R|C|S|S|Y|I|            Window             |
+   |       |           |G|K|H|T|N|N|                               |
+  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |           Checksum            |         Urgent Pointer        |
+  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                    Options                    |    Padding    |
+  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                             data                              |
+  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                            TCP Header Format
+
+          Note that one tick mark represents one bit position.
+
+                               Figure 3.
+
+  Source Port:  16 bits
+    The source port number.
+
+  Destination Port:  16 bits
+    The destination port number.
+```
+
+Look at how specific these documents are about how data should be transmitted and received! These documents are how developers and programmers resolve arguments about who is writing their code correctly and who is responsible for a bug. The requirements have to be specific enough that the expected behaviour for a scenario is clear, yet leave enough room for better implementations to replace old ones.
 
 ### API Specifications
 
@@ -52,7 +100,7 @@ When a developer first learns about specifications, it can be really alarming to
 
 And then the developer advances. They tackle more finicky problems. They tackle problems that require more precision: time to the nearest nanosecond, synchronisation within a fraction of a second, lag time of no more than 200 milliseconds, etc. When they run into sufficiently difficult problems and find that they need help (such as the aforementioned time representations), that is where they will welcome the specification overlords into their life.
 
-Many specifications were written because similarly talented developers ran into the same issue. And if there is no need to reinvent the wheel, those specifications save you many hours hashing out a suitable specification and implementation (since other developers would have offered sample implementations online), and enable your app to communicate with other specification-followers.
+Many specifications were written because similarly talented developers ran into the same issue. And if there is no need to reinvent the wheel, those specifications save you many hours hashing out a suitable specification and implementation (since other developers would have offered sample implementations online), and enable your app to communicate with others who follow the same specification.
 
 Specifications are part of an engineer’s toolbox in the struggle to create order from chaos, and a well-written specification is a thing of beauty.
 
@@ -60,7 +108,7 @@ Specifications are part of an engineer’s toolbox in the struggle to create ord
 
 <hr/>
 
-Yay, I finally cleared one item from the "sometime in the future" list! When I first started reading implementations, I found them really intimidating and impossible to get into. It was only when I started programming and having to do things like getting my data from an online service through an API, that specifications started making sense. Hardware specifications were useful too, in trying to understand whether a product will be able to do quick charging or support higher rates of data transfer before I buy said product.
+Yay, I finally cleared one item from the "sometime in the future" list! When I first started reading implementations, I found them really intimidating and impossible to get into. It was only when I started programming and having to do things like getting my data from an online service through an API, that specifications started making sense. Hardware specifications were useful too, in trying to understand whether a USB charger will be able to do quick charging or support higher rates of data transfer before I buy it.
 
 Because making an app from scratch can be so stressful and annoying, developers usually separate the design work from the programming. Creating a specification and design for an app is both a science and an art, and when done well, can make programming a breeze. A developer just needs to read the relevant part of the specification, think about how to implement that section, and get it done.
 
