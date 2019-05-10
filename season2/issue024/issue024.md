@@ -12,6 +12,11 @@ Software everywhere is full of bugs. They are like bacteria; you can kill them b
 
 In the early days of electromechanical computers, which carried out computation through a mix of electrical and mechanical parts, problems that arose during the computer’s operation were not always caused by wrong instructions sent to the computer. In 1946, operators of the Harvard Mark II encountered an error that was eventually traced to a moth trapped in a relay. Bug hunting then was literal; today it is figurative, but the term has stuck.
 
+<span align="center">
+![A dead moth taped to a page](https://github.com/ngjunsiang/laymansguide/blob/master/season2/issue024/issue024_01.png?raw=true)
+A page from the Harvard Mark II electromechanical computer's log, featuring a dead moth that was removed from the device. [Source: Wikipedia](https://en.wikipedia.org/wiki/Software_bug)
+</span>
+
 ## How do developers keep track of so many bugs?
 
 This refrain should start to sound familiar … they do so with the help of machines :)
@@ -34,7 +39,9 @@ Through the issue created in the issue tracker, developers can communicate with 
 What an issue in Github looks like. From Kenneth Reitz’s `requests` package.
 </span>
 
-Projects will often have a contributing guideline to help users understand how best to write a good bug report. Reading and understanding a bug report can be really trying, especially if it is unclear or does not provide enough information, and this can make the debugging work of developers an emotional drain. Hence, a good practice is to read the project intro and contributing guidelines to understand how the project is being managed and how to write a helpful bug report.
+Projects will often have a contributing guideline to help users understand how best to write a good bug report. Reading and understanding a bug report can be really trying, especially if it is unclear or does not provide enough information, and this can make the debugging work of developers an emotional drain.
+
+It is considered polite to read the project intro and contributing guidelines to understand how the project is being managed and how to write a helpful bug report.
 
 <span align="center">
 ![Contribution guidelines for requests](https://github.com/ngjunsiang/laymansguide/blob/master/season2/issue024/issue024_02.png?raw=true)
@@ -49,7 +56,7 @@ If you found a bug in a piece of software you use, and don’t know where or how
 
 <hr/>
 
-This is a short one, and one I’ve always wanted to write. So many people don’t know that some of the software they use every day have issue trackers, and they can contribute to the healthy development of their favourite software by helping to submit issues they encounter.
+This is a short one, and one I’ve been waiting to write. So many people don’t know that some of the software they use every day have issue trackers, and they can contribute to the healthy development of their favourite software by helping to submit issues they encounter.
 
 How is your workplace keeping track of issues raised by staff? Are they doing it manually in a document? Would an issue tracker help make this job easier?
 
