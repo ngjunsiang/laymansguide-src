@@ -8,10 +8,10 @@ Last thing before the dive: A request or response typically has two parts: a **h
 
 We'll get to looking at what kind of data goes out in the HTTP request next issue. Right now, the HTTP response is simpler and easier to talk about. This is what an HTTP response from the Hypothes.is API ([Issue 4](https://buttondown.email/laymansguide/archive/fe8b59fc-c5fd-49f2-9d01-9f21fa3df95c)) looks like:
 
-<span align="center">
+</div>
 ![An HTTP response header from Hypothes.is](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue008/issue008_01.png?raw=true)
 The response header from Hypothes.is 
-</span>
+</div>
 
 Whoa there, I thought this was supposed to be simple to talk about?? It really is! We’re not going to go through all of that, I just wanted to show you an HTTP response first.
 
@@ -62,10 +62,10 @@ Status codes are always three digits. The first digit tells you the category of 
 `503` usually means “all our customer service officers are currently busy, please try again later.”  
 `504` is the worst: you’ve waited until the request timed out and didn’t get a response. (the lights are on but nobody’s home …)
 
-<span align="center">
+</div>
 ![An HTTP response header from Hypothes.is](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue008/issue008_02.png?raw=true)
 A 404 response header from Hypothes.is 
-</span>
+</div>
 
 <hr/>
 

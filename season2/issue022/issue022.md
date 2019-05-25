@@ -9,10 +9,10 @@ By now your idea of a developers’ workflow might look something like this:
 3. Test the code on that branch.
 4. If the tests pass, send a pull request to the repository owner to merge this branch with the main branch.
 
-<span align="center">
+</div>
 ![A commit on Github](https://github.com/ngjunsiang/laymansguide/blob/master/season2/issue022/issue022_01.png?raw=true)
 Git branching. From [Atlassian’s git branch tutorial](https://www.atlassian.com/git/tutorials/using-branches).
-</span>
+</div>
 
 You can imagine that steps 2 and 3, the bread and butter of developers everywhere, is really tedious. Write code, test fails. Edit code, test fails again. On and on and on.
 
@@ -27,10 +27,10 @@ One step less! But the part that developers dread is usually merging, which is w
 
 ## Merge conflicts
 
-<span align="center">
+</div>
 ![A commit on Github](https://github.com/ngjunsiang/laymansguide/blob/master/season2/issue022/issue022_01.png?raw=true)
 Git merging. From [Atlassian’s git merge tutorial](https://www.atlassian.com/git/tutorials/using-branches/git-merge).
-</span>
+</div>
 
 Most development teams organise their work into (at least) 3 types of branches:
 
