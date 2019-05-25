@@ -6,19 +6,19 @@ In the second-last issue of this season, I'm going to do a little detour to talk
 
 Newspaper editors, book editors, photo editors … nope we’re not talking about those. Text editors are software that is used to edit text. The simplest example you know of is probably Notepad. On the other end of the scale you can have really fancy editors like [Sublime Text](https://www.sublimetext.com/) or [Notepad++](https://notepad-plus-plus.org/), or [Atom](https://atom.io/).
 
-<span align="center">
+<span style="text-align:center">
 ![Sublime Text](https://github.com/ngjunsiang/laymansguide/blob/master/season2/issue025/issue025_01.png?raw=true)
 Sublime Text
 </span>
 
 Every programmer has their own favourite. They can get prickly and defensive about their text editors of choice, so be careful what you say about their preferred text editors.
 
-<span align="center">
+<span style="text-align:center">
 ![Notepad++](https://github.com/ngjunsiang/laymansguide/blob/master/season2/issue025/issue025_02.png?raw=true)
-Sublime Text
+Notepad++
 </span>
 
-<span align="center">
+<span style="text-align:center">
 ![Github Atom](https://github.com/ngjunsiang/laymansguide/blob/master/season2/issue025/issue025_03.png?raw=true)
 Github Atom
 </span>
@@ -27,16 +27,16 @@ Text editors do what is written on the box: they let you edit text. Often (but n
 
 ## IDE: an Integrated Development Environment
 
-An IDE is rather different. Yes, it probably has a big window for you to edit your code. But it has to do much more. It is called a development environment because it lets developers *explore* their code. An IDE can run your code, show you the values of the variables within your code in real-time, or let you pause the code at a point so you can see what the program is doing before it exits or crashes. This helps greatly with the debugging process.
+An IDE is rather different. Yes, it probably has a big window for you to edit your code. But it has to do much more. It is called a **development environment** because it lets developers *explore* their code. An IDE can run your code, show you the values of the variables within your code in real-time, or let you pause the code at a point so you can see what the program is doing before it exits or crashes. This helps greatly with the debugging process.
 
-<span align="center">
+<span style="text-align:center">
 ![Spyder](https://github.com/ngjunsiang/laymansguide/blob/master/season2/issue025/issue025_04.png?raw=true)
 Spyder IDE, showing its object inspector (for checking variables) and built-in console (where the code is run)
 </span>
 
 An IDE can test the performance of your code to let you know where it is running slowly (a process known as **profiling**).
 
-<span align="center">
+<span style="text-align:center">
 ![Netbeans](https://github.com/ngjunsiang/laymansguide/blob/master/season2/issue025/issue025_05.png?raw=true)
 Netbeans IDE showing its profiler at work
 </span>
