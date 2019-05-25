@@ -4,10 +4,10 @@ Last issue I compared HTTPS and HTTP, and explained why you should use HTTPS as 
 
 Most web browsers now indicate whether you are using HTTP or HTTPS in the address bar.
 
-</div>
+<span style="text-align:center">
 ![The difference between Chrome 67 and 68](https://github.com/ngjunsiang/laymansguide/blob/master/issue013/issue013_01.png?raw=true)
 Since version 68, Google Chrome marks HTTP sites as insecure in the address bar
-</div>
+</span>
 
 </div>
 ![Firefox address bar: HTTP](https://github.com/ngjunsiang/laymansguide/blob/master/issue013/issue013_02.png?raw=true)<br/>
@@ -19,10 +19,10 @@ I can’t possibly keep you updated on how every single browser informs you that
 
 If you are still not sure, click the green/lock icon for more information:
 
-</div>
+<span style="text-align:center">
 ![Firefox connection information dialog](https://github.com/ngjunsiang/laymansguide/blob/master/issue013/issue013_04.png?raw=true)
 Firefox displays additional information when you click on the lock icon. Other browsers do this as well.
-</div>
+</span>
 
 ## How do I actually use HTTPS?
 

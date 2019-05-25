@@ -4,34 +4,34 @@
 
 If a human wanted to access my Hypothes.is profile page, they would access [https://hypothes.is/users/kureshii](https://hypothes.is/users/kureshii) and see a nicely formatted profile page.
 
-</div>
+<span style="text-align:center">
 ![Screenshot of a Hypothes.is profile page](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue004/issue004_01.png?raw=true)
 My Hypothe.is profile page. Yeah, you already saw this in Issue 2. 
-</div>
+</span>
 
 If an app wanted a data-only view, it could access [https://hypothes.is/api/search?user=kureshii](https://hypothes.is/api/search?user=kureshii) and get the same data:
 
-</div>
+<span style="text-align:center">
 ![Data from the Hypothes.is API, JSON](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue004/issue004_02.png?raw=true)
 Raw data from the Hypothes.is API<br/>
 (that’s Application Programming Interface)
-</div>
+</span>
 
 Cool, isn’t it? Looks very different from HTML, but still looks kinda … structured. Those \{curly brackets\} and \[square brackets\] look annoying though. How’re we ever going to work through those?
 
 Luckily for us, this way of using curly and square brackets is pretty standardised these days. It is called JavaScript Object Notation (JSON for short). It was specified by Douglas Crockford in the early 2000s, presumably to make things easier for all of us, because it was meant to replace some competing formats, such as XML.
 
-</div>
-![Data from the Hypothes.is API, XML](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue004/issue004_03.png?raw=true)
+<span style="text-align:center">
+![Data from the Hypothes.is API, XML](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue004/issue004_03.png?raw=true)<br />
 The same data, in XML format.<br />
 (Those look like HTML tags, but they are XML tags. Don’t worry about the difference for now, I’ll write an issue about it when it matters.<br/>
 Maybe when I move on to ebooks.)
-</div>
+</span>
 
-</div>
-[![Video of Douglas pronouncing 'JSON'](https://img.youtube.com/vi/zhVdWQWKRqM/0.jpg)](https://www.youtube.com/watch?v=zhVdWQWKRqM)
+<span style="text-align:center">
+[![Video of Douglas pronouncing 'JSON'](https://img.youtube.com/vi/zhVdWQWKRqM/0.jpg)](https://www.youtube.com/watch?v=zhVdWQWKRqM)<br />
 How do you pronounce JSON? [Here’s a Youtube video](https://www.youtube.com/watch?v=zhVdWQWKRqM) of Douglas telling you he doesn’t care how you pronounce it (he pronounces it “jay-sun” like Jason, I pronounce it “jay-sawn”. Whatever.)
-</div>
+</span>
 
 By the way, I believe API is pronounced “ay-pee-aye”. Some people may pronounce it “ah-pee”, “ay-pee” or something. Try not to laugh.
 
