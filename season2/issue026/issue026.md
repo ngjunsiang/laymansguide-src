@@ -33,7 +33,7 @@ If you are learning a programming language, chances are you will have to use at 
 - NodeJS: [npm](https://www.npmjs.com/)
 - Javascript: uhh, wow … there’s just so many specialised ones and no single central repository. But [yarn](https://yarnpkg.com/en/) is an up-and-rising one
 
-**Issue summary:** A developer can simply put up a download on a webpage and hope people downlaod it and figure out how to get the app on their devices. But often, the more popular way is to publish the app to a repository (also known as an app store, for mobile devices). Before this can be done, the code or application needs to be packaged according to the requirements of the repository.
+**Issue summary:** A developer can simply put up a download on a webpage and hope people download it and figure out how to get the app on their devices. But often, the more popular way is to publish the app to a repository (also known as an app store, for mobile devices). Before this can be done, the code or application needs to be packaged according to the requirements of the repository.
 
 <hr/>
 
