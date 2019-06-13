@@ -1,4 +1,4 @@
-In the past 12 issues I’ve talked a bit about different kinds of programs ([web, desktop, mobile, …](https://buttondown.email/laymansguide/archive/lmg-s2-issue-14-what-do-developers-do/)), different kinds of code ([frontend, backend](https://buttondown.email/laymansguide/archive/lmg-s2-issue-14-what-do-developers-do/)), tools that programmers use while programming ([command line](https://buttondown.email/laymansguide/archive/lmg-s2-issue-15-sysadmins-and-the-command-line/), [libraries](https://buttondown.email/laymansguide/archive/lmg-s2-issue-17-libraries/) and [frameworks](https://buttondown.email/laymansguide/archive/lmg-s2-issue-18-frameworks/), [version control](https://buttondown.email/laymansguide/archive/lmg-s2-issue-19-version-control-and-git/), [bug/issue trackers](https://buttondown.email/laymansguide/archive/lmg-s2-issue-24-issue-trackers-bug/), [text editors and integrated development environments]()), and ideas they use to work more efficiently ([specifications](https://buttondown.email/laymansguide/archive/lmg-s2-issue-23-specifications-in-software/), [testing](https://buttondown.email/laymansguide/archive/lmg-s2-issue-20-testing/), [continuous integration](https://buttondown.email/laymansguide/archive/lmg-s2-issue-22-continuous-integration-in-software/)).
+In the past 12 issues I’ve talked a bit about different kinds of programs ([web, desktop, mobile, …](https://buttondown.email/laymansguide/archive/lmg-s2-issue-14-what-do-developers-do/)), different kinds of code ([frontend, backend](https://buttondown.email/laymansguide/archive/lmg-s2-issue-14-what-do-developers-do/)), tools that programmers use while programming ([command line](https://buttondown.email/laymansguide/archive/lmg-s2-issue-15-sysadmins-and-the-command-line/), [libraries](https://buttondown.email/laymansguide/archive/lmg-s2-issue-17-libraries/) and [frameworks](https://buttondown.email/laymansguide/archive/lmg-s2-issue-18-frameworks/), [version control](https://buttondown.email/laymansguide/archive/lmg-s2-issue-19-version-control-and-git/), [bug/issue trackers](https://buttondown.email/laymansguide/archive/lmg-s2-issue-24-issue-trackers-bug/), [text editors and integrated development environments](https://buttondown.email/laymansguide/archive/lmg-s2-issue-25-text-editors-and-integrated/)), and ideas they use to work more efficiently ([specifications](https://buttondown.email/laymansguide/archive/lmg-s2-issue-23-specifications-in-software/), [testing](https://buttondown.email/laymansguide/archive/lmg-s2-issue-20-testing/), [continuous integration](https://buttondown.email/laymansguide/archive/lmg-s2-issue-22-continuous-integration-in-software/)).
 
 To wrap this up, let’s answer one final question: how do they actually get their code out to the rest of the world?
 
@@ -39,9 +39,9 @@ If you are learning a programming language, chances are you will have to use at 
 
 It’s the end of Season 2 of Layman’s Guide. I hope the programmer’s world looks a little less murky now, even if it looks a lot more complex!
 
-Many programming courses tell their students, that they can just jump into programming without worrying about all these. And they often set up their courses minimally, introducing Github or a package repository on occasion when they can’t avoid it. But for the most part, they don’t explain what these parts of the programmer’s world are and how to use them.
+Many programming courses tell their students that they can just jump into programming without worrying about all these. And they often set up their courses minimally, introducing Github or a package repository on occasion when they can’t avoid it. But for the most part, they don’t explain what these parts of the programmer’s world are and how to use them.
 
-To me, that’s like bringing a friend from overseas to your country and not explain how the transportation system works, how to buy things, what the most popular methods of payment are, how to cross the road … you can kind of hole yourself up at home and maybe venture out to the convenience store down the street, but what fun is that?
+To me, that’s like bringing a friend from overseas to your country and not explaining how the transportation system works, how to buy things, what the most popular methods of payment are, how to cross the road … you can kind of hole yourself up at home and maybe venture out to the convenience store down the street, but what fun is that?
 
 These are tools and ideas you can learn and use separately from programming (I’m using Github to get version control on Layman’s Guide, in fact), and you can get really good with them while knowing very minimal programming. And if you learned anything from Season 2 that really rocked your world, gave you an idea for how to improve things, or changed your view of the way things are done, please drop me an email and let me know :)
 
@@ -49,11 +49,13 @@ These are tools and ideas you can learn and use separately from programming (I�
 
 **Next season:** Data? Cloud?
 
-Pick your own adventure! Let me know what you’d like me to write about next :)
+Pick your own adventure! Let me know what you’d like me to write about next:
 
 **Data**: different types of data (text, images, video, code). Why JPGs are so small and BMPs are so huge and PNGs are kinda in-between. Why video files are so huge and so difficult to compress. How do cloud companies prevent losing data when a hard disk goes kaput? Things like that.
 
 **Cloud**: What happens to all the images I upload on Instagram? How does data actually travel from wherever it is to my laptop or smartphone? How do people actually start making their programs use the cloud? Things like that.
+
+I’ll take another break next weekend to get Season 3 hashed out. Expect the first issue end-June!
 
 **Sometime in the future:** What is:
 
@@ -66,4 +68,4 @@ Pick your own adventure! Let me know what you’d like me to write about next :)
 - those '\r\n's in the HTTP request packet [Issue 12,17]?
 - a good reason developers write code and give it away for free online? [Issue 21]
 - ASCII? [Issue 23]
-- compiling [Issue 26]?
+- compiling code into an application [Issue 26]?
