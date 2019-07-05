@@ -20,7 +20,7 @@ Subdomains make it easier for a business or organisation to organise their web p
 
 ## … and Top-level domains
 
-What about international organisations? Some of them may have different branch offices, with webpages hosted on different servers with different IP addresses. Subdomains are a clunky way to deal with this: what if each office needed those subdomains to further divide sections of their website?
+What about international organisations? Some of them may have different branch offices, with webpages hosted on different servers with different IP addresses. Subdomains are a clunky way to deal with this: what if each office needed those subdomains to further divide sections of their website? You would have sgsales.acmecorp.com, sgsupport.acmecorp.com, sgadmin.acmecorp.com, ussales.acmecorp.com, … what a mess! Reserving a part of the full domain just for countries seemed like an obvious idea at the time, and so it happened.
 
 The Domain Name System originally specified two main groups of **top-level domains** (TLD):
 
