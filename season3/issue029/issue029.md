@@ -21,7 +21,7 @@ This is why the part of the domain name after the subdomain, i.e. facebook.com o
 > **resolve** *verb*
 >
 > re·​solve | \ ri-ˈzälv
-> 
+>
 > 4 b : to find an answer to
 
 To resolve a hostname is to seek an answer to the question “which IP address does this hostname point to?”
@@ -49,7 +49,7 @@ Short question for you, dear reader: Why does the Preferred DNS Server field req
 
 Advice on the Internet these days suggests that if you find your browser is taking a little too long to resolve a hostname, you can try configuring your network interface to use [Google Public DNS](https://developers.google.com/speed/public-dns/) instead. Since this is a newsletter and not a helpdesk, I won’t go into the details here but you can always drop me a message if you need help.
 
-**Issue summary:** Resolving a hostname means answering the question “which IP address does this hostname point to?”. Your web browser seeks this answer by sending a DNS query to the gateway. If the gateway is unable to provide a satisfactory reply, you can configure your network interface to send the DNS query to a different DNS server.
+**Issue summary:** Resolving a hostname means answering the question “which IP address does this hostname point to?”. Your web browser seeks this answer by sending a DNS query to the gateway. If the gateway is unable to provide a satisfactory answer, you can configure your network interface to send the DNS query to a different DNS server.
 
 <hr/>
 
@@ -65,7 +65,7 @@ Did you answer the question above? It’s meant to make you think a little; that
 
 ## What I’ll be covering next
 
-**Next issue:** DNS lookup and resolving (how do I know which IP address to send this packet to?)
+**Next issue:** Private IP addresses – how do I use one IP address for all my devices?
 
 **Sometime in the future:** What is:
 
