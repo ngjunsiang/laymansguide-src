@@ -2,7 +2,7 @@ Previously: Private IP addresses are special IP addresses that routers will trea
 
 Last week, I tried to answer the question "how do all my devices manage to share the one precious IP address assigned to me by my ISP?", and in the process introduced two more acronyms: DHCP and NAT. I don’t intend to spam this newsletter with acronyms, but to use them as neat little terms that conveniently capture ideas about how different parts of the complete Internet experience works. So if you never remember what DHCP is, don’t fret over it; you won’t see it often unless you configure routers or servers often.
 
-In a nutshell, DHCP is how you get a (private) IP address when you connect to your router. Before that, here’s one of those niggly little problems that the early Interent pioneers ran into in trying to write awesome services:
+In a nutshell, DHCP is how you get a (private) IP address when you connect to your router. Before that, here’s one of those niggly little problems that the early Internet pioneers ran into in trying to write awesome services:
 
 ## MAC address: Media Access Control address
 
