@@ -72,11 +72,11 @@ Port numbers 49152 to 65535 are available for anyone to use. Tinkerers, hackers,
 
 Short and sweet! Issues 30-33 are my summary of how data packets find their way across the internet (via IP addresses) and to the right apps (via port numbers). It’s amazing that this is basically how almost all Internet traffic gets routed; the rules are simple and hence very scalable, you don’t need massive computation to get packets to the right places (but you do need massive hardware to process lots of packets quickly).
 
-In the next few issues, I’ll go into some security and performance considerations for internet traffic: VPNs, traffic blocking, and internet speeds.
+In the next few issues, I’ll go into some security and performance considerations for internet traffic: firewalls and traffic blocking, VPNs, and internet speeds.
 
 ## What I’ll be covering next
 
-**Next issue:** VPNs: Virtual Private Networks
+**Next issue:** Firewalls and traffic blocking
 
 **Sometime in the future:** What is:
 
