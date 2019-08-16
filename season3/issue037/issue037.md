@@ -57,7 +57,7 @@ Notice that:
 3. But they take longer, because some of the servers along the way have really high latency (almost 300 milliseconds; that’s slower than human reaction time)
 4. My ISP is M1, but sometimes the packets can go through other ISP servers as well (hop 7)
 
-**Issue summary:** The process of forwarding data packets from server to server takes time. Each hop a data apcket takes adds to the latency. The more hops a packet must undergo, the longer the latency. The slower the servers along the route, the slower the latency as well.
+**Issue summary:** The process of forwarding data packets from server to server takes time. Each hop a data packet takes adds to the latency. The more hops a packet must undergo, the longer the latency. The slower the servers along the route, the longer the latency as well.
 
 <hr/>
 
