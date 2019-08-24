@@ -14,13 +14,15 @@ Github page for laymansguide
 Loading this page with the Network tab of Developer Tools open produces this report:
 
 <span style="text-align:center">
-![Developer Tools showing network activity while loading a Github page](https://github.com/ngjunsiang/laymansguide/blob/master/season3/issue038/issue038_01.png?raw=true)<br />
+![Developer Tools showing network activity while loading a Github page](https://github.com/ngjunsiang/laymansguide/blob/master/season3/issue038/issue038_02.png?raw=true)<br />
 Developer Tools, Network view
 </span>
 
-This is a summary of the network activity that is happening while the page is loading. The top ribbon, showing time in milliseconds (ms) and a series of horizontal lines, is what is known as a _waterfall chart_. Each line represents the loading of a resource—anything that the page requests while it is loading. Lines stacked on top of each other represent resources that are being loaded simultaneously (ideal), while lines joined end-to-end represent resources that are being loaded in tandem, one after the other (not ideal).
+This is a summary of the network activity that is happening while the page is loading. The top ribbon, showing time in milliseconds (ms) and a series of horizontal lines, is what is known as a _waterfall chart_. (You can also see this chart in the rightmost column below the ribbon.)
 
-The resource list below it shows the resources that were loaded. You see that all kinds of files are needed: documents, stylesheets, scripts, image files (svg, gif, jpeg, png, webp), icons (.ico), and more.
+Each line represents the loading of a resource—anything that the page requests while it is loading. Lines stacked on top of each other represent resources that are being loaded simultaneously (ideal), while lines joined end-to-end represent resources that are being loaded in tandem, one after the other (not ideal).
+
+The resource list below it shows the resources that were loaded. You see that all kinds of files are needed: documents, stylesheets, scripts, image files (svg, gif, jpeg, png, webp), icons (.ico), and more. The vertical blue line represents the point where the web browser has loaded and processed the main document (first item in the resource list). The vertical red line represents the point where the webpage is considered to be loaded (able to display its main content), while secondary resources are still loading in the background.
 
 Why can’t they all be loaded simultaneously to save time? Sit down and I’ll tell you a story …
 
@@ -72,23 +74,23 @@ loads other requested resources, such as stylesheets, images, and scripts (Stage
 **Bonus content:** I tried this with the Baidu homepage, which looks like this:
 
 <span style="text-align:center">
-![Baidu homepage](https://github.com/ngjunsiang/laymansguide/blob/master/season3/issue038/issue038_01.png?raw=true)<br />
+![Baidu homepage](https://github.com/ngjunsiang/laymansguide/blob/master/season3/issue038/issue038_03.png?raw=true)<br />
 Baidu homepage
 </span>
 
 and the network activity from loading it:
 
 <span style="text-align:center">
-![Developer Tools showing network activity while loading Baidu homepage](https://github.com/ngjunsiang/laymansguide/blob/master/season3/issue038/issue038_01.png?raw=true)<br />
+![Developer Tools showing network activity while loading Baidu homepage](https://github.com/ngjunsiang/laymansguide/blob/master/season3/issue038/issue038_04.png?raw=true)<br />
 Developer Tools, Network view
 </span>
 
-It takes slightly longer to load, but most of that time is from loading a single `gif`. I wont examine the elements here, in the season on the internet cloud, I’ll explain more what some of these elements do.
+It takes slightly longer (about 400 ms longer) to load, but most of that time is from loading a single `gif`. I wont examine the elements here, in the season on the internet cloud, I’ll explain more what some of these elements do.
 
 So far, we have identified 3 sources of latency:
 
 1. DNS resolving ([Issue 29](https://buttondown.email/laymansguide/archive/lmg-s3-issue-29-how-to-resolve-a-hostname/)), which translates the domain names in the requests to IP addresses that we can request data from,
-2. Data packet routing([Issue 37](https://buttondown.email/laymansguide/archive/lmg-s3-issue-37)), which adds to latency with each hop through yet another gateway,
+2. Data packet routing ([Issue 37](https://buttondown.email/laymansguide/archive/lmg-s3-issue-37)), which adds to latency with each hop through yet another gateway,
 3. Webpage loading (this issue), where documents or scripts that are loaded may request yet more resources.
 
 All of these layers of information gathering can add up to a few seconds of latency—a big turnoff for folks who have come to expect near-instantaneous response from apps. And often, our pages don’t appear to take that long to load, do they?
