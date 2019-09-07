@@ -51,17 +51,17 @@ And Season 3’s a wrap! I know I may have mentioned that I don’t intend to wr
 
 ## What I’ll be covering next
 
-**Next season:** I’ve talked so much about networks: how they work and what they do, and then used that to build up to an explanation for “why is the internet so slow?”. It’s not a complete explanation yet, that will still take awhile, but I think we’re off to a good start.
+**Next season:** I’ve talked so much about networks: how they work and what they do, and then used that to build up to an explanation for “why is the internet so slow?”. It’s not a complete explanation yet—that will still take awhile—but I think we’re off to a good start.
 
 As I wrote Season 3, it gradually became clear to me that before I start writing about cloud computing, I’m going to need to talk about data first. Computers ultimately store everything in binary, like 01010101110010100010010101010101, so how do they use something so basic to represent everything from text to images to audio to videos and more? and how do they set up a system for storing and retrieving this information easily?
 
-I’m not going to talk about binary and hex numbers much if at all; I don’t think it’s relevant for a newsletter like this. But since so many things are measured in bits and bytes, it’s impossible to escape that discussion. I’m also going to talk about some things everybody should know about basic data types: text, images, and audio (videos won’t fit into even half a newsletter!). and then I’ll talk about data compression, file formats,
+I’m not going to talk about binary and hex numbers much if at all; I don’t think it’s relevant for a newsletter like this. But since so many things are measured in bits and bytes, it’s impossible to escape that discussion. I want to build the issues up to answer questions I’ve been getting, like “why do my JPG files have this weird fuzz”, and “why are my audio files so large”, and “can I make this zip file smaller by putting it in another zip file”, and “why do I get these weird rectangles or question marks in my web browser”, and many more :)
 
 **Sometime in the future:** What is:
 
 - booting up? [Issue 15]
 - a cookie? [Issue 8]
-- a cache? [Issue 8]
+- ~~a cache? [Issue 8]~~
 - XSS? [Issue 8]
 - a CDN? [Issue 8]
 - Unicode? And what does it have to do with emoji? [Issue 8]
