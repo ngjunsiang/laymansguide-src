@@ -1,6 +1,8 @@
 **Previously:** 8 bits comprise 1 byte. Humans count bytes in multiples of thousands, while computers count bytes in multiples of 1,024.
 
-It’s still difficult to wrap out minds around how computers do everything with exactly two symbols: 0 and 1. Let’s start simple: How do computers represent text?
+It’s still difficult to wrap our minds around how computers do everything with exactly two symbols: 0 and 1. Let’s start simple: How do computers represent text?
+
+The simple answer is that text can be represented as numbers. In the simplest scheme we know of, A=1, B=2, C=3, and so on. A computer does something more complicated, it keeps a table of characters and the numbers that represent them, in an **encoding table**. One encoding that is commonly used for plain text is known as the American Standard Code for Information Interchange, or ASCII table.
 
 ## Some ASCII background and history
 
