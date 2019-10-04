@@ -11,13 +11,15 @@ To put things in some context, keep in mind that ASCII actually predates the int
 In the 1920s, the Murray code was developed into the International Telegraph Alphabet No. 2 code (ITA2 code). Behold:
 
 <span style="text-align:center">
-![ITA2 table](https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/International_Telegraph_Alphabet_2.jpg/799px-International_Telegraph_Alphabet_2.jpg)
+![ITA2 table](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue041/issue041_01.jpg?raw=true)<br />
+Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:International_Telegraph_Alphabet_2.jpg)
 </span>
 
 But the Murray code actually used more bits to transmit the same information! In Morse code, every letter is represented with between 1 to 5 symbols. Each symbol is either a dash or a dot:
 
 <span style="text-align:center">
-![Morse Code table](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/International_Morse_Code.svg/450px-International_Morse_Code.svg.png)
+![Morse Code table](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue041/issue041_02.png?raw=true)<br />
+Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:International_Morse_Code.svg)
 </span>
 
 What do we gain from using more symbols to transmit each number or letter? If you compare the two, you see that ITA2 has some things that are missing in Morse code:
@@ -34,8 +36,9 @@ Symbols and spaces are easy enough to understand, and very welcome; if you’ve 
 With the advent of the typewriter, people had access to nicely formatted text. You could type text on multiple rows instead of one long row! But you had to remember to do the actions when using a typewriter for it to be formatted properly.
 
 <span style="text-align:center">
-![A typewriter on a table](https://upload.wikimedia.org/wikipedia/commons/0/05/Underwoodfive.jpg)<br />
-The Underwood Five typewriter
+![A typewriter on a table](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue041/issue041_03.jpg?raw=true)<br />
+The Underwood Five typewriter<br />
+Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Underwoodfive.jpg)
 </span>
 
 There were two separate actions involved as you pulled the leftmost lever to the right: (1) The carriage, which holds the paper and moves a bit to the right after each letter is typed, now resets its position so you can start typing from the left again, and (2) the paper is moved up so you can begin typing on the next line.
@@ -49,8 +52,9 @@ ITA2 could not only send letters and symbols, it could send formatting commands!
 The ASCII code chart expands the capabilities of ITA2, while requiring 7 bits for each character. Each character is situated in a specific row and column, out of 8 columns and 16 rows which are numbered starting from 0. (Note that 8 is 2^3 and requires 3 bits, 16 is 2^4 and requires 4 bits.)
 
 <span style="text-align:center">
-![ASCII code chart](https://upload.wikimedia.org/wikipedia/commons/c/cf/USASCII_code_chart.png)<br />
-(An early version of) The US ASCII code chart. Each row number is represented by 4 bits, while each column number is represented by 3 bits.
+![ASCII code chart](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue041/issue041_04.png?raw=true)<br />
+(An early version of) The US ASCII code chart. Each row number is represented by 4 bits, while each column number is represented by 3 bits.<br />
+Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:USASCII_code_chart.png)
 </span>
 
 Technical details aside, look at what ASCII has:

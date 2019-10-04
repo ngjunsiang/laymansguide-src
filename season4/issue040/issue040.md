@@ -89,7 +89,6 @@ We started with a (figurative) bit of bean-counting, let’s get right into how 
 
 - booting up? [Issue 15]
 - a cookie? [Issue 8]
-- ~~a cache? [Issue 8]~~
 - XSS? [Issue 8]
 - a CDN? [Issue 8]
 - Unicode? And what does it have to do with emoji? [Issue 8]
