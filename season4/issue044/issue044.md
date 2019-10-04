@@ -71,7 +71,6 @@ Sound is so easily taken for granted, but how exactly is it represented in the c
 - a cookie? [Issue 8]
 - XSS? [Issue 8]
 - a CDN? [Issue 8]
-- ~~Unicode? And what does it have to do with emoji? [Issue 8]~~
 - a good reason developers write code and give it away for free online? [Issue 21]
 - compiling code into an application [Issue 26]?
 - firmware? [Issue 34]

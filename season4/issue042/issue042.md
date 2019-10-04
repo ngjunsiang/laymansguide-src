@@ -28,7 +28,7 @@ Computer systems in these other countries soon came up with their own ways of re
 
 It was encoding hell.
 
-If you remember the internet circa the 90s and early 00s, the internet often had pages of what looked like gibberish. Because webpages did not use to include information about their encoding, most of the time web browsers simply had to guess. If your page wasn’t encoded in ASCII (or ISO 8859-1), it was anybody’s guess what encoding you were using. You just tried each encoding until you got a page that makes sense!
+If you remember the internet circa the ’90s and early ’00s, the internet often had pages of what looked like gibberish. Because webpages then did not include information about their encoding, most of the time web browsers simply had to guess. If your page wasn’t encoded in ASCII (or ISO 8859-1), it was anybody’s guess what encoding you were using. You just tried each encoding until you got a page that makes sense!
 
 That simply would not do.
 
@@ -53,7 +53,7 @@ Aside from the fact that it could include encodings for just about any character
 - Unicode is able to “craft” characters by combining multiple glyphs.
   - For instance, a&#773; is not represented with a single character, but can be printed through combining the 'a' glyph with the ◌̅  (Combining Overline) glyph.
 - Unicode has an area set aside for alternate character representations.
-  - For instance, 'fl' is sometimes stylistically combined into an 'ﬂ' ligature; there is room for this ligature in Unicode.
+  - For instance, “fl” is sometimes stylistically combined into an “ﬂ” ligature; there is room for this ligature in Unicode. (Try to select the ‘fl’s above if you can’t see the difference.)
   - Some high-quality fonts provide such alternate glyph representations, and with the right software (such as Adobe InDesign) you can make use of them.
   - Some languages (e.g. Arabic) actually require ligatures for combining adjacent glyphs, so this is a pretty big deal.
 - With the right font type (i.e. [OpenType](https://en.wikipedia.org/wiki/OpenType)), you can actually include programmatic features though Unicode.
@@ -67,6 +67,8 @@ Aside from the fact that it could include encodings for just about any character
 <hr/>
 
 That was really short, thank goodness. I’ve of course skipped over Unicode complexity, because the average layperson does not need to know that. But people need to know that it is not possible, and actually _easy_, to represent different languages on the same page, and there is no excuse not to do so.
+
+What’s really interesting is that it took 20 years or more for a format like Unicode to be conceptualised, born, and finally reach the mainstream. Many ideas in computing are like that. When you see something really novel hit the market, it has probably been brewing in somebody’s head for over a decade!
 
 I think we’re as done with text as we need to be. I’ll start going into other types of data in the next issue, starting with colours and images.
 

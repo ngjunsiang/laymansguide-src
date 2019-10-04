@@ -6,13 +6,13 @@ This is going to be a recurring theme: If we want to be able to differentiate mo
 
 How many bits is good enough? In the case of text, that is determined largely by the upper limit on the number of symbols we might possibly need to communicate. But how do we decide that for colour? The number of different shades of colours is possibly infinite, and yet we can’t possibly differentiate between really fine shades, nor can our screens possibly produce all of them …
 
-In this newsletter, I’ll be summarising and oversimplifying decades of colour theory and colour vision research. Buckle up!
+In this issue, I’ll be summarising and oversimplifying decades of colour theory and colour vision research. Buckle up!
 
 ## The human eye
 
 Any effective colour system must take into account how the human eye is structured, and how vision occurs. Today, we understand that humans are trichromatic: there are 3 types of cone cells in the eye (and also 1 type of rod cell, which I won’t be explaining here), and each one recognises a different shade of colour: red, green, blue. Each type of cone cell can differentiate roughly 100 different shades, which theoretically enables us to distinguish 1 million shades of colour (100^3).
 
-So it makes good sense that our colour systems in computers evolved similarly, to store single dots of colour as a combination of red, green, and blue. To be able to store 100 different shades, we will need at least 6 bits (2^6 = 128), but [computer systems like things in 8s](TODO: Issue 40 link). For this and other historical reasons, 1 byte (8 bits) are used for each shade, giving us 256 shades of red, green, and blue each. That’s over 16 million (256^3) shades of colour!
+So it makes good sense that our colour systems in computers evolved similarly, to store single dots of colour as a combination of red, green, and blue. To be able to store 100 different shades, we will need at least 6 bits (2^6 = 128), but [computer systems like things in 8s](https://buttondown.email/laymansguide/archive/lmg-s4-issue-40-bits-and-bytes/). For this and other historical reasons, 1 byte (8 bits) are used for each shade, giving us 256 shades of red, green, and blue each. That’s over 16 million (256^3) shades of colour!
 
 ## Colour encoding
 
@@ -87,7 +87,6 @@ After examining a single pixel, I’ll look at a whole image: what does it take 
 - a cookie? [Issue 8]
 - XSS? [Issue 8]
 - a CDN? [Issue 8]
-- ~~Unicode? And what does it have to do with emoji? [Issue 8]~~
 - a good reason developers write code and give it away for free online? [Issue 21]
 - compiling code into an application [Issue 26]?
 - firmware? [Issue 34]
