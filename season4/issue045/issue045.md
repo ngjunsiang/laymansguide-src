@@ -62,7 +62,7 @@ The human range of hearing ranges from 20 Hz to 20 kHz (that’s 20,000 Hz). Acc
 
 So for 1 second of audio, uncompressed, we will need 16 bits × 44,100 samples = 705,600 bits, or 86 kB. 1 minute of uncompressed audio would be 5.05 MB!
 
-**Issue summary:** Humans can distinguish 120 dB of loudness, which means the loudest perceivable sound is a million times louder than the softest perceivable sound. CD audio provides 16 bits of information per sample, sufficient to provide 96 dB. Humans have a hearing range from 20 Hz to 20 kHz. CD audio is sampled at 44.1 kHz. Uncompressed audio thus requires 705,600 bits, or 86 kB.
+**Issue summary:** Humans can distinguish 120 dB of loudness, which means the loudest perceivable sound is a million times louder than the softest perceivable sound. CD audio provides 16 bits of information per sample, sufficient to provide 96 dB. Humans have a hearing range from 20 Hz to 20 kHz. CD audio is sampled at 44.1 kHz. Uncompressed audio thus requires 705,600 bits per second, or 86 kB/s.
 
 <hr/>
 

@@ -17,7 +17,7 @@ You see, on a computer, you can resize an image as you like. I’m sure you have
 
 In more finicky circles, the term “resolution” is used in another way: to refer to the ratio of pixels to a physical dimension, usually in inches (this is a legacy thing, I can’t explain why it’s imperial and not metric).
 
-For example, if that 1000×3000 image was meant to be displayed as a 10cm×30cm image on screen (approx. 4 inches by 12 inches), it would have a resolution of 250 pixels per inch (**PPI**)— 1000 pixels ÷ 4 inches). If you could see pixels, and you took out a ruler to count the number of dots in a 1-inch line across or down the image, there would be 250 pixels.
+For example, if that 1000×3000 image was meant to be displayed as a 10cm×30cm image on screen (approx. 4 inches by 12 inches), it would have a resolution of 250 pixels per inch (**PPI**)— 1000 pixels ÷ 4 inches. If you could see pixels, and you took out a ruler to count the number of dots in a 1-inch line across or down the image, there would be 250 pixels.
 
 If it was displayed as a 100cm×300cm image instead, that printed image would have a resolution of 25 pixels per inch (1000 pixels ÷ 40 inches). And it would look 10 times blurrier; each image pixel would be about 1mm wide!
 
