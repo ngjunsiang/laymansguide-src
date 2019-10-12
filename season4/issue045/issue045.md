@@ -38,27 +38,27 @@ These numeric values can then be stored digitally as bits ([Issue 40](https://bu
 
 ## How high do these values go? Of decibels and dB
 
-Well … how many would we need? That depends on how loud we need the sound to be … or does it?
+Well … how many different values would we need? That depends on how loud we need the sound to be … or does it?
 
 The maximum loudness actually depends on your speaker, not on the signal. The number of levels we can represent in the sound should depend on the range between the loudest and softest sound, shouldn’t it? If we have sixteen levels, we can represent a range of sound where the softest sound is no softer than 16 times below the loudest sound. Any sounds softer than that can’t be represented on the waveform.
 
-So just how many levels can the ear make out? Welcome to the field of psychoacoustics.
+So just how many levels can the ear make out? Welcome to the field of psychoacoustics, the study of how sound is processed in the ear and perceived in the brain.
 
-Loudness is measured in **decibels** (dB). The softest sound the human ear can hear corresponds to 20 microPa (microPascals) of pressure; this is taken to be 0 dB, a reference point. A sound 10 times louder (200 microPa) is 20 dB. A jet liner taking off (120 dB) is 10^6 times louder, or a million times louder! That is generally the limit of human hearing: from 0 to 120 dB, or a range of 120 dB.
+Loudness is measured in **decibels** (dB). The softest sound the human ear can hear corresponds to 20 microPa (microPascals) of pressure; this is taken to be 0 dB, a reference point. A sound 10 times louder (200 microPa) is 20 dB, so every increase of 20 dB represents a tenfold increase in loudness. A jet liner taking off (120 dB) is 10^6 times louder, or a million times louder! That is generally the limit of human hearing: from 0 to 120 dB, or a range of 120 dB.
 
-CD-Audio quality audio uses 16 bits to store a single sample of sound; that provides 65536 (2^16) different levels, which corresponds to a 96 dB range of loudness. I doubt we will find speakers that can produce close to jet engine levels of sound, and if we do, they probably won’t be using CD Audio as a sound format.
+CD-Audio quality audio uses 16 bits to store a single sample of sound; that provides 65,536 (2^16) different levels, which corresponds to a 96 dB range of loudness. I doubt we will find speakers that can produce close to jet engine levels of sound, and if we do, they probably won’t be using CD Audio as a sound format, so this is pretty much sufficient for most quality audio you’ll find on the internet.
 
-Today, 16-bit audio is pretty much standard on all computers. Audiophiles will tout the benefits of 24-bit audio, but we won’t go into detail on that in Layman’s Guide to Computing.
+Today, 16-bit audio is pretty much standard on all computers. Audiophiles will tout the benefits of 24-bit audio, but we won’t go into detail on that in a layman’s guide to computing.
 
-So each point produced from pulse code modulation (PCM, above) of sound contains 16 bits of information. How many samples do we need?
+So each point produced from pulse code modulation (PCM, above) of sound contains 16 bits (2 bytes) of information. How many samples do we need?
 
 ## Sampling and frequency
 
 You probably can’t make out the individual waves in the waveform much earlier in this issue; that’s because the waveform is visually squeezed horizontally. But if we expanded it, you would be able to make out individual waves.
 
-A sound with higher pitch has higher frequency; it has more waves per second. A sound with lower pitch has lower frequency; it has fewer waves per second. It is the upper limit we need to worry about: we must have enough samples per second to be able to represent so many waves.
+A sound with higher pitch has higher frequency; it has more waves per second. A sound with lower pitch has lower frequency; it has fewer waves per second. It is the upper limit we need to worry about: we must have enough samples per second to be able to represent so many waves. To be able to see a complete wave, we need at least two points: one for the peak, and one for the valley. This agrees with what signal engineers learn from the [Nyquist-Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist–Shannon_sampling_theorem): to store a 1 Hz sound (1 wave per second), you need at least 2 samples per second (to distinguish the peak and valley of the wave).
 
-The human range of hearing ranges from 20 Hz to 20 kHz (that’s 20,000 Hz). According to the [Nyquist-Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist–Shannon_sampling_theorem), to store a 1 Hz sound (1 wave per second), you need at least 2 samples per second (to distinguish the high and low points). To store a 20 kHz sound, you need at least 40,000 samples per second. CD-quality audio is sampled at 44,100 samples per second (enough for up to 22.05 kHz), which is sufficient to cover the human hearing range of frequencies.
+The human range of hearing ranges from 20 Hz to 20 kHz (that’s 20,000 Hz).  To store a 20 kHz sound, you need at least 40,000 samples per second. CD-quality audio is sampled at 44,100 samples per second (enough for up to 22.05 kHz), which is sufficient to cover the human hearing range of frequencies.
 
 So for 1 second of audio, uncompressed, we will need 16 bits × 44,100 samples = 705,600 bits, or 86 kB. 1 minute of uncompressed audio would be 5.05 MB!
 
@@ -72,7 +72,7 @@ This issue and the past 2 issues set the stage for the next issue, which is the 
 
 **Next issue:** Lossy compression: a computer’s attempt to summarise
 
-We’ve all done this before. “What were you talking about with X?” “Oh, we were just talking about Y. I said ___ and X said ____ and that was about all that was important.” It’s called summarising, and if we didn’t do it, 75% of our lives would just be talking.
+We’ve all done this before. “What were you talking about with X?” “Oh, we were just talking about Y. I said _blah_ and X said _blah_ and that was about all that was important.” It’s called summarising, and if we didn’t do it, 75% of our lives would just be talking.
 
 How do computers summarise and attempt to convey only the important parts of all the information we store and transmit? This and more in the next issue on lossy compression!
 

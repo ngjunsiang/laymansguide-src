@@ -1,6 +1,6 @@
 **Previously:** Humans can distinguish 120 dB of loudness, which means the loudest perceivable sound is a million times louder than the softest perceivable sound. CD audio provides 16 bits of information per sample, sufficient to provide 96 dB. Humans have a hearing range from 20 Hz to 20 kHz. CD audio is sampled at 44.1 kHz. Uncompressed audio thus requires 705,600 bits per second, or 86 kB/s.
 
-Lots of numbers in the last issue, and you don’t need to remember any of them, but those numbers were necessary to demonstrate some fundamental facts about data and information: We need a heck lot of data to produce images and audio that doesn’t sound distorted! And this is closely tied to the limits of our eyes and ears.
+Lots of numbers in the last issue, and you don’t need to memorise any of them, but those numbers were necessary to demonstrate some fundamental facts about data and information: We need a heck lot of data to produce images and audio that doesn’t sound distorted! And this is closely related to the limits of our eyes and ears.
 
 ## Why are the images and audio files on the internet so much smaller?
 
@@ -18,7 +18,9 @@ If you’re thinking “this part is going to be incredibly math-ey”, you are 
 
 In [Issue 44](https://buttondown.email/laymansguide/archive/lmg-s4-issue-44-image-compression/), I mentioned that the human eye has 3 types of cones that sense red, green, and blue light. What I didn’t mention then is that the human eye is that partly due to the way these cones are distributed, the human eye is more sensitive to differences in brightness (or “**luma**”) than differences in colour (“**chroma**”). A black-and-white image has only luma information (brightness), while a colour image has both luma and chroma information—you can mathematically separate the data of a colour image into the brightness component (which looks just like a black-and-white photo), and a colour component, which looks like nothing you have ever seen. The closest thing to chroma information would be analog colour photo negatives, if you were born early enough to get to see those.
 
-So that’s another way of representing image information: you can either represent it as RGB (red-green-blue) colour values, or YUV (1 luma value, Y, and 2 chroma values, U & V). In RGB, all 3 colour components are equally important and you can’t treat them differently, but in YUV you can process them differently. Since the human eye is less sensitive to chroma (colour) information, the JPEG format frequently compresses the chroma components, by averaging each 2×2 group of pixels into 1 value for U and V each. (This process is known as subsampling.) Theoretically that halves the amount of data required for the same image! (4/4 Y + 1/4 U + 1/4 V = 6/12 of the original information)
+So that’s another way of representing image information: you can either represent it as RGB (red-green-blue) colour values, or YUV (1 luma value, Y, and 2 chroma values, U & V). In RGB, all 3 colour components are equally important and you can’t treat them differently, but in YUV you _can_ process them differently to achieve lossy compression.
+
+Since the human eye is less sensitive to chroma (colour) information, in the JPEG image format, the chroma components are compressed by averaging each 2×2 group of pixels into 1 value for U and V each. (This process is known as subsampling.) Theoretically that halves the amount of data required for the same image! (4/4 Y + 1/4 U + 1/4 V = 6/12 of the original information)
 
 <span style="text-align:center">
 ![4 images with different chroma subsampling](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue046/issue046_01.jpg?raw=true)
@@ -29,7 +31,7 @@ Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Colorcomp.jpg)
 
 ## Lossy image compression: luma transform
 
-Furthermore, even within the luma channel (i.e. looking at luma information only), the human eye is more sensitive to sharp changes in brightness across adjacent pixels than gradual changes in brightness across adjacent pixels. through a Discrete Cosine Transform (DCT) algorithm, a computer can convert the luma information into parts with sharper changes, and parts with gradual changes.
+Furthermore, even within the luma channel (i.e. looking at luma information only), the human eye is more sensitive to sharp changes in brightness across adjacent pixels than gradual changes in brightness across adjacent pixels. Through a Discrete Cosine Transform (DCT) algorithm, a computer can separate the luma information and differentiate parts with sharper changes, and parts with gradual changes.
 
 As the compression level increases (this is the quality setting you often play with in Photoshop and other image-editing software), the computer increasingly discards more and more information, starting from the gradual-change information. For photograph images, you will generally hit diminishing returns below 85%: each 1% decrease in quality brings you less and less savings on filesize.
 
@@ -43,29 +45,29 @@ Those of you who love your bass, or like tweaking with sound settings, or have w
 
 Through transforms! DCT, which I mentioned in the previous section, is one such transform; audio formats often use another one, known as the Fast Fourier Transform (FFT). Aren’t you glad this is a newsletter about computing and not about math? Anyway, a transform lets us transform information organised by position (e.g. in images) or by time (e.g. in audio) into information organised by other properties, such as frequency.
 
-The FFT algorithm organises audio information (for a certain time length) by frequency. Depending on your equaliser settings, it increases or decreases the weightage of different frequencies to produce the sound you want, be it bass-heavy rock or medium-low jazz.
+The FFT algorithm organises audio information (for a certain time length) by frequency. Depending on your equaliser settings, it increases or decreases the weightage of different frequencies to produce the sound you want, be it bass-heavy rock or medium-light jazz.
 
 But the FFT algorithm can do much more! It is known that most sounds we hear are typically in the 40 Hz to 19 kHz range, so it is usually a safe bet to discard frequency information below 40 Hz and above 19 kHz. If we lower the frequency ceiling for discarding, to 16 kHz, we can reduce the amount of audio information even more.
 
 ## Lossy audio compression: masking
 
-It is also known that the human ear, when it hears a very loud sound in the vicinity of one frequency, will not process much softer sounds in other frequencies. This is known as masking. With the help of the FFT algorithm, it’s easy to identify which frequencies will be masked for each range of time samples, and therefore can be discarded.
+It is also known that the human ear, when it hears a very loud sound around one frequency, will not process much softer sounds in other frequencies. This is known as masking. With the help of the FFT algorithm, it’s easy to identify which frequencies will be masked for each range of time samples, and therefore can be discarded.
 
-Furthermore, because of the way the cochlea works, right after hearing a very loud sound, the ear will not be able to hear softer sounds for a fraction of a second (maybe the fluid in the cochlea of the ear needs some time to settle?). So softer sounds occurring right after a loud sound are masked. We can discard that audio information too.
+Furthermore, because of the way the cochlea works, right after hearing a very loud sound, the ear will not be able to hear softer sounds for a fraction of a second (maybe the fluid in the cochlea of the ear needs some time to settle? I don’t know). So softer sounds occurring right after a loud sound are **masked**. We can discard that audio information too.
 
-Lastly, long periods of silence (a couple seconds for example) are not worth all that information as well, and can be further compressed.
+Lastly, long periods of silence (a couple seconds for example) are not worth all that information they take up as well, and can be further compressed.
 
 ## Lossy audio compression: lowering dynamic range
 
 We don’t always need to record audio with the full dynamic range of human hearing. For an orchestra concert, maybe that is important, but if you are just recording an interview, you don’t need to hear every tiny detail of how that person speaks (unless maybe you’re a doctor who can pick up telltale signs of cancer from the way a person speaks? That would be amazing.). Human voice frequency typically ranges from 85 to 255 Hz, and only covers a range of up to 65 dB. That’s a full 30 dB lower than the 96 dB of CD audio, which means we don’t need 16-bit audio to store that; about 11 or 12 bits would be sufficient. And you won’t need a 44.1 kHz sampling rate for that; 11.025 kHz is sufficient.
 
-That, it a nutshell, is how we get such small images and audio files on the internet. If you’re particularly sensitive you can often make out the difference caused by this lost information. But most of the time, we’re not listening or looking closely, and it’s easy to overlook such minor differences.
+That, in a nutshell, is how we get such small images and audio files on the internet. If you’re particularly sensitive you can often make out the difference caused by this lost information. But most of the time, we’re not listening or looking closely, and it’s easy to overlook such minor differences.
 
 **Issue summary:** Computers compress image and audio data through a process similar to summarising: it analyses the data using algorithms that use brightness and colour instead of RGB values for images, and different frequencies of sound rather than samples at different points in time for audio. These algorithms then discard parts of the information that human senses do not perceive easily, and reduce the resolution of other parts that human senses are not as sensitive to.
 
 <hr/>
 
-It took me a long while to understand the lossy compression algorithms well enough to explain them simply, and even longer to summarise them still further without using terms like RLE and subsampling. If you found the previous two issues overly technical, I hope this issue makes up for that by helping you understand compression in less time than detailed technical articles elsewhere, yet in more depth than your mainstream internet sources.
+It took me a long while to understand the lossy compression algorithms well enough to explain them simply, and even longer to summarise them still further without using terms like RLE, high- and low-frequency components, and subsampling. If you found the previous two issues overly technical, I hope this issue makes up for that by helping you understand compression in less time than detailed technical articles elsewhere, yet in more depth than your mainstream internet sources.
 
 ## What I’ll be covering next
 
@@ -89,4 +91,4 @@ I didn’t manage to get into what happens when you save, edit, and re-save a JP
 - What is HTML? [Issue 38]
 - What is OpenType? And what are fonts anyway? [Issue 42]
 - What is compression? [Issue 43]
-~~- Why are music files so large when a voice call over internet uses so little data? [Issue 45]~~
+- ~~Why are music files so large when a voice call over internet uses so little data? [Issue 45]~~
