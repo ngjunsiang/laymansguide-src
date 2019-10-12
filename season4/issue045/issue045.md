@@ -88,4 +88,4 @@ How do computers summarise and attempt to convey only the important parts of all
 - What is HTML? [Issue 38]
 - What is OpenType? And what are fonts anyway? [Issue 42]
 - What is compression? [Issue 43]
-- Why are music files so large when a voice call over internet uses os little data? [Issue 45]
+- Why are music files so large when a voice call over internet uses so little data? [Issue 45]
