@@ -88,7 +88,7 @@ I didn’t manage to get into what happens when you save, edit, and re-save a JP
 - a good reason developers write code and give it away for free online? [Issue 21]
 - compiling code into an application [Issue 26]?
 - firmware? [Issue 34]
-- What is HTML? [Issue 38]
-- What is OpenType? And what are fonts anyway? [Issue 42]
-- What is compression? [Issue 43]
+- HTML? [Issue 38]
+- OpenType? And what are fonts anyway? [Issue 42]
+- ~~What is compression? [Issue 43]~~
 - ~~Why are music files so large when a voice call over internet uses so little data? [Issue 45]~~

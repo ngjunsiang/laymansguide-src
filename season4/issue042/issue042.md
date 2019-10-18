@@ -66,7 +66,7 @@ Aside from the fact that it could include encodings for just about any character
 
 <hr/>
 
-That was really short, thank goodness. I’ve of course skipped over Unicode complexity, because the average layperson does not need to know that. But people need to know that it is not possible, and actually _easy_, to represent different languages on the same page, and there is no excuse not to do so.
+That was really short, thank goodness. I’ve of course skipped over Unicode complexity, because the average layperson does not need to know that. But people need to know that it is possible, and actually _easy_, to represent different languages on the same page, and there is no excuse not to do so.
 
 What’s really interesting is that it took 20 years or more for a format like Unicode to be conceptualised, born, and finally reach the mainstream. Many ideas in computing are like that. When you see something really novel hit the market, it has probably been brewing in somebody’s head for over a decade!
 
