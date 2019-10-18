@@ -18,9 +18,9 @@ In lossless compression, the predictive algorithm already knows what the next sa
 
 The most common image formats that use compression are GIF (yes, really) and PNG. Some kinds of images, such as screenshots, have patterns that are repeated. The algorithm used in GIF and PNG, LZ77, attempts to spot these patterns, and reduce them to 1) the repeating portion, and 2) the number of repetitions. This is known as **run-length encoding**. The nature of images makes the process easier, as each pixel only has 256 possible values rather than 65536.
 
-Those patterns are stored in a table, and *references* to them are used instead. So instead of saying “Pattern 0101011101110110”, the algorithm will store a list of these patterns, and refer to them as Pattern 0, Pattern 1, Pattern 10, Pattern 11, … (these are 1, 2, 3, and 4 respectively, in binary format [Issue 40](https://buttondown.email/laymansguide/archive/lmg-s4-issue-40-bits-and-bytes/).
+Those patterns are stored in a table, and *references* to them are used instead. So instead of saying “Pattern 0101011101110110”, the algorithm will store a list of these patterns, and refer to them as Pattern 0, Pattern 1, Pattern 10, Pattern 11, … (these are 1, 2, 3, and 4 respectively, in binary format ()[Issue 40](https://buttondown.email/laymansguide/archive/lmg-s4-issue-40-bits-and-bytes/)).
 
-This is known as **entropy coding**.[^1] By linking the longest pattern with the smallest reference number (i.e. Pattern 0), the next-longest pattern with the next-smallest reference number (Pattern 1, 10, 11, 100, 101, 110, …) you can reduce quite significantly the number of bits needed to represent the image.
+This is known as **entropy coding**. By linking the longest pattern with the smallest reference number (i.e. Pattern 0), the next-longest pattern with the next-smallest reference number (Pattern 1, 10, 11, 100, 101, 110, …) you can reduce quite significantly the number of bits needed to represent the image.
 
 # Text compression
 
@@ -29,6 +29,8 @@ Text lends itself very well to compression, since there are so many repeated wor
 # What is the maximum possible compression?
 
 Excellent question. Shannon’s source coding theorem[^1] defines a compression limit for each block of information, called Shannon entropy (unbolded, don’t worry!). The source coding theorem says it is impossible to compress data beyond its Shannon entropy.
+
+[^1]: Yes, that’s the same Shannon from Nyquist-Shannon sampling theorem. Claude Shannon is lauded as “the father of information theory” with good reason.
 
 So what is the Shannon entropy of the data? That depends on its predictability. A block of text that only consists of the letter ‘e’ would be highly predictable, and therefore a low Shannon entropy (I will stop using this term and use **predictability** instead). A block of text that is just completely random characters would be unpredictable and would therefore have a high Shannon entropy.
 
@@ -45,8 +47,8 @@ When the first zip file compressed its contents, the predictability of the resul
 If you want greater compression, use a higher compression setting on the original file instead.
 
 <span style="text-align:center">
-![7zip archive settings, showing options for compression level, compression method, and dictionary size](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue046/issue046_01.jpg?raw=true)
-7zip archive settings for zip files.
+![7zip archive settings, showing options for compression level, compression method, and dictionary size](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue047/issue047_01.png?raw=true)<br />
+7zip archive settings for zip files.<br />
 Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Colorcomp.jpg).
 </span>
 
@@ -62,17 +64,17 @@ Shannon’s source coding theorem does not claim that you cannot compress data b
 
 You are getting video and image files from those sources with lots of information thrown away. If you can’t tell the difference, good for you.
 
-[^1] Yes, that’s the same Shannon from Nyquist-Shannon sampling theorem. Claude Shannon is lauded as “the father of information theory” witht good reason.
-
 **Issue summary:** Data cannot be compressed beyond its predictability limit (Shannon entropy) in a lossless fashion. Lossless compression does not discard any information. It generally tries to spot patterns in the data, and represent those patterns with fewer bits, through a combination of predictive coding, run-length encoding, and entropy coding.
 
-**Predictive coding:** express samples as a combination of past samples
-**Run-length encoding:** spot repetitions of patterns in the data
+**Predictive coding:** express samples as a combination of past samples  
+**Run-length encoding:** spot repetitions of patterns in the data  
 **Entropy coding:** Store the list of patterns, using a shorter symbol as reference to the pattern
 
 <hr/>
 
-If the lossy compression articles are hard to read, the lossless compression articles are even worse, because so much of it is math theory. I got the gist of it as best as I can. I don’t like the way most layman explanations in the media completely skip over the details; before I understood lossless compression, these explanations were often no help to me. I think at least knowing what kind of patterns can be found in the data would help with imagining the process, hence the crash-course introductions to predictive coding, run-length encoding, and entropy coding.
+If the lossy compression articles are hard to read, the lossless compression articles are even worse, because so much of it is math theory. I got the gist of it as best as I can.
+
+I don’t like the way most layman explanations in the media completely skip over the details; before I understood lossless compression, these explanations were often no help to me. I think at least knowing what kind of patterns can be found in the data would help with imagining the process, hence the crash-course introductions to predictive coding, run-length encoding, and entropy coding.
 
 ## What I’ll be covering next
 
