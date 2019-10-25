@@ -56,7 +56,9 @@ So each point produced from pulse code modulation (PCM, above) of sound contains
 
 You probably can’t make out the individual waves in the waveform much earlier in this issue; that’s because the waveform is visually squeezed horizontally. But if we expanded it, you would be able to make out individual waves.
 
-A sound with higher pitch has higher frequency; it has more waves per second. A sound with lower pitch has lower frequency; it has fewer waves per second. It is the upper limit we need to worry about: we must have enough samples per second to be able to represent so many waves. To be able to see a complete wave, we need at least two points: one for the peak, and one for the valley. This agrees with what signal engineers learn from the [Nyquist-Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist–Shannon_sampling_theorem): to store a 1 Hz sound (1 wave per second), you need at least 2 samples per second (to distinguish the peak and valley of the wave).
+A sound with higher pitch has higher frequency; it has more waves per second. A sound with lower pitch has lower frequency; it has fewer waves per second. It is the upper limit we need to worry about: we must have enough samples per second to be able to represent so many waves. To be able to see a complete wave, we need at least two points: one for the peak, and one for the valley.
+
+This agrees with what signal engineers learn from the [Nyquist-Shannon sampling theorem](https://en.wikipedia.org/wiki/Nyquist–Shannon_sampling_theorem): to store a 1 Hz sound (1 wave per second), you need at least 2 samples per second (to distinguish the peak and valley of the wave).
 
 The human range of hearing ranges from 20 Hz to 20 kHz (that’s 20,000 Hz).  To store a 20 kHz sound, you need at least 40,000 samples per second. CD-quality audio is sampled at 44,100 samples per second (enough for up to 22.05 kHz), which is sufficient to cover the human hearing range of frequencies.
 
