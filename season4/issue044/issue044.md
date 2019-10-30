@@ -5,7 +5,7 @@ An image is two-dimensional and certainly much larger than a single pixel. How d
 
 ## Image resolution
 
-It is common to hear people refer to an image’s size as its pixel size. When we say that an image has a resolution of 1000×3000 pixels, that means it is 1000 pixels wide by 3000 pixels high. In other words, the image is made up of 3 million pixels of colour, arranged in a grid 100 pixels wide by 300 pixels tall.
+It is common to hear people refer to an image’s size as its pixel size. When we say that an image has a resolution of 1000×3000 pixels, that means it is 1000 pixels wide by 3000 pixels high. In other words, the image is made up of 3 million pixels of colour, arranged in a grid 1000 pixels wide by 3000 pixels tall.
 
 But how large is this image _physically_? Well, that’s a harder question to answer …
 

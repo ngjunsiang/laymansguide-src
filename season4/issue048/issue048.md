@@ -1,4 +1,4 @@
-**Previously:** Data cannot be compressed beyond its predictability limit (Shannon entropy) in a lossless fashion. Lossless compression does not discard any information. It generally tries to spot patterns in the data, and represent those patterns with fewer bits, through a combination of predictive coding, run-length encoding, and entropy coding.
+**Previously:** Data cannot be compressed beyond its predictability limit in a lossless fashion. Lossless compression does not discard any information. It spots patterns in the data and represent them with fewer bits, through a combination of predictive coding, run-length encoding, and entropy coding.
 
 In past issues this season, I went into some detail about how images and sound are represented as data in computers. I also went into a little detail about lossy compression, in which imperceptible information is discarded, and lossless compression, in which the original information can be reconstructed.
 
@@ -19,15 +19,19 @@ These various types of information, if they are time-sensitive (video, audio, an
 
 What we usually understand as a video file is actually a **video container** format. The common ones we encounter online today are MP4 (.mp4) and Quicktime (.mov). In a more recent past, you would have commonly encountered AVI (.avi), 3GPP (.3gp), and Flash Video (.flv). And if you’re a video techie who dives into DVDs and Bluray discs, you would also see Video Objects (.vob) and MPEG Transport Streams (.ts).
 
-The audio, image, and text data in the video container are referred to as **streams**. At the binary level, it’s all 1s and 0s; how does the computer know which part of the file contains audio, image, or text data? This information is in the video container metadata, along with more details on how to load the correct part of the video, audio, or text at the right time. If you have come across poorly formed video where the image and audio data is not in sync, or the subtitles come too early/late, you know how critical it is to get this right: the human eye and ear can be pretty sensitive to even slight discrepancies in timing.
+The audio, image, and text data in the video container are referred to as **streams**. At the binary level, it’s all 1s and 0s; how does the computer know which part of the file contains audio, image, or text data? This information is in the video container metadata, along with more details on how to load the correct part of the video, audio, or text at the right time.
+
+If you have come across poorly formed video where the image and audio data is not in sync, or the subtitles come too early/late, you know how critical it is to get this right: the human eye and ear can be pretty sensitive to even slight discrepancies in timing.
 
 # From still image to video
 
 I’ve talked about pixels are perceived in still image data, now I’ll introduce one more aspect of psychovisuals: how the human eye perceives *motion*.
 
-The eye interacts with the brain in strange ways. Over millions of years of evolution, the brain has evolved [a ‘high-power’ and a ‘low-power’ way](https://www.eurekalert.org/pub_releases/2006-07/uops-prc072606.php) to receive information from the eye. Under everyday conditions, the brain is able to connect separate frames of image data into a coherent picture and interpretation without being confused by the differences between each frame. And decades of experimentation have set the gold standard for motion pictures at 60 frames per second (fps) for a seamless experience.
+The eye interacts with the brain in strange ways. Over millions of years of evolution, the brain has evolved [a ‘high-power’ and a ‘low-power’ way](https://www.eurekalert.org/pub_releases/2006-07/uops-prc072606.php) to receive information from the eye. Under everyday conditions, the brain is able to connect separate frames of image data into a coherent picture and interpretation without being confused by the differences between each frame.
 
-That’s a lot of images per second, and a lot of corresponding video data. For everyday purposes, such as online streaming, it is more common to encounter 30fps, or even 25fps for older videos. In certain types of video entertainment, such as hand-drawn animation, the human eye can make do with 15fps and still piece together an enjoyable performance!
+Decades of experimentation have set the gold standard for motion pictures at 60 frames per second (fps) for a seamless experience. That’s a lot of images per second, and a lot of corresponding video data!
+
+For everyday purposes, such as online streaming, it is more common to encounter 30fps, or even 25fps for older videos. In certain types of video entertainment, such as hand-drawn animation, the human eye can make do with 15fps and still piece together an enjoyable performance!
 
 # Data streams
 
@@ -45,7 +49,9 @@ Confused yet? Just remember that the video file you have is the container, and i
 
 # Encoding and decoding
 
-To use these streams, you need a piece of software on your computer. This piece of software en**co**des or **dec**odes the data stream, so it is called a **codec**. If you don’t have the required codecs, you will get an error when you attempt to open a video container file that has one or more streams in that format. The operating system you use comes bundled with support for the most common formats, although for free-and-open-source OSes this may be hampered by copyright restrictions.
+To use these streams, you need a piece of software on your computer. This piece of software en**co**des or **dec**odes the data stream, so it is called a **codec**. If you don’t have the required codecs, you will get an error when you attempt to open a video container file that has one or more streams in that format.
+
+The operating system you use comes bundled with support for the most common formats, although for free-and-open-source OSes this may be hampered by copyright restrictions.
 
 About a decade ago, when video formats proliferated like a tropical ecosystem, codec packs containing just about every codec you need were a common sight online. Today, with most video moved to online streaming platforms, you no longer need them.
 
@@ -58,13 +64,11 @@ You can use a program like [MediaInfo](https://mediaarea.net/en/MediaInfo) to he
 Mediainfo screenshot showing metadata for an MP4 file containing an h264 (a.k.a. AVC) video stream and an AAC audio stream.
 </span>
 
-**Issue summary:**
-
-<hr/>
-
-A video container can hold one or more audio, video, or text data streams. To encode or decode a data stream, you need to have the necessary codec installed[^1]. Most video runs at 25 or 30 fps, with high-quality video going up to 60 fps. You can use a program like MediaInfo to help you decipher the streams inside a video container file.
+**Issue summary:** A video container can hold one or more audio, video, or text data streams. To encode or decode a data stream, you need to have the necessary codec installed[^1]. Most video runs at 25 or 30 fps, with high-quality video going up to 60 fps. You can use a program like MediaInfo to help you decipher the streams inside a video container file.
 
 [^1]: Come to think of it, that’s a good topic for a future issue: what goes on when a piece of software is installed on your computer?
+
+<hr/>
 
 The key part of this issue I really wanted to get to was about codecs. “Why can’t I open this video file?” was a much more popular question in the recent past, but it has gradually faded as more and more video gets moved to Youtube. Today, I suppose the only people who still run into this problem are teachers who come across archives of old videos while hunting for teaching resources.
 
@@ -78,7 +82,9 @@ The next few issues will continue to be about encapsulated data, but I’ll star
 
 **Next issue:** What is a file?
 
-Sometimes, the hardest questions are deceptively simple. We all have an intuitive idea of what a file is. But what actually goes on underthe hood? See you next week, next issue.
+Sometimes, the hardest questions are deceptively simple. We all have an intuitive idea of what a file is. But what actually goes on under the hood?
+
+See you again next week, next issue.
 
 **Sometime in the future:** What is:
 
