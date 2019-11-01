@@ -46,11 +46,9 @@ When the first zip file compressed its contents, the predictability of the resul
 
 If you want greater compression, use a higher compression setting on the original file instead.
 
-<span style="text-align:center">
 ![7zip archive settings, showing options for compression level, compression method, and dictionary size](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue047/issue047_01.png?raw=true)<br />
-7zip archive settings for zip files.<br />
-Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Colorcomp.jpg).
-</span>
+<small>7zip archive settings for zip files.<br />
+Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Colorcomp.jpg)</small>
 
 A higher *compression level* generally causes the algorithm to try more combinations and iterations of compression, a larger *dictionary size* enables the algorithm to use more pattern references. Play with these two settings to find the best tradeoff between compression time and compression ratio (the ratio of final filesize to original filesize).
 
