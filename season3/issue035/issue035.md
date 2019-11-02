@@ -16,7 +16,7 @@ How is data prevented from leaking outside of the VPN then? By encryption (which
 
 **Issue summary:** VPNs link devices that are not within the same network, such that they can behave as though they are. By encrypting the packet data before it is sent between devices, the VPN software hides these packets from being snooped (i.e. spied upon), effectively forming an encrypted tunnel for information to travel between devices. This enables devices to circumvent firewalls and protect the privacy of information in the data packets.
 
-<hr/>
+-----
 
 Last issue was firewalls, this issue is VPNs. You’ll notice that the more advanced the technology, the shorter my posts. That’s because I have already laid out most of the framework for understanding the Internet infrastructure in the issues leading up to these two.
 

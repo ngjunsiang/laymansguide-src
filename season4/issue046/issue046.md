@@ -69,7 +69,7 @@ That, in a nutshell, is how we get such small images and audio files on the inte
 
 **Issue summary:** Computers compress image and audio data through a process similar to summarising: it analyses the data using algorithms that use brightness and colour instead of RGB values for images, and different frequencies of sound rather than samples at different points in time for audio. These algorithms then discard parts of the information that human senses do not perceive easily, and reduce the resolution of other parts that human senses are not as sensitive to.
 
-<hr/>
+-----
 
 It took me a long while to understand the lossy compression algorithms well enough to explain them simply, and even longer to summarise them still further without using terms like RLE, high- and low-frequency components, and subsampling. If you found the previous two issues overly technical, I hope this issue makes up for that by helping you understand compression in less time than detailed technical articles elsewhere, yet in more depth than your mainstream internet sources.
 

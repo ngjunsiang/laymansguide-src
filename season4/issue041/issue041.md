@@ -81,7 +81,7 @@ And there you have it.
 
 **Issue summary:** In computers that can encode and decode ASCII, text is stored as a 7-bit sequence. Text consists of letters, numbers, symbols, and control codes.
 
-<hr/>
+-----
 
 A rather long issue, but that’s what it takes to explain carriage return and line feed, which don’t make sense to folks who have never seen or used a typewriter before (why can’t you just have a single control code that moves to the start of the line _and_ moves to the next line? Well, sit down and let me tell you a story …)
 

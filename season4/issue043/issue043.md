@@ -59,7 +59,7 @@ PNG (Portable Network Graphics) was designed as a replacement for GIF. It suppor
 **Issue summary:** Colour is stored as a combination of red, green, and blue. In a computer system, each
 colour is stored as one byte (8 bits), allowing for 256 different levels. An image is made up of many such pixels of colour.
 
-<hr/>
+-----
 
 I get carried away easily explaining colour, and it took incredible discipline to rein that exploratory instinct in and stick to the most essential parts. There’s so much to go into, even for laypeople! But, I know, one idea a week, and I’ve sort of worked out where the other ideas should go, so we’ll have a nice and gradual introduction to colour over the course of several seasons.
 

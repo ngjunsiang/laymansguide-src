@@ -54,7 +54,7 @@ If you found a bug in a piece of software you use, and don’t know where or how
 
 **Issue summary:** A bug tracker, or issue tracker, is where users can submit problems they encounter with the software. To submit a helpful issue, users should understand the project’s philosophy and purpose, and read the contributing guidelines.
 
-<hr/>
+-----
 
 This is a short one, and one I’ve been waiting to write. So many people don’t know that some of the software they use every day have issue trackers, and they can contribute to the healthy development of their favourite software by helping to submit issues they encounter.
 

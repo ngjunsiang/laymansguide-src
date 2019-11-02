@@ -62,13 +62,13 @@ Notice that:
 [^1]: Remember that internet servers are supposed to cooperate with each other and forward data packets properly according to Internet Protocol ([Issue 27](https://buttondown.email/laymansguide/archive/lmg-s3-issue-27-what-is-an-ip-address/)). That is how the Internet can continue running smoothly. If servers stop obeying this protocol, the Internet will no longer be a connected space, but will become segregated depending on which servers are willing to forward data packets to each other.<br/>
 For instance, if China blocks some web services (Facebook, Twitter, et al), then packets from those services cannot be routed through China’s servers.
 
-<hr />
+-----
 
 And that, in two images, is why Baidu’s latency is so much higher: the latency for some of their servers is much higher.
 
 **Issue summary:** The process of forwarding data packets from server to server takes time. Each hop a data packet takes adds to the latency. The more hops a packet must undergo, the longer the latency. The slower the servers along the route, the longer the latency as well.
 
-<hr/>
+-----
 
 I didn’t have much writing space (or readers’ mind space, I wager) to show what the entire route of a data packet looks like when I was describing how the Internet (and packet routing) works. I hope this big-picture post puts everything into clearer perspective now :)
 

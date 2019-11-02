@@ -48,6 +48,14 @@ Remember this HTTP header from Issue 8?
 
 See that label in the third row, with the Content-Type label, “application/json”? That’s the MIME type for the [JSON data format](https://buttondown.email/laymansguide/archive/lmg-issue-5-what-is-json/). When the server returns data, my browser (the client) has no idea what format it is. It might be nicely formatted HTML meant for human consumption, but it might also be plain text, JSON data (like in this case), XML, or any of the various data formats that people use. Declaring the MIME type properly makes life easier for the browser to know what to do with the data.
 
+**Issue summary:** A file consists of data, preceded by a file header which describes the data. Software (including operating systems) detect the kind of data contained in a file by 1) glancing at the file extension, 2) looking at its declared MIME type (if any), and 3) checking the file header, in order of difficulty and accuracy.
+
+I almosted started writing a long post about filesystems, but stopped myself in time. I hoped with this issue to continue emphasising the theme of data encapsulation: data locked in shells upon shells upon shells of metadata. I’ll be back to describing other types of data again for the rest of the issue, but I thought file headers would be good to introduce at this point.
+
+After this season I won’t be digging into complex data types, but when I move on to operating systems I’ll cycle back to filesystems and what you need to know about them. Before I get to that season, though, here’s something for you to ponder: if all data is ultimately binary, how would an app know where one file ends and where another starts? Does the file header for mydocument.doc start at this 0, or another 0, or actually at this 1?
+
+-----
+
 ## What I’ll be covering next
 
 **Next issue:** Complex file formats and the Document
@@ -70,3 +78,4 @@ See you again next week, next issue.
 - HTML? [Issue 38]
 - OpenType? And what are fonts anyway? [Issue 42]
 - What is involved in installing a piece of software? [Issue 48]
+- How do apps know where a file starts and ends? [Issue 49]

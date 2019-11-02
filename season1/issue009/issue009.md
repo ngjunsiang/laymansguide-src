@@ -33,7 +33,7 @@ Why does my user agent in the request look so weird? That’s because I’m usin
 
 And that will bring us to authentication and HTTPS in the next few issues.
 
-<hr/>
+-----
 
 Issue summary: A user agent communicates with the server on your behalf. It takes your request (a URL), breaks it down into parts (the protocol, the host, and the request string), puts this information and its user agent declaration into the header, and sends the request for you. To take greater control over what gets sent in the request header, you need specialised software tools.
 

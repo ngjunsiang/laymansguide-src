@@ -53,7 +53,7 @@ On some sites, especially internet banking sites, you may be asked to flush your
 
 **Issue summary:** Your computer and browser speed up a lot of lookups by caching information that is unlikely to change from the last view. When the same information is requested, your computer or browser will first look in the cache to find that information, and retrieve it from cache if it is there, otherwise it will load the information (and store it in cache if allowed to). There are usually ways to bypass a cache if the information is stale or no longer correct.
 
-<hr/>
+-----
 
 And Season 3’s a wrap! I know I may have mentioned that I don’t intend to write howtos in this newsletter, but clearing the cache is something I google for so often, and I see many others googling for it too, that I figured it might help to include a bit of info for those who want to know. At worst, many more people now know how to force-reload a page … 😅
 

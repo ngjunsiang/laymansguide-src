@@ -43,7 +43,7 @@ This system allows multiple people to share one address. That address is like yo
 
 **Issue summary:** Private IP addresses are special IP addresses that routers will treat as belonging to devices within the private network, and not outside it. Data packets sent to private IP addresses will never make it past the gateway into the internet. This system allows multiple devices within a private network to share a public IP address.
 
-<hr/>
+-----
 
 This was a little longer than I expected, but I’m pretty pleased with it. I hope you found the analogy helpful; it just popped to mind as I was nearing the end of the issue.
 

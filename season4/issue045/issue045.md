@@ -66,7 +66,7 @@ So for 1 second of audio, uncompressed, we will need 16 bits × 44,100 samples =
 
 **Issue summary:** Humans can distinguish 120 dB of loudness, which means the loudest perceivable sound is a million times louder than the softest perceivable sound. CD audio provides 16 bits of information per sample, sufficient to provide 96 dB. Humans have a hearing range from 20 Hz to 20 kHz. CD audio is sampled at 44.1 kHz. Uncompressed audio thus requires 705,600 bits per second, or 86 kB/s.
 
-<hr/>
+-----
 
 This issue and the past 2 issues set the stage for the next issue, which is the first milestone for this season when I can finally introduce compression! And then we will finally get to answering the question: Why are music files so large (a few MB) when a voice call over internet uses so little data?
 

@@ -35,7 +35,7 @@ If you are learning a programming language, chances are you will have to use at 
 
 **Issue summary:** A developer can simply put up a download on a webpage and hope people download it and figure out how to get the app on their devices. But often, the more popular way is to publish the app to a repository (also known as an app store, for mobile devices). Before this can be done, the code or application needs to be packaged according to the requirements of the repository.
 
-<hr/>
+-----
 
 It’s the end of Season 2 of Layman’s Guide. I hope the programmer’s world looks a little less murky now, even if it looks a lot more complex!
 

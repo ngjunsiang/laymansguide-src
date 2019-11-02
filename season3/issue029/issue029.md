@@ -51,7 +51,7 @@ Advice on the Internet these days suggests that if you find your browser is taki
 
 **Issue summary:** Resolving a hostname means answering the question “which IP address does this hostname point to?”. Your web browser seeks this answer by sending a DNS query to the gateway. If the gateway is unable to provide a satisfactory answer, you can configure your network interface to send the DNS query to a different DNS server.
 
-<hr/>
+-----
 
 This a is a nice, sweet, and short issue, though it took almost as long to write as Issue 28. Crazy, I know.
 

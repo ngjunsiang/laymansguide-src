@@ -20,7 +20,7 @@ Okay, this tells us that HTTP is a set of rules for transferring something. Most
 
 So, putting all that together, HTTP is a set of rules for transferring webpage data from one computer to another. Not too difficult, was it?
 
-<hr/>
+-----
 
 ## Who sends and who receives?
 
@@ -32,13 +32,13 @@ To add just a bit more jargon (you can take a little bit more, right? It’s not
 
 Summary: The client (that’s you!) sends a request for data to the server. The server returns a response with data to the client.
 
-<hr/>
+-----
 
 Huh, that sounds pretty nice on paper. But in real life, with humans, we know that’s not how it works. The client asks for something, the server says “nope, we’re all out of avocado toast”, the server sometimes forgets your order, sometimes the client forgets to request data and waits for the server to take their order which never happens …
 
 All kidding aside, computers aren’t that complex, but obviously that’s not all there is to HTTP. There’s a client who sends a request, and a server who returns a response, and a million and one ways to miscommunicate. How does the server let the client know that what they’re asking for is out of stock or not on the menu?
 
-<hr/>
+-----
 
 **Issue summary:** HTTP is a set of rules for sending and receiving webpages that link to other webpages. According to the rules, if you want a webpages, you (the client) must send a (HTTP) request to a server, which will return a response.
 
@@ -46,7 +46,7 @@ All kidding aside, computers aren’t that complex, but obviously that’s not a
 
 **Next few issues:** How does a server let the client know if there’s something wrong with their HTTP request? What does an HTTP request look like? How do I make an HTTP request? What’s the difference between HTTP and HTTPS?
 
-<hr/>
+-----
 
 The past two issues have been pretty dry and text-only. Definitely pictures to come in the next issue, I promise.
 

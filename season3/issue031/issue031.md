@@ -51,7 +51,7 @@ Some domain name providers offer a service known as Dynamic DNS (**DDNS**). This
 
 **Issue summary:** DHCP is a protocol by which a router assigns IP addresses to devices that connect to it. Static IP addresses are IP addresses that are reserved for a device, so that the device always gets the same IP address when it connects.
 
-<hr/>
+-----
 
 I had almost forgotten about DDNS, and decided to include it at the last minute, making this a bit longer than I had aimed for. But I hope this fleshes out your model of the Internet a little more, so that you understand how it is possible for you to have your own domain name too.
 

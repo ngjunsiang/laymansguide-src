@@ -68,7 +68,7 @@ You are getting video and image files from those sources with lots of informatio
 **Run-length encoding:** spot repetitions of patterns in the data  
 **Entropy coding:** Store the list of patterns, using a shorter symbol as reference to the pattern
 
-<hr/>
+-----
 
 If the lossy compression articles are hard to read, the lossless compression articles are even worse, because so much of it is math theory. I got the gist of it as best as I can.
 

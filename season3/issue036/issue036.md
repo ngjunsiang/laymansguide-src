@@ -59,7 +59,7 @@ What accounts for this difference? Stay tuned for the next issue of Layman’s G
 
 **Issue summary:** Latency is the time duration between a ping packet being sent out and its response being received. It is an indication of how far away a target server is.
 
-<hr/>
+-----
 
 I promised one idea a week, and I am sticking to that promise. Remember how the Internet works: packets being forwarded from gateway to gateway. You can probably guess what might account for the latency difference from this, but I am still saving the juicy details for next issue.
 

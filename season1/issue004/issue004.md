@@ -39,7 +39,7 @@ Oops, I got sidetracked. So, Hypothes.is is really cool because they got an API 
 
 Next two issues: What is JSON? How do you use an API?
 
-<hr/>
+-----
 
 Four issues in, and I’ve just introduced the first technical term: API. This is going to be a pattern for this newsletter: I’ll illustrate some examples that highlight a problem or issue, before I introduce the incumbent solution and the term people use to refer to it. One drawback to this approach is that the introduction can sometimes seem obtuse or confusing: “where is he going with this example?” If this should occur, the fault is mine for the poor writing.
 

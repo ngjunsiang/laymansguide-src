@@ -73,7 +73,7 @@ So your computer isn’t lying, it’s just using different units of counting.
 
 **Issue summary:** A bit is a unit of measurement for information. 1 bit of information is enough to reduce the uncertainty by 50%. 8 bits comprise 1 byte. Humans count bytes in multiples of thousands, while computers count bytes in multiples of 1,024.
 
-<hr/>
+-----
 
 There are much shorter versions of this explanation on the Internet, but I found none of them satisfying, because they try to paper over the mathematical detail. While this newsletter is intended for layfellas, the math is something that can be worked out with a calculator, and I found that showing the detail makes it easier to understand.
 

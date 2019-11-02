@@ -45,7 +45,7 @@ An IDE integrates many tools into one software package so you can do your work m
 
 **Issue summary:** A text editor helps programmers to edit their code. An IDE (integrated development environment) helps programmers to see what’s going on in their code, test their code’s performance, and provide almost all the necessary tools in one package.
 
-<hr/>
+-----
 
 This is a short issue that I wanted to write to answer questions I get on “where to start learning programming”? The usual answer they get is books and websites teaching you how to code, but I contend that the first piece of software you use is critically more important.
 

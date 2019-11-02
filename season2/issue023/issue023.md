@@ -106,7 +106,7 @@ Specifications are part of an engineer’s toolbox in the struggle to create ord
 
 **Issue summary:** Specifications describe the details of how a piece of hardware/software should work in order to meet a set of requirements. When well written and well implemented, they aid the coordination of the multitude of devices across the world, enabling them to communicate seamlessly, unambiguously, and unnoticeably with each other. Your devices work because they follow specifications.
 
-<hr/>
+-----
 
 Yay, I finally cleared one item from the "sometime in the future" list! When I first started reading implementations, I found them really intimidating and impossible to get into. It was only when I started programming and having to do things like getting my data from an online service through an API, that specifications started making sense. Hardware specifications were useful too, in trying to understand whether a USB charger will be able to do quick charging or support higher rates of data transfer before I buy it.
 

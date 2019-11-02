@@ -28,7 +28,7 @@ Now you can just run the relevant tests when you change one small part of your c
 
 **Issue summary:** Testing is the only way to know your app really works. Tests can be set up for the different parts of your app, from the basic building blocks to the main code and finally even the interface, including web pages.
 
-<hr/>
+-----
 
 Yeah, almost nobody liked tests and exams in school, I know. But in software, testing is the only way to know your app *really* works, and not just because you say/think it does.
 

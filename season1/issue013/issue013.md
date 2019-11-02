@@ -34,7 +34,7 @@ So as long as you see a green and/or lock icon in the address bar, you are alrea
 
 Issue summary: Most web browsers use a visual indicator, often a green or lock icon, to let you know that you are using an HTTPS connection. HTTPS is the default connection method for webpages these days and it is quite unlikely you will be able to access an HTTP site.
 
-<hr/>
+-----
 
 ## End of file
 

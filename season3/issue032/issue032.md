@@ -105,7 +105,7 @@ And _that’s_ how it’s done.
 
 **Issue summary:** When a request from a device on the network is to be forwarded to the gateway, it has to traverse different networks. The router helps it by rewriting the source IP and port number, keeping track of the originating IP and port. When a response is received, it rewrites the destination IP and port so that the response will reach the originating device.
 
-<hr/>
+-----
 
 This issue is much, much lengthier than expected; I totally underestimated the prior-knowledge-bridging content that’s required. You notice that the NAT portion of this mailer is pretty short, but there’s a lengthy backstory to pull together disparate pieces of information from past issues.
 

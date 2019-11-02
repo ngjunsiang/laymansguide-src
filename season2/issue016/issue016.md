@@ -96,7 +96,7 @@ The only way to do that is to learn how to write the instructions yourself. The 
 
 A shell script is just a set of commands that a simpleton can carry out.
 
-<hr/>
+-----
 
 Phew, this issue sure took a while! I knew I was going to have to write some code, and explain it for laypeople, and it wasn’t going to be enjoyable. I’m glad it’s over and I hope I won’t have to do that again in the later issues of this season. I’m still figuring out how to do it more simply.
 

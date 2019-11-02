@@ -66,7 +66,7 @@ You can use a program like [MediaInfo](https://mediaarea.net/en/MediaInfo) to he
 
 [^1]: Come to think of it, that’s a good topic for a future issue: what goes on when a piece of software is installed on your computer?
 
-<hr/>
+-----
 
 The key part of this issue I really wanted to get to was about codecs. “Why can’t I open this video file?” was a much more popular question in the recent past, but it has gradually faded as more and more video gets moved to Youtube. Today, I suppose the only people who still run into this problem are teachers who come across archives of old videos while hunting for teaching resources.
 

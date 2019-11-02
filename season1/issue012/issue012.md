@@ -2,7 +2,7 @@ Was the last issue too scary? I hope you haven’t completely lost faith in prot
 
 We are going to get a little technical here, because I want to give you a view of the internet that most layfolks won’t get a chance to see. I just want you to remember something: you don’t need to understand every single bit of it. The things I point out will help you come to useful realisations that help you make good decisions about what you do on the internet.
 
-<hr/>
+-----
 
 ## What did the laptop say to the access point?
 
@@ -42,7 +42,7 @@ HTTPS stands for **HTTP Secure**. Why is it secure? I think a screenshot will ma
 
 The `Authorization: Bearer` line is no longer visible; in fact, all the information we saw in the HTTP packet is no longer visible. It has all been encrypted! Any third party intercepting this packet will not be able to decode or modify it without knowing the encryption code that was prearranged between my laptop and the Hypothes.is server.
 
-<hr/>
+-----
 
 ## HTTP considered harmful
 

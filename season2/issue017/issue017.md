@@ -46,7 +46,7 @@ Either way, it’s plain to see that without these advanced libraries, it would 
 
 **Issue summary:** Libraries make it easier to do the same thing in a programming language, or enable advanced functionality that wasn’t available previously. Libraries are usually specific to a particular programming language, and can’t be used in another programming language.
 
-<hr/>
+-----
 
 Okay, so it turned out I only wrote one example, and linked extensively to another one. This didn’t need to be complicated, and aside from the code I hope I didn’t lose you. Was this issue too difficult to grasp, or am I moving too fast? Drop me an email, I can adjust :)
 

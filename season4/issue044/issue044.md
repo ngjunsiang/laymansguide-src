@@ -51,7 +51,7 @@ For printing images, you will want to make sure your image has a resolution of a
 
 **Issue summary:** An image’s resolution describes its dimensions. Its pixel resolution gives an indication of its physical size (if printed or displayed on a screen), and thus its sharpness. A display with imperceptibly small pixels is often referred to as a Retina display (Apple’s branding) or as a high-PPI display; this requires at least 220 PPI nominally. For an image to be printed sharply, it needs at least 300 DPI.
 
-<hr/>
+-----
 
 It took a lot of discipline this time to not burrow down rabbit holes (like image-to-screen pixel grid alignment); that would have taken a lot longer than an hour to write.
 

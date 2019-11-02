@@ -69,7 +69,7 @@ And now we come to the last part of the waterfall, where additional resources re
 **Issue summary:** When a webpage document loads (Stage 1), it is processed by the web browser, which then
 loads other requested resources, such as stylesheets, images, and scripts (Stage 2). Scripts and other interactive code may then request more resources (data fetches, images, icons, data, etc) which are then loaded subsequently (Stage 3, 4, 5, …).
 
-<hr/>
+-----
 
 **Bonus content:** I tried this with the Baidu homepage, which looks like this:
 

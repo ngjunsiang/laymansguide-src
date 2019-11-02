@@ -64,7 +64,7 @@ Aside from the fact that it could include encodings for just about any character
 
 **Issue summary:** Unicode is an encoding format which is meant to support every language, ever. Most websites, apps, and interfaces support it today.
 
-<hr/>
+-----
 
 That was really short, thank goodness. I’ve of course skipped over Unicode complexity, because the average layperson does not need to know that. But people need to know that it is possible, and actually _easy_, to represent different languages on the same page, and there is no excuse not to do so.
 

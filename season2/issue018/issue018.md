@@ -57,7 +57,7 @@ Whichever one you pick, it should make your job easier than doing everything fro
 
 **Issue summary:** While libraries make it easier to do the same thing in a programming language, a framework makes it easier to make a particular kind of app. Like libraries, frameworks are usually specific to a particular programming language, and can’t be used in another programming language.
 
-<hr/>
+-----
 
 I have greatly simplified the idea of frameworks here, likely to the consternation of developers everywhere. The only thing I will say in my defense is: at least your potential customers now have a better idea of what you are doing for them!
 

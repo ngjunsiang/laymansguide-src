@@ -14,7 +14,7 @@ That is how wifi works too. More shocking news: unlike radio, wifi works on the 
 
 Your signals not only can be picked up, they **are** picked up by other devices. Remember: those other devices have no way of telling beforehand which signals are from you, and which ones are from the access point! They would have to receive the signal, decode the request (or response), look at the metadata information that is provided about the data packet, and then determine if it is actually for them. Think of it as a shared data mailbox where everyone can see everyone else’s data packets.
 
-<hr/>
+-----
 
 Okay, take a deep breath, control your breathing first … feeling better? Good. So you heard the bad news: all your data is being broadcasted in the open, for anybody with a wifi antenna to receive. Now for some good news.
 
@@ -22,7 +22,7 @@ Wifi was introduced in 1998 and has been around for 20 years. In those 20 years,
 
 Yep! The answer to this problem is HTTPS.
 
-<hr/>
+-----
 
 Issue summary: wifi broadcasts your data in the open. Any device with a wifi antenna receives your data packets, but normally does not decode it unless it is meant for them. This may seem to be a security risk, but measures have been developed and implemented to keep your critical information secure. HTTPS is one such measure.
 

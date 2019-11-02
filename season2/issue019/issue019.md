@@ -65,7 +65,7 @@ The cool part is not that they are all using git. Git works, but primarily for t
 
 **Issue summary:** A **version control system** (VCS) tracks changes to documents. Git is a version control system for source code. Keeping a change history enables a VCS to roll back code in a previous point in time. A change history can also be used in areas other than coding.
 
-<hr/>
+-----
 
 Phew! I thought this was going to be short, but I was sorely wrong. In fact, I’m not completely done with the issue on version control yet—I realised as I was writing that it would make more sense to talk about testing first.
 

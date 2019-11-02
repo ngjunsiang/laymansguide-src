@@ -68,7 +68,7 @@ Port numbers 49152 to 65535 are available for anyone to use. Tinkerers, hackers,
 
 **Issue summary:** When an app makes a network request through the OS, the OS adds the source and destination port number to the query in accordance with TCP. When the OS receives the response, it forwards the data to the app which is mapped to the destination port number. Port numbers 1-1023 are registered to standard Internet services, port numbers 1024 to 49151 may be registered to other services, and port numbers 49152 to 65535 may be used by anyone.
 
-<hr/>
+-----
 
 Short and sweet! Issues 30-33 are my summary of how data packets find their way across the internet (via IP addresses) and to the right apps (via port numbers). It’s amazing that this is basically how almost all Internet traffic gets routed; the rules are simple and hence very scalable, you don’t need massive computation to get packets to the right places (but you do need massive hardware to process lots of packets quickly).
 

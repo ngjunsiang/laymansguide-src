@@ -50,7 +50,7 @@ If the destination IP address is not in the forwarding table, the data packet ge
 
 **Issue summary:** IP addresses are a string of four numbers. A list of reserved IP addresses is managed by IANA, and all Internet registries agree to forward data packets according to that list. A data packet sent from a client goes to its gateway. At the gateway, the destination IP address is checked against the gateway’s forwarding tables. If the IP address is found in the forwarding table, it gets sent along that route, otherwise it gets forwarded to the next gateway, … until it reaches its destination.
 
-<hr/>
+-----
 
 This looked like a good place to stop before I get any deeper. I’ve left out a lot of the history of development of the internet and Internet Protocol (which is where the acronym IP comes from), because it is necessarily messy and not really relevant here. But one important result of these developments is that there isn’t a single master server out there to which **all** data packets must go to be sorted. This makes the Internet more robust (if one gateway fails, your packet can still reach its destination via other routes), but more importantly it prevents server owners from dominating the entire Internet and its development (because whoever owns that master gateway will hold great sway over the flow of information).
 

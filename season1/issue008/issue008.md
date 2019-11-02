@@ -32,7 +32,7 @@ The third line tells is what kind of data was sent with the HTTP response. We’
 
 UTF-8 stands for “**Unicode** Transformation Format - 8 bit”, which means it is a format for transform letters and symbols into 1s and 0s. `charset=UTF-8` tells us that the *char*acters in the data come from this *set* of tables known as Unicode. The tables matter, because characters not in the table cannot be used. You sometimes see this in webpages as � or □. We’ll talk about Unicode when we get to emojis :)
 
-<hr/>
+-----
 
 ## HTTP status codes
 
@@ -67,11 +67,11 @@ Status codes are always three digits. The first digit tells you the category of 
 <small>A 404 response header from Hypothes.is </small>
 
 
-<hr/>
+-----
 
 **Issue summary:** A request or a response consists of a header and a body. The response header contains information about the response. The status code in the response header determines if the request was successful or unsuccessful.
 
-<hr/>
+-----
 
 ### Bonus: What is a URI?
 

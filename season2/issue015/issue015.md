@@ -65,7 +65,7 @@ I don’t have any single primary reason, but if you ask developers why they pre
 
 I guess it’s something that just has to be discovered through experience ;)
 
-<hr />
+-----
 
 **Issue summary:** A command line is a way of giving commands to the computer in the form of text. An instruction consists of the name of the program to be run, and the options that it needs to use. Command lines provide a fallback mechanism when graphical interfaces break down, and are a much more remote-friendly interface.
 

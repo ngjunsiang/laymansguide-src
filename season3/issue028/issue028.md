@@ -41,7 +41,7 @@ How does that happen? That’s a story for the next issue.
 
 **Issue summary:** Domain names consist of an optional subdomain, the domain name, and the top-level domain. The top-level domains are managed by a registry, which receives registration requests from domain name registrars, and maintains registrant information for each domain under their TLD in a WHOIS database. The domain name registrars let you configure which IP address to forward data packets to, and propagate that information through their DNS servers so that data packets will be routed accordingly.
 
-<hr/>
+-----
 
 This was wayyy longer than I thought it would be—there are a lot of things I needed to look up and confirm. That’s part of the reason I started this newsletter: to help me clarify what I know and ensure it’s not just “something I heard”. Domain names, something that looks so simple, has a really huge backend system maintaining its existence!
 

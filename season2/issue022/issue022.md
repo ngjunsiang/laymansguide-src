@@ -58,7 +58,7 @@ Its main advantage is that it allows the process of making a change to be really
 
 **Issue summary:** Continuous Integration means merging changes back to the main branch as often as possible. This means keeping code changes as small as possible, and using automated testing to speed up the development process.
 
-<hr/>
+-----
 
 When I first learnt about continuous integration, I thought this was something every organisation should know about! Have you had colleagues who tend to do things in the dark, and nobody really knew what they were doing and they seemed to be out of sync with the team? Yeah, continuous integration and help with that.
 

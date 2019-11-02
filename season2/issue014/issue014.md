@@ -83,7 +83,7 @@ Low-level code and high-level code are not a classification; they are a sliding 
 <small>Some programming languages, arranged from low-level (left) to high-level (right). From [codecommit.com](http://www.codecommit.com/blog/java/defining-high-mid-and-low-level-languages)</small>
 
 
-<hr/>
+-----
 
 Issue summary: Developers can specialise in frontend, backend, or full-stack development. They write applications for more purposes than I can really count. Not all code is written for an application; some code is written for specialised purposes. And code can be written at different levels of abstraction. High-level code is easier to understand and write because it hides the details of how a computer operates, while low-level code is detailed and able to squeeze the most performance from a computer, but difficult to understand and write.
 

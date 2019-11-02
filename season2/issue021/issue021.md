@@ -40,7 +40,7 @@ Why would developers want to do this, to make things for free and let others ben
 
 **Issue summary:** In git, forking a repository creates a copy of it for you to work on. Merging a repository with the original combines the commits from both so that they become one repository again. Conflicts arising from commits from both codepaths that affect the same part of the code will need to be resolved manually. Developers do most of this forking and merging in Github, an online platform for working on and talking about code.
 
-<hr/>
+-----
 
 I’ve simplified a *huge* portion of how git works, which I think isn’t important to know about for laypeople, so as to focus on the key features of git and how it makes collaboration much saner for developers.
 

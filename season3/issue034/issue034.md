@@ -33,7 +33,7 @@ Advanced routers might also come with built-in patterns that detect different ty
 
 **Issue summary:** Firewalls block data packets that match certain rules. They decrypt the data packet layer by layer, dropping those that match its programmed rules without allowing them to be forwarded to the next point in its journey. The type of filtering that can be applied depends on the processing power available to the router, since some information is hidden more deeply in the data packet than others. Such filtering is typically circumvented by the use of VPNs, or other means of encrypting the data that is required.
 
-<hr/>
+-----
 
 Short issue, entirely by design. Firewall blocking and circumvention methods are an arms race between two sides, one side building better software and hardware that detects packets more quickly and accurately (requiring massive computational power), and the other side seeking ways to hide such metadata or enable it to get to its destination via other paths, often with the use of encryption (also requiring computational power). The details of how each method works can fill tomes. So I’ve decided to just introduce the basic idea, which is really quite simple: detect and block.
 
