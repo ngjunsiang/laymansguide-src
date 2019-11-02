@@ -8,10 +8,10 @@ Remember that when your phone/laptop/device first connects to the router, it doe
 
 In Issue 8, I gave an example of the *content* of a response:
 
-<span style="text-align:center">
+
 ![An HTTP response header from Hypothes.is](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue008/issue008_01.png?raw=true)
-The response header from Hypothes.is
-</span>
+<small>The response header from Hypothes.is</small>
+
 
 This is like the header of a letter that Hypothes.is writes to my web browser (with a company letterhead and all that), saying that it received my request (HTTP 200 OK), and the content of my request (not shown) follows after this header.
 

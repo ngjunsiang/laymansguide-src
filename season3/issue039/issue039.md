@@ -11,12 +11,12 @@ Computers use the same trick, and it is called **caching**. Any information it n
 
 When you load a webpage or service and send requests to it, the first thing that happens is the DNS query. Once your OS knows the IP address to send requests to, it doesn’t make sense for it to keep querying the hostname, does it? IP addresses don’t change that quickly! The computer stores the hostnames and associated IP addresses in the DNS cache. You can view the DNS cache on a Windows PC by opening Command Prompt and typing `ipconfig /displaydns`.
 
-<span style="text-align:center">
+
 ![The DNS cache](https://github.com/ngjunsiang/laymansguide/blob/master/season3/issue039/issue039_01.jpg?raw=true)<br />
-The output of `ipconfig /displaydns`
+<small>The output of `ipconfig /displaydns`<br />
 (I used Powershell instead of Command Prompt,
-but it will look the same in Command Prompt.)
-</span>
+but it will look the same in Command Prompt.)</small>
+
 
 The computer always goes to the DNS cache first. If it can’t find the hostname (e.g. facebook.com) in the DNS cache, it will perform a lookup, then store the hostname and associated IP address in DNS cache. This information is stored for a day, then discarded, just in case the information has been refreshed.
 
@@ -34,10 +34,10 @@ How long does the browser cache these files? It depends ... I know it’s not an
 
 Remember this? It’s the response header we saw from [Issue 8](https://buttondown.email/laymansguide/archive/lmg-issue-8-http-error-codeshow-does-a-server-let/) on HTTP error codes:
 
-<span style="text-align:center">
+
 ![HTTP response header](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue008/issue008_01.png?raw=true)
-A response header from Hypothes.is
-</span>
+<small>A response header from Hypothes.is</small>
+
 
 See the line that says `Cache-Control: no-cache`? That is the server, hypothes.is, asking my browser not to cache this response (because the next time it makes the same API request, the response might be different).
 

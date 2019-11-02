@@ -10,17 +10,13 @@ To put things in some context, keep in mind that ASCII actually predates the int
 
 In the 1920s, the Murray code was developed into the International Telegraph Alphabet No. 2 code (ITA2 code). Behold:
 
-<span style="text-align:center">
 ![ITA2 table](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue041/issue041_01.jpg?raw=true)<br />
-Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:International_Telegraph_Alphabet_2.jpg)
-</span>
+<small>Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:International_Telegraph_Alphabet_2.jpg)</small>
 
 But the Murray code actually used more bits to transmit the same information! In Morse code, every letter is represented with between 1 to 5 symbols. Each symbol is either a dash or a dot:
 
-<span style="text-align:center">
 ![Morse Code table](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue041/issue041_02.png?raw=true)<br />
-Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:International_Morse_Code.svg)
-</span>
+<small>Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:International_Morse_Code.svg)</small>
 
 What do we gain from using more symbols to transmit each number or letter? If you compare the two, you see that ITA2 has some things that are missing in Morse code:
 
@@ -35,11 +31,9 @@ Symbols and spaces are easy enough to understand, and very welcome; if you’ve 
 
 With the advent of the typewriter, people had access to nicely formatted text. You could type text on multiple rows instead of one long row! But you had to remember to do the actions when using a typewriter for it to be formatted properly.
 
-<span style="text-align:center">
 ![A typewriter on a table](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue041/issue041_03.jpg?raw=true)<br />
-The Underwood Five typewriter<br />
-Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Underwoodfive.jpg)
-</span>
+<small>The Underwood Five typewriter<br />
+Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Underwoodfive.jpg)</small>
 
 There were two separate actions involved as you pulled the leftmost lever to the right: (1) The carriage, which holds the paper and moves a bit to the right after each letter is typed, now resets its position so you can start typing from the left again, and (2) the paper is moved up so you can begin typing on the next line.
 
@@ -51,11 +45,9 @@ ITA2 could not only send letters and symbols, it could send formatting commands!
 
 The ASCII code chart expands the capabilities of ITA2, while requiring 7 bits for each character. Each character is situated in a specific row and column, out of 8 columns and 16 rows which are numbered starting from 0. (Note that 8 is 2^3 and requires 3 bits, 16 is 2^4 and requires 4 bits.)
 
-<span style="text-align:center">
 ![ASCII code chart](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue041/issue041_04.png?raw=true)<br />
-(An early version of) The US ASCII code chart. Each row number is represented by 4 bits, while each column number is represented by 3 bits.<br />
-Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:USASCII_code_chart.png)
-</span>
+<small>(An early version of) The US ASCII code chart. Each row number is represented by 4 bits, while each column number is represented by 3 bits.<br />
+Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:USASCII_code_chart.png)</small>
 
 Technical details aside, look at what ASCII has:
 
@@ -78,10 +70,8 @@ I won’t explain the rest in this supposedly-short newsletter, but if you’re 
 
 In a basic text file, text is still stored using ASCII (although it has seen some modifications since). Some of the control codes are obsolete, while some are still in use today. Remember this image from Issue 12?
 
-<span style="text-align:center">
-![An HTTP request captured in Wireshark showing my developer API key](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue012/issue012_01.png?raw=true)
-An HTTP request captured in Wireshark.
-</span>
+![An HTTP request captured in Wireshark showing my developer API key](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue012/issue012_01.png?raw=true)<br />
+<small>An HTTP request captured in Wireshark.</small>
 
 The `\r` and `\n` you see there are control codes. They stand for 'return' and 'newline', the modern equivalent of 'carriage return' and 'line feed'.
 

@@ -6,17 +6,17 @@ Last issue, I showed the route taken by data packets being sent to google.com, a
 
 The Github repository where I keep my laymansguide files can be viewed on a webpage, and it looks like this:
 
-<span style="text-align:center">
+
 ![Github page for laymansguide](https://github.com/ngjunsiang/laymansguide/blob/master/season3/issue038/issue038_01.png?raw=true)<br />
-Github page for laymansguide
-</span>
+<small>Github page for laymansguide</small>
+
 
 Loading this page with the Network tab of Developer Tools open produces this report:
 
-<span style="text-align:center">
+
 ![Developer Tools showing network activity while loading a Github page](https://github.com/ngjunsiang/laymansguide/blob/master/season3/issue038/issue038_02.png?raw=true)<br />
-Developer Tools, Network view
-</span>
+<small>Developer Tools, Network view</small>
+
 
 This is a summary of the network activity that is happening while the page is loading. The top ribbon, showing time in milliseconds (ms) and a series of horizontal lines, is what is known as a _waterfall chart_. (You can also see this chart in the rightmost column below the ribbon.)
 
@@ -73,17 +73,17 @@ loads other requested resources, such as stylesheets, images, and scripts (Stage
 
 **Bonus content:** I tried this with the Baidu homepage, which looks like this:
 
-<span style="text-align:center">
+
 ![Baidu homepage](https://github.com/ngjunsiang/laymansguide/blob/master/season3/issue038/issue038_03.png?raw=true)<br />
-Baidu homepage
-</span>
+<small>Baidu homepage</small>
+
 
 and the network activity from loading it:
 
-<span style="text-align:center">
+
 ![Developer Tools showing network activity while loading Baidu homepage](https://github.com/ngjunsiang/laymansguide/blob/master/season3/issue038/issue038_04.png?raw=true)<br />
-Developer Tools, Network view
-</span>
+<small>Developer Tools, Network view</small>
+
 
 It takes slightly longer (about 400 ms longer) to load, but most of that time is from loading a single `gif`. I wont examine the elements here, in the season on the internet cloud, I’ll explain more what some of these elements do.
 

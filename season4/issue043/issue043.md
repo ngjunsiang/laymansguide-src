@@ -23,10 +23,8 @@ Since one byte stores one colour value, three bytes are needed for a single spot
 
 So now you know what to do with colour pickers in applications: just find the combination of red, green, and blue that is closest to the colour you want!
 
-<span style="text-align:center">
 ![The Microsoft Paint colour picker](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue043/issue043_01.png?raw=true)<br />
-A colour picker, common in graphics applications. This one is from Microsoft Paint.
-</span>
+<small>A colour picker, common in graphics applications. This one is from Microsoft Paint.</small>
 
 You can play with a simple colour wheel on [colorspire.com](https://www.colorspire.com/rgb-color-wheel/), or if you’re feeling more adventurous, try the more technical one on [rapidtables.com](https://www.rapidtables.com/web/color/RGB_Color.html).
 
@@ -36,11 +34,9 @@ On a screen, colours are produced by millions of liquid crystals (in LCDs) or li
 
 It is extremely difficult to manufacture pixels that can produce any colour; this would require that the crystal or diode can emit light of different frequencies. Instead, the display industry has settled on combining 3 sub-pixels into a pixel. Each sub-pixel produces—you guessed it—either red, green, or blue light.
 
-<span style="text-align:center">
 ![Close-up of LCD/LED pixels from various displays](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue043/issue043_02.png?raw=true)<br />
-Extreme close-up shots of pixels.<br />
-Taken from [lcdtech.info](http://lcdtech.info/en/tests/lcd.pixels.structure.htm).
-</span>
+<small>Extreme close-up shots of pixels.<br />
+Taken from [lcdtech.info](http://lcdtech.info/en/tests/lcd.pixels.structure.htm).</small>
 
 When colour information is sent from the computer to the display (through the video cable) and decoded in the display, it also uses RGB values. In this sense there is remarkable consistency in computer systems in how colour is stored, sent, and displayed. That minimises the amount of time spent by computers converting from one format to another.
 
@@ -60,8 +56,6 @@ JPEG stands for Joint Photographers Expert Group, so it wouldn’t surprise you 
 **PNG**  
 PNG (Portable Network Graphics) was designed as a replacement for GIF. It supports 24-bit image pixels, with an additional 8 bits per pixel for transparency information. That means PNG pixels have 256 different levels of transparency, allowing for blending effects where one image overlaps another. PNG files support image compression, allowing them to be stored with smaller filesizes than BMP.
 
-
-
 **Issue summary:** Colour is stored as a combination of red, green, and blue. In a computer system, each
 colour is stored as one byte (8 bits), allowing for 256 different levels. An image is made up of many such pixels of colour.
 
@@ -69,15 +63,11 @@ colour is stored as one byte (8 bits), allowing for 256 different levels. An ima
 
 I get carried away easily explaining colour, and it took incredible discipline to rein that exploratory instinct in and stick to the most essential parts. There’s so much to go into, even for laypeople! But, I know, one idea a week, and I’ve sort of worked out where the other ideas should go, so we’ll have a nice and gradual introduction to colour over the course of several seasons.
 
-
-
 ## What I’ll be covering next
 
 **Next issue:** Image resolution
 
-<span style="text-align:center">
 ![Meme: One does not simply resize an image](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue043/issue043_03.jpg?raw=true)
-</span>
 
 After examining a single pixel, I’ll look at a whole image: what does it take to trick our brains into seeing an image instead of a collection of pixels?
 

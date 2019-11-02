@@ -1,9 +1,9 @@
 Say you want to send some data to another app. Let’s say it’s an annotation from Hypothes.is:
 
-<span style="text-align:center">
+
 ![Screenshot of a Hypothes.is highlight page](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue005/issue005_01.png?raw=true)
-A highlight in Hypothes.is, to illustrate the various bits of info that must be sent. 
-</span>
+<small>A highlight in Hypothes.is, to illustrate the various bits of info that must be sent. </small>
+
 
 What data is included in this annotation?
 
@@ -36,10 +36,10 @@ What? You mean processing XML requires money? Of course! Think about it:
 
 Amid other competing standards, JSON won out and became a de facto standard for applications to exchange data. Which makes things a little easier for everyone: when we can agree on one de facto standard, everyone knows they gotta make things that support it. So it’s really easy to find something that can help me process JSON.
 
-<span style="text-align:center">
+
 ![Data from the Hypothes.is API, JSON](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue005/issue005_02.png?raw=true)
-The same annotation, in JSON format
-</span>
+<small>The same annotation, in JSON format</small>
+
 
 Issue summary: JSON is the de facto data format for sending data over the web. Almost everything you use that was updated significantly in the last 5 years is probably using JSON-formatted data in some way.
 

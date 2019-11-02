@@ -16,9 +16,13 @@ If you’re thinking “this part is going to be incredibly math-ey”, you are 
 
 ## Lossy image compression: luma and chroma
 
-In [Issue 44](https://buttondown.email/laymansguide/archive/lmg-s4-issue-44-image-compression/), I mentioned that the human eye has 3 types of cones that sense red, green, and blue light. What I didn’t mention then is that the human eye is that partly due to the way these cones are distributed, the human eye is more sensitive to differences in brightness (or “**luma**”) than differences in colour (“**chroma**”). A black-and-white image has only luma information (brightness), while a colour image has both luma and chroma information—you can mathematically separate the data of a colour image into the brightness component (which looks just like a black-and-white photo), and a colour component, which looks like nothing you have ever seen. The closest thing to chroma information would be analog colour photo negatives, if you were born early enough to get to see those.
+In [Issue 44](https://buttondown.email/laymansguide/archive/lmg-s4-issue-44-image-resolution/), I mentioned that the human eye has 3 types of cones that sense red, green, and blue light. What I didn’t mention then is that the human eye is that partly due to the way these cones are distributed, the human eye is more sensitive to differences in brightness (or “**luma**”) than differences in colour (“**chroma**”).
+
+A black-and-white image has only luma information (brightness), while a colour image has both luma and chroma information—you can mathematically separate the data of a colour image into the brightness component (which looks just like a black-and-white photo), and a colour component, which looks like nothing you have ever seen. The closest thing to chroma information would be analog colour photo negatives, if you were born early enough to get to see those.
 
 So that’s another way of representing image information: you can either represent it as RGB (red-green-blue) colour values, or YUV (1 luma value, Y, and 2 chroma values, U & V). In RGB, all 3 colour components are equally important and you can’t treat them differently, but in YUV you _can_ process them differently to achieve lossy compression.
+
+## Lossy image compression: chroma
 
 Since the human eye is less sensitive to chroma (colour) information, in the JPEG image format, the chroma components are compressed by averaging each 2×2 group of pixels into 1 value for U and V each. (This process is known as subsampling.) Theoretically that halves the amount of data required for the same image! (4/4 Y + 1/4 U + 1/4 V = 6/12 of the original information)
 
@@ -27,7 +31,7 @@ Since the human eye is less sensitive to chroma (colour) information, in the JPE
 Without scrutiny, the human eye is not very sensitive to lower resolution in chroma.<br />
 Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Colorcomp.jpg)</small>
 
-## Lossy image compression: luma transform
+## Lossy image compression: luma
 
 Furthermore, even within the luma channel (i.e. looking at luma information only), the human eye is more sensitive to sharp changes in brightness across adjacent pixels than gradual changes in brightness across adjacent pixels. Through a Discrete Cosine Transform (DCT) algorithm, a computer can separate the luma information and differentiate parts with sharper changes, and parts with gradual changes.
 
@@ -39,13 +43,13 @@ And that, in a nutshell, is how most lossy image compression works, and how the 
 
 What about audio?
 
-Those of you who love your bass, or like tweaking with sound settings, or have worked with audio systems before e.g. for a performance, or for your school’s events, have probably used an equaliser at some point. An equaliser is a device that lets you adjust how much bass (low pitch), medium (middle pitch), and treble (high pitch) you want from the sound. How is the system able to do that?
+If you are all about the bass, or like tweaking with sound settings, or have worked with audio systems before e.g. for a performance or for your school’s events, you would have used an equaliser at some point. An equaliser is a device (or software application) that lets you adjust how much bass (low pitch), medium (middle pitch), and treble (high pitch) you want from the sound. How is the system able to do that?
 
-Through transforms! DCT, which I mentioned in the previous section, is one such transform; audio formats often use another one, known as the Fast Fourier Transform (FFT). Aren’t you glad this is a newsletter about computing and not about math? Anyway, a transform lets us transform information organised by position (e.g. in images) or by time (e.g. in audio) into information organised by other properties, such as frequency.
+Through transforms! DCT, mentioned earlier, is one such transform; audio formats often use another one, known as the Fast Fourier Transform (FFT). (Aren’t you glad this is a newsletter about computing and not about math?) Anyway, a transform lets us transform information organised by position (e.g. in images) or by time (e.g. in audio) into information organised by other properties, such as frequency.
 
 The FFT algorithm organises audio information (for a certain time length) by frequency. Depending on your equaliser settings, it increases or decreases the weightage of different frequencies to produce the sound you want, be it bass-heavy rock or medium-light jazz.
 
-But the FFT algorithm can do much more! It is known that most sounds we hear are typically in the 40 Hz to 19 kHz range, so it is usually a safe bet to discard frequency information below 40 Hz and above 19 kHz. If we lower the frequency ceiling for discarding, to 16 kHz, we can reduce the amount of audio information even more.
+But the FFT algorithm can do much more! It is known that most sounds we hear are typically in the 40 Hz to 19 kHz range, so it is usually a safe bet to discard frequency information below 40 Hz and above 19 kHz. If we lower the frequency ceiling for discarding, down to 16 kHz, we can reduce the amount of audio information even more.
 
 ## Lossy audio compression: masking
 
@@ -57,7 +61,9 @@ Lastly, long periods of silence (a couple seconds for example) are not worth all
 
 ## Lossy audio compression: lowering dynamic range
 
-We don’t always need to record audio with the full dynamic range of human hearing. For an orchestra concert, maybe that is important, but if you are just recording an interview, you don’t need to hear every tiny detail of how that person speaks (unless maybe you’re a doctor who can pick up telltale signs of cancer from the way a person speaks? That would be amazing.). Human voice frequency typically ranges from 85 to 255 Hz, and only covers a range of up to 65 dB. That’s a full 30 dB lower than the 96 dB of CD audio, which means we don’t need 16-bit audio to store that; about 11 or 12 bits would be sufficient. And you won’t need a 44.1 kHz sampling rate for that; 11.025 kHz is sufficient.
+We don’t always need to record audio with the full dynamic range of human hearing. For an orchestra concert, maybe that is important, but if you are just recording an interview, you don’t need to hear every tiny detail of how that person speaks (unless maybe you’re a doctor who can pick up telltale signs of cancer from the way a person speaks? That would be amazing.).
+
+Human voice frequency typically ranges from 85 to 255 Hz, and only covers a range of up to 65 dB. That’s a full 30 dB lower than the 96 dB of CD audio, which means we don’t need 16-bit audio to store that; about 11 or 12 bits would be sufficient. And you won’t need a 44.1 kHz sampling rate for that; 11.025 kHz is sufficient.
 
 That, in a nutshell, is how we get such small images and audio files on the internet. If you’re particularly sensitive you can often make out the difference caused by this lost information. But most of the time, we’re not listening or looking closely, and it’s easy to overlook such minor differences.
 
@@ -86,7 +92,7 @@ I didn’t manage to get into what happens when you save, edit, and re-save a JP
 - a good reason developers write code and give it away for free online? [Issue 21]
 - compiling code into an application [Issue 26]?
 - firmware? [Issue 34]
-- HTML? [Issue 38]
-- OpenType? And what are fonts anyway? [Issue 42]
+- What is HTML? [Issue 38]
+- What is OpenType? And what are fonts anyway? [Issue 42]
 - ~~What is compression? [Issue 43]~~
 - ~~Why are music files so large when a voice call over internet uses so little data? [Issue 45]~~

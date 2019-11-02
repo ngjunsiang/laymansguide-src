@@ -1,9 +1,9 @@
 Last issue, I talked about HTTP response headers, and how they inform the client about the request status using a status code. Let’s talk about the HTTP request today. An HTTP request header looks like this:
 
-<span style="text-align:center">
+
 ![An HTTP request header](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue009/issue009_01.png?raw=true)
-A request header
-</span>
+<small>A request header</small>
+
 
 Really simple. In Issue 6, I said that to use an API we need to send a request using HTTP methods such as GET, POST, DELETE. You can see the GET method in use here. It’s literally just a word in the request header! Followed by the URL which we are requesting, in his case I’m searching for annotations made by me on Hypothes.is.
 
