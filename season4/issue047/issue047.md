@@ -10,7 +10,7 @@ While lossy compression depends very much on how our senses (particularly sight 
 
 Your brain works in interesting ways. If it sees two images that are near-identical (like a game of Spot The Difference), it won’t remember it as two separate images, but as one image, and the difference between the two images. So when people try to recall the two images you hear things like “this photo had a cat and a dog staring each other down and it also had [blahblah], the other photo is exactly the same except the cat’s ears were furled back and the dog was drolling”. Certainly a lot faster than describing the second image exactly the same way, with the additional detail!
 
-Lossless audio compressors work in a similar way. They sample the audio in short segments, and try to see how lazy they can get in describing the next sample. This is known as **predictive coding**, because is a little similar to the process of trying to “predict” the next sample. For example, based on the past 10 samples, a predictive algorithm might say “the next sample will have 0.09% of sample 1, 1.02% of sample 2, 5.63% of sample 3, …”. Storing those percentages will use a lot less space than storing the entire sample; when decompressing, the algorithm can then multiply the percentages with the respective samples to reconstruct the original sample.
+Lossless audio compressors work in a similar way. They sample the audio in short segments, and try to see how lazy they can get in describing the next sample. This is known as **predictive coding**, because it is a little similar to the process of trying to “predict” the next sample. For example, based on the past 10 samples, a predictive algorithm might say “the next sample will have 0.09% of sample 1, 1.02% of sample 2, 5.63% of sample 3, …”. Storing those percentages will use a lot less space than storing the entire sample; when decompressing, the algorithm can then multiply the percentages with the respective samples to reconstruct the original sample.
 
 In lossless compression, the predictive algorithm already knows what the next sample is, so most of the work is in calculating exactly what those percentages are. It does so by making an initial guess, then refining that guess in successive stages of calculation, each stage bringing it closer to the original waveform. This requires a lot of computation time. If such a setting is available, the algorithm can shorten the process, leading to a poorer guess. It then calculates the difference between the best guess and the original sample, and stores the difference between the two. This part is what makes it lossless rather than lossy.
 
@@ -18,7 +18,7 @@ In lossless compression, the predictive algorithm already knows what the next sa
 
 The most common image formats that use compression are GIF (yes, really) and PNG. Some kinds of images, such as screenshots, have patterns that are repeated. The algorithm used in GIF and PNG, LZ77, attempts to spot these patterns, and reduce them to 1) the repeating portion, and 2) the number of repetitions. This is known as **run-length encoding**. The nature of images makes the process easier, as each pixel only has 256 possible values rather than 65536.
 
-Those patterns are stored in a table, and *references* to them are used instead. So instead of saying “Pattern 0101011101110110”, the algorithm will store a list of these patterns, and refer to them as Pattern 0, Pattern 1, Pattern 10, Pattern 11, … (these are 1, 2, 3, and 4 respectively, in binary format ()[Issue 40](https://buttondown.email/laymansguide/archive/lmg-s4-issue-40-bits-and-bytes/)).
+Those patterns are stored in a table, and *references* to them are used instead. So instead of saying “Pattern 0101011101110110”, the algorithm will store a list of these patterns, and refer to them as Pattern 0, Pattern 1, Pattern 10, Pattern 11, … (these are 1, 2, 3, and 4 respectively, in binary representation ([Issue 40](https://buttondown.email/laymansguide/archive/lmg-s4-issue-40-bits-and-bytes/))).
 
 This is known as **entropy coding**. By linking the longest pattern with the smallest reference number (i.e. Pattern 0), the next-longest pattern with the next-smallest reference number (Pattern 1, 10, 11, 100, 101, 110, …) you can reduce quite significantly the number of bits needed to represent the image.
 
@@ -32,7 +32,7 @@ Excellent question. Shannon’s source coding theorem[^1] defines a compression 
 
 [^1]: Yes, that’s the same Shannon from Nyquist-Shannon sampling theorem. Claude Shannon is lauded as “the father of information theory” with good reason.
 
-So what is the Shannon entropy of the data? That depends on its predictability. A block of text that only consists of the letter ‘e’ would be highly predictable, and therefore a low Shannon entropy (I will stop using this term and use **predictability** instead). A block of text that is just completely random characters would be unpredictable and would therefore have a high Shannon entropy.
+So what is the Shannon entropy of the data? That depends on its predictability. A block of text that only consists of the letter ‘e’ would be highly predictable, and therefore have a low Shannon entropy (I will stop using this term and use **predictability limit** instead). A block of text that is just completely random characters would be unpredictable and would therefore have a high Shannon entropy.
 
 *tl;dr* higher predictability  = higher (lossless) compression, lower predictability = lower (lossless) compression
 
@@ -58,7 +58,7 @@ Powerpoint is already a compressed file format, so the only filesize gains you w
 
 # You talk about your highfalutin Shannon entropy, but I can find so many tiny video and image files online! How do they achieve that?
 
-Shannon’s source coding theorem does not claim that you cannot compress data beyond its Shannon entropy. It only claims that you cannot do so losslessly. Which means you can compress data beyond its Shannon entropy, *lossily*.
+Shannon’s source coding theorem does not claim that you cannot compress data beyond its predictability limit. It only claims that you cannot do so losslessly. Which means you can compress data beyond its predictability limit, *lossily*.
 
 You are getting video and image files from those sources with lots of information thrown away. If you can’t tell the difference, good for you.
 

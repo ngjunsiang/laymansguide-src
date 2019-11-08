@@ -12,7 +12,7 @@ In this issue, I’ll be summarising and oversimplifying decades of colour theor
 
 Any effective colour system must take into account how the human eye is structured, and how vision occurs. Today, we understand that humans are trichromatic: there are 3 types of cone cells in the eye (and also 1 type of rod cell, which I won’t be explaining here), and each one recognises a different shade of colour: red, green, blue. Each type of cone cell can differentiate roughly 100 different shades, which theoretically enables us to distinguish 1 million shades of colour (100^3).
 
-So it makes good sense that our colour systems in computers evolved similarly, to store single dots of colour as a combination of red, green, and blue. To be able to store 100 different shades, we will need at least 6 bits (2^6 = 128), but [computer systems like things in 8s](https://buttondown.email/laymansguide/archive/lmg-s4-issue-40-bits-and-bytes/). For this and other historical reasons, 1 byte (8 bits) are used for each shade, giving us 256 shades of red, green, and blue each. That’s over 16 million (256^3) shades of colour!
+So it makes good sense that our colour systems in computers evolved similarly, to store single dots of colour as a combination of red, green, and blue. To be able to store 100 different shades, we will need at least 7 bits (2^7 = 128), but [computer systems like things in 8s](https://buttondown.email/laymansguide/archive/lmg-s4-issue-40-bits-and-bytes/). For this and other historical reasons, 1 byte (8 bits) are used for each shade, giving us 256 shades of red, green, and blue each. That’s over 16 million (256^3) shades of colour!
 
 ## Colour encoding
 
