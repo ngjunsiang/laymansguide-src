@@ -20,7 +20,7 @@ If you want to figure out such a file format, you would have to **reverse-engine
 
 Another example: The MP3 file format is simpler (although not easier to decode). Audio data is organised into frames, each frame having its own header followed by data. What about the artist name, record label, genre, date of release, and other information that comes with the file? All that is stored within the ID3 portion of the file metadata.
 
-![MP3 file structure showing internal structure](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue049/issue049_01.png?raw=true)<br />
+![MP3 file structure showing internal structure](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue049/issue049_01.png?raw=true)<br />
 <small>The MP3 file structure<br />
 Image from [Wikipedia](https://en.wikipedia.org/wiki/MP3#/media/File:Mp3filestructure.svg)</small>
 
@@ -50,7 +50,7 @@ See that label in the third row, with the Content-Type label, “application/jso
 
 **Issue summary:** A file consists of data, preceded by a file header which describes the data. Software (including operating systems) detect the kind of data contained in a file by 1) glancing at the file extension, 2) looking at its declared MIME type (if any), and 3) checking the file header, in order of difficulty and accuracy.
 
-I almosted started writing a long post about filesystems, but stopped myself in time. I hoped with this issue to continue emphasising the theme of data encapsulation: data locked in shells upon shells upon shells of metadata. I’ll be back to describing other types of data again for the rest of the issue, but I thought file headers would be good to introduce at this point.
+I almost started writing a long post about filesystems, but stopped myself in time. I hoped with this issue to continue emphasising the theme of data encapsulation: data locked in shells upon shells upon shells of metadata. I’ll be back to describing other types of data again for the rest of the issue, but I thought file headers would be good to introduce at this point.
 
 After this season I won’t be digging into complex data types, but when I move on to operating systems I’ll cycle back to filesystems and what you need to know about them. Before I get to that season, though, here’s something for you to ponder: if all data is ultimately binary, how would an app know where one file ends and where another starts? Does the file header for mydocument.doc start at this 0, or another 0, or actually at this 1?
 
