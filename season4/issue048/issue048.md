@@ -1,4 +1,4 @@
-**Previously:** Data cannot be compressed beyond its predictability limit in a lossless fashion. Lossless compression does not discard any information. It spots patterns in the data and represent them with fewer bits, through a combination of predictive coding, run-length encoding, and entropy coding.
+**Previously:** Data cannot be compressed beyond its predictability limit in a lossless fashion. Lossless compression does not discard any information. It spots patterns in the data and represents them with fewer bits, through a combination of predictive coding, run-length encoding, and entropy coding.
 
 In past issues this season, I went into some detail about how images and sound are represented as data in computers. I also went into a little detail about lossy compression, in which imperceptible information is discarded, and lossless compression, in which the original information can be reconstructed.
 
@@ -17,7 +17,7 @@ These various types of information, if they are time-sensitive (video, audio, an
 
 # The video container
 
-What we usually understand as a video file is actually a **video container** format. The common ones we encounter online today are MP4 (`.mp4`) and Quicktime (`.mov`). In a more recent past, you would have commonly encountered AVI (`.avi`), 3GPP (`.3gp`), and Flash Video (`.flv`). And if you’re a video techie who dives into DVDs and Bluray discs, you would also have seen Video Objects (`.vob`) and MPEG Transport Streams (`.ts`) while digging through their contents on a computer.
+What we usually understand as a video file is actually a **video container** format. The common ones we encounter online today are MP4 (`.mp4`) and Quicktime (`.mov`). In a more recent past, you would have commonly encountered AVI (`.avi`), 3GPP (`.3gp`), and Flash Video (`.flv`). And if you’re a video techie who dives into DVDs and Blu-ray discs, you would also have seen Video Objects (`.vob`) and MPEG Transport Streams (`.ts`) while digging through their contents on a computer.
 
 The audio, image, and text data in the video container are referred to as **streams**. At the binary level, it’s all 1s and 0s; how does the computer know which part of the file contains audio, image, or text data? This information is in the video container metadata, along with more details on how to load the correct part of the video, audio, or text _at the right time_.
 
@@ -25,7 +25,7 @@ If you have come across poorly formed video where the image and audio data is no
 
 # From still image to video
 
-I’ve talked about pixels are perceived in still image data, now I’ll introduce one more aspect of psychovisuals: how the human eye perceives *motion*.
+I’ve talked about how pixels are perceived in still image data, now I’ll introduce one more aspect of psychovisuals: how the human eye perceives *motion*.
 
 The eye interacts with the brain in strange ways. Over millions of years of evolution, the brain has evolved [a ‘high-power’ and a ‘low-power’ way](https://www.eurekalert.org/pub_releases/2006-07/uops-prc072606.php) to receive information from the eye. Under everyday conditions, the brain is able to connect separate frames of image data into a coherent picture and interpretation without being confused by the differences between each frame.
 
@@ -37,15 +37,20 @@ For everyday purposes, such as online streaming, it is more common to encounter 
 
 How about the data streams? How are they stored?
 
-To start with the obvious, they obviously are not stored uncompressed; we saw that a single image of 1920×1080 pixels (that’s 1080p video standard, with 1080 pixels vertically) already requires 6 MiB ([Issue 43](https://buttondown.email/laymansguide/archive/lmg-s4-issue-43-images-a-mosaic-of-3-colours/)), while one second of audio requires 86 KiB ([Issue 45](https://buttondown.email/laymansguide/archive/lmg-s4-issue-45-audio-a-sampling-of-values/)).
+To start with the obvious, they are not stored uncompressed; we saw that a single image of 1920×1080 pixels (that’s 1080p video standard, with 1080 pixels vertically) already requires 6 MiB ([Issue 43](https://buttondown.email/laymansguide/archive/lmg-s4-issue-43-images-a-mosaic-of-3-colours/)), while one second of audio requires 86 KiB ([Issue 45](https://buttondown.email/laymansguide/archive/lmg-s4-issue-45-audio-a-sampling-of-values/)).
 
-Various video stream formats exist for the purpose of compressing video data lossily. In addition to the lossy compression techniques I covered in [Issue 46](https://buttondown.email/laymansguide/archive/lmg-s4-issue-46-lossy-compression/), software that creates these streams can also compare video frames at different points in time and throw away identical parts (if there’s no scene change, or if the camera is panning slowly, for instance).
+In addition to the lossy compression techniques I covered in [Issue 46](https://buttondown.email/laymansguide/archive/lmg-s4-issue-46-lossy-compression/), software that creates these streams can also compare video frames at different points in time and throw away identical parts (if there’s no scene change, or if the camera is panning slowly, for instance).
 
-h264 (a.k.a. AVC, for **A**dvanced **V**ideo **Coding**) is still the most common video stream format in use today. h265 (a.k.a. HEVC, for **H**igh **E**fficiency **V**ideo **C**oding) is slated to replace it and is set to become more and more popular. Google’s VP9 is attempting to compete with it (with companies such as Netflix already on board). FLV (as a video stream format, not a container; I know it’s confusing) are becoming less and less common.
+Various video stream formats exist to carry out this lossy compression of video data.
 
-What about audio? We used to encounter MP3 pretty often, but today most audio stream data is stored as AAC (for **A**dvanced **A**udio **C**oding, the standard that’s meant to replace MP3), Dolby (often on DVDs and Blurays), and sometimes Vorbis (`.ogg`).
+- h264 (a.k.a. AVC, for **A**dvanced **V**ideo **Coding**) is still the most common video stream format in use today.
+- h265 (a.k.a. HEVC, for **H**igh **E**fficiency **V**ideo **C**oding) is slated to replace it and is set to become more and more popular.
+- Google’s VP9 is attempting to compete with it (with companies such as Netflix already on board).
+- FLV (as a video stream format, not a container; I know it’s confusing) is becoming less and less common.
 
-Confused yet? Just remember that the video file you have is the container, and it contains one or more streams of actual data.
+What about audio? We used to encounter MP3 pretty often, but today most audio stream data is stored as AAC (for **A**dvanced **A**udio **C**oding, the standard that’s meant to replace MP3), Dolby (often on DVDs and Blu-rays), and sometimes Vorbis (`.ogg`).
+
+Confused yet? Just remember that the video file you have (carrying the `.mp4`, `.mov`, etc file extension) is only the container, and it contains one or more streams of actual data.
 
 # Encoding and decoding
 
