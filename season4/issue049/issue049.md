@@ -44,7 +44,7 @@ If you plan to come up with a file format that is intended to be used widely, yo
 
 Remember this HTTP header from Issue 8?
 
-![An HTTP request header](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue009/issue009_01.png?raw=true)
+![An HTTP request header](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue008/issue008_01.png?raw=true)
 
 See that label in the third row, with the Content-Type label, “application/json”? That’s the MIME type for the [JSON data format](https://buttondown.email/laymansguide/archive/lmg-issue-5-what-is-json/). When the server returns data, my browser (the client) has no idea what format it is. It might be nicely formatted HTML meant for human consumption, but it might also be plain text, JSON data (like in this case), XML, or any of the various data formats that people use. Declaring the MIME type properly makes life easier for the browser to know what to do with the data.
 
