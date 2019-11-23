@@ -8,7 +8,7 @@ And then computers came along. But in the days of dot matrix printers, which pri
 
 If you were working for a professional publisher, you formatted text by inserting **control codes** (including the formatting commands mentioned in [Issue 41](https://buttondown.email/laymansguide/archive/lmg-s4-issue-41-ascii-the-typewriter-digitised/)) using a special keyboard. But computers back then weren’t powerful enough to show you the effects of that formatting instantaneously. You would just see the formatting code on the display and have to imagine how it looks like in your head. Which is easy to do, after many years of experience.
 
-![Formatting codes revealead in WordPerfect 5.1](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue051/issue051_01.png?raw=true)<br />
+![Formatting codes revealed in WordPerfect 5.1](https://github.com/ngjunsiang/laymansguide/blob/master/season5/issue051/issue051_01.png?raw=true)<br />
 <small>WordPerfect 5.1 (1986), with formatting codes revealed<br />
 From [Anthology](https://anthology.hypotheses.org/254)</small>
 
@@ -32,7 +32,7 @@ But people soon wanted to include even more things in their documents: forms, vi
 
 Today, it is easy to take for granted that when I create a DOCX document in Word on my iPad and upload it to Google Drive, it should open on my laptop and look the same. To an accurate enough degree, anyway.
 
-But two decades ago such compatibility was still a dream. You could not take for granted that a complex document format produced on one software would open correctly (if it even opens) on another piece of software, or even the same software written for a different machine (think of Word for Windows, Mac, and other OSes).
+But two decades ago, such compatibility was still a dream. You could not take for granted that a complex document format produced on one software would open correctly (if it even opens) on another piece of software, or even the same software written for a different machine (think of Word for Windows, Mac, and other OSes).
 
 Needless to say, this was incredibly frustrating for industry. If you were running an ad campaign and your ad agency is trying to send poster designs to you but you each use different software in your workflow … well, how is that going to happen? Or what if two different government departments are trying to collaborate on a form that citizens will use to file taxes?
 
