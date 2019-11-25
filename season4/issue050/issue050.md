@@ -1,8 +1,8 @@
 **Previously:** A file consists of data, preceded by a file header which describes the data. Software (including operating systems) detect the kind of data contained in a file by 1) glancing at the file extension, 2) looking at its declared MIME type (if any), and 3) checking the file header.
 
-I took a small detour in Issue 49 to talk about how files are stored and how the operating system identifies them. This issue, let’s pick up where we left off in Issue 48 about complex data types, and encapsulated data (data in a shell of metadata in a shell of metadata …)
+I took a small detour in Issue 49 to talk about how files are stored and how the operating system identifies them. This issue, let’s pick up where we left off in Issue 48 about complex data types, and encapsulated data (data in a shell of metadata in a shell of metadata …).
 
-Video files can contain contain multiple data streams: video, audio, and text. That makes them a pretty complex type of file in which we can embed other types of data. But they are not the only complex file type. We deal with them every time we create a new Microsoft Office document, be it in Word, Powerpoint, or Excel. You can embed images, videos, fonts, and even stranger objects in Microsoft Word. How does a simple DOCX or PPTX document keep it all together?
+Video files can contain multiple data streams: video, audio, and text. That makes them a pretty complex type of file in which we can embed other types of data. But they are not the only complex file type. We deal with them every time we create a new Microsoft Office document, be it in Word, Powerpoint, or Excel. You can embed images, videos, fonts, and even stranger objects in Microsoft Word. How does a simple DOCX or PPTX document keep it all together?
 
 We are going to dig into a webpage document and a Word document and see what it looks like in there.
 
@@ -24,11 +24,11 @@ This is (a snippet of) the previous issue, as an HTML file:
 Thank goodness we have syntax highlighting, which should make it easier to notice all the little tags that start with an open angled bracket `<` and closed angled bracket `>`. These are called HTML tags, and they signify the start and end of segments in the document.
 
 - `<html>` starts the document, `</html>` ends it.
-- `<head></head>` contains information about the page: the page title (which will appear in the title bar of your web browser), the styles to apply to the document are within
- - `<style type="text/css">…</style>`, which I have hidden here and will show later.
+- `<head></head>` contains information about the page: the page title (which will appear in the title bar of your web browser), the styles to apply to the document are within.
+- `<style type="text/css">…</style>`, which I have hidden here and will show later.
 - `<body class="app">…</body>` contains the main part of the document, which is what we will see.
 - `<h1>` and `<h3>` signify different levels of headers, which can all be formatted separately.
-- `<div>` (for "division") is a generic container, within which you can images or other text.
+- `<div>` (for "division") is a generic container, within which you can embed images or other text.
 - `<p>…</p>` (for paragraph) indicates to a web browser that the context is to be treated like a text paragraph.
 - `<strong>…</strong>` indicates that it is to be formatted in strong fashion (which is usually treated as bold text … but you can change that in the styles section in the `<head>`).
 
@@ -82,7 +82,7 @@ So, that’s a Word document demystified. When you save a Word document, it just
 
 **Issue summary:** An HTML file contains markup tags that tell the browser how to interpret and format the text within the tags. Other document formats usually use tags in a similar way. These tags constitute a markup language that any app can use to mark up its own text too.
 
-Okay, I hope I’ve demystified webpages, text documents, and just about any place where you see formatted text *just a little bit*. Just about any place where you see formatting being done to text, there’s some kind of markup language working in the background. Of course, its often going to be much more complicated and messy than a little newsletter, but that is why we get computers to handle it.
+Okay, I hope I’ve demystified webpages, text documents, and just about any place where you see formatted text *just a little bit*. Just about any place where you see formatting being done to text, there’s some kind of markup language working in the background. Of course, it’s often going to be much more complicated and messy than a little newsletter, but that is why we get computers to handle it.
 
 -----
 
