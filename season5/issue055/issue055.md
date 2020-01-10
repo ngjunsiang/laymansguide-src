@@ -16,7 +16,7 @@ A little history, for those who remember: Around the turn of the century, in the
 
 This was also a time when 64-bit CPUs started coming onto the scene, and there was much confusion in the software world about which software would work on 32-bit CPUs, which ones would work on 64-bit CPUs, and which ones would work on both.
 
-So this is what it boils down to: a 32-bit CPU, without any hacky workarounds, can only work with about 4 billion memory addresses. and this became insufficient around the turn of the century. We needed to use CPUs that could work with more than 4 billion addresses. 64-bit CPUs where the solution that the computing industry settled on. 64-bit memory addresses would extend the addressable memory capacity to 16 TiB for the foreseeable future.
+So this is what it boils down to: a 32-bit CPU, without any hacky workarounds, can only work with about 4 billion memory addresses. and this became insufficient around the turn of the century. We needed to use CPUs that could work with more than 4 billion addresses. 64-bit CPUs were the solution that the computing industry settled on. 64-bit memory addresses would extend the addressable memory capacity to 16 TiB for the foreseeable future.
 
 ## 16 TiB?! Why do we need so much memory?
 
@@ -30,13 +30,13 @@ Let’s summarise the picture so far.
 
 **Issue summary:** The life of the unconscious CPU is just executing instruction after instruction after instruction. Each instruction may consist of loading data from a memory location, sending data to a memory location, or performing operations on the data it is holding.
 
-Not a very interesting life, but it forms the bedrock which supports everything we use a computer for. And things are about to get more complex once we throw programs into the picture. Each program is its own long list of CPU instructions, meant to produce different results, Excel carries out our spreadsheet processing, while Word helps us to format our documents. Yet the instructions from both programs are carried out in the same CPU! How does the CPU avoid mixing up data from different programs? How does it prevent Word from accidentally screwing up Excel’s data, and vice-versa?
+Not a very interesting life, but it forms the bedrock which supports everything we use a computer for. And things are about to get more complex once we throw programs into the picture. Each program is its own long list of CPU instructions, meant to produce different results. Excel carries out our spreadsheet processing, while Word helps us to format our documents. Yet the instructions from both programs are carried out in the same CPU! How does the CPU avoid mixing up data from different programs? How does it prevent Word from accidentally screwing up Excel’s data, and vice-versa?
 
 ## What I’ll be covering next
 
 **Next issue:** Operating Systems and resource management
 
-Okay, I think I’ve laid out the basics of CPU operation in sufficient detail for now. I have yet to mention one key component—the CPU cache. And I have yet to explain how CPUs speed up processing. These will make more sense after I make a side trip about how computers prevent everything from becoming one gigantic mess.
+Okay, I think I’ve laid out the basics of CPU operation in sufficient detail for now. I have yet to mention one key component—the CPU cache. And I have yet to explain how CPUs speed up processing. These two explanations will make more sense after I make a side trip about how operating systems prevent everything from becoming one gigantic mess.
 
 **Sometime in the future:** What is:
 
