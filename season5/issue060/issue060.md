@@ -57,6 +57,8 @@ And there you have it, two CPU features explained with robots. These are well-re
 
 You might blame this oversight on Intel, but I think I would blame the unpredictable nature of development. Early forts only needed walls, but not roofs, until catapults were invented. Hardware was invented to run fast, and the internet was designed to be robust, and very few people could predict accurately how they would be exploited for ill.
 
+I was initially planning to write speculative execution and Spectre in two separate issues, but I did not expect to explain speculative execution in just three paragraphs. That would not have been a satisfying newsletter issue, huh. So here it is, speculative execution and Spectre in the same issue.
+
 ## What I’ll be covering next
 
 **Next issue:** [LMG S5] Issue 61: Mapping the cache

@@ -6,7 +6,9 @@ Those who have been following Layman’s Guide since Season 3 will remember this
 
 > Computers use the same trick, and it is called **caching**. Any information it needs repeatedly which is unchanging is stored in a **cache**.
 
-The DNS cache, which I introduced in that issue, is a place where hostnames (such as facebook.com) and their associated IP addresses are stored, so that we don’t need to keep looking up the IP address for facebook.com. We uses caches to reduce latency and speed up processing: the full DNS querying process takes a few hundred milliseconds, but looking up a DNS entry in the cache only takes a few milliseconds — that’s a speedup by a factor of 100!
+The DNS cache, which I introduced in that issue, is a place where hostnames (such as facebook.com) and their associated IP addresses are stored, so that we don’t need to keep looking up the IP address for facebook.com.
+
+We use caches to reduce latency and speed up processing: the full DNS querying process takes a few hundred milliseconds, but looking up a DNS entry in the cache only takes a few milliseconds — that’s a speedup by a factor of 100!
 
 ## How long does it take to transfer data?
 
@@ -21,7 +23,7 @@ Let’s look at the transfer speeds and latencies for a few places where data ca
 
 A CPU register is a slot within the CPU (the same slots from [Issue 53](https://buttondown.email/laymansguide/archive/lmg-s5-issue-53-the-cpu-is-an-instruction-obeying/)) which it uses to hold the data it is processing.
 
-Notice that the speed difference between each layer is more than 10×? If a computer did not have physical memory to store temporary data in, and had to transfer data to/from an SSD, it would be responding a thousand times slower!
+Notice that the speed difference between each layer is more than 10×? If a computer did not have physical memory to store temporary data in, and had to transfer data to/from disk, it would be responding a thousand times more slowly!
 
 A CPU can carry out operations very quickly on data loaded into its registers; it generally takes only a few nanoseconds for complex calculations to be done. Simple instructions (such as ADD) can even be done in less than 1 ns!
 

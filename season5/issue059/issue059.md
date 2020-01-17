@@ -37,11 +37,11 @@ However, after reordering for efficiency, the steps now look like this:
 
 [1.] **GET** ID[23983698576] from customer  
 [2.] **LOAD** bank account owner of [23983698576] from memory (written back to cache)  
-[3.] Check if I am the bank account owner *[SLOW]*
-[4.] *IF* verified, **LOAD** bank account balance of [23983698576]
-[7.] **LOAD** last 5 transactions of [23983698576] from memory (written back to cache)
-[5.] *IF* **not verified**, dump data and start over with the next customer
-[6.] **SEND** bank account balance to me
+[3.] Check if I am the bank account owner *[SLOW]*  
+[4.] *IF* verified, **LOAD** bank account balance of [23983698576]  
+[7.] **LOAD** last 5 transactions of [23983698576] from memory (written back to cache)  
+[5.] *IF* **not verified**, dump data and start over with the next customer  
+[6.] **SEND** bank account balance to me  
 [8.] **SEND** last 5 transactions to me
 
 While the ALU is carrying out authenticity checks in step 3, the LSU is simultaneously carrying out steps 4 and 7, the LOAD steps, to avoid sitting idle.
