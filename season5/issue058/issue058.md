@@ -1,4 +1,4 @@
-**Previously:** The CPU stores data for ready access in the CPU cache. Accessing data from the CPU cache is much faster than accessing data from memory. The CPU cache is managed by the CPU and is invisible to the OS. Programs that need to ensure the data in the cache is “fresh” can perform a cache flush and reload.
+**Previously:** The CPU stores data for ready access in the CPU cache. Accessing data from the CPU cache is much faster than accessing data from memory. When the CPU needs data from a memory address, it looks in the cache first. If the data is not there (a **cache miss**), it will load the data from the memory address, and store a copy in the cache for faster reference in future. The CPU cache is managed by the CPU and is invisible to the OS. Programs that need to ensure the data in the cache is “fresh” can perform a cache flush and reload.
 
 In this issue, we look at one feature that CPUs use to speed up processing: out-of-order execution. “Out-of-order” makes it sound like something is broken in the CPU, but it really just means that the CPU instructions it is given are not executed in the same order that they were fed to the CPU.
 

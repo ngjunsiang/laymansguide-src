@@ -51,7 +51,7 @@ Like other caches, this process has its own issues. the cache can fill up, requi
 
 A cache flush empties out the cached data while preserving the memory address it is linked to. A cache reload, well, reloads the data from those memory addresses. These two terms, jargon for very technical operations that take place in the CPU, are being introduced because they are the linchpin of Meltdown and Spectre. We will get there in the next two issues.
 
-**Issue summary:** The CPU stores data for ready access in the CPU cache. Accessing data from the CPU cache is much faster than accessing data from memory. The CPU cache is managed by the CPU and is invisible to the OS. Programs that need to ensure the data in the cache is “fresh” can perform a cache flush and reload.
+**Issue summary:** The CPU stores data for ready access in the CPU cache. Accessing data from the CPU cache is much faster than accessing data from memory. When the CPU needs data from a memory address, it looks in the cache first. If the data is not there (a **cache miss**), it will load the data from the memory address, and store a copy in the cache for faster reference in future. The CPU cache is managed by the CPU and is invisible to the OS. Programs that need to ensure the data in the cache is “fresh” can perform a cache flush and reload.
 
 If CPU development had stopped at this point, Meltdown and Spectre would not have been possible … and we would have been stuck in the ’90s, somewhat. It is in human nature to try to exploit every last bit of available optimisation, and this is what happened with the design of CPUs.
 
