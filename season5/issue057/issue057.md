@@ -1,8 +1,8 @@
-**Previously:** The operating system is responsible for listing and managing the computers resources, making them available to programs running on the computer, and making sure they only use what they are allowed to.
+**Previously:** The operating system is responsible for listing and managing the computer’s resources, making them available to programs running on the computer, and making sure they only use what they are allowed to.
 
 Those who have been following Layman’s Guide since Season 3 will remember this term, **caching**. I first introduced it at the end of Season 3, in [Issue 39](https://buttondown.email/laymansguide/archive/lmg-s3-issue-39-caches-and-caching/):
 
-> Searching for anything takes time. Need to fill out a form? You need to search for a pen first. Need to call someone? Before speed dial and contacts apps existed, You used to need to look up a number in order to dial it. If you do it often enough, you would make sure you always had a pen with you, or you would write the number somewhere convenient for you to see so you don’t need to hunt for it.
+> Searching for anything takes time. Need to fill out a form? You need to search for a pen first. Need to call someone? Before speed dial and contacts apps existed, you used to need to look up a number in order to dial it. If you do it often enough, you would make sure you always had a pen with you, or you would write the number somewhere convenient for you to see so you don’t need to hunt for it.
 
 > Computers use the same trick, and it is called **caching**. Any information it needs repeatedly which is unchanging is stored in a **cache**.
 
@@ -23,7 +23,7 @@ Let’s look at the transfer speeds and latencies for a few places where data ca
 
 A CPU register is a slot within the CPU (the same slots from [Issue 53](https://buttondown.email/laymansguide/archive/lmg-s5-issue-53-the-cpu-is-an-instruction-obeying/)) which it uses to hold the data it is processing.
 
-Notice that the speed difference between each layer is more than 10×? If a computer did not have physical memory to store temporary data in, and had to transfer data to/from disk, it would be responding a thousand times more slowly!
+Notice that the speed difference between each layer is more than 10×? If a computer did not have physical memory to store temporary data in, and had to transfer data to/from disk instead, it would be responding a thousand times more slowly!
 
 A CPU can carry out operations very quickly on data loaded into its registers; it generally takes only a few nanoseconds for complex calculations to be done. Simple instructions (such as ADD) can even be done in less than 1 ns!
 
@@ -49,7 +49,7 @@ Just as an organisation would not control what information you should have on yo
 
 Like other caches, when the CPU needs data from a memory address, it looks in the cache first. If the data is not there (a **cache miss**), it will load the data from the memory address, and store a copy in the cache for faster reference in future.
 
-Like other caches, this process has its own issues. the cache can fill up, requiring the CPU to eject old data so as to make way for fresher data. The cached data on the CPU cache can also become outdated when other programs and instructions update the data in memory. Programs that absolutely need to ensure they get the freshest data from memory can issue special instructions to perform a **cache flush** and **cache reload**.
+Like other caches, this process has its own issues. The cache can fill up, requiring the CPU to eject old data so as to make way for fresher data. The cached data on the CPU cache can also become outdated when other programs and instructions update the data in memory. Programs that absolutely need to ensure they get the freshest data from memory can issue special instructions to perform a **cache flush** and **cache reload**.
 
 A cache flush empties out the cached data while preserving the memory address it is linked to. A cache reload, well, reloads the data from those memory addresses. These two terms, jargon for very technical operations that take place in the CPU, are being introduced because they are the linchpin of Meltdown and Spectre. We will get there in the next two issues.
 
