@@ -1,6 +1,6 @@
-**Previously:** Speculative execution is a feature that let’s the CPU speed up execution if it correctly predicts a decision point. The CPU carries out the operations along the predicted decision branch and loads the results if it predicts correctly.
+**Previously:** Speculative execution is a feature that lets the CPU speed up execution if it correctly predicts a decision point. The CPU carries out the operations along the predicted decision branch and loads the results if it predicts correctly.
 
-Meltdown and Spectre need 2 pieces of the puzzle to work, and we have covered the first piece already: How to load the forbidden information into the cache, where it will not be immediately wiped by the OS when we are “found out”.
+Meltdown and Spectre need 2 pieces of the puzzle to leak data, and we have covered the first piece already: How to load the forbidden information into the cache, where it will not be immediately wiped by the OS when we are “found out”.
 
 The second piece of the puzzle, naturally, is how to get the info out of the cache before the CPU eventually evicts old data from it.
 
@@ -8,13 +8,13 @@ The second piece of the puzzle, naturally, is how to get the info out of the cac
 
 At this point, we would have failed. We have gotten the secret into the cache, but we have no idea where it is in the cache, and we have no way to access the cache directly—remember that the cache is managed by the CPU and there is no instruction we can issue to the CPU to give us cache data directly.
 
-So far … and it doesn’t even matter.
+We’ve come so far … and it doesn’t even matter.
 
-We’ll need to modify our approach slightly. We can’t store the leaked data directly in the cache naïvely like that, we’ve got to be a little cleverer.
+We’ll need to modify our approach slightly. We can’t store the leaked data directly in the cache naïvely like that. We’ve got to be a little cleverer.
 
 ## The cache “mirrors” a part of virtual memory
 
-A quick refresher on how the cache works ([Issue 57]()):
+A quick refresher on how the cache works ([Issue 57](https://buttondown.email/laymansguide/archive/lmg-s5-issue-57-cache-the-cpus-working-space/)):
 
 1. When the CPU needs data from a memory address, it looks in the cache first.
 2. If the data is not there (a **cache miss**), it will load the data from the memory address, and store a copy in the cache for faster reference in future. [**SLOW**]
@@ -24,7 +24,7 @@ Hmm … there’s something here. A cache miss is slow, and a cache hit is fast.
 
 Many secret ways of transmitting information involves a shared cipher, a secret way of converting what is sent to what is meant. Leaking cache information will require a cipher of some sort.
 
-It’s like a WWII spy story. Two spies arrange 3 different dropoff locations. Dropoff location 1 means their country is going to attack. Dropoff location 2 means their country is not going to attack. And dropoff location 3 means the information is compromised and they should avoid contact. Even if they are caught by the secret police, there is no way of figuring out what the two spies had communicated to each other.
+It’s like a WWII spy story. Two spies arrange 3 different dropoff locations. Dropoff location 1 means their country is going to attack. Dropoff location 2 means their country is not going to attack. And dropoff location 3 means the information is compromised and they should avoid contact. Even if they are caught by the secret police, there is no way of figuring out what the two spies had communicated to each other indirectly.
 
 All right, I’m writing a newsletter here, not a workshop. And the rest of the story will need more technical detail, so let’s call it a week. Next issue, all will be revealed ;)
 
