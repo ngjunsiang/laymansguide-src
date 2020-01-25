@@ -1,8 +1,8 @@
-**Previously:** The CPU stores data for ready access in the CPU cache. Accessing data from the CPU cache is much faster than accessing data from memory. When the CPU needs data from a memory address, it looks in the cache first. If the data is not there (a **cache miss**), it will load the data from the memory address, and store a copy in the cache for faster reference in future. The CPU cache is managed by the CPU and is invisible to the OS. Programs that need to ensure the data in the cache is “fresh” can perform a cache flush and reload.
+**Previously:** The CPU stores data for ready access in the CPU cache. Accessing data from the CPU cache is much faster than accessing data from physical memory. When the CPU needs data from a memory address, it looks in the cache first. If the data is not there (a **cache miss**), it will load the data from the memory address, and store a copy in the cache for faster reference in future. The CPU cache is managed by the CPU and is invisible to the OS. Programs that need to ensure the data in the cache is “fresh” can perform a cache flush and reload.
 
 In this issue, we look at one feature that CPUs use to speed up processing: out-of-order execution. “Out-of-order” makes it sound like something is broken in the CPU, but it really just means that the CPU instructions it is given are not executed in the same order that they were fed to the CPU.
 
-If you have seen a busy Starbucks joint or Chinese restaurant at work, you would know that menu orders are not always carried out in the same order that they were taken (even if customers are eventually first-come-first-served)!. We do this because a fully staffed Starbucks joint or Chinese restaurant is not a single working unit, but a collection of specialised units.
+If you have seen a busy Starbucks joint or Chinese restaurant at work, you would know that menu orders are not always carried out in the same order that they were taken (even if customers are eventually first-come-first-served). A fully staffed Starbucks joint or Chinese restaurant is not a single working unit, but a collection of specialised units.
 
 ## CPU execution units
 
@@ -32,17 +32,17 @@ Let’s revisit the instructions from [Issue 53](https://buttondown.email/layman
 3 MOV  R2, MEM1011
 ```
 
-The first instruction is to load data from memory, and this is gonna take a little while. The second instruction can’t start yet, so sending it to the ALU immediately after the first instruction will result in some wastage of clock cycles: the ALU will just be sitting there, waiting for data before it can do its thing.
+The third instruction is to store data from the CPU register to physical memory, and this is gonna take a little while. Sending subsequent instructions to the ALU immediately after the third instruction will result in some wastage of clock cycles: the ALU will just be sitting there, waiting for the data to be available in main memory before it can do its thing.
 
-Why not schedule an instruction from another application while waiting, and send instruction 2 to the ALU later when the data is ready? It doesn’t matter if the other application’s instruction came later, if it can be executed now we might as well do it.
+Why not schedule an instruction, even from another application, while waiting? It doesn’t matter if the other application’s instruction came later, if it can be executed now we might as well do it.
 
 This, in a nutshell-issue, is out-of-order execution.
 
 ## Analogy: old-school robot bank teller
 
-Let’s model a CPU core as two execution units: an ALU and a LSU. The ALU is a robot bank teller that does what the customer asks, while the LSU is a robot bank teller that retrieves data from and stores data back to the bank’s database (i.e. memory). Two such robot bank tellers work at a teller counter (CPU core)
+Let’s model a CPU core as two execution units: an ALU and a LSU. The ALU is a robot bank teller that does what the customer asks, while the LSU is a robot bank teller that retrieves data from and stores data back to the bank’s database (i.e. memory). Two such robot bank tellers work at a teller counter (CPU core).
 
-If a customer needs to check their bank balance, the following instructions need to happen (like I said, this is old-school; no ibanking or ATMs here, because analogy).
+If a customer needs to check their bank balance, the following instructions need to happen (like I said, this is old-school; no iBanking or ATMs here, because analogy).
 
 1. **GET** ID from customer
 2. **LOAD** bank account owner from memory (using ID number)
@@ -54,7 +54,7 @@ If you’re wondering why steps 2 and 4 can’t happen at the same time … cong
 
 This frees up the LSU, and if the LSU’s load is low enough we might even reduce robotpower and share one LSU between two teller counters, seeding android fears of restructuring and impending robot retrenchment … but let’s stop the analogy here for today.
 
-**Issue summary:** The CPU is comprised of different types of execution units. All the execution units can run at the same time, but they may execute instructions over different numbers of clock cycles. To minimise wait time, CPU instructions are carried out in an order that keeps the execution units busy as often as possible.
+**Issue summary:** The CPU comprises different types of execution units. All the execution units can run at the same time, but they may execute instructions over different numbers of clock cycles. To minimise wait time, CPU instructions are carried out in an order that keeps the execution units busy as often as possible.
 
 Some very smart people might harangue me about micro-ops, or about decode buffers, etc. My only answer to all such concerns are: not necessary at this point. Maybe in a future issue, if it is the linchpin in some layman explanation.
 
