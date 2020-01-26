@@ -1,4 +1,4 @@
-**Previously:** The CPU stores data for ready access in the CPU cache. Accessing data from the CPU cache is much faster than accessing data from physical memory. When the CPU needs data from a memory address, it looks in the cache first. If the data is not there (a **cache miss**), it will load the data from the memory address, and store a copy in the cache for faster reference in future. The CPU cache is managed by the CPU and is invisible to the OS. Programs that need to ensure the data in the cache is “fresh” can perform a cache flush and reload.
+**Previously:** The CPU stores data for ready access in the CPU cache. Accessing data from the CPU cache is much faster than accessing data from main memory. When the CPU needs data from a memory address, it looks in the cache first. If the data is not there (a **cache miss**), it will load the data from the memory address, and store a copy in the cache for faster reference in future. The CPU cache is managed by the CPU and is invisible to the OS. Programs that need to ensure the data in the cache is “fresh” can perform a cache flush and reload.
 
 In this issue, we look at one feature that CPUs use to speed up processing: out-of-order execution. “Out-of-order” makes it sound like something is broken in the CPU, but it really just means that the CPU instructions it is given are not executed in the same order that they were fed to the CPU.
 
@@ -32,7 +32,7 @@ Let’s revisit the instructions from [Issue 53](https://buttondown.email/layman
 3 MOV  R2, MEM1011
 ```
 
-The third instruction is to store data from the CPU register to physical memory, and this is gonna take a little while. Sending subsequent instructions to the ALU immediately after the third instruction will result in some wastage of clock cycles: the ALU will just be sitting there, waiting for the data to be available in main memory before it can do its thing.
+The third instruction is to store data from the CPU register to main memory, and this is gonna take a little while. Sending subsequent instructions to the ALU immediately after the third instruction will result in some wastage of clock cycles: the ALU will just be sitting there, waiting for the data to be available in main memory before it can do its thing.
 
 Why not schedule an instruction, even from another application, while waiting? It doesn’t matter if the other application’s instruction came later, if it can be executed now we might as well do it.
 
