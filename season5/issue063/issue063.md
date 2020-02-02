@@ -13,7 +13,7 @@ Just how vulnerable are we to Meltdown and Spectre?
 Every exploit relies on one or more things to work before it can do its things. Meltdown and Spectre require a way to run themselves on the CPU, in the OS. That means a black hat hacker will have to obtain illegal access to the OS, and there are a few common ways to do so:
 
 1. **By cracking a password**  
-   If the hash of a password (future season) is leaked, hackers can try to reverse-enginner the original password that led to that hash. This requires A LOT of CPU time, and is often not feasible for properly hashed passwords.
+   If the hash of a password (future season) is leaked, hackers can try to reverse-engineer the original password that led to that hash. This requires A LOT of CPU time, and is often not feasible for properly hashed passwords.
 
 2. **Getting a password from an unsuspecting user**  
    Other people, usually admins and employees, of the OS will already have access to it. A black hat hacker can try to get the password from them through phishing means, or trying to get keystroke-logging malware onto a flash drive they use, or simply posing as a contractor who needs the password for … whatever reason.
@@ -32,8 +32,6 @@ Within the physical memory part of the virtual memory space—
 Okay, quick unpacking here. Remember that the virtual memory space is where all our devices get an address? Hard drives, USB devices, network interfaces, … and of course, physical memory. Programs request data from and send data to these devices by using their virtual memory addresses. Each cell in physical memory also gets an address in virtual memory space.
 
 Within the physical memory part of the virtual memory space, there are portions which are set aside *for the OS only*. This is the **kernel address space**, which is where critical information such as user privilege tables and OS state get stored. Knowing the addresses in the kernel address space is a big requirement for many exploits, so OS engineers obviously put a lot of work into make sure they are as hard to guess or discover as possible.
-
-For example, newer versions of Linux randomise the location of the kernel address space at each computer bootup, to make it harder for an attacker to guess. It is still possible for the attacker to slowly probe which parts of the address space it can access, and which parts it can’t, and make a guess where the kernel address space is.
 
 **Issue summary:** For Meltdown to Spectre to work, they need two things: (1) Permission to carry out instructions (i.e. run programs) on the OS, and (2) knowledge of where the kernel address space is.
 
