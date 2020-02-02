@@ -1,4 +1,4 @@
-**Previously:** The CPU is comprised of different types of execution units. All the execution units can run at the same time, but they may execute instructions over different numbers of clock cycles. To minimise wait time, CPU instructions are carried out in an order that keeps the execution units busy as often as possible.
+**Previously:** The CPU comprises different types of execution units. All the execution units can run at the same time, but they may execute instructions over different numbers of clock cycles. To minimise wait time, CPU instructions are carried out in an order that keeps the execution units busy as often as possible.
 
 ## Last issue: optimising the old-school robot bank teller
 
@@ -54,7 +54,7 @@ When the ALU reaches step 5 and figures out I’m not the owner of that account,
 
 If this sounds horrifying to you, remember that the *real* CPU is just a bunch of transistors and it really isn’t all that smart. And remember that programs cannot access the cache directly; it is a hardware implementation detail (like the backroom of any business), and so this is considered normal practice.
 
-But still, that leaves a small window of opportunity for me to crane my neck and try to snoop the paper. and that’s all the time I need to see my neighbour’s transactions, and even his bank balance!
+But still, that leaves a small window of opportunity for me to crane my neck and try to snoop the paper. And that’s all the time I need to see my neighbour’s transactions, and even his bank balance!
 
 **Issue summary:** A set of instructions can trick a CPU into reordering load instructions so that the data is temporarily loaded into the cache before the instructions are retired. The cache can then be snooped to retrieve the data.
 
