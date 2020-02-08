@@ -41,23 +41,21 @@ Sounds fair enough. The ALU finds out I am not my neighbour, and I don’t get t
 
 10 customers later, the CPU has been processing verified customers only. It goes into speculative execution mode (in a **real CPU**, of course you can’t disable speculative execution just like that; it is always on). Now the CPU works this way:
 
-[1.] **GET** ID number[23983698576] from customer
-[2a.] **LOAD** car of 23983698576 by driving it to retrieval point
-[2b.] Verify if I am the car owner *[SLOW]*
-[3.] *IF* verified, pass car keys to customer
+[1.] **GET** ID number[23983698576] from customer  
+[2a.] **LOAD** car of 23983698576 by driving it to retrieval point  
+[2b.] Verify if I am the car owner *[SLOW]*  
+[3.] *IF* verified, pass car keys to customer  
 [4.] *IF* not verified, dump data and start over with the next customer
 
 2a and 2b are carried out simultaneously. Have you figured out where the cache is in this model? It’s where the car is temporarily held: at the retrieval point.
 
-10 customers later, the ALU checks my ID, and at the same time the LSU in good faith starts to drive my neighbour’s car to the retrieval point. It is astutely hidden from my direct view. But if I know the mode of operation of this valet beforehand, I have a small window of opportunity before the ALU figures out I’m not the owner and a cache flush occurs (i.e. the LSU removes the car from the retrieval point). Perhaps I could plant a camera there …
+10 customers later, the ALU checks my ID, and at the same time the LSU in good faith starts to drive my neighbour’s car to the retrieval point. It is astutely hidden from my direct view. But if I know the mode of operation of this valet beforehand, I have a small window of opportunity to sneak a peek at the car before the ALU figures out I’m not the owner and a cache flush occurs (i.e. the LSU removes the car from the retrieval point). Perhaps I could plant a camera at the retrieval point …
 
-**Issue summary:** Speculative execution is a feature that lets the CPU speed up execution if it correctly predicts a decision point. The CPU carries out the operations along the predicted decision branch and loads the results if it predicts correctly.
+**Issue summary:** Speculative execution is a feature that let’s the CPU speed up execution if it correctly predicts a decision point. The CPU carries out the operations along the predicted decision branch and loads the results if it predicts correctly.
 
-And there you have it, two CPU features explained with robots. These are well-researched CPU features that have been used in CPUs for a long while … and nobody in the industry thought to thoroughly investigate ways in which this might be exploited for malicious intent, until the security researchers found out first.
+And there you have it, two CPU features explained with robots. These are well-researched CPU features that have been used in CPUs for a long while … and nobody thought to thoroughly investigate ways in which this might be exploited for malicious intent.
 
 You might blame this oversight on Intel, but I think I would blame the unpredictable nature of development. Early forts only needed walls, but not roofs, until catapults were invented. Hardware was invented to run fast, and the internet was designed to be robust, and very few people could predict accurately how they would be exploited for ill.
-
-I was initially planning to write speculative execution and Spectre in two separate issues, but I did not expect to explain speculative execution in just three paragraphs. That would not have been a satisfying newsletter issue, huh. So here it is, speculative execution and Spectre in the same issue.
 
 ## What I’ll be covering next
 

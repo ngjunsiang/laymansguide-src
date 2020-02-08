@@ -1,4 +1,4 @@
-**Previously:** For Meltdown to Spectre to work, they need two things: (1) Permission to carry out instructions (i.e. run programs) on the OS, and (2) knowledge of where the kernel address space is.
+**Previously:** For Meltdown and Spectre to work, they need two things: (1) Permission to carry out instructions (i.e. run programs) on the OS, and (2) knowledge of where the kernel address space is.
 
 Last week, I explained two key limitations of Meltdown and Spectre that are needed for an attack to be successfully carried out. Hackers getting permission they shouldn’t have is not a security flaw related to Meltdown and Spectre, so that really belongs in a different season of Layman’s Guide.
 
@@ -38,7 +38,7 @@ A key requirement for Spectre to work is for the Translation Lookaside Buffer to
 
 Naturally, one way to mitigate Spectre is to keep flushing the TLB. As can be expected whenever you flush a cache, lookups will cause a cache miss and result in the CPU memory management unit having to figure out the mapping all over again, leading to slowdown.
 
-Some features that are being worked on for processors include selective TLB flushing (flushing only some parts of it but not all), or learning to identify when it should be flushed.
+Some performance/security features that are being worked on for processors include selective TLB flushing (flushing only some parts of it but not all), or learning to identify when it should be flushed.
 
 ## Last words on Meltdown and Spectre
 
