@@ -26,7 +26,7 @@ To speed up the process, we might just carry out the set of routines for A, wait
 
 ## Another model: the car valet
 
-How would this work with a more concrete example? I could reuse the bank teller model from the Meltdown explanation, but I run the risk of muddling you up since the steps will look very similar. Instead, let’s model a pair of robot car valets instead. This pair still consists of a robot ALU and LSU. The ALU gets the car keys and driver ID from the customer, and asks the driver for their ID number before asking the LSU to retrieve the vehicle. The LSU, well, just parks or retrieves the vehicle.
+How would this work with a more concrete example? I could reuse the bank teller model from the Meltdown explanation, but I run the risk of muddling you up since the steps will look very similar. Instead, let’s model a pair of robot car valets instead. This pair still consists of a robot ALU (arithmetic logic unit) and LSU (load-store unit). The ALU, the brains of the pair, gets the car keys and driver’s license from the customer, and asks the customer for his ID number before asking the LSU to retrieve the vehicle. The LSU, the brawns of the pair, well, just parks or retrieves the vehicle.
 
 Let’s exploit this CPU model to find out what kind of car our secretive neighbour drives. I don’t have my neighbour’s ID, but I do know his ID number (23983698576), and I give it to the CPU. It carries out the following instructions:
 
@@ -55,7 +55,7 @@ Sounds fair enough. The ALU finds out I am not my neighbour, and I don’t get t
 
 And there you have it, two CPU features explained with robots. These are well-researched CPU features that have been used in CPUs for a long while … and nobody thought to thoroughly investigate ways in which this might be exploited for malicious intent.
 
-You might blame this oversight on Intel, but I think I would blame the unpredictable nature of development. Early forts only needed walls, but not roofs, until catapults were invented. Hardware was invented to run fast, and the internet was designed to be robust, and very few people could predict accurately how they would be exploited for ill.
+You might blame this oversight on Intel, but I think I would blame the unpredictable nature of development. Early forts only needed walls, but not roofs, until catapults were invented. Hardware was invented to run fast, and the internet was designed to be robust, and very few people could predict accurately how they would be exploited for ill intent.
 
 ## What I’ll be covering next
 
