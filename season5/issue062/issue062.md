@@ -1,24 +1,6 @@
-**Previously:** A cache miss is slow, and a cache hit is fast. This difference in cache reading speed can be used to transmit secrets out from the cache, which cannot be read directly by programs.
+[**Previously:**](https://buttondown.email/laymansguide/archive/) A cache miss is slow, and a cache hit is fast. This difference in cache reading speed can be used to transmit secrets out from the cache, which cannot be read directly by programs.
 
 Okay, okay, we managed to leak data from memory to the cache, now how do we leak it from the cache to our program?
-
-## Exploiting memory addresses
-
-One key thing to remember here is that each memory address points to a memory “cell”, which only stores one byte (8 bits), with a value that can run from 0 to 255 to give us 256 (i.e. 2^8) different values.
-
-If we can only request virtual memory addresses ... then we just need to map each possible value of the memory cell to a virtual memory address. If the value is “1”, store it in address 1, if the value is “2”, store it in address 2, and so on.
-
-What we can do, then, is to decide beforehand on 256 different memory addresses to use for transmitting secrets. For convenience, I will just refer to them as address 1, address 2, … . There is really no reason to restrict ourself to numbers 1 to 256, since we have 16 billion different addresses that we can use. But they should be addresses that our program can legally use without raising an exception.
-
-Then we need to prep the cache. We first request address 1 to 256 once each. Their contents are now cached (in the CPU cache), and if we request the same data again, they will load quickly. In fact, they will load with very consistent latency.
-
-Now, we flush the cache. Attempting to load any address from 1 to 256 now results in a slow load.
-
-And then we perform a Meltdown or Spectre attack to obtain a leaked secret (one byte). Suppose this byte value is 137. Then during the small window of opportunity, instead of storing the value 137 to memory, I **request a load of address 137 instead**. This is a cache miss, and it is slow, but still quick enough to happen before the program gets caught.
-
-To the OS, nothing is amiss; a malicious program attempted to access a memory address it wasn't supposed to, an exception was raised, it was caught, and previous data flushed. But our cache has still changed!
-
-How are we going to get that data out from the cache though?
 
 ## Cache snooping: tapping on tiles
 
@@ -28,7 +10,7 @@ Most people don’t actually know what a fastened or unfastened floor tile sound
 
 So we go *tok*, *tok*, *tok*, *tok*, *tok*, … *tik*! Aha, there’s a loosened floor tile!
 
-That’s kind of what we are going to do to the cache. We are going to request a load for address 1 through 256, and see how long each request takes.
+That’s kind of what we are going to do to the cache. We are going to load information located in memory cells addressed 1 through 256, and see how long each request takes.
 
 Address 1: 135 ns  
 Address 2: 134 ns  
@@ -41,22 +23,36 @@ Address 138: 137 ns
 …  
 Address 256: 135 ns
 
-Can you tell what the secret number is? It’s the one with an *obviously lower* request latency. The other addresses had been flushed, so they result in a cache miss—the CPU has to go to main memory to read the data again, and that’s slow. Address 137 was already requested by the malicious program, so loading it again results in a cache hit and is fast.
+Can you tell what the secret number is? It’s the one with an *obviously lower* request latency. In this case, the other addresses didn’t have a copy of their data already in the cache, so they result in a cache miss ([Issue 57](https://buttondown.email/laymansguide/archive/lmg-s5-issue-57-cache-the-cpus-working-space/))—the CPU has to go to main memory to read the data again, and that’s slow. Address 137 already had its data loaded before, and a copy of it was already in the cache, so loading it again results in a cache hit and is fast.
 
-It’s a lot of work to get a single byte, but computers are good at doing lots of tedious work in a short amount of time. The Meltdown and Spectre authors have working code that is able to leak data at a rate of about 580 KB/s, which seems slow, but there are 86,400 seconds in a day. So that’s roughly 43 GB/day at full exploit speed! Malicious actors would probably do it at a slower rate to keep it covert, but in the weeks or months it would take to notice something was amiss with the memory access operations, that’s a lot of data they can siphon off … .
+## Treating memory addresses as data
+
+One key thing to remember here is that each memory address points to a memory “cell”, which only stores one byte (8 bits), with a value that can run from 0 to 255 to give us 256 (i.e. 2^8) different values.
+
+Meltdown or Spectre have gotten the secret number (137), but in that small window of opportunity before it gets terminated, it would not have time to even store it into a text file that we can open later. How could we get that secret number without Meltdown or Spectre storing it?
+
+We can write a snooping program to do the following:
+
+1) Empty the cache cells for memory addresses 1 to 256, so that loading information from them would result in a cache miss.
+
+Then instead of storing the value 137 somewhere, we would get Meltdown/Spectre to **load** information from memory address 137. A load operation is much faster than a store operation, and Meltdown/Spectre would be able to pull this off within the window of opportunity. This would cause a copy of the information in memory address 137 to be stored in the cache; the next time any program tries to load information from address 137 again, it will be a cache hit (fast).
+
+The snooping program would then:
+
+2) Make requests for information from each of these 256 memory addresses (“tapping on tiles”) and see which request has an *obviously lower* latency.
+
+3) Determine that memory address 137 has obviously lower request latency, and store the “transmitted” secret: “137”
+
+It’s a lot of work to get a single byte (256 possible values), but computers are good at doing lots of tedious work in a short amount of time. Using sample working code that exploits out-of-order execution ([Issue 58](https://buttondown.email/laymansguide/archive/lmg-s5-issue-58-cpu-optimisation-part-1-out-of/)) and speculative processing ([Issue 60](https://buttondown.email/laymansguide/archive/lmg-s5-issue-60-cpu-optimisation-part-2/)), coupled with a snooping program like the one we described above, the Meltdown and Spectre authors are able to leak data at a rate of about 580 KB/s, which seems slow. But there are 86,400 seconds in a day, so that’s roughly 43 GB/day at full exploit speed! (There are 4 videos of demonstration exploits near the bottom of the [Meltdown page](https://meltdownattack.com/).) Malicious actors would probably do it at a slower rate to keep it covert, but in the weeks or months it would take to notice something was amiss with the memory access operations, that’s a lot of data they can siphon off … .
 
 We’ve covered quite a bit of technical ground, so I’ll summarise.
 
 **Issue summary:**
-To prep the cache, we load addresses 1 to 256 (but we don’t actually care what data is there.)
+To prep the cache, our program empties addresses 1 to 256, so that they are guaranteed to have a cache miss if their information is loaded.
 
-To cache snoop, we:
+To cache snoop (after Meltdown/Spectre have “delivered the payload”), we load information from memory addresses 1 to 256 and look for the one with an obviously lower request latency (a cache hit). The memory address itself is the value to keep.
 
-1. Flush the cache for all 256 addresses
-2. Load the secret value into its corresponding address using Meltdown or Spectre attacks (the secret is only one byte, and cannot be greater than 256)
-3. Request each address and look for the one with a lower request latency
-
-Okay, that’s it. Secret is leaked, cat is out of the bag, and you now know how Meltdown and Spectre work, without all the technical detail (like how addresses 1 to 256 need to be in separate pages which are 4 KiB each because the CPU will speculatively load adjacent data from memory, yaddah yaddah).
+Okay, that’s it. Secret is leaked, cat is out of the bag, and now you know how Meltdown and Spectre work, without all the technical detail (like how addresses 1 to 256 need to be in separate pages which are 4 KiB each because the CPU will speculatively load adjacent data from memory, *yaddah yaddah*).
 
 So what can we do about it? Why hasn’t Intel fixed it after a year? I’m no computer engineer, but I’ll offer some thoughts in the next issue.
 
@@ -64,7 +60,7 @@ So what can we do about it? Why hasn’t Intel fixed it after a year? I’m no c
 
 **Next issue:** [LMG S5] Issue 63: Limitations of Meltdown and Spectre
 
-This isn’t even a fraction of 1% of what happens inside a CPU. It’s hard to convey just how complex CPU design is; it has gotten beyond the point that a single person can explain in full detail how every part of the CPU works. Much of the design and validation work is already being done by software, but it still takes a human to write the code that does the checking.
+This isn’t even a fraction of 1% of what happens inside a CPU. It’s hard to convey just how complex CPU design is; no single person can explain in full detail how every part of the CPU works. Much of the design and validation work is already being done by software, but it still takes a human to write the code that does the checking.
 
 Does it surprise you that a little hack like this can get past so many pairs of eyes? It really shouldn’t.
 

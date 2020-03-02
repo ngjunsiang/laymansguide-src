@@ -2,9 +2,14 @@
 
 Meltdown and Spectre need 2 pieces of the puzzle to leak data, and we have covered the first piece already: How to load the forbidden information into the cache, where it will not be immediately wiped by the OS when we are “found out”.
 
+If we were trying to pull off a Meltdown or Spectre, we would try to:
+
+1. Set up the request to have the info loaded into the cache
+2. Attempt to read the cache ... how?
+
 The second piece of the puzzle, naturally, is how to get the info out of the cache before the CPU eventually evicts old data from it.
 
-## Failure from Step 2
+## Failure from the start
 
 At this point, we would have failed. We have gotten the secret into the cache, but we have no idea where it is in the cache, and we have no way to access the cache directly—remember that the cache is managed by the CPU and there is no instruction we can issue to the CPU to give us cache data directly.
 
