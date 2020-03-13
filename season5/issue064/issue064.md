@@ -1,4 +1,4 @@
-**Previously:** For Meltdown and Spectre to work, they need two things: (1) Permission to carry out instructions (i.e. run programs) on the OS, and (2) knowledge of where the kernel address space is.
+[**Previously:**](https://buttondown.email/laymansguide/archive/) For Meltdown and Spectre to work, they need two things: (1) Permission to carry out instructions (i.e. run programs) on the OS, and (2) knowledge of where the kernel address space is.
 
 Last week, I explained two key limitations of Meltdown and Spectre that are needed for an attack to be successfully carried out. Hackers getting permission they shouldn’t have is not a security flaw related to Meltdown and Spectre, so that really belongs in a different season of Layman’s Guide.
 
@@ -6,7 +6,7 @@ So we’ll focus on problem 2—protecting access to the kernel address space, w
 
 ## Protecting the kernel address space
 
-One common way of protecting knowledge of where the kernel address space (i.e. the “HQ”) is to keep changing its location. For example, newer versions of Linux randomise the location of the kernel address space at each computer bootup, to make it harder for an attacker to guess.
+One common way of protecting knowledge of where the kernel address space (i.e. the “HQ”) is located is to keep changing its location. For example, newer versions of Linux randomise the location of the kernel address space at each computer bootup, to make it harder for an attacker to guess.
 
 It is still possible for the attacker to slowly probe which parts of the address space it can access, and which parts it can’t, and make a guess where the kernel address space is; I will not go into detail about these various methods.
 
@@ -16,13 +16,13 @@ In contrast, if a program tried to request memory address `-56` or `2^65`, the O
 
 ## Mitigating Meltdown: Kernel address isolation
 
-One fix that has been merged into the Linux kernel since 2017 is KAISER (non-bold), which aims to prevent programs from even having access to kernel address space. Similar patches have been released for Windows and macOs as well[^1]. Under this patch, **two** sets of address spaces are maintained.
+One fix that has been merged into the Linux kernel since 2017 is KAISER, which aims to prevent programs from even having access to kernel address space. Similar patches have been released for Windows and macOS as well[^1]. Under this patch, **two** sets of address spaces are maintained.
 
-[^1]: Interestingly, these patches went out shortly before Meltdown and Spectre were announced … I wont speculate about the timing here, but you draw your own conclusions.
+[^1]: Interestingly, these patches went out shortly before Meltdown and Spectre were announced … I won’t speculate about the timing here, you draw your own conclusions.
 
-The first set, essentially the entire address space, is the same as before; but now only the kernel has access to it. The second set contains the entire address space used by programs, excluding kernel address space; only some essential kernel-space addresses (for making system calls, etc) are included. This way, programs running with user permissions will not even be able to get data from the kernel address space. It's like trying to get to a room that doesn’t exist (to the program).
+The first set is the same as before: it is essentially the entire address space. But now, only the kernel (the “core” of the OS) has access to it. The second set contains the entire address space used by programs, excluding kernel address space. This way, programs running with user permissions will not even be able to get data from the kernel address space. It's like trying to get to a room that doesn’t exist (to the program).
 
-Having to keep switching between two sets of pages when executing instructions from both kernel programs as well as user programs is, of course, going to make things take longer than usual. Up to 20% for some instructions.
+Having to keep switching between two sets of pages when executing instructions from both kernel programs as well as user programs is, of course, going to make things take longer than usual. Up to 20% longer for some instructions.
 
 This primarily mitigates the impact of Meltdown, which attempts to access the kernel address space before it gets caught and an exception is raised in the program. But it does not do anything for Spectre, which speculatively executes two possible outcomes where the code meets a decision point, but later discards the outcome which is not needed.
 
@@ -30,7 +30,7 @@ This primarily mitigates the impact of Meltdown, which attempts to access the ke
 
 One concept to cover before we get to the Spectre mitigation. In [Issue 55](https://buttondown.email/laymansguide/archive/lmg-s5-issue-55-addressing-memory/) I talked about how the virtual address space allows programs to access data from different parts of the computer: USB devices, hard drives, network, sound card, and of course not forgetting the physical memory itself.
 
-How does the CPU know that virtual address 2354476 is actually pointing to physical memory address 3564241? It doesn’ṫ. This mapping is stored in the CPU, within the memory management unit. Like all mappings (remember the CPU cache, and the DNS cache from [Issue 39](https://buttondown.email/laymansguide/archive/lmg-s3-issue-39-caches-and-caching/)?), the lookup process can be greatly speeded up with a cache. The part of the CPU that caches virtual-to-physical memory mappings is called the Translation Lookaside Buffer, or TLB (non-bold; I probably won’t need to refer to this again.)
+How does the CPU know that virtual address 2354476 is actually pointing to physical memory address 3564241? It doesn’t. This mapping is stored in the CPU, within the memory management unit. Like all mappings (remember the CPU cache, and the DNS cache from [Issue 39](https://buttondown.email/laymansguide/archive/lmg-s3-issue-39-caches-and-caching/)?), the lookup process can be greatly speeded up with a cache. The part of the CPU that caches virtual-to-physical memory mappings is called the Translation Lookaside Buffer, or TLB.
 
 A key requirement for Spectre to work is for the Translation Lookaside Buffer to remain unchanged, so that it is getting data from the same part of (kernel address space) memory.
 
@@ -58,7 +58,7 @@ Perhaps it is time for us to reassess the situation, make the judgement call to 
 
 Phew, that was quite a bit to type. I am glad to be done talking about Meltdown and Spectre; these are sombre topics, and the more I write about them, the less faith I have in the devices I use.
 
-What to wrap up season 5 with … funnily enough, I had originally titled this season “Operating Systems and the CPU”. I obviously am far from covering things that I think people should know about their operating system, so that will probably resume in another season.
+Funnily enough, I had originally titled this season “Operating Systems and the CPU”. I am obviously far from covering things that I think people should know about their operating system, so that will probably resume in another season.
 
 Since I’ve been talking so much about memory, I think it makes sense to bring in one more topic here to close off the season: how do all those programs share a common memory space?
 
