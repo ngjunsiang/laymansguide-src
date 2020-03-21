@@ -7,7 +7,7 @@ How to do that? The key, it turns out, centres around cookies.
 When you visit any website in Chrome or Firefox, if you click on the icon to the left of the address bar:
 
 ![Screenshot of website info popup in Vivaldi browser](https://github.com/ngjunsiang/laymansguide/blob/master/season6/issue069/issue069_01.png?raw=true)<br />
-<small>The icon to the left of the address bar shows basic site information</small>
+<small>Clicking the icon to the left of the address bar shows basic site information</small>
 
 It shows you some basic information, including the cookies loaded by the website.
 
@@ -19,21 +19,21 @@ The cookies themselves are only just little fragments of information. They are i
 ![Screenshot of website source in Vivaldi browser. The script line that loads analytics.js is highlighted](https://github.com/ngjunsiang/laymansguide/blob/master/season6/issue069/issue069_02.png?raw=true)<br />
 <small>Little snippets of javascript create and delete cookies.<br />
 These snippets of Javascript are usually loaded as a script, with a `.js` file extension.<br />
-The one used by Google Analytics is `analytics.js`</small>
+The script code used by Google Analytics is named `analytics.js`.</small>
 
 ## What do cookies do?
 
-This cookie was loaded by Google Analytics when the website loaded [analytics.js](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookies-user-id). It is how Google Analytics identifies users on the website. the value stored in the `_ga` cookie is the client ID assigned by Google Analytics to identify a unique user.
+This cookie was loaded by  [analytics.js](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookies-user-id) after the web browser runs the script. It is how Google Analytics identifies users on the website. the value stored in the `_gid` cookie is the client ID assigned by Google Analytics to identify a unique user.
 
 Many bloggers and website owners rely on Google Analytics to tell them how much internet traffic their website is getting every month, which countries they are from, what time of day they are most active, which search results and bringing these visitors to the site, and so on. But each visit represents one browser loading the page; how do we know that’s not the same user repeatedly refreshing the page waiting for something to happen? (It happens on auction sites, or game sites, and many other places).
 
-Whenever the webpage is loaded, the cookie information gets sent to the Google Analytics server. That is how Google Analytics know it’s the same fella on the same browser doing it. The cookie associates each client [Issue 7](https://buttondown.email/laymansguide/archive/lmg-issue-7-what-is-http/) with a `_ga` id. But if the user is using two different web browsers, or using a smartphone browser and doing it on their laptop, that actually gets classified under two different identifiers, even though it’s the same person!
+Whenever the webpage is loaded, the cookie information gets sent to the Google Analytics server. That is how Google Analytics know it’s the same fella on the same browser doing it. The cookie associates each client [Issue 7](https://buttondown.email/laymansguide/archive/lmg-issue-7-what-is-http/) with a `_gid` id. But if the user is using two different web browsers, or using a smartphone browser and doing it on their laptop, that actually gets classified under two different identifiers, even though it’s the same person!
 
 # Plain cookies are not enough
 
-Before 2006, this wasn’t a big issue. Users mostly browsed the internet on their desktops and browsers, and they seldom used more than one as their regular device. The famous Intel Core series processors had not even arrived yet—they would come a year later, in July 2007—and the first iPhone would arrive a month before Intel Core. That meant the average user was using a Pentium-based computer to browse the internet.
+Before 2006, this wasn’t a big issue. Users mostly browsed the internet on their desktops and browsers, and they seldom used more than one as their regular device. The famous Intel Core series processors had not even arrived yet—they would come a year later, in July 2007—and the first iPhone would arrive a month before Intel Core.
 
-Mobile internet wasn’t much at that point: people used mobile WAP browsers (the early predecessors of mobile browsers) for quick information and not much else. One or two cookie identifiers was enough.
+That meant the average user was using a Pentium-based computer to browse the internet, and that was probably their only internet-enabled device. At most, they had a desktop at home and a laptop at work. If you got a website visit with a user’s cookie, you know it’s not coming from a smartphone or their Amazon Alexa or any other smart device—those did not exist yet. One or two cookie identifiers was enough.
 
 In a year, this would change.
 
