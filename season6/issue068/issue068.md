@@ -28,7 +28,7 @@ Google innovated over the old model in one unique way though.
 
 ## The new model: cost-per-click (CPC)
 
-Early CPC models literally just counted clicks on a link and invoiced you accordingly. As the number of advertisers buying ads rocketed, the publishers switched to an auction model: highest bidder wins. This disadvantaged smaller companies, who had much smaller advertising budgets, and could not outcompete the big ad-buyers on price.
+Early CPC models literally just counted clicks on a link and invoiced you accordingly. As the number of advertisers buying ads rocketed, the publishers switched to an auction model: highest bidder wins. This disadvantaged smaller companies, who had much smaller advertising budgets, and could not out-compete the big ad-buyers on price.
 
 Google (back then still a tiny company) saw this and introduced one change to it, inspired by its search engine algorithm: if an ad with a lower bid got more clicks than ads with higher bids, it could climb the ranking ladder.
 
