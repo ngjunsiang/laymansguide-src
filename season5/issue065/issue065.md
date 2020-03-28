@@ -76,7 +76,7 @@ You can see why the application memory usage shown in Task Manager/System Monito
 
 **Issue summary:** Shared memory helps to reduce the amount of memory needed by all the applications running on an operating system. It also allows applications to send data to each other, and to communicate.
 
-Long issue, I hope the images make up for it (the very first images in this issue, I know). Computers in the early days didn’t share memory so easily, and that made things really inconvenient. They often had to communicate through one application writing data to a file, and then having the other application reading the data from that file. Slow, and often unreliable. Shared memory evolved as a way to make that process easier.
+Long issue, I hope the images make up for it. Computers in the early days didn’t share memory so easily, and that made things really inconvenient. They often had to communicate through one application writing data to a file, and then having the other application reading the data from that file. Slow, and often unreliable. Shared memory evolved as a way to make that process easier.
 
 But shared memory, improperly secured and managed, is also how vulnerabilities like Meltdown and Spectre are made possible, and how malware can do what it does. It’s a double-edged sword.
 
@@ -86,11 +86,11 @@ But shared memory, improperly secured and managed, is also how vulnerabilities l
 
 Memory is one of those topics where I think laypeople and engineers have a completely different picture in their heads. I hope this issue has clarified that picture somewhat. It still won't be completely clear until I can talk about heaps, but I wont do that until I figure out how to simplify it.
 
-Meanwhile, the newsletter must go on! I’ve finished Season 5, having explained how computers improve performance through reordering instructions (Out-of-Order Processing) and running instructions ahead of time if it things they will be needed (Speculative Execution). Both of these processes use the cache, which is controlled by the CPU hardware directly, not by the operating system. And through an esoteric loophole that exploits timing differences in cache access (cache hit = fast, cache miss = slow), an attacker is able to leak data out from protected kernel memory through the cache.
+Meanwhile, the newsletter must go on! I’ve finished Season 5, having explained how computers improve performance through reordering instructions (Out-of-Order Processing) and running instructions ahead of time if it thinks they will be needed (Speculative Execution). Both of these processes use the cache, which is controlled by the CPU hardware directly, not by the operating system. And through an esoteric loophole that exploits timing differences in cache access (cache hit = fast, cache miss = slow), an attacker is able to leak data out from protected kernel memory through the cache.
 
 After this detour, its time to rewind back to where I stopped in Season 3: with networks and the Internet. I went through data types in Season 4 to talk about what complex documents are (because the web is made up of a series of complex documents). Then I laid out a CPU exploit in Season 5, to show you how data can be leaked inadvertently.
 
-Now I’m ready to tell you more about how the current online advertising model became what it is today, and why it is so bad for privacy. You are going to learn a lot more about how ads really work, how advertisers track your online activity, and how they ensnare many companies (especially the big publishers) into a kind of Ponzi scheme that lets them target their content more effectively while also letting advertisers improve their targeting.
+Now I’m ready to tell you more about how the current online advertising model became what it is today, and why it is so bad for privacy. You are going to learn a lot more about how ads really work, how advertisers track your online activity, and how they ensnare many companies (especially the big publishers) into a kind of self-reinforcing scheme that lets them target their content more effectively while also letting advertisers improve their targeting.
 
 **Sometime in the future:** What is:
 
