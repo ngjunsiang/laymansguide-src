@@ -16,7 +16,7 @@ No. I think it started in mid-1995, when Netscape hired Brendan Eich to create a
 
 Mr Eich created a prototype for the language, Mocha, in 10 days, just in time to be included in Netscape Navigator 2.0 beta 3 when it was released in November that year. Its name had been changed to LiveScript. But in December, when his prototype language was announced to the world by Netscape Communications and Sun Microsystems, it would be known as Javascript.
 
-The same year, Internet Explorer 2.0 was also released to the world. Work on it had also started early that year. both Netscape Navigator and Internet Explorer were based on very similar codebases: both originated from NCSA’s Mosaic browser, which began development by Eric Bina and Marc Andreessen three years ago, at the end of 1992. (Andreessen would later be best known as co-founder of Andreessen-Horowitz Capital Management.)
+The same year, Internet Explorer 2.0 was also released to the world. Work on it had also started early that year. Both Netscape Navigator and Internet Explorer were based on very similar codebases: both originated from NCSA’s Mosaic browser, which began development by Eric Bina and Marc Andreessen three years ago, at the end of 1992. (Andreessen would later be best known as co-founder of Andreessen-Horowitz Capital Management.)
 
 By Spring 1996, things were heating up. Before this point, web browsers were only working with [HTTP v0.9](https://www.w3.org/Protocols/HTTP/HTTP2.html), a protocol so simple I probably wouldn’t need to laymanise it for you. But a new standard was needed to support all the new things that Web 2.0 was supposed to be able to do. That new standard, HTTP v1.0, was published in 1996. (See [Issue 7](https://buttondown.email/laymansguide/archive/lmg-issue-7-what-is-http/) if you’re still wondering what HTTP is.)
 
@@ -33,7 +33,7 @@ But right then in 1995, one company figured out how to do just that. Instead of 
 
 They would be acquired almost 10 years later by Google for US$3.1 billion.
 
-**Issue summary:** DoubleClick, the first commercially successfully ad server, launched in 1996. It ran a system that tracked the performance of banner ads across 30 sites, working to optimise their return on investment. This was made possible by standardisation of the web (thanks to the HTTP specification), and the birth of Javascript, a scripting language integrated into the webpage rather than being a separate module from it. All of this happened in 1995–1996.
+**Issue summary:** DoubleClick, the first commercially successful ad server, launched in 1996. It ran a system that tracked the performance of banner ads across 30 sites, working to optimise their return on investment. This was made possible by standardisation of the web (thanks to the HTTP specification), and the birth of Javascript, a scripting language integrated into the webpage rather than being a separate module from it. All of this happened in 1995–1996.
 
 ## What I’ll be covering next
 
