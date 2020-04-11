@@ -22,15 +22,15 @@ The dot-com low lasted until early 2002, when stock prices finally started to pi
 
 Google Adwords, revamped after its premature introduction 2 years earlier, offered a CPC model: cost-per-click. You only had to pay if somebody clicked through the ad to your site, not if they ignored the ad.
 
-This was not a new innovation: Yahoo already offered a similar model back in 1998. That was a flop, because Yahoo didn't know enough about its users to optimise the click-through rate.
+This was not a new innovation: Yahoo already offered a similar model back in 1998. That was a flop, because Yahoo didn’t know enough about its users to optimise the click-through rate.
 
 Google innovated over the old model in one unique way though.
 
 ## The new model: cost-per-click (CPC)
 
-Early CPC models literally just counted clicks on a link and invoiced you accordingly. As the number of advertisers buying ads rocketed, the publishers switched to an auction model: highest bidder wins. This disadvantaged smaller companies, who had much smaller advertising budgets, and could not out-compete the big ad-buyers on price.
+Early CPC models literally just counted clicks on a link and invoiced you accordingly. As the number of advertisers buying ads rocketed, the publishers switched to an auction model: highest bidder wins. This model disadvantaged smaller companies, who had much smaller advertising budgets, and could not out-compete the big ad-buyers on price.
 
-Google (back then still a tiny company) saw this and introduced one change to it, inspired by its search engine algorithm: if an ad with a lower bid got more clicks than ads with higher bids, it could climb the ranking ladder.
+Google (back then still a tiny company) saw this and,  inspired by its search engine algorithm, introduced one change to it: if an ad with a lower bid got more clicks than ads with higher bids, it could climb the ranking ladder.
 
 Now the race is on to grab every user click, with new services and web media. Facebook launched in 2004, YouTube in 2005, Twitter in 2006.
 
@@ -42,7 +42,7 @@ Ad buyers, on the other hand, mostly knew who their target market was, but had l
 
 Analytics companies such as comScore and Nielsen quickly saw this need, and started researching demographic behaviours online, But this didn’t work for niche markets, or when data was lacking.
 
-Ad servers (such as Doubleclick, whom you already met in [Issue 66]()) helped to aggregate advertising slots from online publishers. But they were not in a place to gather data on the users; users were not visiting their site. Nor were they in a place to gather the disparate information from online publishers and ad buyers to build coherent profiles of users.
+Ad servers (such as Doubleclick, whom you already met in [Issue 66](https://buttondown.email/laymansguide/archive/lmg-s6-issue-66-before-the-cloud/)) helped to aggregate advertising slots from online publishers. But they were not in a place to gather data on the users; users were not visiting their site. Nor were they in a place to gather the disparate information from online publishers and ad buyers to build coherent profiles of users.
 
 That piece of the puzzle would come later. Konrad Feldman and Paul Sutter, who noticed the surge of interest in search advertising after Google’s IPO in 2004, and were working on an interesting puzzle: “How would we get direct data on users of sites that we don’t own?”
 

@@ -5,10 +5,12 @@ This issue is a short one, just to put one more piece in place. Last issue, we s
 Let’s watch what is happening with Google DevTools:
 
 ![Screenshot of DevTools in Vivaldi browser, with a request by analytics.js highlighted.](https://github.com/ngjunsiang/laymansguide/blob/master/season6/issue070/issue070_01.png?raw=true)<br />
-<small>The (filtered) sequence of requests by the webpage I loaded.<br />
+<small>Chrome DevTools showing the (filtered) sequence of requests made by the webpage I loaded.<br />
 The request made by `analytics.js` (third-last line) is highlighted in gray. The Initiator column tells us this requested was initiated by `analytics.js` on line 25 of the script.</small>
 
-The full request URL is http://www.google-analytics.com/collect?v=1&_v=j81&a=227860763&t=pageview&_s=1&dl=http%3A%2F%2Fwww.adopsinsider.com%2Fad-serving%2Fhow-does-ad-serving-work%2F&ul=en-us&de=UTF-8&dt=How%20Ad%20Serving%20Works&sd=24-bit&sr=3840x2160&vp=1319x1284&je=0&_u=QACAAAAB~&jid=&gjid=&cid=184706471.1584140066&tid=UA-13115681-1&_gid=1807773255.1584140066&gtm=2wg340NLT927&z=1600454420. Unparseable for humans!
+The full URL of the highlighted request is `http://www.google-analytics.com/collect?v=1&_v=j81&a=227860763&t=pageview&_s=1&dl=http%3A%2F%2Fwww.adopsinsider.com%2Fad-serving%2Fhow-does-ad-serving-work%2F&ul=en-us&de=UTF-8&dt=How%20Ad%20Serving%20Works&sd=24-bit&sr=3840x2160&vp=1319x1284&je=0&_u=QACAAAAB~&jid=&gjid=&cid=184706471.1584140066&tid=UA-13115681-1&_gid=1807773255.1584140066&gtm=2wg340NLT927&z=1600454420.`
+
+That’s unreadable for humans!
 
 In layman terms, `analytics.js` sends a request to http://www.google-analytics.com (yup, unsecured transmission since it does not use HTTPS) with the following information:
 
