@@ -20,9 +20,9 @@ Another very short issue (phew!), that I hope explains how the unification of us
 
 ## What I’ll be covering next
 
-**Next issue:** [LMG S6] Issue 72: Cookies and Targeted Advertising
+**Next issue:** [LMG S6] Issue 72: The Data Brokers
 
-Next issue, we’ll look at (a summarised version of) the complete request loop that a webpage goes through to serve you the ads that you see.
+QuantCast does not do _all_ its data gathering; it also gets information from other data providers, known as **data brokers**. Lets visit them next issue.
 
 **Sometime in the future:** What is:
 
