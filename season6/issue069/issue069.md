@@ -23,9 +23,9 @@ Little snippets of javascript create and delete cookies. These snippets of Javas
 
 ## What do cookies do?
 
-This cookie was loaded by  [analytics.js](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookies-user-id) after the web browser runs the script. It is how Google Analytics identifies users on the website. the value stored in the `_gid` cookie is the client ID assigned by Google Analytics to identify a unique user.
+This cookie was loaded by  [analytics.js](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookies-user-id) after the web browser runs the script. It is how Google Analytics identifies users on the website. The value stored in the `_gid` cookie is the client ID assigned by Google Analytics to identify a unique user.
 
-Many bloggers and website owners rely on Google Analytics to tell them how much internet traffic their website is getting every month, which countries they are from, what time of day they are most active, which search results and bringing these visitors to the site, and so on.
+Many bloggers and website owners rely on Google Analytics to tell them how much internet traffic their website is getting every month, which countries they are from, what time of day they are most active, which search results are bringing these visitors to the site, and so on.
 
 But each visit represents one browser loading the page; how do we know that’s not the same user repeatedly refreshing the page waiting for something to happen? (It happens on auction sites, or game sites, and many other places).
 

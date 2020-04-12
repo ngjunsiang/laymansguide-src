@@ -40,7 +40,7 @@ There was just one problem: these companies still didn’t know very much about 
 
 Ad buyers, on the other hand, mostly knew who their target market was, but had little idea how to reach them. They had to make a guess, or talk to online publishers to see if there was a fit somewhere.
 
-Analytics companies such as comScore and Nielsen quickly saw this need, and started researching demographic behaviours online, But this didn’t work for niche markets, or when data was lacking.
+Analytics companies such as comScore and Nielsen quickly saw this need, and started researching demographic behaviours online. But this didn’t work for niche markets, or when data was lacking.
 
 Ad servers (such as Doubleclick, whom you already met in [Issue 66](https://buttondown.email/laymansguide/archive/lmg-s6-issue-66-before-the-cloud/)) helped to aggregate advertising slots from online publishers. But they were not in a place to gather data on the users; users were not visiting their site. Nor were they in a place to gather the disparate information from online publishers and ad buyers to build coherent profiles of users.
 
