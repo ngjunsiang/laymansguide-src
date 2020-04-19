@@ -26,9 +26,11 @@ The ad-buyers bid. These bids are not placed on-the-spot, but pre-bidded through
 
 The advertiser’s server sends the winning bid code back to your browser. Then another piece of the advertiser’s javascript code kicks in, sending this code to the advertiser’s **content delivery network (CDN)**.
 
-Yup, online ads are so big that they need specialised servers to do different things. The ad exchange carries out the bidding and determines the winner; this requires much CPU and low latency connections. The CDN, on the other hand, is often a global network of servers that keep the content ready to deliver. It caches the most frequently requested ads and cat images in memory, leaving the rest in hard disk or solid state storage. It is optimised for bandwidth (to serve as many images as quickly as possible) and large memory + storage.
+Yup, online ads are so big that they need specialised servers to do different things. The ad exchange carries out the bidding and determines the winner; this requires much CPU and low latency connections. The **CDN**, on the other hand, is often a global network of servers that keep the content ready to deliver. Servers in the US can get content to US web browsers most quickly, while servers in South-east Asia are better placed to serve Southeast Asian browsers.
 
-And that is what that one-third of the page is doing.
+These servers continually talk to each other or to a coordinating server, which determines what content should be on each server depending on the demand from each region. Each regional server caches the most frequently requested ads and cat images in the server memory (which is quick to access), leaving the rest in hard disk or solid state storage (which is slower to access). These servers have hardware configurations that are optimised for bandwidth (to serve as many images as quickly as possible) and large memory + storage.
+
+And that is what that invisible one-third of the page is doing.
 
 **Issue summary:** When a page loads advertisements through header bidding, it sends your cookie along with other information to an ad exchange. The ad exchange conducts automated bidding among the ad-buyers, determines the winner(s), and sends the winning code(s) back to your browser. Your browser then sends these codes to the **CDN**, which sends back the winning ads for your page to render in your browser.
 
@@ -36,7 +38,7 @@ Phew, that’s as short as I can describe ad exchanges and CDNs (one more long-r
 
 ## What I’ll be covering next
 
-**Next issue:** [LMG S6] Issue 74: The Costs of Data Leakage
+**Next issue:** [LMG S6] Issue 74: The Walls have Pixels
 
 So, things can’t get any worse, right? If only … after ad exchanges came about in the mid-2010s, second-order effects were responsible for much of the data leakage and privacy concerns that hog the headlines of some publications today. I’ll explore a couple of them in the next two issues.
 
