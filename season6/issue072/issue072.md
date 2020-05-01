@@ -1,16 +1,16 @@
 [**Previously:**](https://buttondown.email/laymansguide/archive/) In 2006, Quantcast offered complete audience analytics for any site that puts _their_ cookie on the site. In this way, they managed to gather information on a wider audience than they, or any single website, could reach on their own.
 
-I’m almost about to begin talking about Quantcast’s proposition to advertisers, and how that led to the ad exchange, and what an ad exchange is, but to avoid confusing you I had better talk about data brokers and what they are first.
+I’m almost about to begin talking about Quantcast’s proposition to advertisers, and how that led to the ad exchange, and what an ad exchange is, but to avoid confusing you, I had better talk about data brokers and what they are first.
 
 ## The demand for data, and its players
 
-There is a huge market out there for data. In a way reminiscent of the slave trade of the 16th to 19th centuries, in which people were being auctioned and sold and shipped to countries far from their homeland, data today is being sold in data markets, copied to places far from their point of origin, and used to put together profiles. Who are these data brokers?
+There is a huge market out there for data. In a way reminiscent of the slave trade of the 16th to 19th centuries, in which people were being auctioned and sold and shipped to countries far from their homeland, data today is being sold in data markets, copied to places far from their point of origin, and used to put together profiles of consumers. Who are these data brokers?
 
 Some are sources of information: subscription lists of email addresses to free journals and magazines, (anonymised) credit card activity (how much money spent where by what income bracket), your social media clicks and likes and other activity, your browsing web history, even your mobile device telemetry data (coming from a data-mining app disguised as a mobile game which you unwittingly downloaded). They sell this data to other third-parties, or to advertisers directly (rare).
 
 Some are middlemen: thirty-party brokers who offer a consultancy-like service: they buy information, recompile it into profiles that are more legible to advertisers, and then resell this information.
 
-Some are end-buyers: insurance and other risk-management companies, investigation firms, fraud detection services, … you name it, it probably exists.
+Some are end-buyers: insurance and other risk-management companies, investigation firms, fraud detection services, … just about any company that may need information on a person or category of consumer.
 
 [FastCo has a (non-exhaustive) A–W list](https://www.fastcompany.com/90310803/here-are-the-data-brokers-quietly-buying-and-selling-your-personal-information) of some of these companies, if you’d like a more detailed sampling.
 
@@ -18,7 +18,7 @@ QuantCast, in effect, was _acting_ like a data broker (though it didn’t buy or
 
 # The data QuantCast gathers
 
-The end result looks like what a soulless Santa Claus would have managed to gather on its own. A Privacy International journalist sent a Data Subject Access Request to QuantCast for the data it has gathered on her^[1]. By her own analysis, QuantCast has “amassed […] more than 46 columns worth of data including URLs, time stamps, IP addresses, cookies IDs, browser information and much more.” Furthermore, the data she obtained “suggest that [it was obtained through] data brokers like Acxiom and Oracle, but also MasterCard and credit referencing agencies like Experian.”
+The end result looks like what a soulless Santa Claus would have managed to gather on its own. A Privacy International journalist sent a Data Subject Access Request to QuantCast for the data it has gathered on her[^1]. By her own analysis, QuantCast has “amassed […] more than 46 columns worth of data including URLs, time stamps, IP addresses, cookies IDs, browser information and much more.” Furthermore, the data she received “suggest that [it was obtained through] data brokers like Acxiom and Oracle, but also MasterCard and credit referencing agencies like Experian.”
 
 Interestingly enough, first name, last name, Social Security identification, and other personally identifying information is hardly collected. Such information is of little interest to advertisers; it is too specific and tells them nothing about whether an ad can be served at you, to extract another click.
 
