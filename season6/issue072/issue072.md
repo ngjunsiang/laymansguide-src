@@ -8,7 +8,7 @@ There is a huge market out there for data. In a way reminiscent of the slave tra
 
 Some are sources of information: subscription lists of email addresses to free journals and magazines, (anonymised) credit card activity (how much money spent where by what income bracket), your social media clicks and likes and other activity, your browsing web history, even your mobile device telemetry data (coming from a data-mining app disguised as a mobile game which you unwittingly downloaded). They sell this data to other third-parties, or to advertisers directly (rare).
 
-Some are middlemen: thirty-party brokers who offer a consultancy-like service: they buy information, recompile it into profiles that are more legible to advertisers, and then resell this information.
+Some are middlemen: third-party brokers who offer a consultancy-like service: they buy information, recompile it into profiles that are more legible to advertisers, and then resell this information.
 
 Some are end-buyers: insurance and other risk-management companies, investigation firms, fraud detection services, … just about any company that may need information on a person or category of consumer.
 
@@ -32,7 +32,7 @@ That’s … a lot of information, but how does it help advertisers? How does th
 
 **Next issue:** [LMG S6] Issue 73: The Heart of Darkness (Header Bidding)
 
-What we have come to known as “targeted advertisements” are known in the advertising industry by other terms, depending on the mode of operation: sponsored search auction, real-time bidding, etc. Generally, they are known as **header bidding**, because the code tag that triggers it is embedded in the header section of a webpage.
+What we have come to know as “targeted advertisements” are known in the advertising industry by other terms, depending on the mode of operation: sponsored search auction, real-time bidding, etc. Generally, they are known as **header bidding**, because the code tag that triggers it is embedded in the header section of a webpage.
 
 An entire cascade of bidding operations, reminiscent of eBay bidding but entirely automated, is completed in mere milliseconds; the smorgasbord of ads vying for your attention are shaken out, winners emerge, and are served into your browser view while you wait for the page to load.
 
