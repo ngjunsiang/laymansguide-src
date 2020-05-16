@@ -32,17 +32,17 @@ Yup, online ads need specialised servers to do different things. The **ad exchan
 
 These servers continually talk to each other or to a coordinating server, which determines what content should be on each server depending on the demand from each region. Each regional server caches the most frequently requested ads and cat images in the server memory (which is quick to access), leaving the rest in hard disk or solid state storage (which is slower to access).
 
-These servers sre configured for high bandwidth (to serve as many images as quickly as possible) and with large memory + storage space.
+These servers are configured for high bandwidth (to serve as many images as quickly as possible) and with large memory + storage space.
 
 This is what that invisible one-third of the page is doing.
 
 **Issue summary:** When a page loads advertisements through header bidding, it sends your cookie along with other information to an **ad exchange**. The ad exchange conducts automated bidding among the ad-buyers, determines the winner(s), and sends the winning code(s) back to your browser. Your browser then sends these codes to the **CDN**, which sends back the winning ads for your page to render in your browser.
 
-Phew, that’s as short as I can describe ad exchanges and CDNs (one more long-running question answered, yay!) you may or may not be surprised at what is going on at the backend, but often people don’t expect that so much of the internet backend is actually dedicated to just serving ads. But it’s true. The services you have come to rely on—this is the price we pay for them to be “free”.
+Phew, that’s as short as I can describe ad exchanges and CDNs. (one more long-running question answered, yay!) You may or may not be surprised at what is going on at the backend, but often people don’t expect that so much of the internet backend is actually dedicated to just serving ads. But it’s true. The services you have come to rely on—this is the price we pay for them to be “free”.
 
 ## What I’ll be covering next
 
-**Next issue:** [LMG S6] Issue 74: The Walls have Pixels
+**Next issue:** [LMG S6] Issue 74: The Walls Have Pixels
 
 It gets worse … after ad exchanges came about in the mid-2010s, second-order effects were responsible for much of the data leakage and privacy concerns that hog the headlines of some publications today. I’ll explore a couple of them in the next two issues.
 
