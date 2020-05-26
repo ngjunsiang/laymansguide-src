@@ -30,7 +30,7 @@ What is your browser doing, loading a useless 1×1 image? If it appears to be do
 
 This request for the tracking pixel was sent from a script. My cookie information was embedded in the request URL when it was sent. So a tracking pixel is another mechanism for sending cookies, besides sending a generic document request via the script like we saw in [Issue 70](https://buttondown.email/laymansguide/archive/lmg-s6-issue-70-the-cookie-factory/).
 
-If you have a popular website, ad exchanges will ask to pay you to put their ads on your website. These ads are served after the user’s browser sends the user’s cookie to the ad exchange, which triggers an automated bidding process. The winning bid gets sent to the CDN (content delivery network), which serves the ads ([Issue 73]()).
+If you have a popular website, ad exchanges will ask to pay you to put their ads on your website. These ads are served after the user’s browser sends the user’s cookie to the ad exchange, which triggers an automated bidding process. The winning bid gets sent to the CDN (content delivery network), which serves the ads ([Issue 73](https://buttondown.email/laymansguide/archive/lmg-s6-issue-73-the-heart-of-darkness-header/)).
 
 On the other hand, data companies don’t serve ads. They usually ask to put a tracking pixel on your website, which means they ask you to put in their script. This script will scrape whatever data it can about the page the user is on and related user activity, and embed it in the pixel request along with the user’s cookie.
 
@@ -41,7 +41,7 @@ When you visit Facebook, it looks up your cookie and sees if you have been visit
 1. By sending an HTTP *document* request (known as an **XHR**, short for XmlHTTPRequest) which usually returns a chunk of text data,
 2. By sending an HTTP *image* request which usually returns a 1×1 pixel, known as a **tracking pixel**.
 
-Data companies use the data they have gathered to determine what ads to serve you when you visit sites that they own.
+Data companies use the data they have gathered to determine what ads to serve you when you visit sites that load their cookie-setting scripts.
 
 ## What I’ll be covering next
 
