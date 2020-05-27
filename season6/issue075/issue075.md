@@ -10,21 +10,21 @@ But today, that power has mostly leaked away, to ad exchanges. The ads on HuffPo
 
 ## The danger of advertising: cookie leakage
 
-In [Issue 71](), I mentioned that part of the value QuantCast brought to the table is that in exchange for letting them put a cookie on your site, they would also tell you more about your audience—far more than you could ever know collecting information on your own.
+In [Issue 71](https://buttondown.email/laymansguide/archive/lmg-s6-issue-71-the-rise-of-audience-analytics/), I mentioned that part of the value QuantCast brought to the table is that in exchange for letting them put a cookie on your site, they would also tell you more about your audience—far more than you could ever know collecting information on your own.
 
-But here’s the thing: it is very hard for a publisher to know when an advertiser is setting a cookie. When an advertiser is allowed to put advertisements on a website, you are tacitly allowing them to put in a script that is **supposed** to request an ad from the ad server (after getting a winning bid from the ad exchange). This script could easily, at the same time, set a cookie and return cookie data along with that request.
+But here’s the thing: it is very hard for a website’s publisher to know when an advertiser is setting a cookie. When an advertiser is allowed to put advertisements on a website, you are tacitly allowing them to put in a script that is **supposed** to request an ad from the ad server (after getting a winning bid from the ad exchange). This script could easily, at the same time, set a cookie and return cookie data along with that request.
 
 The only way to catch this is to load the page yourself, compare the site data before and after, and see if any cookies are being set. You could automate this, but you’ll need resources to run that regularly on every webpage you publish—resources that publishers were loathe to spend to protect their data and their readers.
 
 ## The danger of cookie leakage: audience leakage
 
-why would advertisers want to sneak cookies like this? Let me put it this way: nobody ever uses the Internet just for reading The NYT. NYT readers might head to Facebook to see how their friends are doing (and view Facebook ads), they might send out some angry tweets on Twitter (and see Twitter ads), they might head to Amazon or Barnes & Noble or any number of sites to do the necessaries.
+Why would advertisers want to sneak cookies like this? Let me put it this way: nobody ever uses the Internet just for reading The NYT. NYT readers might head to Facebook to see how their friends are doing (and view Facebook ads), they might send out some angry tweets on Twitter (and see Twitter ads), they might head to Amazon or Barnes & Noble or any number of sites to do the necessaries.
 
 And these readers can be reached on these other sites if the advertisers buy advertising slots with them. They no longer needed to rely on The NYT to reach a particular class of consumers. If The NYT thought they could price their advertising slots more expensively for the exclusive reach to upper-class readers, they now no longer have that advantage. Those readers are tied to a cookie ID now, not to a website URL.
 
 The publishers were being cut out of the value chain.
 
-**Issue summary:** By not enforcing strict cookie policies on their own sites, publishers allowed advertisers to sneakily set cookies on their site audience. This allowed advertisers to reach the same audience via their advertising slots on other websites, which could be bought more cheaply. The publishers were cut out of the value chain and were not longer “gatekeepers” to their own site readers. They could not sell their advertising slots at a premium.
+**Issue summary:** By not enforcing strict cookie policies on their own sites, publishers allowed advertisers to sneakily set cookies on their site audience. This allowed advertisers to reach the same audience via their advertising slots on other websites, which could be bought more cheaply. The publishers were cut out of the value chain and were no longer “gatekeepers” to their own site readers. They could not sell their advertising slots at a premium.
 
 ## What I’ll be covering next
 
