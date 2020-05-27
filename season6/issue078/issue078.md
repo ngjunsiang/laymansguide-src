@@ -70,6 +70,8 @@ I did this because I wanted to know what my web browser is doing. And here are s
 - Big websites often load their unchanging (static) resources, such as images, CSS files, script files, etc, from a separate domain  
   Presumably they do this so that this other domain can be set up for caching ([Issue 39](https://buttondown.email/laymansguide/archive/lmg-s3-issue-39-caches-and-caching/)). Having static files cached on the browser makes the browsing experience much smoother, as static parts such as the icons and stylesheets can be rendered (put on screen) first while waiting for dynamic data to load.  
   Dropbox loads their static resources from dropboxstatic.com.
+- Big websites may load their dynamic data from a CDN  
+  Once traffic gets large enough that a single server might not be able to handle peak load, many online services switch to delivering their content through a CDN (such as Squarespace). These resources will appear to be loaded from a third-party. So anything with a “cdn” in the domain is *probably* safe.
 - ReCaptchas don’t always need a pop-up.  
   Some of them run in the background, checking to see if you have already been verified human somewhere else, or verifying you by other means.  
   Dropbox loads its captchas from dropboxcaptcha.com **and** google.com (for Google’s reCaptcha service). Two layers of captchas! that’s probably redundant, but I half-suspect they are temporarily relying on Google’s reCaptcha while trying to spin up their own homebrew captcha service. Who knows?
@@ -80,9 +82,11 @@ I did this because I wanted to know what my web browser is doing. And here are s
 
 **Issue summary:** Modern webpages rely on many third-party resources for their functionality. Blocking access to some domains may cause these webpages to break and stop working.
 
+This was fun, in a UX-masochistic sort of way. Most of my learning here is not really newsletter-worthy; I mainly got to see how prevalent Google is, what a clean webpage looks like in the backend (very few domains), what a massive webpage looks like (lots of domains! E.g. Trello), what the most popular CDNs are, and some dead giveaways of a webpage quickly spiralling out of control (large numbers on a single domain, slow loading with no static domain or CDN) … stuff like that.
+
 ## What I’ll be covering next
 
-**Next issue:** [LMG S7] Issue 79: 
+**Next issue:** [LMG S7] Issue 79: A Base for Data
 
 
 
