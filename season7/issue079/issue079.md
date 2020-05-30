@@ -65,7 +65,7 @@ At least this program is simple to write; I could do it in less than fifty lines
 
 ## What I’ll be covering next
 
-**Next issue:** [LMG S7] Issue 80: From blobs to trees
+**Next issue:** [LMG S7] Issue 80: From Blocks to Trees
 
 We are so used to seeing data in a single **blob**—as a dense spreadsheet table, as densely packed lines of text, etc—that it is difficult to see it as a loosely organised tree structure.
 
