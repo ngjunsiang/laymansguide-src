@@ -1,4 +1,4 @@
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Data companies use the data they have gathered to determine what ads to serve you when you visit sites that they own. This data is sent from your browser via a document request, or via a tracking pixel request.
+[**Previously:**](https://buttondown.email/laymansguide/archive/) Data companies use the data they have gathered to determine what ads to serve you when you visit sites that load their cookie-setting scripts. This data is sent from your browser via a document request, or via a tracking pixel request.
 
 ## Content adjacency
 
