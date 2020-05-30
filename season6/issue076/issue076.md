@@ -50,7 +50,7 @@ For this reason, cookie policies often differentiate between cookie categories:
 
 I think it is only responsible for me to point out here that the above categorisation is not exactly enforced by law, and nothing stops a company from miscategorising their cookies so as to mislead a user into enabling them. For instance, some sites may categorise a cookie for tracking identity as a functional cookie, justifying it by claiming it as part of their security measures, and thereby require the user to enable third-party functional cookies before they are able to use the site.
 
-## Objections to internet-wise disabling of third-party cookies
+## Objections to internet-wide disabling of third-party cookies
 
 It would come as no surprise that ad companies object to such measures, claiming it will “hurt the user experience”, “sabotage the economic model for the Internet”, and “disrupt the valuable digital advertising ecosystem that funds much of today’s digital content and services”. (The quoted parts come from an [open letter from the Digital Advertising Community to Apple Inc.](https://www.patentlyapple.com/patently-apple/2017/09/ad-groups-send-an-open-letter-to-apple-objecting-to-the-new-intelligent-tracking-prevention-setting-in-safari.html))
 
