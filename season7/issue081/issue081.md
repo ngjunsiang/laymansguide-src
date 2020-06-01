@@ -43,7 +43,7 @@ Even with constant-width tables and pre-determined data types, plus speeding up 
 
 ## Data normalisation: making data atomic
 
-When data is really complex, to split it up and make it **atomic**. When data is atomic, it means that it has been broken down to the lowest level of detail; typically this would mean individual records that void duplication.
+When data is really complex, to split it up and make it **atomic**. When data is atomic, it means that it has been broken down to the lowest level of detail; typically this would mean individual records that avoid duplication.
 
 For instance, we might have an `Author` table:
 
@@ -110,7 +110,9 @@ I am jumping ahead of myself a little here; I’ll only talk about SQL a couple 
 
 **Next issue:** [LMG S7] Issue 82: Multiplayer databases
 
-“The action can’t be completed because the file is open. Close the file and try again.” How often have you run into this error on Windows?
+> “The action can’t be completed because the file is open. Close the file and try again.”  
+
+How often have you run into this error on Windows?
 
 This makes it difficult for multiple users to work on a file at the same time. How do databases work around this? Find out in the next issue ;)
 

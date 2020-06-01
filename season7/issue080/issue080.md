@@ -30,11 +30,11 @@ Now that creates a conundrum for us: if I have customer records, should I add an
 
 I’ll examine this issue next week with **data normalisation**.
 
-**Issue summary:** An index is a separate table containing key terms in the database (usually names, ids, or some other key identifier), alongside the row numbers where they are found. An index greatly speeds up row lookups, but slows down the writing of new rows.
+**Issue summary:** An index is a separate table containing key terms in the database (usually names, IDs, or some other key identifier), alongside the row numbers where they are found. An index greatly speeds up row lookups, but slows down the writing of new rows.
 
 ## What I’ll be covering next
 
-**Next issue:** [LMG S7] Issue 81:Data Normalisation
+**Next issue:** [LMG S7] Issue 81: Data Normalisation
 
 In a spreadsheet, we sometimes love to split a page into multiple tables, with lovely table labels and such. With our database now optimised for fast access with constant-width rows and specific data types, we can no longer do that.
 
