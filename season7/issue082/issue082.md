@@ -27,7 +27,7 @@ Well, that’s when the database throws an error. A database system is able to d
 
 **Next issue:** [LMG S7] Issue 83: Structured Query Language
 
-If you have an Excel maven in your workplace who writes `VLOOKUP`s, `INDEX-MATCH`s and other chained functions with ease, Structured Query Language (SQL) will blow your mind! It *almost* looks like Excel code, except with fewer nested parentheses, and reads a little (deceptively) more like English. I’ll show you next issue.
+If you have an Excel maven in your workplace who writes `VLOOKUP`s, `INDEX-MATCH`s and other chained functions with ease, you will know how spreadsheets can do downright amazing things. But wait till you see Structured Query Language (SQL); it will blow your mind! It *almost* looks like Excel code, except with fewer nested parentheses, and reads a little (deceptively) more like English. I’ll show you next issue.
 
 **Sometime in the future:** What is:
 
