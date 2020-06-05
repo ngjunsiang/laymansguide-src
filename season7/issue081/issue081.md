@@ -110,11 +110,11 @@ I am jumping ahead of myself a little here; I’ll only talk about SQL a couple 
 
 **Next issue:** [LMG S7] Issue 82: Multiplayer databases
 
-> “The action can’t be completed because the file is open. Close the file and try again.”  
+> “The action can’t be completed because the file is open. Close the file and try again.”
 
 How often have you run into this error on Windows?
 
-This makes it difficult for multiple users to work on a file at the same time. How do databases work around this? Find out in the next issue ;)
+This makes it difficult for multiple users to work on a file at the same time. How do databases work around this? Find out in the next issue!
 
 **Sometime in the future:** What is:
 
