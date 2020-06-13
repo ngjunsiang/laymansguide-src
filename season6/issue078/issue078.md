@@ -21,7 +21,7 @@ Along the top row, the column headers tell us what kind of resources are being r
 - image files need no explanation I hope
 - media covers any rich/animated media e.g. videos
 - scripts are javascript files containing code to be executed when the page has loaded them
-- XHR (XmlHTTPRequests) are requests for other resources—to verify a Captcha, get a winning ad bid ([Issue 73]()) … or something as innocent as getting the weather forecast
+- XHR (XmlHTTPRequests) are requests for other resources—to verify a Captcha, get a winning ad bid ([Issue 73](https://buttondown.email/laymansguide/archive/lmg-s6-issue-73-the-heart-of-darkness-header/)) … or something as innocent as getting the weather forecast
 - frame refers to iframes (inline frames), which are a way of embedding a webpage inside another. You see this often on sites which display PDF files within their pages. But this can also be used to embed Captcha puzzles within a login box, for instance.
 - other: I won’t go into the other esoteric means of loading data onto a webpage; we won’t need that for this issue
 
@@ -38,7 +38,7 @@ These are represented as row labels.
 
 The numbers in each cell represent how many resources of each type are being loaded from each domain.
 
-CSS and images are considered important and quite harmless, are are thus allowed by default. First-party resources ([Issue 76]()) too, since the website itself has full control over them, are considered “secure”, assuming you trust that website enough to be there in the first place.
+CSS and images are considered important and quite harmless, are are thus allowed by default. First-party resources ([Issue 76](https://buttondown.email/laymansguide/archive/lmg-s6-issue-76-third-parties-and-cross-site/)) too, since the website itself has full control over them, are considered “secure”, assuming you trust that website enough to be there in the first place.
 
 ## Blacklisting or whitelisting domains
 
@@ -51,7 +51,7 @@ Other third-party domains are blacklisted by default (highlighted in light red) 
 That’s interesting … blocking all third-party resources does not stop the page from loading at all! So what are those resources doing (especially the 63 scripts from cfl.dropboxstatic.com)? Let’s continue using the webpage to find out.
 
 ![Screenshot of Error (405) when logging in with all third-party resources blocked.](https://github.com/ngjunsiang/laymansguide/blob/master/season6/issue078/issue078_02.png?raw=true)<br />
-<small>Error (405) means Method Not Allowed, implying that something is missing from the webpage resulting in it not understanding what to do. Oops.</small>
+<small>`Error (405)` means `Method Not Allowed`, implying that something is missing from the webpage resulting in it not understanding what to do. Oops.</small>
 
 Error 405. Looks like I broke something. This is the tedious part: I whitelist one domain at a time, reloading the page each time to see if anything changes.
 
@@ -70,25 +70,27 @@ I did this because I wanted to know what my web browser is doing. And here are s
 - Big websites often load their unchanging (static) resources, such as images, CSS files, script files, etc, from a separate domain  
   Presumably they do this so that this other domain can be set up for caching ([Issue 39](https://buttondown.email/laymansguide/archive/lmg-s3-issue-39-caches-and-caching/)). Having static files cached on the browser makes the browsing experience much smoother, as static parts such as the icons and stylesheets can be rendered (put on screen) first while waiting for dynamic data to load.  
   Dropbox loads their static resources from dropboxstatic.com.
-- Big websites may load their dynamic data from a CDN  
+- Big websites may load their dynamic data from a CDN ([Issue 73](https://buttondown.email/laymansguide/archive/lmg-s6-issue-73-the-heart-of-darkness-header/))  
   Once traffic gets large enough that a single server might not be able to handle peak load, many online services switch to delivering their content through a CDN (such as Squarespace). These resources will appear to be loaded from a third-party. So anything with a “cdn” in the domain is *probably* safe.
 - ReCaptchas don’t always need a pop-up.  
   Some of them run in the background, checking to see if you have already been verified human somewhere else, or verifying you by other means.  
-  Dropbox loads its captchas from dropboxcaptcha.com **and** google.com (for Google’s reCaptcha service). Two layers of captchas! that’s probably redundant, but I half-suspect they are temporarily relying on Google’s reCaptcha while trying to spin up their own homebrew captcha service. Who knows?
+  Dropbox loads its captchas from dropboxcaptcha.com **and** google.com (for Google’s reCaptcha service). Two layers of captchas!
 - There are many websites out there that rely on google.com being whitelisted
   This is what happens when you have a single company providing so many critical services that their domain has to be whitelisted. If blocked, the webpage will no longer work.
 - Some websites rely on “daisy-chaining”, where script A loads script B which loads script C, and so on.  
-  You know this because when using uMatrix, you whitelist a domain and reload the page, and another domain appers. You whitelist that domain, and another one appears … this belies the complexity of the webpage loading sequence. I don’t know enough to comment on what leads to this style of webpage development, but it does not look easy to maintain.
+  You know this because when using uMatrix, you whitelist a domain and reload the page, and another domain appers. You whitelist that domain, and another one appears …
 
 **Issue summary:** Modern webpages rely on many third-party resources for their functionality. Blocking access to some domains may cause these webpages to break and stop working.
 
-This was fun, in a UX-masochistic sort of way. Most of my learning here is not really newsletter-worthy; I mainly got to see how prevalent Google is, what a clean webpage looks like in the backend (very few domains), what a massive webpage looks like (lots of domains! E.g. Trello), what the most popular CDNs are, and some dead giveaways of a webpage quickly spiralling out of control (large numbers on a single domain, slow loading with no static domain or CDN) … stuff like that.
+This was fun, in a masochistic sort of way. Most of what I learnt here is not really newsletter-worthy: how prevalent Google is, what a clean webpage looks like in the backend (very few domains), what a massive webpage looks like (lots of domains! E.g. Trello), what the most popular CDNs are, and some dead giveaways of a webpage quickly spiralling out of control (large numbers on a single domain, slow loading with no static domain or CDN) … maybe I’ll figure out the layman-worthy parts of it someday and put it in another  season.
 
 ## What I’ll be covering next
 
 **Next issue:** [LMG S7] Issue 79: A Base for Data
 
+Next season, we go back to data again. Specifically, we look at how data is stored and manage for most of the internet: in a database.
 
+What is a database and why do we need one?
 
 **Sometime in the future:** What is:
 
