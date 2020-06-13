@@ -35,7 +35,7 @@ Let’s talk about some broadly useful strategies (note: this is a newsletter, n
 
 ## DNS blocking
 
-A quick refresher on DNS ([Issue 28](https://buttondown.email/laymansguide/archive/lmg-s3-issue-28-domain-names-and-dns/)): each time the browser is given a URL to load, it first figures out the IP address associated with the domain name of the URL (e.g. `facebook.com` is the domain name of a URL like `https://www.facebook.com/<username>/posts/17-digit-number)`. It does this through a DNS lookup request to a DNS server.
+A quick refresher on DNS ([Issue 28](https://buttondown.email/laymansguide/archive/lmg-s3-issue-28-domain-names-and-dns/)): each time the browser is given a URL to load, it first figures out the IP address associated with the domain name of the URL (e.g. `facebook.com` is the domain name of a URL like `https://www.facebook.com/<username>/posts/17-digit-number`). It does this through a DNS lookup request to a DNS server.
 
 Your default DNS server is usually your ISP. This allows your ISP to do some content filtering for you (e.g. if you signed up for a parental control service by them), by simply *blocking all requests* to a particular IP address or domain. e.g. if you have ISP parental controls enabled, and the ISP detects a DNS lookup request to resolve a blacklisted domain like `www.xxxchicksxxx.com` to its IP address, it will simply block the request by not returning any result—stopped at the source! (Note: that URL is probably fictional, I have not tested it!)
 
