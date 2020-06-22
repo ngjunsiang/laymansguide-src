@@ -38,7 +38,7 @@ These are represented as row labels.
 
 The numbers in each cell represent how many resources of each type are being loaded from each domain.
 
-CSS and images are considered important and quite harmless, are are thus allowed by default. First-party resources ([Issue 76](https://buttondown.email/laymansguide/archive/lmg-s6-issue-76-third-parties-and-cross-site/)) too, since the website itself has full control over them, are considered “secure”, assuming you trust that website enough to be there in the first place.
+CSS and images are considered important and quite harmless, and are thus allowed by default. First-party resources ([Issue 76](https://buttondown.email/laymansguide/archive/lmg-s6-issue-76-third-parties-and-cross-site/)) too, since the website itself has full control over them, are considered “secure”, assuming you trust that website enough to be there in the first place.
 
 ## Blacklisting or whitelisting domains
 
@@ -67,15 +67,15 @@ If you are thinking of trying this, be warned: this will frustrate your browsing
 
 I did this because I wanted to know what my web browser is doing. And here are some things I’ve figured out through this exercise:
 
-- Big websites often load their unchanging (static) resources, such as images, CSS files, script files, etc, from a separate domain  
+- Big websites often load their unchanging (static) resources, such as images, CSS files, script files, etc, from a separate domain.  
   Presumably they do this so that this other domain can be set up for caching ([Issue 39](https://buttondown.email/laymansguide/archive/lmg-s3-issue-39-caches-and-caching/)). Having static files cached on the browser makes the browsing experience much smoother, as static parts such as the icons and stylesheets can be rendered (put on screen) first while waiting for dynamic data to load.  
   Dropbox loads their static resources from dropboxstatic.com.
-- Big websites may load their dynamic data from a CDN ([Issue 73](https://buttondown.email/laymansguide/archive/lmg-s6-issue-73-the-heart-of-darkness-header/))  
+- Big websites may load their dynamic data from a CDN ([Issue 73](https://buttondown.email/laymansguide/archive/lmg-s6-issue-73-the-heart-of-darkness-header/)).  
   Once traffic gets large enough that a single server might not be able to handle peak load, many online services switch to delivering their content through a CDN (such as Squarespace). These resources will appear to be loaded from a third-party. So anything with a “cdn” in the domain is *probably* safe.
 - ReCaptchas don’t always need a pop-up.  
   Some of them run in the background, checking to see if you have already been verified human somewhere else, or verifying you by other means.  
   Dropbox loads its captchas from dropboxcaptcha.com **and** google.com (for Google’s reCaptcha service). Two layers of captchas!
-- There are many websites out there that rely on google.com being whitelisted
+- There are many websites out there that rely on google.com being whitelisted.
   This is what happens when you have a single company providing so many critical services that their domain has to be whitelisted. If blocked, the webpage will no longer work.
 - Some websites rely on “daisy-chaining”, where script A loads script B which loads script C, and so on.  
   You know this because when using uMatrix, you whitelist a domain and reload the page, and another domain appers. You whitelist that domain, and another one appears …
@@ -88,7 +88,7 @@ This was fun, in a masochistic sort of way. Most of what I learnt here is not re
 
 **Next issue:** [LMG S7] Issue 79: A Base for Data
 
-Next season, we go back to data again. Specifically, we look at how data is stored and manage for most of the internet: in a database.
+Next season, we go back to data again. Specifically, we look at how data is stored and managed for most of the internet: in a database.
 
 What is a database and why do we need one?
 
