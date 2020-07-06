@@ -10,7 +10,7 @@ By now your idea of a developers’ workflow might look something like this:
 4. If the tests pass, send a pull request to the repository owner to merge this branch with the main branch.
 
 
-![A commit on Github](https://github.com/ngjunsiang/laymansguide/blob/master/season2/issue022/issue022_01.png?raw=true)
+![A commit on Github](https://github.com/ngjunsiang/laymansguide/blob/release/season2/issue022/issue022_01.png?raw=true)
 <small>Git branching. From [Atlassian’s git branch tutorial](https://www.atlassian.com/git/tutorials/using-branches).</small>
 
 
@@ -28,7 +28,7 @@ One step less! But the part that developers dread is usually merging, which is w
 ## Merge conflicts
 
 
-![A commit on Github](https://github.com/ngjunsiang/laymansguide/blob/master/season2/issue022/issue022_01.png?raw=true)
+![A commit on Github](https://github.com/ngjunsiang/laymansguide/blob/release/season2/issue022/issue022_01.png?raw=true)
 <small>Git merging. From [Atlassian’s git merge tutorial](https://www.atlassian.com/git/tutorials/using-branches/git-merge).</small>
 
 

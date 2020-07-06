@@ -23,7 +23,7 @@ Since one byte stores one colour value, three bytes are needed for a single spot
 
 So now you know what to do with colour pickers in applications: just find the combination of red, green, and blue that is closest to the colour you want!
 
-![The Microsoft Paint colour picker](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue043/issue043_01.png?raw=true)<br />
+![The Microsoft Paint colour picker](https://github.com/ngjunsiang/laymansguide/blob/release/season4/issue043/issue043_01.png?raw=true)<br />
 <small>A colour picker, common in graphics applications. This one is from Microsoft Paint.</small>
 
 You can play with a simple colour wheel on [colorspire.com](https://www.colorspire.com/rgb-color-wheel/), or if you’re feeling more adventurous, try the more technical one on [rapidtables.com](https://www.rapidtables.com/web/color/RGB_Color.html).
@@ -34,7 +34,7 @@ On a screen, colours are produced by millions of liquid crystals (in LCDs) or li
 
 It is extremely difficult to manufacture pixels that can produce any colour; this would require that the crystal or diode can emit light of different frequencies. Instead, the display industry has settled on combining 3 sub-pixels into a pixel. Each sub-pixel produces—you guessed it—either red, green, or blue light.
 
-![Close-up of LCD/LED pixels from various displays](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue043/issue043_02.png?raw=true)<br />
+![Close-up of LCD/LED pixels from various displays](https://github.com/ngjunsiang/laymansguide/blob/release/season4/issue043/issue043_02.png?raw=true)<br />
 <small>Extreme close-up shots of pixels.<br />
 Taken from [lcdtech.info](http://lcdtech.info/en/tests/lcd.pixels.structure.htm).</small>
 
@@ -67,7 +67,7 @@ I get carried away easily explaining colour, and it took incredible discipline t
 
 **Next issue:** Image resolution
 
-![Meme: One does not simply resize an image](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue043/issue043_03.jpg?raw=true)
+![Meme: One does not simply resize an image](https://github.com/ngjunsiang/laymansguide/blob/release/season4/issue043/issue043_03.jpg?raw=true)
 
 After examining a single pixel, I’ll look at a whole image: what does it take to trick our brains into seeing an image instead of a collection of pixels?
 

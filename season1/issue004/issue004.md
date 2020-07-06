@@ -5,14 +5,14 @@
 If a human wanted to access my Hypothes.is profile page, they would access [https://hypothes.is/users/kureshii](https://hypothes.is/users/kureshii) and see a nicely formatted profile page.
 
 
-![Screenshot of a Hypothes.is profile page](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue004/issue004_01.png?raw=true)
+![Screenshot of a Hypothes.is profile page](https://github.com/ngjunsiang/laymansguide/blob/release/season1/issue004/issue004_01.png?raw=true)
 <small>My Hypothe.is profile page. Yeah, you already saw this in Issue 2. </small>
 
 
 If an app wanted a data-only view, it could access [https://hypothes.is/api/search?user=kureshii](https://hypothes.is/api/search?user=kureshii) and get the same data:
 
 
-![Data from the Hypothes.is API, JSON](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue004/issue004_02.png?raw=true)
+![Data from the Hypothes.is API, JSON](https://github.com/ngjunsiang/laymansguide/blob/release/season1/issue004/issue004_02.png?raw=true)
 <small>Raw data from the Hypothes.is API<br/>
 (that’s Application Programming Interface)</small>
 
@@ -22,7 +22,7 @@ Cool, isn’t it? Looks very different from HTML, but still looks kinda … stru
 Luckily for us, this way of using curly and square brackets is pretty standardised these days. It is called JavaScript Object Notation (JSON for short). It was specified by Douglas Crockford in the early 2000s, presumably to make things easier for all of us, because it was meant to replace some competing formats, such as XML.
 
 
-![Data from the Hypothes.is API, XML](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue004/issue004_03.png?raw=true)<br />
+![Data from the Hypothes.is API, XML](https://github.com/ngjunsiang/laymansguide/blob/release/season1/issue004/issue004_03.png?raw=true)<br />
 <small>The same data, in XML format.<br />
 (Those look like HTML tags, but they are XML tags. Don’t worry about the difference for now, I’ll write an issue about it when it matters.<br/>
 Maybe when I move on to ebooks.)</small>

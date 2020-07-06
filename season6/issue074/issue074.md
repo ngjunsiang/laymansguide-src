@@ -10,7 +10,7 @@ Obviously when you loaded the page, some information already went to the server 
 
 Let’s revisit HuffPost again, this time filtering only for image loads:
 
-![Screenshot of DevTools in Vivaldi browser, filtered to show only image loads.](https://github.com/ngjunsiang/laymansguide/blob/master/season6/issue074/issue074_01.png?raw=true)<br />
+![Screenshot of DevTools in Vivaldi browser, filtered to show only image loads.](https://github.com/ngjunsiang/laymansguide/blob/release/season6/issue074/issue074_01.png?raw=true)<br />
 <small>Chrome DevTools showing filtered image requests.<br />
 A request for a tracking pixel is highlighted in blue.</small>
 
@@ -18,7 +18,7 @@ Hmm … why does an image request need to be so long? Anytime you see a long URL
 
 Let’s see what this image looks like:
 
-![Vivaldi browser tab showing a tracking pixel.](https://github.com/ngjunsiang/laymansguide/blob/master/season6/issue074/issue074_02.png?raw=true)<br />
+![Vivaldi browser tab showing a tracking pixel.](https://github.com/ngjunsiang/laymansguide/blob/release/season6/issue074/issue074_02.png?raw=true)<br />
 <small>This is a tracking pixel.<br />
 You can’t see it. The image info sidebar shows that its dimensions are 1×1 pixels.</small>
 

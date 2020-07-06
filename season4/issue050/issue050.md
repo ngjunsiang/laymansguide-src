@@ -18,7 +18,7 @@ HTML is not a programming language. You can’t write code and tell a computer t
 
 This is (a snippet of) the previous issue, as an HTML file:
 
-![Snippet of HTML from Issue 49](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue050/issue050_01.png?raw=true)<br />
+![Snippet of HTML from Issue 49](https://github.com/ngjunsiang/laymansguide/blob/release/season4/issue050/issue050_01.png?raw=true)<br />
 <small>Issue 49 as an HTML file</small>
 
 Thank goodness we have syntax highlighting, which should make it easier to notice all the little tags that start with an open angled bracket `<` and closed angled bracket `>`. These are called HTML tags, and they signify the start and end of segments in the document.
@@ -34,7 +34,7 @@ Thank goodness we have syntax highlighting, which should make it easier to notic
 
 What are those `class="…"` attributes in the tags? The web browser creates a content element for each tag, and styles it according to the predefined style class in the document, defined inside `<style>…</style>`. This is what that section looks like when expanded:
 
-![Styles for the Issue 49 HTML file](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue050/issue050_02.png?raw=true)<br />
+![Styles for the Issue 49 HTML file](https://github.com/ngjunsiang/laymansguide/blob/release/season4/issue050/issue050_02.png?raw=true)<br />
 <small>Element styles for Issue 49</small>
 
 I don’t need to explain the specifications for you to notice that `<h1>`, `<h2>`, `<h3>` etc all have a slightly different style defined for them. `.app` is a little different; it starts with a period (`.`) and is applied to everything that has the `class="app"` attribute (*psst* … that’s the `<body>` element from the earlier image!).
@@ -43,11 +43,11 @@ Yet at the same time, there are also other styles defined for `<body>…</body>`
 
 Okay, just two more tags to illustrate embedding other content:
 
-![Another part of the Issue 49 HTML file showing the <a> tag](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue050/issue050_03.png?raw=true)
+![Another part of the Issue 49 HTML file showing the <a> tag](https://github.com/ngjunsiang/laymansguide/blob/release/season4/issue050/issue050_03.png?raw=true)
 
 The `<a>` tag (for "anchor"; don’t ask) is used to define links (those clickable things in a webpage) and the place it links to is defined as a `href="…"` attribute.
 
-![Another part of the Issue 49 HTML file showing the <img> tag](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue050/issue050_04.png?raw=true)
+![Another part of the Issue 49 HTML file showing the <img> tag](https://github.com/ngjunsiang/laymansguide/blob/release/season4/issue050/issue050_04.png?raw=true)
 
 The `<img>` tag (for "image") is used to insert images. Rollover text, which appears when you put the mouse cursor over the image without clicking, is defined in the `alt="…"` attribute, while the URL of the image is defined in the `src="…"` attribute.
 
@@ -63,13 +63,13 @@ Last issue I said this:
 
 Suppose we do that with a DOCX file … heck, lets convert Issue 49 into a DOCX, rename it to a `.zip` file and see what happens.
 
-![Issue 49 DOCX file opened as a .zip file](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue050/issue050_05.png?raw=true)
+![Issue 49 DOCX file opened as a .zip file](https://github.com/ngjunsiang/laymansguide/blob/release/season4/issue050/issue050_05.png?raw=true)
 
 ![WHOA cat meme](https://i.imgflip.com/2i7zhl.jpg)
 
 Don’t run! Most of it is unimportantly technical, we’ll just jump right into the interesting part which is `document.xml`, so take a deep breath …
 
-![document.xml](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue050/issue050_06.png?raw=true)<br />
+![document.xml](https://github.com/ngjunsiang/laymansguide/blob/release/season4/issue050/issue050_06.png?raw=true)<br />
 <small>document.xml</small>
 
 Okay, ouch. That’s a different tag language, called e**X**tensible **M**arkup **L**anguage (XML). Interestingly enough, each of those tags starts with `w:`, followed by some familiar phrases: `body`, `p`, and others that are not so familiar.

@@ -11,12 +11,12 @@ If your impression of “social reading” brings to mind Facebook, Twitter and 
 
 Readmill was shaped primarily around that. The first thing it brought was a permalink to each highlight you made. A permalink is short for a “permanent link”, a bit of text that you can send to someone, paste into the address bar of a web browser, and be taken to a webpage that you want them to see.
 
-![Screenshot of a Readmill highlight page](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue001/issue001_01.jpg?raw=true)
+![Screenshot of a Readmill highlight page](https://github.com/ngjunsiang/laymansguide/blob/release/season1/issue001/issue001_01.jpg?raw=true)
 <small>A Readmill highlight on the Readmill webpage (with a permalink)</small>
 
 These highlights (optionally) appeared in-location in the mobile apps. You could choose to have them off, for focused reading, or to have them on, for the serendipitous experience of meeting someone else who has something to say about what you are reading.
 
-![Screenshot of a Readmill highlight in the app](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue001/issue001_02.png?raw=true)
+![Screenshot of a Readmill highlight in the app](https://github.com/ngjunsiang/laymansguide/blob/release/season1/issue001/issue001_02.png?raw=true)
 <small>A Readmill highlight in the Readmill app</small>
 
 The social reading experience seemed gimmicky at first, but the turning point came for me when Clive Thompson, who had just published Smarter Than You Think, started replying to notes and comments in his book. Being able to speak with the books author on specific highlights was world-changing. You could ask questions about points in the book that weren’t clear to you, and have the author clarify it right there. You could mention something it reminds you of, and have the author point you to an article they read or wrote about the same idea. And these were available to other users of the service. Better yet, their correspondence with the author was available to you too! I regret not taking screenshots of some of the exchanges I had; I never expected I would need them at some point.
