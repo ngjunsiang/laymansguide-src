@@ -23,7 +23,7 @@ It’s called a dynamic process because the router assigns private IP addresses 
 One potential drawback of this dynamic process is that if you are trying to set up a network printer the Old Way, it will ask you to input the address of the printer. And unless you have figured out internal DNS on your router and properly hostnamed all your printers, you will be providing this address not as a hostname (like printer.home.com) but as an IP address (192.168.1.5).
 
 
-![Add Printer dialog asking for an IP address](https://github.com/ngjunsiang/laymansguide/blob/master/season3/issue031/issue031_01.gif?raw=true)<br />
+![Add Printer dialog asking for an IP address](https://github.com/ngjunsiang/laymansguide/blob/release/season3/issue031/issue031_01.gif?raw=true)<br />
 <small>An old printer management dialog window for adding printers. [Source: UC Davis Coastal And Marine Science Institute](https://marinescience.ucdavis.edu/bml/facilities/it/instructions/mac-how-add-network-printer-ip-address)</small>
 
 

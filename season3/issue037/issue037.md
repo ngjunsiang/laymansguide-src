@@ -33,7 +33,7 @@ traceroute to google.com (74.125.24.138), 30 hops max, 60 byte packets
 Wall of numbers and text! Whoa, scary! It’s all right, I’ll throw that output into Google Sheets and prettify it a bit:
 
 
-![prettified traceroute output for google.com](https://github.com/ngjunsiang/laymansguide/blob/master/season3/issue037/issue037_01.png?raw=true)<br />
+![prettified traceroute output for google.com](https://github.com/ngjunsiang/laymansguide/blob/release/season3/issue037/issue037_01.png?raw=true)<br />
 <small>The traceroute output for google.com, prettified</small>
 
 
@@ -48,7 +48,7 @@ Notice that each hop has a latency associated with it. This is the time taken fo
 Let’s look the `traceroute` output for baidu.com:
 
 
-![prettified traceroute output for baidu.com](https://github.com/ngjunsiang/laymansguide/blob/master/season3/issue037/issue037_02.png?raw=true)<br />
+![prettified traceroute output for baidu.com](https://github.com/ngjunsiang/laymansguide/blob/release/season3/issue037/issue037_02.png?raw=true)<br />
 <small>The traceroute output for baidu.com, prettified</small>
 
 

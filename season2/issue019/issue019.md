@@ -21,7 +21,7 @@ The modern-day tool which (almost) all developers have standardised on is called
 
 Git tracks changes across _multiple files_. For example, if you added a new About page to your project, it may involve adding a new file about.html (the actual content), updating app.py (to create a new route so people can access the URL), and adding a new line to the changelog (so other members of your team have an easy-to-read changelog). You inform the git server (we covered clients and servers in [Issue 7](https://buttondown.email/laymansguide/archive/b36f0f43-e8f5-402d-8c6a-c2a28f5ff556)) that you have changed those 3 files by creating a **commit**. Git can prepare those commits for you, and they look like this:
 
-![A commit on Github](https://github.com/ngjunsiang/laymansguide/blob/master/season2/issue019/issue019_01.png?raw=true)
+![A commit on Github](https://github.com/ngjunsiang/laymansguide/blob/release/season2/issue019/issue019_01.png?raw=true)
 <small>A git commit on Github. Yup, this newsletter is also a project on Github.</small>
 
 The screenshot above makes it look fancy, but a commit is really just a simple text file that records the changes of the commit.

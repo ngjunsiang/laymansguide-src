@@ -46,7 +46,7 @@ When the first zip file compressed its contents, the predictability of the resul
 
 If you want greater compression, use a higher compression setting on the original file instead.
 
-![7zip archive settings, showing options for compression level, compression method, and dictionary size](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue047/issue047_01.png?raw=true)<br />
+![7zip archive settings, showing options for compression level, compression method, and dictionary size](https://github.com/ngjunsiang/laymansguide/blob/release/season4/issue047/issue047_01.png?raw=true)<br />
 <small>7zip archive settings for zip files.<br />
 Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Colorcomp.jpg)</small>
 

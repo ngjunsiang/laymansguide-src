@@ -7,14 +7,14 @@ Last issue, I showed the route taken by data packets being sent to google.com, a
 The Github repository where I keep my laymansguide files can be viewed on a webpage, and it looks like this:
 
 
-![Github page for laymansguide](https://github.com/ngjunsiang/laymansguide/blob/master/season3/issue038/issue038_01.png?raw=true)<br />
+![Github page for laymansguide](https://github.com/ngjunsiang/laymansguide/blob/release/season3/issue038/issue038_01.png?raw=true)<br />
 <small>Github page for laymansguide</small>
 
 
 Loading this page with the Network tab of Developer Tools open produces this report:
 
 
-![Developer Tools showing network activity while loading a Github page](https://github.com/ngjunsiang/laymansguide/blob/master/season3/issue038/issue038_02.png?raw=true)<br />
+![Developer Tools showing network activity while loading a Github page](https://github.com/ngjunsiang/laymansguide/blob/release/season3/issue038/issue038_02.png?raw=true)<br />
 <small>Developer Tools, Network view</small>
 
 
@@ -74,14 +74,14 @@ loads other requested resources, such as stylesheets, images, and scripts (Stage
 **Bonus content:** I tried this with the Baidu homepage, which looks like this:
 
 
-![Baidu homepage](https://github.com/ngjunsiang/laymansguide/blob/master/season3/issue038/issue038_03.png?raw=true)<br />
+![Baidu homepage](https://github.com/ngjunsiang/laymansguide/blob/release/season3/issue038/issue038_03.png?raw=true)<br />
 <small>Baidu homepage</small>
 
 
 and the network activity from loading it:
 
 
-![Developer Tools showing network activity while loading Baidu homepage](https://github.com/ngjunsiang/laymansguide/blob/master/season3/issue038/issue038_04.png?raw=true)<br />
+![Developer Tools showing network activity while loading Baidu homepage](https://github.com/ngjunsiang/laymansguide/blob/release/season3/issue038/issue038_04.png?raw=true)<br />
 <small>Developer Tools, Network view</small>
 
 

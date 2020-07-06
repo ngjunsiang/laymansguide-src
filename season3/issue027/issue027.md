@@ -7,7 +7,7 @@ In Season 3, I’ll continue where I left off. We’ll see where that HTTP reque
 ## The HTTP packet, revisited
 
 
-![An HTTP request captured in Wireshark](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue012/issue012_01.png?raw=true)<br />
+![An HTTP request captured in Wireshark](https://github.com/ngjunsiang/laymansguide/blob/release/season1/issue012/issue012_01.png?raw=true)<br />
 <small>Remember this from [Issue 12](https://buttondown.email/laymansguide/archive/lmg-issue-12-what-is-https-how-is-it-different/)?</small>
 
 
@@ -42,7 +42,7 @@ Okay, so how do those packets actually make their way to you if they don’t ori
 Your smartphone, or laptop, first sends the packet to its gateway (which is typically your router). Your router differs from your handy gadgets in one key way: it is a server, while your gadgets are clients ([I covered clients and servers in Issue 7.](https://buttondown.email/laymansguide/archive/lmg-issue-7-what-is-http/)). The router contains a forwarding table, which is a table telling it where to forward data meant for various IP addresses. For example, if you are trying to send a document to your home network printer, that data packet is not meant to go out onto the Internet—it’s meant to be forwarded to the printer! The information in the forwarding table ensures that this happens. Your laptop has no idea what the IP address of the printer is; all it knows is your router’s IP address, and it will forward everything to your router for it to figure out.
 
 
-![Network connection properties window](https://github.com/ngjunsiang/laymansguide/blob/master/season3/issue027/issue027_01.png?raw=true)<br />
+![Network connection properties window](https://github.com/ngjunsiang/laymansguide/blob/release/season3/issue027/issue027_01.png?raw=true)<br />
 <small>Network connection properties, a window that one used to see very often when configuring a router. [Source: Help Desk Geek](https://helpdeskgeek.com/networking/change-ip-address-and-dns-servers-using-the-command-prompt/)</small>
 
 

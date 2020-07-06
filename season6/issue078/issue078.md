@@ -8,7 +8,7 @@ As part of my research for this season, I installed [uMatrix](https://github.com
 
 Once installed, it adds a button beside the address bar. When clicked, this button pops up a matrix showing the number of resources loaded from each domain:
 
-![Screenshot of uMatrix in Firefox browser, showing default settings.](https://github.com/ngjunsiang/laymansguide/blob/master/season6/issue078/issue078_01.png?raw=true)<br />
+![Screenshot of uMatrix in Firefox browser, showing default settings.](https://github.com/ngjunsiang/laymansguide/blob/release/season6/issue078/issue078_01.png?raw=true)<br />
 <small>uMatrix in Firefox showing default settings.<br />
 Items highlighted in green are permitted to load, items in red are blocked.</small>
 
@@ -50,14 +50,14 @@ Other third-party domains are blacklisted by default (highlighted in light red) 
 
 That’s interesting … blocking all third-party resources does not stop the page from loading at all! So what are those resources doing (especially the 63 scripts from cfl.dropboxstatic.com)? Let’s continue using the webpage to find out.
 
-![Screenshot of Error (405) when logging in with all third-party resources blocked.](https://github.com/ngjunsiang/laymansguide/blob/master/season6/issue078/issue078_02.png?raw=true)<br />
+![Screenshot of Error (405) when logging in with all third-party resources blocked.](https://github.com/ngjunsiang/laymansguide/blob/release/season6/issue078/issue078_02.png?raw=true)<br />
 <small>`Error (405)` means `Method Not Allowed`, implying that something is missing from the webpage resulting in it not understanding what to do. Oops.</small>
 
 Error 405. Looks like I broke something. This is the tedious part: I whitelist one domain at a time, reloading the page each time to see if anything changes.
 
 It turns out the Dropbox webpage is doing a surprising number of things behind the scenes! By the time I managed to get a login, uMatrix looked like this:
 
-![Screenshot of uMatrix in Firefox browser, showing some domains whitelisted.](https://github.com/ngjunsiang/laymansguide/blob/master/season6/issue078/issue078_03.png?raw=true)<br />
+![Screenshot of uMatrix in Firefox browser, showing some domains whitelisted.](https://github.com/ngjunsiang/laymansguide/blob/release/season6/issue078/issue078_03.png?raw=true)<br />
 <small>uMatrix in Firefox showing settings that got Dropbox working.<br />
 I had to allow embedded frames from dropboxcaptcha.com and google.com as well.</small>
 

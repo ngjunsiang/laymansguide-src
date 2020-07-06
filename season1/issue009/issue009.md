@@ -1,7 +1,7 @@
 Last issue, I talked about HTTP response headers, and how they inform the client about the request status using a status code. Let’s talk about the HTTP request today. An HTTP request header looks like this:
 
 
-![An HTTP request header](https://github.com/ngjunsiang/laymansguide/blob/master/season1/issue009/issue009_01.png?raw=true)
+![An HTTP request header](https://github.com/ngjunsiang/laymansguide/blob/release/season1/issue009/issue009_01.png?raw=true)
 <small>A request header</small>
 
 

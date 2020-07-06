@@ -8,7 +8,7 @@ And then computers came along. But in the days of dot matrix printers, which pri
 
 If you were working for a professional publisher, you formatted text by inserting **control codes** (including the formatting commands mentioned in [Issue 41](https://buttondown.email/laymansguide/archive/lmg-s4-issue-41-ascii-the-typewriter-digitised/)) using a special keyboard. But computers back then weren’t powerful enough to show you the effects of that formatting instantaneously. You would just see the formatting code on the display and have to imagine how it looks like in your head. Which is easy to do, after many years of experience.
 
-![Formatting codes revealed in WordPerfect 5.1](https://github.com/ngjunsiang/laymansguide/blob/master/season4/issue051/issue051_01.png?raw=true)<br />
+![Formatting codes revealed in WordPerfect 5.1](https://github.com/ngjunsiang/laymansguide/blob/release/season4/issue051/issue051_01.png?raw=true)<br />
 <small>WordPerfect 5.1 (1986), with formatting codes revealed<br />
 From [Anthology](https://anthology.hypotheses.org/254)</small>
 
