@@ -43,7 +43,7 @@ Even with constant-width tables and pre-determined data types, plus speeding up 
 
 ## Data normalisation: making data atomic
 
-When data is really complex, to split it up and make it **atomic**. When data is atomic, it means that it has been broken down to the lowest level of detail; typically this would mean individual records that avoid duplication.
+When data is really complex, it makes sense to split it up and make it **atomic**. When data is atomic, it means that it has been broken down to the lowest level of detail; typically this would mean individual records that avoid duplication.
 
 For instance, we might have an `Author` table:
 
@@ -98,7 +98,7 @@ The second advantage you can see is that entities—authors, posts, tags—are n
 
 ## Disadvantages: greater complexity
 
-The disadvantage now is that pulling data together to render a blog post on a webpage now involves looking up three different tables and joining the data together. Each query is going to involve multiple lookups and joins, and is going to require many lines of code … if each programming language is going to come up with its own way of writing these lookups and joins, and each new database format also come up with its own commands, very soon we would have a huge unmaintainable mess!
+The disadvantage is that pulling data together to render a blog post on a webpage now involves looking up three different tables and joining the data together. Each query is going to involve multiple lookups and joins, and is going to require many lines of code … if each programming language is going to come up with its own way of writing these lookups and joins, and each new database format also comes up with its own commands, very soon we would have a huge unmaintainable mess of syntax and commands to learn!
 
 So programmers and database designers came together and came up with a *new language* to do lookups and joins: Structured Query Language, or **SQL**. This is the reason why today you can write SQL queries that will work on a Microsoft SQL (MSSQL), PostGreSQL, MySQL, or MariaDB database; they all support SQL!
 
