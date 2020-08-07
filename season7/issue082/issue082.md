@@ -6,13 +6,13 @@ This issue is going to be a short one, because it is simple enough to explain :)
 
 This happens in File Explorer because the operating system treats a text file as a single block of data. When a user opens this file, they do not expect data inside to change. To prevent other users inadvertently modifying it, the operating system “locks” the file, preventing any changes—including deletion!
 
-How do we resolve this with a database? In the previous issue ([Issue 81]()), I described the process of making data atomic—breaking it up into the smallest level of detail. By splitting up one huge spreadsheet worth of data into multiple tables representing different things, we allow the database to do the heavy work of data processing for us, while we avoid the tedium of repeating the same data row after row (such as author name for different blog posts).
+How do we resolve this with a database? In the previous issue ([Issue 81](https://buttondown.email/laymansguide/archive/lmg-s7-issue-81-data-normalisation/)), I described the process of making data atomic—breaking it up into the smallest level of detail. By splitting up one huge spreadsheet worth of data into multiple tables representing different things, we allow the database to do the heavy work of data processing for us, while we avoid the tedium of repeating the same data row after row (such as author name for different blog posts).
 
 ## Locking specific data
 
 Now that the data is atomic, the database is better able to figure out which data needs to be locked. If a user is requesting data from a particular table and from certain rows only, we do not need to lock the entire database and prevent other users from accessing it. Such systems are called row-locking systems, and some databases (but not all) support this feature.
 
-# Action deconflicting
+## Action deconflicting
 
 When multiple users access a database and attempt to write data to it at the same time, the database takes these requests and puts them in a queue, processing them one by one so that no two conflicting actions end up causing the data to be corrupted.
 
