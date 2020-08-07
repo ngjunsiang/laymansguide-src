@@ -1,6 +1,6 @@
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A database system follows rules that enable multiple users to send commands to the database at the same time. The system attempts to execute each action one at a time, locking data that is in use by other users, and ensuring that each user does not carry out actions that they are not permitted to. Such systems are better able to prevent data corruption compared to a text-based system.
 
-Have you experienced the pain of having really huge tables in your spreadsheet, sometimes spanning more than a hundred columns? Then you might know how painful it can be trying to filter data from it, e.g. if you boss just wants a few columns of info from certain rows. Like if he asks for the performance numbers of employees who are up for promotion.
+Have you experienced the pain of having really huge tables in your spreadsheet, sometimes spanning more than a hundred columns? Then you might know how painful it can be trying to filter data from it, e.g. if your boss just wants a few columns of info from certain rows. Like if he asks for the performance numbers of employees who are up for promotion.
 
 In a spreadsheet, you would have to apply filters for `nextPromoYear` to only show the appropriate rows, then you'll have to hide all the other irrelevant columns. Or you'd just copy all more-than-a-hundred columns for those rows into another new spreadsheet, and manually delete the unnecessary columns.
 
@@ -34,7 +34,7 @@ By using these and many other keywords and keyphrases, it is possible to put tog
 
 The tradeoff is that you have to learn another language, and use it regularly enough to understand the ins and outs. This is why every big corporation has a data team that can do this!
 
-**Issue summary:** Structured Query Language (SQL) is a computer language for managing data in databases. It has keywords and keyphrases that let you filter rows and columns, group and order data, perform basic arithmetic on data, and more. It is complex and powerful, but astute and efficient requires specialised training.
+**Issue summary:** Structured Query Language (SQL) is a computer language for managing data in databases. It has keywords and keyphrases that let you filter rows and columns, group and order data, perform basic arithmetic on data, and more. It is complex and powerful, but using it in an astute and efficient manner requires specialised training.
 
 ## What I’ll be covering next
 
