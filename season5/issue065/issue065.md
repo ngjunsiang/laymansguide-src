@@ -4,13 +4,13 @@ One question that makes sense to ask is: if the operating system is supposed to 
 
 Let’s face it: it is impossible to completely separate programs from each other. Many programs need to communicate with each other; antivirus software needs to be able to scan the addresses accessed by your web browser for harmful links, Office software needs to be able to send data to each other especially for features like Mail Merge, and of course your task manager has to know how much resources every app is using. So that it can show you this:
 
-![Screenshot of task manager in Windows 10, showing shared memory usage](https://github.com/ngjunsiang/laymansguide/blob/release/season5/issue065/issue065_01.png?raw=true)<br />
+![Screenshot of task manager in Windows 10, showing shared memory usage](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season5/issue065/issue065_01.png)<br />
 <small>Task Manager in Windows 10<br />
 You can reveal the shared memory column by right-clicking on the column labels and then “Select Columns”.</small>
 
 or this:
 
-![Screenshot of system monitor in KDE, showing shared memory usage](https://github.com/ngjunsiang/laymansguide/blob/release/season5/issue065/issue065_02.png?raw=true)<br />
+![Screenshot of system monitor in KDE, showing shared memory usage](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season5/issue065/issue065_02.png)<br />
 <small>System Monitor in KDE (Linux).</small>
 
 What is this shared memory?
@@ -41,7 +41,7 @@ Ah! System Monitor actually reveals more details about how an application uses m
 
 Here’s Firefox:
 
-![Screenshot of detailed memory usage in Firefox on KDE](https://github.com/ngjunsiang/laymansguide/blob/release/season5/issue065/issue065_03.png?raw=true)<br />
+![Screenshot of detailed memory usage in Firefox on KDE](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season5/issue065/issue065_03.png)<br />
 <small>Firefox detailed memory usage in KDE (Linux).</small>
 
 Oops, too much detail. Heres the gist:
@@ -60,10 +60,10 @@ I do my newsletter writing mainly in an app called Atom, made by Github. Atom ru
 
 In system monitor, I can see an app named atom, and one named electron. Let’s inspect them both.
 
-![Screenshot of detailed memory usage for electron on KDE](https://github.com/ngjunsiang/laymansguide/blob/release/season5/issue065/issue065_04.png?raw=true)<br />
+![Screenshot of detailed memory usage for electron on KDE](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season5/issue065/issue065_04.png)<br />
 <small>Electron detailed memory usage in KDE (Linux).</small>
 
-![Screenshot of detailed memory usage for atom on KDE](https://github.com/ngjunsiang/laymansguide/blob/release/season5/issue065/issue065_05.png?raw=true)<br />
+![Screenshot of detailed memory usage for atom on KDE](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season5/issue065/issue065_05.png)<br />
 <small>Atom detailed memory usage in KDE (Linux).</small>
 
 We can see that:

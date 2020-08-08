@@ -6,17 +6,17 @@ How to do that? The key, it turns out, centres around cookies.
 
 When you visit any website in Chrome or Firefox, if you click on the icon to the left of the address bar:
 
-![Screenshot of website info popup in Vivaldi browser](https://github.com/ngjunsiang/laymansguide/blob/release/season6/issue069/issue069_01.png?raw=true)<br />
+![Screenshot of website info popup in Vivaldi browser](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season6/issue069/issue069_01.png)<br />
 <small>Clicking the icon to the left of the address bar shows basic site information</small>
 
 It shows you some basic information, including the cookies loaded by the website.
 
-![Screenshot of cookies in use popup in Vivaldi browser](https://github.com/ngjunsiang/laymansguide/blob/release/season6/issue069/issue069_02.png?raw=true)<br />
+![Screenshot of cookies in use popup in Vivaldi browser](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season6/issue069/issue069_02.png)<br />
 <small>You can view the content of cookies through that window in Chrome or Vivaldi. This information is also available in other web browsers through a different menu option.</small>
 
 The cookies themselves are only just little fragments of information. They are identified with a name, they have a bunch of content (usually gibberish to humans), and they are associated with a website. Above, you can see that this website has a cookie named `_gid` with a value of `GA1.2.1807773255.1584140066`.
 
-![Screenshot of website source in Vivaldi browser. The script line that loads analytics.js is highlighted](https://github.com/ngjunsiang/laymansguide/blob/release/season6/issue069/issue069_03.png?raw=true)<br />
+![Screenshot of website source in Vivaldi browser. The script line that loads analytics.js is highlighted](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season6/issue069/issue069_03.png)<br />
 <small>The script code used by Google Analytics is named `analytics.js`.</small>
 
 Little snippets of javascript create and delete cookies. These snippets of Javascript are usually loaded as a script, with a `.js` file extension. The script code used by Google Analytics is named `analytics.js`.</small>

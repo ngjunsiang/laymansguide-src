@@ -21,7 +21,7 @@ These vibrations can be produced by computers through speakers. The cones of a s
 If we plot the vibrations of air on a graph known as a waveform, they look something like this:
 
 
-![Audio waveform](https://github.com/ngjunsiang/laymansguide/blob/release/season4/issue045/issue045_01.png?raw=true)
+![Audio waveform](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season4/issue045/issue045_01.png)
 <small>An audio waveform<br />
 Image by [Gordon Johnson](https://pixabay.com/users/GDJ-1086657/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1781570) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1781570).</small>
 
@@ -29,7 +29,7 @@ Image by [Gordon Johnson](https://pixabay.com/users/GDJ-1086657/?utm_source=link
 This waveform is converted into numeric values through a process called **Pulse Code Modulation** (PCM). If you see the acronym PCM or LPCM in any audio-related file, this is likely what it is referring to.
 
 
-![Audio waveform](https://github.com/ngjunsiang/laymansguide/blob/release/season4/issue045/issue045_02.png?raw=true)
+![Audio waveform](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season4/issue045/issue045_02.png)
 <small>Pulse code modulation to convert a waveform into numeric values<br />
 Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Pcm.svg).</small>
 
