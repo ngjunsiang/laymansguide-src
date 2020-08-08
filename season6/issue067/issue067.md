@@ -6,7 +6,7 @@
 
 Back [in Oct 22, 1996, Yahoo! already had advertising](https://web.archive.org/web/19961022175643/http://www10.yahoo.com:80/) front and centre, right above its search bar. (Google had not even been founded yet.)
 
-![Screenshot of Yahoo! from Oct 22, 1996](https://github.com/ngjunsiang/laymansguide/blob/release/season6/issue067/issue067_01.png?raw=true)<br />
+![Screenshot of Yahoo! from Oct 22, 1996](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season6/issue067/issue067_01.png)<br />
 <small>Yahoo! in 1996 already had advertising right above the search bar</small>
 
 The URL of that page was http://www10.yahoo.com:80/, and we can see a few things from that:

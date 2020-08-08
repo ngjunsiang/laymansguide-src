@@ -9,7 +9,7 @@ Remember that when your phone/laptop/device first connects to the router, it doe
 In Issue 8, I gave an example of the *content* of a response:
 
 
-![An HTTP response header from Hypothes.is](https://github.com/ngjunsiang/laymansguide/blob/release/season1/issue008/issue008_01.png?raw=true)
+![An HTTP response header from Hypothes.is](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season1/issue008/issue008_01.png)
 <small>The response header from Hypothes.is</small>
 
 

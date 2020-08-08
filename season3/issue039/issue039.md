@@ -35,7 +35,7 @@ How long does the browser cache these files? It depends ... I know it’s not an
 Remember this? It’s the response header we saw from [Issue 8](https://buttondown.email/laymansguide/archive/lmg-issue-8-http-error-codeshow-does-a-server-let/) on HTTP error codes:
 
 
-![HTTP response header](https://github.com/ngjunsiang/laymansguide/blob/release/season1/issue008/issue008_01.png?raw=true)
+![HTTP response header](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season1/issue008/issue008_01.png)
 <small>A response header from Hypothes.is</small>
 
 

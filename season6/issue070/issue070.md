@@ -4,7 +4,7 @@ This issue is a short one, just to put one more piece in place. Last issue, I sa
 
 Let’s watch what is happening with Google DevTools:
 
-![Screenshot of DevTools in Vivaldi browser, with a request by analytics.js highlighted.](https://github.com/ngjunsiang/laymansguide/blob/release/season6/issue070/issue070_01.png?raw=true)<br />
+![Screenshot of DevTools in Vivaldi browser, with a request by analytics.js highlighted.](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season6/issue070/issue070_01.png)<br />
 <small>Chrome DevTools showing the (filtered) sequence of requests made by the webpage I loaded.<br />
 The request made by `analytics.js` (third-last line) is highlighted in gray. The Initiator column tells us this requested was initiated by `analytics.js` on line 25 of the script.</small>
 

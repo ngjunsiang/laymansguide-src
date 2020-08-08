@@ -26,7 +26,7 @@ Software that helps to keep track of bugs are known as bug trackers. Today, when
 Such features may also come with other software or services; Github has a built-in issue tracker.
 
 
-![Github’s issue tracker](https://github.com/ngjunsiang/laymansguide/blob/release/season2/issue024/issue024_01.png?raw=true)
+![Github’s issue tracker](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season2/issue024/issue024_01.png)
 <small>Github’s issue tracker. From Kenneth Reitz’s `requests` package.</small>
 
 
@@ -35,7 +35,7 @@ This is where developers working on a piece of software can report bugs or issue
 Through the issue created in the issue tracker, developers can communicate with the user who reported the bug, ask for more information, clarify uses of the software, assign the problem to other developers, or close the issue if it is resolved.
 
 
-![An issue in Github’s issue tracker](https://github.com/ngjunsiang/laymansguide/blob/release/season2/issue024/issue024_02.png?raw=true)<br />
+![An issue in Github’s issue tracker](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season2/issue024/issue024_02.png)<br />
 <small>What an issue in Github looks like. From Kenneth Reitz’s `requests` package.</small>
 
 
@@ -44,7 +44,7 @@ Projects will often have a contributing guideline to help users understand how b
 It is considered polite to read the project intro and contributing guidelines to understand how the project is being managed and how to write a helpful bug report.
 
 
-![Contribution guidelines for requests](https://github.com/ngjunsiang/laymansguide/blob/release/season2/issue024/issue024_03.png?raw=true)<br />
+![Contribution guidelines for requests](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season2/issue024/issue024_03.png)<br />
 <small>Contributing guidelines for Kenneth Reitz’s `requests` package.</small>
 
 

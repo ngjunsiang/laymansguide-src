@@ -2,12 +2,12 @@ Just thinking about recreating the Readmill reading experience in an app was min
 
 As a way to have highlight permalinks, [Hypothes.is](https://hypothes.is/about) looks really promising. I can link people to highlights I have made, and they can reply inline, and the whole conversation can be referenced via a convenient URL ([such as this](https://hypothes.is/a/8jaysPv0QFuycAmGgdqTgQ)). It even appears in context if you [load the Hypothes.is extension](https://web.hypothes.is/start/) while on the page.
 
-![Screenshot of a highlight on the Hypothes.is website](https://github.com/ngjunsiang/laymansguide/blob/release/season1/issue002/issue002_01.png?raw=true)
+![Screenshot of a highlight on the Hypothes.is website](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season1/issue002/issue002_01.png)
 <small>One of my highlights in Hypothes.is. It has its own permalink!</small>
 
 The best part? I already have an account, and quite a few highlights in there for use. No need to write the whole annotation system myself! Now I just need to figure out how to get my annotations from there, and put new annotations into the Hypothes.is service.
 
-![Screenshot of profile page from the Hypothes.is website](https://github.com/ngjunsiang/laymansguide/blob/release/season1/issue002/issue002_02.png?raw=true)
+![Screenshot of profile page from the Hypothes.is website](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season1/issue002/issue002_02.png)
 <small>My Hypothes.is profile and annotations</small>
 
 First, I will need to figure out how to read and write the data from the website, and how to interpret it.
