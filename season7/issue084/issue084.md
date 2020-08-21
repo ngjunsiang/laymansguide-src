@@ -1,4 +1,4 @@
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Structured Query Language (SQL) is a computer language for managing data in databases. It has keywords and keyphrases that let you filter rows and columns, group and order data, perform basic arithmetic on data, and more. It is complex and powerful, but astute and efficient requires specialised training.
+[**Previously:**](https://buttondown.email/laymansguide/archive/) Structured Query Language (SQL) is a computer language for managing data in databases. It has keywords and keyphrases that let you filter rows and columns, group and order data, perform basic arithmetic on data, and more. It is complex and powerful, but astute and efficient use requires specialised training.
 
 ## VLOOKUP: The bread-and-butter of spreadsheets
 
@@ -20,7 +20,7 @@ Let’s break down each part of that formula:
 
 `=VLOOKUP(C2,Customer!A:D,2)`
 
-This means “in columns **A:D** of the **Customer** table, look for the value from cell **C2** (which is `1`) in the first column, and return the value from the same-row cell in the **2**\nd column.”
+This means “in columns **A:D** of the **Customer** table, look for the value from cell **C2** (which is `1`) in the first column of the **Customer** table, and return the value from the same-row cell in the **2**nd column of the **Customer** table.”
 
 What if you needed to insert more than one column? What if you need to “join” two or more tables? Your spreadsheet would soon be filled with VLOOKUP cells, and this really slows down the performance of the spreadsheet. This method is not suitable for data involving millions of rows, for sure.
 
@@ -39,7 +39,7 @@ Here, `Sales.custID` refers to the `custID` of the `Sales` table, while `Custome
 
 ![Screenshot of an INNER JOIN operation between the Sales and Customer data tables, merged using custID values.](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season7/issue084/issue084_04.png)
 
-That is much easier—once you’ve been trained in SQL syntax—than writing separate VLOOKUP formulas for each column you want, and having the maintain a whole table of formulas!
+That is much easier—once you’ve been trained in SQL syntax—than writing separate VLOOKUP formulas for each column you want, and having to maintain a whole table of formulas!
 
 You can even join more than two tables together with a query like:
 
