@@ -66,7 +66,7 @@ Goodbye, `Customer` table ...
 
 ## Data leakage through SQL injections
 
-This app is probably going to have some kind of search or filtering feature, where we enter a name to search for and get results that match. If we were searching for a user named George, an inexperienced developer send this as the SQL query:
+This app is probably going to have some kind of search or filtering feature, where we enter a name to search for and get results that match. If we were searching for a user named George, an inexperienced developer might send this as the SQL query:
 
 ```
 SELECT * FROM Customer WHERE custName = George
@@ -90,7 +90,7 @@ It will then attempt to evaluate `George OR 1=1`. By the unintuitive reasoning o
 
 If you’re going to use a database with a frontend, get an experienced developer to do it. If all you have are inexperienced developers, send them for the appropriate training. If you don’t have developers, use an established product over an untested one. If in doubt, find someone with the relevant credentials to ask for advice.
 
-**Issue summary:** Forms that naïvely inject user-submitted data into a SQL query template may end up sending valid SQL commands to the database, with disastrous consequences.
+**Issue summary:** Forms that naïvely inject user-submitted data into a SQL query template may end up sending valid (but otherwise unathorised) SQL commands to the database, with disastrous consequences.
 
 This would have been 3–5 times as long if I had started going into some basic ways to prevent this kind of mistake. Fortunately, this is just a layman’s guide, and I can foist that responsibility off to the rest of the internet.
 
