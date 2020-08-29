@@ -22,7 +22,7 @@ In distributed databases, there are three factors that are impossible to achieve
 
 - **C**onsistency — reading the same data multiple times should not give us different results
 - **A**vailability — we should get a response from the database quickly
-- **P**artition tolerance — If network disruptions or software/hardware failures break communication, our cluster of servers break up into smaller clusters; computers in each subcluster can communicate with each other, but not with computers outside the subcluster. Under such conditions, the system should still continue to operate.
+- **P**artition tolerance — If network disruptions or software/hardware failures break communication, our cluster of servers break up into smaller clusters—they get partitioned. Computers in each subcluster can communicate with each other, but not with computers outside the subcluster. Under such conditions, the system should still continue to operate.
 
 This is known as the **CAP theorem**: you can only really prioritise two out of the three factors.
 
