@@ -1,6 +1,6 @@
 [**Previously:**](https://buttondown.email/laymansguide/archive/) To increase the performance of a distributed database, we can scale up/scale vertically by increasing the computers’ performance, or scale out/scale horizontally by adding more computers. Distributed databases can only prioritise two of the following three factors: consistency, availability, partitioning (CAP theorem).
 
-I’ve already discussed one big strength of relational databases in [Issue 84](https://buttondown.email/laymansguide/archive/lmg-s7-issue-84-join-supercharged-vlookup/) when I illustrated how the JOIN keyword, one of many SQL commands ([Issue 83](https://buttondown.email/laymansguide/archive/lmg-s7-issue-83-structured-query-language/)), can join our data from multiple tables into a single view. This si where we look under the surface to see what makes that possible.
+I’ve already discussed one big strength of relational databases in [Issue 84](https://buttondown.email/laymansguide/archive/lmg-s7-issue-84-join-supercharged-vlookup/) when I illustrated how the JOIN keyword, one of many SQL commands ([Issue 83](https://buttondown.email/laymansguide/archive/lmg-s7-issue-83-structured-query-language/)), can join our data from multiple tables into a single view. This is where we look under the surface to see what makes that possible.
 
 ## Linking tables through foreign keys
 
@@ -21,7 +21,7 @@ Did you catch the fact that there were actually *two* `custID` columns? One in t
 
 Suppose one day, a customer goes out of business, or changes name, and the corresponding `Customer` entry gets deleted. Now if we accidentally attempt to retrieve `Sales` to that customer, the SQL command will fail because it is unable to find the entry.
 
-We can protect ourselves from this kind of error by setting `Sales.custID` as a **foreign key** from `Customer`, thus informing the database that `Sales.custID` is actually a column from `Customer`. If we attempt to delete that customer again, the database will help to check if that entry is referenced by other tables as a foreign key. Entries can only be deleted if they are not referenced by other entries.
+We can protect ourselves from this kind of error by declaring `Sales.custID` as a **foreign key** in `Customer`, thus informing the database that `Sales.custID` is actually a column from `Customer`. If we attempt to delete that customer again, the database will help to check if that entry is referenced by other tables as a foreign key. Entries can only be deleted if they are not referenced by other entries.
 
 These and other constraints allow us to protect ourselves from inadvertent harm, but over time, they accumulate and make a relational database very hard to modify. Database administrators will tell you to think about your database tables in advance, as even attempting to add a column or change a column type is going to be a pain in future!
 
@@ -31,7 +31,7 @@ To modify a relational database, we have to shut it down[^1], and **migrate** th
 
 [^1]: There are ways to avoid this, but I’ll let a **real** database administrator tell you about how to make it happen.
 
-Relational databases can also develop problems that require them to be shut down and rectified. Its the tradeoff for having a consistent and structured way to store our data, and automated rules to enforce this structure.
+Relational databases can also develop problems that require them to be shut down and rectified. It’s the tradeoff for having a consistent and structured way to store our data, and automated rules to enforce this structure.
 
 ## Relational databases: excellent for predictable data needs
 
