@@ -17,17 +17,17 @@ From [Issue 84](https://buttondown.email/laymansguide/archive/lmg-s7-issue-84-jo
 >
 > ![Screenshot of an INNER JOIN operation between the Sales and Customer data tables, merged using custID values.](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season7/issue084/issue084_04.png)
 
-Did you catch the fact that there were actually *two* `custID` columns? One in the `Sales` table, and one in the `Customer` table. By linking two tables like that, we actually introduce a point of potential breakage.
+Did you catch the fact that there were actually *two* `custID` columns? One in the `Sales` table, and one in the `Customer` table ... by linking two tables like that, we actually introduce a point of potential breakage.
 
 Suppose one day, a customer goes out of business, or changes name, and the corresponding `Customer` entry gets deleted. Now if we accidentally attempt to retrieve `Sales` to that customer, the SQL command will fail because it is unable to find the entry.
 
-We can protect ourselves from this kind of error by setting `Sales.custID` as a **foreign key** in `Customer`, thus informing the database that `Sales.custID` is actually a column from `Customer`. If we attempt to delete that customer again, the database will help to check if that entry is referenced by other tables as a foreign key. Entries can only be deleted if they are not referenced by other entries.
+We can protect ourselves from this kind of error by declaring `Sales.custID` as a **foreign key** in `Customer`, thus informing the database that `Sales.custID` is actually a column from `Customer`. If we attempt to delete that customer again, the database will help to check if that entry is referenced by other tables as a foreign key. Entries can only be deleted if they are not referenced by other entries.
 
 These and other constraints allow us to protect ourselves from inadvertent harm, but over time, they accumulate and make a relational database very hard to modify. Database administrators will tell you to think about your database tables in advance, as even attempting to add a column or change a column type is going to be a pain in future!
 
 ## The tradeoff: downtime for database maintenance and migrations
 
-To modify a relational database, we have to shut it down[^1], and **migrate** the database from the old schema to the new schema. In essence, we are exporting our data and re-importing it again. Attempting to migrate while the database is active—known as a **live migration**—is strongly discouraged. Changing a database while a migration is in progress can introduce data inconsistency; this is a real headache with constraints!
+To modify a relational database, we have to shut it down[^1], and **migrate** the database from the old schema to the new schema. In essence, we are exporting our data and re-importing it again. Attempting to migrate while the database is active—known as a **live migration**—is strongly discouraged, as changing a database while a migration is in progress can introduce data inconsistency; a real headache with constraints!
 
 [^1]: There are ways to avoid this, but I’ll let a **real** database administrator tell you about how to make it happen.
 
