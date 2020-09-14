@@ -6,7 +6,7 @@ Document databases bypass this problem by not enforcing a strict schema on the d
 
 ## Document databases: a collection of fields and values
 
-When we think of documents, we usually think of Office documents, or PDFs, or thinks that are … more associated with the way a workplace works.
+When we think of documents, we usually think of Office documents, or PDFs, or things that are … more associated with the way a workplace works.
 
 These documents are not the ones I have in mind when talking about document databases. In these databases, **documents** are simply bits of data grouped together. Each bit of data is described by a field. For example, I might start out defining a student document this way:
 
@@ -84,7 +84,7 @@ This does provide an advantage: when the distributed document database suffers a
 
 Once the network issue is resolved and the clusters are synchronised again, these changes can subsequently be merged following rules for resolving conflicts. The database remains operational throughout the ordeal, just with some desynchronisation.
 
-**Issue summary:** Document databases organise data into documents, each containing a number of field-value pairs. each value can itself be a document, and multiple values/documents can be grouped under a field. Document databases do not enforce data consistency across documents, so those rules need to be managed by the application which is using the database. This allows document databases to continue operating even when partitioned, at the cost of some consistency.
+**Issue summary:** Document databases organise data into documents, each containing a number of field-value pairs. Each value can itself be a document, and multiple values/documents can be grouped under a field. Document databases do not enforce data consistency across documents, so those rules need to be managed by the application which is using the database. This allows document databases to continue operating even when partitioned, at the cost of some consistency.
 
 ## What I’ll be covering next
 
