@@ -12,7 +12,7 @@ Maybe I’m approaching this wrong. I don’t need to relate many different type
 
 ## What?
 
-Okay, stay with me here, I know you are thinking or a horizontal and a vertical axis, and axis labels and bars and lines and—that’s not the kind of graph I am talking about.
+Okay, stay with me here, I know you are thinking of a horizontal and a vertical axis, and axis labels and bars and lines and—that’s not the kind of graph I am talking about.
 
 > “In mathematics, graph theory is the study of graphs, which are mathematical structures used to model pairwise relations between objects.”  
 > — [Graph theory (Wikipedia)](https://en.wikipedia.org/wiki/Graph_theory)
@@ -20,7 +20,7 @@ Okay, stay with me here, I know you are thinking or a horizontal and a vertical 
 That’s what I’m talking about. And it looks like this:
 
 ![Wikipedia multilingual network graph, showing circles representing languages, and arrows between pairs of circles, representing editors who edited both languages.](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season7/issue089/issue089_01.png)<br />
-<small>This network graph shows the co-editing patterns on Wikipedia. the size of the arrows indicate the number of Wikipedia editors for one language edition of Wikipedia, who also edited another language edition.<br />Source: [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Wikipedia_multilingual_network_graph_July_2013.svg)</small>
+<small>This network graph shows the co-editing patterns on Wikipedia. The size of the arrows indicate the number of Wikipedia editors for one language edition of Wikipedia, who also edited another language edition.<br />Source: [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Wikipedia_multilingual_network_graph_July_2013.svg)</small>
 
 Okay, phew.
 
@@ -77,7 +77,7 @@ Although I would still have to retrieve `post001`, check for replies, check thos
 
 Once I have figured out which users and posts are involved in this chain, I can then retrieve their information in a subsequent query. I won’t even need to load all the information at a go, since the app user is not going to see the contents of later posts until they scroll.
 
-**Issue summary:** Graph databases treat the details of things as secondary, and optimise for managing the network of relationships. A graph database and quickly look up how things are related to each other, and return the results.
+**Issue summary:** Graph databases treat the details of things as secondary, and optimise for managing the network of relationships. A graph database can quickly look up how things are related to each other, and return the results.
 
 So there you go, three types of databases in three weeks. I picked these three because they’re the least technical to give an overview of (in my opinion), and are three different ways of thinking about data that I think you are likely to encounter.
 
