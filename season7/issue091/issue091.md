@@ -4,6 +4,10 @@ So you’re running up against the limits of a spreadsheet and want to do more w
 
 What to do?
 
+
+
+**Issue summary:** A URI (Uniform Resource Identifier) is required to connect to a database. This URI can be provided by a hosting service provider that runs your own database for you, or by a cloud service provider that runs your database on their platform.
+
 ## Airtable
 
 [Airtable](https://airtable.com/) is a database-like platform that lets you set up Bases (similar to databases), which can contain different tables for your data. You can specify a specific data type for each table, limit entries to a list of options, and even create lookups (match the value here with a column in another table, and return data from another column in the same row).
@@ -24,7 +28,7 @@ Knack also lets you create simple apps with limited access to the data, for empl
 
 ## Zoho Creator
 
-[Zoho Creator](https://www.zoho.com/creator/) is a database platform that is more focused on app-building (or so it appears). the database just comes bundled as part of the deal. Another option for corporate operations-focused apps.
+[Zoho Creator](https://www.zoho.com/creator/) is a database platform that is more focused on app-building (or so it appears). The database just comes bundled as part of the deal. Another option for corporate operations-focused apps.
 
 **Issue summary:** Depending on what you need a database for, there may be online database platforms that can manage and automate much of the work for you. Airtable, Smartsheet, Knack, and Zoho Creator are just 4 of many options that offer an easier way to set up and input your data, then access them through apps or other means.
 
@@ -34,11 +38,11 @@ The best thing about these cloud services is that you probably don’t need to l
 
 **Next issue:** [LMG S8] Issue 92: All about apps
 
-I’ve spent a whole season talking about data ([Season 4, Issue 40](https://buttondown.email/laymansguide/archive/lmg-s4-issue-40-bits-and-bytes/) to [Issue 52](https://buttondown.email/laymansguide/archive/lmg-s4-issue-52-pdfs-part-2-text-and-images/)), then detoured to talking about computers, and the internet, and now back to databases. I think that’s plenty of foundation of finally move on to something more familiar: apps.
+I’ve spent a whole season talking about data ([Season 4, Issue 40](https://buttondown.email/laymansguide/archive/lmg-s4-issue-40-bits-and-bytes/) to [Issue 52](https://buttondown.email/laymansguide/archive/lmg-s4-issue-52-pdfs-part-2-text-and-images/)), then detoured to talking about computers, and the internet, and now back to databases. I think that’s plenty of foundation to finally move on to something more familiar: apps.
 
 What exactly are apps and what do they do? What are they like under the surface? What makes them tick?
 
-This and more in Season 8 ... which will start after a two-week hiatus. It has been really fun putting finger to keyboard and watching everythign come together, but I noticed the quality of recent issues has been sliding more than I’d like. I’m going to take a littel break to reconsolidate, recpuerate, and think about the next couple of seasons.
+This and more in Season 8 ... which will start after a two-week hiatus. It has been really fun putting finger to keyboard and watching everything come together, but I noticed the quality of recent issues has been sliding more than I’d like. I’m going to take a little break to reconsolidate, recuperate, and think about the next couple of seasons.
 
 See you next issue!
 
