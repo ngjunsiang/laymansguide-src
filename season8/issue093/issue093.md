@@ -5,17 +5,17 @@ The simplest apps we use do not _generate_ data; think about your calculator, wh
 So how do web apps store data?
 
 ## Data storage in web apps
-
+ac
 As a web-first programming language, Javascript programs were not expected to have to access, open, or create files on the device. That would make it really easy for a malicious script to download malware to a folder, where it could be accidentally invoked! Instead, it relies on other features to store and retrieve data for specific purposes:
 
 1. To remember user logins (the “Remember me” feature you see on almost every login screen), web apps can set/unset cookies ([Issue 69](https://buttondown.email/laymansguide/archive/lmg-s6-issue-69-the-cookie-monster/)) in the browser.
-2. To obtain files for use, the web app can invoke a File Select dialog for the user to choose a file, such as for uploading to the server. The web app is not allowed to access arbitrary files this way, only user-selected files.
-3. If data needs to be passed to the user in the form of a file, it can be stored on the disk with the user’s permission through a download dialog.
-4. The web app can store data through a browser feature called **localstorage**. This is a *key-value database*, managed by the browser, that allows you to store data (the *value*) tagged to a *key*. The same way a hotel lobby holds your luggage for you and lets you access it through a luggage tag, the the way you can rent a locker for storing your stuff (*value*) and access it through the locker *key*.
+2. To obtain files for use, the web app can invoke a File Select dialog for the user to choose a file, such as for uploading to the server. The web app is not allowed to access arbitrary files this way.
+3. If data needs to be provided to the user in the form of a file, it can be stored on the disk with the user’s permission through a download dialog.
+4. The web app can store data through a browser feature called **localstorage**. This is a *key-value database*, managed by the browser, that allows you to store data (the *value*) tagged to a *key*. The same way a hotel lobby holds your luggage for you and lets you access it through a luggage tag, or the way you can rent a locker for storing your stuff (*value*) and access it through the locker *key*.
 5. For data that is only needed in that tab (e.g. partially filled form data), and can be safely deleted when the tab is closed, the browser provides **sessionstorage**. This works similarly to localstorage.
-6. For more significant amounts of data, web apps can use **IndexedDB**, a more advanced database also managed by the browser. It is a document database ([Issue 88](https://buttondown.email/laymansguide/archive/lmg-s7-issue-88-document-databases/)), with each document tagged to a key in a key-object system.
+6. For more significant amounts of data, web apps can use IndexedDB, a more advanced database also managed in the browser. It is a document database ([Issue 88](https://buttondown.email/laymansguide/archive/lmg-s7-issue-88-document-databases/)), with each document tagged to a key in a key-object system.
 
-![Firefox DevTools, showing the Storage tab. Local Storage is selected, displaying a list of keys and values.](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season8/issue092/issue092_01.png)<br />
+![Firefox DevTools, showing the Storage tab. Local Storage is selected, displaying a list of keys and values.](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season8/issue093/issue093_01.png)<br />
 <small>DevTools in Firefox lets you inspect the data that web apps keep.<br />The Storage tab shows what is stored in cache, cookies, IndexedDB, localstorage, and sessionstorage.<br />IndexedDB, localstorage, and sessionstorage are key-value databases that store the data (value) tagged to a key.</small>
 
 ## Requesting and receiving data on a server
