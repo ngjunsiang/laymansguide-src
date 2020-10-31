@@ -2,13 +2,13 @@
 
 Apps once lived on a computer. You double-clicked them or pressed Enter or right-clicked Run, a window pops up and a rectangle appears on your taskbar. If Task Manager is showing you that it is using up gobs of memory, you just End Task and the rectangle disappears. Later in this season I’ll say more about what it is like to live in a computer, but we are on web apps now.
 
-Web apps are somewhat more complicated. Because they are so tidily sandboxed ([Issue 92]()), they cannot actually live on your computer. Instead, they live in your browser.
+Web apps are somewhat more complicated. Because they are so tidily sandboxed ([Issue 92](https://buttondown.email/laymansguide/archive/lmg-s7-issue-92-all-about-apps/)), they cannot actually live on your computer. Instead, they live in your browser.
 
 ## Living in a web browser
 
 Living in a computer means that the operating system (OS) takes care of you; it gives you the memory and disk space you need, gives you CPU time to run your processes, and gives you access to devices (such as the screen and keyboard).
 
-When you live in the browser, the browser takes care of you. Everything you need is requested from the (OS) by the browser. The space that the web app uses in localstorage, sessionstorage, IndexedDB, and the cache, is space that the browser requested. The CPU cycles that the web app needs are cycles that the browser has requested.
+When you live in the browser, the browser takes care of you. Everything you need is requested from the operating system (OS) by the browser. The space that the web app uses in localstorage, sessionstorage, IndexedDB, and the cache, is space that the browser requested. The CPU cycles that the web app needs are cycles that the browser has requested.
 
 When you open the OS Task Manager, where do these requests show up? Under (one of) the browser processes, naturally. If you have more than 20 browser tabs open for more than 5 apps, it shouldn’t be surprising that they are using a lot of memory; I’ll go into why shortly. More worryingly, that’s not helpful if you’re trying to figure out which browser tab to close so you can play your memory-consuming video game.
 
