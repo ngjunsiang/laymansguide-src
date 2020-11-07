@@ -2,7 +2,7 @@
 
 Apps once lived on a computer. You double-clicked them or pressed Enter or right-clicked Run, a window pops up and a rectangle appears on your taskbar. If Task Manager is showing you that it is using up gobs of memory, you just End Task and the rectangle disappears. Later in this season I’ll say more about what it is like to live in a computer, but we are on web apps now.
 
-Web apps are somewhat more complicated. Because they are so tidily sandboxed ([Issue 92](https://buttondown.email/laymansguide/archive/lmg-s7-issue-92-all-about-apps/)), they cannot actually live on your computer. Instead, they live in your browser.
+Web apps are somewhat more complicated. Because they are so tidily sandboxed ([Issue 92](https://buttondown.email/laymansguide/archive/lmg-s8-issue-92-all-about-apps/)), they cannot actually live on your computer. Instead, they live in your browser.
 
 ## Living in a web browser
 
