@@ -6,7 +6,7 @@
 
 I’m not going to answer from an aesthetic or user experience point of view, you’re all experts in your own preferences :) Instead, I’ll focus on whats actually under the hood in this newsletter issue.
 
-If you haven’t read [Issue 93](https://buttondown.email/laymansguide/archive/lmg-s7-issue-93-whats-in-a-web-app/) on web apps (a.k.a. websites), I’d recommend you do that for the full context, because in this issue I’ll highlight some key differences between web apps and mobile apps.
+If you haven’t read [Issue 93](https://buttondown.email/laymansguide/archive/lmg-s8-issue-93-whats-in-a-web-app/) on web apps (a.k.a. websites), I’d recommend you do that for the full context, because in this issue I’ll highlight some key differences between web apps and mobile apps.
 
 ## Resources
 
@@ -16,7 +16,7 @@ A mobile app can package the most common, unchanging resources (logos, button im
 
 ## Flexibility
 
-The document object model, or DOM ([Issue 94](https://buttondown.email/laymansguide/archive/lmg-s7-issue-94-why-do-web-browsers-take-up-so-much-memory/)) is how web apps keep track of all the elements and their contents on a page, but it is not the most efficient way to do so. A mobile app has more choice in deciding which user interface library ([Issue 17](https://buttondown.email/laymansguide/archive/lmg-s2-issue-17-libraries/)) it wants to use.
+The document object model, or DOM ([Issue 94](https://buttondown.email/laymansguide/archive/lmg-s8-issue-94-why-do-web-browsers-take-up-so/)) is how web apps keep track of all the elements and their contents on a page, but it is not the most efficient way to do so. A mobile app has more choice in deciding which user interface library ([Issue 17](https://buttondown.email/laymansguide/archive/lmg-s2-issue-17-libraries/)) it wants to use.
 
 ## Storage access
 
