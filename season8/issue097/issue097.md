@@ -2,9 +2,9 @@
 
 This issue is going to be short, because laptop apps are … well, almost unlimited in what they can do.
 
-Web apps are sandboxed by the web browser. Mobile apps are sandboxed by the mobile operating system (OS). Laptop apps are sandboxed by the desktop OS (yup, Windows on laptop and desktop is practically the same).
+Web apps are sandboxed by the web browser. Mobile apps are sandboxed by the mobile operating system (OS). Laptop apps are sandboxed by hte desktop OS (yup, Windows on laptop and desktop is practically the same).
 
-The main difference here lies in the difference between a mobile and desktop OS. Mobile OSes do not allow mobile apps to share libraries with other apps, and restrict their privileges ([Issue 96](https://buttondown.email/laymansguide/archive/lmg-s8-issue-96-why-are-mobile-apps/)). Desktop OSes, on the other hand, let you do anything that is computationally possible … if you have permission.
+The main difference here lies in the difference between a mobile and desktop OS. Mobile OSes do not allow mobile apps to share libraries with other apps, and restrict their privileges ([Issue 96](https://buttondown.email/laymansguide/archive/lmg-s8-issue-96-why-are-mobile-apps-so-large-in/)). Desktop OSes, on the other hand, let you do anything that is computationally possible … if you have permission.
 
 ## The Admin account
 
@@ -35,11 +35,11 @@ This app can:
 
 What if a user needs access to some of these permissions (but not all)? Does that mean they need to become an Admin?
 
-Windows, and other OSes as well, usually has some way to give users limited permissions for some tasks. Windows uses User Account Control, which pops up a dialog box to alert the user. If the user gives permission for the app to proceed, then it is able to do so. If it is running on a user account, it can only perform tasks that the user account is allowed to perform. Linux uses the concept of groups; for a user to have permission to access bluetooth, for example, the linux OS often requires the user to be added to the `bluetooth` group in the OS.
+Windows, and other OSes as well, usually have some way to give users limited permissions for some tasks. Windows uses User Account Control, which pops up a dialog box to alert the user. If the user gives permission for the app to proceed, then it is able to do so. If it is running on a user account, it can only perform tasks that the user account is allowed to perform. Linux uses the concept of groups; for a user to have permission to access bluetooth, for example, the linux OS often requires the user to be added to the `bluetooth` group in the OS.
 
 **Issue summary:** A laptop app can do practically anything, if it is running through the Administrator/root account. Sandboxing is carried out through permission control.
 
-This is the reason why you should still buy a machine with a desktop operating system if you plan to be doing anything really productive; the sandboxing systems of web and mobile apps ultimately still impose a significant limit on what you can do with the device. This is intentional; it is done for your safety! But if you want your device to do more, you’ll often need to override these “safety limits”, and that is where desktop operating systems come in.
+This is the reason why you should still buy a machine with a desktop operating system if you plan to be doing anything really productive; the sandboxing systems of web and mobile apps ultimately still impose a significant limit what you can do with the device. This is intentional; it is done for your safety! But if you want your device to do more, you’ll often need to override these “safety limits”, and that is where desktop operating systems come in.
 
 ## What I’ll be covering next
 
