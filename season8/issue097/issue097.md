@@ -1,4 +1,4 @@
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Mobile apps are sandboxed by the oeprating system. As a result, they have to bundle all the libraries they need, and are not allowed to share libraries with other apps. This results in mobile apps with huge filesizes.
+[**Previously:**](https://buttondown.email/laymansguide/archive/) Mobile apps are sandboxed by the operating system. As a result, they have to bundle all the libraries they need, and are not allowed to share libraries with other apps. This results in mobile apps with huge filesizes.
 
 This issue is going to be short, because laptop apps are … well, almost unlimited in what they can do.
 
