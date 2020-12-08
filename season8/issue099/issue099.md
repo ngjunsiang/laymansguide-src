@@ -29,7 +29,7 @@ I personally prefer this because you have everything sorted into sensible top-le
 - a `/Users` folder for accessing user folders and files
 - a `/Drives` folder for accessing other storage devices (e.g. USB drives)
 
-and then, similar to Linux, it has `/bin`, `/etc` and other weird-looking folders that we don’t need to worry about at this point. Just treat them similar to system files and try not to touch them. the apps that we install generally do not clutter up these folders unnecessarily.
+and then, similar to Linux, it has `/bin`, `/etc` and other weird-looking folders that we don’t need to worry about at this point. Just treat them similar to system files and try not to touch them. The apps that we install generally do not clutter up these folders unnecessarily.
 
 Logos, backgrounds, buttons, and other application data? They go into `/Applications`. What if other apps also need to use them? Then they go into `/Library`. What if a user installs a program that they don’t want other users using? It goes into `/Users/username/Applications`. User settings? They go into `/Users/username/Library` (under a subfolder for the app). Temporary files? They go into `/Library/Caches`.
 
