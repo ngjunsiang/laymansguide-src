@@ -1,4 +1,4 @@
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Windows systems categorise data into two types: files, and settings. Files are stored under an appropriate subfolder in `C:\`, while other storage devices and network locations are stored elsewhere or given their own drive letters. and settings are managed through the Windows Registry, which is stored in `C:\Windows\System32\Config\` and `C:\Windows\Users\Name\`.
+[**Previously:**](https://buttondown.email/laymansguide/archive/) Windows systems categorise data into two types: files, and settings. Files are stored under an appropriate subfolder in `C:\`, while other storage devices and network locations are stored elsewhere or given their own drive letters. Settings are managed through the Windows Registry, which is stored in `C:\Windows\System32\Config\` and `C:\Windows\Users\Name\`.
 
 Besides general slowness, two of the most frustrating experiences we have with computers is when they crash, and when they hang.
 
@@ -18,7 +18,7 @@ Even that simple step is fraught with many possible failures! The text file may 
 
 Well, a whole bunch of things can go wrong. And when they do, the OS throws an error. If the app does not have any code to handle that error ... game over, it cannot proceed and it crashes abruptly.
 
-This is a lot more common than you think, even for experienced programmers, especially when a process that isn’t expected to throw an error actually does it. And sometimes it just can’t be helped: when your computer runs out of memory, and an app requests for more memory but doesn’t get it , and it just cant go on without that memory ... it crashes.
+This is a lot more common than you think, even for experienced programmers, especially when a process that isn’t expected to throw an error actually does it. And sometimes it just can’t be helped: when your computer runs out of memory, and an app requests for more memory but doesn’t get it, and it just cant go on without that memory ... it crashes.
 
 ### Illegal instructions
 
@@ -32,7 +32,7 @@ These days, OSes are better at handling crashes. If the crash occurs in the wind
 
 Definitely oversimplified for ease of understanding, but I see no point going into the technical details unless a future issue calls for it.
 
-Before going into app hangs, I’ll need to talk about threads first. If you have heard of multithreading before, yep I are going to talk about that next issue!
+Before going into app hangs, I’ll need to talk about threads first. If you have heard of multithreading before, yep I am going to talk about that next issue!
 
 ## What I’ll be covering next
 
