@@ -26,7 +26,7 @@ The threads have to coordinate their job status, and often do so by updating a c
 
 One way this can fail in practice is if two or more worker threads request a lock simultaneously. They both get a lock, because at the moment their requests are processed, nothing else has locked the resource. But now they can’t proceed to modify the data because it has been locked by another thread that isn’t them.
 
-This situation is known as a **deadlock**. this and similar situations are just one out of many ways that apps can hang.
+This situation is known as a **deadlock**. This and similar situations are just one out of many ways that apps can hang.
 
 **Issue summary:** A race condition happens when threads depend on instructions happening with coincidental timing for success. When instructions are not executed with appropriate timing, one or more threads can get stuck waiting on a response that never comes.
 
