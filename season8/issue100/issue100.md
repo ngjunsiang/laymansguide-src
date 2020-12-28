@@ -44,7 +44,7 @@ The Windows Registry consists of 5 top-level areas (known as hives), each one be
 - `HKEY_CURRENT_USER` is for storing settings and configuration specific to the current (logged in) user
 - `HKEY_LOCAL_MACHINE` is for storing settings and configuration common to all users (e.g. default settings)
 - `HKEY_USERS` is for storing settings and configuration of each user. The `HKEY_CURRENT_USER` data for all users is stored here, and copied to `HKEY_CURRENT_USER` when they log in.
-- `HKEY_CURRENT_CONFIG` is for storing information about the computers configuration and resources
+- `HKEY_CURRENT_CONFIG` is for storing information about the computer’s configuration and resources
 
 The usual way of finding out how to modify a particular setting for X is to google “registry setting for X” and proceed from there.
 
@@ -56,7 +56,7 @@ So to uninstall a Windows app, you run its uninstaller. Which may or may not wor
 
 Phew. And that’s all I hope.
 
-**Issue summary:** Windows systems categorise data into two types: files, and settings. Files are stored under an appropriate subfolder in `C:\`, while other storage devices and network locations are stored elsewhere or given their own drive letters. and settings are managed through the Windows Registry, which is stored in `C:\Windows\System32\Config\` and `C:\Windows\Users\Name\`.
+**Issue summary:** Windows systems categorise data into two types: files, and settings. Files are stored under an appropriate subfolder in `C:\`, while other storage devices and network locations are stored elsewhere or given their own drive letters. Settings are managed through the Windows Registry, which is stored in `C:\Windows\System32\Config\` and `C:\Windows\Users\Name\`.
 
 Okay so this ran much longer than I expected. In fact, it ran so long that I split it into two issues. I promised to explain computers as simply and jargon-free as possible, and I hope I have managed to do that. I am definitely biased, and that I do not apologise for, because this newsletter issue would be half its original length if \*muttering\* *some* operating systems would just follow sensible principles that *other* operating systems have no problem following ...
 
