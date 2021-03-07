@@ -29,7 +29,7 @@ The bootloader is not the OS! It has only one job: to *load* the OS during the *
 
 Usually, the first thing that needs to be loaded is the filesystem ([Issue 106](https://buttondown.email/laymansguide/archive/lmg-s9-issue-106-organising-storage/)). Without that, no program will know how to read in data from the storage disks! At this point, if the bootloader detects disk errors or uncompleted operations in the journal ([Issue 110](https://buttondown.email/laymansguide/archive/lmg-s9-issue-110-safeguarding-against-data/)), it may attempt to scan for errors or complete those operations before proceeding with the rest of the bootup process.
 
-Some systems may contain multiple OSes: Mac users may want to run Windows using Parallels Desktop, Windows users may want to dabble in Linux, and many Linux users dual-boot Windows as well. The bootloader, with the help of the filesystem, detect other operating systems on the storage disks, and offers the user a choice of which one to boot. If there is only one OS found, this step might be skipped.
+Some systems may contain multiple OSes: Mac users may want to run Windows using Parallels Desktop, Windows users may want to dabble in Linux, and many Linux users dual-boot Windows as well. The bootloader, with the help of the filesystem, detects other operating systems on the storage disks, and offers the user a choice of which one to boot. If there is only one OS found, this step might be skipped.
 
 Once an operating system is selected, the bootloader loads the OS **kernel**, which contains its core instructions, and hands control over. The bootup sequence is not yet complete, but the bootloader has completed its job.
 

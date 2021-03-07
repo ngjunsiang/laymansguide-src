@@ -1,4 +1,4 @@
-[**Previously:**](https://buttondown.email/laymansguide/archive/) If you can’t get to a BIOS screen, it is likely a hardware problem and has to be solved by a technician. If you cant get the the OS loading screen, its a bootloader problem and needs to be solved with more geekery. If something goes wrong with OS loading, and fails to fix itself on subsequent reboots, it’s probably time for a system refresh or reinstall.
+[**Previously:**](https://buttondown.email/laymansguide/archive/) When a computer is booted up, it runs the BIOS from a chip on the motherboard. The chip checks that core parts are present, checks for a storage disk containing a bootloader, loads it into memory, and hands over control. The bootloader loads the operating system kernel. The operating system kernel then does whatever it needs to do to get the system ready for use.
 
 In this issue, doom and gloom.
 
@@ -40,7 +40,7 @@ Sometimes some system files get corrupted—remember that this can happen if you
 
 In my opinion, the best way to resolve these issues, especially if they are recurring, is with a system refresh or reinstall.
 
-**Issue summary:** If you can’t get to a BIOS screen, it is likely a hardware problem and has to be solved by a technician. If you can’t get the the OS loading screen, it’s a bootloader problem and needs to be solved with more geekery. If something goes wrong with OS loading, and fails to fix itself on subsequent reboots, it’s probably time for a system refresh or reinstall.
+**Issue summary:** If you can’t get to a BIOS screen, it is likely a hardware problem and has to be solved by a technician. If you can’t get the OS loading screen, it’s a bootloader problem and needs to be solved with more geekery. If something goes wrong with OS loading, and fails to fix itself on subsequent reboots, it’s probably time for a system refresh or reinstall.
 
 I told you, gloom and doom. Modern OSes are getting more sensible at not requiring human intervention, so when they fail to resolve their own issues, there is often little a layperson can do on their own.
 
