@@ -15,7 +15,7 @@ What happens when you run out of memory?
 
 When a program needs more memory, it requests it from the operating system (OS), and waits for the OS to give that memory. After all, it can’t do anything else until the memory is available.
 
-The OS, on the other hand, will give that memory if it is available. If not, it will wait or other programs to free up memory before passing that memory to the waiting program. If no program is willing to release memory …
+The OS, on the other hand, will give that memory if it is available. If not, it will wait for other programs to free up memory before passing that memory to the waiting program. If no program is willing to release memory …
 
 I guess the computer just hangs 🤷
 
