@@ -21,7 +21,7 @@ A hard disk spins at a constant speed, because it is much more complicated to fi
 
 Data stored near the circumference of a magnetic platter is faster to read than data stored near its centre. For this reason, OSes that are installed on hard disks usually attempt to partition the storage space so that the operating system is stored on domains closer to the circumference.
 
-The read arm moves really close to the platters during disk operation! The gap between them (called the head gap or flying height) is half the thickness of a human hair. This is why you do not want to drop hard disks while they are in operation; the slightest movement of the read arm towards the magnetic platter causes it to gouge the platter surface and damage it permanently (this is called a head crash).
+The read arm moves really close to the platters during disk operation! The gap between them (called the head gap or flying height) is half the thickness of a human hair. This is why you do not want to drop hard disks while they are in operation; the slightest movement of the read arm towards the magnetic platter causes it to gouge the platter surface and damage it permanently: this is called a head crash.
 
 ## Read and write operations
 

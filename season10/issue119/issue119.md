@@ -36,7 +36,9 @@ This is a big deal when reading data from multiple locations; the response is hu
 
 The biggest drawback for now is of course price. Solid state disks cost much more, per GB, than a hard disk drive (HDD).
 
-Another potential drawback is that SSDs have a limited lifespan. This lifespan is not measured in months or years, but in the amount of data written. You see, each time electrons are forced through the gate (called a program-erase cycle), the gate gets weaker. Do it tens of thousands of times, and eventually the gate gets too weak to hold electrons. A budget SSD typically has a lifespan of 30,000 program-erase cycles. For a 256GB SSD, that’s 7.68 **million** GBs of data-writing before it fails!
+Another potential drawback is that SSDs have a limited lifespan. This lifespan is not measured in months or years, but in the amount of data written.
+
+You see, each time electrons are forced through the gate (called a program-erase cycle), the gate gets weaker. Do it tens of thousands of times, and eventually the gate gets too weak to hold electrons. A budget SSD typically has a lifespan of 30,000 program-erase cycles. For a 256GB SSD, that’s 7.68 **million** GBs of data-writing before it fails!
 
 This was a big concern for early SSDs, which had program-erase cycles in the low thousands. Today, with technology improving the program-erase cycle lifespan of SSDs, most users would not come close to reaching the end-of-life of an SSD.
 
