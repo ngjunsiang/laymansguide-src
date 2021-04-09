@@ -17,7 +17,7 @@ It has multiple storage chips, quite similar to the ones in your thumb drives/fl
 
 Computer memory also consists of chips on a circuit board, right? But memory gets wiped after the computer loses power ... but that doesn’t happen with SSDs; why?
 
-![Computer memory inserted into memory slot](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue119/issue119_01.jpg)<br />
+![Computer memory inserted into memory slot](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue119/issue119_02.png)<br />
 <small>A computer memory board, inserted into the memory slot of a computer motherboard</small>
 
 Computer memory uses capacitors, which are like micro-sized batteries. They hold a charge when powered, and store either a 1 or 0 state by being charged or uncharged, respectively.
