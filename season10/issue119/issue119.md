@@ -6,19 +6,19 @@ Hard disks were, for a long time, the best affordable storage technology we had.
 
 ## What is a solid state disk?
 
-It is, to put it simply, a small circuit board with lots of chips, that plugs in to your laptop.
+It is, to put it simply, a small circuit board with lots of chips, that plugs into your laptop.
 
 It has multiple storage chips, quite similar to the ones in your thumb drives/flash drives but much faster, and one controller chip to rule em all.
 
 ![Solid state disk inserted into laptop slot](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue119/issue119_01.jpg)<br />
-<small>A solid state disk, plugged in to a laptop slot (but not secured)</small>
+<small>A solid state disk, plugged into a laptop slot (but not secured)</small>
 
 ## Hmm ... like computer memory?
 
 Computer memory also consists of chips on a circuit board, right? But memory gets wiped after the computer loses power ... but that doesn’t happen with SSDs; why?
 
 ![Computer memory inserted into memory slot](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue119/issue119_02.png)<br />
-<small>A computer memory board, inserted into the memory slot of a computer motherboard</small>
+<small>Computer memory sticks, inserted into the memory slot of a computer motherboard</small>
 
 Computer memory uses capacitors, which are like micro-sized batteries. They hold a charge when powered, and store either a 1 or 0 state by being charged or uncharged, respectively.
 
@@ -44,7 +44,7 @@ This was a big concern for early SSDs, which had program-erase cycles in the low
 
 **Issue summary:** Solid-state disks are much faster than hard disks because they have no moving parts, so no time is wasted waiting for parts to get into the right position. However, they are more expensive than hard disk drives.
 
-I managed to write this issue without once mentioning write amplification or NAND, and I consider that a significant personal achievement
+I managed to write this issue without once mentioning write amplification or NAND, and I consider that a significant personal achievement.
 
 ## What I’ll be covering next
 
