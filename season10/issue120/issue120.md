@@ -26,7 +26,7 @@ Simply put, a driver file tells the computer:
 
 The USB-IF maintains a database of vendors and their products. Companies that wish to have their products recognised should [get a vendor ID](https://www.usb.org/getting-vendor-id) through the USB-IF; this also allows them to use the USB-IF logo (for USB-certified™) on their product packaging if the product passes certification.
 
-When a device is inserted, it passes information including its vendor ID and product ID to the computer. Each driver file also includes the vendor ID and product Id it is meant for use with. This allows the computer to verify that the correct driver is installed for the device.
+When a device is inserted, it passes information including its vendor ID and product ID to the computer. Each driver file also includes the vendor ID and product ID it is meant for use with. This allows the computer to verify that the correct driver is installed for the device.
 
 If you insert a device and Windows says it does not recognise it, you can be sure the problem has something to do with the device file (if the device is otherwise working properly).
 
