@@ -33,7 +33,7 @@ The information flow would be simplified to this:
 3. The CPU sends *the location* of the data to the GPU, which then reads *from shared memory* and carries out the task, storing the results back *into shared memory*
 4. The CPU retrieves the results directly *from shared memory*.
 
-We save lots of time, bandwidth, and resources without having to copy data between CPU and GPU, twice!
+We save time, bandwidth, and resources without having to copy data between CPU and GPU, twice!
 
 The industry gave this dream a name. They called it heterogeneous system architecture (HSA), using a heterogeneous unified memory architecture (hUMA) i.e. shared memory.
 
