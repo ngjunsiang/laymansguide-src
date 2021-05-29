@@ -1,6 +1,6 @@
-[**Previously:**](https://buttondown.email/laymansguide/archive/) USB is a (licensed) technical standard that describes how devices connect to each other through a cable. USB Type-C is a new connector standard that supports USB 3, Displayport, HDMI, and Thunderbolt. It is able to carry multiple types of data simultaneously, in limited combinations. In a USB connection, one device acts as the host while the other acts as the device; the host initiates all communication.
+[**Previously:**](https://buttondown.email/laymansguide/archive/) USB is a (licensed) technical standard that describes how devices connect to each other through a cable. USB Type-C is a new connector standard that supports USB 3, DisplayPort, HDMI, and Thunderbolt. It is able to carry multiple types of data simultaneously, in limited combinations. In a USB connection, one device acts as the host while the other acts as the device; the host initiates all communication.
 
-Last week, I differentiated the USB Type-C **cable** specification from the USB3 **data** specification; the former describes how the cable and connector should be, while the latter describes how to transmit USB data over a Type-C cable. Remember that in addition to USB3 data, the Type-C cable can also transmit HDMI or Displayport video data!
+Last week, I differentiated the USB Type-C **cable** specification from the USB3 **data** specification; the former describes how the cable and connector should be, while the latter describes how to transmit USB data over a Type-C cable. Remember that in addition to USB3 data, the Type-C cable can also transmit HDMI or DisplayPort video data!
 
 What else can a Type-C cable do? Oh, right—provide power to devices. In other words, charge them.
 
