@@ -14,7 +14,7 @@ Digital formats differ from analog formats, because they do not carry the raw si
 
 ## Analog to digital conversion
 
-An analog signal does not easily convert to a digital signal! Analog-to-digital converters, such as the VGA-HDMI adapters that seem to be needed universally, have to figure out how to process a wave-like signal, and convert it into the bits that constitute an image. These adapters need a digital-analog converter (DAC) chip to carry out that conversion.
+An analog signal does not easily convert to a digital signal! Analog-to-digital converters, such as the VGA-HDMI adapters that seem to be needed universally, have to figure out how to process a wave-like signal, and convert it into the bits that constitute an image. These adapters need a digital-analog conversion (DAC) chip to carry out that conversion.
 
 In contrast with analog signals, digital signals usually carry uncompressed video data. Digital-to-digital converters thus do not need to carry out any conversion—it’s the same image! Most of these converters merely need pins to be mapped to each other, which makes them cheaper (e.g. DisplayPort-HDMI converters).
 
@@ -30,7 +30,7 @@ Higher-end graphics cards offer support for more video formats. Furthermore, the
 
 I hope this sufficiently explains a question I hear so often: why do VGA-HDMI adapters cost so much? I’m also glad this issue ended up much shorter than I expected.
 
-In general, if your adapter/cable needs a chip to carry out signal conversion, its going to cost more than a plain cable.
+In general, if your adapter/cable needs a chip to carry out signal conversion, it’s going to cost more than a plain cable.
 
 ## What I’ll be covering next
 
