@@ -4,7 +4,7 @@ So why are gamers so agog over **graphics cards** (also known as video cards)? T
 
 ## Graphics compute units
 
-These calculations, which I gave an overview of in [Issue 122](), take in tables of numbers, crunch them mathematically, and spit out another table of numbers. Since the calculations are predictable, we don't need very complicated hardware that enables switching instructions based on the input. We can used specialised cores—clusters of transistors that are custom-fit for the purpose, cram lots of them into a circuit board, and end up with much better performance for the graphics pipeline compared to the CPU.
+These calculations, which I gave an overview of in [Issue 122](https://buttondown.email/laymansguide/archive/lmg-s10-issue-122-the-great-flattening/), take in tables of numbers, crunch them mathematically, and spit out another table of numbers. Since the calculations are predictable, we don't need very complicated hardware that enables switching instructions based on the input. We can used specialised cores—clusters of transistors that are custom-fit for the purpose, cram lots of them into a circuit board, and end up with much better performance for the graphics pipeline compared to the CPU.
 
 These cores are organised into groups known as **compute units**, and graphics card companies often differentiate the lower-end and higher-end cards by the number of compute units they have, which indicate the computation rate (measured in **flops**, which stand for **fl**oating-point[^1] **o**perations **p**er **s**econd). Better graphics require more computation, so more flops correlate with better graphics.
 
