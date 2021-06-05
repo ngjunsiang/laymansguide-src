@@ -4,7 +4,7 @@ It’s kind of funny the moment you realise how much of what an operating system
 
 ## What is a hard disk?
 
-A hard disk is a magnetic platter that stores data. This platter contains trillions of magnetic atoms; yep, they’re atom-sized magnets! These atoms are grouped into clusters called magnetic domains; they are so tiny that 500 of these placed in a straight line would stretch the diameter of a human hair! These domains are can align themselves in one of two different ways: let’s call them “up” and “down”. Each bit (as in, 8 bits = 1 byte) is stored as the alignment of a magnetic domain: up represents 1, and down represents 0.
+A hard disk is a magnetic platter that stores data. This platter contains trillions of magnetic atoms; yep, they’re atom-sized magnets! These atoms are grouped into clusters called magnetic domains; they are so tiny that 500 of these placed in a straight line would stretch the diameter of a human hair! These domains can align themselves in one of two different ways: let’s call them “up” and “down”. Each bit (as in, 8 bits = 1 byte) is stored as the alignment of a magnetic domain: up represents 1, and down represents 0.
 
 To read data, all you need to do is move a tiny electromagnet over each domain, and use it to see which way the domain is aligned. This can be done by measuring the current flowing through the electromagnet, a detailed explanation of which is beyond the scope of this newsletter (perhaps in a future newsletter titled “Layman’s Guide to Physics” or something).
 

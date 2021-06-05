@@ -28,7 +28,7 @@ These are what we call **analog** signals. Phonographs, and the early telephone 
 
 ## Video Graphics Array (VGA)
 
-So when the computer was first invented, and these screens were widely available, there was no need to reinvent the screen. Graphics cards ([Issue 123]()) simply had to figure out how to emit analog signals that would work with CRT screens.
+So when the computer was first invented, and these screens were widely available, there was no need to reinvent the screen. Graphics cards ([Issue 123](https://buttondown.email/laymansguide/archive/lmg-s10-issue-123-graphics-cards-the-pixel-factory/)) simply had to figure out how to emit analog signals that would work with CRT screens.
 
 The graphics standard for doing so is called **VGA** (Video Graphics Array), and was first released by IBM in 1986. An organisation, the Video Electronics Standards Association (**VESA**), was quickly formed in 1989, spearheaded by NEC, to extend this standard and allow it to support higher resolutions (up to 1080p!).
 
@@ -45,20 +45,20 @@ An early competitor, Digital Visual Interface (DVI), was launched by a working g
 ![HDMI and mini-HDMI connectors displayed top-to-bottom](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue124/issue124_03.jpg)<br />
 <small>HDMI and mini-HDMI connectors displayed from top to bottom. Both support the HDMI video standard<br />Image via [DataPro](https://www.datapro.net/techinfo/hdmi_info.html)</small>
 
-This was followed by the Displayport standard, developed by PC and chip manufacturers and standardised by VESA, and released in in 2006.
+This was followed by the DisplayPort standard, developed by PC and chip manufacturers and standardised by VESA, and released in in 2006.
 
-![Displayport, mini-Displayport, and Thunderbolt Type-C connectors displayed side-by-side](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue124/issue124_04.jpg)<br />
-<small>Displayport, mini-Displayport, and Thunderbolt Type-C connectors displayed from left to right. All three support the Displayport video standard<br />Image via [DataPro](https://www.datapro.net/techinfo/displayport_info.html)</small>
+![DisplayPort, mini-DisplayPort, and Thunderbolt Type-C connectors displayed side-by-side](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue124/issue124_04.jpg)<br />
+<small>DisplayPort, mini-DisplayPort, and Thunderbolt Type-C connectors displayed from left to right. All three support the DisplayPort video standard<br />Image via [DataPro](https://www.datapro.net/techinfo/displayport_info.html)</small>
 
-**Issue summary:** The VGA video format originated in the time of cathode-ray televisions (CRTs). It was superseded by HDMI, a video format standardised by consumer electronics companies. Displayport, on the other hand, is a video format standardised by computer display companies.
+**Issue summary:** The VGA video format originated in the time of cathode-ray televisions (CRTs). It was superseded by HDMI, a video format standardised by consumer electronics companies. DisplayPort, on the other hand, is a video format standardised by computer display companies.
 
-Phew. This issue is much longer than I would like; there is so much history to these things! The HDMI-vs-Displayport question/complaint I keep hearing is one that only made sense for me in the context of the respective industries they sprung from, and this is something I think most layfolks could definitely understand.
+Phew. This issue is much longer than I would like; there is so much history to these things! The HDMI-vs-DisplayPort question/complaint I keep hearing is one that only made sense for me in the context of the respective industries they sprung from, and this is something I think most layfolks could definitely understand.
 
 ## What I’ll be covering next
 
 **Next issue:** [LMG S10] Issue 125: Analog and digital conversion
 
-Now that I’ve laid out the key differences between VGA, HDMI, and Displayport, we can talk about ... video adapters.
+Now that I’ve laid out the key differences between VGA, HDMI, and DisplayPort, we can talk about ... video adapters.
 
 **Sometime in the future:** What is:
 
