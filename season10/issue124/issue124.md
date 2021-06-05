@@ -28,7 +28,7 @@ These are what we call **analog** signals. Phonographs, and the early telephone 
 
 ## Video Graphics Array (VGA)
 
-So when the computer was first invented, and these screens were widely available, there was no need to reinvent the screen. Graphics cards ([Issue 123]()) simply had to figure out how to emit analog signals that would work with CRT screens.
+So when the computer was first invented, and these screens were widely available, there was no need to reinvent the screen. Graphics cards ([Issue 123](https://buttondown.email/laymansguide/archive/lmg-s10-issue-123-graphics-cards-the-pixel-factory/)) simply had to figure out how to emit analog signals that would work with CRT screens.
 
 The graphics standard for doing so is called **VGA** (Video Graphics Array), and was first released by IBM in 1986. An organisation, the Video Electronics Standards Association (**VESA**), was quickly formed in 1989, spearheaded by NEC, to extend this standard and allow it to support higher resolutions (up to 1080p!).
 
