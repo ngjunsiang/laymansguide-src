@@ -34,7 +34,7 @@ Users of external monitor screens and docking bays often have to connect multipl
 
 It’s supposed to simplify the physical cable mess, at the cost of having to manage a more complicated specification. Let’s see how that plays out in the next decade.
 
-**Issue summary:** USB Power Delivery is a specification that describes how much voltage and current can be supplied by different categories of USB cables. It allows power delivery at different levels for all kids of connected devices, up to 100W. This should help to simplify cable setups that otherwise require multiple kinds of cables between two closely interconnected devices (such as a laptop and an external monitor).
+**Issue summary:** USB Power Delivery is a specification that describes how much voltage and current can be supplied by different categories of USB cables. It allows power delivery at different levels for all kinds of connected devices, up to 100W. This should help to simplify cable setups that otherwise require multiple kinds of cables between two closely interconnected devices (such as a laptop and an external monitor).
 
 ## What I’ll be covering next
 
