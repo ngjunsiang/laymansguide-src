@@ -8,13 +8,13 @@ HDMI is a consumer electronics standard, and is thus heavily focused on broadcas
 
 DisplayPort is a computer display standard, focused on computing needs. DisplayPort supports video data, optionally audio data, and additional data (such as USB). Since 2014, compatible devices can also transmit DisplayPort signal format over USB-C, provided both the transmitting and receiving devices support it.
 
-## Analog vs digital formats
+## Analog vs digital formats: a recap
 
 Digital formats differ from analog formats, because they do not carry the raw signal for the device. Instead, they carry information about the image, encoding the image data ([Issue 43](https://buttondown.email/laymansguide/archive/lmg-s4-issue-43-images-a-mosaic-of-3-colours/)) into video form; after all, video is just a series of moving images! The device takes on the responsibility of figuring out how to make the images appear on-screen, which is why digital TVs require significantly more electronics than CRT TVs.
 
 ## Analog to digital conversion
 
-An analog signal does not easily convert to a digital signal! Analog-to-digital converters, such as the VGA-HDMI adapters that seem to be needed universally, have to figure out how to process a wave-like signal, and convert it into the bits that constitute an image. These adapters need a digital-analog conversion (DAC) chip to carry out that conversion.
+An analog signal does not easily convert to a digital signal! Analog-to-digital converters, such as the VGA-HDMI adapters that seem to be needed universally, have to figure out how to process a wave-like (analog) signal, and convert it into the pixel data that constitute an image. These adapters need a digital-analog conversion (DAC) chip to carry out that conversion.
 
 In contrast with analog signals, digital signals usually carry uncompressed video data. Digital-to-digital converters thus do not need to carry out any conversion—it’s the same image! Most of these converters merely need pins to be mapped to each other, which makes them cheaper (e.g. DisplayPort-HDMI converters).
 
