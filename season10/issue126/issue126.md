@@ -45,7 +45,7 @@ This helps to explain why a USB-charging battery pack cannot also be an external
 
 In addition to USB3.0 data (and later versions of USB 3), the USB Type-C specification also allows the Type-C connector to carry other kinds of data, if supported by the device:
 
-- DisplayPort video data for monitors and computer display devices ([Issue 124]())
+- DisplayPort video data for monitors and computer display devices ([Issue 124](https://buttondown.email/laymansguide/archive/lmg-s10-issue-124-video-formats/))
 - HDMI video data for monitors and consumer electronics devices (also covered in Issue 124)
 - Thunderbolt 3 data, for high-data-transfer devices
 

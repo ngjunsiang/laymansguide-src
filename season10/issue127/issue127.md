@@ -28,13 +28,13 @@ The actual voltage to be delivered by the charging host is *negotiated* with the
 
 Greater current requires a thicker cable to be used, as thinner cables have more resistance and will heat up to unsafe levels. A cable following the USB-PD specification will negotiate the correct voltage and current in any case, so if your cable is not charging at a level you know is supported by both your devices, do check the cable rating. You may have to buy a higher-rated cable.
 
-## Any advantages from buying a more expensive cable?
+## Are there any advantages to buying a more expensive cable?
 
 Users of external monitor screens and docking bays often have to connect multiple cables from those devices to their laptops for power, (USB) data, and video output. With USB Type-C and USB-PD specifications unifying these three requirements into one cable, we will (eventually) be able to connect a laptop to a Type-C monitor using a Type-C cable, and this cable will supply power plus allow the laptop to use all devices connected to the monitor.
 
 It’s supposed to simplify the physical cable mess, at the cost of having to manage a more complicated specification. Let’s see how that plays out in the next decade.
 
-**Issue summary:** USB Power Delivery is a specification that describes how much voltage and current can be supplied by different categories of USB cables. It allows power delivery at different levels for all kids of connected devices, up to 100W. This should help to simplify cable setups that otherwise require multiple kinds of cables between two closely interconnected devices (such as a laptop and an external monitor).
+**Issue summary:** USB Power Delivery is a specification that describes how much voltage and current can be supplied by different categories of USB cables. It allows power delivery at different levels for all kinds of connected devices, up to 100W. This should help to simplify cable setups that otherwise require multiple kinds of cables between two closely interconnected devices (such as a laptop and an external monitor).
 
 ## What I’ll be covering next
 
