@@ -36,7 +36,7 @@ CPUs are kind of at a disadvantage here.
 1. They are really small; the part that is in contact with the heatsink is usually about 400 sq mm (approx. 2 cm by 2 cm, or 0.64 sq in)[^1]
 2. The thermal limit for most CPUs is only about 100 °C (212 F), compared to most metals which have theirs in the hundreds or even over a thousand °C
 
-[^1]: Multiple CPUs are produced from a single semiconductor wafer. Keeping CPUs small maximises the yield from manufacturing, and reduces the chance of a manufacturing errors on any single CPU.
+[^1]: Multiple CPUs are produced from a single semiconductor wafer. Keeping CPUs small maximises the yield from manufacturing, and reduces the chance of a manufacturing error on any single CPU. This is going to take a whole ’nother season to explain …
 
 ## Heatsinks
 
