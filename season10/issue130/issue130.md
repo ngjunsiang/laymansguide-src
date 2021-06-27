@@ -38,22 +38,44 @@ In a laptop, you really do not want the power supply dumping this heat *into the
 
 In larger devices—the Mac Mini, game consoles (e.g. PS4 or Xbox One), and larger desktops, there’s plenty of space in the device’s internals, and they have sufficiently powerful cooling systems that can remove this heat. In desktops especially, the power supply may be large enough that it has its own cooling fan!
 
-![A desktop power supply, with the cover removed](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue129/issue129_01.jpg)<br />
+![A desktop power supply, with the cover removed](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue130/issue130_02.jpg)<br />
 <small>The internals of a desktop power supply.<br />Notice the cooling fan mounted on the back with 4 silver screws, and the two silver heatsinks mounted vertically<br />Source: [Wikipedia](https://en.wikipedia.org/wiki/Power_supply_unit_(computer))</small>
 
 So for large devices, it makes sense to hide the power supply within the device for a sleeker look.
 
-In fact, for high-power devices, a power adapter is a poor option. Since they don’t have their own cooling fans, they have limited cooling ability, and are liable to overheat easily if they have to provide >100 W to a device (remember that this means they release 10–25 W of heat).
+In fact, for high-power devices, a power adapter is a poor option. Since power adapters don’t have their own cooling fans, they have limited cooling ability, and are liable to overheat easily if they have to provide >100 W to a device (remember that this means they release at least 11 W of heat, while passive cooling can typically up to 8 W).
 
 ## Device categories
 
 Putting together the information from [Issue 129](https://buttondown.email/laymansguide/archive/lmg-s10-issue-129-cooling) and this issue, we can deduce that devices seem to sort themselves into form-factor categories depending on how much power they draw, and how much heat they put out:
 
-**Devices drawing >100W at peak, and putting out >80 W of heat:** Generally large, directly powered from the wall (by AC), with power supply within the device. In rare cases they do use external AC adapters (such as high-power gaming laptops).
+**Devices drawing >100W at peak, and putting out >80 W of heat:**
 
-**Devices drawing 12–65W at peak, putting out 25–45W of heat:** These devices cannot be passively cooled, and thus require active cooling (i.e. a cooling fan and heatsink). to avoid adding heat to the device from the AC-DC conversion process, they usually use external AC adapters. Even in devices as small as the Nintendo Switch, you can usually spot the cooling vents where the cooling fan blows warm air from the device into the surroundings. These may be safely powered by USB Type-C.
+Generally large, directly powered from the wall (by AC), with power supply within the device.
 
-**Devices drawing <12W at peak, putting out ~10W of heat:** These devices can be passively cooled. Large devices, such as tablets, have a larger surface area to dissipate heat and can afford to draw as much as 8–10W, while smaller devices such as smartphones typically have to remain under 5W. These are usually powered by USB (at a voltage of 5V). The M1 Macbook Air is passively cooled and thus in this category because its M1 processor is configured to limit its maximum heat output to approx. 10W or less; the M1 Macbook Pro has a cooling fan and a higher max heat output configuration, which allows it to perform at greater capacity.
+In rare cases they do use external AC adapters (such as high-power gaming laptops).
+
+**Devices drawing 12–65W at peak, putting out 25–45W of heat:**
+
+These devices cannot be passively cooled, and thus require active cooling (i.e. a cooling fan and heatsink).
+
+To avoid adding heat to the device from the AC-DC conversion process, they usually use external AC adapters.
+
+Even in devices as small as the Nintendo Switch, you can usually spot the cooling vents where the cooling fan blows warm air from the device into the surroundings.
+
+These may be safely powered by USB Type-C.
+
+**Devices drawing <12W at peak, putting out <10W of heat:**
+
+These devices can be passively cooled.
+
+Large devices, such as tablets, have a larger surface area to dissipate heat and can afford to draw as much as 8–10W, while smaller devices such as smartphones typically have to remain under 5W.
+
+These are usually powered by USB (at a voltage of 5V), though some may draw power at 9V.
+
+The M1 Macbook Air is passively cooled and thus in this category because its M1 processor is configured to limit its maximum heat output to approx. 10W or less; the M1 Macbook Pro has a cooling fan and a higher max heat output configuration, which allows it to perform at greater capacity.
+
+<hr />
 
 If you spot a device in the wild that claims to have performance much greater than its form factor—its shape, size, footprint—suggests, you would be wise to suspect over-optimism or a scam! At least until it is clear how they plan to provide that power and get rid of that heat …
 
