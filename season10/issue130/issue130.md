@@ -19,11 +19,11 @@ That means some power conversion has to take place on the smartphone’s mainboa
 
 ## Wall sockets and AC power
 
-On the other hand, alternating current (AC) from wall sockets has electric current flowing both ways—the current switches directions 50 or 60 times a second (see [this PDF of Worldwide AC Voltages & Frequencies](https://www.oaktreeproducts.com/img/product/description/List%20of%20Worldwide%20AC%20Voltages.pdf)). Connecting this directly to a device that needs DC is looking for trouble! This AC power source has to be converted to DC through an **AC-DC converter** (a.k.a. “power brick”, “power supply”, “AC adapter”, …), and that process currently only goes up to 80–90% at peak[^2].
+On the other hand, alternating current (AC) from wall sockets has electric current flowing both ways—the current switches directions 50 or 60 times a second (see [this PDF of Worldwide AC Voltages & Frequencies](https://www.oaktreeproducts.com/img/product/description/List%20of%20Worldwide%20AC%20Voltages.pdf)). Connecting this directly to a device that needs DC is looking for trouble! This AC power source has to be converted to DC through an **AC-DC converter** (a.k.a. “power brick”, “power supply”, “AC adapter”, …), and that process currently only goes up to 90% peak efficiency[^2].
 
 [^2]: AC-DC converters typically have a range of input power they can convert (e.g. 0–65 W for laptop adapters, 0–500 W for desktops). The efficiency is highest at about 50% of that load, and efficiency drops as the load increases or decreases from that point.
 
-That means if you have a desktop running at 100W (maybe while gaming or encoding video files), the *AC-DC converter alone* draws 110–125W at the wall socket, **wastes 10–25W** (in the form of heat), and provides 100W of power to the desktop.
+That means if you have a desktop running at 100W (maybe while gaming or encoding video files), the *AC-DC converter alone* draws 111W at the wall socket, **wastes 11W** (in the form of heat), and provides 100W of power to the desktop.
 
 And heat is the enemy of CPUs.
 
@@ -31,9 +31,9 @@ And heat is the enemy of CPUs.
 
 Ughh, power bricks … so many different types, with different connectors, and we never quite know if we can use one laptop’s power brick on another laptop (at least, until USB Type-C power for laptops came along; more in [Issue 127](https://buttondown.email/laymansguide/archive/lmg-s10-issue-127-usb-type-c-power-delivery/))
 
-In a laptop, you really do not want the power supply dumping this heat *into the laptop*! The laptop already has enough work to do getting heat from the CPU out of that cramped space into the surroundings. You don’t want to give it more work to do, and risk throttling the CPU’s performance ([Issue 129](https://buttondown.email/laymansguide/archive/lmg-s10-issue-129-cooling)). It’s better that the AC converter/power brick remains external to the laptop, dumping that heat into the surroundings directly without heating up the laptop’s internal space.
+In a laptop, you really do not want the power supply dumping this heat *into the laptop*! The laptop already has enough work to do getting heat from the CPU out of that cramped space into the surroundings. You don’t want to give it more heat to remove, and risk throttling the CPU’s performance ([Issue 129](https://buttondown.email/laymansguide/archive/lmg-s10-issue-129-cooling)). It’s better that the AC converter/power brick remains external to the laptop, dumping that heat into the surroundings directly without heating up the laptop’s internal space.
 
-![An Apple power adapter, with the cover removed](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue129/issue129_01.jpg)<br />
+![An Apple power adapter, with the cover removed](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue130/issue130_01.jpg)<br />
 <small>The internals of the Apple AC converter (i.e. power adapter)<br />Source: [Ken Shiriff](http://www.righto.com/2015/11/macbook-charger-teardown-surprising.html)</small>
 
 In larger devices—the Mac Mini, game consoles (e.g. PS4 or Xbox One), and larger desktops, there’s plenty of space in the device’s internals, and they have sufficiently powerful cooling systems that can remove this heat. In desktops especially, the power supply may be large enough that it has its own cooling fan!
