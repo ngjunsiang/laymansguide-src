@@ -1,4 +1,4 @@
-[**Previously:**](https://buttondown.email/laymansguide/archive/) The larger the surface area, the faster an object loses heat. The larger the temperature difference between object and surroundings, the faster the object loses heat. Heat is bad for computers, and CPUs will need cooling to be able to process computations quickly. A mobile phone thus typically uses no more than 4 W of power, a laptop can use 25–45 W, and a desktop can usually use 65 W and more. Two popular ways of increasing the cooling capacity of a device is to attach a larger piece of metal to the chip (passive cooling), or use a fan to force air over the heatsink (active cooling).
+[**Previously:**](https://buttondown.email/laymansguide/archive/) The larger the surface area, the faster an object loses heat. The larger the temperature difference between an object and its surroundings, the faster the object loses heat. Heat is bad for computers, and CPUs will need cooling to be able to process computations quickly. A mobile phone thus typically uses no more than 4 W of power, a laptop can use 25–45 W, and a desktop can usually use 65 W and more. Two popular ways of increasing the cooling capacity of a device is to attach a larger piece of metal to the chip (passive cooling), or use a fan to force air over the heatsink (active cooling).
 
 **Point 1:** A powerful device produces lots of heat.  
 **Point 2:** A device that produces lots of heat needs a large surface area (directly in contact with the heat source) to stay (relatively) cool.
@@ -43,7 +43,7 @@ In larger devices—the Mac Mini, game consoles (e.g. PS4 or Xbox One), and larg
 
 So for large devices, it makes sense to hide the power supply within the device for a sleeker look.
 
-In fact, for high-power devices, a power adapter is a poor option. Since power adapters don’t have their own cooling fans, they have limited cooling ability, and are liable to overheat easily if they have to provide >100 W to a device (remember that this means they release at least 11 W of heat, while passive cooling can typically up to 8 W).
+In fact, for high-power devices, a power adapter is a poor option. Since power adapters don’t have their own cooling fans, they have limited cooling ability, and are liable to overheat easily if they have to provide >100 W to a device (remember that this means they release at least 11 W of heat, while passive cooling can typically dissipate up to 8 W).
 
 ## Device categories
 
@@ -89,7 +89,7 @@ I’m noticing a pattern: issues where I explain concepts tend to be shorter tha
 
 This season was focused on firmware and computer components; it is part 1 of a set of concepts I need, so as to explain why the Apple M1 processor is a game-changer for personal computers. I explained what a graphics card is and what it does, I explained why some laptops are upgradeable and why some are not, I explained why some devices need cooling fans and others don’t, and I summarised the relationship between device form factors and their power limits.
 
-Part 2 will extend this exploration inside the computer. I noticed that layfolks’ mental concept of a computer typically includes the idea that there is a CPU, memory, a hard disk/solid state disk, and maybe a graphics card inside a computer. That’s plenty good enough for everyday life; it’s like understanding that all the employees of a company are in a particular building. But it is insufficient for understanding *why the M1 is so much faster*; you’re going to need to know where the employees are situated, and what their workflow is like!
+Part 2 will extend this exploration inside the computer. I noticed that layfolks’ mental concept of a computer typically includes the idea that there is a CPU, memory, a hard disk/solid state drive, and maybe a graphics card inside a computer. That’s plenty good enough for everyday life; it’s like understanding that all the employees of a company are in a particular building. But it is insufficient for understanding *why the M1 is so much faster*; you’re going to need to know where the employees are situated, and what their workflow is like!
 
 It’s a tempting but misleading story to imagine that Apple simply has much better engineers; I would say that their engineers were instead under the influence of incentives that allowed them to imagine a more coherent architecture. Let’s get into it starting next issue, again beginning from first principles: how exactly does the CPU, memory, and storage disk work together?
 
