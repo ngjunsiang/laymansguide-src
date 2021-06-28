@@ -14,7 +14,7 @@ The early computers, when purchased, needed a network card to connect to a netwo
 
 On a desktop, you could upgrade a number of components.
 
-Desktop CPUs were purchased separately, and had to be installed into a socket on mainboard (also called a motherboard).
+Desktop CPUs were purchased separately, and had to be installed into a socket on a mainboard (also called a motherboard).
 
 ![Intel CPU socket](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue128/issue128_01.jpg)<br />
 <small>A CPU socket on a mainboard<br />Source: [Digital Trends](https://www.digitaltrends.com/computing/what-are-intels-lga-processor-sockets/)</small>
@@ -24,20 +24,20 @@ Desktop computer memory was likewise purchased separately, and slotted in:
 ![Desktop memory slots](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue128/issue128_02.jpg)<br />
 <small>Memory slots on a desktop mainboard<br />Source: [Bleuwire](https://bleuwire.com/how-to-determine-memory-slots-motherboard-windows-10/)</small>
 
-On top of that ,you still had to buy your own DVD/Bluray drives, storage disks, and otehr peripherals, to be plugged in laboriously to the mainboard. Many of these features made it into laptops as well.
+On top of that, you still had to buy your own DVD/Bluray drives, storage disks, and other peripherals, to be plugged in laboriously to the mainboard. Many of these features made it into laptops as well.
 
-## Mobile upgrades
+## Laptop upgrades
 
 Because of the smaller space available, the CPU socket had to go. Most laptops have their CPUs soldered directly to the mainboard, and the CPU cannot be upgraded separately. Buying a laptop with a better CPU often means buying it with a different configuration, mainboard and all.
 
 But laptops retained the ability to upgrade memory through the use of memory slots. These were oriented flat along the board to reduce space.
 
-![Laptop memory slots](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue128/issue128_04.jpg)<br />
+![Laptop memory slots](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue128/issue128_03.jpg)<br />
 <small>Memory slots on a laptop<br />Source: [Laptopmag](https://www.laptopmag.com/articles/ram-upgrade-tutorial)</small>
 
-And they also retained the ability to swap out or replace their disks, whether hard disk or solid state disk.
+And they also retained the ability to swap out or replace their disks, whether hard disk or solid state drive.
 
-![Laptop hard disk slot](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue128/issue128_05.jpg)<br />
+![Laptop hard disk slot](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue128/issue128_04.jpg)<br />
 <small>The hard disk slot on a laptop<br />Source: [TweakTown](https://www.tweaktown.com/tweakipedia/2/upgrading-your-laptop-to-a-new-high-performance-ssd-and-ram/index.html)</small>
 
 ![Laptop SSD slots](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue128/issue128_05.jpg)<br />
