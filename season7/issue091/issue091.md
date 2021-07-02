@@ -4,10 +4,6 @@ So you’re running up against the limits of a spreadsheet and want to do more w
 
 What to do?
 
-
-
-**Issue summary:** A URI (Uniform Resource Identifier) is required to connect to a database. This URI can be provided by a hosting service provider that runs your own database for you, or by a cloud service provider that runs your database on their platform.
-
 ## Airtable
 
 [Airtable](https://airtable.com/) is a database-like platform that lets you set up Bases (similar to databases), which can contain different tables for your data. You can specify a specific data type for each table, limit entries to a list of options, and even create lookups (match the value here with a column in another table, and return data from another column in the same row).
