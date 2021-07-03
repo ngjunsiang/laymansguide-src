@@ -22,11 +22,11 @@ That’s 3 places to stash data so far: storage drives, CPU cache, and computer 
 
 ## Pipelines
 
-The next place that often requires lots of data is the graphics card ([Issue 123]()). For you to play a video game, the computer has to:
+The next place that often requires lots of data is the graphics card ([Issue 123](https://buttondown.email/laymansguide/archive/lmg-s10-issue-123-graphics-cards-the-pixel-factory/)). For you to play a video game, the computer has to:
 
 1. Load game data from the storage disk,
 2. Store most of it in memory while it’s doing some number crunching in its cache,
-3. Get the crunched numbers to the graphics card for rendering graphics ([Issue 122]()),
+3. Get the crunched numbers to the graphics card for rendering graphics ([Issue 122](https://buttondown.email/laymansguide/archive/lmg-s10-issue-122-the-great-flattening/)),
 4. Load more data from memory while crunching more numbers, and passing them to the graphics card.
 
 This involves far more loading and storing than computation. And there are limitations to how quickly data can be transferred.
