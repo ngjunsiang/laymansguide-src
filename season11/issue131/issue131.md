@@ -22,18 +22,18 @@ That’s 3 places to stash data so far: storage drives, CPU cache, and computer 
 
 ## Pipelines
 
-The next place that often requires lots of data is the graphics card ([Issue 123]()). For you to play a video game, the computer has to:
+The next place that often requires lots of data is the graphics card ([Issue 123](https://buttondown.email/laymansguide/archive/lmg-s10-issue-123-graphics-cards-the-pixel-factory/)). For you to play a video game, the computer has to:
 
 1. Load game data from the storage disk,
 2. Store most of it in memory while it’s doing some number crunching in its cache,
-3. Get the crunched numbers to the graphics card for rendering graphics ([Issue 122]()),
+3. Get the crunched numbers to the graphics card for rendering graphics ([Issue 122](https://buttondown.email/laymansguide/archive/lmg-s10-issue-122-the-great-flattening/)),
 4. Load more data from memory while crunching more numbers, and passing them to the graphics card.
 
 This involves far more loading and storing than computation. And there are limitations to how quickly data can be transferred.
 
 ## Throughput
 
-How does data get transferred? Through very fine wires usually. One side (e.g. the CPU) applies a voltage to the wire, the other side (e.g. memory) checks the voltage on the wire. No applied voltage = a 0, applied voltage = a 1.
+How does data get transferred? Through very fine wires usually. One side (e.g. the CPU) applies a voltage to the wire, the other side (e.g. memory) checks the voltage on the wire. No applied voltage = 0, applied voltage = 1.
 
 How does the CPU know when to apply the voltage, and the memory know when to check it? These operations are synchronised through cycles, like a highly coordinated factory. A CPU operates on a frequency of up to billions of cycles per second, each cycle potentially transferring one bit of data ([Issue 40](https://buttondown.email/laymansguide/archive/lmg-s4-issue-40-bits-and-bytes/)) if there are no delays.
 
