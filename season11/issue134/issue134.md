@@ -3,7 +3,7 @@
 Last issue, we looked at the ATX form factor by Intel, which replaced the AT form factor by IBM. While the AT could get by with a smattering of chips, which worked fine for mostly text-only computers, the ATX has much higher throughput requirements. To help the CPU focus on serving the user’s applications, two chipsets—the memory controller hub (MCH) and peripheral controller hub (PCH), take charge of managing the data throughput. The MCH manages data between CPU, computer memory, the graphics processor unit (GPU), and the PCH, while the PCH manages data between the peripherals (audio, storage, network, USB, ...) and the MCH.
 
 ![Chipset diagram of ATX systems, up to early Intel Core (i-Series)](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue134/issue134_01.gif)<br />
-<small>An Intel pre-Core i-series ATX system chipset diagram.<br />The MCH and PCH support the CPU in its data operations<br />DDR refers to computer memory, while GDDR refers to graphics card memory ([Issue123]())<br />Source: [Ars](https://arstechnica.com/gadgets/2009/09/intel-launches-all-new-pc-architecture-with-core-i5i7-cpus/)</small>
+<small>An Intel pre-Core i-series ATX system chipset diagram.<br />The MCH and PCH support the CPU in its data operations<br />DDR refers to computer memory, while GDDR refers to graphics card memory ([Issue123](https://buttondown.email/laymansguide/archive/lmg-s10-issue-123-graphics-cards-the-pixel-factory/))<br />Source: [Ars](https://arstechnica.com/gadgets/2009/09/intel-launches-all-new-pc-architecture-with-core-i5i7-cpus/)</small>
 
 There are terms for each of the connections between chips, which I won’t get into because it largely won’t concern us until we have to design performant systems.
 
@@ -31,7 +31,7 @@ Wait … don’t electrical signals travel at the speed of light? How would disa
 
 Consider some numbers:
 
-The typical distance between the CPU and the MCH is about 5 cm (2″). Since the wires between them are not straight, let’s approximately double that to 10 cm (4″). Light would take 0.3 ns to travel that distance. Which is roughly one clock cycle on a 3 GHz processor—at 3 billion cycles per second, each cycle takes a third of a billionth of a second![^1]
+The typical distance between the CPU and the MCH is about 5 cm (2 in). Since the wires between them are not straight, let’s approximately double that to 10 cm (4 in). Light would take 0.3 ns to travel that distance. Which is roughly one clock cycle on a 3 GHz processor—at 3 billion cycles per second, each cycle takes a third of a billionth of a second![^1]
 
 [^1]: I want to just make a note here that while I believe my choice of analogy is justified, the numbers are wildly off: [RealWorldTech here puts the 1st-gen Core at approx 30 ns](https://www.realworldtech.com/nehalem/3/), for technical reasons that will take at least half a season to unpack (definitely not layman content!). But he also notes that latency for remote memory (i.e. memory not on the CPU, but on the motherboard) is “roughly 30 ns slower than local [memory]” (i.e. memory residing directly on the CPU). So the remote-vs-local latency gap is real and significant!
 
@@ -44,7 +44,7 @@ If light is taking one clock cycle to get out of the CPU, you have a problem. Ra
 Solution: move the MCH into the CPU!
 
 ![Chipset diagram of ATX systems for Intel Core (i-Series)](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue134/issue134_02.gif)<br />
-<small>An Intel Core i-series ATX system chipset diagram.<br />The MCH is merged into the CPU, but still a discrete unit.<br />DDR refers to computer memory, while GDDR refers to graphics card memory ([Issue123]())<br />Source: [Ars](https://arstechnica.com/gadgets/2009/09/intel-launches-all-new-pc-architecture-with-core-i5i7-cpus/)</small>
+<small>An Intel Core i-series ATX system chipset diagram.<br />The MCH is merged into the CPU, but still a discrete unit.<br />DDR refers to computer memory, while GDDR refers to graphics card memory ([Issue123](https://buttondown.email/laymansguide/archive/lmg-s10-issue-123-graphics-cards-the-pixel-factory/))<br />Source: [Ars](https://arstechnica.com/gadgets/2009/09/intel-launches-all-new-pc-architecture-with-core-i5i7-cpus/)</small>
 
 ## Squeezing more tenants into the building
 
