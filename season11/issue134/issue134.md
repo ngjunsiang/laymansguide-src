@@ -3,7 +3,7 @@
 Last issue, we looked at the ATX form factor by Intel, which replaced the AT form factor by IBM. While the AT could get by with a smattering of chips, which worked fine for mostly text-only computers, the ATX has much higher throughput requirements. To help the CPU focus on serving the user’s applications, two chipsets—the memory controller hub (MCH) and peripheral controller hub (PCH), take charge of managing the data throughput. The MCH manages data between CPU, computer memory, the graphics processor unit (GPU), and the PCH, while the PCH manages data between the peripherals (audio, storage, network, USB, ...) and the MCH.
 
 ![Chipset diagram of ATX systems, up to early Intel Core (i-Series)](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue134/issue134_01.gif)<br />
-<small>An Intel pre-Core i-series ATX system chipset diagram.<br />The MCH and PCH support the CPU in its data operations<br />DDR refers to computer memory, while GDDR refers to graphics card memory ([Issue123](https://buttondown.email/laymansguide/archive/lmg-s10-issue-123-graphics-cards-the-pixel-factory/))<br />Source: [Ars](https://arstechnica.com/gadgets/2009/09/intel-launches-all-new-pc-architecture-with-core-i5i7-cpus/)</small>
+<small>An Intel pre-Core i-series ATX system chipset diagram.<br />The MCH and PCH (labelled ICH here for unimportant reasons) support the CPU in its data operations<br />DDR refers to computer memory, while GDDR refers to graphics card memory ([Issue123](https://buttondown.email/laymansguide/archive/lmg-s10-issue-123-graphics-cards-the-pixel-factory/))<br />Source: [Ars](https://arstechnica.com/gadgets/2009/09/intel-launches-all-new-pc-architecture-with-core-i5i7-cpus/)</small>
 
 There are terms for each of the connections between chips, which I won’t get into because it largely won’t concern us until we have to design performant systems.
 
@@ -17,11 +17,13 @@ From [Issue 131](), I gave a simple model of the limitations of data transfer:
 
 The number of pins on processors have been steadily increasing up to this point, and so have the frequencies of processors. The Pentium 4 was succeeded by the Pentium D, then the Pentium Dual Core, then the Core 2. This Core processor preceded the Core i3/i5/i7 processors we know today; I’ll refer to this family of processors as the pre-i Core (rather than the more technical LGA775 series).
 
-Pentium 4: 478 pins
-Core, Core 2 (pre-i Core): 775 pins
+Pentium 4: 478 pins  
+Core, Core 2 (pre-i Core): 775 pins  
 Core (i7, first-gen): **1155 pins**
 
-Yup, the number of pins have *almost tripled* since the Pentium 4! Remember that more pins does not make the CPU *itself* calculate faster, it just helps it to *transfer data* faster. What are all those pins for if there is the MCH to manage data flow?
+Yup, the number of pins have *almost tripled* since the Pentium 4! Remember that more pins does not make the CPU *itself* calculate faster, it just helps it to *transfer data* faster.
+
+What are all those pins for, if there is the MCH to manage data flow?
 
 Let’s talk about the limitations of the pre-i Core setup.
 
@@ -35,11 +37,13 @@ The typical distance between the CPU and the MCH is about 5 cm (2 in). Since the
 
 [^1]: I want to just make a note here that while I believe my choice of analogy is justified, the numbers are wildly off: [RealWorldTech here puts the 1st-gen Core at approx 30 ns](https://www.realworldtech.com/nehalem/3/), for technical reasons that will take at least half a season to unpack (definitely not layman content!). But he also notes that latency for remote memory (i.e. memory not on the CPU, but on the motherboard) is “roughly 30 ns slower than local [memory]” (i.e. memory residing directly on the CPU). So the remote-vs-local latency gap is real and significant!
 
-Remember that everything in a computer needs to happen like clockwork: for data to sync up, when the CPU sets a bit to one, the other party has to detect the bit signal before the clock cycle is up. If not, it will have to wait for the next clock cycle, causing the operation to slow down and take two clock cycles instead of one. It’s like when you don’t manage to post the mail by 5pm, the postman has emptied the mailbox, and now you have to wait for 5pm the next day to post mail instead.
+Remember that everything in a computer needs to happen like clockwork: for data to sync up, when the CPU sets a bit to one, the other party has to detect the bit signal before the clock cycle ends. If not, it will have to wait for the next clock cycle, causing the operation to slow down and take two clock cycles instead of one.
+
+It’s like when you don’t manage to post the mail by 5pm, the postman has emptied the mailbox, and now you have to wait for 5pm the next day for your mail to be picked up instead.
 
 ## It’s all about throughput ... but also latency
 
-If light is taking one clock cycle to get out of the CPU, you have a problem. Raise the frequency higher than 3GHz, and you can cause a one-cycle lag just waiting for data to come in from the MCH, and to go out again to the MCH.
+If light is taking one clock cycle to get out of the CPU, you have a problem. Raise the frequency higher than 3GHz, and you can cause a one-cycle lag just waiting for data to come in from the MCH, and to go out again to the MCH. That would counter-intuitively *slow down* the CPU.
 
 Solution: move the MCH into the CPU!
 
