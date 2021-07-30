@@ -4,12 +4,12 @@ Let’s get to it: Intel vs M1 Macbook Air!
 
 ## The M1 Macbook Air: all aboard
 
-Here’s the Macbook Air in 2020. There was one in early 2020 (Intel), and one in late 2020 (M1).
+Here’s the Macbook Air in 2020. There was one in early 2020 using an Intel Core CPU, and one in late 2020  using the Apple M1 CPU.
 
 ![Macbook Air in early 2020 (left), vs late 2020 (right)](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue137/issue137_01.jpg)<br />
-<small>Macbook Air, early 2020 (left) vs late 2020 (right)<br />The cooling fan is noticeably missing in late 2020.<br />Source: [iFixit](https://www.ifixit.com/News/46884/m1-macbook-teardowns-something-old-something-new)</small>
+<small>Macbook Air, early-2020 (left) vs late-2020 (right)<br />The cooling fan is noticeably missing in the late-2020 model.<br />Source: [iFixit](https://www.ifixit.com/News/46884/m1-macbook-teardowns-something-old-something-new)</small>
 
-The M1 Macbook Air not only performs better, it does so while passively cooled! From [Issue 129](), this suggests the M1 Macbook Air also uses less power (8–12W) for its tasks, or it is going to need more powerful cooling capability.
+The M1 not only performs better, it does so while passively cooled! From [Issue 129](https://buttondown.email/laymansguide/archive/lmg-s10-issue-129-cooling/), this suggests the M1 Macbook Air also uses less power (8–12W) for its tasks.
 
 ![Macbook Air mainboard, front (left) vs back (right)](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue137/issue137_02.jpg)<br />
 <small>Macbook Air mainboard, front and back<br />There are fewer big chips, but the single biggest chip there is *much* bigger, and Apple-branded<br />Source: [iFixit](https://www.ifixit.com/News/46884/m1-macbook-teardowns-something-old-something-new)</small>
@@ -20,7 +20,7 @@ It looks like the M1 has “swallowed” a number of chips! There are fewer chip
 
 To get into that story, I’ll have to go even more mobile, and look at smartphone CPUs. After all, the Apple M1 actually evolved from the Apple A-series CPUs for their iPhone and iPad. That starts next issue.
 
-## What about other Windows+Intel laptops?
+## What about other Intel Core laptops running Windows?
 
 They are largely undergoing the same transition, just more slowly. This is the Microsoft Surface Laptop in 2017:
 
@@ -31,7 +31,7 @@ Larger-sized laptops that can afford the space may still have solid state storag
 
 **Issue summary:** The M1 goes one step further: not only does it make do with fewer chips, it does so with passive cooling!
 
-The last issue simply went on too long, especially with all the images, so I figured this issue would stand better as a Core-vs-M1 comparison, instead of being the tail of an evolution-of-Air issue. So it’s short :)
+The last issue simply went on too long, especially with all the images, so I figured this issue would stand better as a Core-vs-M1 comparison, instead of being the tail of an evolution-of-Air issue. So it’s short.
 
 ## What I’ll be covering next
 

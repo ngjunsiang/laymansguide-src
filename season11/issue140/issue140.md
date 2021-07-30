@@ -8,7 +8,7 @@ Circa 2009, changes were happening on the desktop motherboard, as the memory con
 
 Smartphones can’t afford to do that; every bit of mainboard space is precious! The Apple A-series processors have been gradually moving more and more memory into the CPU, where it enjoys lower latency communicating with the CPU.
 
-In 2013, Apple released the iPhone 5S, using the Apple A7 SoC. This was Apple’s first 64-bit SoC ([Issue 55]()), and by this point Apple had managed to bring 1GB of memory onto the SoC package. By 2018, With the Apple A12 SoC, the on-board memory had increased up to 4GB on high-end iPhone X models.
+In 2013, Apple released the iPhone 5S, using the Apple A7 SoC. This was Apple’s first 64-bit SoC ([Issue 55](https://buttondown.email/laymansguide/archive/lmg-s5-issue-55-addressing-memory/)), and by this point Apple had managed to bring 1GB of memory onto the SoC package. By 2018, With the Apple A12 SoC, the on-board memory had increased up to 4GB on high-end iPhone X models.
 
 So in 2015, the high-performance folks (working with workstations and servers) were dreaming of the CPU and GPU sharing memory, while from 2013, in smartphones, the CPU, GPU, and system memory were already cohabiting in the same chip package! CPU, GPU, and memory all living in the same space … how does this work?
 
@@ -17,11 +17,11 @@ So in 2015, the high-performance folks (working with workstations and servers) w
 Remember this diagram?
 
 ![Chipset diagram of ATX systems for Intel Core (i-Series)](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue134/issue134_02.gif)<br />
-<small>An Intel Core i-series ATX system chipset diagram.<br />The MCH is merged into the CPU, but still a discrete unit.<br />DDR refers to computer memory, while GDDR refers to graphics card memory ([Issue123]())<br />Source: [Ars](https://arstechnica.com/gadgets/2009/09/intel-launches-all-new-pc-architecture-with-core-i5i7-cpus/)</small>
+<small>An Intel Core i-series ATX system chipset diagram.<br />The MCH is merged into the CPU, but still a discrete unit.<br />DDR refers to computer memory, while GDDR refers to graphics card memory ([Issue123](https://buttondown.email/laymansguide/archive/lmg-s10-issue-123-graphics-cards-the-pixel-factory/))<br />Source: [Ars](https://arstechnica.com/gadgets/2009/09/intel-launches-all-new-pc-architecture-with-core-i5i7-cpus/)</small>
 
 Apple is pretty tight-lipped about the technical details of its products, but if the industry standard is anything to go by, the GPU will usually have its own memory, separate from the CPU.
 
-After all, CPUs and GPUs don’t do the same work, or even work the same way ([Issue 123](https://buttondown.email/laymansguide/archive/lmg-s10-issue-123-graphics-cards-the-pixel-factory/)). they use different memory, they use memory differently, they store data differently, and if they accidentally overwrote each other’s data … well, your device would just crash.
+After all, CPUs and GPUs don’t do the same work, or even work the same way ([Issue 123](https://buttondown.email/laymansguide/archive/lmg-s10-issue-123-graphics-cards-the-pixel-factory/)). They use different memory, they use memory differently, they store data differently, and if they accidentally overwrote each other’s data … well, your device would just crash.
 
 So … that on-board memory, whose is it? CPU’s, or GPU’s?
 
@@ -29,7 +29,9 @@ So … that on-board memory, whose is it? CPU’s, or GPU’s?
 
 One thing that makes it difficult to share memory is that the CPU and GPU have to “speak the same language”; they need a common shared understanding of the workflow involved in passing data through shared memory.
 
-This is easier to develop when a single company has control over both CPU and GPU designs. This is not always the case; many smartphones have CPU designs from one company and GPU designs from another! The Apple A-series processors used GPUs from a graphics company called Imagination Technologies, designed by their PowerVR division. With a CPU and GPU from different teams, working in different ways, shared memory is not likely to happen[^1].
+This is easier to develop when a single company has control over both CPU and GPU designs. This is not always the case; many smartphones have CPU designs from one company and GPU designs from another!
+
+For instance, the Apple A-series processors initially used GPUs from a graphics company called Imagination Technologies, designed by their PowerVR division. With a CPU and GPU from different teams, working in different ways, shared memory is not likely to happen[^1].
 
 [^1]: What about other companies that had control over the CPU and GPU designs? Such as AMD, Samsung, Qualcomm, ...? It’s a long story, and not really suitable for a layman newsletter. Sorry.
 
@@ -43,7 +45,7 @@ Apple is finally in the position of working towards shared memory with their Bio
 
 **Issue summary:** Shared memory is easier to implement when a company has control over the designs of both CPU and GPU.
 
-The story begun in [Issue 138]() is coming to a close soon! Next issue, the curtain falls, the A14 and M1 are released, and Apple (probably) pulls the chip industry in a new direction again.
+The story which begun in [Issue 138]() is coming to a close soon! Next issue, the curtain falls, the A14 and M1 are released, and Apple (probably) pulls the chip industry in a new direction again.
 
 ## What I’ll be covering next
 

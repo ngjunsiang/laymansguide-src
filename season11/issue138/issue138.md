@@ -1,6 +1,6 @@
-[**Previously:**](https://buttondown.email/laymansguide/archive/) The M1 goes one step further: not only does it make do with fewer chips, it does so with passive cooling!
+[**Previously:**](https://buttondown.email/laymansguide/archive/) The M1 goes one step further: not only does it make do with fewer chips, it does so with passive cooling.
 
-In Issue 136, I showed the miniaturisation of the Macbook mainboard through a series of pictures. While the laptop has remained the same size mostly (apart from getting slimmer), that is not the case with its components. The bigger components, like memory and storage, changed from being separate discrete parts to being another component soldered directly to the mainboard.
+In [Issue 136](), I showed the miniaturisation of the Macbook mainboard through a series of pictures. While the laptop has remained the same size mostly (apart from getting slimmer), that is not the case with its components. The bigger components, like memory and storage, changed from being separate discrete parts to being another component soldered directly to the mainboard.
 
 But that only gets us so far; even in the M1 Macbook Air, the mainboard is still almost the entire length of a phone. There’s got to be something else.
 
@@ -13,16 +13,18 @@ Rewind to 2008: one year after the first-generation iPhone was launched, the iPh
 ![iPhone 3G mainboard, with parts labelled](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue138/issue138_01.jpg)<br />
 <small>iPhone 3G mainboard, with parts labelled<br />There are lots of small, auxiliary processors around the CPU.<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPhone+3G+Teardown/600)</small>
 
-In spirit and form, the early smartphone were a lot like the early desktop mainboards ([Issue 132]()): lots of chips performing highly specific functions. A smartphone has no need (or space) for a peripheral controller hub (PCH) ([Issue 134]()) when it does not have add-on peripherals, and no need for a memory controller hub (MCH) when it can put the memory directly on the same chip as the CPU.
+In spirit and form, the early smartphones were a lot like the early desktop mainboards ([Issue 132]()): lots of chips performing highly specific functions.
+
+After all, a smartphone has no need (or space) for a peripheral controller hub (PCH) ([Issue 134]()) when it does not have add-on peripherals, and no need for a memory controller hub (MCH) when it can put the memory directly on the same chip as the CPU.
 
 At this point, Apple was still using a CPU based on a design by ARM, and manufactured by Samsung. 2 years later, Apple had its own in-house processor: the Apple A4, their own design.
 
 ## What’s in a smartphone: 2010
 
-This time round, Apple had switched to an internal layout distinctly different from the iPhone 3G, and the basic layout (mainboard beside battery) would become a pattern for subsequent iPhone generations.
+This time, Apple had switched to an internal layout distinctly different from the iPhone 3G, and the basic layout (mainboard beside battery) would become a pattern for subsequent iPhone generations.
 
 ![iPhone 4 and iPhone 12](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue138/issue138_02.jpg)<br />
-<small>iPhone 4 on the left, iPhone 12 on the right<br />The basic layout of hte iPhone has been preserved over a decade.<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPhone+4+Teardown/3130) and [iFixit](https://www.ifixit.com/Teardown/iPhone+12+and+12+Pro+Teardown/137669)</small>
+<small>iPhone 4 on the left, iPhone 12 on the right<br />The basic layout of the iPhone has been preserved over a decade.<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPhone+4+Teardown/3130) and [iFixit](https://www.ifixit.com/Teardown/iPhone+12+and+12+Pro+Teardown/137669)</small>
 
 What’s the difference between this and the 3G? Let’s have a look at the iPhone 4’s mainboard:
 
@@ -47,7 +49,7 @@ The A4 chip carries:
 This chip is responsible for:
 
 - performing calculations
-- rendering graphics ([Issue 123]())
+- rendering graphics ([Issue 123](https://buttondown.email/laymansguide/archive/lmg-s10-issue-123-graphics-cards-the-pixel-factory/))
 - managing the flow of information between CPU, GPU, and memory (previously the job of the MCH)
 - managing the flow of information between storage, network, and the MCH (previously the job of the PCH)
 
@@ -74,7 +76,7 @@ And this is how we shrink a laptop mainboard even further.
 
 The M1’s design shares a lot more in common with the A14 on the iPhone and iPad than it does with the laptop CPUs that came before it. I want to go into a bit more detail about this in the next issue, so that it’s easier to see just how different it is from a typical laptop.
 
-First thing to talk about: what exactly does “unified memory” mean? Why is it a big deal?
+First question: what exactly does “unified memory” mean? Why is Apple making it such a big deal?
 
 **Next issue:** [LMG S10] Issue 139: What’s before this line is mine, what’s after this line is yours
 

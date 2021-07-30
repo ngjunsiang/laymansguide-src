@@ -4,7 +4,7 @@ So, before 2020: smartphones are smartphones, laptops are laptops. They use diff
 
 After 2020: It turns out that smartphone chips can be upgraded and used in laptops, while remaining essentially the same architecture? Its power consumption dial can be turned down to almost zero but also turned all the way up?
 
-That opens up the possibility that smartphones and laptops can run on the same hardware, and there’s nothing technically stopping apps compiled ([Issue 54]()) for that instruction set to run on both![^1]
+That opens up the possibility that smartphones and laptops can run on the same hardware, and there’s nothing technically stopping apps compiled ([Issue 54](https://buttondown.email/laymansguide/archive/lmg-s5-issue-54-compiling-programming-code-into/)) for that instruction set to run on both![^1]
 
 [^1]: Nothing, that is, besides all the software workarounds that will need to be written ...
 
@@ -12,9 +12,11 @@ Hmm, where has something like this happened before?
 
 ## The big console alignment
 
-Sometime in mid-2013, Microsoft announced the Xbox One (henceforth XB1), the successor to the Xbox 360. The 360 ran on a PowerPC CPU made by IBM—different from smartphone chips that used the ARM instruction set, and also different from laptops that use the x86 instruction set.[^2] The Xbox One, on the other hand, uses a CPU+GPU made by AMD[^3], following the x86 instruction set.
+Sometime in mid-2013, Microsoft announced the Xbox One (henceforth XB1), the successor to the Xbox 360. The 360 ran on a PowerPC CPU made by IBM—different from smartphone chips that used the ARM instruction set, and also different from laptops that use the x86 instruction set.[^2]
 
 [^2]: In an interesting narrative twist, PowerPC was the architecture that Macbooks used before Apple switched them to Intel processors. And now Xbox did the same thing.
+
+The Xbox One, on the other hand, uses a CPU+GPU made by AMD[^3], following the x86 instruction set.
 
 [^3]: AMD calls it an Accelerated Processing Unit (APU). Doesn’t matter for us.
 
@@ -38,7 +40,7 @@ The XB1 and PS4, on the other hand, are much more similar. They both use AMD CPU
 
 Back to smartphones vs laptops. Running on two different types of chips, using different architectures and instruction sets.
 
-We have seen some forays from one into the other: Intel’s doomed Medfield chip was an attempt to bring the x86 architecture to smartphones, while Google has been trying to get ARM chips into Chromebooks, with limited success.
+We have seen some forays from one into the other: Intel’s doomed Medfield chip was an attempt to bring the x86 architecture to smartphones, while Google has been trying to get ARM chips into Chromebooks, with limited but increasing success.
 
 But now that we have an iPhone 12 using the A14 chip, a Macbook using the M1 chip, and we know that the A14 and M1 are essentially the same architecture and the same instruction set … it does suggest that the challenges of making software for both devices now primarily exist on the software side. The gulf of hardware incompatibility has been closed.
 
