@@ -11,7 +11,7 @@ There are terms for each of the connections between chips, which I won’t get i
 
 The technical geeks are probably fuming at this point because ATX is a motherboard standard, while I’m talking about the evolution of processors which have little to do with the motherboards, at least not directly ... but that’s of little importance at this point. Because we first need to talk about CPU pins.
 
-From [Issue 131](), I gave a simple model of the limitations of data transfer:
+From [Issue 131](https://buttondown.email/laymansguide/archive/lmg-s11-issue-131-what-do-early-cpus-and-startup/), I gave a simple model of the limitations of data transfer:
 
 > There is a max frequency they can operate at, and a limit to the number of wires they can be connected to (throughput = no. of wires × frequency)
 
