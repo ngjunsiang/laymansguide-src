@@ -15,9 +15,11 @@ You see, for circuit components, size doesn’t always benefit performance. A la
 
 ## Making a modern CPU
 
-Modern CPUs are manufactured through a process called **photolithography**—literally it means “etching with light” (Greek; photo- “light” + litho- “stone” + -graphie “to draw”). By layering chemicals over the silicon base, putting a mask over them, and exposing them to light, a series of chemical reactions are induced to create the circuit pattern on the CPU.
+Modern CPUs are manufactured through a process called **photolithography**—literally it means “etching with light” (Greek; _photo-_ “light” + _litho-_ “stone” + _-graphie_ “to draw”). By layering chemicals over the silicon base, putting a mask over them, and exposing them to light, a series of chemical reactions are induced to create the circuit pattern on the CPU.
 
-Multiple CPUs are created on a single die this way, then individually cut and processed. The precision and fineness of the etching laser determine how small we can create components on this substrate. As the manufacturing process improves, semiconductor manufacturing companies are able to create CPUs that can cram more and more transistors into each square mm (or inch) of silicon die.
+Multiple CPUs are created on a single die this way, then individually cut and processed, in multiple steps spanning several months[^1]. The precision and fineness of the etching laser determine how small we can create components on this substrate. As the manufacturing process improves, semiconductor manufacturing companies are able to create CPUs that can cram more and more transistors into each square mm (or inch) of silicon die.
+
+[^1]: See https://www.washingtonpost.com/technology/2021/07/07/making-semiconductors-is-hard/ for a more comprehensive description of the process
 
 Besides being able to cram more transistors into the same space, it turns out that smaller components also use much less power! So we not only get performance gains, we get power efficiency gains as well—two birds with one stone.
 
