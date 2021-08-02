@@ -29,7 +29,9 @@ Let’s talk about the limitations of the pre-i Core setup.
 
 ## Communication at a distance
 
-Wait … don’t electrical signals travel at the speed of light? How would disappearing the MCH improve latency?
+Wait … don’t electrical signals travel at *speeds near the speed of light*?[^1] How would disappearing the MCH improve latency?
+
+[^1]: Technically, the electric current itself travels much slower than the speed of light, but the electrical signal is carried by the elctromagnetic wave that propagates through the wires at near the speed of light (and causes the electrons to move).
 
 Consider some numbers:
 
