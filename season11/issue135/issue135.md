@@ -19,7 +19,7 @@ Modern CPUs are manufactured through a process called **photolithography**—lit
 
 Multiple CPUs are created on a single die this way, then individually cut and processed, in multiple steps spanning several months[^1]. The precision and fineness of the etching laser determine how small we can create components on this substrate. As the manufacturing process improves, semiconductor manufacturing companies are able to create CPUs that can cram more and more transistors into each square mm (or inch) of silicon die.
 
-[^1]: See https://www.washingtonpost.com/technology/2021/07/07/making-semiconductors-is-hard/ for a more comprehensive description of the process
+[^1]: See [Three months, 700 steps: Why it takes so long to produce a computer chip (WashPo)](https://www.washingtonpost.com/technology/2021/07/07/making-semiconductors-is-hard/) for a more comprehensive description of the process
 
 Besides being able to cram more transistors into the same space, it turns out that smaller components also use much less power! So we not only get performance gains, we get power efficiency gains as well—two birds with one stone.
 
