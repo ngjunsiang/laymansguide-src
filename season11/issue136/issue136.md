@@ -2,7 +2,7 @@
 
 In the last 4 issues, I walked through the general evolution of desktop computers. Let’s go more mobile, and look at laptops. How does something as big as a desktop shrink down to the size of a laptop? And what are the tradeoffs involved?
 
-I addressed the power part of the formula in [Issue 130](), on power limits; laptops are slimmer in part because part of them—the AC adapter—lies outside the system.
+I addressed the power part of the formula in [Issue 130](https://buttondown.email/laymansguide/archive/lmg-s10-issue-130-power-limits/), on power limits; laptops are slimmer in part because part of them—the AC adapter—lies outside the system.
 
 Let’s look at the rest of it.
 
@@ -13,7 +13,11 @@ Laptops use slimmer memory than desktops:
 ![Desktop memory vs Laptop memory](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue136/issue136_01.jpg)<br />
 <small>Desktop memory (DIMM) vs laptop memory (SODIMM)<br />Source: [Quora](https://www.quora.com/What-type-of-memory-module-is-used-in-a-desktop-and-laptop-computer)</small>
 
-As far as I know ... there aren’t significant differences to highlight (besides size). Unless you’re overclocking, just get the kind of memory your computer/laptop needs. These days, small-form-factor desktops use laptop memory (SODIMM) as well!
+On a desktop mainboard, desktop memory sticks out perpendicularly from the mainboard, all the better to cram memory sticks together and maximise the use of space.
+
+On a laptop mainboard, laptop memory sticks lie parallel to the mainboard, to reduce the mainboard height and allow a slim laptop profile.
+
+As far as I know ... there aren’t any other significant differences to highlight (besides size). Unless you’re overclocking, just get the kind of memory your computer/laptop needs. These days, small-form-factor desktops use laptop memory (SODIMM) as well!
 
 Laptops used slimmer hard drives compared to desktops as well:
 
