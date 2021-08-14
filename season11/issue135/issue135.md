@@ -15,9 +15,11 @@ You see, for circuit components, size doesn’t always benefit performance. A la
 
 ## Making a modern CPU
 
-Modern CPUs are manufactured through a process called **photolithography**—literally it means “etching with light” (Greek; photo- “light” + litho- “stone” + -graphie “to draw”). By layering chemicals over the silicon base, putting a mask over them, and exposing them to light, a series of chemical reactions are induced to create the circuit pattern on the CPU.
+Modern CPUs are manufactured through a process called **photolithography**—literally it means “etching with light” (Greek; _photo-_ “light” + _litho-_ “stone” + _-graphie_ “to draw”). By layering chemicals over the silicon base, putting a mask over them, and exposing them to light, a series of chemical reactions are induced to create the circuit pattern on the CPU.
 
-Multiple CPUs are created on a single die this way, then individually cut and processed. The precision and fineness of the etching laser determine how small we can create components on this substrate. As the manufacturing process improves, semiconductor manufacturing companies are able to create CPUs that can cram more and more transistors into each square mm (or inch) of silicon die.
+Multiple CPUs are created on a single die this way, then individually cut and processed, in multiple steps spanning several months[^1]. The precision and fineness of the etching laser determine how small we can create components on this substrate. As the manufacturing process improves, semiconductor manufacturing companies are able to create CPUs that can cram more and more transistors into each square mm (or inch) of silicon die.
+
+[^1]: See [Three months, 700 steps: Why it takes so long to produce a computer chip (WashPo)](https://www.washingtonpost.com/technology/2021/07/07/making-semiconductors-is-hard/) for a more comprehensive description of the process
 
 Besides being able to cram more transistors into the same space, it turns out that smaller components also use much less power! So we not only get performance gains, we get power efficiency gains as well—two birds with one stone.
 
@@ -26,11 +28,11 @@ Besides being able to cram more transistors into the same space, it turns out th
 
 ## Moving in
 
-Over multiple generations, the MCH and the CPU could be designed small enough that they could both reasonably fit into the same die. There are, of course, *implications*.
+Over multiple generations of process improvements, the MCH and the CPU could finally be made small enough that they could both reasonably fit into the same die. There are, of course, *implications*.
 
-While the CPU and MCH no longer need to communicate over wires, the CPU+MCH now needs wires to communicate with the computer memory, graphics processing unit (GPU), and PCH. Overall, it needs more pins than before.
+Previously, the CPU only needed pins to communicate with the MCH. Now, the combined chip needs more pins than before to communicate with the computer memory, graphics processing unit (GPU), and PCH.
 
-So that answers the first question of what the pins are for.
+So that answers the first question of what the additional pins are for.
 
 ## Working as one unit
 
