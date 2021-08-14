@@ -30,9 +30,9 @@ Besides being able to cram more transistors into the same space, it turns out th
 
 Over multiple generations of process improvements, the MCH and the CPU could finally be made small enough that they could both reasonably fit into the same die. There are, of course, *implications*.
 
-While the CPU and MCH no longer need to communicate with each other over wires, the CPU+MCH chip still needs wires to communicate with the computer memory, graphics processing unit (GPU), and PCH. Overall, it needs more pins than before.
+Previously, the CPU only needed pins to communicate with the MCH. Now, the combined chip needs more pins than before to communicate with the computer memory, graphics processing unit (GPU), and PCH.
 
-So that answers the first question of what the pins are for.
+So that answers the first question of what the additional pins are for.
 
 ## Working as one unit
 
