@@ -13,7 +13,7 @@ Rewind to 2008: one year after the first-generation iPhone was launched, the iPh
 ![iPhone 3G mainboard, with parts labelled](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue138/issue138_01.jpg)<br />
 <small>iPhone 3G mainboard, with parts labelled<br />There are lots of small, auxiliary processors around the CPU.<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPhone+3G+Teardown/600)</small>
 
-In spirit and form, the early smartphones were a lot like the early desktop mainboards ([Issue 132]()): lots of chips performing highly specific functions.
+In spirit and form, the early smartphones were a lot like the early desktop mainboards ([Issue 132](https://buttondown.email/laymansguide/archive/lmg-s11-issue-132-the-at-form-factor-pre-1995/)): lots of chips performing highly specific functions.
 
 After all, a smartphone has no need (or space) for a peripheral controller hub (PCH) ([Issue 134]()) when it does not have add-on peripherals, and no need for a memory controller hub (MCH) when it can put the memory directly on the same chip as the CPU.
 
@@ -29,9 +29,9 @@ This time, Apple had switched to an internal layout distinctly different from th
 What’s the difference between this and the 3G? Let’s have a look at the iPhone 4’s mainboard:
 
 ![iPhone 4 mainboard](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue138/issue138_01.png)<br />
-<small>iPhone 4 mainboard. I got lazy with the labelling because, well, there’s nothing to label!<br />The CPU is the huge chip labelled “A4”, and there’s memory and the 3G chip on the back.<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPhone+3G+Teardown/600)</small>
+<small>iPhone 4 mainboard. I got lazy with the labelling because, well, there’s nothing to label!<br />The CPU is the huge chip labelled “A4”, and there’s memory and the 3G chip on the back.<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPhone+4+Teardown/3130)</small>
 
-Similar to the transition from AT to ATX motherboards ([Issue 132]() and [134]()), the iPhone underwent a great miniaturisation—in a single generation!
+Similar to the transition from AT to ATX motherboards ([Issue 132](https://buttondown.email/laymansguide/archive/lmg-s11-issue-132-the-at-form-factor-pre-1995/) and [134]()), the iPhone underwent a great miniaturisation—in a single generation!
 
 ## System-on-Chip
 
@@ -55,18 +55,18 @@ This chip is responsible for:
 
 It is literally an entire system on a chip: a **system-on-chip** (SoC)!
 
-More educational perhaps would be to look at what’s *not* included in the SoC, particularly when we get the the iPhone 12’s SoC, called the A14.
+More and more functionality would gradually be moved into the SoC itself, with fewer auxiliary chips required: sensors, gyroscopes, image processors for the camera, etc. More educational perhaps would be to look at what’s *not* included in the SoC, particularly by the time we get to the the iPhone 12’s SoC, called the A14.
 
 Not on the A14 SoC:
 
-- solid state disk (in a single chip)
+- solid state disk (only part of it is in the SoC)
 - power management
 - 4G & 5G
 - audio
 
 The above functionality is highly specialised, especially in modern[^2] smartphones. It manages the remaining parts of the phone: camera & mic/speakers, wifi & bluetooth, and telecommunications (4G/5G). Telecommunications in particular require a lot of power and would have contributed to unnecessary heating in the small CPU package.
 
-[^2]: I know it’s strange to differentiate older vs newer smartphones when the technology is barely more than a decade old. But the evolution of smartphone designs over the course has been significant enough that yes, I am going to make this distinction :)
+[^2]: I know it’s strange to differentiate older vs newer smartphones when the technology is only 1.5 decades old. But the evolution of smartphone designs over the course has been significant enough that yes, I am going to make this distinction :)
 
 And this is how we shrink a laptop mainboard even further.
 
