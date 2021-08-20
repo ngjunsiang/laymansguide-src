@@ -17,7 +17,7 @@ The M1 not only performs better, it does so while passively cooled! From [Issue 
 It looks like the M1 has “swallowed” a number of chips! Here’s the 2020 Intel Macbook Air mainboard for comparison:
 
 ![2020 Intel Macbook Air mainboard, front](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue137/issue137_04.jpg)<br />
-<small>2020 Intel Macbook Air mainboard, front<br />The Intel SoC unfortunately sits under the huge heatsink, shown with its 4 securing screws<br />Not visible here are the memory and solid state disk, on separate chips<br />Source: [iFixit](https://www.ifixit.com/News/46884/m1-macbook-teardowns-something-old-something-new)</small>
+<small>2020 Intel Macbook Air mainboard, front<br />The Intel SoC unfortunately sits under the huge heatsink, shown with its 4 securing screws<br />Not visible here are the memory and solid state disk, on separate chips<br />Source: [iFixit Store](https://www.ifixit.com/Store/Mac/MacBook-Air-13-Inch-Early-2020-1-1-GHz-Core-i3-Logic-Board-with-Paired-Touch-ID-Sensor/IF188-152?o=1)</small>
 
 Compared to earlier Macbook Air mainboards, there are fewer chips in both the Intel and M1 Macbook Air, and the CPU is much larger. What does this mean?
 
