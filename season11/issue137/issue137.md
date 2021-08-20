@@ -11,10 +11,15 @@ Here’s the Macbook Air in 2020. There was one in early 2020 using an Intel Cor
 
 The M1 not only performs better, it does so while passively cooled! From [Issue 129](https://buttondown.email/laymansguide/archive/lmg-s10-issue-129-cooling/), this suggests the M1 Macbook Air also uses less power (8–12W) for its tasks.
 
-![M1 Macbook Air mainboard, front (left) vs back (right)](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue137/issue137_02.jpg)<br />
-<small>M1 Macbook Air mainboard, front and back<br />There are fewer big chips, but the single biggest chip there is *much* bigger, and Apple-branded<br />Source: [iFixit](https://www.ifixit.com/News/46884/m1-macbook-teardowns-something-old-something-new)</small>
+![2020 M1 Macbook Air mainboard, front (left) vs back (right)](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue137/issue137_02.jpg)<br />
+<small>2020 M1 Macbook Air mainboard, front and back<br />There are fewer big chips, but the single biggest chip there is *much* bigger, and Apple-branded<br />Memory is integrated into the SoC, but the solid state disk sits on a separate pair of chips<br />Source: [iFixit](https://www.ifixit.com/News/46884/m1-macbook-teardowns-something-old-something-new)</small>
 
-It looks like the M1 has “swallowed” a number of chips! There are fewer chips in the M1 Macbook Air, and the CPU is much larger. What does this mean?
+It looks like the M1 has “swallowed” a number of chips! Here’s the 2020 Intel Macbook Air mainboard for comparison:
+
+![2020 Intel Macbook Air mainboard, front](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue137/issue137_04.jpg)<br />
+<small>2020 Intel Macbook Air mainboard, front<br />The Intel SoC unfortunately sits under the huge heatsink, shown with its 4 securing screws<br />Not visible here are the memory and solid state disk, on separate chips<br />Source: [iFixit](https://www.ifixit.com/News/46884/m1-macbook-teardowns-something-old-something-new)</small>
+
+Compared to earlier Macbook Air mainboards, there are fewer chips in both the Intel and M1 Macbook Air, and the CPU is much larger. What does this mean?
 
 ## The Apple M1: evolved from a smartphone chip
 
