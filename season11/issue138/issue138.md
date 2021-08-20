@@ -28,7 +28,7 @@ This time, Apple had switched to an internal layout distinctly different from th
 
 What’s the difference between this and the 3G? Let’s have a look at the iPhone 4’s mainboard:
 
-![iPhone 4 mainboard](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue138/issue138_01.png)<br />
+![iPhone 4 mainboard](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue138/issue138_03.jpg)<br />
 <small>iPhone 4 mainboard. I got lazy with the labelling because, well, there’s nothing to label!<br />The CPU is the huge chip labelled “A4”, and there’s memory and the 3G chip on the back.<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPhone+4+Teardown/3130)</small>
 
 Similar to the transition from AT to ATX motherboards ([Issue 132](https://buttondown.email/laymansguide/archive/lmg-s11-issue-132-the-at-form-factor-pre-1995/) and [134]()), the iPhone underwent a great miniaturisation—in a single generation!
@@ -55,7 +55,7 @@ This chip is responsible for:
 
 It is literally an entire system on a chip: a **system-on-chip** (SoC)!
 
-More and more functionality would gradually be moved into the SoC itself, with fewer auxiliary chips required: sensors, gyroscopes, image processors for the camera, etc. More educational perhaps would be to look at what’s *not* included in the SoC, particularly by the time we get to the the iPhone 12’s SoC, called the A14.
+More and more functionality would gradually be migrated into the SoC itself, with fewer auxiliary chips required: sensors, gyroscopes, image processors for the camera, etc. More educational perhaps would be to look at what’s *not* included in the SoC, particularly by the time we get to the the iPhone 12’s SoC, called the A14.
 
 Not on the A14 SoC:
 
