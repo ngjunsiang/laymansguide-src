@@ -2,7 +2,7 @@
 
 Let’s rewind a bit further from last issue. That was in 2015.
 
-Circa 2009, changes were happening on the desktop motherboard, as the memory controller hub (MCH) came on-board the CPU to reduce latency when communicating with memory ([Issues 134]()–[135]()). But the memory chips themselves remained on the motherboard, and this was the case even in 2018, in Apple’s Macbook Air ([Issue 136]()).
+Circa 2009, changes were happening on the desktop motherboard, as the memory controller hub (MCH) came on-board the CPU to reduce latency when communicating with memory ([Issues 134](https://buttondown.email/laymansguide/archive/lmg-s11-issue-134-part-1-the-intel-core-i-series/)–[135]()). But the memory chips themselves remained on the motherboard, and this was the case even in 2018, in Apple’s Macbook Air ([Issue 136]()).
 
 ## Bringing memory on-board
 
