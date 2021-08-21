@@ -23,7 +23,7 @@ Compared to earlier Macbook Air mainboards, there are fewer chips in both the In
 
 ## The Apple M1: evolved from a smartphone chip
 
-To get into that story, I’ll have to go even more mobile, and look at smartphone CPUs. After all, the Apple M1 actually evolved from the Apple A-series CPUs for their iPhone and iPad. That starts next issue.
+To get into that story, I’ll have to go even more mobile, and look at smartphone CPUs. After all, the Apple M1 actually evolved from the Apple A-series SoCs for their iPhone and iPad. That starts next issue.
 
 ## What about other Intel Core laptops running Windows?
 
