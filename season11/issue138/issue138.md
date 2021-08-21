@@ -15,7 +15,7 @@ Rewind to 2008: one year after the first-generation iPhone was launched, the iPh
 
 In spirit and form, the early smartphones were a lot like the early desktop mainboards ([Issue 132](https://buttondown.email/laymansguide/archive/lmg-s11-issue-132-the-at-form-factor-pre-1995/)): lots of chips performing highly specific functions.
 
-After all, a smartphone has no need (or space) for a peripheral controller hub (PCH) ([Issue 134]()) when it does not have add-on peripherals, and no need for a memory controller hub (MCH) when it can put the memory directly on the same chip as the CPU.
+After all, a smartphone has no need (or space) for a peripheral controller hub (PCH) ([Issue 134](https://buttondown.email/laymansguide/archive/lmg-s11-issue-134-part-1-the-intel-core-i-series/)) when it does not have add-on peripherals, and no need for a memory controller hub (MCH) when it can put the memory directly on the same chip as the CPU.
 
 At this point, Apple was still using a CPU based on a design by ARM, and manufactured by Samsung. 2 years later, Apple had its own in-house processor: the Apple A4, their own design.
 
@@ -31,7 +31,7 @@ What’s the difference between this and the 3G? Let’s have a look at the iPho
 ![iPhone 4 mainboard](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue138/issue138_03.jpg)<br />
 <small>iPhone 4 mainboard. I got lazy with the labelling because, well, there’s nothing to label!<br />The CPU is the huge chip labelled “A4”, and there’s memory and the 3G chip on the back.<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPhone+4+Teardown/3130)</small>
 
-Similar to the transition from AT to ATX motherboards ([Issue 132](https://buttondown.email/laymansguide/archive/lmg-s11-issue-132-the-at-form-factor-pre-1995/) and [134]()), the iPhone underwent a great miniaturisation—in a single generation!
+Similar to the transition from AT to ATX motherboards ([Issue 132](https://buttondown.email/laymansguide/archive/lmg-s11-issue-132-the-at-form-factor-pre-1995/) and [134](https://buttondown.email/laymansguide/archive/lmg-s11-issue-134-part-1-the-intel-core-i-series/)), the iPhone underwent a great miniaturisation—in a single generation!
 
 ## System-on-Chip
 
