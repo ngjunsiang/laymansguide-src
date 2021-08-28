@@ -21,7 +21,7 @@ At this point, Apple was still using a CPU based on a design by ARM, and manufac
 
 ## What’s in a smartphone: 2010
 
-This time, Apple had switched to an internal layout distinctly different from the iPhone 3G, and the basic layout (mainboard beside battery) would become a pattern for subsequent iPhone generations.
+This time, Apple had switched to an internal layout distinctly different from the iPhone 3G, and the basic layout (mainboard beside battery) would become a pattern for subsequent iPhone generations: battery taking up almost half the space, charging and audio circuitry at the bottom near the charging port, camera and antennas near the top, and everything else beside the battery.
 
 ![iPhone 4 and iPhone 12](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue138/issue138_02.jpg)<br />
 <small>iPhone 4 on the left, iPhone 12 on the right<br />The basic layout of the iPhone has been preserved over a decade.<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPhone+4+Teardown/3130) and [iFixit](https://www.ifixit.com/Teardown/iPhone+12+and+12+Pro+Teardown/137669)</small>
@@ -35,7 +35,7 @@ Similar to the transition from AT to ATX motherboards ([Issue 132](https://butto
 
 ## System-on-Chip
 
-What happened to all those separate chips? They all got moved *onboard*, into the A4 chip, or other auxiliary chips. The great consolidating brought all their functionality under one roof.
+What happened to all those separate chips? Most of them got moved *onboard*, into the A4 chip, or other auxiliary chips. The great consolidating brought all their functionality under one roof.
 
 The A4 chip carries:
 

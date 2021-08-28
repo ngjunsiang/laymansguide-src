@@ -2,28 +2,37 @@
 
 Let’s get to it: Intel vs M1 Macbook Air!
 
-## The M1 Macbook Air: all aboard
+## The 2020 Macbook Air: passing the torch
 
-Here’s the Macbook Air in 2020. There was one in early 2020 using an Intel Core CPU, and one in late 2020  using the Apple M1 CPU.
+Here’s the Macbook Air in 2020. There was one in early 2020 using an Intel Core CPU, and one in late 2020 using the Apple M1 CPU.
 
 ![Macbook Air in early 2020 (left), vs late 2020 (right)](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue137/issue137_01.jpg)<br />
-<small>Macbook Air, early-2020 (Intel, left) vs late-2020 (M1, right)<br />The cooling fan is noticeably missing in the late-2020 model.<br />Source: [iFixit](https://www.ifixit.com/News/46884/m1-macbook-teardowns-something-old-something-new)</small>
+<small>Macbook Air, early-2020 (Intel, left) vs late-2020 (M1, right)<br /><br />Source: [iFixit](https://www.ifixit.com/News/46884/m1-macbook-teardowns-something-old-something-new)</small>
 
-The M1 not only performs better, it does so while passively cooled! From [Issue 129](https://buttondown.email/laymansguide/archive/lmg-s10-issue-129-cooling/), this suggests the M1 Macbook Air also uses less power (8–12W) for its tasks.
+They look almost identical, but some parts are noticeably different … can you spot the differences?
+
+1. The cooling fan (upper left) is there in the early 2020 (Intel) model, but gone in the late 2020 (M1) model.
+2. Besides the CPU (upper centre in both models, under a heatsink), the Intel model has a mysterious-looking chip (upper right, covered in black shrouding)
+
+You may have spotted other differences in the hardware, but since this issue is focused on the mainboard and CPU, let’s zoom in on those. Let’s have a closer look at their mainboards:
+
+![2020 Intel Macbook Air mainboard, front(left) vs back (right)](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue137/issue137_04.jpg)<br />
+<small>2020 Intel Macbook Air mainboard, front and back<br />The Intel CPU unfortunately sits under the huge heatsink, shown with its 4 securing screws<br />Memory and solid state disk are on separate chips (most likely on the back)<br />Source: [iFixit Store](https://www.ifixit.com/Store/Mac/MacBook-Air-13-Inch-Early-2020-1-1-GHz-Core-i3-Logic-Board-with-Paired-Touch-ID-Sensor/IF188-152?o=1)</small>
 
 ![2020 M1 Macbook Air mainboard, front (left) vs back (right)](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue137/issue137_02.jpg)<br />
-<small>2020 M1 Macbook Air mainboard, front and back<br />There are fewer big chips, but the single biggest chip there is *much* bigger, and Apple-branded<br />Memory is integrated into the SoC, but the solid state disk sits on a separate pair of chips<br />Source: [iFixit](https://www.ifixit.com/News/46884/m1-macbook-teardowns-something-old-something-new)</small>
+<small>2020 M1 Macbook Air mainboard, front and back<br />There are fewer big chips, but the single biggest chip there is *much* bigger, and Apple-branded<br />Memory is integrated into the CPU, but the solid state disk sits on a separate pair of chips<br />Source: [iFixit](https://www.ifixit.com/News/46884/m1-macbook-teardowns-something-old-something-new)</small>
 
-It looks like the M1 has “swallowed” a number of chips! Here’s the 2020 Intel Macbook Air mainboard for comparison:
+## The M1 Macbook Air: all aboard
 
-![2020 Intel Macbook Air mainboard, front](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue137/issue137_04.jpg)<br />
-<small>2020 Intel Macbook Air mainboard, front<br />The Intel SoC unfortunately sits under the huge heatsink, shown with its 4 securing screws<br />Not visible here are the memory and solid state disk, on separate chips<br />Source: [iFixit Store](https://www.ifixit.com/Store/Mac/MacBook-Air-13-Inch-Early-2020-1-1-GHz-Core-i3-Logic-Board-with-Paired-Touch-ID-Sensor/IF188-152?o=1)</small>
+Overall, it looks like the M1 has “swallowed” a number of chips. Compared to the 2020 Intel model, the M1 has brought on-board computer memory (the two black chips on the M1), and Apple’s T2 chip (the back shrouded chip on the 2020 Intel Macbook Air). these are major components for computer operation.
 
-Compared to earlier Macbook Air mainboards, there are fewer chips in both the Intel and M1 Macbook Air, and the CPU is much larger. What does this mean?
+So not only does the M1 incorporate more components, it does so while drawing less power—the lack of a cooling fan implies it is passively cooled. From [Issue 129](https://buttondown.email/laymansguide/archive/lmg-s10-issue-129-cooling/), this suggests the M1 Macbook Air also uses less power (8–12W) for its tasks. And reviews for the Macbook M1 Air suggest it is not being thermally throttled except under the heaviest of loads.
+
+How did Apple manage to design a processor like this?
 
 ## The Apple M1: evolved from a smartphone chip
 
-To get into that story, I’ll have to go even more mobile, and look at smartphone CPUs. After all, the Apple M1 actually evolved from the Apple A-series SoCs for their iPhone and iPad. That starts next issue.
+To get into that story, I’ll have to go even more mobile, and look at smartphone CPUs. After all, the Apple M1 actually evolved from the Apple A-series CPUs for their iPhone and iPad. That starts next issue.
 
 ## What about other Intel Core laptops running Windows?
 
