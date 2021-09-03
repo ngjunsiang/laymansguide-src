@@ -24,7 +24,7 @@ You may have spotted other differences in the hardware, but since this issue is 
 
 ## The M1 Macbook Air: all aboard
 
-Overall, it looks like the M1 has “swallowed” a number of chips. Compared to the 2020 Intel model, the M1 has brought on-board computer memory (the two black chips on the M1), and Apple’s T2 chip (the back shrouded chip on the 2020 Intel Macbook Air). these are major components for computer operation.
+Overall, it looks like the M1 has “swallowed” a number of chips. Compared to the 2020 Intel model, the M1 has brought on-board computer memory (the two black chips on the M1), and Apple’s T2 chip (the back shrouded chip on the 2020 Intel Macbook Air). These are major components for computer operation.
 
 So not only does the M1 incorporate more components, it does so while drawing less power—the lack of a cooling fan implies it is passively cooled. From [Issue 129](https://buttondown.email/laymansguide/archive/lmg-s10-issue-129-cooling/), this suggests the M1 Macbook Air also uses less power (8–12W) for its tasks. And reviews for the Macbook M1 Air suggest it is not being thermally throttled except under the heaviest of loads.
 

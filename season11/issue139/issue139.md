@@ -1,6 +1,6 @@
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A system-on-chip (SoC) combines the core functionality of a system—processing, graphics, memory, and control—into a single chip package.
 
-I am eager to get dig into the meat of the A14 and M1! But first I must set up a story.
+I am eager to dig into the meat of the A14 and M1! But first I must set up a story.
 
 ## The hUMA race
 
@@ -115,7 +115,7 @@ Think about how information would flow here:
 
 Are you seeing lots of wasted effort there? I bolded it in case you missed it. So much copying of information!
 
-The high-performance computer industry quickly realised that this would be much more efficient if the CPU and GPU could *share the same memory*.
+The high-performance computer industry quickly realised that it could be much more efficient if the CPU and GPU could *share the same memory*.
 
 The information flow in this hypothetical memory-sharing system would be simplified to this:
 

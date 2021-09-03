@@ -23,10 +23,10 @@ At this point, Apple was still using a CPU based on a design by ARM, and manufac
 
 This time, Apple had switched to an internal layout distinctly different from the iPhone 3G, and the basic layout (mainboard beside battery) would become a pattern for subsequent iPhone generations: battery taking up almost half the space, charging and audio circuitry at the bottom near the charging port, camera and antennas near the top, and everything else beside the battery.
 
-![iPhone 4 and iPhone 12](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue138/issue138_02.jpg)<br />
-<small>iPhone 4 on the left, iPhone 12 on the right<br />The basic layout of the iPhone has been preserved over a decade.<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPhone+4+Teardown/3130) and [iFixit](https://www.ifixit.com/Teardown/iPhone+12+and+12+Pro+Teardown/137669)</small>
+![iPhone 4 and iPhone 12 Pro](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue138/issue138_02.jpg)<br />
+<small>iPhone 4 on the left, iPhone 12 Pro on the right<br />The basic layout of the iPhone has been preserved over a decade.<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPhone+4+Teardown/3130) and [iFixit](https://www.ifixit.com/Teardown/iPhone+12+and+12+Pro+Teardown/137669)</small>
 
-What’s the difference between this and the 3G? Let’s have a look at the iPhone 4’s mainboard:
+What’s the difference between this layout and the 3G? Let’s have a look at the iPhone 4’s mainboard:
 
 ![iPhone 4 mainboard](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue138/issue138_03.jpg)<br />
 <small>iPhone 4 mainboard. I got lazy with the labelling because, well, there’s nothing to label!<br />The CPU is the huge chip labelled “A4”, and there’s memory and the 3G chip on the back.<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPhone+4+Teardown/3130)</small>
