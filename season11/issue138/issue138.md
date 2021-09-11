@@ -1,6 +1,6 @@
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The M1 goes one step further: not only does it make do with fewer chips, it does so with passive cooling.
 
-In [Issue 136](), I showed the miniaturisation of the Macbook mainboard through a series of pictures. While the laptop has remained the same size mostly (apart from getting slimmer), that is not the case with its components. The bigger components, like memory and storage, changed from being separate discrete parts to being another component soldered directly to the mainboard.
+In [Issue 136](https://buttondown.email/laymansguide/archive/lmg-s11-issue-136-the-mobile-workstation-laptops/), I showed the miniaturisation of the Macbook mainboard through a series of pictures. While the laptop has remained the same size mostly (apart from getting slimmer), that is not the case with its components. The bigger components, like memory and storage, changed from being separate discrete parts to being another component soldered directly to the mainboard.
 
 But that only gets us so far; even in the M1 Macbook Air, the mainboard is still almost the entire length of a phone. There’s got to be something else.
 
