@@ -14,7 +14,7 @@ In a nutshell, the problem the industry now faces is this:
 
 Remember this diagram from [Issue 134]([**Previously:**](https://buttondown.email/laymansguide/archive/) The M1 goes one step further: not only does it make do with fewer chips, it does so with passive cooling.
 
-In [Issue 136](), I showed the miniaturisation of the Macbook mainboard through a series of pictures. While the laptop has remained the same size mostly (apart from getting slimmer), that is not the case with its components. The bigger components, like memory and storage, changed from being separate discrete parts to being another component soldered directly to the mainboard.
+In [Issue 136](https://buttondown.email/laymansguide/archive/lmg-s11-issue-136-the-mobile-workstation-laptops/), I showed the miniaturisation of the Macbook mainboard through a series of pictures. While the laptop has remained the same size mostly (apart from getting slimmer), that is not the case with its components. The bigger components, like memory and storage, changed from being separate discrete parts to being another component soldered directly to the mainboard.
 
 But that only gets us so far; even in the M1 Macbook Air, the mainboard is still almost the entire length of a phone. There’s got to be something else.
 
@@ -131,7 +131,7 @@ The industry gave this dream a name. They called it [heterogeneous system archit
 ![Unified memory diagram from Nvidia](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue139/issue139_01.jpg)<br />
 <small>Nvidia’s heterogeneous unified memory architecture (HUMA) dream<br />Source: [WCCFtech](https://wccftech.com/intel-amd-nvidia-future-industry-hsa/2/)</small>
 
-It turns out that this is a pretty difficult task—consider the amount of bandwidth needed to support CPU *and* GPU access. Today no product from any company (besides Apple) fully implements this in its SoCs ([Issue 138]()) yet.
+It turns out that this is a pretty difficult task—consider the amount of bandwidth needed to support CPU *and* GPU access. Today no product from any company (besides Apple) fully implements this in its SoCs ([Issue 138](https://buttondown.email/laymansguide/archive/lmg-s11-issue-138-system-on-chip-soc/)) yet.
 
 **Issue summary:** Around 2015, the high-performance computer industry quickly realised that this would be much more efficient if the CPU and GPU could *share the same memory*.
 

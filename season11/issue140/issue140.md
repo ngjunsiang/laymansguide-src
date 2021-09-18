@@ -45,7 +45,7 @@ Apple is finally in the position of working towards shared memory with their Bio
 
 **Issue summary:** Shared memory is easier to implement when a company has control over the designs of both CPU and GPU.
 
-The story which begun in [Issue 138]() is coming to a close soon! Next issue, the curtain falls, the A14 and M1 are released, and Apple (probably) pulls the chip industry in a new direction again.
+The story which began in [Issue 138](https://buttondown.email/laymansguide/archive/lmg-s11-issue-138-system-on-chip-soc/) is coming to a close soon! Next issue, the curtain falls, the A14 and M1 are released, and Apple (probably) pulls the chip industry in a new direction again.
 
 ## What I’ll be covering next
 
