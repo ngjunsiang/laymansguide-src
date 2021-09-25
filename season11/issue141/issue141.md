@@ -2,11 +2,11 @@
 
 So, to recap:
 
-Most companies make either CPUs or GPUs, but seldom are well-positioned[^1] to be excellent in both.
+Most companies design either CPUs or GPUs, but seldom are well-positioned[^1] to be excellent in both.
 
 [^1]: Companies that achieve both CPU and GPU excellence generally have business incentives that align with that goal (as opposed to, say, making low-power or cheap processors)
 
-Among the companies that make both CPUs and GPUs, none of them[^2] make CPUs for both mobile (smartphones + tablets) as well as laptops (including low- to mid-range desktops).[^3]
+Among the companies that design both CPUs and GPUs, almost none of them[^2] make CPUs for both mobile (smartphones + tablets) as well as laptops (including low- to mid-range desktops).[^3]
 
 [^2]: Intel had a short-lived but ultimately doomed attempt at a smartphone chip (it was named Medfield).
 
@@ -18,15 +18,15 @@ Which leaves Apple in the (current) position of being the only chip company with
 
 It’s not that other companies have not attempted this.
 
-They have tried to scale down laptop chips to achieve smartphone-like power consumption, but found that laptop chips can’t power down the way smartphones can, and require more circuitry to achieve that.
+They have tried to scale down laptop chips to achieve smartphone-like power consumption, but found that laptop chips can’t power down the way smartphone chips can, and require more circuitry to achieve that.
 
-They have also tried to scale smartphone chips up to achieve laptop-like computational capacity, but found that simply pushing more electrical power doesn’t help all that much. Beyond a certain frequency limit, you simply need more bandwidth and more units, and designing a chip that easily accommodates more units like this is difficult.
+They have also tried to scale smartphone chips up to achieve laptop-like computational capacity, but found that simply pushing more electrical power doesn’t help all that much. Beyond a certain frequency limit, you simply need more bandwidth and more units, and designing a chip that easily accommodates more units like this just requires a very different design.
 
 It seems that designing a chip that can go from 4W all the way to 65W (and possibly higher) requires intentional engineering, not simply modifying an existing smartphone/laptop chip design or bolting on/removing features.
 
 ## The Apple A14 vs the Apple M1: similarities
 
-Apple has managed to do just this with the Apple A14 and M1. They are, at heart, the same chip design! (In processor parlance, we say they have the same chip architecture.)
+Apple has managed to do just this with the Apple A14 and M1. They are, at heart, the same chip design! (In processor parlance, we say they have the same **chip architecture**.)
 
 Let’s see:
 
@@ -36,9 +36,10 @@ Let’s see:
 ![Apple M1 hardware overview](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue141/issue141_02.jpg)<br />
 <small>The Apple M1’s key hardware.<br />Source: [TechBuzzPro](https://www.techbuzzpro.com/apple-introduces-m1-5nm-octa-core-soc-for-the-mac.html)</small>
 
-We can also compare these features via Wikipedia (No reason for the article editors to lie when the info is easily cross-referenced):
+We can also compare these features via Wikipedia:
 
 **Apple A14**
+
 - 6-core CPU (4 low-power[^4] cores “Icestorm”, **2** high-performance “Firestorm” cores)
 - **4**-core GPU
 - **8**-core NPU
@@ -47,6 +48,7 @@ We can also compare these features via Wikipedia (No reason for the article edit
 [^4]: These are the same ones labelled “high-efficiency”, which is marketing speak for “designed to use very little power”
 
 **Apple M1**
+
 - 8-core CPU (4 low-power[^4] cores “Icestorm”, **4** high-performance “Firestorm” cores)
 - **8**-core GPU
 - **16**-core NPU
@@ -54,7 +56,9 @@ We can also compare these features via Wikipedia (No reason for the article edit
 
 Notice that at heart, they are using the same building blocks: ~~low-power~~ high-efficiency cores, high-performance cores, GPU cores, and NPU cores (I suspect these are GPU-like cores but optimised for machine learning, i.e. they probably power Siri and other parts of the OS which lean on AI features); the A14 and M1 just has different numbers of them.
 
-So one really amazing thing about the Apple M1 is that it is actually a boosted Apple A14: almost double the hardware! It’s like when Magnemites join together and evolve into a Magneton …
+So one really amazing thing about the Apple M1 is that it is actually a boosted Apple A14: almost double the hardware!
+
+It’s like when Magnemites join together and evolve into a Magneton …
 
 ## The Apple A14 vs the Apple M1: differences
 
@@ -64,19 +68,19 @@ The major difference announced between the A14 and M1 launch is that the M1 has 
 
 ## Unified memory vs CPU–GPU transfers
 
-Back in [Issue 139](), I mentioned that unified memory needs really high bandwidth to support access by the SoC components.
+Back in [Issue 139](https://buttondown.email/laymansguide/archive/lmg-s11-issue-139-whats-before-this-line-is-mine/), I mentioned that unified memory needs really high bandwidth to support access by the SoC components.
 
-Today, laptop processors use an interface called PCIe to connect CPUs to GPUs. PCIe has a bandwidth of up to 16 GB/s [^5].
+Today, laptop processors use an interface called PCIe to connect CPUs to GPUs. PCIe has a bandwidth of up to 16 GB/s[^5].
 
 [^5]: Bandwidth of 16 GB/s is for PICe 3.0; PCIe 4.0 will support up to 32 GB/s, but graphics cards won’t use that much bandwidth to communicate with the CPU.
 
-The M1’s unified memory has a bandwidth of up to 58 GB/s reading from memory, and 36 GB/s writing to memory. Definitely an improvement.
+The M1’s unified memory has a bandwidth of up to *58 GB/s* reading from memory, and *36 GB/s* writing to memory. Definitely an improvement.
 
 ## Unified memory: what’s yours is also mine
 
 The 8GB/16GB of system memory is used by both CPU and GPU. It is not partitioned at boot; both the CPU and GPU (and other parts of the SoC, such as the NPU) have *full access to all system memory*.
 
-This greatly simplifies intra-chip communication, as all subchips in the SoC can request access to memory! The GPU no longer needs to keep its own (power-guzzling) memory. This reduces the motherboard space that is needed, lowers power consumption, and decreases latency for data transfer between CPU and GPU ([Issue 139]()): a triple-compounding win.
+This greatly simplifies intra-chip communication, as all subchips in the SoC can request access to memory! The GPU no longer needs to keep its own (power-guzzling) memory. This reduces the motherboard space that is needed, lowers power consumption, and decreases latency for data transfer between CPU and GPU ([Issue 139](https://buttondown.email/laymansguide/archive/lmg-s11-issue-139-whats-before-this-line-is-mine/)): a triple-compounding win.
 
 **Issue summary:** The Apple A14 and Apple M1 are essentially the same chip architecture: they use almost the same building blocks, just with different numbers of them. On top of that, the Apple M1 implements unified memory, allowing the CPU and GPU (and other SoC components) to share the same system memory, greatly facilitating intra-chip communication.
 
