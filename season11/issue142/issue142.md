@@ -52,7 +52,7 @@ And the M1, being living proof that unified memory is possible, would also likel
 
 **Issue summary:** Using the same hardware for both smartphones and laptops would make it much easier to write apps for both platforms. The closer they are in features, hardware, and software support, the easier things will be for developers.
 
-I was looking for a way to sneak in the XB1-and-PS4 story, and I think I found just the right place for it. It really does excite me to think that one day a developer could write software for a smartphone, and it would work on laptops with minimal modification, and vice-versa. And perhaps a decade from now, we’d be scratching our heads why we even had to choose between the two!
+I was looking for a way to sneak in the XB1-and-PS4 story, and I think I found just the right place for it. It really does excite me to think that one day a developer could write software for a smartphone, and it would work on laptops with minimal modification, and vice-versa. And perhaps a decade from now, we’d be scratching our heads wondering why we even had to choose between the two!
 
 ## What I’ll be covering next
 
