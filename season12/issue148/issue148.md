@@ -16,6 +16,8 @@ You still had to worry about OS issues though. If you need to have multiple piec
 
 This was the promise that virtualisation companies offered to businesses. You could manage your virtual machines remotely, choosing when to boot them up or shut them off, paying only for virtual hardware you requested, without affecting the virtual machines of other companies. Hosting companies could “collect rent” for multiple VMs running on a single computer.
 
+After all, as long as you have an interface to manage it, and you are able to set up your software on it, does it really matter whether it is a physical or virtual machine?
+
 **Issue summary:** Renting out virtual hardware instead of physical hardware meant that instead of having to move hardware around and manage it, you could send the *data* for running an OS to the hosting company and have them be responsible for hardware operations.
 
 ## What I’ll be covering next
