@@ -30,7 +30,7 @@ The word **containers** may seem like a misnomer, for what are effectively softw
 
 ## What I’ll be covering next
 
-**Next issue:** [LMG S12] Issue 150: History of commercial computing - rental
+**Next issue:** [LMG S12] Issue 150: System vs Process VMs
 
 Up to this point, we have been looking at two different kinds of virtualisation: system virtualisation (virtualising hardware), and containerisation (virtualising operating system environments).
 
