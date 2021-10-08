@@ -28,7 +28,7 @@ The work for this will have to be ongoing, of course, and likely started since 2
 
 ## What does this mean for Apple?
 
-They are now almost fully in control of their own hardware and software now. The main limitations where their control does not reach is their cloud computing (where iCloud happens), and the manufacturing (likely still TSMC in the neare future). Their concerns now will be much more international than before.
+They are now almost fully in control of their own hardware and software now. The main limitations where their control does not reach is their cloud computing (where iCloud happens), and the manufacturing (likely still TSMC in the near future). Their concerns now will be much more international than before.
 
 ## Should we expect to see unified memory on non-Apple chips?
 
@@ -47,12 +47,6 @@ What’s more exciting is when unified memory architectures can be miniaturised 
 ## Wrapping up
 
 This somehow ended up as a crash course in CPUs and GPUs, all in one season. I didn’t mean to carry out an industry analysis here, and this is definitely not a forecast to be relied on! It’s just a very interesting story to follow and I can’t help but think about what’s happening on multiple levels.
-
-## What I’ll be covering next
-
-**Next issue:** [LMG S12] Issue 144: Programs-in-a-vat
-
-How does a program on the computer know if it is in a simulation?
 
 **Sometime in the future:** What is:
 
