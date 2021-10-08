@@ -48,6 +48,12 @@ What’s more exciting is when unified memory architectures can be miniaturised 
 
 This somehow ended up as a crash course in CPUs and GPUs, all in one season. I didn’t mean to carry out an industry analysis here, and this is definitely not a forecast to be relied on! It’s just a very interesting story to follow and I can’t help but think about what’s happening on multiple levels.
 
+## What I’ll be covering next
+
+**Next issue:** [LMG S12] Issue 144: Programs-in-a-vat
+
+How does a program on the computer know if it is in a simulation?
+
 **Sometime in the future:** What is:
 
 - XSS? [Issue 8]
