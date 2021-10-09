@@ -1,6 +1,6 @@
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The Apple A14 and Apple M1 are essentially the same chip architecture: they use almost the same building blocks, just with different numbers of them. On top of that, the Apple M1 implements unified memory, allowing the CPU and GPU (and other SoC components) to share the same system memory, greatly facilitating intra-chip communication.
 
-So, before 2020: smartphones are smartphones, laptops are laptops. They use different types of CPUs with different architectures ([Issue 141]()) and even different instruction sets ([Issue 53](https://buttondown.email/laymansguide/archive/lmg-s5-issue-53-the-cpu-is-an-instruction-obeying/)). Never the twain shall meet.
+So, before 2020: smartphones are smartphones, laptops are laptops. They use different types of CPUs with different architectures ([Issue 141](https://buttondown.email/laymansguide/archive/lmg-s11-issue-141-the-apple-a14-and-m1/)) and even different instruction sets ([Issue 53](https://buttondown.email/laymansguide/archive/lmg-s5-issue-53-the-cpu-is-an-instruction-obeying/)). Never the twain shall meet.
 
 After 2020: It turns out that smartphone chips can be upgraded and used in laptops, while remaining essentially the same architecture? Its power consumption dial can be turned down to almost zero but also turned all the way up?
 
@@ -52,7 +52,7 @@ And the M1, being living proof that unified memory is possible, would also likel
 
 **Issue summary:** Using the same hardware for both smartphones and laptops would make it much easier to write apps for both platforms. The closer they are in features, hardware, and software support, the easier things will be for developers.
 
-I was looking for a way to sneak in the XB1-and-PS4 story, and I think I found just the right place for it. It really does excite me to think that one day a developer could write software for a smartphone, and it would work on laptops with minimal modification, and vice-versa. And perhaps a decade from now, we’d be scratching our heads wondering why we even had to choose between the two!
+I was looking for a way to sneak in the XB1-and-PS4 story, and I think I found just the right place for it. It really does excite me to think that one day a developer could write software for a smartphone, and it would work on laptops with minimal modification, and vice-versa. And perhaps a decade from now, we’d be scratching our heads why we even had to choose between the two!
 
 ## What I’ll be covering next
 
