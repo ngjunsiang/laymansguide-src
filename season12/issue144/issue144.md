@@ -24,7 +24,7 @@ How does such a thing happen?
 
 What enables an operating system to function, convinced it has full control of hardware? For that matter, how would it even know if the hardware ... is really hardware?
 
-... ☺
+... 👻
 
 **Sometime in the future:** What is:
 
