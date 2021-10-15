@@ -12,9 +12,7 @@ If I am going to help other companies run point-of-sale systems, one way to do i
 
 This is kind of wasteful; I am running multiple versions of the same OS to support as many copies of the point-of-sale system, even though they can all run on the same OS. I am just loathe to do so for security reasons.
 
-What if we could apply virtualisation one layer up: instead of just virtualising hardware, we *virtualise the OS*?
-
-What does this mean? When we virtualise the hardware, we provide virtual drivers that the OS can accept as valid hardware.
+What if we could apply virtualisation one layer up: instead of just virtualising hardware, we *virtualise the OS*? In other words, when we virtualise the hardware, we provide virtual drivers that the OS can accept as valid hardware.
 
 Programs don’t need hardware; they need OS libraries which provide common resources and services: network, storage, compute, memory, windowing/display. If we can provide *virtual libraries* which respond like the actual OS libraries would, the programs would be able to run as normal.
 
