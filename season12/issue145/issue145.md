@@ -14,7 +14,7 @@ And this is how we can open documents from a flash drive without even realising 
 
 The OS is just another special set of programs that mediate access to the hardware. Yet, it is easy to forget that even the OS’s many programs do not actually deal with the gnarly details of hardware, but with an *interface* to the hardware. This interface are the drivers ([Issue 120](https://buttondown.email/laymansguide/archive/lmg-s10-issue-120-drivers-the-glue-between/)) we keep hearing about, and which our OS keeps telling us could not be found or are outdated.
 
-As long as the “drivers” responds in the right way, the operating system continues to carry out its instructions as programmed.
+As long as the “drivers” respond in the right way, the operating system continues to carry out its instructions as programmed.
 
 How does one trick an operating system into coexisting with other operating systems on a single machine?
 

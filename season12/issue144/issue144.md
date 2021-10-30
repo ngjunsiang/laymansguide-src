@@ -10,9 +10,9 @@ Hold that thought, because this is the Layman’s Guide to Computing, not Philos
 
 ## VMware is founded
 
-But allow me to put a little dent in that reputation: the year is 1998, in Palo Alto, California. A company named VMware had just been founded. One year later, in 1999, they demoed and launched [VMware Workstation](https://www.virten.net/2015/12/vmware-workstation-from-1999-to-2015/), their first product. In that demo, engineers demonstrated how VMware Workstation could allow users to run MS-DOS, Linux, FreeBSD, and multiple versions of Windows—that’s multiple operating systems—off _a single machine_.
+But allow me to put a little dent in that reputation: the year is 1998, in Palo Alto, California. A company named VMware had just been founded. One year later, in 1999, they demoed and launched [VMware Workstation](https://www.virten.net/2015/12/vmware-workstation-from-1999-to-2015/), their first product. In that demo, engineers demonstrated how VMware Workstation could allow users to run MS-DOS, Linux, FreeBSD, and multiple versions of Windows—that’s multiple operating systems (OS)—off _a single machine_.
 
-This probably happened too late to influence the direction of The Matrix, but no doubt there was talk in the air of such a possibility in the years leading up to it. To be clear, this is not dual-booting, in which a user can choose through a boot menu (issue_link) which operating system to boot into ([Issue 112](https://buttondown.email/laymansguide/archive/lmg-s9-issue-112-bootstrapping-into-existence/)). We are talking about _multiple_ operating systems, running _simultaneously_, off _a single machine_.
+The release of VMware Workstation probably happened too late to influence the direction of The Matrix, but no doubt there was talk in the air of *virtualising OSes* in the years leading up to it. To be clear, this is not dual-booting, in which a user can choose, through a boot menu, which OS to boot into ([Issue 112](https://buttondown.email/laymansguide/archive/lmg-s9-issue-112-bootstrapping-into-existence/)). We are talking about _multiple_ OSes, running _simultaneously_, off _a single machine_.
 
 How does such a thing happen?
 
