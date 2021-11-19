@@ -20,14 +20,14 @@ The library features for lots of things — storage, searching through directori
 
 ## Abstracting away the details
 
-Can’t we program in a higher-level language, and use another program (the interpreter) to break it down to different types of operations on different operating systems? E.g. `python.exe` on Windows will try to make my Python code work in Windows by using Windows libraries, `python` on Linux will do so using Linux libraries, and `python` on MacOS will do so using macOS. Javascript, Ruby, Perl, VBScript, and other **interpreted programming languages** work this way too[^1].
+Can’t we program in a higher-level language, and use another program (the code interpreter) to break it down to different types of operations on different operating systems? E.g. `python.exe` on Windows will try to make my Python code work in Windows by using Windows libraries, `python` on Linux will do so using Linux libraries, and `python` on MacOS will do so using macOS libraries. Javascript, Ruby, Perl, VBScript, and other **interpreted programming languages** work this way too[^1].
 
 [^1]: As opposed to **compiled programming languages** ([Issue 54](https://buttondown.email/laymansguide/archive/lmg-s5-issue-54-compiling-programming-code-into/)), where code is compiled into CPU instructions for one hardware platform for one OS only.
 
-To a large extent, this is possible. But there remain some irreconciliable differences:
+To a large extent, this is possible. But there remain some irreconcilable differences:
 
 - if you need to use Python to run a command-line program, such as a shell script ([Issue 16](https://buttondown.email/laymansguide/archive/lmg-s2-issue-16-shell-scripts-and-automation/)), those will depend on terminal availability: not all terminals have cross-OS support!
-- If you need to specify a file location, Windows and Linux do not use the same path separators; Windows uses `\` to separate directory names, while Linux and MacOS uses `/`. This is often a source of bugs and headaches.
+- If you need to specify a file location, Windows and Linux do not use the same path separators (the character that separates folder names in a folder hierarchy); Windows uses `\` to separate directory names, while Linux and MacOS uses `/`. This is often a source of bugs and headaches.
 - Important advanced features, such as multiprocessing (on multiple CPU cores simultaneously), are [handled differently in different OSes](https://rhodesmill.org/brandon/2010/python-multiprocessing-linux-windows/) in ways that may be incompatible within the same program.
 
 ## Virtualising processes vs virtualising hardware
