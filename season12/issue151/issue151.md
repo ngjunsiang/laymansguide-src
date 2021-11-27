@@ -14,7 +14,7 @@ Up to this point I have given the impression that the Java VM is all that is nee
 
 The Java VM and these supporting libraries are installed in a software package called the Java Runtime Environment (JRE). If you hear the term “runtime environment”, this is what it refers to: the program plus the libraries it needs to run.
 
-If you want to write Java programs, you’ll need more than the JRE though. you will need supporting tools especially for debugging, and these are provided in the Java Development Kit (JDK). this is not only true for Java, but for many other languages as well; if you are getting into programming, and asked to pick a download, you usually want the one that says “development kit”.
+If you want to write Java programs, you’ll need more than the JRE though. you will need supporting tools especially for debugging, and these are provided in the Java Development Kit (JDK). This is not only true for Java, but for many other languages as well; if you are getting into programming, and asked to pick a download, you usually want the one that says “development kit”.
 
 # Tradeoffs in distribution
 
@@ -30,7 +30,7 @@ Java was originally created at Sun Microsystems in 1995, but was acquired by Ora
 
 ## Java and open-source
 
-If the only way to distribute programs with multiplatform support is to pay a licensing fee, Java would see much lower takeup, which would hurt long-term profits ... so a big portion of the Java core is open-sourced as [OpenJDK](https://openjdk.java.net/). This is free to use and extend, and many businesses have been successfully releasing software based on it. But it si going to be a lot more work carrying out testing and writing code for features which are not provided.
+If the only way to distribute programs with multiplatform support is to pay a licensing fee, Java would see much lower takeup, which would hurt long-term profits ... so a big portion of the Java core is open-sourced as [OpenJDK](https://openjdk.java.net/). This is free to use and extend, and many businesses have been successfully releasing software based on it. But it is going to be a lot more work carrying out testing and writing code for features which are not provided.
 
 On top of OpenJDK, Oracle JDK—Oracle’s commercial release of the JDK—adds some proprietary code, plus lots of enterprise support and testing. In general you’re going to have a much easier time writing your code with Oracle JDK instead of OpenJDK—that is how Oracle makes money!
 
@@ -42,18 +42,18 @@ It’s the best of both worlds.
 
 ## What I’ll be covering next
 
-**Next issue:** [LMG S12] Issue 152: Getting started with programming
+**Next issue:** \[LMG S12\] Issue 152: Getting started with programming
 
 Hold on, I thought—
 
 Nah, Layman’s Guide to Computing has not suddenly switched to being a Guide to Programming! But we are still on the topic of the cloud and the history of commercial computing. Where I last stopped, I was talking about how co-hosting transitioned to virtual-hardware VM rental to containerisation, before a short segue into process virtualisation and the Java VM (this issue).
 
-Before I continue further on this to explain how we got to the current state of the cloud, there’s one thing that the average layperson would not be familiar with, and which I need to talk about:
+Before I continue further in this vein to explain how we got to the current state of the cloud, there’s one thing that the average layperson would not be familiar with, and which I need to talk about:
 
 Why is it so difficult to *do* programming, even with experience? Yes, *do* programming, not merely learn it!
 
 **Sometime in the future:** What is:
 
-- XSS? [Issue 8]
-- ~~a good reason developers write code and give it away for free online? [Issue 21]~~
-- OpenType? And what are fonts anyway? [Issue 42]
+-   XSS? \[Issue 8\]
+-   a good reason developers write code and give it away for free online? \[Issue 21\]
+-   OpenType? And what are fonts anyway? \[Issue 42\]
