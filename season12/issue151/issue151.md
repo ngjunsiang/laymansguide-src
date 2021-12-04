@@ -46,9 +46,11 @@ It’s the best of both worlds.
 
 Hold on, I thought—
 
-Nah, Layman’s Guide to Computing has not suddenly switched to being a Guide to Programming! But we are still on the topic of the cloud and the history of commercial computing. Where I last stopped, I was talking about how co-hosting transitioned to virtual-hardware VM rental to containerisation, before a short segue into process virtualisation and the Java VM (this issue).
+Nah, Layman’s Guide to Computing has not suddenly switched to being a Guide to Programming! We are still on the topic of the cloud and the history of commercial computing. Where I last stopped, I was talking about how co-hosting started from virtual-hardware VM rental, and then added containerisation to its bag of tools. Then I segued into talking about process virtualisation and the Java VM (last issue & this issue).
 
-Before I continue further in this vein to explain how we got to the current state of the cloud, there’s one thing that the average layperson would not be familiar with, and which I need to talk about:
+A short note though: process virtualisation isn’t a co-hosting tool, but a programming tool. We use process virtualisation while writing programs, not while deploying programs to the cloud. And I do want to get back to talking about the cloud.
+
+But before I do that, there’s one thing that the average layperson would not be familiar with, and which I need to talk about:
 
 Why is it so difficult to *do* programming, even with experience? Yes, *do* programming, not merely learn it!
 
