@@ -14,21 +14,21 @@ You write more code. And one day … you’re done! The real pain has just begun
 
 ## Deploying code
 
-Thus far, you have been programming on your own laptop. But your laptop can’t handle a full webserver load once people start using your app, so you wisely decided to lease a virtual machine (VM: see [Issue 147](https://buttondown.email/laymansguide/archive/lmg-s12-issue-147-operating-systems-on-virtual/)) from a cloud provider instead. You boot up the VM, it goes through its bootup process ([Issue 112](https://buttondown.email/laymansguide/archive/lmg-s9-issue-112-bootstrapping-into-existence/)), and finally completes. You are greeted with a familiar command line, the caret position blinking cheerfully.
+Thus far, you have been programming on your own laptop. But your laptop can’t handle a full webserver load once people start using your app, so you wisely decided to lease a virtual machine (VM: see [Issue 147](https://buttondown.email/laymansguide/archive/lmg-s12-issue-147-operating-systems-on-virtual/)) from a cloud provider instead. You boot up the VM, it goes through its bootup process ([Issue 112](https://buttondown.email/laymansguide/archive/lmg-s9-issue-112-bootstrapping-into-existence/)), and finally completes. You are greeted with a familiar command line, the text cursor blinking cheerfully.
 
 How are you going to get your code on that machine?
 
 Maybe you set up a code repository ([Issue 19](https://buttondown.email/laymansguide/archive/lmg-s2-issue-19-version-control-and-git/)) on another server, and then download your code onto the VM with some commands.
 
-Maybe you decide to turn your app into a package instead: you add more files and some metadata to the app, write software instructions (more code!) for which files to copy where, and how to configure everything, and then pack it up. You install yet more software (called **build tools**) to help you automate this part. Then you set up another file server, upload the package onto it from your laptop, download it from the VM, and install it on the VM using the package manager.
+Maybe you decide to turn your app into a package instead: you write software instructions (more code!) to tell the **package manager** (mentioned earlier) how to install the package, and how to configure everything. You add some files with metadata, a file manifest containing all the files used by the package, and then pack it up. You install yet more software (called **build tools**) to help you automate this part. Then you set up another file server, upload the package onto it from your laptop, download it from the VM, and install it on the VM using the same **package manager** software.
 
 You test it, and after many hours of cursing, confused pacing and mumbling, and much hair-tearing, it finally works. Phew!
 
 ## Expanding the app
 
-Unfortunately, the tiny toy server that you used to test your web app doesn’t hold up to real-world loads. You’ll need to put the app behind a Real™ web server; as more and more users use it, you may even need to deploy your app to multiple servers to handle the load, all managed by a **load balancer**. The balancer receives the web requests ([Issue 9](https://buttondown.email/laymansguide/archive/lmg-issue-9-how-do-i-make-an-http-request/)), decides which of the multiple servers has the lowest load so far, and directs the request to it so it can serve a web response ([Issue 8](https://buttondown.email/laymansguide/archive/lmg-issue-8-http-error-codeshow-does-a-server-let/)).
+Unfortunately, the tiny toy server that you used to test your web app doesn’t hold up to real-world network loads. You’ll need to put the app behind a Real™ web server; as more and more users use it, you may even need to deploy your app to multiple servers to handle the load, all managed by a **load balancer**. The balancer receives the web requests ([Issue 9](https://buttondown.email/laymansguide/archive/lmg-issue-9-how-do-i-make-an-http-request/)), decides which of the multiple servers has the lowest load so far, and directs the request to it so it can serve a web response ([Issue 8](https://buttondown.email/laymansguide/archive/lmg-issue-8-http-error-codeshow-does-a-server-let/)).
 
-Does that mean you have to do the above all over again?!
+Deploying more servers … does that mean you have to do the above all over again?!
 
 **Issue summary:** Actually making a web application requires you to set up lots of supporting software and carry out lots of steps to create a suitable app environment.
 
