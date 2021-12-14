@@ -14,11 +14,13 @@ What you are seeking is a feature known as **emulation**, in which your operatin
 
 Depending on how different the two instruction sets are, the complexity of this task differs greatly. Not much point going into detail here, so instead I’ll briefly illustrate some instances of emulation in the wild.
 
+The two main instruction sets discussed here are x86-64 and ARM ([Issue 53](https://buttondown.email/laymansguide/archive/lmg-s5-issue-53-the-cpu-is-an-instruction-obeying/)).
+
 ## Windows-to-Windows emulation (WOW64)
 
-Do you remember the great 32-to-64-bit schism of the late 2000s? There was a period of time when people got confused whether a Windows program they had could run on a 32-bit x86 processor or a 64-bit x86-64 processor: programs compiled for the latter could not run on the former, but programs compiled for the former could run on the latter.
+Do you remember the great 32-to-64-bit schism of the late 2000s ([Issue 55](https://buttondown.email/laymansguide/archive/lmg-s5-issue-55-addressing-memory/))? There was a period of time when people got confused whether a Windows program they had could run on a 32-bit x86 processor or a 64-bit x86-64 processor: programs compiled for the latter could not run on the former, but programs compiled for the former could run on the latter.
 
-That was a lie. Programs compiled for Windows on x86 cannot run on x86-64, and vice-versa.
+That was a lie. Programs compiled for Windows on x86 cannot run *natively* on x86-64, and vice-versa. x86 and x86-64, while looking similar, are different instruction sets. x86 instructions have to be translated into x86-64 instructions to be able to run.
 
 What happened was Microsoft developed the WOW64 subsystem, an emulation layer that translated 32-bit x86 instructions into 64-bit x86-64 instructions. When users tried to run a 32-bit application, Windows plugged it in to WOW64, allowing it to run near-natively (this is usually indicated in the title bar as compatibility mode).
 
@@ -28,17 +30,17 @@ And so the 32-to-64-bit transition took place more smoothly than it would otherw
 
 In 2019, Microsoft released the Surface Pro X, its second(?) ARM-powered laptop. That’s right, it’s Windows not running on an Intel chip. Microsoft does actually have a version of Windows, called Windows ARM, which runs on ARM chips. But what about all the programs you know and love?
 
-WOW64 to the rescue again! This emulation layer *also* translates 32-bit x86 instructions to 64-bit ARM instructions, allowing them to run on Windows ARM. 64-bit ARM instructions are still a work in progress.
+WOW64 to the rescue again! This emulation layer *also* translates 64-bit x86-64 instructions to 64-bit ARM instructions, allowing them to run on Windows ARM (with a performance penalty due to the translation required).
 
 ## Game console emulation
 
-If you find any “reborn” retro gaming products floating around, these are guaranteed to be emulators in disguise, given that the original hardware that the consoles used are no longer in production. (If you don’t, you can also just google “console emulation” to find a whole collection of them.)
+If you find any “reborn” retro gaming products floating around, these are guaranteed to be emulators in disguise: the original hardware that the consoles used are no longer in production. (If you don’t find any, you can also just google “console emulation” to find a whole collection of them.)
 
 These emulators are usually hobby projects by skilled amateurs, who attempt to reverse-engineer the workings of the original hardware. They then write programs to *emulate* these processors on modern hardware, allowing you to “boot” a digital copy of the games that worked on those platforms.
 
 ## Apple Rosetta
 
-The Apple M1 is an ARM processor that executes 64-bit ARM instructions. MacOS programs that were compiled for Intel 64-bit x86-64 processors go through the Apple Rosetta 2 emulation layer to run on the M1.
+The Apple M1 is an ARM processor that executes 64-bit ARM instructions. MacOS programs compiled for Intel 64-bit x86-64 processors must go through the Apple Rosetta 2 emulation layer to run on the M1.
 
 **Issue summary:** Programs that were not compiled for the instruction set of the host OS have to go through an emulation layer program. This program translates the instructions of that program into compatible instructions that its own processor can execute.
 
