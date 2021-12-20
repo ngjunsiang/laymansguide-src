@@ -12,7 +12,7 @@ What you are seeking is a feature known as **emulation**, in which your operatin
 2. transparently interprets its machine code into its instruction set’s machine code (through a program called an **emulation layer**),
 3. executes the interpreted version, producing its intended effects, and returning any intended output back to the application.
 
-Depending on how different the two instruction sets are, the complexity of this task differs greatly. Not much point going into detail here, so instead I’ll briefly illustrate some instances of emulation in the wild.
+Depending on how different the two instruction sets are, the complexity of this task differs greatly, so there is not much point going into detail here. Instead I’ll briefly illustrate some instances of emulation in the wild.
 
 The two main instruction sets discussed here are x86-64 and ARM ([Issue 53](https://buttondown.email/laymansguide/archive/lmg-s5-issue-53-the-cpu-is-an-instruction-obeying/)).
 
