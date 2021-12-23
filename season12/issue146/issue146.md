@@ -39,7 +39,7 @@ A whole set of drivers and interfaces which the OS uses to carry out its work.
 
 Many of these were initialised during bootup ([Issue 112](https://buttondown.email/laymansguide/archive/lmg-s9-issue-112-bootstrapping-into-existence/)), when the OS kernel (the core of the OS) enumerates the available hardware by sending out signals and seeing what hardware responds.
 
-So a bunch of engineers at VMware thought: what if we ... made drivers to present virtual hardware emulating the CPU, memory, storage devices, ... and even the chipset? What if we then we booted the BIOS (the bootup program loaded on a computer’s mainboard; see Issue 112), got the virtual hardware to respond when it enumerates hardware, and then basically simulated all the signals that hardware would actually send?
+So a bunch of engineers at VMware thought: what if we ... made drivers to present virtual hardware emulating the CPU, memory, storage devices, ... and even the chipset? What if we then we booted the BIOS (the bootup program loaded on a computer’s mainboard; see [Issue 112](https://buttondown.email/laymansguide/archive/lmg-s9-issue-112-bootstrapping-into-existence/)), got the virtual hardware to respond when the BIOS enumerates hardware, and then basically simulated all the signals that hardware would actually send?
 
 We end up with a virtual machine—one that you can actually install an OS on!
 
