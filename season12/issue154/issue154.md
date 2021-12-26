@@ -14,7 +14,7 @@ What you are seeking is a feature known as **emulation**, in which your operatin
 
 Depending on how different the two instruction sets are, the complexity of this task differs greatly. Not much point going into detail here in a layman’s newsletter, so instead I’ll briefly illustrate some instances of emulation in the wild.
 
-The two main instruction sets discussed here are x86 (32-bit) x86-64 (64-bit) and ARM[^1] ([Issue 53](https://buttondown.email/laymansguide/archive/lmg-s5-issue-53-the-cpu-is-an-instruction-obeying/)).
+The three main instruction sets discussed here are x86 (32-bit), x86-64 (64-bit), and ARM[^1] ([Issue 53](https://buttondown.email/laymansguide/archive/lmg-s5-issue-53-the-cpu-is-an-instruction-obeying/)).
 
 [^1]: ARM actually has a 32-bit instruction set—AArch32 and a 64-bit instruction set—AArch64, which are incompatible. But since Apple switched to AArch64 starting from the iPhone 5S (2013), other mobile device manufacturers have followed suit, and AArch64 is now the main instruction set used on mobile. In this issue, I use ARM to refer to AArch64.
 
