@@ -42,7 +42,7 @@ It may be helpful to think of a compiler as carrying out AOT translation, and an
 
 **Next issue:** [LMG S13] Issue 157: NTP and time-syncing
 
-In the season finale, I’ll wrap up with a mishmash of things that are *not* the Internet, but very much a part of the Internet and our lives. First up: how do our phones always know the *actual* time?
+In the season finale, I’ll wrap up with a mishmash of things that are *not* the Internet per-se, but very much a part of the Internet and our lives. First up: how do our phones always know the *actual* time?
 
 **Sometime in the future:** What is:
 
