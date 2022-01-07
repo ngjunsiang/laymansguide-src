@@ -30,7 +30,7 @@ Back in [Issue 54](https://buttondown.email/laymansguide/archive/lmg-s5-issue-54
 
 Here is where I can draw the distinction more clearly.
 
-A **compiler** *compiles* a programming language into another language; usually this means translating a programming language into machine instructions, or virtual machine (VM) bytecode ([Issue 150]()). But it is also not unheard of for compilers to translate one programming language into another, e.g. translating to Javascript for use in a webpage.
+A **compiler** *compiles* a programming language into another language; usually this means translating a programming language into machine instructions, or virtual machine (VM) bytecode ([Issue 150](https://buttondown.email/laymansguide/archive/lmg-s12-issue-150-system-vms-vs-process-vms/)). But it is also not unheard of for compilers to translate one programming language into another, e.g. translating to Javascript for use in a webpage.
 
 An **interpreter** *interprets* a programming language, and executes it to bring about the intended effect (creating/changing/deleting a file, producing a sound, displaying an image, …).
 
