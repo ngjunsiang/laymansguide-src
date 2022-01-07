@@ -12,7 +12,7 @@ Today, [timezone information](https://en.wikipedia.org/wiki/Tz_database) and oth
 
 What about *syncing* time? Intuitively this process involves communication *between* computers, and anytime computers need to communicate, you can be sure a protocol is involved. We have seen a few protocols mentioned so far:
 
-- HTTP, the Hyptertext Transfer Protocol, for sending web documents (aka webpages) and requests
+- HTTP, the Hypertext Transfer Protocol, for sending web documents (aka webpages) and requests
 - DNS, the Domain Name Service protocol, to translate domain names (like google.com) to IP addresses (like 142.250.64.110)
 - DHCP, the Dynamic Host Configuration Protocol, used by routers to assign IP addresses to its client devices
 - USB, the Universal Serial Bus set of protocols, used for data transfer between a host computer and another device
