@@ -6,7 +6,7 @@ In [Issue 157](), I described how time is synchronised from time source to serve
 
 What about content?
 
-## What do you mean, what about content?
+## The difficulties of content
 
 You make a website, type in the headers and body text, upload the images and videos … and it just works right?
 
@@ -26,7 +26,7 @@ Your hosting provider is going to be paying lots of egress fees to transfer your
 
 If the client is geographically far away from the server, possibly even on the other side of the world, the data is going to go through a lot of hops from server to server. And if any of the servers along the way drop the packet, it is going to need to be resent.
 
-## Improving distribution
+## Improving content distribution
 
 So how do we lighten the server load on the hosting company’s servers, reduce the amount of data to transfer from that server, and improve latency for the clients?
 
@@ -38,15 +38,17 @@ The main document data is still served from the hosting provider, so that any ch
 
 ## A content distribution network (CDN)
 
-These distribution servers, along with their supporting infrastructure, are collectively known as a **content distribution network** (CDN).
+These distribution servers, along with their supporting infrastructure, are collectively known as a **content distribution network** (CDN). Sometimes, when you are grabbing the URL of an image, you might see “cdn” in the URL domain—now you know what it means!
 
-**Issue summary:**
+**Issue summary:** A content distribution system comprises multiple servers around the world that are able to quickly distribute static content (typically images and video) to viewers that request it. This avoids overloading the hosting server, which would otherwise have to serve data over the network, possibly through many intermediary hops.
 
 ## What I’ll be covering next
 
-**Next issue:**
+**Next issue:** [LMG S13] Issue 161: Security and XSS
 
+At this point, note that the loading of a webpage is getting more and more complex. No longer can we assume that the web document itself, its images, videos, and other content are all being loaded from the same server: static content might be coming from a CDN, and other content (e.g. ads) might be loaded from elsewhere.
 
+Let’s talk about this from a security standpoint next issue.
 
 **Sometime in the future:** What is:
 
