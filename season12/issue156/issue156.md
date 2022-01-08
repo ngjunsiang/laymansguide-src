@@ -4,21 +4,23 @@ So, just-in-time (JIT) compilation is really cool and mostly works. Feed in enou
 
 But sometimes it doesn’t go smoothly. The program hits a code branch, new instructions have to be unpredictably injected. The emulation layer halts temporarily. The program stutters.
 
-We can’t really avoid that, not without rewriting the program anyway. But we can at least minimise the overhead involved in translation.
+We can’t really avoid that, not without rewriting the program anyway. But we can at least decide *when* to carry out the translation.
 
 ## Ahead-of-time translation
 
-What if we translated whatever we could ahead of time, and stored the *native* instructions? Then whenever we need that chunk, instead of translating the original program chunk, we just load the already-translated instructions?
+What if we translated whatever we could ahead of time, and stored the *native* instructions? Then, whenever we need that chunk, instead of translating the original program chunk, we just load the already-translated instructions?
 
 This is called ahead-of-time (AOT) translation, and is what Apple Rosetta 2 does with MacOS programs compiled for Intel x86-64. While installing those applications, it also carries out translation into native ARM instructions that the M1 later uses for execution.
 
 ## Android AOT translation
 
-The Java virtual machine (VM), also called the Java Runtime ([Issue 151]()), is the interpreter that carries out the Java bytecode that a Java program comprises.
+The Java virtual machine (VM), also called the Java Runtime ([Issue 151](https://buttondown.email/laymansguide/archive/lmg-s12-issue-151-the-java-vm/)), is the interpreter that carries out the Java bytecode that a Java program comprises.
 
-Android apps, themselves Java programs, are run not by the Java Runtime, but by the Android Runtime.
+Android apps, though themselves Java programs, are run not by the Java Runtime, but by the Android Runtime[^1].
 
-Whenever your Android phone finishes installing an Android update, there is always a significant block of time that it takes up “optimising” your apps. What it is doing is actually AOT translation, of the app bytecode into ARM instructions.
+[^1]: Recall from [Issue 151](https://buttondown.email/laymansguide/archive/lmg-s12-issue-151-the-java-vm/) that one needs a distribution license to distribute the Java runtime environment (JRE); Google would have to pay hefty licensing fees to Oracle to bundle the JRE with each copy of Android. Instead, they decided to write their own compatible runtime: the Android Runtime. Is this legal? They already fought that battle in court ([Google LLC v. Oracle America, Inc](https://en.wikipedia.org/wiki/Google_LLC_v._Oracle_America,_Inc.)), and it seems the answer is “yes” (with a heap of caveats).
+
+Whenever your Android phone finishes installing an Android update, there is always a significant block of time that it takes up “optimising” your apps. What it is doing is actually AOT translation, of the app’s Java bytecode into ARM instructions.
 
 ## Compilers vs interpreters
 
@@ -28,7 +30,7 @@ Back in [Issue 54](https://buttondown.email/laymansguide/archive/lmg-s5-issue-54
 
 Here is where I can draw the distinction more clearly.
 
-A **compiler** *compiles* a programming language into another language; usually this means translating a programming language into machine instructions, or virtual machine (VM) bytecode ([Issue 150]()). But it is also not unheard of for compilers to translate one programming language into another, e.g. translating to Javascript for use in a webpage.
+A **compiler** *compiles* a programming language into another language; usually this means translating a programming language into machine instructions, or virtual machine (VM) bytecode ([Issue 150](https://buttondown.email/laymansguide/archive/lmg-s12-issue-150-system-vms-vs-process-vms/)). But it is also not unheard of for compilers to translate one programming language into another, e.g. translating to Javascript for use in a webpage.
 
 An **interpreter** *interprets* a programming language, and executes it to bring about the intended effect (creating/changing/deleting a file, producing a sound, displaying an image, …).
 
@@ -40,7 +42,7 @@ It may be helpful to think of a compiler as carrying out AOT translation, and an
 
 **Next issue:** [LMG S13] Issue 157: NTP and time-syncing
 
-In the season finale, I’ll wrap up with a mishmash of things that are *not* the Internet, but very much a part of the Internet and our lives. First up: how do our phones always know the *actual* time?
+In the season finale, I’ll wrap up with a mishmash of things that are *not* the Internet per-se, but very much a part of the Internet and our lives. First up: how do our phones always know the *actual* time?
 
 **Sometime in the future:** What is:
 
