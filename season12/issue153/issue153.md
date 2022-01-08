@@ -59,7 +59,7 @@ I hope the gist of what the cloud does is at least clearer!
 
 **Next issue:** [LMG S12] Issue 154: Emulation
 
-I am done with virtualisation and the cloud at this point. You’ve learned about hardware virtualisation (through drivers), system vritualisation (through system VMs), process virtualisation (through process VMs), and service virtualisation (through APIs) so far this season.
+I am done with virtualisation and the cloud at this point. You’ve learned about hardware virtualisation (through drivers), system virtualisation (through system VMs), process virtualisation (through process VMs), and service virtualisation (through APIs) so far this season.
 
 I’m going to use the last three issues to talk about a related and current thing: instruction translation and emulation. Let’s start with a question: How is the Apple M1, an ARM chip, able to run MacOS programs compiled for the Intel x86-64 chips? Aren’t they two very different instruction sets ([Issue 53](https://buttondown.email/laymansguide/archive/lmg-s5-issue-53-the-cpu-is-an-instruction-obeying/))?
 
