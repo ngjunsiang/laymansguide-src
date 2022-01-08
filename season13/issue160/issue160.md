@@ -1,44 +1,52 @@
-[**Previously:**](https://buttondown.email/laymansguide/archive/) To get your location using GPS, your phone requests information from three overhead GPS satellites: their location, and the distance between them and your phone. With this information, your phone can calculate its location.
+[**Previously:**](https://buttondown.email/laymansguide/archive/) Instead of GPS satellites, smartphones can also use wifi points and cell towers to determine their position (if enabled in the OS).
 
-Okay, so what happens when you are in a tunnel or building and can’t get GPS? How are you still able to use Google Maps to navigate that new sprawl of a mall?
+All businessmen know that distribution is everything. How good your product is, is secondary to how you get your product to the customer. This act of getting things to your customer—it’s called distribution, and entire businesses have been built around excellent distribution.
 
-## Wifi Positioning System (WPS)
+In [Issue 157](), I described how time is synchronised from time source to server and on to other servers, down the strata of the hierarchy tree of time servers. whereas GPS/wifi location ([Issue 158]()) has a much shallower distribution system: everybody gets their location directly from a GPS satellite if there’s nothing else available, otherwise they get it from the nearest wifi point or cell tower.
 
-The principles of triangulation still work within a building, thank math 🙏 but now we need other landmarks to replace GPS satellites.
+What about content?
 
-What is something with a known (and ideally fixed) location, is electrically powered to receive and respond to signals, and there are enough of them to provide a sufficient number of landmarks for triangulation? If you are in a building with wifi, the wifi access points scattered throughout the building can probably provide this.
+## What do you mean, what about content?
 
-No protocol is involved in [wifi positioning](https://en.wikipedia.org/wiki/Wi-Fi_positioning_system), largely because most routers do not carry a precise hardware clock and do not have any way to know their location precisely, and therefore cannot communicate this information meaningfully. Instead, wifi positioning is a collection of techniques for *guessing* your location. Your smartphone uses these techniques (usually through its operating system) in conjunction with available wifi networks around you to determine its own location.
+You make a website, type in the headers and body text, upload the images and videos … and it just works right?
 
-## Wifi positioning techniques
+Let’s think through the **distribution** of that content. Text is generally small in size and easy to pass around, even through multiple hops ([Issue 36](https://buttondown.email/laymansguide/archive/lmg-s3-issue-36-latency/)) from server to client.
 
-One way to figure out your location to proximal wifi points is to use the signal strength as a weak analogue for your distance from them. You can do a very rough position estimate with this.
+### Server load
 
-Another common technique is to look up the hardware address, or even IP address of the wifi point you are connected to, and just use it directly (with the assumption that wifi signals get too weak outside of a 10 m radius, so you have your location accurate to within ±10 m).
+What about the heavy stuff, like hi-res images and videos? Thousands or millions of clients all requesting the same large video file from your hosting server. That server is going to be spending many CPU cycles ([Issue 58](https://buttondown.email/laymansguide/archive/lmg-s5-issue-58-cpu-optimisation-part-1-out-of/)) receiving requests, retrieving the data, splitting and encapsulating it into data packets to be sent out. All that processing adds to the server load. If there are too many clients waiting for the same data ... they gonna wait. And that adds to latency ([Issue 36](https://buttondown.email/laymansguide/archive/lmg-s3-issue-36-latency/)); those viewers are going to be seeing loading spinners for a while.
 
-## Wifi location databases
+Some of that processing can be mitigated with techniques such as caching ([Issue 39](https://buttondown.email/laymansguide/archive/lmg-s3-issue-39-caches-and-caching/)), but not enough; you will eventually need to add more servers.
 
-One way to keep track of wifi access points and their locations is through a global, public database. [A number of these](https://en.wikipedia.org/wiki/Wi-Fi_positioning_system#Public_Wi-Fi_location_databases) are available, such as the [Mozilla Location Service](https://location.services.mozilla.com/).
+### Bandwidth and transfer fees
 
-## Cell tower triangulation
+Your hosting provider is going to be paying lots of egress fees to transfer your data out of their servers (imagine sending the same 4GB video to a few thousand Youtube viewers), and they’ll likely pass on the fees to you as well.
 
-What happens when you are outdoors, far from any wifi point? As long as you have mobile data enabled and are not in airplane mode, you are still going to be getting your cell signal from a cell tower ... which also meet the three basic criteria for device-based triangulation 😉
+### Latency again
 
-Your smartphone can thus triangulate its location from cell towers that it is able to reach. Again, there is no protocol for this, since your smartphone does not communicate with the towers for the express purpose of obtaining location; it is a set of similar techniques, often implemented in the operating system.
+If the client is geographically far away from the server, possibly even on the other side of the world, the data is going to go through a lot of hops from server to server. And if any of the servers along the way drop the packet, it is going to need to be resent.
 
-## Power savings
+## Improving distribution
 
-Because wifi points and cell towers are much nearer to your smartphone than GPS satellites are, much less power is needed for transmitting to them. For this reason, smartphone OSes often ask you to allow the use of wifi for determining position even if you have decided to switch wifi off.
+So how do we lighten the server load on the hosting company’s servers, reduce the amount of data to transfer from that server, and improve latency for the clients?
 
-**Issue summary:** Instead of GPS satellites, smartphones can also use wifi points and cell towers to determine their position (if enabled in the OS).
+You place distribution servers as close as possible to the clients, wherever they may be. This usually means you have your servers globally distributed, with regional clusters.
+
+You place the most often requested files from that region in its distribution server, so that it can serve those files without the request hitting the hosting server. Because the distribution server is so near the client, the data goes through fewer hops to get to the client.
+
+The main document data is still served from the hosting provider, so that any changes you make to the page get served to clients almost immediately. Otherwise every little change you make has to be reflected in every distribution server that has a copy of that data. For this reason, distribution servers are typically used for **static data**: data that doesn’t change frequently, or at all—images and videos especially.
+
+## A content distribution network (CDN)
+
+These distribution servers, along with their supporting infrastructure, are collectively known as a **content distribution network** (CDN).
+
+**Issue summary:**
 
 ## What I’ll be covering next
 
-**Next issue:** [LMG S13] Issue 160: Content distribution
+**Next issue:**
 
-Coincidentally, starting with time turned out to be a good idea: time information is sort of like content. It has an origin, and it gets distributed to “consumers” who want that information. As with all distribution systems, you have cascades of product that flow outward from this origin.
 
-We have covered time and space (I mean, location). Let’s move on to data: how does data get around the world from a few central sources?
 
 **Sometime in the future:** What is:
 
