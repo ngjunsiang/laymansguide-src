@@ -46,7 +46,7 @@ These distribution servers, along with their supporting infrastructure, are coll
 
 **Next issue:** [LMG S13] Issue 161: Security and XSS
 
-At this point, note that the loading of a webpage is getting more and more complex. No longer can we assume that the web document itself, its images, videos, and other content are all being loaded from the same server: static content might be coming from a CDN, and other content (e.g. ads) might be loaded from elsewhere.
+With this piece of info, our mental picture of the loading of a webpage is getting more and more complex. No longer can we assume that the web document itself, its images, videos, and other content are all being loaded from the same server: static content might be coming from a CDN, and other content (e.g. ads) might be loaded from elsewhere.
 
 Let’s talk about this from a security standpoint next issue.
 
