@@ -44,7 +44,7 @@ The triangulation calculation here is rather more complicated, given that the sa
 
 Receiving radio signals all the time requires the receiving unit to be on all the time; if you use GPS heavily you will find your battery draining quickly!
 
-The reason our smartphones can maintain such good battery life is that they *don’t* use GPS most of the time. After all, it is not possible to get GPS in a lot of places: in basements, tunnels, anywhere you can’t get a solid signal from three overhead satellites. There are less energy-costly ways to get your location these days, especially if high precision isn’t necessary.
+The reason our smartphones can maintain such good battery life is that they *don’t* use GPS most of the time. After all, it is not possible to get GPS in a lot of places: in basements, tunnels, anywhere you can’t get a solid signal from four overhead satellites. There are less energy-costly ways to get your location these days, especially if high precision isn’t necessary.
 
 Next issue, let’s look at how wifi and cell towers come in!
 
