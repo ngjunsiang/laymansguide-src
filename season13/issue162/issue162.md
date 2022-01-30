@@ -62,9 +62,11 @@ This difference in representation vs display, fonts-as-mathematical-shapes vs fo
 
 ## What I’ll be covering next
 
-**Next issue:** [LMG S13] Issue 163: System & software updates
+**Next issue:** [LMG S13] Issue 163: System & software ecosystems
 
 With this diversion over, let’s return to talking about distribution. Content distribution, code distribution, and next issue I’ll move on to software distribution!
+
+With this I have also cleared my backlog of questions, and will be closing the below section as well.
 
 **Sometime in the future:** What is:
 
