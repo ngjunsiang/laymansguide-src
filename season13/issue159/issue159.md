@@ -26,10 +26,6 @@ What happens when you are outdoors, far from any wifi point? As long as you have
 
 Your smartphone can thus triangulate its location from cell towers that it is able to reach. Again, there is no protocol for this, since your smartphone does not communicate with the towers for the express purpose of obtaining location; it is a set of similar techniques, often implemented in the operating system.
 
-## Power savings
-
-Because wifi points and cell towers are much nearer to your smartphone than GPS satellites are, much less power is needed for transmitting to them. For this reason, smartphone OSes often ask you to allow the use of wifi for determining position even if you have decided to switch wifi off.
-
 **Issue summary:** Instead of GPS satellites, smartphones can also use wifi points and cell towers to determine their position (if enabled in the OS).
 
 ## What I’ll be covering next
