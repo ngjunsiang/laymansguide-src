@@ -48,4 +48,4 @@ Knowing what we know, this far into this layman’s guide, I’ll look into some
 
 ## What I’ll be covering next
 
-**Next issue:** [LMG S13] Issue 166: Causes of system slowdown
+**Next issue:** [LMG S13] Issue 166: A cause of system slowdown: caches
