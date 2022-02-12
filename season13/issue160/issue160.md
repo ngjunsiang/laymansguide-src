@@ -2,7 +2,7 @@
 
 All businessmen know that distribution is everything. How good your product is, is secondary to how you get your product to the customer. This act of getting things to your customer—it’s called distribution, and entire businesses have been built around excellent distribution.
 
-In [Issue 157](https://buttondown.email/laymansguide/archive/lmg-s13-issue-157-ntp-and-time-syncing/), I described how time is synchronised from time source to server and on to other servers, down the strata of the hierarchy tree of time servers. whereas GPS/wifi location ([Issue 158](https://buttondown.email/laymansguide/archive/lmg-s13-issue-158-gps/)) has a much shallower distribution system: everybody gets their location directly from a GPS satellite if there’s nothing else available, otherwise they get it from the nearest wifi point or cell tower.
+In [Issue 157](https://buttondown.email/laymansguide/archive/lmg-s13-issue-157-ntp-and-time-syncing/), I described how time is synchronised from time source to server and on to other servers, down the strata of the hierarchy tree of time servers. Whereas GPS/wifi location ([Issue 158](https://buttondown.email/laymansguide/archive/lmg-s13-issue-158-gps/)) has a much shallower distribution system: everybody gets their location directly from a GPS satellite if there’s nothing else available, otherwise they get it from the nearest wifi point or cell tower.
 
 What about content?
 
