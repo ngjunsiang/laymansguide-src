@@ -36,11 +36,11 @@ You place the most often requested files from that region in its distribution se
 
 The main document data is still served from the hosting provider, so that any changes you make to the page get served to clients almost immediately. Otherwise every little change you make has to be reflected in every distribution server that has a copy of that data. For this reason, distribution servers are typically used for **static data**: data that doesn’t change frequently, or at all—images and videos especially.
 
-## A content distribution network (CDN)
+## A content delivery network (CDN)
 
-These distribution servers, along with their supporting infrastructure, are collectively known as a **content distribution network** (CDN). Sometimes, when you are grabbing the URL of an image, you might see “cdn” in the URL domain—now you know what it means!
+These distribution servers, along with their supporting infrastructure, are collectively known as a **content delivery network** (CDN). Sometimes, when you are grabbing the URL of an image, you might see “cdn” in the URL domain—now you know what it means!
 
-**Issue summary:** A content distribution system comprises multiple servers around the world that are able to quickly distribute static content (typically images and video) to viewers that request it. This avoids overloading the hosting server, which would otherwise have to serve data over the network, possibly through many intermediary hops.
+**Issue summary:** A content delivery network comprises multiple servers around the world that are able to quickly distribute static content (typically images and video) to viewers that request it. This avoids overloading the hosting server, which would otherwise have to serve data over the network, possibly through many intermediary hops.
 
 ## What I’ll be covering next
 
