@@ -44,7 +44,7 @@ For an application to be able to support text formatting, it must have a program
 <small>Kerning for some common glyph pairs in Source Sans Pro Regular.<br />  
 A kern value of 0 or blank means no kerning is required. A negative value means the letters need to be brought closer, and a positive value means they need to be spaced further (quite rare).</small>
 
-Advanced renderers might even do other things, like avoiding too many terminal hyphens on consecutive lines (looks ugly), or making microadjustments to letter spacing. But, oops! This changes the line length, so the engine needs to go back to re-check the line breaks. And so on, and so forth.
+Advanced renderers might even do other things, like avoiding too many terminal hyphens on consecutive lines (looks ugly), or making microadjustments to letter spacing. But, oops! This changes the line length, so the engine needs to go back to re-check the line breaks. This is an interative process.
 
 Text rendering engines are an art in themselves, and we are not going to go in depth here.
 
@@ -62,11 +62,9 @@ This difference in representation vs display, fonts-as-mathematical-shapes vs fo
 
 ## What I’ll be covering next
 
-**Next issue:** [LMG S13] Issue 163: System & software ecosystems
+**Next issue:** [LMG S13] Issue 163: System & software updates
 
 With this diversion over, let’s return to talking about distribution. Content distribution, code distribution, and next issue I’ll move on to software distribution!
-
-With this I have also cleared my backlog of questions, and will be closing the below section as well.
 
 **Sometime in the future:** What is:
 
