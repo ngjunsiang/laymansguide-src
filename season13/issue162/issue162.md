@@ -6,11 +6,11 @@ I could probably fill at least half a season talking about fonts and typesetting
 
 ## What is a font?
 
-I’m going with [Source Sans](https://fonts.adobe.com/fonts/source-sans), an open-source **typeface** designed in-house by Adobe. Let’s open one up one of its **font**s[^2], Source Sans Pro Regular, in a font editor[^1] and see:
+I’m going with [Source Sans](https://fonts.adobe.com/fonts/source-sans), an open-source **typeface** designed in-house by Adobe. Let’s open one up one of its **font**s[^1], Source Sans Pro Regular, in a font editor[^2] and see:
 
-[^1]: The one I use is called [Fontforge](https://fontforge.org), and it is open-source.
+[^1]: A font is a single style in a typeface family. The full family will usually have regular/bold/italic styles. More advanced typefaces may have small caps, display, and caption fonts.
 
-[^2]: A font is a single style in a typeface family. The full family will usually have regular/bold/italic styles. More advanced typefaces may have small caps, display, and caption fonts.
+[^2]: The one I use is called [Fontforge](https://fontforge.org), and it is open-source.
 
 ![Fontforge with Source Sans Pro Regular open, showing glyphs](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season13/issue162/issue162_01.png)  
 <small>Source Sans Pro Regular, in Fontforge.</small>
@@ -36,7 +36,7 @@ Many applications, if they are unable to find the bold/italic fonts, will artifi
 
 ## Font display
 
-For an application to be able to support text formatting, it must have a program called a text rendering engine. This program takes a single long string of text, determines the appropriate place to chop it up with line breaks. Then the glyph shapes need to be converted from mathematical formulas into actual real lit pixels or real inky droplets (in a process called **rasterisation**, [Issue 122](https://buttondown.email/laymansguide/archive/lmg-s10-issue-122-the-great-flattening/)), and their dimensions considered in the line. Because glyphs are not actually rectangular boxes and they protrude in different ways, optically they need some horizontal adjustment (called **kerning**) to look evenly spaced optically, so that needs to be done too[^5].
+For an application to be able to support text formatting, it must have a program called a text rendering engine. This program takes a single long string of text and determines the appropriate places to chop it up with line breaks. Then the glyph shapes need to be converted from mathematical formulas into actual real lit pixels or real inky droplets (in a process called **rasterisation**, [Issue 122](https://buttondown.email/laymansguide/archive/lmg-s10-issue-122-the-great-flattening/)), and their dimensions considered in the line. Because glyphs are not actually rectangular boxes and they protrude in different ways, optically they need some horizontal adjustment (called **kerning**) to look evenly spaced optically, so that needs to be done too[^5].
 
 [^5]: The kerning information is created by the font designer and embedded in the font file. Applications usually pass this information to the text rendering engine, although some might not actually use it.
 
@@ -44,7 +44,7 @@ For an application to be able to support text formatting, it must have a program
 <small>Kerning for some common glyph pairs in Source Sans Pro Regular.<br />  
 A kern value of 0 or blank means no kerning is required. A negative value means the letters need to be brought closer, and a positive value means they need to be spaced further (quite rare).</small>
 
-Advanced renderers might even do other things, like avoiding too many terminal hyphens on consecutive lines (looks ugly), or making microadjustments to letter spacing. But, oops! This changes the line length, so the engine needs to go back to re-check the line breaks. This is an interative process.
+Advanced renderers might even do other things, like avoiding too many terminal hyphens on consecutive lines (looks ugly), or making microadjustments to letter spacing. But, oops! This changes the line length, so the engine needs to go back to re-check the line breaks. And so on, and so forth.
 
 Text rendering engines are an art in themselves, and we are not going to go in depth here.
 
@@ -56,15 +56,17 @@ These days, you might also see `.otf`, which stands for Opentype font. This is a
 
 If you do web development, you might also see `.woff`, the Web Open Font Format, co-developed by Mozilla and other type organisations. It shares some features in common with TTF and OTF, but adds other features for licensing information, which is usually more important for the web, where these font files need to be downloaded to the users’ computers.
 
-**Issue summary:** Typeface families consists of multiple fonts for each style in the typeface. Each font consists of glyphs, which are mathematical shapes describes by curves joining points. These shapes need to be rasterised for display on a computer screen, or for printing on paper. Font files usually come in `.ttf`, `.otf`, or `.woff` formats.
+**Issue summary:** Typeface families consist of multiple fonts for each style in the typeface. Each font consists of glyphs, which are mathematical shapes described by curves joining points. These shapes need to be rasterised for display on a computer screen, or for printing on paper. Font files usually come in `.ttf`, `.otf`, or `.woff` formats.
 
 This difference in representation vs display, fonts-as-mathematical-shapes vs fonts-as-pixels-or-dots, has been and continues to be the cause of much weeping and gnashing of teeth. But I’ve decided it’s not worth delving into that for a layman’s guide to computing—perhaps in a separate publication!
 
 ## What I’ll be covering next
 
-**Next issue:** [LMG S13] Issue 163: System & software updates
+**Next issue:** [LMG S13] Issue 163: System & software ecosystems
 
 With this diversion over, let’s return to talking about distribution. Content distribution, code distribution, and next issue I’ll move on to software distribution!
+
+With this I have also cleared my backlog of questions, and will be closing the below section as well.
 
 **Sometime in the future:** What is:
 
