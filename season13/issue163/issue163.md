@@ -1,11 +1,11 @@
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Typeface families consists of multiple fonts for each style in the typeface. Each font consists of glyphs, which are mathematical shapes describes by curves joining points. These shapes need to be rasterised for display on a computer screen, or for printing on paper. Font files usually come in `.ttf`, `.otf`, or `.woff` formats.
+[**Previously:**](https://buttondown.email/laymansguide/archive/) Typeface families consist of multiple fonts for each style in the typeface. Each font consists of glyphs, which are mathematical shapes described by curves joining points. These shapes need to be rasterised for display on a computer screen, or for printing on paper. Font files usually come in `.ttf`, `.otf`, or `.woff` formats.
 
 Brief recap of the past few issues:
 
-- **Content distribution:** Images and other media are distributed with the help of content distribution networks (CDNs, [Issue 160]()), which have regional servers closer to users.
+- **Content distribution:** Images and other media are distributed with the help of content distribution networks (CDNs, [Issue 160](https://buttondown.email/laymansguide/archive/lmg-s13-issue-160-cdns-and-content-distribution/)), which have regional servers closer to users.
 - **Code distribution:** Webpage documents and web scripts (in Javascript) are distributed from the host server (which may comprise more than one computer).
 
-And all of these takes place over the World Wide Web, often through the HTTP protocol ([Issue 7](https://buttondown.email/laymansguide/archive/lmg-issue-7-what-is-http/)). That is how data gets to us when we use the Internet.
+And all of these takes place over the World Wide Web, often through the HTTP protocol ([Issue 7](https://buttondown.email/laymansguide/archive/lmg-issue-7-what-is-http/)). That is how data gets to us when we use the internet.
 
 What about the software we use, and the oft-dreaded Windows Updates? How does that get to us?
 
@@ -25,6 +25,8 @@ And then there is … all the other software you can download from the internet.
 
 I’m guessing the internet is where most of the desktop/laptop software you use comes from.
 
+
+
 ## Software distribution on Android and iPhone
 
 On the mobile side of things, it looks remarkably similar, but with the weightage somewhat different.
@@ -37,21 +39,25 @@ App stores — check, still the same.
 
 Software from the internet — Android allows installing software from “unknown sources”, but you’ll have to enable a system setting to allow that. It is off by default. On iPhone, this is just not possible.[^1]
 
-[^1]: Okay not true, you can give yourself admin permissions through a process called **rooting**, or replace the OS on your phone through a process called **jailbreaking**, but this is a layperson’s newsletter and I do not recommend attempting either process without much more extensive reading first.
+[^1]: Okay not true, you can replace the OS on your phone through a process called **jailbreaking**, but this is a layperson’s newsletter and I do not recommend this without much more extensive reading and careful consideration.
 
-I’m guessing the app store is where most of the mobile as you use come from.
+I’m guessing the app store is where most of the mobile apps you use come from.
+
+
 
 ## Software as an ecosystem
 
 Notice that in neither case is finding software like foraging for berries: there is an entire ecosystem that goes into making these actions possible!
 
-The OS makers obviously have to distribute their OS, supporting software, and updates reliably and securely, so that other software can rely on its continued existence. An OS by itself doesn’t usually do much for users; they need software to create and manage their files, and access the internet. And much of this software is going to be created by other developers, not the OS makers.
+The **OS makers** obviously have to distribute their OS, supporting software, and updates reliably and securely, so that other software can rely on its continued existence. An OS by itself doesn’t usually do much for users; they need software to create and manage their files, and access the internet. And much of this software is going to be created by other developers, not the OS makers.
 
-The developers need documentation and sample code to understand how to write the software, and these usually come from the OS makers. But it can also come from a thriving community of other developers who are writing software from the same system.
+The **developers** need documentation and sample code to understand how to write the software, and these usually come from the OS makers. But it can also come from a thriving community of other developers who are writing software for the same system.
 
-Far too often I see users who have no awareness of this divide, and seem to operate on an assumption that software comes from “programmers”, a hallowed, unreachable group of entities that blesses users with features or curses them with bugs at their whim.
+And then there are the **discovery mechanisms** that users need to find useful software; Google is the fallback when this doesn’t exist, but you usually want users to have a better experience than googling for installers and potentially installing malware.
 
 Even this understanding is incomplete, but it’s the beginning of a more nuanced model of software development that will help you understand why software often does not do what it should. We are talking about factions in software development.
+
+Far too often I see users who have no awareness of this divide, and seem to operate on an assumption that software comes from “programmers”, a hallowed, unreachable group of entities that blesses users with features or curses them with bugs at their whim.
 
 **Issue summary:** Software that we use usually comes from the OS makers, or from third-party developers. These two groups of developers are not the same, and might even have conflicting intentions and goals.
 
