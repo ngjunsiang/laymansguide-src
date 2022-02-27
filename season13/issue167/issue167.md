@@ -12,7 +12,7 @@ I mentioned in [Issue 119](https://buttondown.email/laymansguide/archive/lmg-s10
 
 ## SQLite, a blessing and a curse
 
-[SQLite](https://sqlite.org/index.html) is a popular file-based database used by many Android apps (including WhatsApp!). It makes management of data much easier for the app developers, and it is also fast—usually.
+[SQLite](https://sqlite.org/index.html) is a popular file-based relational database ([Issue 87](https://buttondown.email/laymansguide/archive/lmg-s7-issue-87-relational-databases/)) used by many Android apps (including WhatsApp!). This means that unlike other databases, which require a separate database program to run, SQLite just requires the programmer to bundle an appropriate library for their programming language instead of running a separate program. It makes management of data much easier for the app developers, and it is also fast—usually.
 
 However, [a 2016 study found that it contributes to fragmentation](https://www.tuxera.com/blog/why-is-my-android-phone-slowing-down/) on the Android filesystem. Even after clearing the app’s data, once SQLite starts storing data again, it tends to store them in many small chunks instead of fewer but larger chunks. On Android devices, which use the slower UFS interface, searching through the database involves reading each database chunk to see if the requested data is there; this gets slower as the database grows, and SQLite adds more chunks to the storage device.
 
@@ -26,4 +26,6 @@ Short issue this time, because if I made it any longer I think it would be more 
 
 ## What I’ll be covering next
 
-**Next issue:**
+**Next issue:** [LMG S13] Issue 168: Search engines
+
+How do search engines ... know everything?
