@@ -1,11 +1,11 @@
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Typeface families consists of multiple fonts for each style in the typeface. Each font consists of glyphs, which are mathematical shapes describes by curves joining points. These shapes need to be rasterised for display on a computer screen, or for printing on paper. Font files usually come in `.ttf`, `.otf`, or `.woff` formats.
+[**Previously:**](https://buttondown.email/laymansguide/archive/) Typeface families consist of multiple fonts for each style in the typeface. Each font consists of glyphs, which are mathematical shapes described by curves joining points. These shapes need to be rasterised for display on a computer screen, or for printing on paper. Font files usually come in `.ttf`, `.otf`, or `.woff` formats.
 
 Brief recap of the past few issues:
 
 - **Content distribution:** Images and other media are distributed with the help of content distribution networks (CDNs, [Issue 160](https://buttondown.email/laymansguide/archive/lmg-s13-issue-160-cdns-and-content-distribution/)), which have regional servers closer to users.
 - **Code distribution:** Webpage documents and web scripts (in Javascript) are distributed from the host server (which may comprise more than one computer).
 
-And all of these takes place over the World Wide Web, often through the HTTP protocol ([Issue 7](https://buttondown.email/laymansguide/archive/lmg-issue-7-what-is-http/)). That is how data gets to us when we use the Internet.
+And all of these takes place over the World Wide Web, often through the HTTP protocol ([Issue 7](https://buttondown.email/laymansguide/archive/lmg-issue-7-what-is-http/)). That is how data gets to us when we use the internet.
 
 What about the software we use, and the oft-dreaded Windows Updates? How does that get to us?
 
@@ -39,7 +39,7 @@ App stores — check, still the same.
 
 Software from the internet — Android allows installing software from “unknown sources”, but you’ll have to enable a system setting to allow that. It is off by default. On iPhone, this is just not possible.[^1]
 
-[^1]: Okay not true, you can give yourself admin permissions through a process called **rooting**, or replace the OS on your phone through a process called **jailbreaking**, but this is a layperson’s newsletter and I do not recommend attempting either process without much more extensive reading first.
+[^1]: Okay not true, you can replace the OS on your phone through a process called **jailbreaking**, but this is a layperson’s newsletter and I do not recommend this without much more extensive reading and careful consideration.
 
 I’m guessing the app store is where most of the mobile apps you use come from.
 
