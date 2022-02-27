@@ -36,7 +36,9 @@ Many applications, if they are unable to find the bold/italic fonts, will artifi
 
 ## Font display
 
-For an application to be able to support text formatting, it must have a program called a text rendering engine. This program takes a single long string of text and determines the appropriate places to chop it up with line breaks. Then the glyph shapes need to be converted from mathematical formulas into actual real lit pixels or real inky droplets (in a process called **rasterisation**, [Issue 122](https://buttondown.email/laymansguide/archive/lmg-s10-issue-122-the-great-flattening/)), and their dimensions considered in the line. Because glyphs are not actually rectangular boxes and they protrude in different ways, optically they need some horizontal adjustment (called **kerning**) to look evenly spaced optically, so that needs to be done too[^5].
+For an application to be able to support text formatting, it must have a program called a text rendering engine. This program takes a single long string of text and determines the appropriate places to chop it up with line breaks. To do that, it first needs to convert the glyph shapes from mathematical formulas into actual real lit pixels or real inky droplets (in a process called **rasterisation**, [Issue 122](https://buttondown.email/laymansguide/archive/lmg-s10-issue-122-the-great-flattening/)).
+
+Then their dimensions have to be considered in the line of text, to know where the line breaks should be placed. Because glyphs are not actually rectangular boxes and they protrude in different ways, optically they need some horizontal adjustment (called **kerning**) to look evenly spaced optically, so that needs to be done too[^5].
 
 [^5]: The kerning information is created by the font designer and embedded in the font file. Applications usually pass this information to the text rendering engine, although some might not actually use it.
 
@@ -44,7 +46,7 @@ For an application to be able to support text formatting, it must have a program
 <small>Kerning for some common glyph pairs in Source Sans Pro Regular.<br />  
 A kern value of 0 or blank means no kerning is required. A negative value means the letters need to be brought closer, and a positive value means they need to be spaced further (quite rare).</small>
 
-Advanced renderers might even do other things, like avoiding too many terminal hyphens on consecutive lines (looks ugly), or making microadjustments to letter spacing. But, oops! This changes the line length, so the engine needs to go back to re-check the line breaks. And so on, and so forth.
+Advanced renderers might even do other things, like avoiding too many terminal hyphens on consecutive lines (looks ugly), or making microadjustments to letter spacing. But, oops! This changes the line length, so the engine needs to go back to re-check the line breaks. This is an iterative process.
 
 Text rendering engines are an art in themselves, and we are not going to go in depth here.
 
