@@ -32,7 +32,7 @@ This was obviously tedious, so people started to compile the useful programs int
 
 These projects came to be called **Linux distributions**, or **Linux distros** in short. Distros maintained **repositories** of software for their specific distribution—the people involved are called **maintainers**. Maintainers check new versions of software to ensure that it will work as expected on their distro. Another category of software, called **package managers**, were created for users to be able to use these repositories easily: to check for updates, install them, and perform any other required maintenance.
 
-More and more distros started in the 80s and 90s, as groups of Linux users and developers decided to branch off based on differing principles and philosophies for managing a Linux computer and its software. Today, you have distros focused on reliability and stability, distros focused on simplicity, distros focused on user-friendliness, distros focused on scientific computing, distros focused on hackability, …
+More and more distros started in the 80s and 90s, as groups of Linux users and developers decided to branch off based on differing principles and philosophies for managing a Linux computer and its software. Today, you have distros focused on reliability and stability, distros focused on simplicity, distros focused on user-friendliness, distros focused on scientific computing, distros focused on hackability …
 
 It is important to note that the Linux kernel development team itself does not maintain any distros. Any updates to the kernel are for distro maintainers to incorporate into their respective repositories.
 
