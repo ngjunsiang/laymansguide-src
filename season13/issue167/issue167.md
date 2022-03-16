@@ -26,4 +26,6 @@ Short issue this time, because if I made it any longer I think it would be more 
 
 ## What I’ll be covering next
 
-**Next issue:**
+**Next issue:** [LMG S13] Issue 168: Search engines
+
+How do search engines ... know everything?
