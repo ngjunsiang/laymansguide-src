@@ -34,7 +34,7 @@ These days, the disk-is-faster assumption is less true across a spectrum of uses
 
 A quick note on mobile storage, which I unfortunately missed out on [Issue 119](https://buttondown.email/laymansguide/archive/lmg-s10-issue-119-solid-state-disks-an-upgrade/) on laptop and desktop solid-state disks (SSDs).
 
-Mobile devices generally do not use the same kinds of SSDs that laptops use. Those are bulkier, use more power (not good for mobile battery life), and run hotter. These SSDs use an interface called NVMe (which iPhones use as well), while most Android devices’ storage use an interface called UFS which is slower (but uses less energy).
+Mobile devices generally do not use the same kinds of SSDs that laptops use. Those are bulkier, use more power (not good for mobile battery life), and run hotter. Laptop SSDs use an interface called NVMe (which iPhones use as well), while most Android devices’ storage use an interface called UFS which is slower (but uses less energy).
 
 At the same time, internet access on phones is speeding up. 4G/5G technology has increased throughput at more or less the same latency. On the other hand, with the cloud becoming a staple of everyday life, tech companies have poured immense resources into increasing their servers’ responsiveness, resulting in lower latency for internet access.
 
