@@ -36,7 +36,7 @@ A quick note on mobile storage, which I unfortunately missed out on [Issue 119](
 
 Mobile devices generally do not use the same kinds of SSDs that laptops use. Those are bulkier, use more power (not good for mobile battery life), and run hotter. Laptop SSDs use an interface called NVMe (which iPhones use as well), while most Android devices’ storage use an interface called UFS which is slower (but uses less energy).
 
-At the same time, internet access on phones is speeding up. 4G/5G technology has increased throughput at more or less the same latency. On the other hand, with the cloud becoming a staple of everyday life, tech companies have poured immense resources into increasing their servers’ responsiveness, resulting in lower latency for internet access.
+At the same time, internet access on phones is speeding up. 4G/5G technology has increased throughput, while maintaining more or less the same latency. On the other hand, with the cloud becoming a staple of everyday life, tech companies have poured immense resources into increasing their servers’ responsiveness, resulting in lower latency for internet access.
 
 Disk caching is no longer king.
 
