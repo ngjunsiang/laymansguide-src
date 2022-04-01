@@ -18,7 +18,7 @@ However, [a 2016 study found that it contributes to fragmentation](https://www.t
 
 The study ends on a pretty pessimistic note: there doesn’t seem to be any feasible mitigation other than making upstream code changes to SQLite, or designing a different filesystem that overcomes this limitation. But that was five years ago; with any luck some positive developments might have been made into this area. I’m still looking into it!
 
-**Issue summary:** Defragmentation is likely a contributor of system slowdown, particularly for mobile devices: the database used by most mobile apps tend to store data in many small chunks rather than fewer big chunks, which slows down data search operations. The most effective measure for improving device responsiveness is usually to clear the app cache, so the app does not attempt to read previous data from storage.
+**Issue summary:** Fragmentation is likely a contributor of system slowdown, particularly for mobile devices: the databases used by most mobile apps tend to store data in many small chunks rather than fewer big chunks, which slows down data search operations. The most effective measure for improving device responsiveness is usually to clear the app cache, so the app does not attempt to read previous data from storage.
 
 That’s all I’ve managed to find out from reading; further research will either involve detailed tinkering and experimentation, or deeper reading, both of which are time-consuming.
 
