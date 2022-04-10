@@ -6,7 +6,7 @@ This season, I’ll attempt to plug the gaps in the layperson’s working knowle
 
 Frequent fliers would no doubt be familiar with the existence of timezones: geographical bands stretching from the North to South pole, within which all locations are assumed to be running on the same regional time. These timezones used to be manually synchronised, by phone or telegram, via operators all over the globe.
 
-Today, [timezone information](https://en.wikipedia.org/wiki/Tz_database) and other time information required for global coordination are maintained by the [Internet Corporation for Assigned Names and Numbers](https://en.wikipedia.org/wiki/ICANN) (ICANN), which also maintains IP addresses and other lists of names and numbers owned by the [Internet Assigned Numbers Authority](https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority), which we first met back in [Issue 27](https://buttondown.email/laymansguide/archive/lmg-s3-issue-27-what-is-an-ip-address/) when introducing IP addresses. These databases are used by programmers worldwide when writing programs that require time coordination.
+Today, [timezone information](https://en.wikipedia.org/wiki/Tz_database) and other time information required for global coordination are maintained by the [Internet Corporation for Assigned Names and Numbers](https://en.wikipedia.org/wiki/ICANN) (ICANN), which also maintains other lists of names and numbers owned by the [Internet Assigned Numbers Authority](https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority), which we first met back in [Issue 27](https://buttondown.email/laymansguide/archive/lmg-s3-issue-27-what-is-an-ip-address/). These lists are used by programmers worldwide when writing programs that require time coordination.
 
 ## Time synchronisation
 
@@ -25,7 +25,7 @@ The protocol for time synchronisation is called the [Network Time Protocol](http
 
 In the past, people would look at a common time source—the town square clock tower, Big Ben, church bells, and so on—to get the time. When watches were invented, people who had one would synchronise their watches to these common time sources.
 
-But watches, clock towers, and other sources of time can get out of sync: one second as measured by each device does not accurately match the official definition of a second:
+But watches, clock towers, and other sources of time can get out of sync: one second as measured by each device does not accurately match the scientific definition of a second:
 
 > The second is defined as being equal to the time duration of 9,192,631,770 periods of the radiation corresponding to the transition between the two hyperfine levels of the fundamental unperturbed ground-state of the caesium-133 atom.
 
@@ -33,11 +33,13 @@ That’s from [The International System of Units](https://www.bipm.org/documents
 
 [^1]: If you need a term to google for more of this kind of geekery, it is called [metrology](https://en.wikipedia.org/wiki/Metrology), the scientific study of measurement.
 
+## Trickle-down time
+
 How does the rest of the world get its time from these high-precision devices? It doesn’t; most of the world has no need for the sixteen zeroes of precision provided by an atomic clock. Instead, another cluster of servers synchronise their time to within microseconds of precision of these devices. And *another* cluster of servers synchronise their time to these microsecond-precision servers.
 
 Each “layer of precision” is called a stratum in NTP. Time “trickles down” from higher-precision sources to lower-precision sources, down the stratum. As we descend the stratum, there are more and more devices providing time at that precision. If a time server synchronises to a stratum 1 server, it becomes a stratum 2 server; if it synchronises to a stratum 7 server, it becomes a stratum 8 server. The upper limit for stratum numbers is 15; a stratum 16 device is considered unsynchronised.
 
-It is important to note that the stratum number is not an indication of quality or reliability, it only indicates distance from the reference time source.
+The stratum number is not an indication of quality or reliability, it only indicates distance from the reference time source.
 
 ## Operating a time server
 
@@ -47,7 +49,7 @@ NTP is an open protocol, which means the protocol is [readily available online](
 
 More or less, yes. (They actually use a slightly simpler protocol, in the interest of preserving battery life.)
 
-If you ever find yourself designing your own operating system (why would you do that though?) and having to provide a “set time automatically” feature, you can let your user connect to a public pool of time servers, [pool.ntp.org](https://www.pool.ntp.org/en/) (yes that is the actual name, and also the web address). This pool is further subdivided by continent and region, down to individual countries, since you will probably need specific time for your location. For instance, the specific time server pool for Singapore is sg.pool.ntp.org.
+Hypothetically, if you are designing your own operating system and having to provide a “set time automatically” feature, you can let your user connect to a public pool of time servers, [pool.ntp.org](https://www.pool.ntp.org/en/) (yes that is the actual name, and also the web address). This pool is further subdivided by continent and region, down to individual countries, since you will probably need specific time for your location. For instance, the specific time server pool for Singapore is sg.pool.ntp.org.
 
 **Issue summary:** Time is synchronised from higher-precision sources through a protocol called Network Time Protocol (NTP). A public pool of time servers is available for synchronisation at pool.ntp.org.
 

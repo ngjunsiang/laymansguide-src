@@ -1,6 +1,6 @@
-[**Previously:**](https://buttondown.email/laymansguide/archive/) A content distribution system comprises multiple servers around the world that are able to quickly distribute static content (typically images and video) to viewers that request it. This avoids overloading the hosting server, which would otherwise have to serve data over the network, possibly through many intermediary hops.
+[**Previously:**](https://buttondown.email/laymansguide/archive/) A content delivery network comprises multiple servers around the world that are able to quickly distribute static content (typically images and video) to viewers that request it. This avoids overloading the hosting server, which would otherwise have to serve data over the network, possibly through many intermediary hops.
 
-When you load a modern webpage with all its bells and whistles, it is usually loading its content from a content distribution network (CDN; see previous issue). At the same time, it is running scripts that came with the webpage. These scripts may load other scripts on the same server (first-party scripts), or scripts on other servers (third-party scripts).
+When you load a modern webpage with all its bells and whistles, it is usually loading its content from a content delivery network (CDN; see previous issue). At the same time, it is running scripts that came with the webpage. These scripts may load other scripts on the same server (first-party scripts), or scripts on other servers (third-party scripts).
 
 What could go wrong?
 
@@ -12,7 +12,7 @@ It’s usually safe to load them in the webpage because they are from the same s
 
 ## Third-party scripts
 
-These are scripts that are loaded from a remote server. You’d usually do this to load scripts from service providers: for analytics, to serve online ads, or to use libraries and frameworks ([Issue 17](https://buttondown.email/laymansguide/archive/lmg-s2-issue-17-libraries/), [Issue 18](https://buttondown.email/laymansguide/archive/lmg-s2-issue-18-frameworks/)). This is mighty convenient: as a third-party service provider, you have the flexibility of updating this script and immediately benefiting your client without them having to do anything. Can’t beat that for convenience!
+These are scripts that are loaded from a remote server. You’d usually do this to load scripts from service providers: for analytics, to serve online ads, or to use libraries and frameworks ([Issue 17](https://buttondown.email/laymansguide/archive/lmg-s2-issue-17-libraries/), [Issue 18](https://buttondown.email/laymansguide/archive/lmg-s2-issue-18-frameworks/)). This is mightily convenient: as a third-party service provider, you have the flexibility of updating this script and immediately benefiting your client without them having to do anything. Can’t beat that for convenience!
 
 But once you open the door to third-party scripts, they could be loaded from *anywhere*. And without some mechanism for verification, the client won’t actually know if they are loading your script, or someone else’s.
 
@@ -24,7 +24,7 @@ This is called a **cross-site scripting** attack.
 
 ## The weakest link
 
-The chain of security is only as strong as its weakest link, so even if your own security is tight, a malicious actor would look at your software stack, notice that your webpage is loading scripts from a third party, and attempt to hack the third-party's servers (which might be less secure). When you draw on features from multiple libraries, you are in effect setting up a web of trust that is only as secure as teh least secure library/third-party in your web.
+The chain of security is only as strong as its weakest link, so even if your own security is tight, a malicious actor would look at your tech stack (the set of hardware/software/services your company uses), notice that your webpage is loading scripts from a third party, and attempt to hack the third-party's servers (which might be less secure). When you draw on features from multiple libraries, you are in effect setting up a circle of trust that is only as secure as the least secure library/third-party in your web.
 
 ## Protections
 

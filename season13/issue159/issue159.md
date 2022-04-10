@@ -1,4 +1,4 @@
-[**Previously:**](https://buttondown.email/laymansguide/archive/) To get your location using GPS, your phone requests information from three overhead GPS satellites: their location, and the distance between them and your phone. With this information, your phone can calculate its location.
+[**Previously:**](https://buttondown.email/laymansguide/archive/) To get your location using GPS, your phone requests information from four overhead GPS satellites: their location, and the distance between them and your phone. With this information, your phone can calculate its location.
 
 Okay, so what happens when you are in a tunnel or building and can’t get GPS? How are you still able to use Google Maps to navigate that new sprawl of a mall?
 
@@ -25,10 +25,6 @@ One way to keep track of wifi access points and their locations is through a glo
 What happens when you are outdoors, far from any wifi point? As long as you have mobile data enabled and are not in airplane mode, you are still going to be getting your cell signal from a cell tower ... which also meet the three basic criteria for device-based triangulation 😉
 
 Your smartphone can thus triangulate its location from cell towers that it is able to reach. Again, there is no protocol for this, since your smartphone does not communicate with the towers for the express purpose of obtaining location; it is a set of similar techniques, often implemented in the operating system.
-
-## Power savings
-
-Because wifi points and cell towers are much nearer to your smartphone than GPS satellites are, much less power is needed for transmitting to them. For this reason, smartphone OSes often ask you to allow the use of wifi for determining position even if you have decided to switch wifi off.
 
 **Issue summary:** Instead of GPS satellites, smartphones can also use wifi points and cell towers to determine their position (if enabled in the OS).
 

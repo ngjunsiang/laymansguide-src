@@ -2,7 +2,7 @@
 
 All businessmen know that distribution is everything. How good your product is, is secondary to how you get your product to the customer. This act of getting things to your customer—it’s called distribution, and entire businesses have been built around excellent distribution.
 
-In [Issue 157](), I described how time is synchronised from time source to server and on to other servers, down the strata of the hierarchy tree of time servers. whereas GPS/wifi location ([Issue 158]()) has a much shallower distribution system: everybody gets their location directly from a GPS satellite if there’s nothing else available, otherwise they get it from the nearest wifi point or cell tower.
+In [Issue 157](https://buttondown.email/laymansguide/archive/lmg-s13-issue-157-ntp-and-time-syncing/), I described how time is synchronised from time source to server and on to other servers, down the strata of the hierarchy tree of time servers. Whereas GPS/wifi location ([Issue 158](https://buttondown.email/laymansguide/archive/lmg-s13-issue-158-gps/)) has a much shallower distribution system: everybody gets their location directly from a GPS satellite if there’s nothing else available, otherwise they get it from the nearest wifi point or cell tower.
 
 What about content?
 
@@ -36,11 +36,11 @@ You place the most often requested files from that region in its distribution se
 
 The main document data is still served from the hosting provider, so that any changes you make to the page get served to clients almost immediately. Otherwise every little change you make has to be reflected in every distribution server that has a copy of that data. For this reason, distribution servers are typically used for **static data**: data that doesn’t change frequently, or at all—images and videos especially.
 
-## A content distribution network (CDN)
+## A content delivery network (CDN)
 
-These distribution servers, along with their supporting infrastructure, are collectively known as a **content distribution network** (CDN). Sometimes, when you are grabbing the URL of an image, you might see “cdn” in the URL domain—now you know what it means!
+These distribution servers, along with their supporting infrastructure, are collectively known as a **content delivery network** (CDN). Sometimes, when you are grabbing the URL of an image, you might see “cdn” in the URL domain—now you know what it means!
 
-**Issue summary:** A content distribution system comprises multiple servers around the world that are able to quickly distribute static content (typically images and video) to viewers that request it. This avoids overloading the hosting server, which would otherwise have to serve data over the network, possibly through many intermediary hops.
+**Issue summary:** A content delivery network comprises multiple servers around the world that are able to quickly distribute static content (typically images and video) to viewers that request it. This avoids overloading the hosting server, which would otherwise have to serve data over the network, possibly through many intermediary hops.
 
 ## What I’ll be covering next
 
