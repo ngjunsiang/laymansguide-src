@@ -1,4 +1,4 @@
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Defragmentation is likely a contributor of system slowdown, particularly for mobile devices: the database used by most mobile apps tend to store data in many small chunks rather than fewer big chunks, which slows down data search operations. The most effective measure for improving device responsiveness is usually to clear the app cache, so the app does not attempt to read previous data from storage.
+[**Previously:**](https://buttondown.email/laymansguide/archive/) Fragmentation is likely a contributor of system slowdown, particularly for mobile devices: the database used by most mobile apps tend to store data in many small chunks rather than fewer big chunks, which slows down data search operations. The most effective measure for improving device responsiveness is usually to clear the app cache, so the app does not attempt to read previous data from storage.
 
 Last issue, we shed a little light on the mystery of why phone and laptop systems slow down over time—apparently the way a file database works is to blame?
 
@@ -6,7 +6,7 @@ This week, we switch topics, to look at something we definitely take for granted
 
 ## What is a search engine?
 
-Forgive me if you think I am belabouring the obvious. there is the user definition, which is something like “a search box that answers my questions”. Then there is the developer definition which is more like “an indexed database of URLs, descriptions, and ranks”. Let’s unpack that.
+Forgive me if you think I am belabouring the obvious. There is the user definition, which is something like “a search box that answers my questions”. Then there is the developer definition which is more like “an indexed database of URLs, descriptions, and ranks”. Let’s unpack that.
 
 ## Indexing and arachnids
 
@@ -16,7 +16,7 @@ Search engines run “bots”, also know as web spiders, or web crawlers. These 
 
 [^1]: Yep, we all know spiders don’t actually do this.
 
-When we “search the internet”, we are really search the database that has been built up by these bots.
+When we “search the internet”, we are really searching the database that has been built up by these bots.
 
 ## Ranking results
 
