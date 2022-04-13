@@ -26,7 +26,7 @@ Google’s PageRank algorithm is by now well known for disrupting the old direct
 
 Instead, consider that there are by now many different algorithms for determining the relevance of database entries for each search, even within Google itself. A search engine is essentially a way to access this database, use one or more appropriate algorithms to determine the most relevant results, and return them to the user.
 
-**Issue summary:** A search engine uses bots to built up a database of URLs and their contents. The search engine uses various algorithms to determine the most relevant results for a search request.
+**Issue summary:** A search engine uses bots to build up a database of URLs and their contents. The search engine uses various algorithms to determine the most relevant results for a search request.
 
 I know ... nobody really cares *how* a search engine works. We just want to know *why* it's not giving us the results we want!
 
