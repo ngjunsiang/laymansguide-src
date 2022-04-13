@@ -1,4 +1,4 @@
-[**Previously:**](https://buttondown.email/laymansguide/archive/) A search engine uses bots to built up a database of URLs and their contents. The search engine uses various algorithms to determine the most relevant results for a search request.
+[**Previously:**](https://buttondown.email/laymansguide/archive/) A search engine uses bots to build up a database of URLs and their contents. The search engine uses various algorithms to determine the most relevant results for a search request.
 
 Let’s get to it: why are search results so bad so often?
 
