@@ -35,12 +35,13 @@ for issue in issues:
     issue["date"] = issue["date"].replace(".", "").replace("Sept", "Sep")
     
     metadata = {
-        "date": parse_date(issue["date"]).strftime(out_format),
-        "tags": "",
-        "category": issue["category"],
-        "slug": issue["url"].rstrip("/").split("/")[-1],
-        "author": "J S Ng",
-        "summary": "",
+        "Title": issue["title"]
+        "Date": parse_date(issue["date"]).strftime(out_format),
+        "Tags": "",
+        "Category": issue["category"],
+        "Slug": issue["url"].rstrip("/").split("/")[-1],
+        "Author": "J S Ng",
+        "Summary": "",
     }
 
     folder = issue["category"].lower().replace(" ", "")
