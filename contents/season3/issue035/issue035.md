@@ -1,11 +1,3 @@
-Title: Issue 35: Virtual Private Networks (VPNs)
-Date: 2019-08-24 08:00
-Tags: 
-Category: Season 3
-Slug: lmg-s3-issue-35-virtual-private-networks-vpns
-Author: J S Ng
-Summary: 
-
 Previously: Firewalls block data packets that match certain rules. They decrypt the data packet layer by layer, dropping those that match its programmed rules without allowing them to be forwarded to the next point in its journey. The type of filtering that can be applied depends on the processing power available to the router, since some information is hidden more deeply in the data packet than others. Such filtering is typically circumvented by the use of VPNs, or other means of encrypting the data that is required.
 
 Thus far, our picture of networks divides them into public networks (consisting of devices with public IP addresses) and private networks (devices with private IP addresses). Data traffic between devices in the same private network goes through their common gateway without getting forwarded to the rest of the internet. This data traffic cannot be snooped by outsiders who are not in that network. Theoretically, data within this private network is secure; you can do network printing or share files with other computers within your private home network and know that nobody outside of that network will inadvertently receive a leaked data packet.

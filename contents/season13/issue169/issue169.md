@@ -1,11 +1,3 @@
-Title: Issue 169: Search engine optimisation
-Date: 2022-04-23 08:00
-Tags: 
-Category: Season 13
-Slug: lmg-s13-issue-169-search-engine-optimisation
-Author: J S Ng
-Summary: 
-
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A search engine uses bots to build up a database of URLs and their contents. The search engine uses various algorithms to determine the most relevant results for a search request.
 
 Let’s get to it: why are search results so bad so often?

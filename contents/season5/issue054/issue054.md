@@ -1,11 +1,3 @@
-Title: Issue 54: Compiling programming code into CPU instructions
-Date: 2020-01-04 08:00
-Tags: 
-Category: Season 5
-Slug: lmg-s5-issue-54-compiling-programming-code-into
-Author: J S Ng
-Summary: 
-
 **Previously:** CPUs are unconscious slaves that simply execute instruction after instruction, at a very fast rate.
 
 Last issue, I introduced the idea of the CPU has an unconscious instruction-executing machine. It cannot process programming code directly; that code must first be compiled into CPU instructions.

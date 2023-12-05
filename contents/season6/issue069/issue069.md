@@ -1,11 +1,3 @@
-Title: Issue 69: The Cookie Monster
-Date: 2020-04-25 08:00
-Tags: 
-Category: Season 6
-Slug: lmg-s6-issue-69-the-cookie-monster
-Author: J S Ng
-Summary: 
-
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The old CPM model (cost per thousand impressions) in the early Internet was replaced by the CPC model (cost per click) after the dot-com bust. But CPC only works well if publishers and advertisers could get users to click; they need to target advertisements accurately to users. QuantCast figured out a way to do so in 2006.
 
 How to do that? The key, it turns out, centres around cookies.
@@ -14,17 +6,17 @@ How to do that? The key, it turns out, centres around cookies.
 
 When you visit any website in Chrome or Firefox, if you click on the icon to the left of the address bar:
 
-![Screenshot of website info popup in Vivaldi browser]({attach}issue069_01.png)<br />
+![Screenshot of website info popup in Vivaldi browser](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season6/issue069/issue069_01.png)<br />
 <small>Clicking the icon to the left of the address bar shows basic site information</small>
 
 It shows you some basic information, including the cookies loaded by the website.
 
-![Screenshot of cookies in use popup in Vivaldi browser]({attach}issue069_02.png)<br />
+![Screenshot of cookies in use popup in Vivaldi browser](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season6/issue069/issue069_02.png)<br />
 <small>You can view the content of cookies through that window in Chrome or Vivaldi. This information is also available in other web browsers through a different menu option.</small>
 
 The cookies themselves are only just little fragments of information. They are identified with a name, they have a bunch of content (usually gibberish to humans), and they are associated with a website. Above, you can see that this website has a cookie named `_gid` with a value of `GA1.2.1807773255.1584140066`.
 
-![Screenshot of website source in Vivaldi browser. The script line that loads analytics.js is highlighted]({attach}issue069_03.png)<br />
+![Screenshot of website source in Vivaldi browser. The script line that loads analytics.js is highlighted](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season6/issue069/issue069_03.png)<br />
 <small>The script code used by Google Analytics is named `analytics.js`.</small>
 
 Little snippets of javascript create and delete cookies. These snippets of Javascript are usually loaded as a script, with a `.js` file extension. The script code used by Google Analytics is named `analytics.js`.</small>
@@ -37,7 +29,7 @@ Many bloggers and website owners rely on Google Analytics to tell them how much 
 
 But each visit represents one browser loading the page; how do we know that’s not the same user repeatedly refreshing the page waiting for something to happen? (It happens on auction sites, or game sites, and many other places).
 
-Whenever the webpage is loaded, the cookie information gets sent to the Google Analytics server. That is how Google Analytics know it’s the same fella on the same browser doing it. The cookie associates each client [Issue 7]({filename}/season1/issue007/issue007.md) with a `_gid` id. But if the user is using two different web browsers, or using a smartphone browser and doing it on their laptop, that actually gets classified under two different identifiers, even though it’s the same person!
+Whenever the webpage is loaded, the cookie information gets sent to the Google Analytics server. That is how Google Analytics know it’s the same fella on the same browser doing it. The cookie associates each client [Issue 7](https://buttondown.email/laymansguide/archive/lmg-issue-7-what-is-http/) with a `_gid` id. But if the user is using two different web browsers, or using a smartphone browser and doing it on their laptop, that actually gets classified under two different identifiers, even though it’s the same person!
 
 # Plain cookies are not enough
 
@@ -57,7 +49,7 @@ Earlier in this issue, I said
 
 > Whenever the webpage is loaded, the cookie information gets sent to the Google Analytics server.
 
-How does this actually happen? In [Issue 38]({filename}/season3/issue038/issue038.md), I showed you a graphic from Chrome’s Developer Tools that represented the loading sequence a webpage goes through. With that same feature, we can find out when and how the Google Analytics cookie gets returned to the server.
+How does this actually happen? In [Issue 38](https://buttondown.email/laymansguide/archive/lmg-s3-issue-38-loading-a-web-page/), I showed you a graphic from Chrome’s Developer Tools that represented the loading sequence a webpage goes through. With that same feature, we can find out when and how the Google Analytics cookie gets returned to the server.
 
 ## What I’ll be covering next
 

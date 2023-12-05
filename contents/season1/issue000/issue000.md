@@ -1,11 +1,3 @@
-Title: Issue 0: Why write a newsletter?
-Date: 2018-12-08 08:00
-Tags: 
-Category: Season 1
-Slug: lmg-issue-0-why-write-a-newsletter
-Author: J S Ng
-Summary: 
-
 Where do I start?
 
 Someone I know just took up a (sponsored) course to learn HTML, CSS, and eventually maybe Javascript and maybe even Python!

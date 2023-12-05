@@ -1,18 +1,10 @@
-Title: Issue 28: Domain Names and DNS
-Date: 2019-07-06 08:00
-Tags: 
-Category: Season 3
-Slug: lmg-s3-issue-28-domain-names-and-dns
-Author: J S Ng
-Summary: 
-
 Last issue, I introduced IP addresses: a string of four numbers that tells routers where to send the data packet. These IP addresses are managed by the Internet Assigned Numbers Authority (IANA), and Internet registries everywhere agree to configure their routers to abide by this agreement. Without this coordination, our data won’t be able to make it across the Internet so easily.
 
 ## Domain names
 
 When was the last time you remembered entering an IP address into the address bar in your browser? (If you’re a tinkerer, maybe the last time you tried to configure your router through a web browser.) Almost all the time, we enter web addresses that use **domain names**, not IP addresses. Here are some domain names you probably know: www.facebook.com, www.google.com, www.instagram.com.
 
-The `https` part in front of addresses like https://www.facebook.com is not part of the domain name; it is the protocol: a web browser would use that to determine which set of rules to use in processing the data received. I first introduced the idea of a protocol in [Issue 7]({filename}/season1/issue007/issue007.md).
+The `https` part in front of addresses like https://www.facebook.com is not part of the domain name; it is the protocol: a web browser would use that to determine which set of rules to use in processing the data received. I first introduced the idea of a protocol in [Issue 7](https://buttondown.email/laymansguide/archive/lmg-issue-7-what-is-http/).
 
 Here’s something that might be new to some of you: www.facebook.com is still not the domain name. facebook.com is the domain name. That’s how it was conceptualised in the 1980s, where people already realised that memorising names is much easier than memorising IP addresses. The original specifications for the Domain Name System were published in 1983, making this system less than 40 years old.
 

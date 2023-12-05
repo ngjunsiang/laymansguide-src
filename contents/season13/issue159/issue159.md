@@ -1,11 +1,3 @@
-Title: Issue 159: Wifi & cell tower location tracking
-Date: 2022-02-12 08:00
-Tags: 
-Category: Season 13
-Slug: lmg-s13-issue-159-wifi-cell-tower-location
-Author: J S Ng
-Summary: 
-
 [**Previously:**](https://buttondown.email/laymansguide/archive/) To get your location using GPS, your phone requests information from four overhead GPS satellites: their location, and the distance between them and your phone. With this information, your phone can calculate its location.
 
 Okay, so what happens when you are in a tunnel or building and can’t get GPS? How are you still able to use Google Maps to navigate that new sprawl of a mall?
@@ -44,7 +36,7 @@ Coincidentally, starting with time turned out to be a good idea: time informatio
 
 We have covered time and space (I mean, location). Let’s move on to data: how does data get around the world from a few central sources?
 
-Back in [Issue 73]({filename}/season6/issue073/issue073.md), when I explained how online advertising works, I mentioned that advertising content is served from a content delivery network (CDN). What is this and how does it work?
+Back in [Issue 73](https://buttondown.email/laymansguide/archive/lmg-s6-issue-73-the-heart-of-darkness-header/), when I explained how online advertising works, I mentioned that advertising content is served from a content delivery network (CDN). What is this and how does it work?
 
 **Sometime in the future:** What is:
 

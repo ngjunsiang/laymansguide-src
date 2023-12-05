@@ -1,33 +1,25 @@
-Title: Issue 65: Memory Sharing in the Operating System
-Date: 2020-03-28 17:12
-Tags: 
-Category: Season 5
-Slug: lmg-s5-issue-65-memory-sharing-in-the-operating
-Author: J S Ng
-Summary: 
-
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Meltdown and Spectre require the programs executing them to have access to kernel memory space. Kernel address isolation attempts to prevent the program from even having access to the kernel address space in the first place. TLB flushing changes the virtual-to-physical memory mapping, disrupting Spectre’s reliance on a consistent virtual-to-physical memory mapping.
 
 One question that makes sense to ask is: if the operating system is supposed to keep the memory used by each program separate, then how is one program able to access the memory of another program? How would a program trying to mount a Meltdown or Spectre attack be able to read the memory of any other program, let alone the operating system?
 
 Let’s face it: it is impossible to completely separate programs from each other. Many programs need to communicate with each other; antivirus software needs to be able to scan the addresses accessed by your web browser for harmful links, Office software needs to be able to send data to each other especially for features like Mail Merge, and of course your task manager has to know how much resources every app is using. So that it can show you this:
 
-![Screenshot of task manager in Windows 10, showing shared memory usage]({attach}issue065_01.png)<br />
+![Screenshot of task manager in Windows 10, showing shared memory usage](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season5/issue065/issue065_01.png)<br />
 <small>Task Manager in Windows 10<br />
 You can reveal the shared memory column by right-clicking on the column labels and then “Select Columns”.</small>
 
 or this:
 
-![Screenshot of system monitor in KDE, showing shared memory usage]({attach}issue065_02.png)<br />
+![Screenshot of system monitor in KDE, showing shared memory usage](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season5/issue065/issue065_02.png)<br />
 <small>System Monitor in KDE (Linux).</small>
 
 What is this shared memory?
 
 ## Private memory
 
-The memory I talked about earlier, which every software application has, is used to store various things. It is used to store temporary information, such as unsaved data, application settings, graphics resources (every icon and image shown in the application has to come from somewhere …), but most important, libraries and other functions ([Issue 17]({filename}/season2/issue017/issue017.md)).
+The memory I talked about earlier, which every software application has, is used to store various things. It is used to store temporary information, such as unsaved data, application settings, graphics resources (every icon and image shown in the application has to come from somewhere …), but most important, libraries and other functions ([Issue 17](https://buttondown.email/laymansguide/archive/lmg-s2-issue-17-libraries/)).
 
-Very few software developers will write every single bit of code used by their program; often, they will use software libraries written by others to provide specialised functions (e.g. encrypting your data, or accessing a database). When program code is compiled into CPU instructions ([Issue 54]({filename}/season5/issue054/issue054.md)), these libraries of course have to be compiled and bundled up as well.
+Very few software developers will write every single bit of code used by their program; often, they will use software libraries written by others to provide specialised functions (e.g. encrypting your data, or accessing a database). When program code is compiled into CPU instructions ([Issue 54](https://buttondown.email/laymansguide/archive/lmg-s5-issue-54-compiling-programming-code-into/)), these libraries of course have to be compiled and bundled up as well.
 
 That makes the program really huge, doesn’t it? Yes, it does; it is one reason (but not the main reason) that mobile apps, especially Android apps, [have become so bloated](https://trevore.com/post/app-sizes-are-out-of-control/) over the last half-decade or so. But I digress.
 
@@ -49,7 +41,7 @@ Ah! System Monitor actually reveals more details about how an application uses m
 
 Here’s Firefox:
 
-![Screenshot of detailed memory usage in Firefox on KDE]({attach}issue065_03.png)<br />
+![Screenshot of detailed memory usage in Firefox on KDE](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season5/issue065/issue065_03.png)<br />
 <small>Firefox detailed memory usage in KDE (Linux).</small>
 
 Oops, too much detail. Heres the gist:
@@ -68,10 +60,10 @@ I do my newsletter writing mainly in an app called Atom, made by Github. Atom ru
 
 In system monitor, I can see an app named atom, and one named electron. Let’s inspect them both.
 
-![Screenshot of detailed memory usage for electron on KDE]({attach}issue065_04.png)<br />
+![Screenshot of detailed memory usage for electron on KDE](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season5/issue065/issue065_04.png)<br />
 <small>Electron detailed memory usage in KDE (Linux).</small>
 
-![Screenshot of detailed memory usage for atom on KDE]({attach}issue065_05.png)<br />
+![Screenshot of detailed memory usage for atom on KDE](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season5/issue065/issue065_05.png)<br />
 <small>Atom detailed memory usage in KDE (Linux).</small>
 
 We can see that:

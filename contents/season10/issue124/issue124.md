@@ -1,11 +1,3 @@
-Title: Issue 124: Video formats
-Date: 2021-06-12 08:00
-Tags: 
-Category: Season 10
-Slug: lmg-s10-issue-124-video-formats
-Author: J S Ng
-Summary: 
-
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Graphics cards contain lots of tiny cores that are much better at performing the same calculation for lots of decimal numbers. These cores are organised into compute units; a graphics card with more compute units can perform more calculations every second. Graphics cards have their own onboard memory, separate from the CPU. GPU memory is different from computer memory; it is configured for much higher data throughput. Integrated graphics are GPUs that are integrated into a CPU chip; these do not have their own onboard memory, and share memory with the CPU.
 
 Ah, the esoteric, tricky, complicated art of shooting electromagnetic radiation into the eyes of humans … entire tomes have been written about this. And I will attempt to summarise the pertinent parts into a single newsletter issue. The hubris!
@@ -22,7 +14,7 @@ Early colour television screens had primary-colour (red, blue, and green) phosph
 
 These electrons, when emitted, fly in all directions, but they are shaped into a beam by an electric field (hence the name “cathode *ray* tube”, which you might have seen in the form of the acronym **CRT**).
 
-![Cutaway of a CRT, showing the phosphor dot screen]({attach}issue124_01.png)<br />
+![Cutaway of a CRT, showing the phosphor dot screen](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue124/issue124_01.png)<br />
 <small>1: Barium oxide cathode, which is heated to emit electrons (labelled “2”), which are shaped into a a beam by an electric field (labelled “3”)<br />
 4: Deflecting coils, discussed in the next paragraph<br />
 8: Coloured phosphor dots, arranged on a flat screen (labelled “7”).<br />
@@ -30,7 +22,7 @@ Image via [Wikipedia](https://en.wikipedia.org/wiki/Cathode-ray_tube)</small>
 
 This electron beam could be aimed at any of the phosphor dots by a set of electromagnetic deflecting coils mounted along the sides of the TV, on the inside surface. One set, oriented vertically (mounted left-right), controlled the horizontal deflection of the electron beam, while another set, oriented horizontally (mounted top-bottom), controlled the vertical deflection.
 
-![Graphic showing an electron beam deflected upwards by deflecting coils in a CRT]({attach}issue124_02.png)<br />
+![Graphic showing an electron beam deflected upwards by deflecting coils in a CRT](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue124/issue124_02.png)<br />
 <small>The electron beam produced by the cathode is deflected by (electromagnetic) deflecting coils.<br />
 Image via [Wikipedia](https://en.wikipedia.org/wiki/Cathode-ray_tube)</small>
 
@@ -44,7 +36,7 @@ These are what we call **analog** signals. Phonographs and early telephones also
 
 ## Video Graphics Array (VGA)
 
-So when the computer was first invented, and these screens were widely available, there was no need to reinvent the screen. Graphics cards ([Issue 123]({filename}/season10/issue123/issue123.md)) simply had to figure out how to emit analog signals that would work with CRT screens.
+So when the computer was first invented, and these screens were widely available, there was no need to reinvent the screen. Graphics cards ([Issue 123](https://buttondown.email/laymansguide/archive/lmg-s10-issue-123-graphics-cards-the-pixel-factory/)) simply had to figure out how to emit analog signals that would work with CRT screens.
 
 The graphics standard for doing so is called **VGA** (Video Graphics Array), and was first released by IBM in 1986. An organisation, the Video Electronics Standards Association (**VESA**), was quickly formed in 1989, spearheaded by Nippon Electric Company (NEC), to extend this standard and allow it to support higher resolutions (up to 1080p!).
 
@@ -60,7 +52,7 @@ The liquid crystal layer consisted of pixels of each primary colour. Each pixel 
 
 ## Digital signals
 
-CRTs controlled the voltage plates directly to deflect an electron beam, through an analog signal. But LCDs use an internal processor to determine what voltage to apply across each liquid crystal pixel. As the technology improved, lower voltages could be used to reduce power usage. So LCDs need a different kind of signal: a **digital** one, consisting of the *raw image data* ([Issue 43]({filename}/season4/issue043/issue043.md)).
+CRTs controlled the voltage plates directly to deflect an electron beam, through an analog signal. But LCDs use an internal processor to determine what voltage to apply across each liquid crystal pixel. As the technology improved, lower voltages could be used to reduce power usage. So LCDs need a different kind of signal: a **digital** one, consisting of the *raw image data* ([Issue 43](https://buttondown.email/laymansguide/archive/lmg-s4-issue-43-images-a-mosaic-of-3-colours/)).
 
 ## The exodus to digital formats
 
@@ -68,12 +60,12 @@ As digital television became more feasible due to decreasing microprocessor and 
 
 An early competitor, Digital Visual Interface (**DVI**), was launched by a working group convened by some computer makers (Intel, Silicon Image, Compaq, Fujitsu, HP, IBM, NEC). It was very quickly superceded by High-Definition Multimedia Interface (**HDMI**), an interface which implemented standards set by consumer electronics companies (Hitachi, Sanyo, Silicon Image, Sony, Technicolor, Toshiba).
 
-![HDMI and mini-HDMI connectors displayed top-to-bottom]({attach}issue124_03.jpg)<br />
+![HDMI and mini-HDMI connectors displayed top-to-bottom](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue124/issue124_03.jpg)<br />
 <small>HDMI and mini-HDMI connectors displayed from top to bottom. Both support the HDMI video standard<br />Image via [DataPro](https://www.datapro.net/techinfo/hdmi_info.html)</small>
 
 This was followed by the DisplayPort (**DP**) standard, developed by PC and chip manufacturers and standardised by VESA, and released in in 2006.
 
-![DisplayPort, mini-DisplayPort, and Thunderbolt Type-C connectors displayed side-by-side]({attach}issue124_04.jpg)<br />
+![DisplayPort, mini-DisplayPort, and Thunderbolt Type-C connectors displayed side-by-side](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue124/issue124_04.jpg)<br />
 <small>DisplayPort, mini-DisplayPort, and Thunderbolt Type-C connectors displayed from left to right. All three support the DisplayPort video standard<br />Image via [DataPro](https://www.datapro.net/techinfo/displayport_info.html)</small>
 
 **Issue summary:** The VGA video format originated in the time of cathode-ray televisions (CRTs). It was superseded by HDMI, a video format standardised by consumer electronics companies. DisplayPort, on the other hand, is a video format standardised by computer display companies.

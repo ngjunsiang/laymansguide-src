@@ -1,11 +1,3 @@
-Title: Issue 85: SQL Injections
-Date: 2020-08-29 08:00
-Tags: 
-Category: Season 7
-Slug: lmg-s7-issue-85-sql-injections
-Author: J S Ng
-Summary: 
-
 [**Previously:**](https://buttondown.email/laymansguide/archive/) SQL queries let you join multiple tables based on specified conditions using the JOIN keyword. This enables crafting complex queries to return only the specific data that is required.
 
 SQL databases are really powerful; this is usually a good thing since it allows developers to do amazing things with the data inside. But it can also lead to disastrous consequences in the unsupervised hands of inexperienced developers. And matters can be even worse if these powers are not carefully granted. A malicious actor could “borrow” these powers to wreak havoc on the database!
@@ -15,9 +7,9 @@ SQL databases are really powerful; this is usually a good thing since it allows 
 
 ## Adding data to an SQL database
 
-Adding data to an SQL database is easy. If our `Customer` table looks like this (from [Issue 84]({filename}/season7/issue084/issue084.md)):
+Adding data to an SQL database is easy. If our `Customer` table looks like this (from [Issue 84](https://buttondown.email/laymansguide/archive/lmg-s7-issue-84-join-supercharged-vlookup/)):
 
-![Screenshot of a Customer data table, with custID, custName, custEmail, and custContact columns.]({attach}issue084_01.png)
+![Screenshot of a Customer data table, with custID, custName, custEmail, and custContact columns.](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season7/issue084/issue084_01.png)
 
 The relevant SQL query to add another customer is:
 

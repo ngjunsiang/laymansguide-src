@@ -1,11 +1,3 @@
-Title: Issue 12: What is HTTPS? How is it different from HTTP?
-Date: 2019-03-01 08:00
-Tags: 
-Category: Season 1
-Slug: lmg-issue-12-what-is-https-how-is-it-different
-Author: J S Ng
-Summary: 
-
 Was the last issue too scary? I hope you haven’t completely lost faith in protecting your privacy on the internet! If you’re close to it, let this issue bring you some hope.
 
 We are going to get a little technical here, because I want to give you a view of the internet that most layfolks won’t get a chance to see. I just want you to remember something: you don’t need to understand every single bit of it. The things I point out will help you come to useful realisations that help you make good decisions about what you do on the internet.
@@ -19,7 +11,8 @@ We are going to get a little technical here, because I want to give you a view o
 Nah, I won’t do that. It would be merely decorative and not at all illustrative. Instead let’s focus your attention on one particular packet:
 
 
-![An HTTP request captured in Wireshark showing my developer API key]({attach}small>
+![An HTTP request captured in Wireshark showing my developer API key](https://github.com/ngjunsiang/laymansguide/blob/release/issue012/issue012_01.png?raw=true)
+<small>An HTTP request captured in Wireshark. Notice the line `Authorization: Bearer [CENSORED]`. That’s my developer API key!</small>
 
 
 This screenshot comes from an app called Wireshark, used to “capture” packets received by my laptop. This includes packets that my laptop sends to and receives from the access point, but it also includes packets from surrounding devices, such as my robot vacuum, smartphone, home electricity monitor … let’s see what information is visible from these captured packets. (I say “capture” because I haven’t trapped the packet at all, and other devices connecting to the same access point can read the packet as well.)

@@ -1,17 +1,9 @@
-Title: Issue 134: Part 1 – the Intel Core i-series launches!
-Date: 2021-08-21 08:00
-Tags: 
-Category: Season 11
-Slug: lmg-s11-issue-134-part-1-the-intel-core-i-series
-Author: J S Ng
-Summary: 
-
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The ATX form factor also brought with it a new breed of computers with more specialised chipsets: the memory controller hub (MCH) and peripheral controller hub (PCH). The MCH specialises in high-throughput requirements, such as computer memory and graphics. The PCH specialises in lower-throughput needs.
 
 Last issue, we looked at the ATX form factor by Intel, which replaced the AT form factor by IBM. While the AT could get by with a smattering of chips, which worked fine for mostly text-only computers, the ATX has much higher throughput requirements. To help the CPU focus on serving the user’s applications, two chipsets—the memory controller hub (MCH) and peripheral controller hub (PCH), take charge of managing the data throughput. The MCH manages data between CPU, computer memory, the graphics processor unit (GPU), and the PCH, while the PCH manages data between the peripherals (audio, storage, network, USB, ...) and the MCH.
 
-![Chipset diagram of ATX systems, up to early Intel Core (i-Series)]({attach}issue134_01.gif)<br />
-<small>An Intel pre-Core i-series ATX system chipset diagram.<br />The MCH and PCH (labelled ICH here for unimportant reasons) support the CPU in its data operations<br />DDR refers to computer memory, while GDDR refers to graphics card memory ([Issue123]({filename}/season10/issue123/issue123.md))<br />Source: [Ars](https://arstechnica.com/gadgets/2009/09/intel-launches-all-new-pc-architecture-with-core-i5i7-cpus/)</small>
+![Chipset diagram of ATX systems, up to early Intel Core (i-Series)](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue134/issue134_01.gif)<br />
+<small>An Intel pre-Core i-series ATX system chipset diagram.<br />The MCH and PCH (labelled ICH here for unimportant reasons) support the CPU in its data operations<br />DDR refers to computer memory, while GDDR refers to graphics card memory ([Issue123](https://buttondown.email/laymansguide/archive/lmg-s10-issue-123-graphics-cards-the-pixel-factory/))<br />Source: [Ars](https://arstechnica.com/gadgets/2009/09/intel-launches-all-new-pc-architecture-with-core-i5i7-cpus/)</small>
 
 There are terms for each of the connections between chips, which I won’t get into because it largely won’t concern us until we have to design performant systems.
 
@@ -19,7 +11,7 @@ There are terms for each of the connections between chips, which I won’t get i
 
 The technical geeks are probably fuming at this point because ATX is a motherboard standard, while I’m talking about the evolution of processors which have little to do with the motherboards, at least not directly ... but that’s of little importance at this point. Because we first need to talk about CPU pins.
 
-From [Issue 131]({filename}/season11/issue131/issue131.md), I gave a simple model of the limitations of data transfer:
+From [Issue 131](https://buttondown.email/laymansguide/archive/lmg-s11-issue-131-what-do-early-cpus-and-startup/), I gave a simple model of the limitations of data transfer:
 
 > There is a max frequency they can operate at, and a limit to the number of wires they can be connected to (throughput = no. of wires × frequency)
 
@@ -57,8 +49,8 @@ If light is taking one clock cycle to get out of the CPU, you have a problem. Ra
 
 Solution: move the MCH into the CPU!
 
-![Chipset diagram of ATX systems for Intel Core (i-Series)]({attach}issue134_02.gif)<br />
-<small>An Intel Core i-series ATX system chipset diagram.<br />The MCH is merged into the CPU, but still a discrete unit.<br />DDR refers to computer memory, while GDDR refers to graphics card memory ([Issue123]({filename}/season10/issue123/issue123.md))<br />Source: [Ars](https://arstechnica.com/gadgets/2009/09/intel-launches-all-new-pc-architecture-with-core-i5i7-cpus/)</small>
+![Chipset diagram of ATX systems for Intel Core (i-Series)](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue134/issue134_02.gif)<br />
+<small>An Intel Core i-series ATX system chipset diagram.<br />The MCH is merged into the CPU, but still a discrete unit.<br />DDR refers to computer memory, while GDDR refers to graphics card memory ([Issue123](https://buttondown.email/laymansguide/archive/lmg-s10-issue-123-graphics-cards-the-pixel-factory/))<br />Source: [Ars](https://arstechnica.com/gadgets/2009/09/intel-launches-all-new-pc-architecture-with-core-i5i7-cpus/)</small>
 
 ## Squeezing more tenants into the building
 

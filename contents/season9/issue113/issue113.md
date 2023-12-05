@@ -1,11 +1,3 @@
-Title: Issue 113: A computer’s existential crisis (boot failure)
-Date: 2021-03-27 08:00
-Tags: 
-Category: Season 9
-Slug: lmg-s9-issue-113-a-computers-existential-crisis
-Author: J S Ng
-Summary: 
-
 [**Previously:**](https://buttondown.email/laymansguide/archive/) When a computer is booted up, it runs the BIOS from a chip on the motherboard. The chip checks that core parts are present, checks for a storage disk containing a bootloader, loads it into memory, and hands over control. The bootloader loads the operating system kernel. The operating system kernel then does whatever it needs to do to get the system ready for use.
 
 In this issue, doom and gloom.

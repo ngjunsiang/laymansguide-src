@@ -1,11 +1,3 @@
-Title: Issue 7: What is HTTP?
-Date: 2019-01-26 08:00
-Tags: 
-Category: Season 1
-Slug: lmg-issue-7-what-is-http
-Author: J S Ng
-Summary: 
-
 Before I jump into talking about requests, maybe we should start with a more fundamental question: what is HTTP?
 
 HTTP: HyperText Transfer Protocol

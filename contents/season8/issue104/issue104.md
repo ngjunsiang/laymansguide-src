@@ -1,11 +1,3 @@
-Title: Issue 104: Storing sensitive data
-Date: 2021-01-23 08:00
-Tags: 
-Category: Season 8
-Slug: lmg-s8-issue-104-storing-sensitive-data
-Author: J S Ng
-Summary: 
-
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A race condition happens when threads depend on instructions happening with coincidental timing for success. When instructions are not executed with appropriate timing, one or more threads can get stuck waiting on a response that never comes.
 
 To wrap up this season on how apps work, I’m going to try answering a question I had on my mind as I was still new to computers: where do my secrets get stored? If I don’t want them to be stored, what are my options?
@@ -14,7 +6,7 @@ I will answer that *from an app’s perspective* in this issue.
 
 ## Why would I want to keep secrets from my users?
 
-You just wrote an app. Your app syncs data to a cloud database ([Issue 90]({filename}/season7/issue090/issue090.md)). But the cloud database has many other app developers using it as well—how would it know it is you and not some other malicious hacker? It recognises you via a **shared secret**: a token or an API key that you can see after you log in to your dashboard on their website.
+You just wrote an app. Your app syncs data to a cloud database ([Issue 90](https://buttondown.email/laymansguide/archive/lmg-s7-issue-90-using-a-database/)). But the cloud database has many other app developers using it as well—how would it know it is you and not some other malicious hacker? It recognises you via a **shared secret**: a token or an API key that you can see after you log in to your dashboard on their website.
 
 After your users install the app, every request sent by your app to the cloud database has to be authenticated using this *shared secret*. That means you are going to have to get this shared secret onto the app somehow. But this has to happen without the user being able to see it or access it, otherwise a savvy user could use that key to gain access to your cloud database.
 
@@ -22,7 +14,7 @@ After your users install the app, every request sent by your app to the cloud da
 
 The code that is loaded by the user’s browser runs under their control, so putting the shared secret anywhere in that code is a bad idea. Any savvy user who knows how to view the script’s source can potentially find it!
 
-A much safer option is to store the secret with the code that runs on *your server*. But not in the server’s source code! If you are most developers, you would be using some kind of version control system ([Issue 19]({filename}/season2/issue019/issue019.md)) that maintains a copy of your source code and all its changes. If you are using Github or some other public platform for this, you have to be very careful that the shared secret is not visible (or otherwise guessable) just by reading the source code.
+A much safer option is to store the secret with the code that runs on *your server*. But not in the server’s source code! If you are most developers, you would be using some kind of version control system ([Issue 19](https://buttondown.email/laymansguide/archive/lmg-s2-issue-19-version-control-and-git/)) that maintains a copy of your source code and all its changes. If you are using Github or some other public platform for this, you have to be very careful that the shared secret is not visible (or otherwise guessable) just by reading the source code.
 
 For a simple shared secret, such as a short string of characters, app developers usually use **environment variables**. These are pieces of information that are kept in memory only, accessible by the app, and are set by the operating system whenever the app starts up. The server where you run your code will let you configure the environment variables that your app needs, keeping them out of sight of the users.
 
@@ -58,7 +50,7 @@ The hashes are designed to be difficult to reverse. The state-of-the-art algorit
 
 Shared secrets allow secured access to resources, such as databases or other services. These shared secrets are typically kept on a server controlled by the app developer. For mobile apps, they are usually stored with the operating system, inaccessible to other apps.
 
-Phew, we had enough issues here to cover the main parts. And I managed to answer one of the sometime-in-the-future questions! Actually, I also answered another one on software installation earlier, in issues [99]({filename}/season8/issue099/issue099.md) and [100]({filename}/season8/issue100/issue100.md), so I’m going to go ahead and strike it off.
+Phew, we had enough issues here to cover the main parts. And I managed to answer one of the sometime-in-the-future questions! Actually, I also answered another one on software installation earlier, in issues [99](https://buttondown.email/laymansguide/archive/lmg-s8-issue-99-where-does-all-the-app-data-go-a/) and [100](https://buttondown.email/laymansguide/archive/lmg-s8-issue-100-where-does-all-the-app-data-go-a/), so I’m going to go ahead and strike it off.
 
 ## What I’ll be covering next
 

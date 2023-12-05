@@ -1,11 +1,3 @@
-Title: Issue 132: the AT form factor (pre-1995)
-Date: 2021-08-07 08:00
-Tags: 
-Category: Season 11
-Slug: lmg-s11-issue-132-the-at-form-factor-pre-1995
-Author: J S Ng
-Summary: 
-
 [**Previously:**](https://buttondown.email/laymansguide/archive/) CPUs have limited throughput, since there is a max frequency they can operate at, and a limit to the number of wires they can be connected to (throughput = no. of wires × frequency). Later designs of early computers increased the capability of computers by delegating more work to secondary chips.
 
 When computers began hitting the mainstream market, they were designed to be able to use interchangeable parts so as to reduce cost and inventory. To support this effort, manufacturers came up with standards for how to lay out computer components on a mainboard; the different patterns came to be known as **form factors**.
@@ -14,7 +6,7 @@ The AT form factor, by IBM, is one of the early ones. An AT motherboard looks so
 
 ## The AT mainboard
 
-![An AT motherboard]({attach}issue132_01.jpg)<br />
+![An AT motherboard](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue132/issue132_01.jpg)<br />
 <small>An AT motherboard, with key components outlined.<br />Annotations are my own.<br />Original: [Wikipedia](https://en.wikipedia.org/wiki/Skylake_(microarchitecture))</small>
 
 Graphics cards, usually added as an expansion card, communicated with the CPU (under the heatsink) through a chipset, while the CPU communicated with memory through another chipset.

@@ -1,11 +1,3 @@
-Title: Issue 161: Security and XSS
-Date: 2022-02-26 08:59
-Tags: 
-Category: Season 13
-Slug: lmg-s13-issue-161-security-and-xss
-Author: J S Ng
-Summary: 
-
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A content delivery network comprises multiple servers around the world that are able to quickly distribute static content (typically images and video) to viewers that request it. This avoids overloading the hosting server, which would otherwise have to serve data over the network, possibly through many intermediary hops.
 
 When you load a modern webpage with all its bells and whistles, it is usually loading its content from a content delivery network (CDN; see previous issue). At the same time, it is running scripts that came with the webpage. These scripts may load other scripts on the same server (first-party scripts), or scripts on other servers (third-party scripts).
@@ -20,7 +12,7 @@ It’s usually safe to load them in the webpage because they are from the same s
 
 ## Third-party scripts
 
-These are scripts that are loaded from a remote server. You’d usually do this to load scripts from service providers: for analytics, to serve online ads, or to use libraries and frameworks ([Issue 17]({filename}/season2/issue017/issue017.md), [Issue 18]({filename}/season2/issue018/issue018.md)). This is mightily convenient: as a third-party service provider, you have the flexibility of updating this script and immediately benefiting your client without them having to do anything. Can’t beat that for convenience!
+These are scripts that are loaded from a remote server. You’d usually do this to load scripts from service providers: for analytics, to serve online ads, or to use libraries and frameworks ([Issue 17](https://buttondown.email/laymansguide/archive/lmg-s2-issue-17-libraries/), [Issue 18](https://buttondown.email/laymansguide/archive/lmg-s2-issue-18-frameworks/)). This is mightily convenient: as a third-party service provider, you have the flexibility of updating this script and immediately benefiting your client without them having to do anything. Can’t beat that for convenience!
 
 But once you open the door to third-party scripts, they could be loaded from *anywhere*. And without some mechanism for verification, the client won’t actually know if they are loading your script, or someone else’s.
 
@@ -36,7 +28,7 @@ The chain of security is only as strong as its weakest link, so even if your own
 
 ## Protections
 
-This is why all browsers today have [cross-origin resource sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) active by default. This prevents scripts from loading other third-party scripts; only loading of first-party scripts are supported by default. To enable loading of scripts from other sources, your server must include special data in the HTTP response header ([Issue 8]({filename}/season1/issue008/issue008.md)) that specify these sources explicitly. It’s tedious, but it is much more secure, and it is also why learning web programming is much harder today than it was a few years ago.
+This is why all browsers today have [cross-origin resource sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) active by default. This prevents scripts from loading other third-party scripts; only loading of first-party scripts are supported by default. To enable loading of scripts from other sources, your server must include special data in the HTTP response header ([Issue 8](https://buttondown.email/laymansguide/archive/lmg-issue-8-http-error-codeshow-does-a-server-let/)) that specify these sources explicitly. It’s tedious, but it is much more secure, and it is also why learning web programming is much harder today than it was a few years ago.
 
 **Issue summary:** Cross-site scripting attacks occur when a webpage loads malicious code from a third-party, usually carried out by a script in the page. Today, websites are protected from loading unauthorised scripts through cross-origin resource sharing (CORS) policy implemented in browsers, which only allows a website to load scripts from authorised domains.
 

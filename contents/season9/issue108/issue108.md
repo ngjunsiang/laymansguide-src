@@ -1,11 +1,3 @@
-Title: Issue 108: Safeguarding data operations
-Date: 2021-02-20 08:00
-Tags: 
-Category: Season 9
-Slug: lmg-s9-issue-108-safeguarding-data-operations
-Author: J S Ng
-Summary: 
-
 [**Previously:**](https://buttondown.email/laymansguide/archive/) When write operations are interrupted prematurely, filesystem corruption often results.
 
 When a batch of data (shipment of cargo)) arrives at our warehouse, there are two things that need doing:

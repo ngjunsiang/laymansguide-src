@@ -1,11 +1,3 @@
-Title: Issue 23: Specifications in software
-Date: 2019-05-18 08:00
-Tags: 
-Category: Season 2
-Slug: lmg-s2-issue-23-specifications-in-software
-Author: J S Ng
-Summary: 
-
 Last week, we took a look at part of the (heavily simplified) software development pipeline:
 
 `fork a repository → make changes → commit changes (and do automated testing) → merge changes when the branch is ready and all tests pass.`

@@ -1,11 +1,3 @@
-Title: Issue 72: The Data Brokers
-Date: 2020-05-16 08:00
-Tags: 
-Category: Season 6
-Slug: lmg-s6-issue-72-the-data-brokers
-Author: J S Ng
-Summary: 
-
 [**Previously:**](https://buttondown.email/laymansguide/archive/) In 2006, Quantcast offered complete audience analytics for any site that puts _their_ cookie on the site. In this way, they managed to gather information on a wider audience than they, or any single website, could reach on their own.
 
 I’m almost about to begin talking about Quantcast’s proposition to advertisers, and how that led to the ad exchange, and what an ad exchange is, but to avoid confusing you, I had better talk about data brokers and what they are first.

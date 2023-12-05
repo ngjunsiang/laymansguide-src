@@ -1,11 +1,3 @@
-Title: Issue 11: How does wifi work?
-Date: 2019-02-23 08:00
-Tags: 
-Category: Season 1
-Slug: lmg-issue-11-how-does-wifi-work
-Author: J S Ng
-Summary: 
-
 In the last issue, I showed you how I create HTTP requests with custom headers. I put my developer API key in the request header and Hypothes.is gave me a response containing my profile data.
 
 Let’s do a perspective change. Zoom out, out of the computer. Where does my request go? Obviously it has to get out of my computer and get to the server. My laptop’s wifi chip turns the request from an electrical signal into electromagnetic waves, which are broadcasted to the nearest wifi access point, which converts it back to an electrical signal and sends it on its way to the rest of the internet.

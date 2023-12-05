@@ -1,18 +1,10 @@
-Title: Issue 24: Issue trackers, Bug trackers
-Date: 2019-05-25 13:18
-Tags: 
-Category: Season 2
-Slug: lmg-s2-issue-24-issue-trackers-bug
-Author: J S Ng
-Summary: 
-
 Last week, we talked about how developers plan out a project and describe specifically what needs to be done: they write out a specification, and then they write code to make their app meet the specification. Specifications are also used to standardise the way apps communicate, such as they way to report time.
 
 So what happens when apps and programs do not follow the specification?
 
 ## Bugs, bugs, and more bugs
 
-There’s a reason for it, and that reason is usually a bug. A bug is a mistake in the software that causes it to not follow the specification. Sometimes it’s a little typo, sometimes it’s a logic error, sometimes it’s running code causing a computer to run out of resources (usually memory), sometimes a [library (Issue 17)]({filename}/season2/issue017/issue017.md) you rely on has changed, sometimes it’s just way-too-complex code that nobody can fully figure out … and often, you won’t know until you have spent enough time investigating it.
+There’s a reason for it, and that reason is usually a bug. A bug is a mistake in the software that causes it to not follow the specification. Sometimes it’s a little typo, sometimes it’s a logic error, sometimes it’s running code causing a computer to run out of resources (usually memory), sometimes a [library (Issue 17)](https://buttondown.email/laymansguide/archive/lmg-s2-issue-17-libraries/) you rely on has changed, sometimes it’s just way-too-complex code that nobody can fully figure out … and often, you won’t know until you have spent enough time investigating it.
 
 Software everywhere is full of bugs. They are like bacteria; you can kill them but there are always more!
 
@@ -34,7 +26,7 @@ Software that helps to keep track of bugs are known as bug trackers. Today, when
 Such features may also come with other software or services; Github has a built-in issue tracker.
 
 
-![Github’s issue tracker]({attach}issue024_01.png)
+![Github’s issue tracker](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season2/issue024/issue024_01.png)
 <small>Github’s issue tracker. From Kenneth Reitz’s `requests` package.</small>
 
 
@@ -43,7 +35,7 @@ This is where developers working on a piece of software can report bugs or issue
 Through the issue created in the issue tracker, developers can communicate with the user who reported the bug, ask for more information, clarify uses of the software, assign the problem to other developers, or close the issue if it is resolved.
 
 
-![An issue in Github’s issue tracker]({attach}issue024_02.png)<br />
+![An issue in Github’s issue tracker](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season2/issue024/issue024_02.png)<br />
 <small>What an issue in Github looks like. From Kenneth Reitz’s `requests` package.</small>
 
 
@@ -52,7 +44,7 @@ Projects will often have a contributing guideline to help users understand how b
 It is considered polite to read the project intro and contributing guidelines to understand how the project is being managed and how to write a helpful bug report.
 
 
-![Contribution guidelines for requests]({attach}issue024_03.png)<br />
+![Contribution guidelines for requests](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season2/issue024/issue024_03.png)<br />
 <small>Contributing guidelines for Kenneth Reitz’s `requests` package.</small>
 
 

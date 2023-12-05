@@ -1,19 +1,3 @@
-Title: Issue 42: Unicode, computers go international
-Date: 2019-10-15 22:22
-Tags: 
-Category: Season 4
-Slug: typo-for-lmg-s4-issue-42-unicode-computers-go
-Author: J S Ng
-Summary: 
-
-Title: Issue 42: Unicode, computers go international
-Date: 2019-10-12 08:00
-Tags: 
-Category: Season 4
-Slug: lmg-s4-issue-42-unicode-computers-go-international
-Author: J S Ng
-Summary: 
-
 **Previously:** In ASCII encoding, text is stored as a 7-bit sequence. Text consists of letters, numbers, symbols, and control codes. Control codes instruct the computer how to format the text so that it looks the way we intended.
 
 Last issue, I explained what ASCII is and what it does: it allows us to **encode** letters, numbers, symbols, and control codes into bits (0s and 1s) to be sent to another computer digitally, where it can be **decoded** by another computer.

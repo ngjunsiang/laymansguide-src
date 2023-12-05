@@ -1,11 +1,3 @@
-Title: Issue 83: Structured Query Language
-Date: 2020-08-08 08:00
-Tags: 
-Category: Season 7
-Slug: lmg-s7-issue-83-structured-query-language
-Author: J S Ng
-Summary: 
-
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A database system follows rules that enable multiple users to send commands to the database at the same time. The system attempts to execute each action one at a time, locking data that is in use by other users, and ensuring that each user does not carry out actions that they are not permitted to. Such systems are better able to prevent data corruption compared to a text-based system.
 
 Have you experienced the pain of having really huge tables in your spreadsheet, sometimes spanning more than a hundred columns? Then you might know how painful it can be trying to filter data from it, e.g. if your boss just wants a few columns of info from certain rows. Like if he asks for the performance numbers of employees who are up for promotion.

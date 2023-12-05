@@ -1,14 +1,6 @@
-Title: Issue 117: Swap space
-Date: 2021-04-24 08:00
-Tags: 
-Category: Season 9
-Slug: lmg-s9-issue-117-swap-space
-Author: J S Ng
-Summary: 
-
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Hibernation mode causes the computer to store the data configuration into a hibernation file on disk. When powered up, the OS reads the data configuration from the file back into memory. This lets the system avoid having to do a full shutdown and bootup; it performs a shorter version of these two sequences instead.
 
-In [Issue 57]({filename}/season5/issue057/issue057.md), I laid out the transfer speeds and latencies for a few places in the computer where data can be stored:
+In [Issue 57](https://buttondown.email/laymansguide/archive/lmg-s5-issue-57-cache-the-cpus-working-space/), I laid out the transfer speeds and latencies for a few places in the computer where data can be stored:
 
 - Hard disk drive (HDD): ≈5 ms response latency, 100 MB/s transfer speed
 - Solid state disk (SSD): up to 0.1 ms response latency, 0.5–1+ GB/s transfer speed
@@ -41,7 +33,7 @@ In older systems or software, you may also see this page file referred to as a *
 
 ## Why is it called the page file?
 
-Computer memory is organised into pages, each page typically being 4 KiB (notice that disk sectors are also typically 4 KiB ([Issue 106]({filename}/season9/issue106/issue106.md)) …). The computer may have only 8GB of physical memory, but present 16GB of virtual memory ([Issue 56]({filename}/season5/issue056/issue056.md)) to programs. Kind of like how banks only hold some liquidity but present their assets as being much more …
+Computer memory is organised into pages, each page typically being 4 KiB (notice that disk sectors are also typically 4 KiB ([Issue 106](https://buttondown.email/laymansguide/archive/lmg-s9-issue-106-organising-storage/)) …). The computer may have only 8GB of physical memory, but present 16GB of virtual memory ([Issue 56](https://buttondown.email/laymansguide/archive/lmg-s5-issue-56-operating-systems-and-resource/)) to programs. Kind of like how banks only hold some liquidity but present their assets as being much more …
 
 So the 8GB “shortfall” is actually in the pagefile, not in memory. The pagefile essentially acts like (much slower) memory! The OS reads pages from it and writes pages to it, through virtual memory accesses.
 

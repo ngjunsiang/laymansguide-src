@@ -1,11 +1,3 @@
-Title: Issue 51: PDFs part 1 – Compatibility and fidelity
-Date: 2019-12-14 08:00
-Tags: 
-Category: Season 4
-Slug: lmg-s4-issue-51-pdfs-part-1-compatibility-and
-Author: J S Ng
-Summary: 
-
 **Previously:** An HTML file contains markup tags that tell the browser how to interpret and format the text within the tags. Other document formats usually use tags in a similar way. These tags constitute a markup language that any app can use to mark up its own text too.
 
 If you were old enough (or perhaps lucky enough) to remember the old days of document layout, you may remember a time when such software was non-existent. You typed the text using a typewriter, being *very careful* to do a carriage return and line break where the pictures were supposed to go. Then you *literally* cut the pictures and pasted them in. Not the right size? You’re outta luck.
@@ -14,9 +6,9 @@ And then computers came along. But in the days of dot matrix printers, which pri
 
 ## The early days of publishing
 
-If you were working for a professional publisher, you formatted text by inserting **control codes** (including the formatting commands mentioned in [Issue 41]({filename}/season4/issue041/issue041.md)) using a special keyboard. But computers back then weren’t powerful enough to show you the effects of that formatting instantaneously. You would just see the formatting code on the display and have to imagine how it looks like in your head. Which is easy to do, after many years of experience.
+If you were working for a professional publisher, you formatted text by inserting **control codes** (including the formatting commands mentioned in [Issue 41](https://buttondown.email/laymansguide/archive/lmg-s4-issue-41-ascii-the-typewriter-digitised/)) using a special keyboard. But computers back then weren’t powerful enough to show you the effects of that formatting instantaneously. You would just see the formatting code on the display and have to imagine how it looks like in your head. Which is easy to do, after many years of experience.
 
-![Formatting codes revealed in WordPerfect 5.1]({attach}issue051_01.png)<br />
+![Formatting codes revealed in WordPerfect 5.1](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season4/issue051/issue051_01.png)<br />
 <small>WordPerfect 5.1 (1986), with formatting codes revealed<br />
 From [Anthology](https://anthology.hypotheses.org/254)</small>
 

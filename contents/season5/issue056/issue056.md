@@ -1,11 +1,3 @@
-Title: Issue 56: Operating Systems and resource management
-Date: 2020-01-18 08:00
-Tags: 
-Category: Season 5
-Slug: lmg-s5-issue-56-operating-systems-and-resource
-Author: J S Ng
-Summary: 
-
 **Previously:** The CPU just executes instruction after instruction after instruction. Each instruction may consist of loading data from a memory location, sending data to a memory location, or performing operations on the data it is holding.
 
 If the CPU is mindless and simply carries out instructions, there must be some kind of a “higher mind” maintaining order and harmony within the CPU so that our programs don’t muck things up for each other.

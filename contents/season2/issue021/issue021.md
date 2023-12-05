@@ -1,11 +1,3 @@
-Title: Issue 21: Forking and merging
-Date: 2019-05-04 08:00
-Tags: 
-Category: Season 2
-Slug: lmg-s2-issue-21-forking-and-merging
-Author: J S Ng
-Summary: 
-
 So far I have been describing things as though only one developer was working on a project. What happens when two developers are involved? Any kind of collaboration between people working on one thing usually leads to issues coordinating their efforts. How do developers manage this?
 
 Usually, by not working on the same part of the code at the same time. But in addition to that, developers have also come up with some good practices and work philosophies to minimise the friction involved in working together.

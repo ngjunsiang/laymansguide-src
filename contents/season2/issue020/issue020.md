@@ -1,11 +1,3 @@
-Title: Issue 20: Testing
-Date: 2019-04-27 08:00
-Tags: 
-Category: Season 2
-Slug: lmg-s2-issue-20-testing
-Author: J S Ng
-Summary: 
-
 Last issue, I introduced **version control**, the idea that you can set things up in a way that lets you see the **change history** of a document. This lets you undo changes which you later come to regret, and compare the document to a previous point in history. If you have a version control system (VCS) set up, you can commit changes to it and view a list of those changes later.
 
 When one is just starting out in software development, one thing that often happens is this. You start writing code for an app-say, a todo list. You write code to set up a database, display a login and other stuff. You commit the changes to the code. You add core features: add/remove/update a todo item; commit. You come up with more ideas: subtasks, recurring items, tags, filters, and all that jazz. Commit, commit, commit. You now have a complete app with bells and whistles, but the code is a sprawling mess: when you finally test the app, there are strange bugs everywhere, the lists don't filter properly, and the database gets messier and messier.

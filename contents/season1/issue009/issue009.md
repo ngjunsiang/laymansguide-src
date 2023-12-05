@@ -1,15 +1,7 @@
-Title: Issue 9: How do I make an HTTP request?
-Date: 2019-02-09 08:00
-Tags: 
-Category: Season 1
-Slug: lmg-issue-9-how-do-i-make-an-http-request
-Author: J S Ng
-Summary: 
-
 Last issue, I talked about HTTP response headers, and how they inform the client about the request status using a status code. Let’s talk about the HTTP request today. An HTTP request header looks like this:
 
 
-![An HTTP request header]({attach}issue009_01.png)
+![An HTTP request header](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season1/issue009/issue009_01.png)
 <small>A request header</small>
 
 

@@ -1,11 +1,3 @@
-Title: Issue 151: the Java VM
-Date: 2021-12-18 08:00
-Tags: 
-Category: Season 12
-Slug: lmg-s12-issue-151-the-java-vm
-Author: J S Ng
-Summary: 
-
 [**Previously:**](https://buttondown.email/laymansguide/archive/) System VMs provide a set of virtualised hardware that the OS interacts with. Process VMs provide a set of libraries that a program (written in that programming language) interacts with.
 
 If the Java VM lets us write programs that work across multiple Oses, why don’t we write everything in Java then?
