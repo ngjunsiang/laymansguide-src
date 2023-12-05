@@ -16,7 +16,7 @@ If you’re thinking “this part is going to be incredibly math-ey”, you are 
 
 ## Lossy image compression: luma and chroma
 
-In [Issue 44](https://buttondown.email/laymansguide/archive/lmg-s4-issue-44-image-resolution/), I mentioned that the human eye has 3 types of cones that sense red, green, and blue light. What I didn’t mention then is that partly due to the way these cones are distributed, the human eye is more sensitive to differences in brightness (or “**luma**”) than differences in colour (“**chroma**”).
+In [Issue 44]({filename}/season4/issue044/issue044.md
 
 A black-and-white image has only luma information (brightness), while a colour image has both luma and chroma information—you can mathematically separate the data of a colour image into the brightness component (which looks just like a black-and-white photo), and a colour component, which looks like nothing you have ever seen. The closest thing to chroma information would be analog colour photo negatives, if you were born early enough to get to see those.
 
@@ -26,7 +26,7 @@ So that’s another way of representing image information: you can either repres
 
 Since the human eye is less sensitive to chroma (colour) information, in the JPEG image format, the chroma components are compressed by averaging each 2×2 group of pixels into 1 value for U and V each. (This process is known as subsampling.) Theoretically that halves the amount of data required for the same image! (4/4 Y + 1/4 U + 1/4 V = 6/12 of the original information)
 
-![4 images with different chroma subsampling](https://github.com/ngjunsiang/laymansguide/blob/release/season4/issue046/issue046_01.jpg?raw=true)<br />
+![4 images with different chroma subsampling]({attach}issue046_01.jpg?raw=true)<br />
 <small>Compare the image without chroma compression (4:4:4) to the image with chroma compression (4:2:0).<br />
 Without scrutiny, the human eye is not very sensitive to lower resolution in chroma.<br />
 Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Colorcomp.jpg)</small>

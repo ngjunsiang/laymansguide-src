@@ -10,7 +10,7 @@ A CPU core is comprised of 3 types of execution units:
 
 - **A**rithmetic **L**ogic **U**nit (**ALU**): THE ALU is responsible for carrying out integer calculations
 - **F**loating **P**oint **U**nit (**FPU**): The FPU is responsible for carrying out decimal calculations
-- **L**oad/**S**tore **U**nit (**LSU**): The LSU is responsible for loading data from memory into the CPU, or storing data from the CPU into memory ([Issue 55](https://buttondown.email/laymansguide/archive/lmg-s5-issue-55-addressing-memory/))
+- **L**oad/**S**tore **U**nit (**LSU**): The LSU is responsible for loading data from memory into the CPU, or storing data from the CPU into memory ([Issue 55]({filename}/season5/issue055/issue055.md
 
 An instruction decoding unit in the CPU decodes each instruction and sends it to the appropriate execution unit. All these units can work at the same time, and for maximum performance this is what you want to happen.
 
@@ -24,7 +24,7 @@ Keeping all the execution units busy is getting more complex now, eh?
 
 ## Minimising wait time in a CPU
 
-Let’s revisit the instructions from [Issue 53](https://buttondown.email/laymansguide/archive/lmg-s5-issue-53-the-cpu-is-an-instruction-obeying/):
+Let’s revisit the instructions from [Issue 53]({filename}/season5/issue053/issue053.md
 
 ```
 1 LOAD 1   R1

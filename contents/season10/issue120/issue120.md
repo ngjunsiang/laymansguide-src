@@ -32,7 +32,7 @@ If you insert a device and Windows says it does not recognise it, you can be sur
 
 On your computer, you can view a list of your devices and inspect their driver details using Device Manager.
 
-![Device Manager in Windows 10](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue120/issue120_01.png)<br />
+![Device Manager in Windows 10]({attach}issue120_01.png)<br />
 <small>Device Manager in Windows 10</small>
 
 ## Generic drivers

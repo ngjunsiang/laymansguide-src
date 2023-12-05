@@ -10,14 +10,14 @@ It is, to put it simply, a small circuit board with lots of chips, that plugs in
 
 It has multiple storage chips, quite similar to the ones in your thumb drives/flash drives but much faster, and one controller chip to rule em all.
 
-![Solid state disk inserted into laptop slot](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue119/issue119_01.jpg)<br />
+![Solid state disk inserted into laptop slot]({attach}issue119_01.jpg)<br />
 <small>A solid state disk, plugged into a laptop slot (but not secured)</small>
 
 ## Hmm ... like computer memory?
 
 Computer memory also consists of chips on a circuit board, right? But memory gets wiped after the computer loses power ... but that doesn’t happen with SSDs; why?
 
-![Computer memory inserted into memory slot](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue119/issue119_02.png)<br />
+![Computer memory inserted into memory slot]({attach}issue119_02.png)<br />
 <small>Computer memory sticks, inserted into the memory slot of a computer motherboard</small>
 
 Computer memory uses capacitors, which are like micro-sized batteries. They hold a charge when powered, and store either a 1 or 0 state by being charged or uncharged, respectively.

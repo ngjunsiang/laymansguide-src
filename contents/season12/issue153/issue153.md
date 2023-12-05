@@ -8,7 +8,7 @@ How do people deploy web services so quickly if there is so much tedium involved
 
 You could set up the environment, containerise it, and deploy it through a container … that’s one way to solve for distribution.
 
-But somebody smart realised that this is likely a common problem. 99%[^1] of applications are going to need the same building blocks: one or more databases ([Season 7](https://buttondown.email/laymansguide/archive/lmg-s7-issue-79-a-base-for-data/)), remote storage servers for storing large files ([Issue 106](https://buttondown.email/laymansguide/archive/lmg-s9-issue-106-organising-storage/)), web servers ([Issue 8](https://buttondown.email/laymansguide/archive/lmg-issue-8-http-error-codeshow-does-a-server-let/)), and of course the application itself.
+But somebody smart realised that this is likely a common problem. 99%[^1] of applications are going to need the same building blocks: one or more databases ([Season 7]({filename}/season7/issue079/issue079.md
 
 [^1]: Illustrative but not accurate estimation!
 
@@ -18,24 +18,24 @@ Amazon was the first to realise that whatever they were doing to scale Amazon’
 
 ## The Cloud is born
 
-The Cloud is a collection of services that can be plugged in to an application, in lieu of writing your own code. Instead of implementing your own storage server, you could use Google Cloud Storage, or Amazon S3, or Microsoft Azure Storage, etc. You access these and other services typically through a web API ([Issue 4](https://buttondown.email/laymansguide/archive/lmg-issue-4-what-is-an-api/)), and have the option to manage them through a web interface.
+The Cloud is a collection of services that can be plugged in to an application, in lieu of writing your own code. Instead of implementing your own storage server, you could use Google Cloud Storage, or Amazon S3, or Microsoft Azure Storage, etc. You access these and other services typically through a web API ([Issue 4]({filename}/season1/issue004/issue004.md
 
-![screenshot of Google Cloud Storage’s web interface](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season12/issue153/issue153_01.png)  
+![screenshot of Google Cloud Storage’s web interface]({attach}issue153_01.png)  
 <small>Google Cloud Storage web interface</small>
 
-Besides virtual machines ([Issue 147](https://buttondown.email/laymansguide/archive/lmg-s12-issue-147-operating-systems-on-virtual/)), cloud offerings span multiple layers of abstraction.
+Besides virtual machines ([Issue 147]({filename}/season12/issue147/issue147.md
 
-![Google Cloud Storage’s main cloud offerings](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season12/issue153/issue153_02.png)  
+![Google Cloud Storage’s main cloud offerings]({attach}issue153_02.png)  
 <small>Google Cloud main offerings</small>
 
 Here are Google’s mainstay offerings:
 
 - Compute Engine: virtual machines
 - App Engine: a pre-configured, setup-free virtual machine that runs code which you upload, through a web API or their web interface
-- Kubernetes Engine: a hypervisor ([Issue 148](https://buttondown.email/laymansguide/archive/lmg-s12-issue-148-history-of-commercial-computing/)) that runs your containers
+- Kubernetes Engine: a hypervisor ([Issue 148]({filename}/season12/issue148/issue148.md
 - Cloud Storage: a storage service for files (see earlier screenshot)
-- Cloud SQL: a relational database service ([Issue 87](https://buttondown.email/laymansguide/archive/lmg-s7-issue-87-relational-databases/))
-- Cloud Bigtable: a NoSQL database service ([Issue 90](https://buttondown.email/laymansguide/archive/lmg-s7-issue-90-using-a-database/))
+- Cloud SQL: a relational database service ([Issue 87]({filename}/season7/issue087/issue087.md
+- Cloud Bigtable: a NoSQL database service ([Issue 90]({filename}/season7/issue090/issue090.md
 
 Then there are variants for running big data queries, using machine learning nodes, and rebranded services for running the backends of mobile apps, … the key common factor here is that using these services is much simpler than rolling and maintaining your own version![^2] And it lets you speed up development by not having to reinvent the wheel that cloud services have implemented for you.
 
@@ -45,7 +45,7 @@ Then there are variants for running big data queries, using machine learning nod
 
 As web applications got larger and larger, beyond the capacity of even a single high-end server to manage, they had to be redesigned so that they could run on multiple servers while maintaining data synchronicity. As businesses standardise on ways to do that, cloud providers add these tools as part of their offerings.
 
-For example, sending/receiving messages between servers is a key engineering problem. Data packets sometimes get dropped en-route, or when a server gets overloaded. Sometimes they get held up at a server, time out, and then they get resent by the client ([Issue 9](https://buttondown.email/laymansguide/archive/lmg-issue-9-how-do-i-make-an-http-request/)); the server receives two identical requests, and sends two identical responses, resulting in a duplicate response.
+For example, sending/receiving messages between servers is a key engineering problem. Data packets sometimes get dropped en-route, or when a server gets overloaded. Sometimes they get held up at a server, time out, and then they get resent by the client ([Issue 9]({filename}/season1/issue009/issue009.md
 
 If you don’t want to write your own software for managing communication between servers, the cloud lets you write code for your machines to communicate easily, without having to crack your head thinking about how to make it happen.
 
@@ -61,7 +61,7 @@ I hope the gist of what the cloud does is at least clearer!
 
 I am done with virtualisation and the cloud at this point. You’ve learned about hardware virtualisation (through drivers), system virtualisation (through system VMs), process virtualisation (through process VMs), and service virtualisation (through APIs) so far this season.
 
-I’m going to use the last three issues to talk about a related and current thing: instruction translation and emulation. Let’s start with a question: How is the Apple M1, an ARM chip, able to run MacOS programs compiled for the Intel x86-64 chips? Aren’t they two very different instruction sets ([Issue 53](https://buttondown.email/laymansguide/archive/lmg-s5-issue-53-the-cpu-is-an-instruction-obeying/))?
+I’m going to use the last three issues to talk about a related and current thing: instruction translation and emulation. Let’s start with a question: How is the Apple M1, an ARM chip, able to run MacOS programs compiled for the Intel x86-64 chips? Aren’t they two very different instruction sets ([Issue 53]({filename}/season5/issue053/issue053.md
 
 Yes, yes they are. More next issue ;)
 

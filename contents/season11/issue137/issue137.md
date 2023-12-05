@@ -6,7 +6,7 @@ Let’s get to it: Intel vs M1 Macbook Air!
 
 Here’s the Macbook Air in 2020. There was one in early 2020 using an Intel Core CPU, and one in late 2020 using the Apple M1 CPU.
 
-![Macbook Air in early 2020 (left), vs late 2020 (right)](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue137/issue137_01.jpg)<br />
+![Macbook Air in early 2020 (left), vs late 2020 (right)]({attach}issue137_01.jpg)<br />
 <small>Macbook Air, early-2020 (Intel, left) vs late-2020 (M1, right)<br /><br />Source: [iFixit](https://www.ifixit.com/News/46884/m1-macbook-teardowns-something-old-something-new)</small>
 
 They look almost identical, but some parts are noticeably different … can you spot the differences?
@@ -16,17 +16,17 @@ They look almost identical, but some parts are noticeably different … can you 
 
 You may have spotted other differences in the hardware, but since this issue is focused on the mainboard and CPU, let’s zoom in on those. Let’s have a closer look at their mainboards:
 
-![2020 Intel Macbook Air mainboard, front(left) vs back (right)](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue137/issue137_04.jpg)<br />
+![2020 Intel Macbook Air mainboard, front(left) vs back (right)]({attach}issue137_04.jpg)<br />
 <small>2020 Intel Macbook Air mainboard, front and back<br />The Intel CPU unfortunately sits under the huge heatsink, shown with its 4 securing screws<br />Memory and solid state disk are on separate chips (most likely on the back)<br />Source: [iFixit Store](https://www.ifixit.com/Store/Mac/MacBook-Air-13-Inch-Early-2020-1-1-GHz-Core-i3-Logic-Board-with-Paired-Touch-ID-Sensor/IF188-152?o=1)</small>
 
-![2020 M1 Macbook Air mainboard, front (left) vs back (right)](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue137/issue137_02.jpg)<br />
+![2020 M1 Macbook Air mainboard, front (left) vs back (right)]({attach}issue137_02.jpg)<br />
 <small>2020 M1 Macbook Air mainboard, front and back<br />There are fewer big chips, but the single biggest chip there is *much* bigger, and Apple-branded<br />Memory is integrated into the CPU, but the solid state disk sits on a separate pair of chips<br />Source: [iFixit](https://www.ifixit.com/News/46884/m1-macbook-teardowns-something-old-something-new)</small>
 
 ## The M1 Macbook Air: all aboard
 
 Overall, it looks like the M1 has “swallowed” a number of chips. Compared to the 2020 Intel model, the M1 has brought on-board computer memory (the two black chips on the M1), and Apple’s T2 chip (the back shrouded chip on the 2020 Intel Macbook Air). These are major components for computer operation.
 
-So not only does the M1 incorporate more components, it does so while drawing less power—the lack of a cooling fan implies it is passively cooled. From [Issue 129](https://buttondown.email/laymansguide/archive/lmg-s10-issue-129-cooling/), this suggests the M1 Macbook Air also uses less power (8–12W) for its tasks. And reviews for the Macbook M1 Air suggest it is not being thermally throttled except under the heaviest of loads.
+So not only does the M1 incorporate more components, it does so while drawing less power—the lack of a cooling fan implies it is passively cooled. From [Issue 129]({filename}/season10/issue129/issue129.md
 
 How did Apple manage to design a processor like this?
 
@@ -38,7 +38,7 @@ To get into that story, I’ll have to go even more mobile, and look at smartpho
 
 They are largely undergoing the same transition, just more slowly. This is the Microsoft Surface Laptop in 2017:
 
-![Microsoft Surface Laptop (2017) mainboard](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue137/issue137_03.jpg)<br />
+![Microsoft Surface Laptop (2017) mainboard]({attach}issue137_03.jpg)<br />
 <small>Microsoft Surface Laptop mainboard<br />CPU(red), memory (orange), solid state disk (yellow), and network card (green) are all soldered on. (Outlined in cyan are the display control chips)<br />Source: [iFixit](https://www.ifixit.com/Teardown/Microsoft+Surface+Laptop+Teardown/92915)</small>
 
 Larger-sized laptops that can afford the space may still have solid state storage on a separate card.

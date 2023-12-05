@@ -6,7 +6,7 @@ So what is going on?
 
 ## Caches, caches, and more caches
 
-In [Issue 39](https://buttondown.email/laymansguide/archive/lmg-s3-issue-39-caches-and-caching/), I explained what caches are: places where you (temporarily) store the result of lookups, so you don’t have to keep performing the lookup again. In context, this referred to DNS lookups: operations that translate a domain name (such as `google.com`) to an IP address (such as `173.194.217.100`).
+In [Issue 39]({filename}/season3/issue039/issue039.md
 
 But caches are everywhere, not just in DNS.
 
@@ -32,7 +32,7 @@ These days, the disk-is-faster assumption is less true across a spectrum of uses
 
 ## Mobile storage and internet
 
-A quick note on mobile storage, which I unfortunately missed out on [Issue 119](https://buttondown.email/laymansguide/archive/lmg-s10-issue-119-solid-state-disks-an-upgrade/) on laptop and desktop solid-state disks (SSDs).
+A quick note on mobile storage, which I unfortunately missed out on [Issue 119]({filename}/season10/issue119/issue119.md
 
 Mobile devices generally do not use the same kinds of SSDs that laptops use. Those are bulkier, use more power (not good for mobile battery life), and run hotter. Laptop SSDs use an interface called NVMe (which iPhones use as well), while most Android devices’ storage use an interface called UFS which is slower (but uses less energy).
 

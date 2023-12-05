@@ -1,7 +1,7 @@
 Say you want to send some data to another app. Let’s say it’s an annotation from Hypothes.is:
 
 
-![Screenshot of a Hypothes.is highlight page](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season1/issue005/issue005_01.png)
+![Screenshot of a Hypothes.is highlight page]({attach}issue005_01.png)
 <small>A highlight in Hypothes.is, to illustrate the various bits of info that must be sent. </small>
 
 
@@ -37,7 +37,7 @@ What? You mean processing XML requires money? Of course! Think about it:
 Amid other competing standards, JSON won out and became a de facto standard for applications to exchange data. Which makes things a little easier for everyone: when we can agree on one de facto standard, everyone knows they gotta make things that support it. So it’s really easy to find something that can help me process JSON.
 
 
-![Data from the Hypothes.is API, JSON](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season1/issue005/issue005_02.png)
+![Data from the Hypothes.is API, JSON]({attach}issue005_02.png)
 <small>The same annotation, in JSON format</small>
 
 

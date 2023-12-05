@@ -15,7 +15,7 @@ If you are, I did it for you so you don’t have to. Heres what it can see, in d
 2. Browser (and probably OS), with version information  
    This lets scripts know if you are using a (possibly outdated) browser version. Since most browser vulnerabilities are published online (to help security researchers patch them), you should keep your browser updated to benefit from these security patches.  
    OS information can provide some demographic information (e.g. if you are an Apple user or Linux user), and also whether you are on a mobile browser or laptop browser. With many data points, a data aggregator can learn if you are on the move often (mostly on mobile browser) or generally static (about 50/50 between mobile and laptop).
-3. Screen resolution ([Issue 44](https://buttondown.email/laymansguide/archive/lmg-s4-issue-44-image-resolution/))  
+3. Screen resolution ([Issue 44]({filename}/season4/issue044/issue044.md
    This can provide enough info to put you in an income bracket; cheaper devices generally have lower resolution. A mid-range or high-end phone usually has a resolution of 1080×1920 or higher.
 4. Autofill information  
    Any information you save in your browser, to be autofilled in forms, can be extracted by a script. It creates a hidden input field that the browser detects and autofills. The script can then send this information as an HTTP request back to the originating server.
@@ -35,7 +35,7 @@ Let’s talk about some broadly useful strategies (note: this is a newsletter, n
 
 ## DNS blocking
 
-A quick refresher on DNS ([Issue 28](https://buttondown.email/laymansguide/archive/lmg-s3-issue-28-domain-names-and-dns/)): each time the browser is given a URL to load, it first figures out the IP address associated with the domain name of the URL (e.g. `facebook.com` is the domain name of a URL like `https://www.facebook.com/<username>/posts/17-digit-number`). It does this through a DNS lookup request to a DNS server.
+A quick refresher on DNS ([Issue 28]({filename}/season3/issue028/issue028.md
 
 Your default DNS server is usually your ISP. This allows your ISP to do some content filtering for you (e.g. if you signed up for a parental control service by them), by simply *blocking all requests* to a particular IP address or domain. e.g. if you have ISP parental controls enabled, and the ISP detects a DNS lookup request to resolve a blacklisted domain like `www.xxxchicksxxx.com` to its IP address, it will simply block the request by not returning any result—stopped at the source! (Note: that URL is probably fictional, I have not tested it!)
 
@@ -45,7 +45,7 @@ What if you don’t want to pay for that service? You could use other alternativ
 2. Change your DNS server IP address to OpenDNS’s servers: `208.67.222.222` and `208.67.220.220`  
    If you do this on your wireless router, anyone using that wifi connection will use the same DNS server—benefits for all!
 3. Decide the level of filtering you want. You can customise the blocked domain names, or whitelist some that you need (the higher levels can be pretty aggressive and cause some services to stop working)
-3. Register your IP address with your account, so OpenDNS can apply your setting to requests from your IP address. Since your ISP may change your IP address periodically, you may need to enable a DDNS service ([Issue 31](https://buttondown.email/laymansguide/archive/lmg-s3-issue-31-getting-a-private-ip-address-dhcp/)), again best done on your router. Some modern routers may have this built-in for you to configure.
+3. Register your IP address with your account, so OpenDNS can apply your setting to requests from your IP address. Since your ISP may change your IP address periodically, you may need to enable a DDNS service ([Issue 31]({filename}/season3/issue031/issue031.md
 
 ## Script filtering with a browser addon
 

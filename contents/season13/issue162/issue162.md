@@ -12,12 +12,12 @@ I’m going with [Source Sans](https://fonts.adobe.com/fonts/source-sans), an op
 
 [^2]: The one I use is called [Fontforge](https://fontforge.org), and it is open-source.
 
-![Fontforge with Source Sans Pro Regular open, showing glyphs](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season13/issue162/issue162_01.png)  
+![Fontforge with Source Sans Pro Regular open, showing glyphs]({attach}issue162_01.png)  
 <small>Source Sans Pro Regular, in Fontforge.</small>
 
 You might already be aware that fonts contain **glyphs**, which are the shapes of each separate character. What makes up those glyphs?
 
-![Uppercase Q from Source Sans Pro Regular](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season13/issue162/issue162_02.png)  
+![Uppercase Q from Source Sans Pro Regular]({attach}issue162_02.png)  
 <small>Uppercase Q from Source Sans Pro Regular.</small>
 
 These glyphs are mathematical shapes. They are stored as a series of points, joined by curves[^3] or straight lines[^4], which are stored as numbers. The diagrams we draw in Microsoft Word are much the same!
@@ -36,13 +36,13 @@ Many applications, if they are unable to find the bold/italic fonts, will artifi
 
 ## Font display
 
-For an application to be able to support text formatting, it must have a program called a text rendering engine. This program takes a single long string of text and determines the appropriate places to chop it up with line breaks. To do that, it first needs to convert the glyph shapes from mathematical formulas into actual real lit pixels or real inky droplets (in a process called **rasterisation**, [Issue 122](https://buttondown.email/laymansguide/archive/lmg-s10-issue-122-the-great-flattening/)).
+For an application to be able to support text formatting, it must have a program called a text rendering engine. This program takes a single long string of text and determines the appropriate places to chop it up with line breaks. To do that, it first needs to convert the glyph shapes from mathematical formulas into actual real lit pixels or real inky droplets (in a process called **rasterisation**, [Issue 122]({filename}/season10/issue122/issue122.md
 
 Then their dimensions have to be considered in the line of text, to know where the line breaks should be placed. Because glyphs are not actually rectangular boxes and they protrude in different ways, optically they need some horizontal adjustment (called **kerning**) to look evenly spaced optically, so that needs to be done too[^5].
 
 [^5]: The kerning information is created by the font designer and embedded in the font file. Applications usually pass this information to the text rendering engine, although some might not actually use it.
 
-![Kerning for some common glyph pairs in Source Sans Pro Regular](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season13/issue162/issue162_03.png)  
+![Kerning for some common glyph pairs in Source Sans Pro Regular]({attach}issue162_03.png)  
 <small>Kerning for some common glyph pairs in Source Sans Pro Regular.<br />  
 A kern value of 0 or blank means no kerning is required. A negative value means the letters need to be brought closer, and a positive value means they need to be spaced further (quite rare).</small>
 

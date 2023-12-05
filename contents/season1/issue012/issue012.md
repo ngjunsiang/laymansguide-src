@@ -11,8 +11,7 @@ We are going to get a little technical here, because I want to give you a view o
 Nah, I won’t do that. It would be merely decorative and not at all illustrative. Instead let’s focus your attention on one particular packet:
 
 
-![An HTTP request captured in Wireshark showing my developer API key](https://github.com/ngjunsiang/laymansguide/blob/release/issue012/issue012_01.png?raw=true)
-<small>An HTTP request captured in Wireshark. Notice the line `Authorization: Bearer [CENSORED]`. That’s my developer API key!</small>
+![An HTTP request captured in Wireshark showing my developer API key]({attach}small>
 
 
 This screenshot comes from an app called Wireshark, used to “capture” packets received by my laptop. This includes packets that my laptop sends to and receives from the access point, but it also includes packets from surrounding devices, such as my robot vacuum, smartphone, home electricity monitor … let’s see what information is visible from these captured packets. (I say “capture” because I haven’t trapped the packet at all, and other devices connecting to the same access point can read the packet as well.)
@@ -36,8 +35,7 @@ That means we need a slightly different set of rules, that enable us to coordina
 HTTPS stands for **HTTP Secure**. Why is it secure? I think a screenshot will make it clear. This is a screenshot from Wireshark again, but this time capturing an HTTPS request packet:
 
 
-![An HTTPS packet in Wireshark, with the packet data encrypted](https://github.com/ngjunsiang/laymansguide/blob/release/issue012/issue012_02.png?raw=true)
-<small>An HTTPS request captured in Wireshark. Notice that the packet header data is now encrypted, and an app would need to know the prearranged encryption code to be able to decode the data.</small>
+![An HTTPS packet in Wireshark, with the packet data encrypted]({attach}small>
 
 
 The `Authorization: Bearer` line is no longer visible; in fact, all the information we saw in the HTTP packet is no longer visible. It has all been encrypted! Any third party intercepting this packet will not be able to decode or modify it without knowing the encryption code that was prearranged between my laptop and the Hypothes.is server.

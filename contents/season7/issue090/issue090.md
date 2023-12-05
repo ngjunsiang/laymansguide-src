@@ -24,7 +24,7 @@ If your company has decided to do away with organic IT support, your next bet is
 
 **Graph databases**
 - Amazon Neptune
-- Microsoft Azure Cosmos also has an API ([Issue 4](https://buttondown.email/laymansguide/archive/lmg-issue-4-what-is-an-api/)) for graph databases
+- Microsoft Azure Cosmos also has an API ([Issue 4]({filename}/season1/issue004/issue004.md
 
 ## Getting the database identifier
 
@@ -32,7 +32,7 @@ After you have successfully registered a database (of any type), you will be giv
 
 `mongodb://mongodb0.example.com:27017`
 
-which identifies your database as a `mongodb` (document) database running on the server at `mongodb0.example.com` on port `27017`. (I covered server hostnames in [Issue 29](https://buttondown.email/laymansguide/archive/lmg-s3-issue-29-how-to-resolve-a-hostname/) and port numbers in [Issue 33](https://buttondown.email/laymansguide/archive/lmg-s3-issue-33-port-numbers/)).
+which identifies your database as a `mongodb` (document) database running on the server at `mongodb0.example.com` on port `27017`. (I covered server hostnames in [Issue 29]({filename}/season3/issue029/issue029.md
 
 or it can look like:
 

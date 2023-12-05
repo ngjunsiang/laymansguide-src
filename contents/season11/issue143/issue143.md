@@ -16,7 +16,7 @@ This’ll have to be a company that designs its own CPUs and GPUs.
 
 The incentives don’t align for Intel. Their main business has never relied on capable graphics, and they are much more concerned with saving the server market from ARM’s and AMD’s encroachment.
 
-What about AMD? After all, they were one of the earliest companies to push for a similar idea: Heterogeneous System Architecture. And they achieved it to a lesser extent, with their Accelerated Processing Units (see [Issue 142](https://buttondown.email/laymansguide/archive/lmg-s11-issue-142-implications-part-1-software/); a fancy term for CPU+GPU).
+What about AMD? After all, they were one of the earliest companies to push for a similar idea: Heterogeneous System Architecture. And they achieved it to a lesser extent, with their Accelerated Processing Units (see [Issue 142]({filename}/season11/issue142/issue142.md
 
 AMD has made this possible in software; that means as a programmer, you can command the CPU to store data at a memory address, pass that address to the GPU, and then get the GPU to retrieve data from that address. But in practice, benchmarks show that passing data this way falls short of the actual throughput that would be expected; possibly the hardware support is just not there yet, and not easy enough to use.
 

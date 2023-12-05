@@ -2,7 +2,7 @@
 
 Apps once lived on a computer. You double-clicked them or pressed Enter or right-clicked Run, a window pops up and a rectangle appears on your taskbar. If Task Manager is showing you that it is using up gobs of memory, you just End Task and the rectangle disappears. Later in this season I’ll say more about what it is like to live in a computer, but we are on web apps now.
 
-Web apps are somewhat more complicated. Because they are so tidily sandboxed ([Issue 92](https://buttondown.email/laymansguide/archive/lmg-s8-issue-92-all-about-apps/)), they cannot actually live on your computer. Instead, they live in your browser.
+Web apps are somewhat more complicated. Because they are so tidily sandboxed ([Issue 92]({filename}/season8/issue092/issue092.md
 
 ## Living in a web browser
 
@@ -20,16 +20,16 @@ I have a browser tab open now, with a Google Sheet loaded. What is the Google Sh
 
 DevTools has a really cool tab labelled “Memory”, and it has a nice visual depiction of what the app is doing with all that memory:
 
-![Firefox DevTools, showing the Memory tab. The app is using 83.84MB of memory, and 32MiB of that is used by objects.](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season8/issue094/issue094_01.png)<br />
+![Firefox DevTools, showing the Memory tab. The app is using 83.84MB of memory, and 32MiB of that is used by objects.]({attach}issue094_01.png)<br />
 <small>DevTools in Firefox lets you inspect the memory that web apps use.<br />The Memory tab shows what is stored in memory.<br />Most of the memory here is being taken up by javascript objects.</small>
 
-Javascript `object`s here are Javascript’s own internal representation of data, which is quite similar to a document database’s format. Altogether, they take up 32 MiB of memory space (difference between MB and MiB is covered in [Issue 40](https://buttondown.email/laymansguide/archive/lmg-s4-issue-40-bits-and-bytes/)). Google Sheets is juggling a lot of data internally, data which is not stored in IndexedDB or localstorage!
+Javascript `object`s here are Javascript’s own internal representation of data, which is quite similar to a document database’s format. Altogether, they take up 32 MiB of memory space (difference between MB and MiB is covered in [Issue 40]({filename}/season4/issue040/issue040.md
 
 `other`, taking up 15 MiB, seems to be pointing to a javascript library that Google Sheets is using to render the spreadsheet.
 
 `strings` are simpler than `object`s, each one representing a snippet of text, or possibly even a number. They only take up 5MiB. `scripts` are the internally stored scripts that the page is executing; they take up 11 MiB.
 
-`domNode` is where it gets interesting. We are used to seeing HTML documents ([Issue 50](https://buttondown.email/laymansguide/archive/lmg-s4-issue-50-complex-file-formats-and-the/)) as a plain text document with lots of formatting, but in a browser it becomes more than just text. Each part of the page, an HTML element, can have its properties changed by Javascript as the page reacts to new data, or to user input.
+`domNode` is where it gets interesting. We are used to seeing HTML documents ([Issue 50]({filename}/season4/issue050/issue050.md
 
 ## The HTML Document Object Model
 
@@ -43,7 +43,7 @@ Internally, a web browser converts the HTML page into a DOM—a data structure t
 
 **Issue summary:** Web apps require the browser to request memory on their behalf, and thus their memory usage shows up under the browser process in the OS Task Manager. Web apps use this data to store a more convenient (but larger) representation of the webpage document, and to store the data needed by the app.
 
-And that is how a web app uses up 84MiB of memory space. If you have multiple tabs running the same app (e.g. multiple Google Sheets open), some of the memory can be shared ([Issue 84](https://buttondown.email/laymansguide/archive/lmg-s5-issue-65-memory-sharing-in-the-operating/)) by these tabs (e.g. `scripts`), but otherwise each tab is going to have its own memory needs.
+And that is how a web app uses up 84MiB of memory space. If you have multiple tabs running the same app (e.g. multiple Google Sheets open), some of the memory can be shared ([Issue 84]({filename}/season5/issue065/issue065.md
 
 In the earlier days of the internet, when spreadsheets were still a separate app, this memory usage would have showed up in the OS Task Manager under Lotus 1-2-3, Microsoft Excel, or some other spreadsheet program. Today, it shows up under Chrome or Firefox, and the details are only inspectable through the browser’s Task Manager.
 

@@ -36,7 +36,7 @@ Coincidentally, starting with time turned out to be a good idea: time informatio
 
 We have covered time and space (I mean, location). Let’s move on to data: how does data get around the world from a few central sources?
 
-Back in [Issue 73](https://buttondown.email/laymansguide/archive/lmg-s6-issue-73-the-heart-of-darkness-header/), when I explained how online advertising works, I mentioned that advertising content is served from a content delivery network (CDN). What is this and how does it work?
+Back in [Issue 73]({filename}/season6/issue073/issue073.md
 
 **Sometime in the future:** What is:
 

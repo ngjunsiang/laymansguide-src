@@ -22,7 +22,7 @@ This is a lot more common than you think, even for experienced programmers, espe
 
 ### Illegal instructions
 
-Memory in the computer is managed by the OS ([Issue 65](https://buttondown.email/laymansguide/archive/lmg-s5-issue-65-memory-sharing-in-the-operating/)), which partitions it into different zones. The memory used by OS processes is protected from access by other apps (for your privacy and protection), and memory used by an app cannot be used by another app, unless it is shared memory space.
+Memory in the computer is managed by the OS ([Issue 65]({filename}/season5/issue065/issue065.md
 
 So when an app sends an instruction requesting to access memory space it does not have authorisation to, or when the OS itself attempts to access an address that it can’t (especially addresses that point to hardware devices) ... it crashes. An app crash just brings you back to your desktop, but an OS crash usually leads to the famous Blue Screen Of Death (BSOD).
 

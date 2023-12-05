@@ -7,9 +7,9 @@ SQL databases are really powerful; this is usually a good thing since it allows 
 
 ## Adding data to an SQL database
 
-Adding data to an SQL database is easy. If our `Customer` table looks like this (from [Issue 84](https://buttondown.email/laymansguide/archive/lmg-s7-issue-84-join-supercharged-vlookup/)):
+Adding data to an SQL database is easy. If our `Customer` table looks like this (from [Issue 84]({filename}/season7/issue084/issue084.md
 
-![Screenshot of a Customer data table, with custID, custName, custEmail, and custContact columns.](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season7/issue084/issue084_01.png)
+![Screenshot of a Customer data table, with custID, custName, custEmail, and custContact columns.]({attach}issue084_01.png)
 
 The relevant SQL query to add another customer is:
 

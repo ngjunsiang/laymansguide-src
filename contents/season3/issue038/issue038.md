@@ -7,14 +7,14 @@ Last issue, I showed the route taken by data packets being sent to google.com, a
 The Github repository where I keep my laymansguide files can be viewed on a webpage, and it looks like this:
 
 
-![Github page for laymansguide](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season3/issue038/issue038_01.png)<br />
+![Github page for laymansguide]({attach}issue038_01.png)<br />
 <small>Github page for laymansguide</small>
 
 
 Loading this page with the Network tab of Developer Tools open produces this report:
 
 
-![Developer Tools showing network activity while loading a Github page](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season3/issue038/issue038_02.png)<br />
+![Developer Tools showing network activity while loading a Github page]({attach}issue038_02.png)<br />
 <small>Developer Tools, Network view</small>
 
 
@@ -52,7 +52,7 @@ The scripts, ah, that’s something to go into. While stylesheets and images are
 
 This code does animations, calculation of time conversions, and many other things, including loading more resources. I’m not going to paste the whole script here, I don’t want to chase my readers away … okay, maybe just a couple of lines. The last script file that is loaded, `github-bootstrap-747cdfeb.js`, is a companion script file for the Bootstrap[^1] framework that Github uses to simplify their webpage code. It has the following lines:
 
-[^1]: [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/) is a [front-end](https://buttondown.email/laymansguide/archive/lmg-s2-issue-14-what-do-developers-do/) [framework](https://buttondown.email/laymansguide/archive/lmg-s2-issue-18-frameworks/) that makes it easy to create webpages. By loading a standard Bootstrap stylesheet and (optionally) a Bootstrap script, any front-end developer can add common elements (e.g. popovers, navigation bars, tooltips, cards, …) with fewer lines of code than if they wrote it from scratch.
+[^1]: [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/) is a [front-end]({filename}/season2/issue014/issue014.md
 
 ```
 [...]
@@ -74,14 +74,14 @@ loads other requested resources, such as stylesheets, images, and scripts (Stage
 **Bonus content:** I tried this with the Baidu homepage, which looks like this:
 
 
-![Baidu homepage](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season3/issue038/issue038_03.png)<br />
+![Baidu homepage]({attach}issue038_03.png)<br />
 <small>Baidu homepage</small>
 
 
 and the network activity from loading it:
 
 
-![Developer Tools showing network activity while loading Baidu homepage](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season3/issue038/issue038_04.png)<br />
+![Developer Tools showing network activity while loading Baidu homepage]({attach}issue038_04.png)<br />
 <small>Developer Tools, Network view</small>
 
 
@@ -89,8 +89,8 @@ It takes slightly longer (about 400 ms longer) to load, but most of that time is
 
 So far, we have identified 3 sources of latency:
 
-1. DNS resolving ([Issue 29](https://buttondown.email/laymansguide/archive/lmg-s3-issue-29-how-to-resolve-a-hostname/)), which translates the domain names in the requests to IP addresses that we can request data from,
-2. Data packet routing ([Issue 37](https://buttondown.email/laymansguide/archive/lmg-s3-issue-37)), which adds to latency with each hop through yet another gateway,
+1. DNS resolving ([Issue 29]({filename}/season3/issue029/issue029.md
+2. Data packet routing ([Issue 37]({filename}/season3/issue037/issue037.md
 3. Webpage loading (this issue), where documents or scripts that are loaded may request yet more resources.
 
 All of these layers of information gathering can add up to a few seconds of latency—a big turnoff for folks who have come to expect near-instantaneous response from apps. And often, our pages don’t appear to take that long to load, do they?

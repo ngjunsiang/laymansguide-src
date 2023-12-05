@@ -34,7 +34,7 @@ The best thing about these cloud services is that you probably don’t need to l
 
 **Next issue:** [LMG S8] Issue 92: All about apps
 
-I’ve spent a whole season talking about data ([Season 4, Issue 40](https://buttondown.email/laymansguide/archive/lmg-s4-issue-40-bits-and-bytes/) to [Issue 52](https://buttondown.email/laymansguide/archive/lmg-s4-issue-52-pdfs-part-2-text-and-images/)), then detoured to talking about computers, and the internet, and now back to databases. I think that’s plenty of foundation to finally move on to something more familiar: apps.
+I’ve spent a whole season talking about data ([Season 4, Issue 40]({filename}/season4/issue040/issue040.md
 
 What exactly are apps and what do they do? What are they like under the surface? What makes them tick?
 

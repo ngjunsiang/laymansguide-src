@@ -12,7 +12,7 @@ To write data, you pass a current through the electromagnet to magnetise the dom
 
 Put 3-5 platters together, attach the electromagnet to a moving arm (called the read arm), control the whole thing with some microchips, and you have a hard disk.
 
-![Open hard disk](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue118/issue118_01.gif)<br />
+![Open hard disk]({attach}issue118_01.gif)<br />
 <small>A picture of an opened hard disk, showing the read arms and magnetic platters</small>
 
 ## Characteristics of a hard disk
@@ -33,7 +33,7 @@ Reading from or writing to a domain involves:
 2. Moving the read arm to the correct position
 3. Measuring or inducing a current
 
-This means that each time the hard disk needs to access data from a different region of the disk, there is significant lag time (~5ms; see [Issue 57](https://buttondown.email/laymansguide/archive/lmg-s5-issue-57-cache-the-cpus-working-space/)). This is the time needed for all those movement described above. It is thus advantageous to try to put all the data you need in contiguous domains[^1], to minimise read arm movement.
+This means that each time the hard disk needs to access data from a different region of the disk, there is significant lag time (~5ms; see [Issue 57]({filename}/season5/issue057/issue057.md
 
 [^1]: This process is what millennials might remember as **defragmentation**, or defragging.
 

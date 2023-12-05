@@ -20,7 +20,7 @@ But programs don’t need real or virtual hardware; they need OS libraries which
 
 The technology that enables OSes to let programs think they are running exclusively, protected from other programs, is called OS-level virtualisation, but more widely referred to as **containerisation**.
 
-An OS (with the appropriate software & support) can run multiple **containers**, each container acting like a sandbox ([Issue 92](https://buttondown.email/laymansguide/archive/lmg-s8-issue-92-all-about-apps/)) for the software within. In each container, software has access to OS features, but are unable to affect software outside of the container. Each container appears to have exclusive access to (a portion of) the system’s network, storage, compute, and memory resources.
+An OS (with the appropriate software & support) can run multiple **containers**, each container acting like a sandbox ([Issue 92]({filename}/season8/issue092/issue092.md
 
 ## Managing containers
 

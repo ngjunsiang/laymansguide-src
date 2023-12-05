@@ -19,7 +19,7 @@ Okay, stay with me here, I know you are thinking of a horizontal and a vertical 
 
 That’s what I’m talking about. And it looks like this:
 
-![Wikipedia multilingual network graph, showing circles representing languages, and arrows between pairs of circles, representing editors who edited both languages.](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season7/issue089/issue089_01.png)<br />
+![Wikipedia multilingual network graph, showing circles representing languages, and arrows between pairs of circles, representing editors who edited both languages.]({attach}issue089_01.png)<br />
 <small>This network graph shows the co-editing patterns on Wikipedia. The size of the arrows indicate the number of Wikipedia editors for one language edition of Wikipedia, who also edited another language edition.<br />Source: [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Wikipedia_multilingual_network_graph_July_2013.svg)</small>
 
 Okay, phew.

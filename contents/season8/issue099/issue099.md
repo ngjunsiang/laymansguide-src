@@ -23,7 +23,7 @@ I personally prefer this because you have everything sorted into sensible top-le
 [^2]: There’s lots of things that make less sense once we get into more detail, but fortunately we don’t do that here.
 
 - an `/Applications` folder for apps
-- a `/Library` folder for shared files (see [Issue 17](https://buttondown.email/laymansguide/archive/lmg-s2-issue-17-libraries/), but on Mac this extends to things like sounds, profile pics, colors, ...)
+- a `/Library` folder for shared files (see [Issue 17]({filename}/season2/issue017/issue017.md
 - a `/System` folder for, well, you know what.
 - a `/Network` folder for accessing resources on the network (such as shared folders)
 - a `/Users` folder for accessing user folders and files

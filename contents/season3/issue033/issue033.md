@@ -8,7 +8,7 @@ And then I went on the explain how the source and destination IP addresses are t
 
 Well, now is the time to talk about what’s going on through the Transmission Control Protocol (TCP). Within a single device, you often have different software services running:
 
-1. DNS querying ([Issue 29](https://buttondown.email/laymansguide/archive/lmg-s3-issue-29-how-to-resolve-a-hostname/))
+1. DNS querying ([Issue 29]({filename}/season3/issue029/issue029.md
 2. Internet time synchronisation (over the Network Time Protocol)
 3. Software updaters checking for updates online
 4. Skype/Zoom/videoconferencing
@@ -48,7 +48,7 @@ Just like there is a source and destination IP address, there is also a source a
 
 With so many types of data being transferred over the Internet, how do things not get mixed up?
 
-Reserved port numbers is how. The well-known internet traffic data types have standardised protocols: web traffic follows HyperText Transfer Protocol (HTTP - [Issue 7](https://buttondown.email/laymansguide/archive/lmg-issue-7-what-is-http/)), some types of file transfer occur in accordance with the File Transfer Protocol (FTP), DNS queries obey the DNS protocol, etc.
+Reserved port numbers is how. The well-known internet traffic data types have standardised protocols: web traffic follows HyperText Transfer Protocol (HTTP - [Issue 7]({filename}/season1/issue007/issue007.md
 
 These well-known protocols are assigned standard port numbers by IANA, the same authority that manages known IP addresses. HTTP uses port 80. FTP uses port 20 (data transfer) and 21 (control). DNS uses port 53. You can find the [full list of well-known port numbers on Wikipedia](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers). Port numbers 1 to 1023 are reserved for this purpose and may not be used publicly for other purposes.
 

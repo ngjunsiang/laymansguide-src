@@ -23,7 +23,7 @@ It’s called a dynamic process because the router assigns private IP addresses 
 One potential drawback of this dynamic process is that if you are trying to set up a network printer the Old Way, it will ask you to input the address of the printer. And unless you have figured out internal DNS on your router and properly hostnamed all your printers, you will be providing this address not as a hostname (like printer.home.com) but as an IP address (192.168.1.5).
 
 
-![Add Printer dialog asking for an IP address](https://github.com/ngjunsiang/laymansguide/blob/release/season3/issue031/issue031_01.gif?raw=true)<br />
+![Add Printer dialog asking for an IP address]({attach}issue031_01.gif?raw=true)<br />
 <small>An old printer management dialog window for adding printers. [Source: UC Davis Coastal And Marine Science Institute](https://marinescience.ucdavis.edu/bml/facilities/it/instructions/mac-how-add-network-printer-ip-address)</small>
 
 
@@ -41,9 +41,9 @@ It’s the same thing with your ISP. Your home router, even if it is left on 24/
 
 Remember what a public IP address is? It’s a way for data packets to get to you wherever they are sent from. And that is possible because of the forwarding tables stored in Internet registries everywhere (including your ISP). All over the world, anyone who knows your IP address can send your router data.
 
-But often they won’t do so. They will use a URL instead, because they are easier to remember.  The sender finds out what IP address the domain name is assigned to by querying its DNS servers ([Issue 28](https://buttondown.email/laymansguide/archive/lmg-s3-issue-28-domain-names-and-dns/)).
+But often they won’t do so. They will use a URL instead, because they are easier to remember.  The sender finds out what IP address the domain name is assigned to by querying its DNS servers ([Issue 28]({filename}/season3/issue028/issue028.md
 
-If you want your own domain name, you have to buy one at a domain name provider. This lets you add your unique domain name to the WHOIS database ([Issue 28](https://buttondown.email/laymansguide/archive/lmg-s3-issue-28-domain-names-and-dns/)) … but you need an IP address to map to your domain name. And you can’t use your ISP-assigned IP address, because it’s dynamic and changes when the lease expires … can you?
+If you want your own domain name, you have to buy one at a domain name provider. This lets you add your unique domain name to the WHOIS database ([Issue 28]({filename}/season3/issue028/issue028.md
 
 ## Dynamic DNS
 

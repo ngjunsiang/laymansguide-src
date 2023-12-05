@@ -24,14 +24,14 @@ https://hypothes.is/api/profile (without custom header)
 I need to submit a shared secret in my request to let the server know, “hey, I really am kureshii! Look, this is the shared secret which you gave to me when I set up my account”.
 
 
-![Screenshot of the Hypothes.is developer page providing a developer API key](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season1/issue010/issue010_01.png)
+![Screenshot of the Hypothes.is developer page providing a developer API key]({attach}issue010_01.png)
 <small>The shared secret I share with the Hypothes.is server: my developer API key</small>
 
 
 How do I put that shared secret in the header? I could write a few lines of code in Python, a programming language … but I found an online API tester, which makes my life a bit easier. I just need to fill in the appropriate text fields:
 
 
-![Screenshot of the API tester](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season1/issue010/issue010_02.png)
+![Screenshot of the API tester]({attach}issue010_02.png)
 <small>The API tester makes it really easy for me to create and send HTTP requests with customised headers</small>
 
 

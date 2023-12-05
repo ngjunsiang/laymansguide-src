@@ -19,7 +19,7 @@ We’ll need to modify our approach slightly. We can’t store the leaked data d
 
 ## The cache “mirrors” a part of virtual memory
 
-A quick refresher on how the cache works ([Issue 57](https://buttondown.email/laymansguide/archive/lmg-s5-issue-57-cache-the-cpus-working-space/)):
+A quick refresher on how the cache works ([Issue 57]({filename}/season5/issue057/issue057.md
 
 1. When the CPU needs data from a memory address, it looks in the cache first.
 2. If the data is not there (a **cache miss**), it will load the data from the memory address, and store a copy in the cache for faster reference in future. [**SLOW**]

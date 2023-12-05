@@ -8,7 +8,7 @@ The common model of a computer is that it … computes. It calculates. It takes 
 
 That’s not quite right.
 
-While a computer does carry out compute operations, these are far outnumbered by load/store operations ([Issue 58](https://buttondown.email/laymansguide/archive/lmg-s5-issue-58-cpu-optimisation-part-1-out-of/)). Why so much loading and storing of data?
+While a computer does carry out compute operations, these are far outnumbered by load/store operations ([Issue 58]({filename}/season5/issue058/issue058.md
 
 ## Moving data
 
@@ -22,11 +22,11 @@ That’s 3 places to stash data so far: storage drives, CPU cache, and computer 
 
 ## Pipelines
 
-The next place that often requires lots of data is the graphics card ([Issue 123](https://buttondown.email/laymansguide/archive/lmg-s10-issue-123-graphics-cards-the-pixel-factory/)). For you to play a video game, the computer has to:
+The next place that often requires lots of data is the graphics card ([Issue 123]({filename}/season10/issue123/issue123.md
 
 1. Load game data from the storage disk,
 2. Store most of it in memory while it’s doing some number crunching in its cache,
-3. Get the crunched numbers to the graphics card for rendering graphics ([Issue 122](https://buttondown.email/laymansguide/archive/lmg-s10-issue-122-the-great-flattening/)),
+3. Get the crunched numbers to the graphics card for rendering graphics ([Issue 122]({filename}/season10/issue122/issue122.md
 4. Load more data from memory while crunching more numbers, and passing them to the graphics card.
 
 This involves far more loading and storing than computation. And there are limitations to how quickly data can be transferred.
@@ -35,11 +35,11 @@ This involves far more loading and storing than computation. And there are limit
 
 How does data get transferred? Through very fine wires usually. One side (e.g. the CPU) applies a voltage to the wire, the other side (e.g. memory) checks the voltage on the wire. No applied voltage = 0, applied voltage = 1.
 
-How does the CPU know when to apply the voltage, and the memory know when to check it? These operations are synchronised through cycles, like a highly coordinated factory. A CPU operates on a frequency of up to billions of cycles per second, each cycle potentially transferring one bit of data ([Issue 40](https://buttondown.email/laymansguide/archive/lmg-s4-issue-40-bits-and-bytes/)) if there are no delays.
+How does the CPU know when to apply the voltage, and the memory know when to check it? These operations are synchronised through cycles, like a highly coordinated factory. A CPU operates on a frequency of up to billions of cycles per second, each cycle potentially transferring one bit of data ([Issue 40]({filename}/season4/issue040/issue040.md
 
 Typically, the transfer rate is somewhat slower; how do we transfer more data per second? By adding more wires! With two wires, we can transfer two bits per cycle; four wires = four bits per second, eight wires = 8 bits per second … at some point, we run into a different problem. The CPU is a small chip, and there is only so much surface area for us to connect wires to.
 
-![An Intel Skylake CPU, showing the pins underneath](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue131/issue131_01.jpg)<br />
+![An Intel Skylake CPU, showing the pins underneath]({attach}issue131_01.jpg)<br />
 <small>An Intel Skylake desktop CPU.<br />Each gold contact on the under-surface connects to a pin on the motherboard when the CPU is seated properly in its socket<br />Source: [Wikipedia](https://en.wikipedia.org/wiki/Skylake_(microarchitecture))</small>
 
 Well, that just sucks.

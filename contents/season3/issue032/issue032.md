@@ -9,7 +9,7 @@ Remember that when your phone/laptop/device first connects to the router, it doe
 In Issue 8, I gave an example of the *content* of a response:
 
 
-![An HTTP response header from Hypothes.is](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season1/issue008/issue008_01.png)
+![An HTTP response header from Hypothes.is]({attach}issue008_01.png)
 <small>The response header from Hypothes.is</small>
 
 
@@ -39,7 +39,7 @@ As I type this section, it dawned on me that there is one acronym I didn’t int
 
 Well, now we know: it stands for Internet Protocol (IP). IP is the next protocol layer in the sequence (that ensures our request gets through, and a response gets back). It is a big part of the backbone that forms the internet. At this point, our request has some identifying info and a port number, but no To or From information yet.
 
-Where does the To: information come from? From the URL I am trying to access (or more specifically, the domain name of the URL). My web browser first sends a DNS query ([Issue 28](https://buttondown.email/laymansguide/archive/lmg-s3-issue-28-domain-names-and-dns/)) to resolve the domain name to an IP address, and now we have the IP address to put in the To: field. In Internet Protocol, this is the **Destination address**.
+Where does the To: information come from? From the URL I am trying to access (or more specifically, the domain name of the URL). My web browser first sends a DNS query ([Issue 28]({filename}/season3/issue028/issue028.md
 
 What about the From: information?
 

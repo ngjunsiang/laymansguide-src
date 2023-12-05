@@ -80,7 +80,7 @@ Since this is not a relational database, you don’t have the protection of fore
 
 Data organised as documents tends to be more self-contained. Since the database does not enforce consistency, it has less to worry about when edits or changes are made to the database. In a distributed document database, we thus sacrifice some consistency—unless we make pains to ensure it in our application code.
 
-This does provide an advantage: when the distributed document database suffers a network outage, causing it to partition into multiple clusters ([Issue 86](https://buttondown.email/laymansguide/archive/lmg-s7-issue-86-distributed-databases/)), the database can continue to operate. However, each cluster only has access to its own data, and not data on the other clusters. Over time, each cluster will become less and less consistent, since changes in each cluster are not synchronised to other clusters.
+This does provide an advantage: when the distributed document database suffers a network outage, causing it to partition into multiple clusters ([Issue 86]({filename}/season7/issue086/issue086.md
 
 Once the network issue is resolved and the clusters are synchronised again, these changes can subsequently be merged following rules for resolving conflicts. The database remains operational throughout the ordeal, just with some desynchronisation.
 

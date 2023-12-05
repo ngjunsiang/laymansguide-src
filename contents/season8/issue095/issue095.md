@@ -6,21 +6,21 @@
 
 I’m not going to answer from an aesthetic or user experience point of view, you’re all experts in your own preferences :) Instead, I’ll focus on whats actually under the hood in this newsletter issue.
 
-If you haven’t read [Issue 93](https://buttondown.email/laymansguide/archive/lmg-s8-issue-93-whats-in-a-web-app/) on web apps (a.k.a. websites), I’d recommend you do that for the full context, because in this issue I’ll highlight some key differences between web apps and mobile apps.
+If you haven’t read [Issue 93]({filename}/season8/issue093/issue093.md
 
 ## Resources
 
-Web apps have to request every single image, video, non-text object on the page via a web request. Caching ([Issue 39](https://buttondown.email/laymansguide/archive/lmg-s3-issue-39-caches-and-caching/))—storing these resources for offline use—can reduce subsequent load times, but the first load will still be the most painful.
+Web apps have to request every single image, video, non-text object on the page via a web request. Caching ([Issue 39]({filename}/season3/issue039/issue039.md
 
 A mobile app can package the most common, unchanging resources (logos, button images, backgrounds, etc) into the mobile app itself, so they can be loaded directly in the app, without having to make a web request and wait for the response. This lets it load faster (theoretically … in practice, many apps still have to retrieve other data from the server, so the loading speed improvement is marginal)
 
 ## Flexibility
 
-The document object model, or DOM ([Issue 94](https://buttondown.email/laymansguide/archive/lmg-s8-issue-94-why-do-web-browsers-take-up-so/)) is how web apps keep track of all the elements and their contents on a page, but it is not the most efficient way to do so. A mobile app has more choice in deciding which user interface library ([Issue 17](https://buttondown.email/laymansguide/archive/lmg-s2-issue-17-libraries/)) it wants to use.
+The document object model, or DOM ([Issue 94]({filename}/season8/issue094/issue094.md
 
 ## Storage access
 
-A mobile app can request permission to access storage on the mobile device, allowing it to store files (images, data, ...) on the device without having to interrupt the user each time. It is not limited only to browser storage interfaces (localstorage, sessionstorage) and browser databases (IndexedDB)—see [Issue 93](https://buttondown.email/laymansguide/archive/lmg-s7-issue-93-whats-in-a-web-app/)—but can use other kinds of interfaces and databases, if they are available on the mobile device, or bundled into the mobile app.
+A mobile app can request permission to access storage on the mobile device, allowing it to store files (images, data, ...) on the device without having to interrupt the user each time. It is not limited only to browser storage interfaces (localstorage, sessionstorage) and browser databases (IndexedDB)—see [Issue 93]({filename}/season7/issue093/issue093.md
 
 ## Memory use
 

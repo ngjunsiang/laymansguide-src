@@ -7,19 +7,19 @@ In the second-last issue of this season, I'm going to do a little detour to talk
 Newspaper editors, book editors, photo editors … nope we’re not talking about those. Text editors are software that is used to edit text. The simplest example you know of is probably Notepad. On the other end of the scale you can have really fancy editors like [Sublime Text](https://www.sublimetext.com/) or [Notepad++](https://notepad-plus-plus.org/), or [Atom](https://atom.io/).
 
 
-![Sublime Text](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season2/issue025/issue025_01.png)
+![Sublime Text]({attach}issue025_01.png)
 <small>Sublime Text</small>
 
 
 Every programmer has their own favourite. They can get prickly and defensive about their text editors of choice, so be careful what you say about their preferred text editors.
 
 
-![Notepad++](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season2/issue025/issue025_02.png)
+![Notepad++]({attach}issue025_02.png)
 <small>Notepad++</small>
 
 
 
-![Github Atom](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season2/issue025/issue025_03.png)
+![Github Atom]({attach}issue025_03.png)
 <small>Github Atom</small>
 
 
@@ -30,14 +30,14 @@ Text editors do what is written on the box: they let you edit text. Often (but n
 An IDE is rather different. Yes, it probably has a big window for you to edit your code. But it has to do much more. It is called a **development environment** because it lets developers *explore* their code. An IDE can run your code, show you the values of the variables within your code in real-time, or let you pause the code at a point so you can see what the program is doing before it exits or crashes. This helps greatly with the debugging process.
 
 
-![Spyder](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season2/issue025/issue025_04.png)
+![Spyder]({attach}issue025_04.png)
 <small>Spyder IDE, showing its object inspector (for checking variables) and built-in console (where the code is run)</small>
 
 
 An IDE can test the performance of your code to let you know where it is running slowly (a process known as **profiling**).
 
 
-![Netbeans](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season2/issue025/issue025_05.png)
+![Netbeans]({attach}issue025_05.png)
 <small>Netbeans IDE showing its profiler at work</small>
 
 

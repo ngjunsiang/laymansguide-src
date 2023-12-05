@@ -42,9 +42,9 @@ These applications thus run differently: they run as background services, which 
 
 Do you use Bluetooth wireless headphones? USB devices of any sort? Did you just buy a new gamepad? The OS detects them and takes care of driver installation (usually). You can see all detected devices and installed drivers in the Device Manager, under Control Panel, in Windows 10.
 
-I’ve just covered the main ones that most users would use on a regular basis. The OS manages much more stuff, including OS updates, per-user settings, etc—remember the Registry Editor? ([Issue 100](https://buttondown.email/laymansguide/archive/lmg-s8-issue-100-where-does-all-the-app-data-go-a/)) For a look at what else the OS manages, take a peek in the Control Panel or System Preferences of your OS.
+I’ve just covered the main ones that most users would use on a regular basis. The OS manages much more stuff, including OS updates, per-user settings, etc—remember the Registry Editor? ([Issue 100]({filename}/season8/issue100/issue100.md
 
-These form a supporting network of services that applications can draw on. Instead of having to work out the full details of implementation for each of these features, they can use the OS’s provided functions to do the work for them. These functions are typically bundled in a standard library ([Issue 17](https://buttondown.email/laymansguide/archive/lmg-s2-issue-17-libraries/)) provided by the OS manufacturer. For example, [.NET](https://dotnet.microsoft.com/) is a collection of libraries for Windows applications that developers can use to simplify their work.
+These form a supporting network of services that applications can draw on. Instead of having to work out the full details of implementation for each of these features, they can use the OS’s provided functions to do the work for them. These functions are typically bundled in a standard library ([Issue 17]({filename}/season2/issue017/issue017.md
 
 **Issue summary:** The OS takes care of booting up, login and user management, window management, memory allocation, storage interfaces, background services, peripheral management, and much more. Access to these services, where allowed, is provided in the form of software libraries that developers can use.
 

@@ -26,7 +26,7 @@ d) Paint the glyphs for a string of characters at that position.
 e) End the text object.
 ```
 
-Remember when I showed you some markup languages in [Issue 50](https://buttondown.email/laymansguide/archive/lmg-s4-issue-50-complex-file-formats-and-the-document/)? Here’s another one, but much more concise and much more specific: it lets you specify font and position for each string of characters. There are additional formatting codes for changing the colour, changing the text format to an outlined version, and making various other kinds of changes.
+Remember when I showed you some markup languages in [Issue 50]({filename}/season4/issue050/issue050.md
 
 ## How PDF documents display this text
 

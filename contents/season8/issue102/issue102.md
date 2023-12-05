@@ -18,7 +18,7 @@ Some of us really hate math, but not computers! The math is hardly ever what cau
 
 Like in the workplace, it is often other ~~people~~ devices.
 
-When an app (running in a thread) tries to open a file to read data from it, the operating system has to look up the virtual memory  address ([Issue 55](https://buttondown.email/laymansguide/archive/lmg-s5-issue-55-addressing-memory/)), follow it to the hard disk or solid state disk, and then wait for the disk to respond with the data.
+When an app (running in a thread) tries to open a file to read data from it, the operating system has to look up the virtual memory  address ([Issue 55]({filename}/season5/issue055/issue055.md
 
 And in that moment, *lots* of things can go wrong.
 

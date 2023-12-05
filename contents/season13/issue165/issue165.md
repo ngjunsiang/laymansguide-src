@@ -6,7 +6,7 @@ Google search results have a number of things to say about why it happens:
 
 ## Programs starting up when booting
 
-This is primarily an issue when you are booting up your laptop ([Issue 112](https://buttondown.email/laymansguide/archive/lmg-s9-issue-112-bootstrapping-into-existence/)) and logging in. Once you log in to your operating system (OS), your OS will run the startup programs (which you can disable), so if you are trying to use your laptop right after logging in, this may cause some slowdown.
+This is primarily an issue when you are booting up your laptop ([Issue 112]({filename}/season9/issue112/issue112.md
 
 If your laptop is still slow about 10 minutes after OS login, this is probably not the cause.
 
@@ -30,7 +30,7 @@ Just update your OS. Most of the time this does not fix system slowness.
 
 ## Disk full
 
-Open My Computer (in Windows), which should show how full your system partition is. If it is below 80% full, this probably isn’t the issue, regardless of whether your system is on a hard disk or solid state disk (SSD, see [Issue 119](https://buttondown.email/laymansguide/archive/lmg-s10-issue-119-solid-state-disks-an-upgrade/)).
+Open My Computer (in Windows), which should show how full your system partition is. If it is below 80% full, this probably isn’t the issue, regardless of whether your system is on a hard disk or solid state disk (SSD, see [Issue 119]({filename}/season10/issue119/issue119.md
 
 ## File fragmentation
 

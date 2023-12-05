@@ -2,7 +2,7 @@
 
 We humans wake up in the morning and magically there is information in our heads. We open our eyes, trust that all our limbs and body parts are there, and we just get up and make coffee.
 
-Computers, they are different in that regard. After they light up the power LED, there is just … nothing. Computer memory needs power to hold its information[^1], so once you really power down your computer, all data in memory is gone. Your operating system (OS), your open programs, your file data … all that now resides only in your hard disk. Whatever was not written to hard disk would have been lost by now ([Issue 108](https://buttondown.email/laymansguide/archive/lmg-s9-issue-108-safeguarding-data-operations/)).
+Computers, they are different in that regard. After they light up the power LED, there is just … nothing. Computer memory needs power to hold its information[^1], so once you really power down your computer, all data in memory is gone. Your operating system (OS), your open programs, your file data … all that now resides only in your hard disk. Whatever was not written to hard disk would have been lost by now ([Issue 108]({filename}/season9/issue108/issue108.md
 
 [^1]: Memory comprises lots of capacitors wired together, and capacitors slowly leak charge when they are not powered. Memory chips need periodic “refreshing” every few milliseconds to avoid losing data due to this charge leakage.
 
@@ -27,7 +27,7 @@ The BIOS is not optimised—it’s only a *basic* system after all—and would t
 
 The bootloader is not the OS! It has only one job: to *load* the OS during the *boot* process, and carry out whatever is necessary before that.
 
-Usually, the first thing that needs to be loaded is the filesystem ([Issue 106](https://buttondown.email/laymansguide/archive/lmg-s9-issue-106-organising-storage/)). Without that, no program will know how to read in data from the storage disks! At this point, if the bootloader detects disk errors or uncompleted operations in the journal ([Issue 110](https://buttondown.email/laymansguide/archive/lmg-s9-issue-110-safeguarding-against-data/)), it may attempt to scan for errors or complete those operations before proceeding with the rest of the bootup process.
+Usually, the first thing that needs to be loaded is the filesystem ([Issue 106]({filename}/season9/issue106/issue106.md
 
 Some systems may contain multiple OSes: Mac users may want to run Windows using Parallels Desktop, Windows users may want to dabble in Linux, and many Linux users dual-boot Windows as well. The bootloader, with the help of the filesystem, detects other operating systems on the storage disks, and offers the user a choice of which one to boot. If there is only one OS found, this step might be skipped.
 

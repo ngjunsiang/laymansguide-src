@@ -18,7 +18,7 @@ All these steps take place in the graphics pipeline.
 
 ## The hardware
 
-The pipeline used to be carried out by the CPU ([Issue 53](https://buttondown.email/laymansguide/archive/lmg-s5-issue-53-the-cpu-is-an-instruction-obeying/)), but that isn’t ideal. The CPU’s hardware is optimised for *general-purpose processing*: keeping track of integers (i.e. natural numbers like 1, 2, 3, …), adding or subtracting them, and resetting them. It has many more computational units that carry out this calculation.
+The pipeline used to be carried out by the CPU ([Issue 53]({filename}/season5/issue053/issue053.md
 
 Graphics processing, on the other hand, requires a different kind of calculation. The position of vertices do not fit nicely into integers; we have to carry this out using decimal numbers (1.46776, 2.58704, –3.57514, …). The CPU does not encounter these often, and therefore does not have many of these computational units.
 

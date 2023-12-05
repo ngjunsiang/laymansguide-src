@@ -1,12 +1,12 @@
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Mobile apps, unlike web apps, can bundle resources and libraries to be installed to a mobile device. They can also request access to storage, and typically have a higher memory limit than web apps.
 
-In the process of creating an app, a developer often needs to use libraries ([Issue 17](https://buttondown.email/laymansguide/archive/lmg-s2-issue-17-libraries/)), which are ready-packaged chunks of code she can run without having to write the code herself. Some provide core functions (e.g. sending information via the Internet, or checking if a data connection is available), while some provide optional features (e.g. mobile payments, or user feedback systems).
+In the process of creating an app, a developer often needs to use libraries ([Issue 17]({filename}/season2/issue017/issue017.md
 
 Libraries that provide core functions are typically provided by the operating system (OS), which ultimately controls the device’s resources, but all else have to be pulled in by the app, somehow.
 
 ## Web apps vs mobile apps
 
-Web apps, which I covered in [Issue 94](https://buttondown.email/laymansguide/archive/lmg-s8-issue-94-why-do-web-browsers-take-up-so/), pull in any resources they need through web requests. This includes any libraries that they need. The browser allows it to do this, but prevents access to most parts of the operating system, and allows limited access to camera, sound, storage, etc. The sandboxing features of the browser make web apps generally safer to access.
+Web apps, which I covered in [Issue 94]({filename}/season8/issue094/issue094.md
 
 A mobile app, on the other hand, is sandboxed by the operating system. Most of the resources it needs have to be present at the time of running the app, and that includes libraries. In an unsandboxed environment, commonly used libraries (e.g. mobile payment libraries) could be installed in the OS and shared by the apps. But this opens up a means of unauthorised access to multiple apps: hack this library successfully, and all other apps on the OS are also affected!
 
@@ -42,7 +42,7 @@ and many others which I don’t know about.
 
 ## Why aren’t web apps so huge then?
 
-They are! But they don’t need many of these (e.g. code translation and compatibility), and most of the libraries in 1–13 would have been loaded separately from the main page (see [Issue 78](https://buttondown.email/laymansguide/archive/lmg-s6-issue-78-umatrix-voyuering-the-voyeurs/) for a visual example). Much of the functionality would not need to be loaded or installed upfront, only when it is required (e.g. map display).
+They are! But they don’t need many of these (e.g. code translation and compatibility), and most of the libraries in 1–13 would have been loaded separately from the main page (see [Issue 78]({filename}/season6/issue078/issue078.md
 
 For a web app, many more functions would also have been offloaded to Lazada’s servers, such as address validation. On a mobile app, this code is included upon installation to reduce data usage.
 

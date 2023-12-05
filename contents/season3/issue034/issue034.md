@@ -2,9 +2,9 @@ Previously: Data is encapsulated when it goes out from an app onto the internet 
 
 If the above summary of Issues 30–33 makes sense to you, you are probably ready to proceed :) If not, you might want to review those issues quickly through the links below:
 
-[Issue 30](https://buttondown.email/laymansguide/archive/lmg-s3-issue-30-private-ip-addresses/): Private IP addresses  
-[Issue 32](https://buttondown.email/laymansguide/archive/lmg-s3-issue-32-sharing-a-public-ip-address/): Sharing a public IP address: Network Address Traversal  
-[Issue 33](https://buttondown.email/laymansguide/archive/lmg-s3-issue-33-port-numbers/): Port numbers  
+[Issue 30]({filename}/season3/issue030/issue030.md
+[Issue 32]({filename}/season3/issue032/issue032.md
+[Issue 33]({filename}/season3/issue033/issue033.md
 [Read the rest of the archives here.](https://buttondown.email/laymansguide/archive)
 
 Okay, now we understand how the open, unfettered internet of the 1990s worked. But we are still nowhere near understand the modern Internet until we understand how security is applied. Let’s look at one of the earliest features first.
@@ -25,7 +25,7 @@ At the next level, the TCP layer contains port information. A firewall can block
 
 ## Hostname filtering
 
-At higher levels of filtering (involving yet more processing power), the router might even block certain hostnames. Remember that the public IP address of the server is needed before a request can be sent, and this IP address is obtained through a DNS query ([Issue 29](https://buttondown.email/laymansguide/archive/lmg-s3-issue-29-how-to-resolve-a-hostname/)). If a firewall intercepts and processes the DNS query and blocks the DNS query to resolve that hostname, the device never obtains the public IP address of the server and won’t be able to send the request.
+At higher levels of filtering (involving yet more processing power), the router might even block certain hostnames. Remember that the public IP address of the server is needed before a request can be sent, and this IP address is obtained through a DNS query ([Issue 29]({filename}/season3/issue029/issue029.md
 
 ## Advanced filtering
 

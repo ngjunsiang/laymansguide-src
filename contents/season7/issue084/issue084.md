@@ -4,7 +4,7 @@
 
 If I have a `Customer` data table that looks like this:
 
-![Screenshot of a Customer data table, with custID, custName, custEmail, and custContact columns.](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season7/issue084/issue084_01.png)
+![Screenshot of a Customer data table, with custID, custName, custEmail, and custContact columns.]({attach}issue084_01.png)
 
 And a `Sales` data table that looks like this:
 
@@ -14,7 +14,7 @@ I could add a `custName` column to the sales table that *looks up* the `custID`,
 
 [^1]: There is an equivalent feature for columns known as HLOOKUP (horizontal lookup) that looks up info in a row and inserts data from the same column, but it is not as popular. So the VLOOKUP name is more commonly used for this kind of operation.
 
-![Screenshot of a Sales data table, with salesID, orderDate, and custID columns.](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season7/issue084/issue084_03.png)
+![Screenshot of a Sales data table, with salesID, orderDate, and custID columns.]({attach}issue084_03.png)
 
 Let’s break down each part of that formula:
 

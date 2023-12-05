@@ -20,7 +20,7 @@ In graphics-speak, we call these surfaces **faces**. Four points which form a fl
 
 With just meshes, we quickly run into the limits of what can be represented. For simplicity of calculation, each face can only have one colour. To make really detailed and realistic models, we need very finely detailed meshes. These are problematic because a lot of calculation is needed to make these models appear on screen; the more faces it has, the more calculation is needed!
 
-One way to reduce the number of faces in the mesh while still creating a decent model is to *use images on the face*. (I explained how images are represented in computers in [Issue 43](https://buttondown.email/laymansguide/archive/lmg-s4-issue-43-images-a-mosaic-of-3-colours/)) We will need additional information to describe the scale and rotation of the image on the face, but at least we can use the same image across multiple faces if necessary. Instead of having to model a hundred thousand blades of grass, I could just model a few stalks, and use a grassy texture to complete the impression.
+One way to reduce the number of faces in the mesh while still creating a decent model is to *use images on the face*. (I explained how images are represented in computers in [Issue 43]({filename}/season4/issue043/issue043.md
 
 ## Scene modelling
 

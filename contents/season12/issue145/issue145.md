@@ -1,6 +1,6 @@
 [**Previously:**](https://buttondown.email/laymansguide/archive/) In 1999, VMware launched VMware Workstation, which allowed multiple operating systems to run off a single machine.
 
-In Season 5 ([Issue 53](https://buttondown.email/laymansguide/archive/lmg-s5-issue-54-compiling-programming-code-into/)), I went into some detail on how our programs work. The programming language they are written in gets _compiled_ into CPU instructions, which get carried out by the CPU.
+In Season 5 ([Issue 53]({filename}/season5/issue054/issue054.md
 
 But the program does not handle everything on its own. In fact, it does not usually have direct access to hardware (unless requested from and provided by the operating system (OS)). All such access is abstracted and mediated through the operating system. The program requests and receives memory space, reads and writes files, and processes keyboard/mouse input—through the operating system.
 
@@ -12,7 +12,7 @@ This paradigm is really powerful, because it enables us to pipe data from place 
 
 And this is how we can open documents from a flash drive without even realising that the flash drive uses a different filesystem from our system disk.
 
-The OS is just another special set of programs that mediate access to the hardware. Yet, it is easy to forget that even the OS’s many programs do not actually deal with the gnarly details of hardware, but with an *interface* to the hardware. This interface are the drivers ([Issue 120](https://buttondown.email/laymansguide/archive/lmg-s10-issue-120-drivers-the-glue-between/)) we keep hearing about, and which our OS keeps telling us could not be found or are outdated.
+The OS is just another special set of programs that mediate access to the hardware. Yet, it is easy to forget that even the OS’s many programs do not actually deal with the gnarly details of hardware, but with an *interface* to the hardware. This interface are the drivers ([Issue 120]({filename}/season10/issue120/issue120.md
 
 As long as the “drivers” respond in the right way, the operating system continues to carry out its instructions as programmed.
 
