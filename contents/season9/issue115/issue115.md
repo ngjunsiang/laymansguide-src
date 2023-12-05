@@ -1,8 +1,16 @@
+Title: Issue 115: Shutdown & standby
+Date: 2021-04-10 08:00
+Tags: 
+Category: Season 9
+Slug: lmg-s9-issue-115-shutdown-standby
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Embedded operating systems are unlike user operating systems. They are designed to run the software needed for an appliance’s operation, and are not meant to be used by users directly. Since they are considered somewhere between software and hardware, they are usually referred to as firmware.
 
-In [Issue 112](https://buttondown.email/laymansguide/archive/lmg-s9-issue-112-bootstrapping-into-existence/), I described the bootup process, and what a process it is! We have sayings in the English language that talk about things taking years to build up, but only seconds to destroy, and that’s certainly the case here. It takes so many steps to get data into computer memory in a way that makes it useable for us humans, and the mere press of a power switch wipes that data configuration once computer memory loses power.
+In [Issue 112]({filename}/season9/issue112/issue112.md), I described the bootup process, and what a process it is! We have sayings in the English language that talk about things taking years to build up, but only seconds to destroy, and that’s certainly the case here. It takes so many steps to get data into computer memory in a way that makes it useable for us humans, and the mere press of a power switch wipes that data configuration once computer memory loses power.
 
-This is obviously undesirable; your work in progress might not have been saved, data that is being transferred to disks might not be written properly and end up getting corrupted ([Issue 109](https://buttondown.email/laymansguide/archive/lmg-s9-issue-109-speeding-up-data-operations/)), and you should never switch off a computer at the power socket this way!
+This is obviously undesirable; your work in progress might not have been saved, data that is being transferred to disks might not be written properly and end up getting corrupted ([Issue 109]({filename}/season9/issue109/issue109.md)), and you should never switch off a computer at the power socket this way!
 
 ## Forced shutdowns
 
@@ -12,7 +20,7 @@ What does a proper shutdown do differently?
 
 ## Shutdown
 
-To avoid the Problems described above, we need to give the computer time to wind down. Most programs have a proper exit routine (y’know, the red dot on macOS or the red cross in Windows). This gets the program to write any last bits of data, release any file or database locks ([Issue 82](https://buttondown.email/laymansguide/archive/lmg-s7-issue-82-multiplayer-databases/)), quit, and then release its resources back to the OS. When shutting down, all running programs and services have this exit routine invoked, and they usually quit pretty quickly.
+To avoid the Problems described above, we need to give the computer time to wind down. Most programs have a proper exit routine (y’know, the red dot on macOS or the red cross in Windows). This gets the program to write any last bits of data, release any file or database locks ([Issue 82]({filename}/season7/issue082/issue082.md)), quit, and then release its resources back to the OS. When shutting down, all running programs and services have this exit routine invoked, and they usually quit pretty quickly.
 
 The exceptions to this usually have to do with disk operations, the slowest of operations on a computer. If a program has lots of data to save to disk, or is waiting for a disk operation to complete, it will remain open while attempting to exit, and prevent the computer from shutting down. If you’re wondering why a folder seems to be stopping the computer from shutting down, this is usually the reason!
 
@@ -28,7 +36,7 @@ Some of us just keep our laptops open (because closing the lid causes it to shut
 
 What if there was a way to keep power going to computer memory, but have the rest of the computer system powered off, to save on power? That would be perfect for hopping from coffee joint to coffee joint!
 
-This is exactly what happens when you put a computer into **standby** (some systems also refer to this as **sleep**). The computer processor goes into a power state where only the computer memory remains powered ([Issue 112](https://buttondown.email/laymansguide/archive/lmg-s9-issue-112-bootstrapping-into-existence/)). Everything else is powered off—screen, network hardware, storage disks, … until you power the system on again. The memory configuration remains intact, and everything is exactly the way you left it at the moment you put the laptop into standby. Best of all, you didn’t have to go through the long and tedious shutdown-bootup sequence again!
+This is exactly what happens when you put a computer into **standby** (some systems also refer to this as **sleep**). The computer processor goes into a power state where only the computer memory remains powered ([Issue 112]({filename}/season9/issue112/issue112.md)). Everything else is powered off—screen, network hardware, storage disks, … until you power the system on again. The memory configuration remains intact, and everything is exactly the way you left it at the moment you put the laptop into standby. Best of all, you didn’t have to go through the long and tedious shutdown-bootup sequence again!
 
 **Issue summary:** When you shut a computer down, it sends an exit signal to all running programs to get them to do their exit routine. This process can sometimes take a long time. To preserve the data configuration in memory while minimising power draw, a computer can go into standby mode: all hardware except the memory gets powered down, until the computer is woken up from standby.
 

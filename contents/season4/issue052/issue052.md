@@ -1,3 +1,11 @@
+Title: Issue 52: PDFs part 2 – Text and images
+Date: 2019-12-21 08:00
+Tags: 
+Category: Season 4
+Slug: lmg-s4-issue-52-pdfs-part-2-text-and-images
+Author: J S Ng
+Summary: 
+
 **Previously:** PDF is the gold standard for universal compatibility (supported by most software and platforms) and visual fidelity (displays exactly the same way). When you need things to appear on a different device in exactly the same way you created it, without having to install additional software, use PDF.
 
 I mentioned earlier that PDF is an incredibly complex and powerful format. You can do so much with it once you have digested the approximately 900 pages of [its format specification](https://www.adobe.com/devnet/pdf/pdf_reference.html), which are available for free. To support older versions of Acrobat and other readers, you may have to cross-reference [the reference manuals of older versions](https://mpdf.github.io/reference/pdf-files-adobe/pdf-reference.html). It’s not impossible, but I hope this helps you understand why many apps and services are reluctant to provide PDF support unless there are already libraries available for them to use in their own application. This is time-consuming stuff!
@@ -26,7 +34,7 @@ d) Paint the glyphs for a string of characters at that position.
 e) End the text object.
 ```
 
-Remember when I showed you some markup languages in [Issue 50](https://buttondown.email/laymansguide/archive/lmg-s4-issue-50-complex-file-formats-and-the-document/)? Here’s another one, but much more concise and much more specific: it lets you specify font and position for each string of characters. There are additional formatting codes for changing the colour, changing the text format to an outlined version, and making various other kinds of changes.
+Remember when I showed you some markup languages in [Issue 50]({filename}/season4/issue050/issue050.md)? Here’s another one, but much more concise and much more specific: it lets you specify font and position for each string of characters. There are additional formatting codes for changing the colour, changing the text format to an outlined version, and making various other kinds of changes.
 
 ## How PDF documents display this text
 

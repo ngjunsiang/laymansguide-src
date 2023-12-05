@@ -1,3 +1,11 @@
+Title: Issue 60: CPU Optimisation Part 2 – Speculative Execution and Spectre
+Date: 2020-02-15 08:00
+Tags: 
+Category: Season 5
+Slug: lmg-s5-issue-60-cpu-optimisation-part-2
+Author: J S Ng
+Summary: 
+
 **Previously:** A set of instructions can trick a CPU into reordering load instructions so that the data is temporarily loaded into the cache before the instructions are retired. The cache can then be snooped to retrieve the data.
 
 At the heart of the matter is the fact that the OS has no control over the order in which instructions are carried out. Because of this, hackers who understand how the CPU reorders instructions can write malicious code that tricks the CPU into loading precious data into memory for a fraction of a second, during which they can use cache-snooping techniques to read the data.

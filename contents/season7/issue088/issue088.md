@@ -1,3 +1,11 @@
+Title: Issue 88: Document Databases
+Date: 2020-09-19 08:00
+Tags: 
+Category: Season 7
+Slug: lmg-s7-issue-88-document-databases
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Relational databases are designed to maintain a well-structured set of data tables through constraint rules. This makes them very useful for preventing accidental inconsistencies in data, but make any changes to the data schema difficult to implement. Changing from one schema to another involves downtime and a migration.
 
 One problem I keep running into with Excel is when I *think* the data has a consistent structure, but halfway through I realise that it actually doesn’t: sometimes I might have two students with different categories of accomplishments, and that requires a big change in the way I design the columns.
@@ -80,7 +88,7 @@ Since this is not a relational database, you don’t have the protection of fore
 
 Data organised as documents tends to be more self-contained. Since the database does not enforce consistency, it has less to worry about when edits or changes are made to the database. In a distributed document database, we thus sacrifice some consistency—unless we make pains to ensure it in our application code.
 
-This does provide an advantage: when the distributed document database suffers a network outage, causing it to partition into multiple clusters ([Issue 86](https://buttondown.email/laymansguide/archive/lmg-s7-issue-86-distributed-databases/)), the database can continue to operate. However, each cluster only has access to its own data, and not data on the other clusters. Over time, each cluster will become less and less consistent, since changes in each cluster are not synchronised to other clusters.
+This does provide an advantage: when the distributed document database suffers a network outage, causing it to partition into multiple clusters ([Issue 86]({filename}/season7/issue086/issue086.md)), the database can continue to operate. However, each cluster only has access to its own data, and not data on the other clusters. Over time, each cluster will become less and less consistent, since changes in each cluster are not synchronised to other clusters.
 
 Once the network issue is resolved and the clusters are synchronised again, these changes can subsequently be merged following rules for resolving conflicts. The database remains operational throughout the ordeal, just with some desynchronisation.
 

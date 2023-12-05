@@ -1,3 +1,11 @@
+Title: Issue 79: A Base for Data
+Date: 2020-07-11 08:00
+Tags: 
+Category: Season 7
+Slug: lmg-s7-issue-79-a-base-for-data
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Modern webpages rely on many third-party resources for their functionality. Blocking access to some domains may cause these webpages to break and stop working.
 
 We start a new season this issue, and now I circle back to the theme of data again. In Season 4, I laid out the broad categories of data, and showed how these basic data types get put together into more complex containers, such as video and documents. Let’s take it one step further.
@@ -19,7 +27,7 @@ Starting simple, let’s try to put our data into a text file. Inside the comput
 
     This is the first line\nThis is the second line\nThis is the third line\n…
 
-That `\n`? That is the newline character ([Issue 41](https://buttondown.email/laymansguide/archive/lmg-s4-issue-41-ascii-the-typewriter-digitised/)), an unprintable code that tells the computer “the subsequent parts go on a new line”. Without it, Everything would just be one long, continuous string. The newline character determines the limits of each line; it **delimits** the line. `\n`, the newline character, is therefore a line **delimiter**.
+That `\n`? That is the newline character ([Issue 41]({filename}/season4/issue041/issue041.md)), an unprintable code that tells the computer “the subsequent parts go on a new line”. Without it, Everything would just be one long, continuous string. The newline character determines the limits of each line; it **delimits** the line. `\n`, the newline character, is therefore a line **delimiter**.
 
 Not all our data is just a single line like that. In spreadsheets, for example, we want multiple data types in the same row. How do we get the computer to understand that these data are not one big bundle, but separate pieces? We need a **separator**. Commonly, commas are used to separate data, like this:
 
@@ -34,7 +42,7 @@ This format is known as **comma-separated values**, and referred to by the acron
 
 ## Searching through data in CSV
 
-In [Issue 41](https://buttondown.email/laymansguide/archive/lmg-s4-issue-41-ascii-the-typewriter-digitised/), I mentioned that each character takes up a standard number of bytes (1 byte, in the case of the characters on your keyboard; anything outside of that, it’s complicated). That makes it easy for the computer to retrieve characters. First character, first byte. 100th character, 100th byte.
+In [Issue 41]({filename}/season4/issue041/issue041.md), I mentioned that each character takes up a standard number of bytes (1 byte, in the case of the characters on your keyboard; anything outside of that, it’s complicated). That makes it easy for the computer to retrieve characters. First character, first byte. 100th character, 100th byte.
 
 What about the 5th row? Which byte is that?
 

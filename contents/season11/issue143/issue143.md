@@ -1,3 +1,11 @@
+Title: Issue 143: Implications (Part 2) – Future Goals
+Date: 2021-10-23 08:00
+Tags: 
+Category: Season 11
+Slug: lmg-s11-issue-143-implications-part-2-future-goals
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Using the same hardware for both smartphones and laptops would make it much easier to write apps for both platforms. The closer they are in features, hardware, and software support, the easier things will be for developers.
 
 So, let’s get some Likely-Asked-Questions (LAQs) out of the way in this last issue.
@@ -16,7 +24,7 @@ This’ll have to be a company that designs its own CPUs and GPUs.
 
 The incentives don’t align for Intel. Their main business has never relied on capable graphics, and they are much more concerned with saving the server market from ARM’s and AMD’s encroachment.
 
-What about AMD? After all, they were one of the earliest companies to push for a similar idea: Heterogeneous System Architecture. And they achieved it to a lesser extent, with their Accelerated Processing Units (see [Issue 142](https://buttondown.email/laymansguide/archive/lmg-s11-issue-142-implications-part-1-software/); a fancy term for CPU+GPU).
+What about AMD? After all, they were one of the earliest companies to push for a similar idea: Heterogeneous System Architecture. And they achieved it to a lesser extent, with their Accelerated Processing Units (see [Issue 142]({filename}/season11/issue142/issue142.md); a fancy term for CPU+GPU).
 
 AMD has made this possible in software; that means as a programmer, you can command the CPU to store data at a memory address, pass that address to the GPU, and then get the GPU to retrieve data from that address. But in practice, benchmarks show that passing data this way falls short of the actual throughput that would be expected; possibly the hardware support is just not there yet, and not easy enough to use.
 

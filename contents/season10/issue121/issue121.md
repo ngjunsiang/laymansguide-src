@@ -1,3 +1,11 @@
+Title: Issue 121: In graphic detail
+Date: 2021-05-22 08:00
+Tags: 
+Category: Season 10
+Slug: lmg-s10-issue-121-in-graphic-detail
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Driver files provide information about the driver, and instructions on how to receive information from the device, and encode information to be passed to the device. The operating system may come with generic driver files for the device, but custom driver files might provide better performance or additional features.
 
 This issue, let’s start from scratch with graphics: how does a machine that only processes 1s and 0s work with graphics? For starters, let’s think: what can we represent about graphics if we only have numbers?
@@ -20,7 +28,7 @@ In graphics-speak, we call these surfaces **faces**. Four points which form a fl
 
 With just meshes, we quickly run into the limits of what can be represented. For simplicity of calculation, each face can only have one colour. To make really detailed and realistic models, we need very finely detailed meshes. These are problematic because a lot of calculation is needed to make these models appear on screen; the more faces it has, the more calculation is needed!
 
-One way to reduce the number of faces in the mesh while still creating a decent model is to *use images on the face*. (I explained how images are represented in computers in [Issue 43](https://buttondown.email/laymansguide/archive/lmg-s4-issue-43-images-a-mosaic-of-3-colours/)) We will need additional information to describe the scale and rotation of the image on the face, but at least we can use the same image across multiple faces if necessary. Instead of having to model a hundred thousand blades of grass, I could just model a few stalks, and use a grassy texture to complete the impression.
+One way to reduce the number of faces in the mesh while still creating a decent model is to *use images on the face*. (I explained how images are represented in computers in [Issue 43]({filename}/season4/issue043/issue043.md)) We will need additional information to describe the scale and rotation of the image on the face, but at least we can use the same image across multiple faces if necessary. Instead of having to model a hundred thousand blades of grass, I could just model a few stalks, and use a grassy texture to complete the impression.
 
 ## Scene modelling
 

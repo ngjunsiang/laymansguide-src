@@ -1,6 +1,14 @@
+Title: Issue 125: Analog and digital conversion
+Date: 2021-06-19 08:00
+Tags: 
+Category: Season 10
+Slug: lmg-s10-issue-125-analog-and-digital-conversion
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The VGA video format originated in the time of cathode-ray televisions (CRTs). It was superseded by HDMI, a video format standardised by consumer electronics companies. DisplayPort, on the other hand, is a video format standardised by computer display companies.
 
-The bulk of the story has been written in [Issue 123](https://buttondown.email/laymansguide/archive/lmg-s10-issue-123-graphics-cards-the-pixel-factory/), so this issue will be short.
+The bulk of the story has been written in [Issue 123]({filename}/season10/issue123/issue123.md), so this issue will be short.
 
 ## Why two digital formats? HDMI vs DisplayPort
 
@@ -10,7 +18,7 @@ DisplayPort is a computer display standard, focused on computing needs. DisplayP
 
 ## Analog vs digital formats: a recap
 
-Digital formats differ from analog formats, because they do not carry the raw signal for the device. Instead, they carry information about the image, encoding the image data ([Issue 43](https://buttondown.email/laymansguide/archive/lmg-s4-issue-43-images-a-mosaic-of-3-colours/)) into video form; after all, video is just a series of moving images! The device takes on the responsibility of figuring out how to make the images appear on-screen, which is why digital TVs require significantly more electronics than CRT TVs.
+Digital formats differ from analog formats, because they do not carry the raw signal for the device. Instead, they carry information about the image, encoding the image data ([Issue 43]({filename}/season4/issue043/issue043.md)) into video form; after all, video is just a series of moving images! The device takes on the responsibility of figuring out how to make the images appear on-screen, which is why digital TVs require significantly more electronics than CRT TVs.
 
 ## Analog to digital conversion
 
@@ -22,7 +30,7 @@ A chip that is able to handle multiple formats and produce a robust output is co
 
 ## Annddddd ... back to graphics cards
 
-The graphics card is in charge of converting the final rasterised signal ([Issue 122](https://buttondown.email/laymansguide/archive/lmg-s10-issue-122-the-great-flattening/)) to a video signal, depending on the video format that is required. Naturally, this requires additional chips. Most integrated graphics chips support VGA and HDMI, while DisplayPort support is usually reserved for higher-end devices.
+The graphics card is in charge of converting the final rasterised signal ([Issue 122]({filename}/season10/issue122/issue122.md)) to a video signal, depending on the video format that is required. Naturally, this requires additional chips. Most integrated graphics chips support VGA and HDMI, while DisplayPort support is usually reserved for higher-end devices.
 
 Higher-end graphics cards offer support for more video formats. Furthermore, they also have the capability to rasterise and output video streams for multiple screens, enabling multi-screen support for those who need it. If you find that you need more than two screens for work or play, you are likely going to need a dedicated video card that supports three or more simultaneous video output ports.
 

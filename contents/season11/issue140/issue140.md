@@ -1,14 +1,22 @@
+Title: Issue 140: The shared memory dream
+Date: 2021-10-02 08:00
+Tags: 
+Category: Season 11
+Slug: lmg-s11-issue-140-the-shared-memory-dream
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Around 2015, the high-performance computer industry quickly realised that this would be much more efficient if the CPU and GPU could *share the same memory*. This idea was labelled heterogeneous systems architecture (HSA).
 
 Let’s rewind a bit further from last issue. That was in 2015.
 
-Circa 2009, changes were happening on the desktop motherboard, as the memory controller hub (MCH) came on-board the CPU to reduce latency when communicating with memory ([Issues 134](https://buttondown.email/laymansguide/archive/lmg-s11-issue-134-part-1-the-intel-core-i-series/)–[135](https://buttondown.email/laymansguide/archive/lmg-s11-issue-135-part-2-unifying-the-cpu-and-mch/)). But the memory chips themselves remained on the motherboard, and this was the case even in 2018, in Apple’s Macbook Air ([Issue 136](https://buttondown.email/laymansguide/archive/lmg-s11-issue-136-the-mobile-workstation-laptops/)).
+Circa 2009, changes were happening on the desktop motherboard, as the memory controller hub (MCH) came on-board the CPU to reduce latency when communicating with memory ([Issues 134]({filename}/season11/issue134/issue134.md)–[135]({filename}/season11/issue135/issue135.md)). But the memory chips themselves remained on the motherboard, and this was the case even in 2018, in Apple’s Macbook Air ([Issue 136]({filename}/season11/issue136/issue136.md)).
 
 ## Bringing memory on-board
 
 Smartphones can’t afford to do that; every bit of mainboard space is precious! The Apple A-series processors have been gradually moving more and more memory into the CPU, where it enjoys lower latency communicating with the CPU.
 
-In 2013, Apple released the iPhone 5S, using the Apple A7 SoC. This was Apple’s first 64-bit SoC ([Issue 55](https://buttondown.email/laymansguide/archive/lmg-s5-issue-55-addressing-memory/)), and by this point Apple had managed to bring 1GB of memory onto the SoC package. By 2018, With the Apple A12 SoC, the on-board memory had increased up to 4GB on high-end iPhone X models.
+In 2013, Apple released the iPhone 5S, using the Apple A7 SoC. This was Apple’s first 64-bit SoC ([Issue 55]({filename}/season5/issue055/issue055.md)), and by this point Apple had managed to bring 1GB of memory onto the SoC package. By 2018, With the Apple A12 SoC, the on-board memory had increased up to 4GB on high-end iPhone X models.
 
 So in 2015, the high-performance folks (working with workstations and servers) were dreaming of the CPU and GPU sharing memory, while from 2013, in smartphones, the CPU, GPU, and system memory were already cohabiting in the same chip package! CPU, GPU, and memory all living in the same space … how does this work?
 
@@ -16,12 +24,12 @@ So in 2015, the high-performance folks (working with workstations and servers) w
 
 Remember this diagram?
 
-![Chipset diagram of ATX systems for Intel Core (i-Series)](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue134/issue134_02.gif)<br />
-<small>An Intel Core i-series ATX system chipset diagram.<br />The MCH is merged into the CPU, but still a discrete unit.<br />DDR refers to computer memory, while GDDR refers to graphics card memory ([Issue123](https://buttondown.email/laymansguide/archive/lmg-s10-issue-123-graphics-cards-the-pixel-factory/))<br />Source: [Ars](https://arstechnica.com/gadgets/2009/09/intel-launches-all-new-pc-architecture-with-core-i5i7-cpus/)</small>
+![Chipset diagram of ATX systems for Intel Core (i-Series)]({attach}issue134_02.gif)<br />
+<small>An Intel Core i-series ATX system chipset diagram.<br />The MCH is merged into the CPU, but still a discrete unit.<br />DDR refers to computer memory, while GDDR refers to graphics card memory ([Issue123]({filename}/season10/issue123/issue123.md))<br />Source: [Ars](https://arstechnica.com/gadgets/2009/09/intel-launches-all-new-pc-architecture-with-core-i5i7-cpus/)</small>
 
 Apple is pretty tight-lipped about the technical details of its products, but if the industry standard is anything to go by, the GPU will usually have its own memory, separate from the CPU.
 
-After all, CPUs and GPUs don’t do the same work, or even work the same way ([Issue 123](https://buttondown.email/laymansguide/archive/lmg-s10-issue-123-graphics-cards-the-pixel-factory/)). They use different memory, they use memory differently, they store data differently, and if they accidentally overwrote each other’s data … well, your device would just crash.
+After all, CPUs and GPUs don’t do the same work, or even work the same way ([Issue 123]({filename}/season10/issue123/issue123.md)). They use different memory, they use memory differently, they store data differently, and if they accidentally overwrote each other’s data … well, your device would just crash.
 
 So … that on-board memory, whose is it? CPU’s, or GPU’s?
 
@@ -45,7 +53,7 @@ Apple is finally in the position of working towards shared memory with their Bio
 
 **Issue summary:** Shared memory is easier to implement when a company has control over the designs of both CPU and GPU.
 
-The story which began in [Issue 138](https://buttondown.email/laymansguide/archive/lmg-s11-issue-138-system-on-chip-soc/) is coming to a close soon! Next issue, the curtain falls, the A14 and M1 are released, and Apple (probably) pulls the chip industry in a new direction again.
+The story which began in [Issue 138]({filename}/season11/issue138/issue138.md) is coming to a close soon! Next issue, the curtain falls, the A14 and M1 are released, and Apple (probably) pulls the chip industry in a new direction again.
 
 ## What I’ll be covering next
 

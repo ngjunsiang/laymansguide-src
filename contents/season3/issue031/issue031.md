@@ -1,3 +1,11 @@
+Title: Issue 31: Getting a private IP address: DHCP (and DDNS)
+Date: 2019-07-27 08:00
+Tags: 
+Category: Season 3
+Slug: lmg-s3-issue-31-getting-a-private-ip-address-dhcp
+Author: J S Ng
+Summary: 
+
 Previously: Private IP addresses are special IP addresses that routers will treat as belonging to devices within the private network, and not outside it. Data packets sent to private IP addresses will never make it past the gateway into the internet. This system allows multiple devices within a private network to share a public IP address.
 
 Last week, I tried to answer the question "how do all my devices manage to share the one precious IP address assigned to me by my ISP?", and in the process introduced two more acronyms: DHCP and NAT. I don’t intend to spam this newsletter with acronyms, but to use them as neat little terms that conveniently capture ideas about how different parts of the complete Internet experience works. So if you never remember what DHCP is, don’t fret over it; you won’t see it often unless you configure routers or servers often.
@@ -41,9 +49,9 @@ It’s the same thing with your ISP. Your home router, even if it is left on 24/
 
 Remember what a public IP address is? It’s a way for data packets to get to you wherever they are sent from. And that is possible because of the forwarding tables stored in Internet registries everywhere (including your ISP). All over the world, anyone who knows your IP address can send your router data.
 
-But often they won’t do so. They will use a URL instead, because they are easier to remember.  The sender finds out what IP address the domain name is assigned to by querying its DNS servers ([Issue 28](https://buttondown.email/laymansguide/archive/lmg-s3-issue-28-domain-names-and-dns/)).
+But often they won’t do so. They will use a URL instead, because they are easier to remember.  The sender finds out what IP address the domain name is assigned to by querying its DNS servers ([Issue 28]({filename}/season3/issue028/issue028.md)).
 
-If you want your own domain name, you have to buy one at a domain name provider. This lets you add your unique domain name to the WHOIS database ([Issue 28](https://buttondown.email/laymansguide/archive/lmg-s3-issue-28-domain-names-and-dns/)) … but you need an IP address to map to your domain name. And you can’t use your ISP-assigned IP address, because it’s dynamic and changes when the lease expires … can you?
+If you want your own domain name, you have to buy one at a domain name provider. This lets you add your unique domain name to the WHOIS database ([Issue 28]({filename}/season3/issue028/issue028.md)) … but you need an IP address to map to your domain name. And you can’t use your ISP-assigned IP address, because it’s dynamic and changes when the lease expires … can you?
 
 ## Dynamic DNS
 

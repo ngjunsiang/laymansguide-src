@@ -1,3 +1,11 @@
+Title: Issue 122: The great flattening
+Date: 2021-05-29 08:00
+Tags: 
+Category: Season 10
+Slug: lmg-s10-issue-122-the-great-flattening
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) 3D models are represented with vertices (points), edges (line segments between points), and faces in a computer. Images known as textures can be mapped to faces to give the impression of detail.
 
 Having a model represented in a computer as a large set of numbers is cool, but nobody does 3D modelling like that. We need something to look at! We need a way to convert our model into a flat picture, ideally displayed on our monitors. And this conversion process needs to be fast enough that as we rotate or change the view of our model, the computer can keep up, displaying the changes in real-time.
@@ -18,7 +26,7 @@ All these steps take place in the graphics pipeline.
 
 ## The hardware
 
-The pipeline used to be carried out by the CPU ([Issue 53](https://buttondown.email/laymansguide/archive/lmg-s5-issue-53-the-cpu-is-an-instruction-obeying/)), but that isn’t ideal. The CPU’s hardware is optimised for *general-purpose processing*: keeping track of integers (i.e. natural numbers like 1, 2, 3, …), adding or subtracting them, and resetting them. It has many more computational units that carry out this calculation.
+The pipeline used to be carried out by the CPU ([Issue 53]({filename}/season5/issue053/issue053.md)), but that isn’t ideal. The CPU’s hardware is optimised for *general-purpose processing*: keeping track of integers (i.e. natural numbers like 1, 2, 3, …), adding or subtracting them, and resetting them. It has many more computational units that carry out this calculation.
 
 Graphics processing, on the other hand, requires a different kind of calculation. The position of vertices do not fit nicely into integers; we have to carry this out using decimal numbers (1.46776, 2.58704, –3.57514, …). The CPU does not encounter these often, and therefore does not have many of these computational units.
 

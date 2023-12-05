@@ -1,3 +1,11 @@
+Title: Issue 129: Cooling
+Date: 2021-07-17 08:00
+Tags: 
+Category: Season 10
+Slug: lmg-s10-issue-129-cooling
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Upgradable parts need a slot or socket to be inserted into; these slots/sockets need to be made robust enough, causing them to take up more space than a soldered part. Devices which were designed to be small and portable generally eliminate these as far as possible, opting to have parts directly soldered to the board instead.
 
 Why do computers need power?
@@ -10,7 +18,7 @@ As it turns out, energy-information equivalence theories posit that manipulating
 
 What happens to all the energy that a computer uses, then? Some miniscule amount of it goes to manipulating information. A tiny amount goes to lighting up LEDs (these devices somehow always have LEDs), and maybe running the cooling fans. The rest of it is wasted as **heat**.
 
-The history of computing is also a history of less and less wasted heat. The Cray 2 supercomputer, in 1985, needed 195 kW to produce 1.9 gigaflops (1.9 billion **fl**oating-point **o**perations **p**er **s**econd; more context in [Issue 123](https://buttondown.email/laymansguide/archive/lmg-s10-issue-123-graphics-cards-the-pixel-factory/)) of computational performance. The iPhone XS, in 2016, needed less than 1 W to produce 1 gigaflop.
+The history of computing is also a history of less and less wasted heat. The Cray 2 supercomputer, in 1985, needed 195 kW to produce 1.9 gigaflops (1.9 billion **fl**oating-point **o**perations **p**er **s**econd; more context in [Issue 123]({filename}/season10/issue123/issue123.md)) of computational performance. The iPhone XS, in 2016, needed less than 1 W to produce 1 gigaflop.
 
 No, I’m not going into the environmental concerns and carbon footprint of computing. We have more tangible and immediate concerns here.
 
@@ -44,19 +52,19 @@ In practice, this means that a bare chip can only run about 4 W before it starts
 
 The simplest way to cool a chip is to slap a piece of metal on it to increase the surface area (factor 2). This is known as **passive cooling**. A paste called **thermal paste** is applied between the heatsink and chip to improve the transfer of heat. To pack as much surface area as possible into a tiny space, this piece of metal usually has long, thin fins, giving the characteristic look of heatsinks:
 
-![A passive heatsink on a chip](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue129/issue129_01.jpg)<br />
+![A passive heatsink on a chip]({attach}issue129_01.jpg)<br />
 <small>A passive heatsink on the northbridge chip of a computer mainboard<br />Source: found on [Superuser](https://superuser.com/questions/1043094/difference-between-active-and-passive-heatsink)</small>
 
 The effectiveness of passive heatsinks depends on the ambient airflow around it. Some creative setups that manage to get *the metal case itself* in contact with the CPU can readily cool up to 45 W, with zero fan noise!
 
 For mobile phones, tablets, and laptops, such heatsinks would add too much to the device thickness. Instead, the CPUs are usually in direct contact with a larger metal surface, sometimes even the metal back of the device; this is why they feel warm to you in the first place. This allows tablets to use up to approx. 8 W of power.
 
-![Logic board cover in an iPad](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue129/issue129_02.jpg)<br />
+![Logic board cover in an iPad]({attach}issue129_02.jpg)<br />
 <small>The logic board cover in an iPad Pro 11 has copper inside; it helps to spread heat to the rest of the device instead of concentrating it all in one spot<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPad+Pro+11-Inch+Teardown/115457)</small>
 
 Where there isn’t this luxury of space, another option is to use a slim heatsink, and increase its cooling ability by forcing air through it. This form of cooling is called **active cooling**, and usually done with a fan of some sort, a popular option for thicker laptops. This allows laptops to run between 25–45 W, and desktop computers to run 65 W and hotter (with larger heatsinks, of course)
 
-![An active heatsink on a chip](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue129/issue129_03.jpg)<br />
+![An active heatsink on a chip]({attach}issue129_03.jpg)<br />
 <small>An active heatsink on the CPU of a computer mainboard<br />Source: found on [Superuser](https://superuser.com/questions/1043094/difference-between-active-and-passive-heatsink)</small>
 
 These numbers are for stereotypical mobile devices, laptops, and desktops; stranger or hybrid designs may have different cooling capacities (e.g. a tiny cube desktop might only have 25–35 W of cooling capacity).

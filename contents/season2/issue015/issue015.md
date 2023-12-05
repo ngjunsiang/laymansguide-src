@@ -1,3 +1,11 @@
+Title: Issue 15: Sysadmins and the command line
+Date: 2019-03-23 08:00
+Tags: 
+Category: Season 2
+Slug: lmg-s2-issue-15-sysadmins-and-the-command-line
+Author: J S Ng
+Summary: 
+
 If something’s not working correctly in your operating system, someone has to dig into the settings and configuration, figure out what’s wrong, and resolve the issue. If you have ever been in those shoes, you have been basically doing a sysadmin’s job. (Okay, put away those pitchforks you sysadmin purists and hear me out …)
 
 Every system you have ever interacted with needs to run on a computer, usually hidden away somewhere: point-of-sale systems, advertising screens, email servers, print servers, web servers, … and these systems can start going awry too. Sysadmins, experienced or otherwise, are the ones who fix them. If this system has a screen and a place to plug in a keyboard, fine. But what if it doesn’t?

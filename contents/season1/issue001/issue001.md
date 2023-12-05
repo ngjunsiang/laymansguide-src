@@ -1,3 +1,11 @@
+Title: Issue 1: Why make an app?
+Date: 2018-12-15 07:00
+Tags: 
+Category: Season 1
+Slug: lmg-issue-1-why-make-an-app
+Author: J S Ng
+Summary: 
+
 These holidays, I started making an app. It wasn’t a spontaneous decision. I had been thinking about it for years.
 
 It started when I started saving articles from the internet to read in my free time. First on diigo, then Pinboard, then Pocket, then Instapaper, and a few other little experimental apps I’ve forgotten (and which probably aren’t accessible now). I realised, hundreds of articles in, that I didn’t really have a way to revisit what I had read. Worse still, I didn’t even have an easy way to retrieve all the thoughts I had when I read what I read. And I was far from having a consistent way of linking what I read.
@@ -16,7 +24,7 @@ Readmill was shaped primarily around that. The first thing it brought was a perm
 
 These highlights (optionally) appeared in-location in the mobile apps. You could choose to have them off, for focused reading, or to have them on, for the serendipitous experience of meeting someone else who has something to say about what you are reading.
 
-![Screenshot of a Readmill highlight in the app](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season1/issue001/issue001_02.png)
+![Screenshot of a Readmill highlight in the app]({attach}issue001_02.png)
 <small>A Readmill highlight in the Readmill app</small>
 
 The social reading experience seemed gimmicky at first, but the turning point came for me when Clive Thompson, who had just published Smarter Than You Think, started replying to notes and comments in his book. Being able to speak with the books author on specific highlights was world-changing. You could ask questions about points in the book that weren’t clear to you, and have the author clarify it right there. You could mention something it reminds you of, and have the author point you to an article they read or wrote about the same idea. And these were available to other users of the service. Better yet, their correspondence with the author was available to you too! I regret not taking screenshots of some of the exchanges I had; I never expected I would need them at some point.

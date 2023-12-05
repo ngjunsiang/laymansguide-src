@@ -1,3 +1,11 @@
+Title: Issue 148: History of commercial computing - cohosting
+Date: 2021-11-27 08:00
+Tags: 
+Category: Season 12
+Slug: lmg-s12-issue-148-history-of-commercial-computing
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Running a virtual machine is like running a physical machine, but within a window in your OS.
 
 ## Co-located hosting

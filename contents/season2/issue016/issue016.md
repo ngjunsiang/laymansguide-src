@@ -1,3 +1,11 @@
+Title: Issue 16: Shell scripts and automation
+Date: 2019-03-30 08:00
+Tags: 
+Category: Season 2
+Slug: lmg-s2-issue-16-shell-scripts-and-automation
+Author: J S Ng
+Summary: 
+
 So you just got back from a trip with lots of photos in your camera. You take the SD card out from the camera, put it in your laptop, open up the photos … and realise they all have the wrong white balance set.
 
 Or if you’re like me, you spend the better part of an afternoon using your camera to ‘scan’ a textbook for later reference. That means you now have over 300 photos to crop separately (left and right pages), adjust levels (to make the image more like it was done with a scanner), and do other minor corrections.

@@ -1,6 +1,14 @@
+Title: Issue 138: System-on-Chip (SoC)
+Date: 2021-09-18 08:00
+Tags: 
+Category: Season 11
+Slug: lmg-s11-issue-138-system-on-chip-soc
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The M1 goes one step further: not only does it make do with fewer chips, it does so with passive cooling.
 
-In [Issue 136](https://buttondown.email/laymansguide/archive/lmg-s11-issue-136-the-mobile-workstation-laptops/), I showed the miniaturisation of the Macbook mainboard through a series of pictures. While the laptop has remained the same size mostly (apart from getting slimmer), that is not the case with its components. The bigger components, like memory and storage, changed from being separate discrete parts to being another component soldered directly to the mainboard.
+In [Issue 136]({filename}/season11/issue136/issue136.md), I showed the miniaturisation of the Macbook mainboard through a series of pictures. While the laptop has remained the same size mostly (apart from getting slimmer), that is not the case with its components. The bigger components, like memory and storage, changed from being separate discrete parts to being another component soldered directly to the mainboard.
 
 But that only gets us so far; even in the M1 Macbook Air, the mainboard is still almost the entire length of a phone. There’s got to be something else.
 
@@ -10,12 +18,12 @@ Today, let’s see how the iPhone has evolved.
 
 Rewind to 2008: one year after the first-generation iPhone was launched, the iPhone 3G was released. These early smartphones let us see every little chip that was required to run a smartphone:
 
-![iPhone 3G mainboard, with parts labelled](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue138/issue138_01.jpg)<br />
+![iPhone 3G mainboard, with parts labelled]({attach}issue138_01.jpg)<br />
 <small>iPhone 3G mainboard, with parts labelled<br />There are lots of small, auxiliary processors around the CPU.<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPhone+3G+Teardown/600)</small>
 
-In spirit and form, the early smartphones were a lot like the early desktop mainboards ([Issue 132](https://buttondown.email/laymansguide/archive/lmg-s11-issue-132-the-at-form-factor-pre-1995/)): lots of chips performing highly specific functions.
+In spirit and form, the early smartphones were a lot like the early desktop mainboards ([Issue 132]({filename}/season11/issue132/issue132.md)): lots of chips performing highly specific functions.
 
-After all, a smartphone has no need (or space) for a peripheral controller hub (PCH) ([Issue 134](https://buttondown.email/laymansguide/archive/lmg-s11-issue-134-part-1-the-intel-core-i-series/)) when it does not have add-on peripherals, and no need for a memory controller hub (MCH) when it can put the memory directly on the same chip as the CPU.
+After all, a smartphone has no need (or space) for a peripheral controller hub (PCH) ([Issue 134]({filename}/season11/issue134/issue134.md)) when it does not have add-on peripherals, and no need for a memory controller hub (MCH) when it can put the memory directly on the same chip as the CPU.
 
 At this point, Apple was still using a CPU based on a design by ARM, and manufactured by Samsung. 2 years later, Apple had its own in-house processor: the Apple A4, their own design.
 
@@ -23,15 +31,15 @@ At this point, Apple was still using a CPU based on a design by ARM, and manufac
 
 This time, Apple had switched to an internal layout distinctly different from the iPhone 3G, and the basic layout (mainboard beside battery) would become a pattern for subsequent iPhone generations: battery taking up almost half the space, charging and audio circuitry at the bottom near the charging port, camera and antennas near the top, and everything else beside the battery.
 
-![iPhone 4 and iPhone 12 Pro](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue138/issue138_02.jpg)<br />
+![iPhone 4 and iPhone 12 Pro]({attach}issue138_02.jpg)<br />
 <small>iPhone 4 on the left, iPhone 12 Pro on the right<br />The basic layout of the iPhone has been preserved over a decade.<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPhone+4+Teardown/3130) and [iFixit](https://www.ifixit.com/Teardown/iPhone+12+and+12+Pro+Teardown/137669)</small>
 
 What’s the difference between this layout and the 3G? Let’s have a look at the iPhone 4’s mainboard:
 
-![iPhone 4 mainboard](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue138/issue138_03.jpg)<br />
+![iPhone 4 mainboard]({attach}issue138_03.jpg)<br />
 <small>iPhone 4 mainboard. I got lazy with the labelling because, well, there’s nothing to label!<br />The CPU is the huge chip labelled “A4”, and there’s memory and the 3G chip on the back.<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPhone+4+Teardown/3130)</small>
 
-Similar to the transition from AT to ATX motherboards ([Issue 132](https://buttondown.email/laymansguide/archive/lmg-s11-issue-132-the-at-form-factor-pre-1995/) and [134](https://buttondown.email/laymansguide/archive/lmg-s11-issue-134-part-1-the-intel-core-i-series/)), the iPhone underwent a great miniaturisation—in a single generation!
+Similar to the transition from AT to ATX motherboards ([Issue 132]({filename}/season11/issue132/issue132.md) and [134]({filename}/season11/issue134/issue134.md)), the iPhone underwent a great miniaturisation—in a single generation!
 
 ## System-on-Chip
 
@@ -49,7 +57,7 @@ The A4 chip carries:
 This chip is responsible for:
 
 - performing calculations
-- rendering graphics ([Issue 123](https://buttondown.email/laymansguide/archive/lmg-s10-issue-123-graphics-cards-the-pixel-factory/))
+- rendering graphics ([Issue 123]({filename}/season10/issue123/issue123.md))
 - managing the flow of information between CPU, GPU, and memory (previously the job of the MCH)
 - managing the flow of information between storage, network, and the MCH (previously the job of the PCH)
 

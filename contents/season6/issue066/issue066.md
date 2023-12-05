@@ -1,3 +1,11 @@
+Title: Issue 66: Before the Cloud
+Date: 2020-04-04 08:00
+Tags: 
+Category: Season 6
+Slug: lmg-s6-issue-66-before-the-cloud
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Shared memory helps to reduce the amount of memory needed by all the applications running on an operating system. It also allows applications to send data to each other, and to communicate.
 
 Season 5 focused on the vulnerabilities that arise from optimising CPUs for speed. Speed means sharing; the more easily data is made available to the CPU without all kinds of permission checks, the more quickly the processing that take place.
@@ -12,13 +20,13 @@ That seems to be a reasonable starting point … except that was not the same as
 
 ## The birth of Javascript
 
-No. I think it started in mid-1995, when Netscape hired Brendan Eich to create a scripting language for the web. They already had Java, a language which the web didn’t understand; it had to be compiled ([Issue 54](https://buttondown.email/laymansguide/archive/lmg-s5-issue-54-compiling-programming-code-into/)) to a Java application (which you might know as a java applet) and put into its own little box so it wouldn’t hurt the rest of the webpage. But they wanted a **scripting language**, which could be run directly in the browser without compilation, in real time, *as part of the page*. [In Eich’s words](https://www.infoworld.com/article/2653798/javascript-creator-ponders-past--future.html), “The idea was to make something that Web designers, people who may or may not have much programming training, could use to add a little bit of animation or a little bit of smarts to their Web forms and their Web pages.”
+No. I think it started in mid-1995, when Netscape hired Brendan Eich to create a scripting language for the web. They already had Java, a language which the web didn’t understand; it had to be compiled ([Issue 54]({filename}/season5/issue054/issue054.md)) to a Java application (which you might know as a java applet) and put into its own little box so it wouldn’t hurt the rest of the webpage. But they wanted a **scripting language**, which could be run directly in the browser without compilation, in real time, *as part of the page*. [In Eich’s words](https://www.infoworld.com/article/2653798/javascript-creator-ponders-past--future.html), “The idea was to make something that Web designers, people who may or may not have much programming training, could use to add a little bit of animation or a little bit of smarts to their Web forms and their Web pages.”
 
 Mr Eich created a prototype for the language, Mocha, in 10 days, just in time to be included in Netscape Navigator 2.0 beta 3 when it was released in November that year. Its name had been changed to LiveScript. But in December, when his prototype language was announced to the world by Netscape Communications and Sun Microsystems, it would be known as Javascript.
 
 The same year, Internet Explorer 2.0 was also released to the world. Work on it had also started early that year. Both Netscape Navigator and Internet Explorer were based on very similar codebases: both originated from NCSA’s Mosaic browser, which began development by Eric Bina and Marc Andreessen three years ago, at the end of 1992. (Andreessen would later be best known as co-founder of Andreessen-Horowitz Capital Management.)
 
-By Spring 1996, things were heating up. Before this point, web browsers were only working with [HTTP v0.9](https://www.w3.org/Protocols/HTTP/HTTP2.html), a protocol so simple I probably wouldn’t need to laymanise it for you. But a new standard was needed to support all the new things that Web 2.0 was supposed to be able to do. That new standard, HTTP v1.0, was published in 1996. (See [Issue 7](https://buttondown.email/laymansguide/archive/lmg-issue-7-what-is-http/) if you’re still wondering what HTTP is.)
+By Spring 1996, things were heating up. Before this point, web browsers were only working with [HTTP v0.9](https://www.w3.org/Protocols/HTTP/HTTP2.html), a protocol so simple I probably wouldn’t need to laymanise it for you. But a new standard was needed to support all the new things that Web 2.0 was supposed to be able to do. That new standard, HTTP v1.0, was published in 1996. (See [Issue 7]({filename}/season1/issue007/issue007.md) if you’re still wondering what HTTP is.)
 
 What else happened in that magical year of 1996?
 

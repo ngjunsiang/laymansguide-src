@@ -1,3 +1,11 @@
+Title: Issue 126: USB Type-C
+Date: 2021-06-26 08:00
+Tags: 
+Category: Season 10
+Slug: lmg-s10-issue-126-usb-type-c
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Analog formats such as VGA mostly contain the control signals that the CRT needs to operate, while digital formats such as HDMI and DisplayPort contain image data that the device must convert to control signals. Analog signals need a digital-analog-conversion (DAC) chip to be converted to digital signals, hence VGA-HDMI adapters tend to be more costly than DisplayPort-HDMI adapters. Dedicated graphics cards generally support more simultaneous output video streams than integrated graphics cards.
 
 This week, I attempt to untangle the confusion around **USB Type-C**, informally also referred to as USB-C.
@@ -6,12 +14,12 @@ This week, I attempt to untangle the confusion around **USB Type-C**, informally
 
 It is a connector standard. It sets standards for *this* connector:
 
-![Picture of a USB-C plug](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue126/issue126_01.jpg)<br />
+![Picture of a USB-C plug]({attach}issue126_01.jpg)<br />
 <small>USB-C plug<br />Image via [Wikipedia](https://en.wikipedia.org/wiki/USB-C)</small>
 
 What does a connector standard do? It determines how many pins the connector should have, and what each of the pins should be used for, how the connector should be shaped, how the docking port (where the cable gets plugged into) should be designed, and other similar details. It’s all about the docking.
 
-![Pinout diagram of a USB-C plug](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue126/issue126_02.png)<br />
+![Pinout diagram of a USB-C plug]({attach}issue126_02.png)<br />
 <small>Pinout diagram of a USB-C plug<br />Image via [Wikipedia](https://en.wikipedia.org/wiki/USB-C)</small>
 
 ## But won’t somebody think about the data?!
@@ -24,7 +32,7 @@ While USB 2.0 (or Hi-Speed USB) supported a transfer rate of *up to* 60 MB/s, US
 
 We don’t have to worry so much about these versions, because USB is designed to be backward-compatible. That means all devices that support USB2 also support USB1, and all devices supporting USB3 also support USB2. The primary advantage that each successive USB version has over previous versions is higher throughput, more supported features, and more connectors to confuse (okay, that last isn’t an advantage 😛).
 
-![Connector shapes for different USB versions](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue126/issue126_03.png)<br />
+![Connector shapes for different USB versions]({attach}issue126_03.png)<br />
 <small>Comparison of USB connector plugs, excluding USB Type-C plugs<br />Image via [Wikipedia](https://en.wikipedia.org/wiki/USB_hardware)</small>
 
 As you can see, this makes for a lot of confusion, especially when compatibility is mixed: USB2 ‘A’ connectors are meant to go into USB3 ‘A’ receptacles, but USB2 ‘B’ connectors aren’t meant to go into USB3 ‘B’ receptacles …!
@@ -45,7 +53,7 @@ This helps to explain why a USB-charging battery pack cannot also be an external
 
 In addition to USB3.0 data (and later versions of USB 3), the USB Type-C specification also allows the Type-C connector to carry other kinds of data, if supported by the device:
 
-- DisplayPort video data for monitors and computer display devices ([Issue 124](https://buttondown.email/laymansguide/archive/lmg-s10-issue-124-video-formats/))
+- DisplayPort video data for monitors and computer display devices ([Issue 124]({filename}/season10/issue124/issue124.md))
 - HDMI video data for monitors and consumer electronics devices (also covered in Issue 124)
 - Thunderbolt 3 data, for high-data-transfer devices
 

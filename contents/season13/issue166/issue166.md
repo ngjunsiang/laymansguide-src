@@ -1,3 +1,11 @@
+Title: Issue 166: A cause of system slowdown: caches
+Date: 2022-04-02 08:00
+Tags: 
+Category: Season 13
+Slug: lmg-s13-issue-166-a-cause-of-system-slowdown
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) There are easy and quick ways to check the validity of the most common advice for resolving system slowdown. But it still seems to happen even after these tips have been tried.
 
 Last issue, I walked through common causes of system slowdown suggested by generic tech websites, and explained simple ways of checking if these are really the cause. Quite often, they are not, especially if you are the kind who is careful about internet usage and does regular system maintenance.
@@ -6,7 +14,7 @@ So what is going on?
 
 ## Caches, caches, and more caches
 
-In [Issue 39](https://buttondown.email/laymansguide/archive/lmg-s3-issue-39-caches-and-caching/), I explained what caches are: places where you (temporarily) store the result of lookups, so you don’t have to keep performing the lookup again. In context, this referred to DNS lookups: operations that translate a domain name (such as `google.com`) to an IP address (such as `173.194.217.100`).
+In [Issue 39]({filename}/season3/issue039/issue039.md), I explained what caches are: places where you (temporarily) store the result of lookups, so you don’t have to keep performing the lookup again. In context, this referred to DNS lookups: operations that translate a domain name (such as `google.com`) to an IP address (such as `173.194.217.100`).
 
 But caches are everywhere, not just in DNS.
 
@@ -32,7 +40,7 @@ These days, the disk-is-faster assumption is less true across a spectrum of uses
 
 ## Mobile storage and internet
 
-A quick note on mobile storage, which I unfortunately missed out on [Issue 119](https://buttondown.email/laymansguide/archive/lmg-s10-issue-119-solid-state-disks-an-upgrade/) on laptop and desktop solid-state disks (SSDs).
+A quick note on mobile storage, which I unfortunately missed out on [Issue 119]({filename}/season10/issue119/issue119.md) on laptop and desktop solid-state disks (SSDs).
 
 Mobile devices generally do not use the same kinds of SSDs that laptops use. Those are bulkier, use more power (not good for mobile battery life), and run hotter. Laptop SSDs use an interface called NVMe (which iPhones use as well), while most Android devices’ storage use an interface called UFS which is slower (but uses less energy).
 

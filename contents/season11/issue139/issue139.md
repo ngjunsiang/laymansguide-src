@@ -1,10 +1,18 @@
+Title: Issue 139: What’s before this line is mine, what’s after this line is yours
+Date: 2021-09-25 08:00
+Tags: 
+Category: Season 11
+Slug: lmg-s11-issue-139-whats-before-this-line-is-mine
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A system-on-chip (SoC) combines the core functionality of a system—processing, graphics, memory, and control—into a single chip package.
 
 I am eager to dig into the meat of the A14 and M1! But first I must set up a story.
 
 ## The hUMA race
 
-Circa 2015 (actually even a couple of years before that), the industry suddenly seemed to wake up and realise that graphics cards could do a lot more than just play video games. The nature of how they work ([Issue 121](https://buttondown.email/laymansguide/archive/lmg-s10-issue-121-in-graphic-detail/) & [122](https://buttondown.email/laymansguide/archive/lmg-s10-issue-122-the-great-flattening/)) makes them very amenable to solving problems in scientific computing, particularly in simulations, which use up computational resources by the petaflop, and energy by the megawatt.
+Circa 2015 (actually even a couple of years before that), the industry suddenly seemed to wake up and realise that graphics cards could do a lot more than just play video games. The nature of how they work ([Issue 121]({filename}/season10/issue121/issue121.md) & [122]({filename}/season10/issue122/issue122.md)) makes them very amenable to solving problems in scientific computing, particularly in simulations, which use up computational resources by the petaflop, and energy by the megawatt.
 
 In a nutshell, the problem the industry now faces is this:
 
@@ -12,9 +20,9 @@ In a nutshell, the problem the industry now faces is this:
 2. The CPU is nimble, and much more suited for everyday tasks, like starting up a computer and connecting to multiple peripherals, and basically creating a useable digital environment for humans.
 3. It thus makes the best sense to use the CPU to set up the heavy-lifting for the GPU, and have the GPU return the results after computation.
 
-Remember this diagram from [Issue 134](https://buttondown.email/laymansguide/archive/lmg-s11-issue-134-part-1-the-intel-core-i-series/)?
+Remember this diagram from [Issue 134]({filename}/season11/issue134/issue134.md)?
 
-![Chipset diagram of ATX systems for Intel Core (i-Series)](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue134/issue134_02.gif)
+![Chipset diagram of ATX systems for Intel Core (i-Series)]({attach}issue134_02.gif)
 
 Think about how information would flow here:
 
@@ -39,10 +47,10 @@ We save time, bandwidth, and resources without having to copy data between CPU a
 
 The industry gave this dream a name. They called it [heterogeneous system architecture (HSA)](https://en.wikipedia.org/wiki/Heterogeneous_System_Architecture), using a heterogeneous unified memory architecture (hUMA) i.e. shared memory.
 
-![Unified memory diagram from Nvidia](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue139/issue139_01.jpg)<br />
+![Unified memory diagram from Nvidia]({attach}issue139_01.jpg)<br />
 <small>Nvidia’s heterogeneous unified memory architecture (HUMA) dream<br />Source: [WCCFtech](https://wccftech.com/intel-amd-nvidia-future-industry-hsa/2/)</small>
 
-It turns out that this is a pretty difficult task—consider the amount of bandwidth needed to support CPU *and* GPU access. Today no product from any company (besides Apple) fully implements this in its SoCs ([Issue 138](https://buttondown.email/laymansguide/archive/lmg-s11-issue-138-system-on-chip-soc/)) yet.
+It turns out that this is a pretty difficult task—consider the amount of bandwidth needed to support CPU *and* GPU access. Today no product from any company (besides Apple) fully implements this in its SoCs ([Issue 138]({filename}/season11/issue138/issue138.md)) yet.
 
 **Issue summary:** Around 2015, the high-performance computer industry quickly realised that this would be much more efficient if the CPU and GPU could *share the same memory*.
 

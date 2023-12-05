@@ -1,10 +1,18 @@
+Title: Issue 87: Relational Databases
+Date: 2020-09-12 08:00
+Tags: 
+Category: Season 7
+Slug: lmg-s7-issue-87-relational-databases
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) To increase the performance of a distributed database, we can scale up/scale vertically by increasing the computers’ performance, or scale out/scale horizontally by adding more computers. Distributed databases can only prioritise two of the following three factors: consistency, availability, partitioning (CAP theorem).
 
-I’ve already discussed one big strength of relational databases in [Issue 84](https://buttondown.email/laymansguide/archive/lmg-s7-issue-84-join-supercharged-vlookup/) when I illustrated how the JOIN keyword, one of many SQL commands ([Issue 83](https://buttondown.email/laymansguide/archive/lmg-s7-issue-83-structured-query-language/)), can join our data from multiple tables into a single view. This is where we look under the surface to see what makes that possible.
+I’ve already discussed one big strength of relational databases in [Issue 84]({filename}/season7/issue084/issue084.md) when I illustrated how the JOIN keyword, one of many SQL commands ([Issue 83]({filename}/season7/issue083/issue083.md)), can join our data from multiple tables into a single view. This is where we look under the surface to see what makes that possible.
 
 ## Linking tables through foreign keys
 
-From [Issue 84](https://buttondown.email/laymansguide/archive/lmg-s7-issue-84-join-supercharged-vlookup/):
+From [Issue 84]({filename}/season7/issue084/issue084.md):
 
 > To join the `Customer` and `Sales` data so that we get the sales data along with `custName`, we would write a SQL query like this:
 >
@@ -15,7 +23,7 @@ From [Issue 84](https://buttondown.email/laymansguide/archive/lmg-s7-issue-84-jo
 >
 > Here, `Sales.custID` refers to the `custID` of the `Sales` table, while `Customer.custID` refers to the `custID` of the `Customer` table. This query effectively says “select the `salesID`, `orderDate`, and `custID` columns from `Sales` table, and add data from the `Customer` table where the `custID` column matches”. This will return:
 >
-> ![Screenshot of an INNER JOIN operation between the Sales and Customer data tables, merged using custID values.](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season7/issue084/issue084_04.png)
+> ![Screenshot of an INNER JOIN operation between the Sales and Customer data tables, merged using custID values.]({attach}issue084_04.png)
 
 Did you catch the fact that there were actually *two* `custID` columns? One in the `Sales` table, and one in the `Customer` table ... by linking two tables like that, we actually introduce a point of potential breakage.
 

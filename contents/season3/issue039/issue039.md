@@ -1,3 +1,11 @@
+Title: Issue 39: Caches and caching
+Date: 2019-09-21 08:00
+Tags: 
+Category: Season 3
+Slug: lmg-s3-issue-39-caches-and-caching
+Author: J S Ng
+Summary: 
+
 **Previously:** When a webpage document loads (Stage 1), it is processed by the web browser, which then
 loads other requested resources, such as stylesheets, images, and scripts (Stage 2). Scripts and other interactive code may then request more resources (data fetches, images, icons, data, etc) which are then loaded subsequently (Stage 3, 4, 5, …).
 
@@ -28,14 +36,14 @@ When this happens, tech support will usually just flush the DNS cache to remove 
 
 Notice that the first time your web browser loads any page you haven’t visited before, it often takes quite a while, but subsequent loads are really fast? That’s because we now skip a DNS query (grabbing the IP address from the DNS cache instead). Each time we do a lookup to retrieve a file or piece of information from the server, we can skip the DNS query!
 
-The caching trick isn’t applied only to the IP address; many elements you see on the page have been cached: the document itself, images, scripts, stylesheets, … most of the elements from [Issue 38](https://buttondown.email/laymansguide/archive/lmg-s3-issue-38-loading-a-web-page/) are cacheable, and the browser will cache it.
+The caching trick isn’t applied only to the IP address; many elements you see on the page have been cached: the document itself, images, scripts, stylesheets, … most of the elements from [Issue 38]({filename}/season3/issue038/issue038.md) are cacheable, and the browser will cache it.
 
 How long does the browser cache these files? It depends ... I know it’s not an answer you like since it means more things to learn about, but I’ll keep it short.
 
-Remember this? It’s the response header we saw from [Issue 8](https://buttondown.email/laymansguide/archive/lmg-issue-8-http-error-codeshow-does-a-server-let/) on HTTP error codes:
+Remember this? It’s the response header we saw from [Issue 8]({filename}/season1/issue008/issue008.md) on HTTP error codes:
 
 
-![HTTP response header](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season1/issue008/issue008_01.png)
+![HTTP response header]({attach}issue008_01.png)
 <small>A response header from Hypothes.is</small>
 
 

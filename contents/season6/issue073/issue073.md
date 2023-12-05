@@ -1,3 +1,11 @@
+Title: Issue 73: The Heart of Darkness (Header Bidding)
+Date: 2020-05-23 08:00
+Tags: 
+Category: Season 6
+Slug: lmg-s6-issue-73-the-heart-of-darkness-header
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) QuantCast gathers a large amount of data on internet users directly through its **cookie** (which other publishers serve through their websites), and also by cross-checking it against data which it purchases from other **data brokers** who gather their information through other means, such as internet activity and credit card transactions.
 
 What exactly does QuantCast do with all this data?
@@ -10,7 +18,7 @@ Do a search for `<head>` and `</head>`, then for `<body>` and `</body>`.
 
 The section flanked by `<head></head>` is the page header. This is the most important section of the page for everyone else besides the reader. When a page is requested by the browser, the HTML code for the entire page is retrieved. But it is not rendered all at once.
 
-The browser starts processing the page header first. It looks at all the file requests: CSS files (for styling the page), fonts (for formatting text), javascript code (for running code to make the page responsive and for loading cookies ([Issue 70](https://buttondown.email/laymansguide/archive/lmg-s6-issue-70-the-cookie-factory/)) etc). It sends off another round of requests for each of these resources. The rest of the page (flanked by the `<body></body>` tags) does not start rendering until critical files have been retrieved.
+The browser starts processing the page header first. It looks at all the file requests: CSS files (for styling the page), fonts (for formatting text), javascript code (for running code to make the page responsive and for loading cookies ([Issue 70]({filename}/season6/issue070/issue070.md)) etc). It sends off another round of requests for each of these resources. The rest of the page (flanked by the `<body></body>` tags) does not start rendering until critical files have been retrieved.
 
 Often, the javascript code is considered critical, because some of them actually change the page body or affect what is loaded. They are therefore placed in the page header and loaded first before the body is rendered.
 
@@ -24,7 +32,7 @@ When advertising comes into the mix, the information flow gets much more complic
 
 What does an exchange do? It matches this cookie to its huge database of cookies, and then it conducts an auction. “Here’s a user browsing New York Times! \*Looks up user in database\* Probably a woke young twenty-something, good credit history, into yoga, and health-fad-ish.” So it’s pretty much like a marketplace, but one that you cannot participate directly in. It’s actually automated bidding.
 
-The ad-buyers bid. These bids are not placed on-the-spot, but pre-bidded (through the advertisers’ dashboards, or [through an API](https://buttondown.email/laymansguide/archive/lmg-issue-4-what-is-an-api/)). Higher bids win over lower bids, but more relevant bids win over less relevant bids.
+The ad-buyers bid. These bids are not placed on-the-spot, but pre-bidded (through the advertisers’ dashboards, or [through an API]({filename}/season1/issue004/issue004.md)). Higher bids win over lower bids, but more relevant bids win over less relevant bids.
 
 The advertiser’s server sends the winning bid code back to your browser. Then another piece of the advertiser’s javascript code kicks in, sending this code to the advertiser’s **content delivery network (CDN)**.
 

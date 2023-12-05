@@ -1,3 +1,11 @@
+Title: Issue 130: Power limits
+Date: 2021-07-24 08:00
+Tags: 
+Category: Season 10
+Slug: lmg-s10-issue-130-power-limits
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The larger the surface area, the faster an object loses heat. The larger the temperature difference between an object and its surroundings, the faster the object loses heat. Heat is bad for computers, and CPUs will need cooling to be able to process computations quickly. A mobile phone thus typically uses no more than 4 W of power, a laptop can use 25–45 W, and a desktop can usually use 65 W and more. Two popular ways of increasing the cooling capacity of a device is to attach a larger piece of metal to the chip (passive cooling), or use a fan to force air over the heatsink (active cooling).
 
 **Point 1:** A powerful device produces lots of heat.  
@@ -29,16 +37,16 @@ And heat is the enemy of CPUs.
 
 ## External vs internal power supplies
 
-Ughh, power bricks … so many different types, with different connectors, and we never quite know if we can use one laptop’s power brick on another laptop (at least, until USB Type-C power for laptops came along; more in [Issue 127](https://buttondown.email/laymansguide/archive/lmg-s10-issue-127-usb-type-c-power-delivery/))
+Ughh, power bricks … so many different types, with different connectors, and we never quite know if we can use one laptop’s power brick on another laptop (at least, until USB Type-C power for laptops came along; more in [Issue 127]({filename}/season10/issue127/issue127.md))
 
-In a laptop, you really do not want the power supply dumping this heat *into the laptop*! The laptop already has enough work to do getting heat from the CPU out of that cramped space into the surroundings. You don’t want to give it more heat to remove, and risk throttling the CPU’s performance ([Issue 129](https://buttondown.email/laymansguide/archive/lmg-s10-issue-129-cooling)). It’s better that the AC converter/power brick remains external to the laptop, dumping that heat into the surroundings directly without heating up the laptop’s internal space.
+In a laptop, you really do not want the power supply dumping this heat *into the laptop*! The laptop already has enough work to do getting heat from the CPU out of that cramped space into the surroundings. You don’t want to give it more heat to remove, and risk throttling the CPU’s performance ([Issue 129]({filename}/season10/issue129/issue129.md)). It’s better that the AC converter/power brick remains external to the laptop, dumping that heat into the surroundings directly without heating up the laptop’s internal space.
 
-![An Apple power adapter, with the cover removed](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue130/issue130_01.jpg)<br />
+![An Apple power adapter, with the cover removed]({attach}issue130_01.jpg)<br />
 <small>The internals of the Apple AC converter (i.e. power adapter)<br />Source: [Ken Shiriff](http://www.righto.com/2015/11/macbook-charger-teardown-surprising.html)</small>
 
 In larger devices—the Mac Mini, game consoles (e.g. PS4 or Xbox One), and larger desktops, there’s plenty of space in the device’s internals, and they have sufficiently powerful cooling systems that can remove this heat. In desktops especially, the power supply may be large enough that it has its own cooling fan!
 
-![A desktop power supply, with the cover removed](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue130/issue130_02.jpg)<br />
+![A desktop power supply, with the cover removed]({attach}issue130_02.jpg)<br />
 <small>The internals of a desktop power supply.<br />Notice the cooling fan mounted on the back with 4 silver screws, and the two silver heatsinks mounted vertically<br />Source: [Wikipedia](https://en.wikipedia.org/wiki/Power_supply_unit_(computer))</small>
 
 So for large devices, it makes sense to hide the power supply within the device for a sleeker look.
@@ -47,7 +55,7 @@ In fact, for high-power devices, a power adapter is a poor option. Since power a
 
 ## Device categories
 
-Putting together the information from [Issue 129](https://buttondown.email/laymansguide/archive/lmg-s10-issue-129-cooling) and this issue, we can deduce that devices seem to sort themselves into form-factor categories depending on how much power they draw, and how much heat they put out:
+Putting together the information from [Issue 129]({filename}/season10/issue129/issue129.md) and this issue, we can deduce that devices seem to sort themselves into form-factor categories depending on how much power they draw, and how much heat they put out:
 
 **Devices drawing >100W at peak, and putting out >80 W of heat:**
 

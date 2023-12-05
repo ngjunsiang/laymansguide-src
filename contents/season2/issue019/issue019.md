@@ -1,3 +1,11 @@
+Title: Issue 19: Version control and git
+Date: 2019-04-20 08:00
+Tags: 
+Category: Season 2
+Slug: lmg-s2-issue-19-version-control-and-git
+Author: J S Ng
+Summary: 
+
 Have you ever worked on a large document with a team of people before? If you have, did it go well? Did people get along and not get into conflict with each other over conflicting ideas or changes? If it did, please drop me an email and let me know! In my experience it is so frustrating and I have difficulty seeing how it can be done without some kind of standardised, automated process for keeping everyone updated.
 
 In the past, when documents were still mostly managed manually (before the Internet happened), important documents used to be in a file for everyone to reference. Maybe there were multiple copies for VIPs. Whenever that document got updated, it had to have a **change log** attached to say what had changed and when. You still see this sometimes today, in some reference documents, and in software updates. The idea behind being able to see the *history* of a document—a record of how it has changed over time—is an idea that has survived and been passed down to each generation of makers. We often refer to such inherited ideas as wisdom, and the modern form of this idea is known as **version control**.
@@ -21,7 +29,7 @@ The modern-day tool which (almost) all developers have standardised on is called
 
 Git tracks changes across _multiple files_. For example, if you added a new About page to your project, it may involve adding a new file about.html (the actual content), updating app.py (to create a new route so people can access the URL), and adding a new line to the changelog (so other members of your team have an easy-to-read changelog). You inform the git server (we covered clients and servers in [Issue 7](https://buttondown.email/laymansguide/archive/b36f0f43-e8f5-402d-8c6a-c2a28f5ff556)) that you have changed those 3 files by creating a **commit**. Git can prepare those commits for you, and they look like this:
 
-![A commit on Github](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season2/issue019/issue019_01.png)
+![A commit on Github]({attach}issue019_01.png)
 <small>A git commit on Github. Yup, this newsletter is also a project on Github.</small>
 
 The screenshot above makes it look fancy, but a commit is really just a simple text file that records the changes of the commit.

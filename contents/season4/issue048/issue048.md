@@ -1,3 +1,11 @@
+Title: Issue 48: Of containers and codecs
+Date: 2019-11-23 08:00
+Tags: 
+Category: Season 4
+Slug: lmg-s4-issue-48-of-containers-and-codecs
+Author: J S Ng
+Summary: 
+
 **Previously:** Data cannot be compressed beyond its predictability limit in a lossless fashion. Lossless compression does not discard any information. It spots patterns in the data and represents them with fewer bits, through a combination of predictive coding, run-length encoding, and entropy coding.
 
 In past issues this season, I went into some detail about how images and sound are represented as data in computers. I also went into a little detail about lossy compression, in which imperceptible information is discarded, and lossless compression, in which the original information can be reconstructed.
@@ -37,9 +45,9 @@ For everyday purposes, such as online streaming, it is more common to encounter 
 
 How about the data streams? How are they stored?
 
-To start with the obvious, they are not stored uncompressed; we saw that a single image of 1920×1080 pixels (that’s 1080p video standard, with 1080 pixels vertically) already requires 6 MiB ([Issue 43](https://buttondown.email/laymansguide/archive/lmg-s4-issue-43-images-a-mosaic-of-3-colours/)), while one second of audio requires 86 KiB ([Issue 45](https://buttondown.email/laymansguide/archive/lmg-s4-issue-45-audio-a-sampling-of-values/)).
+To start with the obvious, they are not stored uncompressed; we saw that a single image of 1920×1080 pixels (that’s 1080p video standard, with 1080 pixels vertically) already requires 6 MiB ([Issue 43]({filename}/season4/issue043/issue043.md)), while one second of audio requires 86 KiB ([Issue 45]({filename}/season4/issue045/issue045.md)).
 
-In addition to the lossy compression techniques I covered in [Issue 46](https://buttondown.email/laymansguide/archive/lmg-s4-issue-46-lossy-compression/), software that creates these streams can also compare video frames at different points in time and throw away identical parts (if there’s no scene change, or if the camera is panning slowly, for instance).
+In addition to the lossy compression techniques I covered in [Issue 46]({filename}/season4/issue046/issue046.md), software that creates these streams can also compare video frames at different points in time and throw away identical parts (if there’s no scene change, or if the camera is panning slowly, for instance).
 
 Various video stream formats exist to carry out this lossy compression of video data.
 
@@ -64,7 +72,7 @@ About a decade ago, when video formats proliferated like a tropical ecosystem, c
 
 You can use a program like [MediaInfo](https://mediaarea.net/en/MediaInfo) to help you read the metadata and figure out the container and stream formats. Here’s an example of the information it shows about the only video file on my laptop at the moment:
 
-![MediaInfo screenshot showing container, video stream, and audio stream information](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season4/issue048/issue048_01.png)<br />
+![MediaInfo screenshot showing container, video stream, and audio stream information]({attach}issue048_01.png)<br />
 <small>Mediainfo screenshot showing metadata for an MP4 file containing an h264 (a.k.a. AVC) video stream and an AAC audio stream.</small>
 
 **Issue summary:** A video container can hold one or more audio, video, or text data streams. To encode or decode a data stream, you need to have the necessary codec installed[^1]. Most video runs at 25 or 30 fps, with high-quality video going up to 60 fps. You can use a program like MediaInfo to help you decipher the streams inside a video container file.
