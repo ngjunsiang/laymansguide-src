@@ -11,7 +11,7 @@ We are going to get a little technical here, because I want to give you a view o
 Nah, I won’t do that. It would be merely decorative and not at all illustrative. Instead let’s focus your attention on one particular packet:
 
 
-![An HTTP request captured in Wireshark showing my developer API key](https://github.com/ngjunsiang/laymansguide/blob/release/issue012/issue012_01.png?raw=true)
+![An HTTP request captured in Wireshark showing my developer API key](https://github.com/ngjunsiang/laymansguide/blob/release/season1/issue012/issue012_01.png?raw=true)
 <small>An HTTP request captured in Wireshark. Notice the line `Authorization: Bearer [CENSORED]`. That’s my developer API key!</small>
 
 
@@ -36,7 +36,7 @@ That means we need a slightly different set of rules, that enable us to coordina
 HTTPS stands for **HTTP Secure**. Why is it secure? I think a screenshot will make it clear. This is a screenshot from Wireshark again, but this time capturing an HTTPS request packet:
 
 
-![An HTTPS packet in Wireshark, with the packet data encrypted](https://github.com/ngjunsiang/laymansguide/blob/release/issue012/issue012_02.png?raw=true)
+![An HTTPS packet in Wireshark, with the packet data encrypted](https://github.com/ngjunsiang/laymansguide/blob/release/season1/issue012/issue012_02.png?raw=true)
 <small>An HTTPS request captured in Wireshark. Notice that the packet header data is now encrypted, and an app would need to know the prearranged encryption code to be able to decode the data.</small>
 
 
