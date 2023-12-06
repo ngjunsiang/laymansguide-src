@@ -49,6 +49,7 @@ lmg_img = re.compile(r"https://raw.githubusercontent.com/ngjunsiang/laymansguide
 lmg_img2 = re.compile(r"https://github.com/ngjunsiang/laymansguide/blob/release/([^/]+)/([^/]+)/([^/?]+)")
 def lmg_img_sub(match) -> str:
     season, folder, filename = match.group(1), match.group(2), match.group(3)
+    assert filename
     return f"{{attach}}{filename}"
 
 
