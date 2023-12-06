@@ -44,7 +44,7 @@ with open("metadata.csv") as f:
 
 for issue in issues:
     _, num = issue["category"].split(" ")
-    season = f"season{int(num)}"
+    season = f"season{int(num):02}"
     name, _ = os.path.splitext(issue["file"])
     path = os.path.join("content", season, name, issue["file"])
     
