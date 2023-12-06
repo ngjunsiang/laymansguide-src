@@ -2,9 +2,10 @@ Title: Issue 104: Storing sensitive data
 Date: 2021-01-23 08:00
 Tags: 
 Category: Season 8
-Slug: lmg-s8-issue-104-storing-sensitive-data
+Slug: issue104
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A race condition happens when threads depend on instructions happening with coincidental timing for success. When instructions are not executed with appropriate timing, one or more threads can get stuck waiting on a response that never comes.
 

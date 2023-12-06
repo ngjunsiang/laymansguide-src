@@ -2,9 +2,10 @@ Title: Issue 59: Meltdown
 Date: 2020-02-08 08:00
 Tags: 
 Category: Season 5
-Slug: lmg-s5-issue-59-meltdown
+Slug: issue059
 Author: J S Ng
 Summary: 
+Modified: 
 
 **Previously:** The CPU comprises different types of execution units. All the execution units can run at the same time, but they may execute instructions over different numbers of clock cycles. To minimise wait time, CPU instructions are carried out in an order that keeps the execution units busy as often as possible.
 

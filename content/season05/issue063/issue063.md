@@ -2,9 +2,10 @@ Title: Issue 63: Limitations of Meltdown and Spectre
 Date: 2020-03-07 08:00
 Tags: 
 Category: Season 5
-Slug: lmg-s5-issue-63-limitations-of-meltdown-and
+Slug: issue063
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) To snoop the cache, we:
 

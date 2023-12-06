@@ -2,9 +2,10 @@ Title: Issue 17: Libraries
 Date: 2019-04-06 08:00
 Tags: 
 Category: Season 2
-Slug: lmg-s2-issue-17-libraries
+Slug: issue017
 Author: J S Ng
 Summary: 
+Modified: 
 
 Welcome back! Last issue must have been exhausting to read, and I want this issue to be more readily digestible. So there’re only going to be two examples. Promise.
 

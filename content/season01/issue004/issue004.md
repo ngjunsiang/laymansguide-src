@@ -2,9 +2,10 @@ Title: Issue 4: What is an API?
 Date: 2019-01-05 08:00
 Tags: 
 Category: Season 1
-Slug: lmg-issue-4-what-is-an-api
+Slug: issue004
 Author: J S Ng
 Summary: 
+Modified: 
 
 **Short version:** An Application Programming Interface (API) is a data browser for apps, a way for apps to talk to each other.
 

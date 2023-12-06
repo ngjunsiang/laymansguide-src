@@ -2,9 +2,10 @@ Title: Issue 109: Speeding up data operations
 Date: 2021-02-27 08:00
 Tags: 
 Category: Season 9
-Slug: lmg-s9-issue-109-speeding-up-data-operations
+Slug: issue109
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Safe writes ensure that all the data is written to disk sectors properly first before updating the file table. The result is that write operations take a longer time to complete.
 

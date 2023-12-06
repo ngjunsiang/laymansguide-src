@@ -2,9 +2,10 @@ Title: Issue 93: What's in a web app?
 Date: 2020-11-07 08:00
 Tags: 
 Category: Season 8
-Slug: lmg-s8-issue-93-whats-in-a-web-app
+Slug: issue093
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Sandboxing is a catch-all term for the concept of ensuring apps don’t have access to resources outside of their privileges. Sandboxed apps are generally safer than non-sandboxed apps in terms of security, and easier to manage, terminate, and uninstall.
 

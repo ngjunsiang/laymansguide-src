@@ -2,9 +2,10 @@ Title: Issue 60: CPU Optimisation Part 2 – Speculative Execution and Spectre
 Date: 2020-02-15 08:00
 Tags: 
 Category: Season 5
-Slug: lmg-s5-issue-60-cpu-optimisation-part-2
+Slug: issue060
 Author: J S Ng
 Summary: 
+Modified: 
 
 **Previously:** A set of instructions can trick a CPU into reordering load instructions so that the data is temporarily loaded into the cache before the instructions are retired. The cache can then be snooped to retrieve the data.
 

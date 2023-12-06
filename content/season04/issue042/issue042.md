@@ -2,9 +2,10 @@ Title: Issue 42: Unicode, computers go international
 Date: 2019-10-15 22:22
 Tags: 
 Category: Season 4
-Slug: typo-for-lmg-s4-issue-42-unicode-computers-go
+Slug: issue042
 Author: J S Ng
 Summary: 
+Modified: 
 
 Title: Issue 42: Unicode, computers go international
 Date: 2019-10-12 08:00

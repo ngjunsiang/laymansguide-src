@@ -2,9 +2,10 @@ Title: Issue 95: What’s in a mobile app?
 Date: 2020-11-21 08:00
 Tags: 
 Category: Season 8
-Slug: lmg-s8-issue-95-whats-in-a-mobile-app
+Slug: issue095
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Web apps require the browser to request memory on their behalf, and thus their memory usage shows up under the browser process in the OS Task Manager. Web apps use this data to store a more convenient (but larger) representation of the webpage document, and to store the data needed by the app.
 

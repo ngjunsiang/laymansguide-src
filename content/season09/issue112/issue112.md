@@ -2,9 +2,10 @@ Title: Issue 112: Bootstrapping into existence (bootup)
 Date: 2021-03-20 08:00
 Tags: 
 Category: Season 9
-Slug: lmg-s9-issue-112-bootstrapping-into-existence
+Slug: issue112
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Moving a file (within the same disk region) merely updates its file table record, and this happens really quickly. Copying a file, or moving it to a different disk/region, involves copying the contents and then updating the file table record, and is considerably slower. Deleting a file only requires that its file table record be removed, and is a very fast operation (if it does not involve the Recycle Bin).
 

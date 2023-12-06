@@ -2,9 +2,10 @@ Title: Issue 117: Swap space
 Date: 2021-04-24 08:00
 Tags: 
 Category: Season 9
-Slug: lmg-s9-issue-117-swap-space
+Slug: issue117
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Hibernation mode causes the computer to store the data configuration into a hibernation file on disk. When powered up, the OS reads the data configuration from the file back into memory. This lets the system avoid having to do a full shutdown and bootup; it performs a shorter version of these two sequences instead.
 

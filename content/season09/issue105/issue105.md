@@ -2,9 +2,10 @@ Title: Issue 105: Operating Systems
 Date: 2021-01-30 08:00
 Tags: 
 Category: Season 9
-Slug: lmg-s9-issue-105-operating-systems
+Slug: issue105
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Shared secrets allow secured access to resources, such as databases or other services. These shared secrets are typically kept on a server controlled by the app developer. For mobile apps, they are usually stored with the operating system, inaccessible to other apps.
 

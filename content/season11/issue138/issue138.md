@@ -2,9 +2,10 @@ Title: Issue 138: System-on-Chip (SoC)
 Date: 2021-09-18 08:00
 Tags: 
 Category: Season 11
-Slug: lmg-s11-issue-138-system-on-chip-soc
+Slug: issue138
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The M1 goes one step further: not only does it make do with fewer chips, it does so with passive cooling.
 

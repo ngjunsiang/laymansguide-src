@@ -2,9 +2,10 @@ Title: Issue 32: Sharing a public IP address: Network Address Traversal
 Date: 2019-08-03 08:00
 Tags: 
 Category: Season 3
-Slug: lmg-s3-issue-32-sharing-a-public-ip-address
+Slug: issue032
 Author: J S Ng
 Summary: 
+Modified: 
 
 Previously: A router assigns IP addresses automatically using DHCP. It reserves any registered static IP addresses for devices identified by their MAC address, and assigns the remaining private IP addresses in the pool to any devices that request one. Each IP address has a lease period, after which the device must request an IP address again.
 

@@ -2,9 +2,10 @@ Title: Issue 31: Getting a private IP address: DHCP (and DDNS)
 Date: 2019-07-27 08:00
 Tags: 
 Category: Season 3
-Slug: lmg-s3-issue-31-getting-a-private-ip-address-dhcp
+Slug: issue031
 Author: J S Ng
 Summary: 
+Modified: 
 
 Previously: Private IP addresses are special IP addresses that routers will treat as belonging to devices within the private network, and not outside it. Data packets sent to private IP addresses will never make it past the gateway into the internet. This system allows multiple devices within a private network to share a public IP address.
 

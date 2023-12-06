@@ -2,9 +2,10 @@ Title: Issue 100: Where does all the app data go? A look at Windows systems
 Date: 2020-12-26 08:00
 Tags: 
 Category: Season 8
-Slug: lmg-s8-issue-100-where-does-all-the-app-data-go-a
+Slug: issue100
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) MacOS, Linux, and other similar systems treat everything as a file, organised into appropriate subfolders.
 

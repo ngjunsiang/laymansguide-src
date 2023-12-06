@@ -2,9 +2,10 @@ Title: Issue 123: Graphics cards: The Pixel Factory
 Date: 2021-06-05 08:00
 Tags: 
 Category: Season 10
-Slug: lmg-s10-issue-123-graphics-cards-the-pixel-factory
+Slug: issue123
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Computers are general-purpose machines that usually process integer calculations. The graphics pipeline requires more specialised hardware that can process decimal number calculations. This is why high-performance graphics usually requires a graphics card.
 

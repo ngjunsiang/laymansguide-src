@@ -2,9 +2,10 @@ Title: Issue 23: Specifications in software
 Date: 2019-05-18 08:00
 Tags: 
 Category: Season 2
-Slug: lmg-s2-issue-23-specifications-in-software
+Slug: issue023
 Author: J S Ng
 Summary: 
+Modified: 
 
 Last week, we took a look at part of the (heavily simplified) software development pipeline:
 

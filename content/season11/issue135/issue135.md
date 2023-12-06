@@ -2,9 +2,10 @@ Title: Issue 135: Part 2 – Unifying the CPU and MCH (post-2008)
 Date: 2021-08-28 08:00
 Tags: 
 Category: Season 11
-Slug: lmg-s11-issue-135-part-2-unifying-the-cpu-and-mch
+Slug: issue135
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Light takes 0.3 ns to travel 10 cm, approximately the distance by wire between the CPU and the MCH. This potentially causes operations between the CPU and MCH to slow down by one cycle, at frequencies above 3 GHz. One way the Intel Core i-series resolves this conundrum is to move the MCH *into* the CPU.
 

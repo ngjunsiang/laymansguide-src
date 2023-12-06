@@ -2,9 +2,10 @@ Title: Issue 26: Software distribution
 Date: 2019-06-15 08:00
 Tags: 
 Category: Season 2
-Slug: lmg-s2-issue-26-software-distribution
+Slug: issue026
 Author: J S Ng
 Summary: 
+Modified: 
 
 In the past 12 issues I’ve talked a bit about different kinds of programs ([web, desktop, mobile, …]({filename}/season2/issue014/issue014.md))), different kinds of code ([frontend, backend]({filename}/season2/issue014/issue014.md))), tools that programmers use while programming ([command line]({filename}/season2/issue015/issue015.md)), [libraries]({filename}/season2/issue017/issue017.md)) and [frameworks]({filename}/season2/issue018/issue018.md)), [version control]({filename}/season2/issue019/issue019.md)), [bug/issue trackers]({filename}/season2/issue024/issue024.md)), [text editors and integrated development environments]({filename}/season2/issue025/issue025.md))), and ideas they use to work more efficiently ([specifications]({filename}/season2/issue023/issue023.md)), [testing]({filename}/season2/issue020/issue020.md)), [continuous integration]({filename}/season2/issue022/issue022.md))).
 

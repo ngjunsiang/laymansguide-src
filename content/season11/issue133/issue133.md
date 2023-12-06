@@ -2,9 +2,10 @@ Title: Issue 133: the ATX form factor (post-1995)
 Date: 2021-08-14 08:00
 Tags: 
 Category: Season 11
-Slug: lmg-s11-issue-133-the-atx-form-factor-post-1995
+Slug: issue133
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Chipsets served as go-betweens in the AT form factor by IBM.
 

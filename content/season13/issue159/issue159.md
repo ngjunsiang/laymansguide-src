@@ -2,9 +2,10 @@ Title: Issue 159: Wifi & cell tower location tracking
 Date: 2022-02-12 08:00
 Tags: 
 Category: Season 13
-Slug: lmg-s13-issue-159-wifi-cell-tower-location
+Slug: issue159
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) To get your location using GPS, your phone requests information from four overhead GPS satellites: their location, and the distance between them and your phone. With this information, your phone can calculate its location.
 

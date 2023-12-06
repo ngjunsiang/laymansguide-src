@@ -2,9 +2,10 @@ Title: Issue 131: What do early CPUs and startup founders have in common?
 Date: 2021-07-31 08:00
 Tags: 
 Category: Season 11
-Slug: lmg-s11-issue-131-what-do-early-cpus-and-startup
+Slug: issue131
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) AC power from the wall uses electric current that alternates directions, while DC power from batteries uses electric current that flows in one direction only. All electronics are DC-only, and require an AC-DC adapter to be powered from the wall. The AC-DC conversion produces a significant amount of heat; AC-DC adapters are usually external unless the device has sufficient space or cooling capacity for it.
 

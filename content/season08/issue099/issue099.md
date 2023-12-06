@@ -2,9 +2,10 @@ Title: Issue 99: Where does all the app data go? A look at Mac-like systems
 Date: 2020-12-19 08:00
 Tags: 
 Category: Season 8
-Slug: lmg-s8-issue-99-where-does-all-the-app-data-go-a
+Slug: issue099
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Apps generally handle three categories of files: its own (permanent) app files, (shared) user files, and (ephemeral) temporary files.
 

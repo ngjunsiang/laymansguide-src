@@ -2,9 +2,10 @@ Title: Issue 139: What’s before this line is mine, what’s after this line is
 Date: 2021-09-25 08:00
 Tags: 
 Category: Season 11
-Slug: lmg-s11-issue-139-whats-before-this-line-is-mine
+Slug: issue139
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A system-on-chip (SoC) combines the core functionality of a system—processing, graphics, memory, and control—into a single chip package.
 

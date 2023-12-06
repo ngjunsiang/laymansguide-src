@@ -2,9 +2,10 @@ Title: Issue 33: Port numbers
 Date: 2019-08-10 08:00
 Tags: 
 Category: Season 3
-Slug: lmg-s3-issue-33-port-numbers
+Slug: issue033
 Author: J S Ng
 Summary: 
+Modified: 
 
 Previously: The devices on your home network share the single ISP-assigned IP address through your router. The router rewrites the source IP and port number on outgoing data packets, and rewrites the destination IP and port number on incoming data packets, acting as a middleman for your devices so that they can access the Internet.
 

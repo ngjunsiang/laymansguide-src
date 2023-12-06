@@ -2,9 +2,10 @@ Title: Issue 69: The Cookie Monster
 Date: 2020-04-25 08:00
 Tags: 
 Category: Season 6
-Slug: lmg-s6-issue-69-the-cookie-monster
+Slug: issue069
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The old CPM model (cost per thousand impressions) in the early Internet was replaced by the CPC model (cost per click) after the dot-com bust. But CPC only works well if publishers and advertisers could get users to click; they need to target advertisements accurately to users. QuantCast figured out a way to do so in 2006.
 

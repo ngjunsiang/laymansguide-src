@@ -2,9 +2,10 @@ Title: Issue 155: Emulation performance
 Date: 2022-01-15 08:00
 Tags: 
 Category: Season 12
-Slug: lmg-s12-issue-155-emulation-performance
+Slug: issue155
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Programs that were not compiled for the instruction set of the host OS have to go through an emulation layer program. This program translates the instructions of that program into compatible instructions that its own processor can execute.
 

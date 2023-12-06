@@ -2,9 +2,10 @@ Title: Issue 84: JOIN – supercharged VLOOKUP
 Date: 2020-08-22 08:00
 Tags: 
 Category: Season 7
-Slug: lmg-s7-issue-84-join-supercharged-vlookup
+Slug: issue084
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Structured Query Language (SQL) is a computer language for managing data in databases. It has keywords and keyphrases that let you filter rows and columns, group and order data, perform basic arithmetic on data, and more. It is complex and powerful, but astute and efficient use requires specialised training.
 

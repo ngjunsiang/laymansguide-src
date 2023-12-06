@@ -2,9 +2,10 @@ Title: Issue 86: Distributed databases
 Date: 2020-09-05 08:00
 Tags: 
 Category: Season 7
-Slug: lmg-s7-issue-86-distributed-databases
+Slug: issue086
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Forms that naïvely inject user-submitted data into a SQL query template may end up sending valid SQL commands to the database, with disastrous consequences.
 

@@ -2,9 +2,10 @@ Title: Issue 43: Images, a mosaic of 3 colours
 Date: 2019-10-19 08:00
 Tags: 
 Category: Season 4
-Slug: lmg-s4-issue-43-images-a-mosaic-of-3-colours
+Slug: issue043
 Author: J S Ng
 Summary: 
+Modified: 
 
 **Previously:** Unicode is an encoding format which is meant to support every language, ever. Most websites, apps, and interfaces support it today.
 

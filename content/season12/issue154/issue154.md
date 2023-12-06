@@ -2,9 +2,10 @@ Title: Issue 154: Emulation
 Date: 2022-01-08 08:00
 Tags: 
 Category: Season 12
-Slug: lmg-s12-issue-154-emulation
+Slug: issue154
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The cloud offers standard digital business services, accessible through a web interface and API, which any developer (with a credit card) can use. Developers don’t have to reinvent the wheel, so long as they know how to use web APIs.
 

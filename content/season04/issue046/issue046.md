@@ -2,9 +2,10 @@ Title: Issue 46: Lossy compression
 Date: 2019-11-09 08:00
 Tags: 
 Category: Season 4
-Slug: lmg-s4-issue-46-lossy-compression
+Slug: issue046
 Author: J S Ng
 Summary: 
+Modified: 
 
 **Previously:** Humans can distinguish 120 dB of loudness, which means the loudest perceivable sound is a million times louder than the softest perceivable sound. CD audio provides 16 bits of information per sample, sufficient to provide 96 dB. Humans have a hearing range from 20 Hz to 20 kHz. CD audio is sampled at 44.1 kHz. Uncompressed audio thus requires 705,600 bits per second, or 86 kB/s.
 

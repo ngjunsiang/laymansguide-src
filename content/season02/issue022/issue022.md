@@ -2,9 +2,10 @@ Title: Issue 22: Continuous Integration in software
 Date: 2019-05-11 08:00
 Tags: 
 Category: Season 2
-Slug: lmg-s2-issue-22-continuous-integration-in-software
+Slug: issue022
 Author: J S Ng
 Summary: 
+Modified: 
 
 Last week I introduced forking and merging, which are how developers ensure that they don't override other peoples’ work. They fork a repository to create their own copy, make the changes required to introduce the feature they want, and then merge it back with the main repository when it is ready, for the repository owner to review.
 

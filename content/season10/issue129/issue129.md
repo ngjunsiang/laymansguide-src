@@ -2,9 +2,10 @@ Title: Issue 129: Cooling
 Date: 2021-07-17 08:00
 Tags: 
 Category: Season 10
-Slug: lmg-s10-issue-129-cooling
+Slug: issue129
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Upgradable parts need a slot or socket to be inserted into; these slots/sockets need to be made robust enough, causing them to take up more space than a soldered part. Devices which were designed to be small and portable generally eliminate these as far as possible, opting to have parts directly soldered to the board instead.
 

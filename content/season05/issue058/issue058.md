@@ -2,9 +2,10 @@ Title: Issue 58: CPU Optimisation Part 1 – Out-of-Order Processing
 Date: 2020-02-01 08:00
 Tags: 
 Category: Season 5
-Slug: lmg-s5-issue-58-cpu-optimisation-part-1-out-of
+Slug: issue058
 Author: J S Ng
 Summary: 
+Modified: 
 
 **Previously:** The CPU stores data for ready access in the CPU cache. Accessing data from the CPU cache is much faster than accessing data from main memory. When the CPU needs data from a memory address, it looks in the cache first. If the data is not there (a **cache miss**), it will load the data from the memory address, and store a copy in the cache for faster reference in future. The CPU cache is managed by the CPU and is invisible to the OS. Programs that need to ensure the data in the cache is “fresh” can perform a cache flush and reload.
 

@@ -2,9 +2,10 @@ Title: Issue 20: Testing
 Date: 2019-04-27 08:00
 Tags: 
 Category: Season 2
-Slug: lmg-s2-issue-20-testing
+Slug: issue020
 Author: J S Ng
 Summary: 
+Modified: 
 
 Last issue, I introduced **version control**, the idea that you can set things up in a way that lets you see the **change history** of a document. This lets you undo changes which you later come to regret, and compare the document to a previous point in history. If you have a version control system (VCS) set up, you can commit changes to it and view a list of those changes later.
 

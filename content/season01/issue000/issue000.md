@@ -2,9 +2,10 @@ Title: Issue 0: Why write a newsletter?
 Date: 2018-12-08 08:00
 Tags: 
 Category: Season 1
-Slug: lmg-issue-0-why-write-a-newsletter
+Slug: issue000
 Author: J S Ng
 Summary: 
+Modified: 
 
 Where do I start?
 

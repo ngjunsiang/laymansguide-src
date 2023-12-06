@@ -2,9 +2,10 @@ Title: Issue 61: Mapping the cache
 Date: 2020-02-22 08:00
 Tags: 
 Category: Season 5
-Slug: lmg-s5-issue-61-mapping-the-cache
+Slug: issue061
 Author: J S Ng
 Summary: 
+Modified: 
 
 **Previously:** Speculative execution is a feature that lets the CPU speed up execution if it correctly predicts a decision point. The CPU carries out the operations along the predicted decision branch and loads the results if it predicts correctly.
 

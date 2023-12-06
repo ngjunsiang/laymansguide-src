@@ -2,9 +2,10 @@ Title: Issue 80: Indexing
 Date: 2020-07-18 08:00
 Tags: 
 Category: Season 7
-Slug: lmg-s7-issue-80-indexing
+Slug: issue080
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Comma-separated value (CSV) files store all data in text form. Within each row, a separator divides each chunk of data, and rows are separated by a line delimiter. To keep the data compact and read it more quickly, we have to decide beforehand what *data type* each chunk should be, and how much space it is allowed to take up. Such a data form can no longer be opened in a simple text editor program like Notepad.
 

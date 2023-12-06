@@ -2,9 +2,10 @@ Title: Issue 15: Sysadmins and the command line
 Date: 2019-03-23 08:00
 Tags: 
 Category: Season 2
-Slug: lmg-s2-issue-15-sysadmins-and-the-command-line
+Slug: issue015
 Author: J S Ng
 Summary: 
+Modified: 
 
 If something’s not working correctly in your operating system, someone has to dig into the settings and configuration, figure out what’s wrong, and resolve the issue. If you have ever been in those shoes, you have been basically doing a sysadmin’s job. (Okay, put away those pitchforks you sysadmin purists and hear me out …)
 

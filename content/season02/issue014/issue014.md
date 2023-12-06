@@ -2,9 +2,10 @@ Title: Issue 14: What do developers do?
 Date: 2019-03-16 08:00
 Tags: 
 Category: Season 2
-Slug: lmg-s2-issue-14-what-do-developers-do
+Slug: issue014
 Author: J S Ng
 Summary: 
+Modified: 
 
 Last season, I used an app I was making to get into the differences between HTTP and HTTPS. It wrapped things up at a point I’m pretty happy with, left some questions unanswered (for now), and got me thinking what to cover next. I’ve thought about how best to cover the remaining topics, and I could well continue in the same thread, going on to say more (relevant and untechnical) things about networking and its technicalities, but from experience it gets dry and dreary very quickly.
 

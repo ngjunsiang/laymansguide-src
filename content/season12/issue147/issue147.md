@@ -2,9 +2,10 @@ Title: Issue 147: Operating systems on virtual hardware
 Date: 2021-11-20 08:00
 Tags: 
 Category: Season 12
-Slug: lmg-s12-issue-147-operating-systems-on-virtual
+Slug: issue147
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Virtual hardware can be created in the form of drivers that respond to a program’s requests for hardware resources. If a bootup program enumerates hardware devices and receives a response, then as long as it continues to receive valid and correct responses, it can work with the virtual hardware to run an operating system.
 

@@ -2,9 +2,10 @@ Title: Issue 101: Why apps crash
 Date: 2021-01-02 08:00
 Tags: 
 Category: Season 8
-Slug: lmg-s8-issue-101-why-apps-crash
+Slug: issue101
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Windows systems categorise data into two types: files, and settings. Files are stored under an appropriate subfolder in `C:\`, while other storage devices and network locations are stored elsewhere or given their own drive letters. Settings are managed through the Windows Registry, which is stored in `C:\Windows\System32\Config\` and `C:\Windows\Users\Name\`.
 

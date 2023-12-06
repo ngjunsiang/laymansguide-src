@@ -2,9 +2,10 @@ Title: Issue 62: Cache snooping
 Date: 2020-03-03 17:00
 Tags: 
 Category: Season 5
-Slug: lmg-s5-issue-62-cache-snooping
+Slug: issue062
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A cache miss is slow, and a cache hit is fast. This difference in cache reading speed can be used to transmit secrets out from the cache, which cannot be read directly by programs.
 

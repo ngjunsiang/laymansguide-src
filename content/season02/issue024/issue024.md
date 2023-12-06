@@ -2,9 +2,10 @@ Title: Issue 24: Issue trackers, Bug trackers
 Date: 2019-05-25 13:18
 Tags: 
 Category: Season 2
-Slug: lmg-s2-issue-24-issue-trackers-bug
+Slug: issue024
 Author: J S Ng
 Summary: 
+Modified: 
 
 Last week, we talked about how developers plan out a project and describe specifically what needs to be done: they write out a specification, and then they write code to make their app meet the specification. Specifications are also used to standardise the way apps communicate, such as they way to report time.
 

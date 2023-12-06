@@ -2,9 +2,10 @@ Title: Issue 73: The Heart of Darkness (Header Bidding)
 Date: 2020-05-23 08:00
 Tags: 
 Category: Season 6
-Slug: lmg-s6-issue-73-the-heart-of-darkness-header
+Slug: issue073
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) QuantCast gathers a large amount of data on internet users directly through its **cookie** (which other publishers serve through their websites), and also by cross-checking it against data which it purchases from other **data brokers** who gather their information through other means, such as internet activity and credit card transactions.
 

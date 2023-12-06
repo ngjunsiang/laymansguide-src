@@ -2,9 +2,10 @@ Title: Issue 2: Don’t reinvent the wheel
 Date: 2018-12-22 08:00
 Tags: 
 Category: Season 1
-Slug: lmg-issue-2-dont-reinvent-the-wheel
+Slug: issue002
 Author: J S Ng
 Summary: 
+Modified: 
 
 Just thinking about recreating the Readmill reading experience in an app was mind-boggling, especially for someone like me with minimal programming experience. I decided to poke around looking for ideas, projects, things I could hop on to.
 

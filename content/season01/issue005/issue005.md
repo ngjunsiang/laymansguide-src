@@ -2,9 +2,10 @@ Title: Issue 5: What is JSON?
 Date: 2019-01-12 08:00
 Tags: 
 Category: Season 1
-Slug: lmg-issue-5-what-is-json
+Slug: issue005
 Author: J S Ng
 Summary: 
+Modified: 
 
 Say you want to send some data to another app. Let’s say it’s an annotation from Hypothes.is:
 

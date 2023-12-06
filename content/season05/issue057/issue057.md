@@ -2,9 +2,10 @@ Title: Issue 57: Cache, the CPU’s working space
 Date: 2020-01-25 08:00
 Tags: 
 Category: Season 5
-Slug: lmg-s5-issue-57-cache-the-cpus-working-space
+Slug: issue057
 Author: J S Ng
 Summary: 
+Modified: 
 
 **Previously:** The operating system is responsible for listing and managing the computer’s resources, making them available to programs running on the computer, and making sure they only use what they are allowed to.
 

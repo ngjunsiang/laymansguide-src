@@ -2,9 +2,10 @@ Title: Issue 111: Copying, moving, and deleting files
 Date: 2021-03-13 08:00
 Tags: 
 Category: Season 9
-Slug: lmg-s9-issue-111-copying-moving-and-deleting-files
+Slug: issue111
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Filesystem journals are a record of changes made to the disk, so as to enable those changes to be rolled back, or to be completed properly in case of sudden interruption.
 

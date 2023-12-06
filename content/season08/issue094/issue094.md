@@ -2,9 +2,10 @@ Title: Issue 94: Why do web browsers take up so much memory?
 Date: 2020-11-14 08:00
 Tags: 
 Category: Season 8
-Slug: lmg-s8-issue-94-why-do-web-browsers-take-up-so
+Slug: issue094
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Web apps have limited access to the device’ storage, and can only store data in browser-managed databases. Progressive Web Apps (PWAs) can additionally register service workers that run in the background. Because they are so cleanly sandboxed, they can be easily removed by clearing the browser cache and storage, and deregistering any service workers manually.
 

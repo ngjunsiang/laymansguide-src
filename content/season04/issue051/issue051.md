@@ -2,9 +2,10 @@ Title: Issue 51: PDFs part 1 – Compatibility and fidelity
 Date: 2019-12-14 08:00
 Tags: 
 Category: Season 4
-Slug: lmg-s4-issue-51-pdfs-part-1-compatibility-and
+Slug: issue051
 Author: J S Ng
 Summary: 
+Modified: 
 
 **Previously:** An HTML file contains markup tags that tell the browser how to interpret and format the text within the tags. Other document formats usually use tags in a similar way. These tags constitute a markup language that any app can use to mark up its own text too.
 

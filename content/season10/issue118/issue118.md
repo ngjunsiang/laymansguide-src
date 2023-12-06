@@ -2,9 +2,10 @@ Title: Issue 118: When I run two file-copy processes at the same time, why are t
 Date: 2021-05-01 08:00
 Tags: 
 Category: Season 10
-Slug: lmg-s10-issue-118-when-i-run-two-file-copy
+Slug: issue118
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Operating systems use a page file on the storage disk as a complement to physical memory. This allows OSes to behave more performantly than they would if they did not have a page file. Data that is rarely accessed is moved to the pagefile (“paged out”), and can be paged in when it is needed later, albeit with a performance hit.
 

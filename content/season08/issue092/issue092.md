@@ -2,9 +2,10 @@ Title: Issue 92: All about apps
 Date: 2020-10-31 08:00
 Tags: 
 Category: Season 8
-Slug: lmg-s8-issue-92-all-about-apps
+Slug: issue092
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Depending on what you need a database for, there may be online database platforms that can manage and automate much of the work for you. Airtable, Smartsheet, Knack, and Zoho Creator are just 4 of many options that offer an easier way to set up and input your data, then access them through apps or other means.
 

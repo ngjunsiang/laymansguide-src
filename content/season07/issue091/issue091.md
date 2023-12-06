@@ -2,9 +2,10 @@ Title: Issue 91: Commercial database alternatives
 Date: 2020-10-11 11:00
 Tags: 
 Category: Season 7
-Slug: lmg-s7-issue-91-commercial-database-alternatives
+Slug: issue091
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A URI (Uniform Resource Identifier) is required to connect to a database. This URI can be provided by a hosting service provider that runs your own database for you, or by a cloud service provider that runs your database on their platform.
 

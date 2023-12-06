@@ -2,9 +2,10 @@ Title: Issue 79: A Base for Data
 Date: 2020-07-11 08:00
 Tags: 
 Category: Season 7
-Slug: lmg-s7-issue-79-a-base-for-data
+Slug: issue079
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Modern webpages rely on many third-party resources for their functionality. Blocking access to some domains may cause these webpages to break and stop working.
 

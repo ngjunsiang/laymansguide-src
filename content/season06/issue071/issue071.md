@@ -2,9 +2,10 @@ Title: Issue 71: The Rise of Audience Analytics
 Date: 2020-05-09 08:00
 Tags: 
 Category: Season 6
-Slug: lmg-s6-issue-71-the-rise-of-audience-analytics
+Slug: issue071
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A tracking script retrieves the existing cookie on a web domain if there is one, or sets a cookie on a webpage if there isn’t an existing one. The tracking script sends the cookie information back to the originating server, along with many other fragments of information.
 

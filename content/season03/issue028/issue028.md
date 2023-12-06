@@ -2,9 +2,10 @@ Title: Issue 28: Domain Names and DNS
 Date: 2019-07-06 08:00
 Tags: 
 Category: Season 3
-Slug: lmg-s3-issue-28-domain-names-and-dns
+Slug: issue028
 Author: J S Ng
 Summary: 
+Modified: 
 
 Last issue, I introduced IP addresses: a string of four numbers that tells routers where to send the data packet. These IP addresses are managed by the Internet Assigned Numbers Authority (IANA), and Internet registries everywhere agree to configure their routers to abide by this agreement. Without this coordination, our data won’t be able to make it across the Internet so easily.
 

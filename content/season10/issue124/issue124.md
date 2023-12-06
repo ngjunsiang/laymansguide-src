@@ -2,9 +2,10 @@ Title: Issue 124: Video formats
 Date: 2021-06-12 08:00
 Tags: 
 Category: Season 10
-Slug: lmg-s10-issue-124-video-formats
+Slug: issue124
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Graphics cards contain lots of tiny cores that are much better at performing the same calculation for lots of decimal numbers. These cores are organised into compute units; a graphics card with more compute units can perform more calculations every second. Graphics cards have their own onboard memory, separate from the CPU. GPU memory is different from computer memory; it is configured for much higher data throughput. Integrated graphics are GPUs that are integrated into a CPU chip; these do not have their own onboard memory, and share memory with the CPU.
 

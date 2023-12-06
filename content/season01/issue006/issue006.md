@@ -2,9 +2,10 @@ Title: Issue 6: How do you use an API?
 Date: 2019-01-19 08:00
 Tags: 
 Category: Season 1
-Slug: lmg-issue-6-how-do-you-use-an-api
+Slug: issue006
 Author: J S Ng
 Summary: 
+Modified: 
 
 You ask it nicely, of course.
 

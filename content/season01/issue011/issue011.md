@@ -2,9 +2,10 @@ Title: Issue 11: How does wifi work?
 Date: 2019-02-23 08:00
 Tags: 
 Category: Season 1
-Slug: lmg-issue-11-how-does-wifi-work
+Slug: issue011
 Author: J S Ng
 Summary: 
+Modified: 
 
 In the last issue, I showed you how I create HTTP requests with custom headers. I put my developer API key in the request header and Hypothes.is gave me a response containing my profile data.
 

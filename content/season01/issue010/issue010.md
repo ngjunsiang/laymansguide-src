@@ -2,9 +2,10 @@ Title: Issue 10: How do websites actually know if you are really you?
 Date: 2019-02-16 08:00
 Tags: 
 Category: Season 1
-Slug: lmg-issue-10-how-do-websites-actually-know-if-you
+Slug: issue010
 Author: J S Ng
 Summary: 
+Modified: 
 
 **Short answer:** They actually don’t. This is not a snarky answer; it is true! Think about it. When the server receives a request, it has no idea if it’s coming from real-you, or someone pretending to be you. All it knows is your IP address, your user agent, and your request. And all three can actually be spoofed (but we won’t go into detail here).
 

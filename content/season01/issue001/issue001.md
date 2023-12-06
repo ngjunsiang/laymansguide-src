@@ -2,9 +2,10 @@ Title: Issue 1: Why make an app?
 Date: 2018-12-15 07:00
 Tags: 
 Category: Season 1
-Slug: lmg-issue-1-why-make-an-app
+Slug: issue001
 Author: J S Ng
 Summary: 
+Modified: 
 
 These holidays, I started making an app. It wasn’t a spontaneous decision. I had been thinking about it for years.
 

@@ -2,9 +2,10 @@ Title: Issue 167: Database fragmentation
 Date: 2022-04-09 08:00
 Tags: 
 Category: Season 13
-Slug: lmg-s13-issue-167-database-fragmentation
+Slug: issue167
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) There are easy and quick ways to check the validity of the most common advice for resolving system slowdown. But it still seems to happen even after these tips have been tried.
 

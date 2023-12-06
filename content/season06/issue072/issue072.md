@@ -2,9 +2,10 @@ Title: Issue 72: The Data Brokers
 Date: 2020-05-16 08:00
 Tags: 
 Category: Season 6
-Slug: lmg-s6-issue-72-the-data-brokers
+Slug: issue072
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) In 2006, Quantcast offered complete audience analytics for any site that puts _their_ cookie on the site. In this way, they managed to gather information on a wider audience than they, or any single website, could reach on their own.
 

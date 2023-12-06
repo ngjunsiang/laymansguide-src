@@ -2,9 +2,10 @@ Title: Issue 136: The mobile workstation – laptops
 Date: 2021-09-04 08:00
 Tags: 
 Category: Season 11
-Slug: lmg-s11-issue-136-the-mobile-workstation-laptops
+Slug: issue136
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A modern CPU is manufactured through a process called photolithography, by which the CPU components are etched onto the silicon substrate by successive layers of chemicals, masking, and laser exposure. When the CPU components could be made small enough, the MCH and CPU were designed onto the same chip, and this is the design used by the Intel Core i7 (1st-gen).
 

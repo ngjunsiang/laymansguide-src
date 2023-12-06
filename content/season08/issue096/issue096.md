@@ -2,9 +2,10 @@ Title: Issue 96: Why are mobile apps so large in size?
 Date: 2020-11-28 08:00
 Tags: 
 Category: Season 8
-Slug: lmg-s8-issue-96-why-are-mobile-apps-so-large-in
+Slug: issue096
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Mobile apps, unlike web apps, can bundle resources and libraries to be installed to a mobile device. They can also request access to storage, and typically have a higher memory limit than web apps.
 

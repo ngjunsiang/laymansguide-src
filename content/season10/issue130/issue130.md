@@ -2,9 +2,10 @@ Title: Issue 130: Power limits
 Date: 2021-07-24 08:00
 Tags: 
 Category: Season 10
-Slug: lmg-s10-issue-130-power-limits
+Slug: issue130
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The larger the surface area, the faster an object loses heat. The larger the temperature difference between an object and its surroundings, the faster the object loses heat. Heat is bad for computers, and CPUs will need cooling to be able to process computations quickly. A mobile phone thus typically uses no more than 4 W of power, a laptop can use 25–45 W, and a desktop can usually use 65 W and more. Two popular ways of increasing the cooling capacity of a device is to attach a larger piece of metal to the chip (passive cooling), or use a fan to force air over the heatsink (active cooling).
 

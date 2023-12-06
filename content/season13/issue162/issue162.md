@@ -2,9 +2,10 @@ Title: Issue 162: Fonts
 Date: 2022-03-05 08:00
 Tags: 
 Category: Season 13
-Slug: lmg-s13-issue-162-fonts
+Slug: issue162
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Cross-site scripting attacks occur when a webpage loads malicious code from a third-party, usually carried out by a script in the page. Today, websites are protected from loading unauthorised scripts through cross-origin resource sharing (CORS) policy implemented in browsers, which only allows a website to load scripts from authorised domains.
 

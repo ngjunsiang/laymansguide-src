@@ -2,9 +2,10 @@ Title: Issue 88: Document Databases
 Date: 2020-09-19 08:00
 Tags: 
 Category: Season 7
-Slug: lmg-s7-issue-88-document-databases
+Slug: issue088
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Relational databases are designed to maintain a well-structured set of data tables through constraint rules. This makes them very useful for preventing accidental inconsistencies in data, but make any changes to the data schema difficult to implement. Changing from one schema to another involves downtime and a migration.
 

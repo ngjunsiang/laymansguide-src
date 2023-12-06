@@ -2,9 +2,10 @@ Title: Issue 25: Text Editors and Integrated Development Environments
 Date: 2019-06-01 08:00
 Tags: 
 Category: Season 2
-Slug: lmg-s2-issue-25-text-editors-and-integrated
+Slug: issue025
 Author: J S Ng
 Summary: 
+Modified: 
 
 Last week, I introduced issue trackers, which are software tools that developers use to keep track of problems and issues with their software. Issue trackers are usually places that users can submit bug reports to help out the developers in tracking down a bug.
 

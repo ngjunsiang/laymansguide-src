@@ -2,9 +2,10 @@ Title: Issue 3: What is all this clutter?
 Date: 2018-12-29 08:00
 Tags: 
 Category: Season 1
-Slug: lmg-issue-3-what-is-all-this-clutter
+Slug: issue003
 Author: J S Ng
 Summary: 
+Modified: 
 
 You would think that the first challenge in writing an app is learning the programming language. In my case, there was an even more fundamental challenge to overcome first: how to get my data.
 

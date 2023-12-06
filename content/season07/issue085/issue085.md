@@ -2,9 +2,10 @@ Title: Issue 85: SQL Injections
 Date: 2020-08-29 08:00
 Tags: 
 Category: Season 7
-Slug: lmg-s7-issue-85-sql-injections
+Slug: issue085
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) SQL queries let you join multiple tables based on specified conditions using the JOIN keyword. This enables crafting complex queries to return only the specific data that is required.
 

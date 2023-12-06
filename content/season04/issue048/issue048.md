@@ -2,9 +2,10 @@ Title: Issue 48: Of containers and codecs
 Date: 2019-11-23 08:00
 Tags: 
 Category: Season 4
-Slug: lmg-s4-issue-48-of-containers-and-codecs
+Slug: issue048
 Author: J S Ng
 Summary: 
+Modified: 
 
 **Previously:** Data cannot be compressed beyond its predictability limit in a lossless fashion. Lossless compression does not discard any information. It spots patterns in the data and represents them with fewer bits, through a combination of predictive coding, run-length encoding, and entropy coding.
 

@@ -2,9 +2,10 @@ Title: Issue 41: ASCII, the typewriter digitised
 Date: 2019-10-05 08:00
 Tags: 
 Category: Season 4
-Slug: lmg-s4-issue-41-ascii-the-typewriter-digitised
+Slug: issue041
 Author: J S Ng
 Summary: 
+Modified: 
 
 **Previously:** 8 bits comprise 1 byte. Humans count bytes in multiples of thousands, while computers count bytes in multiples of 1,024.
 

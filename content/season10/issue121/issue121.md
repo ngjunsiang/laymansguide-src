@@ -2,9 +2,10 @@ Title: Issue 121: In graphic detail
 Date: 2021-05-22 08:00
 Tags: 
 Category: Season 10
-Slug: lmg-s10-issue-121-in-graphic-detail
+Slug: issue121
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Driver files provide information about the driver, and instructions on how to receive information from the device, and encode information to be passed to the device. The operating system may come with generic driver files for the device, but custom driver files might provide better performance or additional features.
 

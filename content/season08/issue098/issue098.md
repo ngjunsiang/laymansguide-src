@@ -2,9 +2,10 @@ Title: Issue 98: Temporary files
 Date: 2020-12-12 08:00
 Tags: 
 Category: Season 8
-Slug: lmg-s8-issue-98-temporary-files
+Slug: issue098
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A laptop app can do practically anything, if it is running through the Administrator/root account. Sandboxing is carried out through permission control.
 

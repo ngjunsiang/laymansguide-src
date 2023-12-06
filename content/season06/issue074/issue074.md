@@ -2,9 +2,10 @@ Title: Issue 74: The Walls Have Pixels
 Date: 2020-05-30 08:00
 Tags: 
 Category: Season 6
-Slug: lmg-s6-issue-74-the-walls-have-pixels
+Slug: issue074
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) When a page loads advertisements through header bidding, it sends your cookie along with other information to an ad exchange. The ad exchange conducts automated bidding among the ad-buyers, determines the winner(s), and sends the winning code(s) back to your browser. Your browser then sends these codes to the **CDN**, which sends back the winning ads for your page to render in your browser.
 

@@ -2,9 +2,10 @@ Title: Issue 152: Getting started with programming
 Date: 2021-12-25 08:00
 Tags: 
 Category: Season 12
-Slug: lmg-s12-issue-152-getting-started-with-programming
+Slug: issue152
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The Java Runtime Environment (JRE) bundles the Java VM and supporting libraries. The JRE has to be installed on the user’s system for Java programs to work, unless the program bundles the supporting libraries. Solo programmers can start programming with OpenJDK for free with fewer features and less support, while commercial companies can license Oracle JDK for better support and features.
 

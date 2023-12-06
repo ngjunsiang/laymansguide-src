@@ -2,9 +2,10 @@ Title: Issue 18: Frameworks
 Date: 2019-04-13 08:00
 Tags: 
 Category: Season 2
-Slug: lmg-s2-issue-18-frameworks
+Slug: issue018
 Author: J S Ng
 Summary: 
+Modified: 
 
 Last issue, I introduced libraries, which are basically magic spells. You call them, they do advanced magic in the background, and return magical results to your code. Or they simplify complicated code, wrapping them up into functions that are easy to call.
 

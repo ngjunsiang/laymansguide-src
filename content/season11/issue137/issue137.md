@@ -2,9 +2,10 @@ Title: Issue 137: The M1 Macbook Air
 Date: 2021-09-11 08:00
 Tags: 
 Category: Season 11
-Slug: lmg-s11-issue-137-the-m1-macbook-air
+Slug: issue137
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Slim laptops have been undergoing a gradual transition: more and more of their chips are no longer available as a replaceable card, but instead soldered directly to the mainboard. Since 2017/2018, most slim laptops pretty much have CPU, memory, storage, and network chips all soldered directly to the mainboard.
 

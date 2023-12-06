@@ -2,9 +2,10 @@ Title: Issue 142: Implications (Part 1) - Software
 Date: 2021-10-16 08:00
 Tags: 
 Category: Season 11
-Slug: lmg-s11-issue-142-implications-part-1-software
+Slug: issue142
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The Apple A14 and Apple M1 are essentially the same chip architecture: they use almost the same building blocks, just with different numbers of them. On top of that, the Apple M1 implements unified memory, allowing the CPU and GPU (and other SoC components) to share the same system memory, greatly facilitating intra-chip communication.
 

@@ -2,9 +2,10 @@ Title: Issue 68: The Age of Bloat
 Date: 2020-04-18 08:00
 Tags: 
 Category: Season 6
-Slug: lmg-s6-issue-68-the-age-of-bloat
+Slug: issue068
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Each click on a link, or even an ad, sends data to the server. This information can include an ID for the link you clicked, or the category of ad you clicked. But without Javascript, the webpage can’t know very much about you.
 

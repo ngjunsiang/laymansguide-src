@@ -2,9 +2,10 @@ Title: Issue 157: NTP and time-syncing
 Date: 2022-01-29 08:00
 Tags: 
 Category: Season 13
-Slug: lmg-s13-issue-157-ntp-and-time-syncing
+Slug: issue157
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) To speed up execution and avoid translation overhead, some systems employ ahead-of-time translation, storing the translated instructions to be executed in future. But many systems employ a mix of just-in-time (JIT) and ahead-of-time (AOT) techniques.
 

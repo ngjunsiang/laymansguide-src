@@ -2,9 +2,10 @@ Title: Issue 132: the AT form factor (pre-1995)
 Date: 2021-08-07 08:00
 Tags: 
 Category: Season 11
-Slug: lmg-s11-issue-132-the-at-form-factor-pre-1995
+Slug: issue132
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) CPUs have limited throughput, since there is a max frequency they can operate at, and a limit to the number of wires they can be connected to (throughput = no. of wires × frequency). Later designs of early computers increased the capability of computers by delegating more work to secondary chips.
 

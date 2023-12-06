@@ -2,9 +2,10 @@ Title: Issue 37: Traceroute–Google Maps for data packets
 Date: 2019-09-07 08:00
 Tags: 
 Category: Season 3
-Slug: lmg-s3-issue-37-traceroute-google-maps-for-data
+Slug: issue037
 Author: J S Ng
 Summary: 
+Modified: 
 
 **Previously:** Latency is the time duration between a ping packet being sent out and its response being received. It is an indication of how far away a target server is.
 

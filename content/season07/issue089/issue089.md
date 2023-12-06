@@ -2,9 +2,10 @@ Title: Issue 89: Graph Databases
 Date: 2020-09-26 08:00
 Tags: 
 Category: Season 7
-Slug: lmg-s7-issue-89-graph-databases
+Slug: issue089
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Document databases organise data into documents, each containing a number of field-value pairs. each value can itself be a document, and multiple values/documents can be grouped under a field. Document databases do not enforce data consistency across documents, so those rules need to be managed by the application which is using the database. This allows document databases to continue operating even when partitioned, at the cost of some consistency.
 

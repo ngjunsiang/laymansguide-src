@@ -2,9 +2,10 @@ Title: Issue 156: Translation
 Date: 2022-01-22 08:00
 Tags: 
 Category: Season 12
-Slug: lmg-s12-issue-156-translation
+Slug: issue156
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Translating a set of instructions before executing it will always lead to a slowdown, although sometimes this may not be noticeable to users.
 

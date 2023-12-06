@@ -2,9 +2,10 @@ Title: Issue 56: Operating Systems and resource management
 Date: 2020-01-18 08:00
 Tags: 
 Category: Season 5
-Slug: lmg-s5-issue-56-operating-systems-and-resource
+Slug: issue056
 Author: J S Ng
 Summary: 
+Modified: 
 
 **Previously:** The CPU just executes instruction after instruction after instruction. Each instruction may consist of loading data from a memory location, sending data to a memory location, or performing operations on the data it is holding.
 

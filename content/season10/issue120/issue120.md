@@ -2,9 +2,10 @@ Title: Issue 120: Drivers, the glue between hardware and firmware
 Date: 2021-05-15 08:00
 Tags: 
 Category: Season 10
-Slug: lmg-s10-issue-120-drivers-the-glue-between
+Slug: issue120
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Solid-state disks are much faster than hard disks because they have no moving parts, so no time is wasted waiting for parts to get into the right position. However, they are more expensive than hard disk drives.
 

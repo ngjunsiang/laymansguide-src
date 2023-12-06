@@ -2,9 +2,10 @@ Title: Issue 150: System VMs vs Process VMs
 Date: 2021-12-11 08:00
 Tags: 
 Category: Season 12
-Slug: lmg-s12-issue-150-system-vms-vs-process-vms
+Slug: issue150
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Containers are one layer of virtualisation above virtual machines: containerisation systems virtualise access to the operating system, presenting a virtual interface that provides software with the resources it needs, without being aware of software running in other containers on the same system.
 

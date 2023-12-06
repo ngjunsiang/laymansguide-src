@@ -2,9 +2,10 @@ Title: Issue 29: How to resolve a hostname
 Date: 2019-07-13 08:00
 Tags: 
 Category: Season 3
-Slug: lmg-s3-issue-29-how-to-resolve-a-hostname
+Slug: issue029
 Author: J S Ng
 Summary: 
+Modified: 
 
 Previously: An IP address is a string of four numbers that looks like 255.255.128.1. IP addresses are a list managed by the IANA, and all Internet registries agree to route data packets through their servers according to that list, so that you can send your data to anyone whose IP address you know. If you don't know their IP address, but you know their domain name, you can look up the domain name in a WHOIS database through a Domain Name Server to get their IP address.
 

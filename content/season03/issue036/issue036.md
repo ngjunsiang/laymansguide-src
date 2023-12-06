@@ -2,9 +2,10 @@ Title: Issue 36: Latency
 Date: 2019-08-31 08:00
 Tags: 
 Category: Season 3
-Slug: lmg-s3-issue-36-latency
+Slug: issue036
 Author: J S Ng
 Summary: 
+Modified: 
 
 Previously: VPNs link devices that are not within the same network using an encrypted tunnel that prevents gateways from snooping on the data packet as it passes en-route.
 

@@ -2,9 +2,10 @@ Title: Issue 107: The challenges of storage
 Date: 2021-02-13 08:00
 Tags: 
 Category: Season 9
-Slug: lmg-s9-issue-107-the-challenges-of-storage
+Slug: issue107
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A hard disk is organised into sectors, which are the smallest unit of storage. The OS’s filesystem determines how and where to store each file on the hard disk. The filesystem manages the file metadata in a file table, separate from the actual contents of the file.
 

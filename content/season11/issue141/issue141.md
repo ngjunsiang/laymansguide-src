@@ -2,9 +2,10 @@ Title: Issue 141: The Apple A14 and M1
 Date: 2021-10-09 08:00
 Tags: 
 Category: Season 11
-Slug: lmg-s11-issue-141-the-apple-a14-and-m1
+Slug: issue141
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Shared memory is easier to implement when a company has control over the designs of both CPU and GPU.
 

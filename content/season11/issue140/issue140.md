@@ -2,9 +2,10 @@ Title: Issue 140: The shared memory dream
 Date: 2021-10-02 08:00
 Tags: 
 Category: Season 11
-Slug: lmg-s11-issue-140-the-shared-memory-dream
+Slug: issue140
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Around 2015, the high-performance computer industry quickly realised that this would be much more efficient if the CPU and GPU could *share the same memory*. This idea was labelled heterogeneous systems architecture (HSA).
 

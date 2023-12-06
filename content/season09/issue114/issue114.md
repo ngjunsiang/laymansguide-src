@@ -2,9 +2,10 @@ Title: Issue 114: In the beginning (firmware)
 Date: 2021-04-03 08:00
 Tags: 
 Category: Season 9
-Slug: lmg-s9-issue-114-in-the-beginning-firmware
+Slug: issue114
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) If you can’t get to a BIOS screen, it is likely a hardware problem and has to be solved by a technician. If you can’t get the the OS loading screen, it’s a bootloader problem and needs to be solved with more geekery. If something goes wrong with OS loading, and fails to fix itself on subsequent reboots, it’s probably time for a system refresh or reinstall.
 

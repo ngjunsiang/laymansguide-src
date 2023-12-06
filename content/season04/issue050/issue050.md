@@ -2,9 +2,10 @@ Title: Issue 50: Complex file formats and the Document
 Date: 2019-12-07 08:00
 Tags: 
 Category: Season 4
-Slug: lmg-s4-issue-50-complex-file-formats-and-the
+Slug: issue050
 Author: J S Ng
 Summary: 
+Modified: 
 
 **Previously:** A file consists of data, preceded by a file header which describes the data. Software (including operating systems) detect the kind of data contained in a file by 1) glancing at the file extension, 2) looking at its declared MIME type (if any), and 3) checking the file header.
 

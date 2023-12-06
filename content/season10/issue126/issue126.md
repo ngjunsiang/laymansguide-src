@@ -2,9 +2,10 @@ Title: Issue 126: USB Type-C
 Date: 2021-06-26 08:00
 Tags: 
 Category: Season 10
-Slug: lmg-s10-issue-126-usb-type-c
+Slug: issue126
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Analog formats such as VGA mostly contain the control signals that the CRT needs to operate, while digital formats such as HDMI and DisplayPort contain image data that the device must convert to control signals. Analog signals need a digital-analog-conversion (DAC) chip to be converted to digital signals, hence VGA-HDMI adapters tend to be more costly than DisplayPort-HDMI adapters. Dedicated graphics cards generally support more simultaneous output video streams than integrated graphics cards.
 

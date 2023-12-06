@@ -2,9 +2,10 @@ Title: Issue 110: Safeguarding against data corruption with a journal
 Date: 2021-03-06 08:00
 Tags: 
 Category: Season 9
-Slug: lmg-s9-issue-110-safeguarding-against-data
+Slug: issue110
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Fast writes dump the data to a write cache (in computer memory), then update the file table to look like the file is already written to disk. However, if power is cut before all data is properly moved from the write cache to disk, the data in memory is lost, and file corruption usually results.
 

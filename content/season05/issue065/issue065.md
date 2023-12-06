@@ -2,9 +2,10 @@ Title: Issue 65: Memory Sharing in the Operating System
 Date: 2020-03-28 17:12
 Tags: 
 Category: Season 5
-Slug: lmg-s5-issue-65-memory-sharing-in-the-operating
+Slug: issue065
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Meltdown and Spectre require the programs executing them to have access to kernel memory space. Kernel address isolation attempts to prevent the program from even having access to the kernel address space in the first place. TLB flushing changes the virtual-to-physical memory mapping, disrupting Spectre’s reliance on a consistent virtual-to-physical memory mapping.
 

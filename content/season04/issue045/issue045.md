@@ -2,9 +2,10 @@ Title: Issue 45: Audio, a sampling of values
 Date: 2019-11-02 08:00
 Tags: 
 Category: Season 4
-Slug: lmg-s4-issue-45-audio-a-sampling-of-values
+Slug: issue045
 Author: J S Ng
 Summary: 
+Modified: 
 
 **Previously:** An image’s resolution describes its dimensions. Its pixel resolution gives an indication of its physical size (if printed or displayed on a screen), and thus its sharpness. A display with imperceptibly small pixels is often referred to as a Retina display (Apple’s branding) or as a high-PPI display; this requires at least 220 PPI (pixels per inch) nominally. For an image to be printed sharply, it needs at least 300 DPI (dots per inch) on paper.
 

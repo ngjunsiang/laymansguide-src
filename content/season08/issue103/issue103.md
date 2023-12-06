@@ -2,9 +2,10 @@ Title: Issue 103: Why apps hang even with multiple threads
 Date: 2021-01-16 08:00
 Tags: 
 Category: Season 8
-Slug: lmg-s8-issue-103-why-apps-hang-even-with-multiple
+Slug: issue103
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Applications are assigned a thread by the OS for running a sequence of instructions. The instructions are executed sequentially, and the app cannot proceed if it gets stuck on any instruction.
 

@@ -2,9 +2,10 @@ Title: Issue 146: Virtual hardware
 Date: 2021-11-13 08:00
 Tags: 
 Category: Season 12
-Slug: lmg-s12-issue-146-virtual-hardware
+Slug: issue146
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Programs do not usually deal with the gnarly details of hardware, but instead access it through an interface. They access storage devices through a filesystem, and access hardware through drivers.
 

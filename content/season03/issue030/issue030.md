@@ -2,9 +2,10 @@ Title: Issue 30: Private IP Addresses
 Date: 2019-07-20 08:00
 Tags: 
 Category: Season 3
-Slug: lmg-s3-issue-30-private-ip-addresses
+Slug: issue030
 Author: J S Ng
 Summary: 
+Modified: 
 
 Previously: Your web browser resolves a hostname (finds out which IP address a hostname points to) by sending a DNS query to its gateway.
 

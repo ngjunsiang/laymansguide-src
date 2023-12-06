@@ -2,9 +2,10 @@ Title: Issue 134: Part 1 – the Intel Core i-series launches!
 Date: 2021-08-21 08:00
 Tags: 
 Category: Season 11
-Slug: lmg-s11-issue-134-part-1-the-intel-core-i-series
+Slug: issue134
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The ATX form factor also brought with it a new breed of computers with more specialised chipsets: the memory controller hub (MCH) and peripheral controller hub (PCH). The MCH specialises in high-throughput requirements, such as computer memory and graphics. The PCH specialises in lower-throughput needs.
 

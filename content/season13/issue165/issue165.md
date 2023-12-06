@@ -2,9 +2,10 @@ Title: Issue 165: The myths of system slowdown
 Date: 2022-03-26 08:00
 Tags: 
 Category: Season 13
-Slug: lmg-s13-issue-165-the-myths-of-system-slowdown
+Slug: issue165
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Linux software is distributed through Linux distros. The maintainers of distros maintain repositories of software that have been tested with the distro. Most users will access software in the distro’s repositories through a program called a package manager. So users have full control over when updates and new software should be installed.
 

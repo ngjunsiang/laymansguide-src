@@ -2,9 +2,10 @@ Title: Issue 119: Solid-state disks, an upgrade from hard disks
 Date: 2021-05-08 08:00
 Tags: 
 Category: Season 10
-Slug: lmg-s10-issue-119-solid-state-disks-an-upgrade
+Slug: issue119
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A hard disk consists of a read arm, and a set of magnetic platters which store data. To read or write data, the read arm must move to the appropriate track of the rotating platter, and detect the magnetic field (for reading), or attempt to magnetise the domains on the platter (for writing). Operations that require the read arm to access different parts of the magnetic platters intermittently result in slower read speeds.
 

@@ -2,9 +2,10 @@ Title: Issue 116: Hibernation
 Date: 2021-04-17 08:00
 Tags: 
 Category: Season 9
-Slug: lmg-s9-issue-116-hibernation
+Slug: issue116
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) When you shut a computer down, it sends an exit signal to all running programs to get them to do their exit routine. This process can sometimes take a long time. To preserve the data configuration in memory while minimising power draw, a computer can go into standby mode: all hardware except the memory gets powered down, until the computer is woken up from standby.
 

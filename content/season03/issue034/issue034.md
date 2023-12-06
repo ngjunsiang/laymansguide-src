@@ -2,9 +2,10 @@ Title: Issue 34: Firewalls
 Date: 2019-08-17 08:00
 Tags: 
 Category: Season 3
-Slug: lmg-s3-issue-34-firewalls
+Slug: issue034
 Author: J S Ng
 Summary: 
+Modified: 
 
 Previously: Data is encapsulated when it goes out from an app onto the internet as a request or response. First, in the TCP layer, the OS tags the request with the pre-assigned port number so that it can forward the response to the correct app later. Next, in the IP layer, the network card adds source and destination IP address information so that the data packet arrives at the correct destination server, and the destination server can send the response back to the correct computer. As the packet goes through the router, the router replaces the (source) private IP address assigned to the device by the router with the public IP address assigned to the router by the ISP.
 

@@ -2,9 +2,10 @@ Title: Issue 164: Linux, the universal operating system
 Date: 2022-03-19 08:00
 Tags: 
 Category: Season 13
-Slug: lmg-s13-issue-164-linux-the-universal-operating
+Slug: issue164
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Software that we use usually comes from the OS makers, or from third-party developers. These two groups of developers are not the same, and might even have conflicting intentions and goals.
 

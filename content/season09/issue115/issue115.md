@@ -2,9 +2,10 @@ Title: Issue 115: Shutdown & standby
 Date: 2021-04-10 08:00
 Tags: 
 Category: Season 9
-Slug: lmg-s9-issue-115-shutdown-standby
+Slug: issue115
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Embedded operating systems are unlike user operating systems. They are designed to run the software needed for an appliance’s operation, and are not meant to be used by users directly. Since they are considered somewhere between software and hardware, they are usually referred to as firmware.
 

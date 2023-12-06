@@ -2,9 +2,10 @@ Title: Issue 127: USB Type-C Power Delivery
 Date: 2021-07-03 08:00
 Tags: 
 Category: Season 10
-Slug: lmg-s10-issue-127-usb-type-c-power-delivery
+Slug: issue127
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) USB is a (licensed) technical standard that describes how devices connect to each other through a cable. USB Type-C is a new connector standard that supports USB 3, DisplayPort, HDMI, and Thunderbolt. It is able to carry multiple types of data simultaneously, in limited combinations. In a USB connection, one device acts as the host while the other acts as the device; the host initiates all communication.
 

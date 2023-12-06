@@ -2,9 +2,10 @@ Title: Issue 44: Image resolution
 Date: 2019-10-26 08:00
 Tags: 
 Category: Season 4
-Slug: lmg-s4-issue-44-image-resolution
+Slug: issue044
 Author: J S Ng
 Summary: 
+Modified: 
 
 **Previously:** Colour is stored as a combination of red, green, and blue. In a computer system, each
 colour is stored as one byte (8 bits), allowing for 256 different levels. An image is made up of many such pixels of colour.

@@ -2,9 +2,10 @@ Title: Issue 143: Implications (Part 2) – Future Goals
 Date: 2021-10-23 08:00
 Tags: 
 Category: Season 11
-Slug: lmg-s11-issue-143-implications-part-2-future-goals
+Slug: issue143
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Using the same hardware for both smartphones and laptops would make it much easier to write apps for both platforms. The closer they are in features, hardware, and software support, the easier things will be for developers.
 

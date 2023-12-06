@@ -2,9 +2,10 @@ Title: Issue 38: Loading a web page
 Date: 2019-09-14 08:00
 Tags: 
 Category: Season 3
-Slug: lmg-s3-issue-38-loading-a-web-page
+Slug: issue038
 Author: J S Ng
 Summary: 
+Modified: 
 
 **Previously:** Data packets hop from server to server. The more hops a packet must undergo, the longer the latency. The slower the servers along the route, the longer the latency as well.
 

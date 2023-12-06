@@ -2,9 +2,10 @@ Title: Issue 97: Laptop apps
 Date: 2020-12-05 08:00
 Tags: 
 Category: Season 8
-Slug: lmg-s8-issue-97-laptop-apps
+Slug: issue097
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Mobile apps are sandboxed by the operating system. As a result, they have to bundle all the libraries they need, and are not allowed to share libraries with other apps. This results in mobile apps with huge filesizes.
 

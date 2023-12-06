@@ -32,7 +32,7 @@ class Article:
         return article
 
     def to_file(self, path: str) -> None:
-        with open(path, 'r') as f:
+        with open(path, 'w') as f:
             for field, value in self.metadata.items():
                 f.write(f"{field.title()}: {value}\n")
             f.write("\n")
@@ -50,3 +50,4 @@ for issue in issues:
     
     article = Article.from_file(path)
     article.metadata["slug"] = name
+    article.to_file(path)

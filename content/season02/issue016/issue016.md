@@ -2,9 +2,10 @@ Title: Issue 16: Shell scripts and automation
 Date: 2019-03-30 08:00
 Tags: 
 Category: Season 2
-Slug: lmg-s2-issue-16-shell-scripts-and-automation
+Slug: issue016
 Author: J S Ng
 Summary: 
+Modified: 
 
 So you just got back from a trip with lots of photos in your camera. You take the SD card out from the camera, put it in your laptop, open up the photos … and realise they all have the wrong white balance set.
 

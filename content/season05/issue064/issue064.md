@@ -2,9 +2,10 @@ Title: Issue 64: Fixing Meltdown and Spectre
 Date: 2020-03-14 08:00
 Tags: 
 Category: Season 5
-Slug: lmg-s5-issue-64-fixing-meltdown-and-spectre
+Slug: issue064
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) For Meltdown and Spectre to work, they need two things: (1) Permission to carry out instructions (i.e. run programs) on the OS, and (2) knowledge of where the kernel address space is.
 

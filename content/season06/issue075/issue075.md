@@ -2,9 +2,10 @@ Title: Issue 75: The Costs of Data Leakage
 Date: 2020-06-06 08:00
 Tags: 
 Category: Season 6
-Slug: lmg-s6-issue-75-the-costs-of-data-leakage
+Slug: issue075
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Data companies use the data they have gathered to determine what ads to serve you when you visit sites that load their cookie-setting scripts. This data is sent from your browser via a document request, or via a tracking pixel request.
 

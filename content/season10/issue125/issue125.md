@@ -2,9 +2,10 @@ Title: Issue 125: Analog and digital conversion
 Date: 2021-06-19 08:00
 Tags: 
 Category: Season 10
-Slug: lmg-s10-issue-125-analog-and-digital-conversion
+Slug: issue125
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The VGA video format originated in the time of cathode-ray televisions (CRTs). It was superseded by HDMI, a video format standardised by consumer electronics companies. DisplayPort, on the other hand, is a video format standardised by computer display companies.
 

@@ -2,9 +2,10 @@ Title: Issue 70: The Cookie Factory
 Date: 2020-05-02 08:00
 Tags: 
 Category: Season 6
-Slug: lmg-s6-issue-70-the-cookie-factory
+Slug: issue070
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Cookies are little fragments of information with a name and a value, and associated with a domain address. They are most commonly used to identify new or returning users. This cookie is issued by a website upon the first visit, stored in the browser, and returned to the issuing server whenever the server requests it.
 

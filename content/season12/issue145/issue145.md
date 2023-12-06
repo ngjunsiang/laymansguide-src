@@ -2,9 +2,10 @@ Title: Issue 145: What an app wants, what an app needs
 Date: 2021-11-06 08:00
 Tags: 
 Category: Season 12
-Slug: lmg-s12-issue-145-what-an-app-wants-what-an-app
+Slug: issue145
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) In 1999, VMware launched VMware Workstation, which allowed multiple operating systems to run off a single machine.
 

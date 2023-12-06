@@ -2,9 +2,10 @@ Title: Issue 144: Programs-in-a-vat
 Date: 2021-10-30 08:00
 Tags: 
 Category: Season 12
-Slug: lmg-s12-issue-144-programs-in-a-vat
+Slug: issue144
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The Apple M1 is a souped-up iPhone processor, with unified memory.
 

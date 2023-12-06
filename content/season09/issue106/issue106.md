@@ -2,9 +2,10 @@ Title: Issue 106: Organising storage
 Date: 2021-02-06 08:00
 Tags: 
 Category: Season 9
-Slug: lmg-s9-issue-106-organising-storage
+Slug: issue106
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The OS takes care of booting up, login and user management, window management, memory allocation, storage interfaces, background services, peripheral management, and much more. Access to these services, where allowed, is provided in the form of software libraries that developers can use.
 

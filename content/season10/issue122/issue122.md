@@ -2,9 +2,10 @@ Title: Issue 122: The great flattening
 Date: 2021-05-29 08:00
 Tags: 
 Category: Season 10
-Slug: lmg-s10-issue-122-the-great-flattening
+Slug: issue122
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) 3D models are represented with vertices (points), edges (line segments between points), and faces in a computer. Images known as textures can be mapped to faces to give the impression of detail.
 

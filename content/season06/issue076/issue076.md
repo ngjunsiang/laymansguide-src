@@ -2,9 +2,10 @@ Title: Issue 76: Third-parties and cross-site resources
 Date: 2020-06-13 08:00
 Tags: 
 Category: Season 6
-Slug: lmg-s6-issue-76-third-parties-and-cross-site
+Slug: issue076
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) By not enforcing strict cookie policies on their own sites, publishers allowed advertisers to sneakily set cookies on their site audience. This allowed advertisers to reach the same audience via their advertising slots on other websites, which could be bought more cheaply. The publishers were cut out of the value chain and were not longer “gatekeepers” to their own site readers. They could not sell their advertising slots at a premium.
 

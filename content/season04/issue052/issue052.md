@@ -2,9 +2,10 @@ Title: Issue 52: PDFs part 2 – Text and images
 Date: 2019-12-21 08:00
 Tags: 
 Category: Season 4
-Slug: lmg-s4-issue-52-pdfs-part-2-text-and-images
+Slug: issue052
 Author: J S Ng
 Summary: 
+Modified: 
 
 **Previously:** PDF is the gold standard for universal compatibility (supported by most software and platforms) and visual fidelity (displays exactly the same way). When you need things to appear on a different device in exactly the same way you created it, without having to install additional software, use PDF.
 

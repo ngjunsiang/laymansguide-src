@@ -2,9 +2,10 @@ Title: Issue 9: How do I make an HTTP request?
 Date: 2019-02-09 08:00
 Tags: 
 Category: Season 1
-Slug: lmg-issue-9-how-do-i-make-an-http-request
+Slug: issue009
 Author: J S Ng
 Summary: 
+Modified: 
 
 Last issue, I talked about HTTP response headers, and how they inform the client about the request status using a status code. Let’s talk about the HTTP request today. An HTTP request header looks like this:
 

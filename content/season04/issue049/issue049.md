@@ -2,9 +2,10 @@ Title: Issue 49: What is a File?
 Date: 2019-11-30 08:00
 Tags: 
 Category: Season 4
-Slug: lmg-s4-issue-49-what-is-a-file
+Slug: issue049
 Author: J S Ng
 Summary: 
+Modified: 
 
 **Previously:** A video container can hold one or more audio, video, or text data streams. To encode or decode a data stream, you need to have the necessary codec installed. Most video runs at 25 or 30 fps, with high-quality video going up to 60 fps. You can use a program like MediaInfo to help you decipher the streams inside a video container file.
 

@@ -2,9 +2,10 @@ Title: Issue 8: HTTP error codes—How does a server let the client know if ther
 Date: 2019-02-02 08:00
 Tags: 
 Category: Season 1
-Slug: lmg-issue-8-http-error-codeshow-does-a-server-let
+Slug: issue008
 Author: J S Ng
 Summary: 
+Modified: 
 
 Last issue, I said that HTTP is a set of rules for sending and receiving documents that link to other documents. According to those rules, if you want a webpage, you (the client) must send a (HTTP) request to a server, which will return a response.
 

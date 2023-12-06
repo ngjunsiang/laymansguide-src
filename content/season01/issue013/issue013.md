@@ -2,9 +2,10 @@ Title: Issue 13: How do I use HTTPS?
 Date: 2019-03-09 08:00
 Tags: 
 Category: Season 1
-Slug: lmg-issue-13-how-do-i-use-https
+Slug: issue013
 Author: J S Ng
 Summary: 
+Modified: 
 
 Last issue I compared HTTPS and HTTP, and explained why you should use HTTPS as far as possible to keep your data secure.
 

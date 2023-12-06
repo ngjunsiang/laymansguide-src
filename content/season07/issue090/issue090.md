@@ -2,9 +2,10 @@ Title: Issue 90: Using a database
 Date: 2020-10-03 08:00
 Tags: 
 Category: Season 7
-Slug: lmg-s7-issue-90-using-a-database
+Slug: issue090
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Graph databases treat the details of things as secondary, and optimise for managing the network of relationships. A graph database can quickly look up how things are related to each other, and return the results.
 

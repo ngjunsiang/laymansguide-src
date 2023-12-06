@@ -2,9 +2,10 @@ Title: Issue 82: Multiplayer databases
 Date: 2020-08-01 08:00
 Tags: 
 Category: Season 7
-Slug: lmg-s7-issue-82-multiplayer-databases
+Slug: issue082
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Putting all data into one table results in unnecessary duplication of data. Making data atomic by splitting it up into multiple tables makes the data easier to work with, but requires multiple lookups and joins to get the required data. A standard database language, SQL, makes it possible to write queries that are supported by multiple databases.
 

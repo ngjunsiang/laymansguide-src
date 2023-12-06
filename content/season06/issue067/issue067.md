@@ -2,9 +2,10 @@ Title: Issue 67: The Innocent Times
 Date: 2020-04-11 08:00
 Tags: 
 Category: Season 6
-Slug: lmg-s6-issue-67-the-innocent-times
+Slug: issue067
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) DoubleClick, the first commercially successfully ad server, launched in 1996. It ran a system that tracked the performance of banner ads across 30 sites, working to optimise their return on investment. This was made possible by standardisation of the web (thanks to the HTTP specification), and the birth of Javascript, a scripting language integrated into the webpage rather than being a separate module from it. All of this happened in 1995–1996.
 

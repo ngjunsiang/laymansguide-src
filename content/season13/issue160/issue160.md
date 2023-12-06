@@ -2,9 +2,10 @@ Title: Issue 160: CDNs and content distribution
 Date: 2022-02-19 08:00
 Tags: 
 Category: Season 13
-Slug: lmg-s13-issue-160-cdns-and-content-distribution
+Slug: issue160
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Instead of GPS satellites, smartphones can also use wifi points and cell towers to determine their position (if enabled in the OS).
 

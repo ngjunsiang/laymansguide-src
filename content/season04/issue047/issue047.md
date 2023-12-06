@@ -2,9 +2,10 @@ Title: Issue 47: Lossless compression
 Date: 2019-11-16 08:00
 Tags: 
 Category: Season 4
-Slug: lmg-s4-issue-47-lossless-compression
+Slug: issue047
 Author: J S Ng
 Summary: 
+Modified: 
 
 **Previously:** Computers compress image and audio data through a process similar to summarising: it analyses the data using algorithms that use brightness and colour instead of RGB values for images, and different frequencies of sound rather than samples at different points in time for audio. These algorithms then discard parts of the information that human senses do not perceive easily, and reduce the resolution of other parts that human senses are not as sensitive to.
 

@@ -2,9 +2,10 @@ Title: Issue 78: uMatrix: voyuering the voyeurs
 Date: 2020-07-04 08:00
 Tags: 
 Category: Season 6
-Slug: lmg-s6-issue-78-umatrix-voyuering-the-voyeurs
+Slug: issue078
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The default settings of most browsers expose a lot of information to scripts that request it. To prevent such scripts from running, we need services that can filter **the source** of these scripts. These services generally work by matching browser requests against a blacklist, and blocking the request if it comes from a domain known to host malicious scripts.
 

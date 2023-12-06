@@ -2,9 +2,10 @@ Title: Issue 19: Version control and git
 Date: 2019-04-20 08:00
 Tags: 
 Category: Season 2
-Slug: lmg-s2-issue-19-version-control-and-git
+Slug: issue019
 Author: J S Ng
 Summary: 
+Modified: 
 
 Have you ever worked on a large document with a team of people before? If you have, did it go well? Did people get along and not get into conflict with each other over conflicting ideas or changes? If it did, please drop me an email and let me know! In my experience it is so frustrating and I have difficulty seeing how it can be done without some kind of standardised, automated process for keeping everyone updated.
 

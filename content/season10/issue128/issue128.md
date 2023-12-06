@@ -2,9 +2,10 @@ Title: Issue 128: Upgradeability
 Date: 2021-07-10 08:00
 Tags: 
 Category: Season 10
-Slug: lmg-s10-issue-128-upgradeability
+Slug: issue128
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) USB Power Delivery is a specification that describes how much voltage and current can be supplied by different categories of USB cables. It allows power delivery at different levels for all kids of connected devices, up to 100W. This should help to simplify cable setups that otherwise require multiple kinds of cables between two closely interconnected devices (such as a laptop and an external monitor).
 

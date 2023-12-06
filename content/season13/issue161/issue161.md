@@ -2,9 +2,10 @@ Title: Issue 161: Security and XSS
 Date: 2022-02-26 08:59
 Tags: 
 Category: Season 13
-Slug: lmg-s13-issue-161-security-and-xss
+Slug: issue161
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A content delivery network comprises multiple servers around the world that are able to quickly distribute static content (typically images and video) to viewers that request it. This avoids overloading the hosting server, which would otherwise have to serve data over the network, possibly through many intermediary hops.
 

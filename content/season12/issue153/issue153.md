@@ -2,9 +2,10 @@ Title: Issue 153: Using the cloud
 Date: 2022-01-01 08:00
 Tags: 
 Category: Season 12
-Slug: lmg-s12-issue-153-using-the-cloud
+Slug: issue153
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Actually making a web application requires you to set up lots of supporting software and carry out lots of steps to create a suitable app environment.
 

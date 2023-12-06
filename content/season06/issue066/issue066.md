@@ -2,9 +2,10 @@ Title: Issue 66: Before the Cloud
 Date: 2020-04-04 08:00
 Tags: 
 Category: Season 6
-Slug: lmg-s6-issue-66-before-the-cloud
+Slug: issue066
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Shared memory helps to reduce the amount of memory needed by all the applications running on an operating system. It also allows applications to send data to each other, and to communicate.
 

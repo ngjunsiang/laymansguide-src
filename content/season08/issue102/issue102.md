@@ -2,9 +2,10 @@ Title: Issue 102:  Threading
 Date: 2021-01-09 08:00
 Tags: 
 Category: Season 8
-Slug: lmg-s8-issue-102-threading
+Slug: issue102
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) An app crashes when it encounters a situation it can’t handle, or when it attempts to perform an operation that is disallowed by the operating system.
 

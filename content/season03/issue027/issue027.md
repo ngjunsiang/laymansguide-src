@@ -2,9 +2,10 @@ Title: Issue 27: What is an IP address?
 Date: 2019-06-29 08:00
 Tags: 
 Category: Season 3
-Slug: lmg-s3-issue-27-what-is-an-ip-address
+Slug: issue027
 Author: J S Ng
 Summary: 
+Modified: 
 
 In Season 2, I took a detour to introduce some cool things that developers typically work with, and ideas they implement to make their work as smooth as possible.
 

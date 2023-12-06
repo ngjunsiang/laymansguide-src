@@ -2,9 +2,10 @@ Title: Issue 163: System & software ecosystems
 Date: 2022-03-12 08:00
 Tags: 
 Category: Season 13
-Slug: lmg-s13-issue-163-system-software-ecosystems
+Slug: issue163
 Author: J S Ng
 Summary: 
+Modified: 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Typeface families consist of multiple fonts for each style in the typeface. Each font consists of glyphs, which are mathematical shapes described by curves joining points. These shapes need to be rasterised for display on a computer screen, or for printing on paper. Font files usually come in `.ttf`, `.otf`, or `.woff` formats.
 
