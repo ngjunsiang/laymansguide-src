@@ -20,7 +20,7 @@ The document object model, or DOM ([Issue 94](https://buttondown.email/laymansgu
 
 ## Storage access
 
-A mobile app can request permission to access storage on the mobile device, allowing it to store files (images, data, ...) on the device without having to interrupt the user each time. It is not limited only to browser storage interfaces (localstorage, sessionstorage) and browser databases (IndexedDB)—see [Issue 93](https://buttondown.email/laymansguide/archive/lmg-s7-issue-93-whats-in-a-web-app/)—but can use other kinds of interfaces and databases, if they are available on the mobile device, or bundled into the mobile app.
+A mobile app can request permission to access storage on the mobile device, allowing it to store files (images, data, ...) on the device without having to interrupt the user each time. It is not limited only to browser storage interfaces (localstorage, sessionstorage) and browser databases (IndexedDB)—see [Issue 93](https://buttondown.email/laymansguide/archive/lmg-s8-issue-93-whats-in-a-web-app/)—but can use other kinds of interfaces and databases, if they are available on the mobile device, or bundled into the mobile app.
 
 ## Memory use
 
