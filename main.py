@@ -106,4 +106,7 @@ for issue in issues:
             #     print(img)
 
     with open(path, "w") as f:
+        for field, value in metadata.items():
+            f.write(f"{field}: {value}\n")
+        f.write("\n")
         f.write(doc)
