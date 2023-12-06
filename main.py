@@ -69,7 +69,7 @@ for issue in issues:
 
     folder = issue["category"].lower().replace(" ", "")
     name, _ = os.path.splitext(issue["file"])
-    path = os.path.join("contents", folder, name, issue["file"])
+    path = os.path.join("content", folder, name, issue["file"])
     print()
 
     print("Path:", path)
