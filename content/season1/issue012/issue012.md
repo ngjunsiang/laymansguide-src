@@ -1,3 +1,11 @@
+Title: Issue 12: What is HTTPS? How is it different from HTTP?
+Date: 2019-03-01 08:00
+Tags: 
+Category: Season 1
+Slug: lmg-issue-12-what-is-https-how-is-it-different
+Author: J S Ng
+Summary: 
+
 Was the last issue too scary? I hope you haven’t completely lost faith in protecting your privacy on the internet! If you’re close to it, let this issue bring you some hope.
 
 We are going to get a little technical here, because I want to give you a view of the internet that most layfolks won’t get a chance to see. I just want you to remember something: you don’t need to understand every single bit of it. The things I point out will help you come to useful realisations that help you make good decisions about what you do on the internet.

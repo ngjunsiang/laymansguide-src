@@ -1,6 +1,14 @@
+Title: Issue 57: Cache, the CPU’s working space
+Date: 2020-01-25 08:00
+Tags: 
+Category: Season 5
+Slug: lmg-s5-issue-57-cache-the-cpus-working-space
+Author: J S Ng
+Summary: 
+
 **Previously:** The operating system is responsible for listing and managing the computer’s resources, making them available to programs running on the computer, and making sure they only use what they are allowed to.
 
-Those who have been following Layman’s Guide since Season 3 will remember this term, **caching**. I first introduced it at the end of Season 3, in [Issue 39](https://buttondown.email/laymansguide/archive/lmg-s3-issue-39-caches-and-caching/):
+Those who have been following Layman’s Guide since Season 3 will remember this term, **caching**. I first introduced it at the end of Season 3, in [Issue 39]({filename}/season3/issue039/issue039.md)):
 
 > Searching for anything takes time. Need to fill out a form? You need to search for a pen first. Need to call someone? Before speed dial and contacts apps existed, you used to need to look up a number in order to dial it. If you do it often enough, you would make sure you always had a pen with you, or you would write the number somewhere convenient for you to see so you don’t need to hunt for it.
 
@@ -21,7 +29,7 @@ Let’s look at the transfer speeds and latencies for a few places where data ca
 
 [1]: We seldom talk about the transfer speed of CPU registers, because each register only holds one byte and the transfer is near-instantaneous.
 
-A CPU register is a slot within the CPU (the same slots from [Issue 53](https://buttondown.email/laymansguide/archive/lmg-s5-issue-53-the-cpu-is-an-instruction-obeying/)) which it uses to hold the data it is processing.
+A CPU register is a slot within the CPU (the same slots from [Issue 53]({filename}/season5/issue053/issue053.md))) which it uses to hold the data it is processing.
 
 Notice that the speed difference between each layer is more than 10×? If a computer did not have physical memory to store temporary data in, and had to transfer data to/from disk instead, it would be responding a thousand times more slowly!
 

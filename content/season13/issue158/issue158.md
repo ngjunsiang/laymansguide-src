@@ -1,3 +1,11 @@
+Title: Issue 158: GPS
+Date: 2022-02-05 08:00
+Tags: 
+Category: Season 13
+Slug: lmg-s13-issue-158-gps
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Time is synchronised from higher-precision sources through a protocol called Network Time Protocol (NTP). A public pool of time servers is available for synchronisation at pool.ntp.org.
 
 Ah, GPS. The only topic that actually has almost nothing to do with computing ... and yet the mobile computers in our pocket rely on it so much.

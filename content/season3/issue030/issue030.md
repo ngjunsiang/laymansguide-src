@@ -1,6 +1,14 @@
+Title: Issue 30: Private IP Addresses
+Date: 2019-07-20 08:00
+Tags: 
+Category: Season 3
+Slug: lmg-s3-issue-30-private-ip-addresses
+Author: J S Ng
+Summary: 
+
 Previously: Your web browser resolves a hostname (finds out which IP address a hostname points to) by sending a DNS query to its gateway.
 
-Back in [Issue 27](https://buttondown.email/laymansguide/archive/lmg-s3-issue-27-what-is-an-ip-address/), I said this:
+Back in [Issue 27]({filename}/season3/issue027/issue027.md)), I said this:
 
 > If you are good at math, you can work out the total number of available [IP address] combinations: it’s 4,294,967,296 (256^4). It seems like a lot, but we actually have more humans on this planet than we have IP addresses. And if we assign a unique IP address to each device on the Internet, many of us will need multiple IP addresses for our smartphone, laptop, Amazon Echo, smart TV, router, …
 

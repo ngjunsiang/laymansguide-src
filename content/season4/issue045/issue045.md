@@ -1,3 +1,11 @@
+Title: Issue 45: Audio, a sampling of values
+Date: 2019-11-02 08:00
+Tags: 
+Category: Season 4
+Slug: lmg-s4-issue-45-audio-a-sampling-of-values
+Author: J S Ng
+Summary: 
+
 **Previously:** An image’s resolution describes its dimensions. Its pixel resolution gives an indication of its physical size (if printed or displayed on a screen), and thus its sharpness. A display with imperceptibly small pixels is often referred to as a Retina display (Apple’s branding) or as a high-PPI display; this requires at least 220 PPI (pixels per inch) nominally. For an image to be printed sharply, it needs at least 300 DPI (dots per inch) on paper.
 
 I uncovered some of the complexity of image display last issue, and I hope it has helped you to see that computers and humans influence each other very closely. The design of computers and the way they store information is inextricably linked to the way humans store and display information too. Colours are stored as RGB (red-green-blue) values because that is how humans perceive colour as well. And the monitors we buy have a pixel density that is just high enough for us to not perceive individual pixels easily.
@@ -21,7 +29,7 @@ These vibrations can be produced by computers through speakers. The cones of a s
 If we plot the vibrations of air on a graph known as a waveform, they look something like this:
 
 
-![Audio waveform](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season4/issue045/issue045_01.png)
+![Audio waveform]({attach}/season4/issue045/issue045_01.png)
 <small>An audio waveform<br />
 Image by [Gordon Johnson](https://pixabay.com/users/GDJ-1086657/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1781570) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1781570).</small>
 
@@ -29,12 +37,12 @@ Image by [Gordon Johnson](https://pixabay.com/users/GDJ-1086657/?utm_source=link
 This waveform is converted into numeric values through a process called **Pulse Code Modulation** (PCM). If you see the acronym PCM or LPCM in any audio-related file, this is likely what it is referring to.
 
 
-![Audio waveform](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season4/issue045/issue045_02.png)
+![Audio waveform]({attach}/season4/issue045/issue045_02.png)
 <small>Pulse code modulation to convert a waveform into numeric values<br />
 Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Pcm.svg).</small>
 
 
-These numeric values can then be stored digitally as bits ([Issue 40](https://buttondown.email/laymansguide/archive/lmg-s4-issue-40-bits-and-bytes/)).
+These numeric values can then be stored digitally as bits ([Issue 40]({filename}/season4/issue040/issue040.md))).
 
 ## How high do these values go? Of decibels and dB
 

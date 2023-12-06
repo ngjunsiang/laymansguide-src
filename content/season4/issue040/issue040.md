@@ -1,3 +1,11 @@
+Title: Issue 40: Bits and bytes
+Date: 2019-09-28 08:00
+Tags: 
+Category: Season 4
+Slug: lmg-s4-issue-40-bits-and-bytes
+Author: J S Ng
+Summary: 
+
 **Previously:** Networks enable data packets to get from one computer in the network to another through gateways that forward the data packets according to fixed rules. These rules are encoded in the various protocols followed by network systems, and all computers on the network agree to follow the same protocol.
 
 But what kind of data gets transmitted over the network? And why do strange file-related things happen on my computer? I’ll unpack some of these gradually over the course of this 13-issue season.

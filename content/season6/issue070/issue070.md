@@ -1,10 +1,18 @@
+Title: Issue 70: The Cookie Factory
+Date: 2020-05-02 08:00
+Tags: 
+Category: Season 6
+Slug: lmg-s6-issue-70-the-cookie-factory
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Cookies are little fragments of information with a name and a value, and associated with a domain address. They are most commonly used to identify new or returning users. This cookie is issued by a website upon the first visit, stored in the browser, and returned to the issuing server whenever the server requests it.
 
 This issue is a short one, just to put one more piece in place. Last issue, I said that `analytics.js` loaded a `_gid` cookie with a value of `GA1.2.1807773255.1584140066`. At that point, the cookie only existed in my web browser. How did it get sent back to Google Analytics for counting?
 
 Let’s watch what is happening with Google DevTools:
 
-![Screenshot of DevTools in Vivaldi browser, with a request by analytics.js highlighted.](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season6/issue070/issue070_01.png)<br />
+![Screenshot of DevTools in Vivaldi browser, with a request by analytics.js highlighted.]({attach}/season6/issue070/issue070_01.png)<br />
 <small>Chrome DevTools showing the (filtered) sequence of requests made by the webpage I loaded.<br />
 The request made by `analytics.js` (third-last line) is highlighted in gray. The Initiator column tells us this requested was initiated by `analytics.js` on line 25 of the script.</small>
 

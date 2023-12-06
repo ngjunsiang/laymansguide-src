@@ -1,3 +1,11 @@
+Title: Issue 63: Limitations of Meltdown and Spectre
+Date: 2020-03-07 08:00
+Tags: 
+Category: Season 5
+Slug: lmg-s5-issue-63-limitations-of-meltdown-and
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) To snoop the cache, we:
 
 1. Flush the cache corresponding to the 256 memory addresses (to get a cache miss when attempting to load the data from memory)

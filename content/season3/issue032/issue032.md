@@ -1,3 +1,11 @@
+Title: Issue 32: Sharing a public IP address: Network Address Traversal
+Date: 2019-08-03 08:00
+Tags: 
+Category: Season 3
+Slug: lmg-s3-issue-32-sharing-a-public-ip-address
+Author: J S Ng
+Summary: 
+
 Previously: A router assigns IP addresses automatically using DHCP. It reserves any registered static IP addresses for devices identified by their MAC address, and assigns the remaining private IP addresses in the pool to any devices that request one. Each IP address has a lease period, after which the device must request an IP address again.
 
 In Issue 30, I tried to answer the question "how do all my devices manage to share the one precious IP address assigned to me by my ISP?", and in the process introduced two more acronyms: DHCP and NAT. I covered DHCP last issue, and today I’ll explain NAT. It is one of those technologies that work silently in the background, doing its own thing merrily until something bad happens.
@@ -9,7 +17,7 @@ Remember that when your phone/laptop/device first connects to the router, it doe
 In Issue 8, I gave an example of the *content* of a response:
 
 
-![An HTTP response header from Hypothes.is](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season1/issue008/issue008_01.png)
+![An HTTP response header from Hypothes.is]({attach}/season1/issue008/issue008_01.png)
 <small>The response header from Hypothes.is</small>
 
 
@@ -39,7 +47,7 @@ As I type this section, it dawned on me that there is one acronym I didn’t int
 
 Well, now we know: it stands for Internet Protocol (IP). IP is the next protocol layer in the sequence (that ensures our request gets through, and a response gets back). It is a big part of the backbone that forms the internet. At this point, our request has some identifying info and a port number, but no To or From information yet.
 
-Where does the To: information come from? From the URL I am trying to access (or more specifically, the domain name of the URL). My web browser first sends a DNS query ([Issue 28](https://buttondown.email/laymansguide/archive/lmg-s3-issue-28-domain-names-and-dns/)) to resolve the domain name to an IP address, and now we have the IP address to put in the To: field. In Internet Protocol, this is the **Destination address**.
+Where does the To: information come from? From the URL I am trying to access (or more specifically, the domain name of the URL). My web browser first sends a DNS query ([Issue 28]({filename}/season3/issue028/issue028.md))) to resolve the domain name to an IP address, and now we have the IP address to put in the To: field. In Internet Protocol, this is the **Destination address**.
 
 What about the From: information?
 

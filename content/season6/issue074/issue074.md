@@ -1,3 +1,11 @@
+Title: Issue 74: The Walls Have Pixels
+Date: 2020-05-30 08:00
+Tags: 
+Category: Season 6
+Slug: lmg-s6-issue-74-the-walls-have-pixels
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) When a page loads advertisements through header bidding, it sends your cookie along with other information to an ad exchange. The ad exchange conducts automated bidding among the ad-buyers, determines the winner(s), and sends the winning code(s) back to your browser. Your browser then sends these codes to the **CDN**, which sends back the winning ads for your page to render in your browser.
 
 So how does Facebook know what you just bought on Amazon? I hope the previous post sheds some light on that. But not everything is a web browser, and not everything uses cookies (especially apps). This post is about another way that your data gets shuttled along to whoever has a data-sharing agreement with the site you are on.
@@ -10,15 +18,15 @@ Obviously when you loaded the page, some information already went to the server 
 
 Let’s revisit HuffPost again, this time filtering only for image loads:
 
-![Screenshot of DevTools in Vivaldi browser, filtered to show only image loads.](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season6/issue074/issue074_01.png)<br />
+![Screenshot of DevTools in Vivaldi browser, filtered to show only image loads.]({attach}/season6/issue074/issue074_01.png)<br />
 <small>Chrome DevTools showing filtered image requests.<br />
 A request for a tracking pixel is highlighted in blue.</small>
 
-Hmm … why does an image request need to be so long? Anytime you see a long URL like that, with a `?` after the URL proper, and peppered with `&`s and `=`s, alarm bells should be going off in your head: data is being sent to the server ([Issue 70](https://buttondown.email/laymansguide/archive/lmg-s6-issue-70-the-cookie-factory/))!
+Hmm … why does an image request need to be so long? Anytime you see a long URL like that, with a `?` after the URL proper, and peppered with `&`s and `=`s, alarm bells should be going off in your head: data is being sent to the server ([Issue 70]({filename}/season6/issue070/issue070.md)))!
 
 Let’s see what this image looks like:
 
-![Vivaldi browser tab showing a tracking pixel.](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season6/issue074/issue074_02.png)<br />
+![Vivaldi browser tab showing a tracking pixel.]({attach}/season6/issue074/issue074_02.png)<br />
 <small>This is a tracking pixel.<br />
 You can’t see it. The image info sidebar shows that its dimensions are 1×1 pixels.</small>
 
@@ -28,9 +36,9 @@ What is your browser doing, loading a useless 1×1 image? If it appears to be do
 
 ## Tracking pixels work hand in hand with cookies
 
-This request for the tracking pixel was sent from a script. My cookie information was embedded in the request URL when it was sent. So a tracking pixel is another mechanism for sending cookies, besides sending a generic document request via the script like we saw in [Issue 70](https://buttondown.email/laymansguide/archive/lmg-s6-issue-70-the-cookie-factory/).
+This request for the tracking pixel was sent from a script. My cookie information was embedded in the request URL when it was sent. So a tracking pixel is another mechanism for sending cookies, besides sending a generic document request via the script like we saw in [Issue 70]({filename}/season6/issue070/issue070.md)).
 
-If you have a popular website, ad exchanges will ask to pay you to put their ads on your website. These ads are served after the user’s browser sends the user’s cookie to the ad exchange, which triggers an automated bidding process. The winning bid gets sent to the CDN (content delivery network), which serves the ads ([Issue 73](https://buttondown.email/laymansguide/archive/lmg-s6-issue-73-the-heart-of-darkness-header/)).
+If you have a popular website, ad exchanges will ask to pay you to put their ads on your website. These ads are served after the user’s browser sends the user’s cookie to the ad exchange, which triggers an automated bidding process. The winning bid gets sent to the CDN (content delivery network), which serves the ads ([Issue 73]({filename}/season6/issue073/issue073.md))).
 
 On the other hand, data companies don’t serve ads. They usually ask to put a tracking pixel on your website, which means they ask you to put in their script. This script will scrape whatever data it can about the page the user is on and related user activity, and embed it in the pixel request along with the user’s cookie.
 

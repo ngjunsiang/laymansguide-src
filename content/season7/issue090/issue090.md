@@ -1,3 +1,11 @@
+Title: Issue 90: Using a database
+Date: 2020-10-03 08:00
+Tags: 
+Category: Season 7
+Slug: lmg-s7-issue-90-using-a-database
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Graph databases treat the details of things as secondary, and optimise for managing the network of relationships. A graph database can quickly look up how things are related to each other, and return the results.
 
 At some point in the past, getting a database meant talking to a consultant or contractor, who would then sit with you to understand your requirements, then set everything up for you without letting you touch any part of it. And that is probably for the benefit of you both. But today, for SMEs with some relevant expertise, it is actually possible to get your own database up and running very quickly.
@@ -24,7 +32,7 @@ If your company has decided to do away with organic IT support, your next bet is
 
 **Graph databases**
 - Amazon Neptune
-- Microsoft Azure Cosmos also has an API ([Issue 4](https://buttondown.email/laymansguide/archive/lmg-issue-4-what-is-an-api/)) for graph databases
+- Microsoft Azure Cosmos also has an API ([Issue 4]({filename}/season1/issue004/issue004.md))) for graph databases
 
 ## Getting the database identifier
 
@@ -32,7 +40,7 @@ After you have successfully registered a database (of any type), you will be giv
 
 `mongodb://mongodb0.example.com:27017`
 
-which identifies your database as a `mongodb` (document) database running on the server at `mongodb0.example.com` on port `27017`. (I covered server hostnames in [Issue 29](https://buttondown.email/laymansguide/archive/lmg-s3-issue-29-how-to-resolve-a-hostname/) and port numbers in [Issue 33](https://buttondown.email/laymansguide/archive/lmg-s3-issue-33-port-numbers/)).
+which identifies your database as a `mongodb` (document) database running on the server at `mongodb0.example.com` on port `27017`. (I covered server hostnames in [Issue 29]({filename}/season3/issue029/issue029.md)) and port numbers in [Issue 33]({filename}/season3/issue033/issue033.md))).
 
 or it can look like:
 

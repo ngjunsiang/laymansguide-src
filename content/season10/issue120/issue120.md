@@ -1,3 +1,11 @@
+Title: Issue 120: Drivers, the glue between hardware and firmware
+Date: 2021-05-15 08:00
+Tags: 
+Category: Season 10
+Slug: lmg-s10-issue-120-drivers-the-glue-between
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Solid-state disks are much faster than hard disks because they have no moving parts, so no time is wasted waiting for parts to get into the right position. However, they are more expensive than hard disk drives.
 
 So this issue, we finally get to a question that most folks would have asked at some point after buying a new device:
@@ -32,7 +40,7 @@ If you insert a device and Windows says it does not recognise it, you can be sur
 
 On your computer, you can view a list of your devices and inspect their driver details using Device Manager.
 
-![Device Manager in Windows 10](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season10/issue120/issue120_01.png)<br />
+![Device Manager in Windows 10]({attach}/season10/issue120/issue120_01.png)<br />
 <small>Device Manager in Windows 10</small>
 
 ## Generic drivers

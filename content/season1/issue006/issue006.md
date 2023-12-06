@@ -1,3 +1,11 @@
+Title: Issue 6: How do you use an API?
+Date: 2019-01-19 08:00
+Tags: 
+Category: Season 1
+Slug: lmg-issue-6-how-do-you-use-an-api
+Author: J S Ng
+Summary: 
+
 You ask it nicely, of course.
 
 Sorry, I didn’t mean to be snarky. But that really is what you do. The question is, “what is a *nice* request?”

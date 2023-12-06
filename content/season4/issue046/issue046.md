@@ -1,3 +1,11 @@
+Title: Issue 46: Lossy compression
+Date: 2019-11-09 08:00
+Tags: 
+Category: Season 4
+Slug: lmg-s4-issue-46-lossy-compression
+Author: J S Ng
+Summary: 
+
 **Previously:** Humans can distinguish 120 dB of loudness, which means the loudest perceivable sound is a million times louder than the softest perceivable sound. CD audio provides 16 bits of information per sample, sufficient to provide 96 dB. Humans have a hearing range from 20 Hz to 20 kHz. CD audio is sampled at 44.1 kHz. Uncompressed audio thus requires 705,600 bits per second, or 86 kB/s.
 
 Lots of numbers in the last issue, and you don’t need to memorise any of them, but those numbers were necessary to demonstrate some fundamental facts about data and information: We need a heck lot of data to produce images and audio that doesn’t sound distorted! And this is closely related to the limits of our eyes and ears.
@@ -16,7 +24,7 @@ If you’re thinking “this part is going to be incredibly math-ey”, you are 
 
 ## Lossy image compression: luma and chroma
 
-In [Issue 44](https://buttondown.email/laymansguide/archive/lmg-s4-issue-44-image-resolution/), I mentioned that the human eye has 3 types of cones that sense red, green, and blue light. What I didn’t mention then is that partly due to the way these cones are distributed, the human eye is more sensitive to differences in brightness (or “**luma**”) than differences in colour (“**chroma**”).
+In [Issue 44]({filename}/season4/issue044/issue044.md)), I mentioned that the human eye has 3 types of cones that sense red, green, and blue light. What I didn’t mention then is that partly due to the way these cones are distributed, the human eye is more sensitive to differences in brightness (or “**luma**”) than differences in colour (“**chroma**”).
 
 A black-and-white image has only luma information (brightness), while a colour image has both luma and chroma information—you can mathematically separate the data of a colour image into the brightness component (which looks just like a black-and-white photo), and a colour component, which looks like nothing you have ever seen. The closest thing to chroma information would be analog colour photo negatives, if you were born early enough to get to see those.
 

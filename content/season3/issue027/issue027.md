@@ -1,14 +1,22 @@
+Title: Issue 27: What is an IP address?
+Date: 2019-06-29 08:00
+Tags: 
+Category: Season 3
+Slug: lmg-s3-issue-27-what-is-an-ip-address
+Author: J S Ng
+Summary: 
+
 In Season 2, I took a detour to introduce some cool things that developers typically work with, and ideas they implement to make their work as smooth as possible.
 
-And now we’re back on track, where I last stopped in Season 1. There, I did a little dive into my app to introduce [HTTP](https://buttondown.email/laymansguide/archive/lmg-issue-7-what-is-http/), the protocol that forms the *de facto* means of communication for the internet. And then I showed some [HTTP requests](https://buttondown.email/laymansguide/archive/lmg-issue-9-how-do-i-make-an-http-request/), the basic means of requesting data from servers, served over unsecured HTTP and secured HTTPS, and I hope that illustrated sufficiently why HTTPS is really important.
+And now we’re back on track, where I last stopped in Season 1. There, I did a little dive into my app to introduce [HTTP]({filename}/season1/issue007/issue007.md)), the protocol that forms the *de facto* means of communication for the internet. And then I showed some [HTTP requests]({filename}/season1/issue009/issue009.md)), the basic means of requesting data from servers, served over unsecured HTTP and secured HTTPS, and I hope that illustrated sufficiently why HTTPS is really important.
 
 In Season 3, I’ll continue where I left off. We’ll see where that HTTP request packet goes, and what this Internet thing looks like on the outside.
 
 ## The HTTP packet, revisited
 
 
-![An HTTP request captured in Wireshark](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season1/issue012/issue012_01.png)<br />
-<small>Remember this from [Issue 12](https://buttondown.email/laymansguide/archive/lmg-issue-12-what-is-https-how-is-it-different/)?</small>
+![An HTTP request captured in Wireshark]({attach}/season1/issue012/issue012_01.png)<br />
+<small>Remember this from [Issue 12]({filename}/season1/issue012/issue012.md))?</small>
 
 
 The two columns (Source and Destination) that I censored out contain my IP address, and Hypothes.is’s IP address. Why would I want to censor that? I hope this and the next few issues will make it clear.
@@ -39,10 +47,10 @@ Okay, so how do those packets actually make their way to you if they don’t ori
 
 ## Forwarding Tables and The Gateway
 
-Your smartphone, or laptop, first sends the packet to its gateway (which is typically your router). Your router differs from your handy gadgets in one key way: it is a server, while your gadgets are clients ([I covered clients and servers in Issue 7.](https://buttondown.email/laymansguide/archive/lmg-issue-7-what-is-http/)). The router contains a forwarding table, which is a table telling it where to forward data meant for various IP addresses. For example, if you are trying to send a document to your home network printer, that data packet is not meant to go out onto the Internet—it’s meant to be forwarded to the printer! The information in the forwarding table ensures that this happens. Your laptop has no idea what the IP address of the printer is; all it knows is your router’s IP address, and it will forward everything to your router for it to figure out.
+Your smartphone, or laptop, first sends the packet to its gateway (which is typically your router). Your router differs from your handy gadgets in one key way: it is a server, while your gadgets are clients ([I covered clients and servers in Issue 7.]({filename}/season1/issue007/issue007.md))). The router contains a forwarding table, which is a table telling it where to forward data meant for various IP addresses. For example, if you are trying to send a document to your home network printer, that data packet is not meant to go out onto the Internet—it’s meant to be forwarded to the printer! The information in the forwarding table ensures that this happens. Your laptop has no idea what the IP address of the printer is; all it knows is your router’s IP address, and it will forward everything to your router for it to figure out.
 
 
-![Network connection properties window](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season3/issue027/issue027_01.png)<br />
+![Network connection properties window]({attach}/season3/issue027/issue027_01.png)<br />
 <small>Network connection properties, a window that one used to see very often when configuring a router. [Source: Help Desk Geek](https://helpdeskgeek.com/networking/change-ip-address-and-dns-servers-using-the-command-prompt/)</small>
 
 

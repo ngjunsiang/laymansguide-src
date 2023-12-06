@@ -1,3 +1,11 @@
+Title: Issue 146: Virtual hardware
+Date: 2021-11-13 08:00
+Tags: 
+Category: Season 12
+Slug: lmg-s12-issue-146-virtual-hardware
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Programs do not usually deal with the gnarly details of hardware, but instead access it through an interface. They access storage devices through a filesystem, and access hardware through drivers.
 
 How does one trick an operating system (OS) into coexisting with other operating systems on a single machine? By _virtualising_ hardware into virtual drivers!
@@ -20,26 +28,26 @@ Some operating systems/programs provide drivers for RAM disks—a storage disk t
 
 ## Virtual memory
 
-In [Issue 55](https://buttondown.email/laymansguide/archive/lmg-s5-issue-55-addressing-memory/), I explained how the operating system offers and controls access to computer memory, the pagefile ([Issue 117](https://buttondown.email/laymansguide/archive/lmg-s9-issue-117-swap-space/)), as well as hardware devices through a single addressing interface: virtual memory.
+In [Issue 55]({filename}/season5/issue055/issue055.md)), I explained how the operating system offers and controls access to computer memory, the pagefile ([Issue 117]({filename}/season9/issue117/issue117.md))), as well as hardware devices through a single addressing interface: virtual memory.
 
 When a program requests access to the printer and the OS responds with “here, you can send your request to memory address 0x35a4b2ff”, how is it to know if the data is going to a physical printer, or to a virtual one[^1]?
 
-[^1]: These virtual printers do, in fact, exist. It is why some OSes offer a “Print to PDF” printer device: the program effectively sends print commands to another program, which interprets the commands to produce a PDF file. This is possible because both printers and the PDF format share a common language: Postscript (see [Issue 51](https://buttondown.email/laymansguide/archive/lmg-s4-issue-51-pdfs-part-1-compatibility-and/)).
+[^1]: These virtual printers do, in fact, exist. It is why some OSes offer a “Print to PDF” printer device: the program effectively sends print commands to another program, which interprets the commands to produce a PDF file. This is possible because both printers and the PDF format share a common language: Postscript (see [Issue 51]({filename}/season4/issue051/issue051.md))).
 
 ## Virtual hardware
 
 Take a look at your Device Manager in Control Panel. What do you see?
 
-![screenshot of Device Manager in Windows 10](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season12/issue146/issue146_01.jpg)  
+![screenshot of Device Manager in Windows 10]({attach}/season12/issue146/issue146_01.jpg)  
 <small>Device Manager in Windows 10  
 Note that what you are seeing are not the actual hardware (which the OS cannot possibly know).  
 These are interfaces to the hardware.</small>
 
 A whole set of drivers and interfaces which the OS uses to carry out its work.
 
-Many of these were initialised during bootup ([Issue 112](https://buttondown.email/laymansguide/archive/lmg-s9-issue-112-bootstrapping-into-existence/)), when the OS kernel (the core of the OS) enumerates the available hardware by sending out signals and seeing what hardware responds.
+Many of these were initialised during bootup ([Issue 112]({filename}/season9/issue112/issue112.md))), when the OS kernel (the core of the OS) enumerates the available hardware by sending out signals and seeing what hardware responds.
 
-So a bunch of engineers at VMware thought: what if we ... made drivers to present virtual hardware emulating the CPU, memory, storage devices, ... and even the chipset? What if we then we booted the BIOS (the bootup program loaded on a computer’s mainboard; see [Issue 112](https://buttondown.email/laymansguide/archive/lmg-s9-issue-112-bootstrapping-into-existence/)), got the virtual hardware to respond when the BIOS enumerates hardware, and then basically simulated all the signals that hardware would actually send?
+So a bunch of engineers at VMware thought: what if we ... made drivers to present virtual hardware emulating the CPU, memory, storage devices, ... and even the chipset? What if we then we booted the BIOS (the bootup program loaded on a computer’s mainboard; see [Issue 112]({filename}/season9/issue112/issue112.md))), got the virtual hardware to respond when the BIOS enumerates hardware, and then basically simulated all the signals that hardware would actually send?
 
 We end up with a virtual machine—one that you can actually install an OS on!
 

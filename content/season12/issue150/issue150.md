@@ -1,3 +1,11 @@
+Title: Issue 150: System VMs vs Process VMs
+Date: 2021-12-11 08:00
+Tags: 
+Category: Season 12
+Slug: lmg-s12-issue-150-system-vms-vs-process-vms
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Containers are one layer of virtualisation above virtual machines: containerisation systems virtualise access to the operating system, presenting a virtual interface that provides software with the resources it needs, without being aware of software running in other containers on the same system.
 
 ## Recap
@@ -12,7 +20,7 @@ Before 1995, no!
 
 ## OS-level details are tricky
 
-OSes mediate access to resources through libraries ([Issue 17](https://buttondown.email/laymansguide/archive/lmg-s2-issue-17-libraries/)). Instead of having to deal with storage disk sectors and blocks, you can just use library features to ask the OS to help you create a file and write data to it. The OS and filesystem ([Issue 106](https://buttondown.email/laymansguide/archive/lmg-s9-issue-106-organising-storage/)) take care of the details.
+OSes mediate access to resources through libraries ([Issue 17]({filename}/season2/issue017/issue017.md))). Instead of having to deal with storage disk sectors and blocks, you can just use library features to ask the OS to help you create a file and write data to it. The OS and filesystem ([Issue 106]({filename}/season9/issue106/issue106.md))) take care of the details.
 
 I don’t know how to explain this more clearly without showing some programming code; the OS controls a lot of things! Which is a problem when it comes to multi-OS support, because different OSes control different things differently.
 
@@ -22,11 +30,11 @@ The library features for lots of things — storage, searching through directori
 
 Can’t we program in a higher-level language, and use another program (the code interpreter) to break it down to different types of operations on different operating systems? E.g. `python.exe` on Windows will try to make my Python code work in Windows by using Windows libraries, `python` on Linux will do so using Linux libraries, and `python` on MacOS will do so using macOS libraries. Javascript, Ruby, Perl, VBScript, and other **interpreted programming languages** work this way too[^1].
 
-[^1]: As opposed to **compiled programming languages** ([Issue 54](https://buttondown.email/laymansguide/archive/lmg-s5-issue-54-compiling-programming-code-into/)), where code is compiled into CPU instructions for one hardware platform for one OS only.
+[^1]: As opposed to **compiled programming languages** ([Issue 54]({filename}/season5/issue054/issue054.md))), where code is compiled into CPU instructions for one hardware platform for one OS only.
 
 To a large extent, this is possible. But there remain some irreconcilable differences:
 
-- if you need to use Python to run a command-line program, such as a shell script ([Issue 16](https://buttondown.email/laymansguide/archive/lmg-s2-issue-16-shell-scripts-and-automation/)), those will depend on terminal availability: not all terminals have cross-OS support!
+- if you need to use Python to run a command-line program, such as a shell script ([Issue 16]({filename}/season2/issue016/issue016.md))), those will depend on terminal availability: not all terminals have cross-OS support!
 - If you need to specify a file location, Windows and Linux do not use the same path separators (the character that separates folder names in a folder hierarchy); Windows uses `\` to separate directory names, while Linux and MacOS uses `/`. This is often a source of bugs and headaches.
 - Important advanced features, such as multiprocessing (on multiple CPU cores simultaneously), are [handled differently in different OSes](https://rhodesmill.org/brandon/2010/python-multiprocessing-linux-windows/) in ways that may be incompatible within the same program.
 

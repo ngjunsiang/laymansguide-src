@@ -1,3 +1,11 @@
+Title: Issue 17: Libraries
+Date: 2019-04-06 08:00
+Tags: 
+Category: Season 2
+Slug: lmg-s2-issue-17-libraries
+Author: J S Ng
+Summary: 
+
 Welcome back! Last issue must have been exhausting to read, and I want this issue to be more readily digestible. So there’re only going to be two examples. Promise.
 
 A shell script works really well when you just need to do things with folders, and run programs to work on files. But anything more advanced, such as [making network requests](https://buttondown.email/laymansguide/archive/a6941efd-86bf-4fd8-92c9-009fe14a8c2a), quickly gets tricky. Usually this is where the programmers start to whip out their favourite programming language. But …

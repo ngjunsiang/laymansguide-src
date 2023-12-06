@@ -1,3 +1,11 @@
+Title: Issue 64: Fixing Meltdown and Spectre
+Date: 2020-03-14 08:00
+Tags: 
+Category: Season 5
+Slug: lmg-s5-issue-64-fixing-meltdown-and-spectre
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) For Meltdown and Spectre to work, they need two things: (1) Permission to carry out instructions (i.e. run programs) on the OS, and (2) knowledge of where the kernel address space is.
 
 Last week, I explained two key limitations of Meltdown and Spectre that are needed for an attack to be successfully carried out. Hackers getting permission they shouldn’t have is not a security flaw related to Meltdown and Spectre, so that really belongs in a different season of Layman’s Guide.
@@ -28,9 +36,9 @@ This primarily mitigates the impact of Meltdown, which attempts to access the ke
 
 ## Crash course: Translation Lookaside Buffer
 
-One concept to cover before we get to the Spectre mitigation. In [Issue 55](https://buttondown.email/laymansguide/archive/lmg-s5-issue-55-addressing-memory/) I talked about how the virtual address space allows programs to access data from different parts of the computer: USB devices, hard drives, network, sound card, and of course not forgetting the physical memory itself.
+One concept to cover before we get to the Spectre mitigation. In [Issue 55]({filename}/season5/issue055/issue055.md)) I talked about how the virtual address space allows programs to access data from different parts of the computer: USB devices, hard drives, network, sound card, and of course not forgetting the physical memory itself.
 
-How does the CPU know that virtual address 2354476 is actually pointing to physical memory address 3564241? It doesn’t. This mapping is stored in the CPU, within the memory management unit. Like all mappings (remember the CPU cache, and the DNS cache from [Issue 39](https://buttondown.email/laymansguide/archive/lmg-s3-issue-39-caches-and-caching/)?), the lookup process can be greatly speeded up with a cache. The part of the CPU that caches virtual-to-physical memory mappings is called the Translation Lookaside Buffer, or TLB.
+How does the CPU know that virtual address 2354476 is actually pointing to physical memory address 3564241? It doesn’t. This mapping is stored in the CPU, within the memory management unit. Like all mappings (remember the CPU cache, and the DNS cache from [Issue 39]({filename}/season3/issue039/issue039.md))?), the lookup process can be greatly speeded up with a cache. The part of the CPU that caches virtual-to-physical memory mappings is called the Translation Lookaside Buffer, or TLB.
 
 A key requirement for Spectre to work is for the Translation Lookaside Buffer to remain unchanged, so that it is getting data from the same part of (kernel address space) memory.
 

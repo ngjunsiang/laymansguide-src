@@ -1,3 +1,11 @@
+Title: Issue 141: The Apple A14 and M1
+Date: 2021-10-09 08:00
+Tags: 
+Category: Season 11
+Slug: lmg-s11-issue-141-the-apple-a14-and-m1
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Shared memory is easier to implement when a company has control over the designs of both CPU and GPU.
 
 So, to recap:
@@ -30,10 +38,10 @@ Apple has managed to do just this with the Apple A14 and M1. They are, at heart,
 
 Let’s see:
 
-![Apple A14 hardware overview](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue141/issue141_01.jpg)<br />
+![Apple A14 hardware overview]({attach}/season11/issue141/issue141_01.jpg)<br />
 <small>The Apple A14’s key hardware.<br />Source: [Apparently an online Arabic image gallery site](https://www.electrony.net/350867/%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%84%D8%AC-apple-a14-bionic-%D9%82%D8%AF-%D9%8A%D9%88%D9%81%D8%B1-%D8%A3%D8%AF%D8%A7%D8%A1%D9%8B-%D9%85%D9%85%D8%A7%D8%AB%D9%84%D8%A7%D9%8B-%D9%84%D8%A3%D8%AF%D8%A7/apple-a14/) (I have no idea why this picture is so hard to find!)</small>
 
-![Apple M1 hardware overview](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue141/issue141_02.jpg)<br />
+![Apple M1 hardware overview]({attach}/season11/issue141/issue141_02.jpg)<br />
 <small>The Apple M1’s key hardware.<br />Source: [TechBuzzPro](https://www.techbuzzpro.com/apple-introduces-m1-5nm-octa-core-soc-for-the-mac.html)</small>
 
 We can also compare these features via Wikipedia:
@@ -68,7 +76,7 @@ The major difference announced between the A14 and M1 launch is that the M1 has 
 
 ## Unified memory vs CPU–GPU transfers
 
-Back in [Issue 139](https://buttondown.email/laymansguide/archive/lmg-s11-issue-139-whats-before-this-line-is-mine/), I mentioned that unified memory needs really high bandwidth to support access by the SoC components.
+Back in [Issue 139]({filename}/season11/issue139/issue139.md)), I mentioned that unified memory needs really high bandwidth to support access by the SoC components.
 
 Today, laptop processors use an interface called PCIe to connect CPUs to GPUs. PCIe has a bandwidth of up to 16 GB/s[^5].
 
@@ -80,7 +88,7 @@ The M1’s unified memory has a bandwidth of up to *58 GB/s* reading from memory
 
 The 8GB/16GB of system memory is used by both CPU and GPU. It is not partitioned at boot; both the CPU and GPU (and other parts of the SoC, such as the NPU) have *full access to all system memory*.
 
-This greatly simplifies intra-chip communication, as all subchips in the SoC can request access to memory! The GPU no longer needs to keep its own (power-guzzling) memory. This reduces the motherboard space that is needed, lowers power consumption, and decreases latency for data transfer between CPU and GPU ([Issue 139](https://buttondown.email/laymansguide/archive/lmg-s11-issue-139-whats-before-this-line-is-mine/)): a triple-compounding win.
+This greatly simplifies intra-chip communication, as all subchips in the SoC can request access to memory! The GPU no longer needs to keep its own (power-guzzling) memory. This reduces the motherboard space that is needed, lowers power consumption, and decreases latency for data transfer between CPU and GPU ([Issue 139]({filename}/season11/issue139/issue139.md))): a triple-compounding win.
 
 **Issue summary:** The Apple A14 and Apple M1 are essentially the same chip architecture: they use almost the same building blocks, just with different numbers of them. On top of that, the Apple M1 implements unified memory, allowing the CPU and GPU (and other SoC components) to share the same system memory, greatly facilitating intra-chip communication.
 

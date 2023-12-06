@@ -1,3 +1,11 @@
+Title: Issue 68: The Age of Bloat
+Date: 2020-04-18 08:00
+Tags: 
+Category: Season 6
+Slug: lmg-s6-issue-68-the-age-of-bloat
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Each click on a link, or even an ad, sends data to the server. This information can include an ID for the link you clicked, or the category of ad you clicked. But without Javascript, the webpage can’t know very much about you.
 
 ## The dot-com bust
@@ -42,7 +50,7 @@ Ad buyers, on the other hand, mostly knew who their target market was, but had l
 
 Analytics companies such as comScore and Nielsen quickly saw this need, and started researching demographic behaviours online. But this didn’t work for niche markets, or when data was lacking.
 
-Ad servers (such as Doubleclick, whom you already met in [Issue 66](https://buttondown.email/laymansguide/archive/lmg-s6-issue-66-before-the-cloud/)) helped to aggregate advertising slots from online publishers. But they were not in a place to gather data on the users; users were not visiting their site. Nor were they in a place to gather the disparate information from online publishers and ad buyers to build coherent profiles of users.
+Ad servers (such as Doubleclick, whom you already met in [Issue 66]({filename}/season6/issue066/issue066.md))) helped to aggregate advertising slots from online publishers. But they were not in a place to gather data on the users; users were not visiting their site. Nor were they in a place to gather the disparate information from online publishers and ad buyers to build coherent profiles of users.
 
 That piece of the puzzle would come later. Konrad Feldman and Paul Sutter, who noticed the surge of interest in search advertising after Google’s IPO in 2004, and were working on an interesting puzzle: “How would we get direct data on users of sites that we don’t own?”
 

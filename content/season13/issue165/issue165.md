@@ -1,3 +1,11 @@
+Title: Issue 165: The myths of system slowdown
+Date: 2022-03-26 08:00
+Tags: 
+Category: Season 13
+Slug: lmg-s13-issue-165-the-myths-of-system-slowdown
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Linux software is distributed through Linux distros. The maintainers of distros maintain repositories of software that have been tested with the distro. Most users will access software in the distro’s repositories through a program called a package manager. So users have full control over when updates and new software should be installed.
 
 Once your laptop hits the magical 1-year window, it somehow seems to … get slower. And slower. Everything takes just a fraction longer. What used to happen near-instantaneously now seems to take a split-second pause. The loading spinner animation feels like it plays just a little longer. And it just gets worse from there with age.
@@ -6,7 +14,7 @@ Google search results have a number of things to say about why it happens:
 
 ## Programs starting up when booting
 
-This is primarily an issue when you are booting up your laptop ([Issue 112](https://buttondown.email/laymansguide/archive/lmg-s9-issue-112-bootstrapping-into-existence/)) and logging in. Once you log in to your operating system (OS), your OS will run the startup programs (which you can disable), so if you are trying to use your laptop right after logging in, this may cause some slowdown.
+This is primarily an issue when you are booting up your laptop ([Issue 112]({filename}/season9/issue112/issue112.md))) and logging in. Once you log in to your operating system (OS), your OS will run the startup programs (which you can disable), so if you are trying to use your laptop right after logging in, this may cause some slowdown.
 
 If your laptop is still slow about 10 minutes after OS login, this is probably not the cause.
 
@@ -30,7 +38,7 @@ Just update your OS. Most of the time this does not fix system slowness.
 
 ## Disk full
 
-Open My Computer (in Windows), which should show how full your system partition is. If it is below 80% full, this probably isn’t the issue, regardless of whether your system is on a hard disk or solid state disk (SSD, see [Issue 119](https://buttondown.email/laymansguide/archive/lmg-s10-issue-119-solid-state-disks-an-upgrade/)).
+Open My Computer (in Windows), which should show how full your system partition is. If it is below 80% full, this probably isn’t the issue, regardless of whether your system is on a hard disk or solid state disk (SSD, see [Issue 119]({filename}/season10/issue119/issue119.md))).
 
 ## File fragmentation
 

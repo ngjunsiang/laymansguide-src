@@ -1,3 +1,11 @@
+Title: Issue 89: Graph Databases
+Date: 2020-09-26 08:00
+Tags: 
+Category: Season 7
+Slug: lmg-s7-issue-89-graph-databases
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Document databases organise data into documents, each containing a number of field-value pairs. each value can itself be a document, and multiple values/documents can be grouped under a field. Document databases do not enforce data consistency across documents, so those rules need to be managed by the application which is using the database. This allows document databases to continue operating even when partitioned, at the cost of some consistency.
 
 In the past two issues, I laid out how relational databases primarily focus on the **relations** between tables, while document databases primarily focus on organising data into **documents**. I’ll look at one more application today.
@@ -19,7 +27,7 @@ Okay, stay with me here, I know you are thinking of a horizontal and a vertical 
 
 That’s what I’m talking about. And it looks like this:
 
-![Wikipedia multilingual network graph, showing circles representing languages, and arrows between pairs of circles, representing editors who edited both languages.](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season7/issue089/issue089_01.png)<br />
+![Wikipedia multilingual network graph, showing circles representing languages, and arrows between pairs of circles, representing editors who edited both languages.]({attach}/season7/issue089/issue089_01.png)<br />
 <small>This network graph shows the co-editing patterns on Wikipedia. The size of the arrows indicate the number of Wikipedia editors for one language edition of Wikipedia, who also edited another language edition.<br />Source: [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Wikipedia_multilingual_network_graph_July_2013.svg)</small>
 
 Okay, phew.

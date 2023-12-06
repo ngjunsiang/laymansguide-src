@@ -1,3 +1,11 @@
+Title: Issue 8: HTTP error codes—How does a server let the client know if there’s something wrong with their HTTP request?
+Date: 2019-02-02 08:00
+Tags: 
+Category: Season 1
+Slug: lmg-issue-8-http-error-codeshow-does-a-server-let
+Author: J S Ng
+Summary: 
+
 Last issue, I said that HTTP is a set of rules for sending and receiving documents that link to other documents. According to those rules, if you want a webpage, you (the client) must send a (HTTP) request to a server, which will return a response.
 
 I almost forgot one of my rules here, that it is just as important to know *why* you should do something as to know how to do it. All I need right now is to craft an HTTP request to get my data from Hypothes.is. In fact, HTTP requests and responses form the backbone of everything we do on the internet. Knowing what I know about them, I want to go a little in depth (just one issue, I promise), so that later some of the things I say about internet security will make a little more sense.
@@ -9,7 +17,7 @@ Last thing before the dive: A request or response typically has two parts: a **h
 We'll get to looking at what kind of data goes out in the HTTP request next issue. Right now, the HTTP response is simpler and easier to talk about. This is what an HTTP response from the Hypothes.is API ([Issue 4](https://buttondown.email/laymansguide/archive/fe8b59fc-c5fd-49f2-9d01-9f21fa3df95c)) looks like:
 
 
-![An HTTP response header from Hypothes.is](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season1/issue008/issue008_01.png)
+![An HTTP response header from Hypothes.is]({attach}/season1/issue008/issue008_01.png)
 <small>The response header from Hypothes.is </small>
 
 
@@ -63,7 +71,7 @@ Status codes are always three digits. The first digit tells you the category of 
 `504` is the worst: you’ve waited until the request timed out and didn’t get a response. (the lights are on but nobody’s home …)
 
 
-![An HTTP response header from Hypothes.is](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season1/issue008/issue008_02.png)
+![An HTTP response header from Hypothes.is]({attach}/season1/issue008/issue008_02.png)
 <small>A 404 response header from Hypothes.is </small>
 
 

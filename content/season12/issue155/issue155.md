@@ -1,3 +1,11 @@
+Title: Issue 155: Emulation performance
+Date: 2022-01-15 08:00
+Tags: 
+Category: Season 12
+Slug: lmg-s12-issue-155-emulation-performance
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Programs that were not compiled for the instruction set of the host OS have to go through an emulation layer program. This program translates the instructions of that program into compatible instructions that its own processor can execute.
 
 > The Apple M1 is an ARM processor that executes 64-bit ARM instructions. MacOS programs that were compiled for Intel 64-bit x86-64 processors go through the Apple Rosetta 2 emulation layer to run on the M1.

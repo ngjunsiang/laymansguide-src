@@ -1,3 +1,11 @@
+Title: Issue 133: the ATX form factor (post-1995)
+Date: 2021-08-14 08:00
+Tags: 
+Category: Season 11
+Slug: lmg-s11-issue-133-the-atx-form-factor-post-1995
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Chipsets served as go-betweens in the AT form factor by IBM.
 
 In 1993, Intel launched its Pentium line of processors; barely two years later, in 1995, Intel launched the ATX form factor. This was the beginning of Intel’s dominance in the desktop space, and they could well afford to dictate most of the standards for this form factor.
@@ -8,7 +16,7 @@ Mainboards at this point were complicated enough that as part of the marketing, 
 
 This is the chipset diagram of a typical mainboard for the Pentium 4:
 
-![Chipset diagram of a mainboard for the Pentium 4](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue133/issue133_02.jpg)<br />
+![Chipset diagram of a mainboard for the Pentium 4]({attach}/season11/issue133/issue133_02.jpg)<br />
 <small>I tried to find a chipset diagram that used human terms instead of acronyms.<br />This is the best I could do. Annotations my own.<br />Source: [Hexus](https://www.hexus.net/tech/reviews/mainboard/635-sis655fx-dual-channel-p4-chipset/?page=2)</small>
 
 The **memory controller hub** (MCH) now takes on a much bigger role; it is managing data transfer between the CPU, graphics card, computer memory, *and* the PCH.
@@ -19,10 +27,10 @@ The **peripheral controller hub** (PCH), while managing connections to many more
 
 And this is where the components are found on the motherboard:
 
-![A mainboard for the Pentium 4](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season11/issue133/issue133_01.jpg)<br />
+![A mainboard for the Pentium 4]({attach}/season11/issue133/issue133_01.jpg)<br />
 <small>A motherboard for the Pentium 4, with key components outlined.<br />Annotations are my own.</small>
 
-The CPU clearly draws the most power and produces the most heat here. But notice now that the MCH is no longer bare; it now produces so much heat ([4–10 W](https://hexus.net/tech/news/mainboard/132515-der8auer-examines-amd-x570-chipset-power-consumption/)) that it needs to be passively cooled with a heatsink ([Issue 129](https://buttondown.email/laymansguide/archive/lmg-s10-issue-129-cooling/)). the PCH, on the other hand, is still chill enough to get by bare naked (4 W or less).
+The CPU clearly draws the most power and produces the most heat here. But notice now that the MCH is no longer bare; it now produces so much heat ([4–10 W](https://hexus.net/tech/news/mainboard/132515-der8auer-examines-amd-x570-chipset-power-consumption/)) that it needs to be passively cooled with a heatsink ([Issue 129]({filename}/season10/issue129/issue129.md))). the PCH, on the other hand, is still chill enough to get by bare naked (4 W or less).
 
 3D graphics at this point is a rapidly growing industry, especially for videogames. Graphics cards needed much more throughput to the CPU and memory, so the MCH grew to fit into this role as the mediator between these throughput-hungry components
 

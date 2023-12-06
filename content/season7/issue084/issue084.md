@@ -1,20 +1,28 @@
+Title: Issue 84: JOIN – supercharged VLOOKUP
+Date: 2020-08-22 08:00
+Tags: 
+Category: Season 7
+Slug: lmg-s7-issue-84-join-supercharged-vlookup
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Structured Query Language (SQL) is a computer language for managing data in databases. It has keywords and keyphrases that let you filter rows and columns, group and order data, perform basic arithmetic on data, and more. It is complex and powerful, but astute and efficient use requires specialised training.
 
 ## VLOOKUP: The bread-and-butter of spreadsheets
 
 If I have a `Customer` data table that looks like this:
 
-![Screenshot of a Customer data table, with custID, custName, custEmail, and custContact columns.](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season7/issue084/issue084_01.png)
+![Screenshot of a Customer data table, with custID, custName, custEmail, and custContact columns.]({attach}/season7/issue084/issue084_01.png)
 
 And a `Sales` data table that looks like this:
 
-![Screenshot of a Sales data table, with salesID, orderDate, and custID columns.](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season7/issue084/issue084_02.png)
+![Screenshot of a Sales data table, with salesID, orderDate, and custID columns.]({attach}/season7/issue084/issue084_02.png)
 
 I could add a `custName` column to the sales table that *looks up* the `custID`, and inserts the `custName` info from the same row. This feature of spreadsheets is known as **VLOOKUP** (vertical lookup)[^1]. This is what the formula for each cell in `custName` would look like:
 
 [^1]: There is an equivalent feature for columns known as HLOOKUP (horizontal lookup) that looks up info in a row and inserts data from the same column, but it is not as popular. So the VLOOKUP name is more commonly used for this kind of operation.
 
-![Screenshot of a Sales data table, with salesID, orderDate, and custID columns.](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season7/issue084/issue084_03.png)
+![Screenshot of a Sales data table, with salesID, orderDate, and custID columns.]({attach}/season7/issue084/issue084_03.png)
 
 Let’s break down each part of that formula:
 
@@ -37,7 +45,7 @@ JOIN Customer ON Sales.custID = Customer.custID
 
 Here, `Sales.custID` refers to the `custID` of the `Sales` table, while `Customer.custID` refers to the `custID` of the `Customer` table. This query effectively says “select the `salesID`, `orderDate`, and `custID` columns from `Sales` table, and add data from the `Customer` table where the `custID` column matches”. This will return:
 
-![Screenshot of an INNER JOIN operation between the Sales and Customer data tables, merged using custID values.](https://raw.githubusercontent.com/ngjunsiang/laymansguide/release/season7/issue084/issue084_04.png)
+![Screenshot of an INNER JOIN operation between the Sales and Customer data tables, merged using custID values.]({attach}/season7/issue084/issue084_04.png)
 
 That is much easier—once you’ve been trained in SQL syntax—than writing separate VLOOKUP formulas for each column you want, and having to maintain a whole table of formulas!
 

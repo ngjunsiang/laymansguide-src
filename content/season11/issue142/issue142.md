@@ -1,10 +1,18 @@
+Title: Issue 142: Implications (Part 1) - Software
+Date: 2021-10-16 08:00
+Tags: 
+Category: Season 11
+Slug: lmg-s11-issue-142-implications-part-1-software
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The Apple A14 and Apple M1 are essentially the same chip architecture: they use almost the same building blocks, just with different numbers of them. On top of that, the Apple M1 implements unified memory, allowing the CPU and GPU (and other SoC components) to share the same system memory, greatly facilitating intra-chip communication.
 
-So, before 2020: smartphones are smartphones, laptops are laptops. They use different types of CPUs with different architectures ([Issue 141](https://buttondown.email/laymansguide/archive/lmg-s11-issue-141-the-apple-a14-and-m1/)) and even different instruction sets ([Issue 53](https://buttondown.email/laymansguide/archive/lmg-s5-issue-53-the-cpu-is-an-instruction-obeying/)). Never the twain shall meet.
+So, before 2020: smartphones are smartphones, laptops are laptops. They use different types of CPUs with different architectures ([Issue 141]({filename}/season11/issue141/issue141.md))) and even different instruction sets ([Issue 53]({filename}/season5/issue053/issue053.md))). Never the twain shall meet.
 
 After 2020: It turns out that smartphone chips can be upgraded and used in laptops, while remaining essentially the same architecture? Its power consumption dial can be turned down to almost zero but also turned all the way up?
 
-That opens up the possibility that smartphones and laptops can run on the same hardware, and there’s nothing technically stopping apps compiled ([Issue 54](https://buttondown.email/laymansguide/archive/lmg-s5-issue-54-compiling-programming-code-into/)) for that instruction set to run on both![^1]
+That opens up the possibility that smartphones and laptops can run on the same hardware, and there’s nothing technically stopping apps compiled ([Issue 54]({filename}/season5/issue054/issue054.md))) for that instruction set to run on both![^1]
 
 [^1]: Nothing, that is, besides all the software workarounds that will need to be written ...
 

@@ -1,3 +1,11 @@
+Title: Issue 157: NTP and time-syncing
+Date: 2022-01-29 08:00
+Tags: 
+Category: Season 13
+Slug: lmg-s13-issue-157-ntp-and-time-syncing
+Author: J S Ng
+Summary: 
+
 [**Previously:**](https://buttondown.email/laymansguide/archive/) To speed up execution and avoid translation overhead, some systems employ ahead-of-time translation, storing the translated instructions to be executed in future. But many systems employ a mix of just-in-time (JIT) and ahead-of-time (AOT) techniques.
 
 This season, I’ll attempt to plug the gaps in the layperson’s working knowledge of Internet-related services. Time, location, wifi and mobile data ... almost all will be covered this season!
@@ -6,7 +14,7 @@ This season, I’ll attempt to plug the gaps in the layperson’s working knowle
 
 Frequent fliers would no doubt be familiar with the existence of timezones: geographical bands stretching from the North to South pole, within which all locations are assumed to be running on the same regional time. These timezones used to be manually synchronised, by phone or telegram, via operators all over the globe.
 
-Today, [timezone information](https://en.wikipedia.org/wiki/Tz_database) and other time information required for global coordination are maintained by the [Internet Corporation for Assigned Names and Numbers](https://en.wikipedia.org/wiki/ICANN) (ICANN), which also maintains other lists of names and numbers owned by the [Internet Assigned Numbers Authority](https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority), which we first met back in [Issue 27](https://buttondown.email/laymansguide/archive/lmg-s3-issue-27-what-is-an-ip-address/). These lists are used by programmers worldwide when writing programs that require time coordination.
+Today, [timezone information](https://en.wikipedia.org/wiki/Tz_database) and other time information required for global coordination are maintained by the [Internet Corporation for Assigned Names and Numbers](https://en.wikipedia.org/wiki/ICANN) (ICANN), which also maintains other lists of names and numbers owned by the [Internet Assigned Numbers Authority](https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority), which we first met back in [Issue 27]({filename}/season3/issue027/issue027.md)). These lists are used by programmers worldwide when writing programs that require time coordination.
 
 ## Time synchronisation
 
