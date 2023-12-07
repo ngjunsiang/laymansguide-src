@@ -20,7 +20,7 @@ If your impression of “social reading” brings to mind Facebook, Twitter and 
 
 Readmill was shaped primarily around that. The first thing it brought was a permalink to each highlight you made. A permalink is short for a “permanent link”, a bit of text that you can send to someone, paste into the address bar of a web browser, and be taken to a webpage that you want them to see.
 
-![Screenshot of a Readmill highlight page](https://github.com/ngjunsiang/laymansguide/blob/release/season1/issue001/issue001_01.jpg?raw=true)
+![Screenshot of a Readmill highlight page]({attach}/season1/issue001/issue001_01.jpg)
 <small>A Readmill highlight on the Readmill webpage (with a permalink)</small>
 
 These highlights (optionally) appeared in-location in the mobile apps. You could choose to have them off, for focused reading, or to have them on, for the serendipitous experience of meeting someone else who has something to say about what you are reading.
