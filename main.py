@@ -1,6 +1,7 @@
 
 import csv
 import os
+import re
 
 
 class Article:
@@ -38,6 +39,18 @@ class Article:
             f.write("\n")
             f.write(self.content)
 
+def mkfig(match) -> str:
+    alt_text, img_url, caption = match
+    return f"""<figure>
+    ![{alt_text}]({img_url})
+    <figcaption>{caption}</figcaption>    
+</figure>"""
+    
+
+
+re_fig = re.compile(r"\!\[(.*?)\]\((.+?)\)\n*<small>(.*?)</small>")
+# re_fig = re.compile(r"\!")
+
 
 with open("metadata.csv") as f:
     issues = list(csv.DictReader(f))
@@ -49,5 +62,6 @@ for issue in issues:
     path = os.path.join("content", season, name, issue["file"])
     
     article = Article.from_file(path)
-    article.metadata["slug"] = name
-    article.to_file(path)
+    for match in re_fig.findall(article.content):
+        print(mkfig(match))
+    # article.to_file(path)

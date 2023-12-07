@@ -22,7 +22,7 @@ Software everywhere is full of bugs. They are like bacteria; you can kill them b
 In the early days of electromechanical computers, which carried out computation through a mix of electrical and mechanical parts, problems that arose during the computer’s operation were not always caused by wrong instructions sent to the computer. In 1946, operators of the Harvard Mark II encountered an error that was eventually traced to a moth trapped in a relay. Bug hunting then was literal; today it is figurative, but the term has stuck.
 
 
-![A dead moth taped to a page](https://github.com/ngjunsiang/laymansguide/blob/release/season2/issue024/issue024_04.jpg?raw=true)<br />
+![A dead moth taped to a page]({attach}/season2/issue024/issue024_04.jpg)<br />
 <small>A page from the Harvard Mark II electromechanical computer's log, featuring a dead moth that was removed from the device. [Source: Wikipedia](https://en.wikipedia.org/wiki/Software_bug)</small>
 
 

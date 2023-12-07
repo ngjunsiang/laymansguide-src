@@ -76,7 +76,7 @@ I get carried away easily explaining colour, and it took incredible discipline t
 
 **Next issue:** Image resolution
 
-![Meme: One does not simply resize an image](https://github.com/ngjunsiang/laymansguide/blob/release/season4/issue043/issue043_03.jpg?raw=true)
+![Meme: One does not simply resize an image]({attach}/season4/issue043/issue043_03.jpg)
 
 After examining a single pixel, I’ll look at a whole image: what does it take to trick our brains into seeing an image instead of a collection of pixels?
 

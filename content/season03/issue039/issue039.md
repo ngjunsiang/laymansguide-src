@@ -21,7 +21,7 @@ Computers use the same trick, and it is called **caching**. Any information it n
 When you load a webpage or service and send requests to it, the first thing that happens is the DNS query. Once your OS knows the IP address to send requests to, it doesn’t make sense for it to keep querying the hostname, does it? IP addresses don’t change that quickly! The computer stores the hostnames and associated IP addresses in the DNS cache. You can view the DNS cache on a Windows PC by opening Command Prompt and typing `ipconfig /displaydns`.
 
 
-![The DNS cache](https://github.com/ngjunsiang/laymansguide/blob/release/season3/issue039/issue039_01.jpg?raw=true)<br />
+![The DNS cache]({attach}/season3/issue039/issue039_01.jpg)<br />
 <small>The output of `ipconfig /displaydns`<br />
 (I used Powershell instead of Command Prompt,
 but it will look the same in Command Prompt.)</small>

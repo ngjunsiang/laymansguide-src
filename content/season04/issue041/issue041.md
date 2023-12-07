@@ -19,7 +19,7 @@ To put things in some context, keep in mind that ASCII actually predates the int
 
 In the 1920s, the Murray code was developed into the International Telegraph Alphabet No. 2 code (ITA2 code). Behold:
 
-![ITA2 table](https://github.com/ngjunsiang/laymansguide/blob/release/season4/issue041/issue041_01.jpg?raw=true)<br />
+![ITA2 table]({attach}/season4/issue041/issue041_01.jpg)<br />
 <small>Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:International_Telegraph_Alphabet_2.jpg)</small>
 
 But the Murray code actually used more bits to transmit the same information! In Morse code, every letter is represented with between 1 to 5 symbols. Each symbol is either a dash or a dot:
@@ -40,7 +40,7 @@ Symbols and spaces are easy enough to understand, and very welcome; if you’ve 
 
 With the advent of the typewriter, people had access to nicely formatted text. You could type text on multiple rows instead of one long row! But you had to remember to do the actions when using a typewriter for it to be formatted properly.
 
-![A typewriter on a table](https://github.com/ngjunsiang/laymansguide/blob/release/season4/issue041/issue041_03.jpg?raw=true)<br />
+![A typewriter on a table]({attach}/season4/issue041/issue041_03.jpg)<br />
 <small>The Underwood Five typewriter<br />
 Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Underwoodfive.jpg)</small>
 
