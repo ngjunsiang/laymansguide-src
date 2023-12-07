@@ -5,7 +5,7 @@ Category: Season 5
 Slug: issue058
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2020-02-01 08:00
 
 **Previously:** The CPU stores data for ready access in the CPU cache. Accessing data from the CPU cache is much faster than accessing data from main memory. When the CPU needs data from a memory address, it looks in the cache first. If the data is not there (a **cache miss**), it will load the data from the memory address, and store a copy in the cache for faster reference in future. The CPU cache is managed by the CPU and is invisible to the OS. Programs that need to ensure the data in the cache is “fresh” can perform a cache flush and reload.
 
@@ -19,7 +19,7 @@ A CPU core is comprised of 3 types of execution units:
 
 - **A**rithmetic **L**ogic **U**nit (**ALU**): THE ALU is responsible for carrying out integer calculations
 - **F**loating **P**oint **U**nit (**FPU**): The FPU is responsible for carrying out decimal calculations
-- **L**oad/**S**tore **U**nit (**LSU**): The LSU is responsible for loading data from memory into the CPU, or storing data from the CPU into memory ([Issue 55]({filename}/season5/issue055/issue055.md)))
+- **L**oad/**S**tore **U**nit (**LSU**): The LSU is responsible for loading data from memory into the CPU, or storing data from the CPU into memory ([Issue 55]({filename}/season05/issue055/issue055.md)))
 
 An instruction decoding unit in the CPU decodes each instruction and sends it to the appropriate execution unit. All these units can work at the same time, and for maximum performance this is what you want to happen.
 
@@ -33,7 +33,7 @@ Keeping all the execution units busy is getting more complex now, eh?
 
 ## Minimising wait time in a CPU
 
-Let’s revisit the instructions from [Issue 53]({filename}/season5/issue053/issue053.md)):
+Let’s revisit the instructions from [Issue 53]({filename}/season05/issue053/issue053.md)):
 
 ```
 1 LOAD 1   R1

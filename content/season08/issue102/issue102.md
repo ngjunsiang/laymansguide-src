@@ -5,7 +5,7 @@ Category: Season 8
 Slug: issue102
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-01-09 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) An app crashes when it encounters a situation it can’t handle, or when it attempts to perform an operation that is disallowed by the operating system.
 
@@ -27,7 +27,7 @@ Some of us really hate math, but not computers! The math is hardly ever what cau
 
 Like in the workplace, it is often other ~~people~~ devices.
 
-When an app (running in a thread) tries to open a file to read data from it, the operating system has to look up the virtual memory  address ([Issue 55]({filename}/season5/issue055/issue055.md))), follow it to the hard disk or solid state disk, and then wait for the disk to respond with the data.
+When an app (running in a thread) tries to open a file to read data from it, the operating system has to look up the virtual memory  address ([Issue 55]({filename}/season05/issue055/issue055.md))), follow it to the hard disk or solid state disk, and then wait for the disk to respond with the data.
 
 And in that moment, *lots* of things can go wrong.
 

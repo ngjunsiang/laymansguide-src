@@ -5,7 +5,7 @@ Category: Season 7
 Slug: issue091
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2020-10-11 11:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A URI (Uniform Resource Identifier) is required to connect to a database. This URI can be provided by a hosting service provider that runs your own database for you, or by a cloud service provider that runs your database on their platform.
 
@@ -43,7 +43,7 @@ The best thing about these cloud services is that you probably don’t need to l
 
 **Next issue:** [LMG S8] Issue 92: All about apps
 
-I’ve spent a whole season talking about data ([Season 4, Issue 40]({filename}/season4/issue040/issue040.md)) to [Issue 52]({filename}/season4/issue052/issue052.md))), then detoured to talking about computers, and the internet, and now back to databases. I think that’s plenty of foundation to finally move on to something more familiar: apps.
+I’ve spent a whole season talking about data ([Season 4, Issue 40]({filename}/season04/issue040/issue040.md)) to [Issue 52]({filename}/season04/issue052/issue052.md))), then detoured to talking about computers, and the internet, and now back to databases. I think that’s plenty of foundation to finally move on to something more familiar: apps.
 
 What exactly are apps and what do they do? What are they like under the surface? What makes them tick?
 

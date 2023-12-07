@@ -5,7 +5,7 @@ Category: Season 7
 Slug: issue090
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2020-10-03 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Graph databases treat the details of things as secondary, and optimise for managing the network of relationships. A graph database can quickly look up how things are related to each other, and return the results.
 
@@ -33,7 +33,7 @@ If your company has decided to do away with organic IT support, your next bet is
 
 **Graph databases**
 - Amazon Neptune
-- Microsoft Azure Cosmos also has an API ([Issue 4]({filename}/season1/issue004/issue004.md))) for graph databases
+- Microsoft Azure Cosmos also has an API ([Issue 4]({filename}/season01/issue004/issue004.md))) for graph databases
 
 ## Getting the database identifier
 
@@ -41,7 +41,7 @@ After you have successfully registered a database (of any type), you will be giv
 
 `mongodb://mongodb0.example.com:27017`
 
-which identifies your database as a `mongodb` (document) database running on the server at `mongodb0.example.com` on port `27017`. (I covered server hostnames in [Issue 29]({filename}/season3/issue029/issue029.md)) and port numbers in [Issue 33]({filename}/season3/issue033/issue033.md))).
+which identifies your database as a `mongodb` (document) database running on the server at `mongodb0.example.com` on port `27017`. (I covered server hostnames in [Issue 29]({filename}/season03/issue029/issue029.md)) and port numbers in [Issue 33]({filename}/season03/issue033/issue033.md))).
 
 or it can look like:
 

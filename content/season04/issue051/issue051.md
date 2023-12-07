@@ -5,7 +5,7 @@ Category: Season 4
 Slug: issue051
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-12-14 08:00
 
 **Previously:** An HTML file contains markup tags that tell the browser how to interpret and format the text within the tags. Other document formats usually use tags in a similar way. These tags constitute a markup language that any app can use to mark up its own text too.
 
@@ -15,10 +15,12 @@ And then computers came along. But in the days of dot matrix printers, which pri
 
 ## The early days of publishing
 
-If you were working for a professional publisher, you formatted text by inserting **control codes** (including the formatting commands mentioned in [Issue 41]({filename}/season4/issue041/issue041.md))) using a special keyboard. But computers back then weren’t powerful enough to show you the effects of that formatting instantaneously. You would just see the formatting code on the display and have to imagine how it looks like in your head. Which is easy to do, after many years of experience.
+If you were working for a professional publisher, you formatted text by inserting **control codes** (including the formatting commands mentioned in [Issue 41]({filename}/season04/issue041/issue041.md))) using a special keyboard. But computers back then weren’t powerful enough to show you the effects of that formatting instantaneously. You would just see the formatting code on the display and have to imagine how it looks like in your head. Which is easy to do, after many years of experience.
 
-![Formatting codes revealed in WordPerfect 5.1]({attach}/season4/issue051/issue051_01.png)<br />
-<small>WordPerfect 5.1 (1986), with formatting codes revealed<br />From [Anthology](https://anthology.hypotheses.org/254)</small>
+<figure>
+    ![Formatting codes revealed in WordPerfect 5.1]({attach}/season04/issue051/issue051_01.png)
+    <figcaption>WordPerfect 5.1 (1986), with formatting codes revealed<br />From [Anthology](https://anthology.hypotheses.org/254)</figcaption>    
+</figure>
 
 And then desktop publishing software arrived on the scene in the mid-1980s, when Aldus released PageMaker. You could see *how the pages actually looked*! This feature was called What You See Is What You Get, or **WYSIWYG**. PageMaker was quickly overshadowed by QuarkXpress, which had extensions (whoa!), and Aldus languished and got bought over by Adobe in late 1994. Yup, *that* Adobe. And then Adobe released InDesign in 1999.
 

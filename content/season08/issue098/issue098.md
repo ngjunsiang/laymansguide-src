@@ -5,7 +5,7 @@ Category: Season 8
 Slug: issue098
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2020-12-12 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A laptop app can do practically anything, if it is running through the Administrator/root account. Sandboxing is carried out through permission control.
 
@@ -31,7 +31,7 @@ Webapps have no space for you to do that. You are just supposed to save them ont
 
 Most smartphones assume they are going to be used by a single user, and you just stash those files directly into phone storage. Not the best system, but it is what it is.
 
-Laptops are where it gets a bit more interesting. Most laptop operating systems (OSes) assume they might be used by multiple users, each on their own account (hence the login screen), and therefore allocate separate spaces where each user may keep their stuff, inaccessible to other users except Administrators ([Issue 97]({filename}/season8/issue097/issue097.md))).
+Laptops are where it gets a bit more interesting. Most laptop operating systems (OSes) assume they might be used by multiple users, each on their own account (hence the login screen), and therefore allocate separate spaces where each user may keep their stuff, inaccessible to other users except Administrators ([Issue 97]({filename}/season08/issue097/issue097.md))).
 
 On Windows, these users each have their own folder in `C:\Users\`; on MacOS, that’s in `/Users/`; on Linux, it’s typically `/home/`. (Don’t ask about the `\`s vs `/`s; its one of those things that’s just the way history happened and has no real technical reason behind it.)
 
@@ -39,7 +39,7 @@ On Windows, these users each have their own folder in `C:\Users\`; on MacOS, tha
 
 Of course, each app needs to have *its own space* to keep *its own files*, which allow it to do what it does.
 
-Webapps get their own folder somewhere in `C:\Users\[USERNAME]\AppData\Local\Google\Chrome\...`, they can only see what is in that folder, and they cannot see what is in the parent folder, or sibling folders. It’s sandboxing, again ([Issue 92]({filename}/season8/issue092/issue092.md)))!
+Webapps get their own folder somewhere in `C:\Users\[USERNAME]\AppData\Local\Google\Chrome\...`, they can only see what is in that folder, and they cannot see what is in the parent folder, or sibling folders. It’s sandboxing, again ([Issue 92]({filename}/season08/issue092/issue092.md)))!
 
 Mobile apps get stored into `/data/app` or some similar folder, and you’re not supposed to think too hard about where, because of \*handwaving\* *sandboxing*. The same idea applies: The app is not supposed to know, or be able to see, where other apps store their data! Eyes on the app’s own data only, and the user’s data (you did give it permission to access storage, right?), and any temporary data which it has created.
 

@@ -5,7 +5,7 @@ Category: Season 11
 Slug: issue141
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-10-09 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Shared memory is easier to implement when a company has control over the designs of both CPU and GPU.
 
@@ -39,11 +39,15 @@ Apple has managed to do just this with the Apple A14 and M1. They are, at heart,
 
 Let’s see:
 
-![Apple A14 hardware overview]({attach}/season11/issue141/issue141_01.jpg)<br />
-<small>The Apple A14’s key hardware.<br />Source: [Apparently an online Arabic image gallery site](https://www.electrony.net/350867/%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%84%D8%AC-apple-a14-bionic-%D9%82%D8%AF-%D9%8A%D9%88%D9%81%D8%B1-%D8%A3%D8%AF%D8%A7%D8%A1%D9%8B-%D9%85%D9%85%D8%A7%D8%AB%D9%84%D8%A7%D9%8B-%D9%84%D8%A3%D8%AF%D8%A7/apple-a14/) (I have no idea why this picture is so hard to find!)</small>
+<figure>
+    ![Apple A14 hardware overview]({attach}/season11/issue141/issue141_01.jpg)
+    <figcaption>The Apple A14’s key hardware.<br />Source: [Apparently an online Arabic image gallery site](https://www.electrony.net/350867/%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%84%D8%AC-apple-a14-bionic-%D9%82%D8%AF-%D9%8A%D9%88%D9%81%D8%B1-%D8%A3%D8%AF%D8%A7%D8%A1%D9%8B-%D9%85%D9%85%D8%A7%D8%AB%D9%84%D8%A7%D9%8B-%D9%84%D8%A3%D8%AF%D8%A7/apple-a14/) (I have no idea why this picture is so hard to find!)</figcaption>    
+</figure>
 
-![Apple M1 hardware overview]({attach}/season11/issue141/issue141_02.jpg)<br />
-<small>The Apple M1’s key hardware.<br />Source: [TechBuzzPro](https://www.techbuzzpro.com/apple-introduces-m1-5nm-octa-core-soc-for-the-mac.html)</small>
+<figure>
+    ![Apple M1 hardware overview]({attach}/season11/issue141/issue141_02.jpg)
+    <figcaption>The Apple M1’s key hardware.<br />Source: [TechBuzzPro](https://www.techbuzzpro.com/apple-introduces-m1-5nm-octa-core-soc-for-the-mac.html)</figcaption>    
+</figure>
 
 We can also compare these features via Wikipedia:
 

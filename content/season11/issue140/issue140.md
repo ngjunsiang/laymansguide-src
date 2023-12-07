@@ -5,7 +5,7 @@ Category: Season 11
 Slug: issue140
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-10-02 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Around 2015, the high-performance computer industry quickly realised that this would be much more efficient if the CPU and GPU could *share the same memory*. This idea was labelled heterogeneous systems architecture (HSA).
 
@@ -17,7 +17,7 @@ Circa 2009, changes were happening on the desktop motherboard, as the memory con
 
 Smartphones can’t afford to do that; every bit of mainboard space is precious! The Apple A-series processors have been gradually moving more and more memory into the CPU, where it enjoys lower latency communicating with the CPU.
 
-In 2013, Apple released the iPhone 5S, using the Apple A7 SoC. This was Apple’s first 64-bit SoC ([Issue 55]({filename}/season5/issue055/issue055.md))), and by this point Apple had managed to bring 1GB of memory onto the SoC package. By 2018, With the Apple A12 SoC, the on-board memory had increased up to 4GB on high-end iPhone X models.
+In 2013, Apple released the iPhone 5S, using the Apple A7 SoC. This was Apple’s first 64-bit SoC ([Issue 55]({filename}/season05/issue055/issue055.md))), and by this point Apple had managed to bring 1GB of memory onto the SoC package. By 2018, With the Apple A12 SoC, the on-board memory had increased up to 4GB on high-end iPhone X models.
 
 So in 2015, the high-performance folks (working with workstations and servers) were dreaming of the CPU and GPU sharing memory, while from 2013, in smartphones, the CPU, GPU, and system memory were already cohabiting in the same chip package! CPU, GPU, and memory all living in the same space … how does this work?
 
@@ -25,8 +25,10 @@ So in 2015, the high-performance folks (working with workstations and servers) w
 
 Remember this diagram?
 
-![Chipset diagram of ATX systems for Intel Core (i-Series)]({attach}/season11/issue134/issue134_02.gif)<br />
-<small>An Intel Core i-series ATX system chipset diagram.<br />The MCH is merged into the CPU, but still a discrete unit.<br />DDR refers to computer memory, while GDDR refers to graphics card memory ([Issue123]({filename}/season10/issue123/issue123.md)))<br />Source: [Ars](https://arstechnica.com/gadgets/2009/09/intel-launches-all-new-pc-architecture-with-core-i5i7-cpus/)</small>
+<figure>
+    ![Chipset diagram of ATX systems for Intel Core (i-Series)]({attach}/season11/issue134/issue134_02.gif)
+    <figcaption>An Intel Core i-series ATX system chipset diagram.<br />The MCH is merged into the CPU, but still a discrete unit.<br />DDR refers to computer memory, while GDDR refers to graphics card memory ([Issue123]({filename}/season10/issue123/issue123.md)))<br />Source: [Ars](https://arstechnica.com/gadgets/2009/09/intel-launches-all-new-pc-architecture-with-core-i5i7-cpus/)</figcaption>    
+</figure>
 
 Apple is pretty tight-lipped about the technical details of its products, but if the industry standard is anything to go by, the GPU will usually have its own memory, separate from the CPU.
 

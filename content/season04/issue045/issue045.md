@@ -5,7 +5,7 @@ Category: Season 4
 Slug: issue045
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-11-02 08:00
 
 **Previously:** An image’s resolution describes its dimensions. Its pixel resolution gives an indication of its physical size (if printed or displayed on a screen), and thus its sharpness. A display with imperceptibly small pixels is often referred to as a Retina display (Apple’s branding) or as a high-PPI display; this requires at least 220 PPI (pixels per inch) nominally. For an image to be printed sharply, it needs at least 300 DPI (dots per inch) on paper.
 
@@ -30,19 +30,21 @@ These vibrations can be produced by computers through speakers. The cones of a s
 If we plot the vibrations of air on a graph known as a waveform, they look something like this:
 
 
-![Audio waveform]({attach}/season4/issue045/issue045_01.png)
-<small>An audio waveform<br />Image by [Gordon Johnson](https://pixabay.com/users/GDJ-1086657/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1781570) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1781570).</small>
+<figure>
+    ![Audio waveform]({attach}/season04/issue045/issue045_01.png)
+    <figcaption>An audio waveform<br />Image by [Gordon Johnson](https://pixabay.com/users/GDJ-1086657/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1781570) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1781570).</figcaption>    
+</figure>
 
 
 This waveform is converted into numeric values through a process called **Pulse Code Modulation** (PCM). If you see the acronym PCM or LPCM in any audio-related file, this is likely what it is referring to.
 
 
-![Audio waveform]({attach}/season4/issue045/issue045_02.png)
+![Audio waveform]({attach}/season04/issue045/issue045_02.png)
 <small>Pulse code modulation to convert a waveform into numeric values<br />
 Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Pcm.svg).</small>
 
 
-These numeric values can then be stored digitally as bits ([Issue 40]({filename}/season4/issue040/issue040.md))).
+These numeric values can then be stored digitally as bits ([Issue 40]({filename}/season04/issue040/issue040.md))).
 
 ## How high do these values go? Of decibels and dB
 

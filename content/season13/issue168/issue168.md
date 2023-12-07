@@ -5,7 +5,7 @@ Category: Season 13
 Slug: issue168
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2022-04-16 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Fragmentation is likely a contributor of system slowdown, particularly for mobile devices: the database used by most mobile apps tend to store data in many small chunks rather than fewer big chunks, which slows down data search operations. The most effective measure for improving device responsiveness is usually to clear the app cache, so the app does not attempt to read previous data from storage.
 

@@ -5,7 +5,7 @@ Category: Season 7
 Slug: issue080
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2020-07-18 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Comma-separated value (CSV) files store all data in text form. Within each row, a separator divides each chunk of data, and rows are separated by a line delimiter. To keep the data compact and read it more quickly, we have to decide beforehand what *data type* each chunk should be, and how much space it is allowed to take up. Such a data form can no longer be opened in a simple text editor program like Notepad.
 
@@ -27,7 +27,7 @@ Why not do that here?
 
 To create an index, we would need to create another block of data. This data block would contain select pieces of data from our table for indexing—names, dates, or other select pieces of data from our table—along with the corresponding row number(s) where they are found.
 
-Yes, that would take up more space, but it would speed up the search immensely, and that is often a worthy tradeoff. This index would be stored together with the table in our database. When the database is opened, this index would be read into memory, because accessing memory is much faster than accessing physical storage ([Issue 57]({filename}/season5/issue057/issue057.md))). Our database would use it to look up the row number of the record containing the name we want, and retrieve it with the row number much more quickly than a row-by-row lookup could.
+Yes, that would take up more space, but it would speed up the search immensely, and that is often a worthy tradeoff. This index would be stored together with the table in our database. When the database is opened, this index would be read into memory, because accessing memory is much faster than accessing physical storage ([Issue 57]({filename}/season05/issue057/issue057.md))). Our database would use it to look up the row number of the record containing the name we want, and retrieve it with the row number much more quickly than a row-by-row lookup could.
 
 ## Tradeoffs
 

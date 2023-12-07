@@ -5,7 +5,7 @@ Category: Season 8
 Slug: issue100
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2020-12-26 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) MacOS, Linux, and other similar systems treat everything as a file, organised into appropriate subfolders.
 
@@ -14,7 +14,7 @@ Previous issue: Mac- and Linux-like systems. Since the key points are so short, 
 On Mac-like systems, the top-level folders are
 
 - an `/Applications` folder for apps
-- a `/Library` folder for shared files (see [Issue 17]({filename}/season2/issue017/issue017.md)), but on Mac this extends to things like sounds, profile pics, colors, ...)
+- a `/Library` folder for shared files (see [Issue 17]({filename}/season02/issue017/issue017.md)), but on Mac this extends to things like sounds, profile pics, colors, ...)
 - a `/System` folder for, well, you know what.
 - a `/Network` folder for accessing resources on the network (such as shared folders)
 - a `/Users` folder for accessing user folders and files
@@ -37,7 +37,7 @@ Unlike Mac-like systems, where all data comes in the form of a file, Windows sys
 - User files go into `C:\Users`
 - Other storage devices are auto-detected and assigned a drive letter, though not always consistently.
 
-[^1]: I really was hoping not to have to explain 32-bit vs 64-bit programs ever since [Issue 55]({filename}/season5/issue055/issue055.md)), so for now let’s just say 32-bit programs are for 32-bit CPUs and 64-bit programs are for 64-bit CPUs. Unfortunately many old 32-bit apps have not caught up with the times and converted themselves to 64-bit apps, so Windows has to do hacky stuff to make old 32-bit apps work on modern 64-bit CPUs.
+[^1]: I really was hoping not to have to explain 32-bit vs 64-bit programs ever since [Issue 55]({filename}/season05/issue055/issue055.md)), so for now let’s just say 32-bit programs are for 32-bit CPUs and 64-bit programs are for 64-bit CPUs. Unfortunately many old 32-bit apps have not caught up with the times and converted themselves to 64-bit apps, so Windows has to do hacky stuff to make old 32-bit apps work on modern 64-bit CPUs.
 
 And now we talk about settings.
 

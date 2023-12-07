@@ -5,7 +5,7 @@ Category: Season 9
 Slug: issue109
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-02-27 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Safe writes ensure that all the data is written to disk sectors properly first before updating the file table. The result is that write operations take a longer time to complete.
 
@@ -19,7 +19,7 @@ What usually happens is the goods will be offloaded onto some empty space **outs
 
 What is the OS equivalent of this? Hard disk writes are actually pretty slow; they can get up to 100 MB/s, but usually hit a sustained speed of 60 MB/s for system disks, and about 20 MB/s over USB. The operating system therefore sets up a “dumping space” in memory; files can be read from other disks at up to 200 MB/s, and written to memory at **a few GB/s**!
 
-This space is known as the **write cache**. (I’ve previously covered the idea of caches in Issues [39]({filename}/season3/issue039/issue039.md)) and [57]({filename}/season5/issue057/issue057.md)), and the write cache works on a similar idea.)
+This space is known as the **write cache**. (I’ve previously covered the idea of caches in Issues [39]({filename}/season03/issue039/issue039.md)) and [57]({filename}/season05/issue057/issue057.md)), and the write cache works on a similar idea.)
 
 ## Speeding up file access ... and its drawbacks
 

@@ -5,7 +5,7 @@ Category: Season 2
 Slug: issue021
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-05-04 08:00
 
 So far I have been describing things as though only one developer was working on a project. What happens when two developers are involved? Any kind of collaboration between people working on one thing usually leads to issues coordinating their efforts. How do developers manage this?
 

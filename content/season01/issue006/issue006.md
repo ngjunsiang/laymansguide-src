@@ -5,7 +5,7 @@ Category: Season 1
 Slug: issue006
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-01-19 08:00
 
 You ask it nicely, of course.
 

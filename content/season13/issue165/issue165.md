@@ -5,7 +5,7 @@ Category: Season 13
 Slug: issue165
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2022-03-26 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Linux software is distributed through Linux distros. The maintainers of distros maintain repositories of software that have been tested with the distro. Most users will access software in the distro’s repositories through a program called a package manager. So users have full control over when updates and new software should be installed.
 
@@ -15,7 +15,7 @@ Google search results have a number of things to say about why it happens:
 
 ## Programs starting up when booting
 
-This is primarily an issue when you are booting up your laptop ([Issue 112]({filename}/season9/issue112/issue112.md))) and logging in. Once you log in to your operating system (OS), your OS will run the startup programs (which you can disable), so if you are trying to use your laptop right after logging in, this may cause some slowdown.
+This is primarily an issue when you are booting up your laptop ([Issue 112]({filename}/season09/issue112/issue112.md))) and logging in. Once you log in to your operating system (OS), your OS will run the startup programs (which you can disable), so if you are trying to use your laptop right after logging in, this may cause some slowdown.
 
 If your laptop is still slow about 10 minutes after OS login, this is probably not the cause.
 

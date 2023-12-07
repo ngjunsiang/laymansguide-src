@@ -5,7 +5,7 @@ Category: Season 8
 Slug: issue103
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-01-16 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Applications are assigned a thread by the OS for running a sequence of instructions. The instructions are executed sequentially, and the app cannot proceed if it gets stuck on any instruction.
 
@@ -31,7 +31,7 @@ Another pattern is to split the job up into multiple parts, and have multiple th
 
 But this has its own ways of failing too.
 
-The threads have to coordinate their job status, and often do so by updating a common set of data. Thread 1 might request access to that data to update it. To ensure that the data doesn’t change before it is done, it will usually request a lock ([Issue 82]({filename}/season7/issue082/issue082.md))) on it, to prevent other threads from modifying it at the same time.
+The threads have to coordinate their job status, and often do so by updating a common set of data. Thread 1 might request access to that data to update it. To ensure that the data doesn’t change before it is done, it will usually request a lock ([Issue 82]({filename}/season07/issue082/issue082.md))) on it, to prevent other threads from modifying it at the same time.
 
 One way this can fail in practice is if two or more worker threads request a lock simultaneously. They both get a lock, because at the moment their requests are processed, nothing else has locked the resource. But now they can’t proceed to modify the data because it has been locked by another thread that isn’t them.
 

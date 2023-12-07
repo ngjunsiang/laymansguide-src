@@ -5,7 +5,7 @@ Category: Season 6
 Slug: issue070
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2020-05-02 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Cookies are little fragments of information with a name and a value, and associated with a domain address. They are most commonly used to identify new or returning users. This cookie is issued by a website upon the first visit, stored in the browser, and returned to the issuing server whenever the server requests it.
 
@@ -13,7 +13,7 @@ This issue is a short one, just to put one more piece in place. Last issue, I sa
 
 Let’s watch what is happening with Google DevTools:
 
-![Screenshot of DevTools in Vivaldi browser, with a request by analytics.js highlighted.]({attach}/season6/issue070/issue070_01.png)<br /><small>Chrome DevTools showing the (filtered) sequence of requests made by the webpage I loaded.<br />
+![Screenshot of DevTools in Vivaldi browser, with a request by analytics.js highlighted.]({attach}/season06/issue070/issue070_01.png)<br /><small>Chrome DevTools showing the (filtered) sequence of requests made by the webpage I loaded.<br />
 The request made by `analytics.js` (third-last line) is highlighted in gray. The Initiator column tells us this requested was initiated by `analytics.js` on line 25 of the script.</small>
 
 The full URL of the highlighted request is `http://www.google-analytics.com/collect?v=1&_v=j81&a=227860763&t=pageview&_s=1&dl=http%3A%2F%2Fwww.adopsinsider.com%2Fad-serving%2Fhow-does-ad-serving-work%2F&ul=en-us&de=UTF-8&dt=How%20Ad%20Serving%20Works&sd=24-bit&sr=3840x2160&vp=1319x1284&je=0&_u=QACAAAAB~&jid=&gjid=&cid=184706471.1584140066&tid=UA-13115681-1&_gid=1807773255.1584140066&gtm=2wg340NLT927&z=1600454420.`

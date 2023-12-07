@@ -5,7 +5,7 @@ Category: Season 6
 Slug: issue075
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2020-06-06 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Data companies use the data they have gathered to determine what ads to serve you when you visit sites that load their cookie-setting scripts. This data is sent from your browser via a document request, or via a tracking pixel request.
 
@@ -19,7 +19,7 @@ But today, that power has mostly leaked away, to ad exchanges. The ads on HuffPo
 
 ## The danger of advertising: cookie leakage
 
-In [Issue 71]({filename}/season6/issue071/issue071.md)), I mentioned that part of the value QuantCast brought to the table is that in exchange for letting them put a cookie on your site, they would also tell you more about your audience—far more than you could ever know collecting information on your own.
+In [Issue 71]({filename}/season06/issue071/issue071.md)), I mentioned that part of the value QuantCast brought to the table is that in exchange for letting them put a cookie on your site, they would also tell you more about your audience—far more than you could ever know collecting information on your own.
 
 But here’s the thing: it is very hard for a website’s publisher to know when an advertiser is setting a cookie. When an advertiser is allowed to put advertisements on a website, you are tacitly allowing them to put in a script that is **supposed** to request an ad from the ad server (after getting a winning bid from the ad exchange). This script could easily, at the same time, set a cookie and return cookie data along with that request.
 

@@ -5,7 +5,7 @@ Category: Season 5
 Slug: issue061
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2020-02-22 08:00
 
 **Previously:** Speculative execution is a feature that lets the CPU speed up execution if it correctly predicts a decision point. The CPU carries out the operations along the predicted decision branch and loads the results if it predicts correctly.
 
@@ -28,7 +28,7 @@ We’ll need to modify our approach slightly. We can’t store the leaked data d
 
 ## The cache “mirrors” a part of virtual memory
 
-A quick refresher on how the cache works ([Issue 57]({filename}/season5/issue057/issue057.md))):
+A quick refresher on how the cache works ([Issue 57]({filename}/season05/issue057/issue057.md))):
 
 1. When the CPU needs data from a memory address, it looks in the cache first.
 2. If the data is not there (a **cache miss**), it will load the data from the memory address, and store a copy in the cache for faster reference in future. [**SLOW**]

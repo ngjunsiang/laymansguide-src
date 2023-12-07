@@ -5,7 +5,7 @@ Category: Season 2
 Slug: issue017
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-04-06 08:00
 
 Welcome back! Last issue must have been exhausting to read, and I want this issue to be more readily digestible. So there’re only going to be two examples. Promise.
 

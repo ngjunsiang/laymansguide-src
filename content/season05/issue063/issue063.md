@@ -5,7 +5,7 @@ Category: Season 5
 Slug: issue063
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2020-03-07 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) To snoop the cache, we:
 

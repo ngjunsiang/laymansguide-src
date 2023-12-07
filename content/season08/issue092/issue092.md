@@ -5,7 +5,7 @@ Category: Season 8
 Slug: issue092
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2020-10-31 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Depending on what you need a database for, there may be online database platforms that can manage and automate much of the work for you. Airtable, Smartsheet, Knack, and Zoho Creator are just 4 of many options that offer an easier way to set up and input your data, then access them through apps or other means.
 
@@ -19,7 +19,7 @@ Before I answer that question, we need to talk about an important concept called
 
 An unrestrained app running in your operating system would have access to any and all resources on that machine. It could potentially modify or remove system files, halt running programs or accidentally overwrite their memory contents, and so on.
 
-[The operating system]([Issue 56]({filename}/season5/issue056/issue056.md))) takes some measures to minimise or prevent this. But even within these limits, a app developed with good intentions could still potentially cause trouble. It might accidentally hang on to audio access when it no longer needs it, make a mess of the user’s home folder, leave files in limbo, etc. Programs can leave a mess, and a way to limit this mess is very welcome.
+[The operating system]([Issue 56]({filename}/season05/issue056/issue056.md))) takes some measures to minimise or prevent this. But even within these limits, a app developed with good intentions could still potentially cause trouble. It might accidentally hang on to audio access when it no longer needs it, make a mess of the user’s home folder, leave files in limbo, etc. Programs can leave a mess, and a way to limit this mess is very welcome.
 
 This is why sandbox systems were already being researched as early as the 1970s, and are still an ongoing research interest at many institutions.
 

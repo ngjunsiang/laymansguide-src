@@ -5,11 +5,11 @@ Category: Season 9
 Slug: issue114
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-04-03 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) If you can’t get to a BIOS screen, it is likely a hardware problem and has to be solved by a technician. If you can’t get the the OS loading screen, it’s a bootloader problem and needs to be solved with more geekery. If something goes wrong with OS loading, and fails to fix itself on subsequent reboots, it’s probably time for a system refresh or reinstall.
 
-In [Issue 111]({filename}/season9/issue111/issue111.md)), I described the bootup process. These days, anything more complex than a calculator typically has an operating system (OS) running it. Your TV set-top box, your router, even your (high-end) printer and your car have an operating system running them these days!
+In [Issue 111]({filename}/season09/issue111/issue111.md)), I described the bootup process. These days, anything more complex than a calculator typically has an operating system (OS) running it. Your TV set-top box, your router, even your (high-end) printer and your car have an operating system running them these days!
 
 ## Embedded operating systems
 

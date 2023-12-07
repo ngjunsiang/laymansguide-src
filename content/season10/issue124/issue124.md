@@ -5,7 +5,7 @@ Category: Season 10
 Slug: issue124
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-06-12 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Graphics cards contain lots of tiny cores that are much better at performing the same calculation for lots of decimal numbers. These cores are organised into compute units; a graphics card with more compute units can perform more calculations every second. Graphics cards have their own onboard memory, separate from the CPU. GPU memory is different from computer memory; it is configured for much higher data throughput. Integrated graphics are GPUs that are integrated into a CPU chip; these do not have their own onboard memory, and share memory with the CPU.
 
@@ -61,7 +61,7 @@ The liquid crystal layer consisted of pixels of each primary colour. Each pixel 
 
 ## Digital signals
 
-CRTs controlled the voltage plates directly to deflect an electron beam, through an analog signal. But LCDs use an internal processor to determine what voltage to apply across each liquid crystal pixel. As the technology improved, lower voltages could be used to reduce power usage. So LCDs need a different kind of signal: a **digital** one, consisting of the *raw image data* ([Issue 43]({filename}/season4/issue043/issue043.md))).
+CRTs controlled the voltage plates directly to deflect an electron beam, through an analog signal. But LCDs use an internal processor to determine what voltage to apply across each liquid crystal pixel. As the technology improved, lower voltages could be used to reduce power usage. So LCDs need a different kind of signal: a **digital** one, consisting of the *raw image data* ([Issue 43]({filename}/season04/issue043/issue043.md))).
 
 ## The exodus to digital formats
 
@@ -69,13 +69,17 @@ As digital television became more feasible due to decreasing microprocessor and 
 
 An early competitor, Digital Visual Interface (**DVI**), was launched by a working group convened by some computer makers (Intel, Silicon Image, Compaq, Fujitsu, HP, IBM, NEC). It was very quickly superceded by High-Definition Multimedia Interface (**HDMI**), an interface which implemented standards set by consumer electronics companies (Hitachi, Sanyo, Silicon Image, Sony, Technicolor, Toshiba).
 
-![HDMI and mini-HDMI connectors displayed top-to-bottom]({attach}/season10/issue124/issue124_03.jpg)<br />
-<small>HDMI and mini-HDMI connectors displayed from top to bottom. Both support the HDMI video standard<br />Image via [DataPro](https://www.datapro.net/techinfo/hdmi_info.html)</small>
+<figure>
+    ![HDMI and mini-HDMI connectors displayed top-to-bottom]({attach}/season10/issue124/issue124_03.jpg)
+    <figcaption>HDMI and mini-HDMI connectors displayed from top to bottom. Both support the HDMI video standard<br />Image via [DataPro](https://www.datapro.net/techinfo/hdmi_info.html)</figcaption>    
+</figure>
 
 This was followed by the DisplayPort (**DP**) standard, developed by PC and chip manufacturers and standardised by VESA, and released in in 2006.
 
-![DisplayPort, mini-DisplayPort, and Thunderbolt Type-C connectors displayed side-by-side]({attach}/season10/issue124/issue124_04.jpg)<br />
-<small>DisplayPort, mini-DisplayPort, and Thunderbolt Type-C connectors displayed from left to right. All three support the DisplayPort video standard<br />Image via [DataPro](https://www.datapro.net/techinfo/displayport_info.html)</small>
+<figure>
+    ![DisplayPort, mini-DisplayPort, and Thunderbolt Type-C connectors displayed side-by-side]({attach}/season10/issue124/issue124_04.jpg)
+    <figcaption>DisplayPort, mini-DisplayPort, and Thunderbolt Type-C connectors displayed from left to right. All three support the DisplayPort video standard<br />Image via [DataPro](https://www.datapro.net/techinfo/displayport_info.html)</figcaption>    
+</figure>
 
 **Issue summary:** The VGA video format originated in the time of cathode-ray televisions (CRTs). It was superseded by HDMI, a video format standardised by consumer electronics companies. DisplayPort, on the other hand, is a video format standardised by computer display companies.
 

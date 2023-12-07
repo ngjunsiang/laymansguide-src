@@ -5,7 +5,7 @@ Category: Season 12
 Slug: issue151
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-12-18 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) System VMs provide a set of virtualised hardware that the OS interacts with. Process VMs provide a set of libraries that a program (written in that programming language) interacts with.
 

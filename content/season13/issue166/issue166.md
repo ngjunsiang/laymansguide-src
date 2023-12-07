@@ -5,7 +5,7 @@ Category: Season 13
 Slug: issue166
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2022-04-02 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) There are easy and quick ways to check the validity of the most common advice for resolving system slowdown. But it still seems to happen even after these tips have been tried.
 
@@ -15,7 +15,7 @@ So what is going on?
 
 ## Caches, caches, and more caches
 
-In [Issue 39]({filename}/season3/issue039/issue039.md)), I explained what caches are: places where you (temporarily) store the result of lookups, so you don’t have to keep performing the lookup again. In context, this referred to DNS lookups: operations that translate a domain name (such as `google.com`) to an IP address (such as `173.194.217.100`).
+In [Issue 39]({filename}/season03/issue039/issue039.md)), I explained what caches are: places where you (temporarily) store the result of lookups, so you don’t have to keep performing the lookup again. In context, this referred to DNS lookups: operations that translate a domain name (such as `google.com`) to an IP address (such as `173.194.217.100`).
 
 But caches are everywhere, not just in DNS.
 

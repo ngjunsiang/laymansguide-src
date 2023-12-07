@@ -5,7 +5,7 @@ Category: Season 4
 Slug: issue042
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-10-15 22:22
 
 Title: Issue 42: Unicode, computers go international
 Date: 2019-10-12 08:00
@@ -35,8 +35,10 @@ Common symbols: 30
 8 bits was enough to provide for a number of additional glyphs seen below. But very quickly it ran into limitations as well. 256 characters just aren’t enough!
 
 
-![ISO 8859-1](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Latin-1-infobox.svg/800px-Latin-1-infobox.svg.png)
-<small>The ISO 8859-1 characters</small>
+<figure>
+    ![ISO 8859-1](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Latin-1-infobox.svg/800px-Latin-1-infobox.svg.png)
+    <figcaption>The ISO 8859-1 characters</figcaption>    
+</figure>
 
 
 ## Encoding hell

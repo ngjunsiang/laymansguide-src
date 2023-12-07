@@ -5,7 +5,7 @@ Category: Season 5
 Slug: issue060
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2020-02-15 08:00
 
 **Previously:** A set of instructions can trick a CPU into reordering load instructions so that the data is temporarily loaded into the cache before the instructions are retired. The cache can then be snooped to retrieve the data.
 

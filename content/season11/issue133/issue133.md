@@ -5,7 +5,7 @@ Category: Season 11
 Slug: issue133
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-08-14 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Chipsets served as go-betweens in the AT form factor by IBM.
 
@@ -17,8 +17,10 @@ Mainboards at this point were complicated enough that as part of the marketing, 
 
 This is the chipset diagram of a typical mainboard for the Pentium 4:
 
-![Chipset diagram of a mainboard for the Pentium 4]({attach}/season11/issue133/issue133_02.jpg)<br />
-<small>I tried to find a chipset diagram that used human terms instead of acronyms.<br />This is the best I could do. Annotations my own.<br />Source: [Hexus](https://www.hexus.net/tech/reviews/mainboard/635-sis655fx-dual-channel-p4-chipset/?page=2)</small>
+<figure>
+    ![Chipset diagram of a mainboard for the Pentium 4]({attach}/season11/issue133/issue133_02.jpg)
+    <figcaption>I tried to find a chipset diagram that used human terms instead of acronyms.<br />This is the best I could do. Annotations my own.<br />Source: [Hexus](https://www.hexus.net/tech/reviews/mainboard/635-sis655fx-dual-channel-p4-chipset/?page=2)</figcaption>    
+</figure>
 
 The **memory controller hub** (MCH) now takes on a much bigger role; it is managing data transfer between the CPU, graphics card, computer memory, *and* the PCH.
 
@@ -28,8 +30,10 @@ The **peripheral controller hub** (PCH), while managing connections to many more
 
 And this is where the components are found on the motherboard:
 
-![A mainboard for the Pentium 4]({attach}/season11/issue133/issue133_01.jpg)<br />
-<small>A motherboard for the Pentium 4, with key components outlined.<br />Annotations are my own.</small>
+<figure>
+    ![A mainboard for the Pentium 4]({attach}/season11/issue133/issue133_01.jpg)
+    <figcaption>A motherboard for the Pentium 4, with key components outlined.<br />Annotations are my own.</figcaption>    
+</figure>
 
 The CPU clearly draws the most power and produces the most heat here. But notice now that the MCH is no longer bare; it now produces so much heat ([4–10 W](https://hexus.net/tech/news/mainboard/132515-der8auer-examines-amd-x570-chipset-power-consumption/)) that it needs to be passively cooled with a heatsink ([Issue 129]({filename}/season10/issue129/issue129.md))). the PCH, on the other hand, is still chill enough to get by bare naked (4 W or less).
 

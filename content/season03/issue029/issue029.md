@@ -5,13 +5,15 @@ Category: Season 3
 Slug: issue029
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-07-13 08:00
 
 Previously: An IP address is a string of four numbers that looks like 255.255.128.1. IP addresses are a list managed by the IANA, and all Internet registries agree to route data packets through their servers according to that list, so that you can send your data to anyone whose IP address you know. If you don't know their IP address, but you know their domain name, you can look up the domain name in a WHOIS database through a Domain Name Server to get their IP address.
 
 
-![Resolving host message in a Chrome browser]({attach}/season3/issue029/issue029_01.png)<br />
-<small>A really old screenshot of Chrome, showing the resolving host message. [Source: Webnots](https://www.webnots.com/what-is-resolving-host-or-domain-name/)</small>
+<figure>
+    ![Resolving host message in a Chrome browser]({attach}/season03/issue029/issue029_01.png)
+    <figcaption>A really old screenshot of Chrome, showing the resolving host message. [Source: Webnots](https://www.webnots.com/what-is-resolving-host-or-domain-name/)</figcaption>    
+</figure>
 
 
 I think it’s basically impossible to be living in the age of the Internet and not have encountered one of those absolutely annoying times when your web browser just seems to be stuck on “resolving host …” for what seems like *forever*. What *is* it doing? And what does resolving host mean?!
@@ -42,13 +44,15 @@ This someone, or rather something, is a Domain Name Service.
 ## DNS: Domain Name Service
 
 
-![Network connection properties window]({attach}/season3/issue029/issue029_02.png)<br />
-<small>Network connection properties, a window that one used to see very often when configuring a router. [Source: Help Desk Geek](https://helpdeskgeek.com/networking/change-ip-address-and-dns-servers-using-the-command-prompt/)</small>
+<figure>
+    ![Network connection properties window]({attach}/season03/issue029/issue029_02.png)
+    <figcaption>Network connection properties, a window that one used to see very often when configuring a router. [Source: Help Desk Geek](https://helpdeskgeek.com/networking/change-ip-address-and-dns-servers-using-the-command-prompt/)</figcaption>    
+</figure>
 
 
 In the days when you had to set up your router through a LAN cable connected to your internet-less laptop, this was a screen you would see regularly. You had to do this because you had to set your gateway address to point to the router’s default IP address in order to access its internal admin page.
 
-But I talked about gateways back in ([Issue 27]({filename}/season3/issue027/issue027.md))), so we’re here to talk about DNS servers instead.
+But I talked about gateways back in ([Issue 27]({filename}/season03/issue027/issue027.md))), so we’re here to talk about DNS servers instead.
 
 Just like other data request packets, the request to resolve a host (known as a **DNS query**) first goes to the gateway (usually your router). If it can’t be resolved there, it gets forwarded to the next gateway (your ISP), and it keeps getting forwarded until it reaches a server that is able to answer that query and return the long-desired IP Address (hey, a few seconds is already lifetime for an HTTP session!)
 

@@ -5,7 +5,7 @@ Category: Season 9
 Slug: issue108
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-02-20 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) When write operations are interrupted prematurely, filesystem corruption often results.
 

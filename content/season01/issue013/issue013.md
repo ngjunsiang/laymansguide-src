@@ -5,7 +5,7 @@ Category: Season 1
 Slug: issue013
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-03-09 08:00
 
 Last issue I compared HTTPS and HTTP, and explained why you should use HTTPS as far as possible to keep your data secure.
 
@@ -14,21 +14,27 @@ Last issue I compared HTTPS and HTTP, and explained why you should use HTTPS as 
 Most web browsers now indicate whether you are using HTTP or HTTPS in the address bar.
 
 
-![The difference between Chrome 67 and 68]({attach}/season1/issue013/issue013_01.png)
-<small>Since version 68, Google Chrome marks HTTP sites as insecure in the address bar</small>
+<figure>
+    ![The difference between Chrome 67 and 68]({attach}/season01/issue013/issue013_01.png)
+    <figcaption>Since version 68, Google Chrome marks HTTP sites as insecure in the address bar</figcaption>    
+</figure>
 
 
-![Firefox address bar: HTTP]({attach}/season1/issue013/issue013_02.png)<br/>
-![Firefox address bar: HTTPS]({attach}/season1/issue013/issue013_03.png)
-<small>Firefox uses a green lock icon in the address bar to indicate that you are using HTTPS to access the website</small>
+![Firefox address bar: HTTP]({attach}/season01/issue013/issue013_02.png)<br/>
+<figure>
+    ![Firefox address bar: HTTPS]({attach}/season01/issue013/issue013_03.png)
+    <figcaption>Firefox uses a green lock icon in the address bar to indicate that you are using HTTPS to access the website</figcaption>    
+</figure>
 
 I can’t possibly keep you updated on how every single browser informs you that you are using HTTPS instead of HTTP, so here’s a guideline instead: look for a lock icon, a green instead of red icon, or something that says “secure” and not “insecure”.
 
 If you are still not sure, click the green/lock icon for more information:
 
 
-![Firefox connection information dialog]({attach}/season1/issue013/issue013_04.png)
-<small>Firefox displays additional information when you click on the lock icon. Other browsers do this as well.</small>
+<figure>
+    ![Firefox connection information dialog]({attach}/season01/issue013/issue013_04.png)
+    <figcaption>Firefox displays additional information when you click on the lock icon. Other browsers do this as well.</figcaption>    
+</figure>
 
 
 ## How do I actually use HTTPS?

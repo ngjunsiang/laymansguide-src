@@ -5,7 +5,7 @@ Category: Season 4
 Slug: issue052
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-12-21 08:00
 
 **Previously:** PDF is the gold standard for universal compatibility (supported by most software and platforms) and visual fidelity (displays exactly the same way). When you need things to appear on a different device in exactly the same way you created it, without having to install additional software, use PDF.
 
@@ -35,7 +35,7 @@ d) Paint the glyphs for a string of characters at that position.
 e) End the text object.
 ```
 
-Remember when I showed you some markup languages in [Issue 50]({filename}/season4/issue050/issue050.md)? Here’s another one, but much more concise and much more specific: it lets you specify font and position for each string of characters. There are additional formatting codes for changing the colour, changing the text format to an outlined version, and making various other kinds of changes.
+Remember when I showed you some markup languages in [Issue 50]({filename}/season04/issue050/issue050.md)? Here’s another one, but much more concise and much more specific: it lets you specify font and position for each string of characters. There are additional formatting codes for changing the colour, changing the text format to an outlined version, and making various other kinds of changes.
 
 ## How PDF documents display this text
 

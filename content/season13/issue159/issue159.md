@@ -5,7 +5,7 @@ Category: Season 13
 Slug: issue159
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2022-02-12 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) To get your location using GPS, your phone requests information from four overhead GPS satellites: their location, and the distance between them and your phone. With this information, your phone can calculate its location.
 
@@ -45,7 +45,7 @@ Coincidentally, starting with time turned out to be a good idea: time informatio
 
 We have covered time and space (I mean, location). Let’s move on to data: how does data get around the world from a few central sources?
 
-Back in [Issue 73]({filename}/season6/issue073/issue073.md)), when I explained how online advertising works, I mentioned that advertising content is served from a content delivery network (CDN). What is this and how does it work?
+Back in [Issue 73]({filename}/season06/issue073/issue073.md)), when I explained how online advertising works, I mentioned that advertising content is served from a content delivery network (CDN). What is this and how does it work?
 
 **Sometime in the future:** What is:
 

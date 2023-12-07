@@ -5,7 +5,7 @@ Category: Season 12
 Slug: issue148
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-11-27 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Running a virtual machine is like running a physical machine, but within a window in your OS.
 

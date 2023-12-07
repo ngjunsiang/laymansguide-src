@@ -5,7 +5,7 @@ Category: Season 11
 Slug: issue139
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-09-25 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A system-on-chip (SoC) combines the core functionality of a system—processing, graphics, memory, and control—into a single chip package.
 
@@ -48,8 +48,10 @@ We save time, bandwidth, and resources without having to copy data between CPU a
 
 The industry gave this dream a name. They called it [heterogeneous system architecture (HSA)](https://en.wikipedia.org/wiki/Heterogeneous_System_Architecture), using a heterogeneous unified memory architecture (hUMA) i.e. shared memory.
 
-![Unified memory diagram from Nvidia]({attach}/season11/issue139/issue139_01.jpg)<br />
-<small>Nvidia’s heterogeneous unified memory architecture (HUMA) dream<br />Source: [WCCFtech](https://wccftech.com/intel-amd-nvidia-future-industry-hsa/2/)</small>
+<figure>
+    ![Unified memory diagram from Nvidia]({attach}/season11/issue139/issue139_01.jpg)
+    <figcaption>Nvidia’s heterogeneous unified memory architecture (HUMA) dream<br />Source: [WCCFtech](https://wccftech.com/intel-amd-nvidia-future-industry-hsa/2/)</figcaption>    
+</figure>
 
 It turns out that this is a pretty difficult task—consider the amount of bandwidth needed to support CPU *and* GPU access. Today no product from any company (besides Apple) fully implements this in its SoCs ([Issue 138]({filename}/season11/issue138/issue138.md))) yet.
 

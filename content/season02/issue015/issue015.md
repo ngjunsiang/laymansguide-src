@@ -5,7 +5,7 @@ Category: Season 2
 Slug: issue015
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-03-23 08:00
 
 If something’s not working correctly in your operating system, someone has to dig into the settings and configuration, figure out what’s wrong, and resolve the issue. If you have ever been in those shoes, you have been basically doing a sysadmin’s job. (Okay, put away those pitchforks you sysadmin purists and hear me out …)
 

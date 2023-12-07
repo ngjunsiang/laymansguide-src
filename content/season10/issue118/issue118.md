@@ -5,7 +5,7 @@ Category: Season 10
 Slug: issue118
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-05-01 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Operating systems use a page file on the storage disk as a complement to physical memory. This allows OSes to behave more performantly than they would if they did not have a page file. Data that is rarely accessed is moved to the pagefile (“paged out”), and can be paged in when it is needed later, albeit with a performance hit.
 
@@ -21,8 +21,10 @@ To write data, you pass a current through the electromagnet to magnetise the dom
 
 Put 3-5 platters together, attach the electromagnet to a moving arm (called the read arm), control the whole thing with some microchips, and you have a hard disk.
 
-![Open hard disk]({attach}/season10/issue118/issue118_01.gif)<br />
-<small>A picture of an opened hard disk, showing the read arms and magnetic platters</small>
+<figure>
+    ![Open hard disk]({attach}/season10/issue118/issue118_01.gif)
+    <figcaption>A picture of an opened hard disk, showing the read arms and magnetic platters</figcaption>    
+</figure>
 
 ## Characteristics of a hard disk
 
@@ -42,7 +44,7 @@ Reading from or writing to a domain involves:
 2. Moving the read arm to the correct position
 3. Measuring or inducing a current
 
-This means that each time the hard disk needs to access data from a different region of the disk, there is significant lag time (~5ms; see [Issue 57]({filename}/season5/issue057/issue057.md))). This is the time needed for all those movement described above. It is thus advantageous to try to put all the data you need in contiguous domains[^1], to minimise read arm movement.
+This means that each time the hard disk needs to access data from a different region of the disk, there is significant lag time (~5ms; see [Issue 57]({filename}/season05/issue057/issue057.md))). This is the time needed for all those movement described above. It is thus advantageous to try to put all the data you need in contiguous domains[^1], to minimise read arm movement.
 
 [^1]: This process is what millennials might remember as **defragmentation**, or defragging.
 

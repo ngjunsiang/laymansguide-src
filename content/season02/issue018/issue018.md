@@ -5,7 +5,7 @@ Category: Season 2
 Slug: issue018
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-04-13 08:00
 
 Last issue, I introduced libraries, which are basically magic spells. You call them, they do advanced magic in the background, and return magical results to your code. Or they simplify complicated code, wrapping them up into functions that are easy to call.
 

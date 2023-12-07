@@ -5,15 +5,15 @@ Category: Season 3
 Slug: issue034
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-08-17 08:00
 
 Previously: Data is encapsulated when it goes out from an app onto the internet as a request or response. First, in the TCP layer, the OS tags the request with the pre-assigned port number so that it can forward the response to the correct app later. Next, in the IP layer, the network card adds source and destination IP address information so that the data packet arrives at the correct destination server, and the destination server can send the response back to the correct computer. As the packet goes through the router, the router replaces the (source) private IP address assigned to the device by the router with the public IP address assigned to the router by the ISP.
 
 If the above summary of Issues 30–33 makes sense to you, you are probably ready to proceed :) If not, you might want to review those issues quickly through the links below:
 
-[Issue 30]({filename}/season3/issue030/issue030.md)): Private IP addresses  
-[Issue 32]({filename}/season3/issue032/issue032.md)): Sharing a public IP address: Network Address Traversal  
-[Issue 33]({filename}/season3/issue033/issue033.md)): Port numbers  
+[Issue 30]({filename}/season03/issue030/issue030.md)): Private IP addresses  
+[Issue 32]({filename}/season03/issue032/issue032.md)): Sharing a public IP address: Network Address Traversal  
+[Issue 33]({filename}/season03/issue033/issue033.md)): Port numbers  
 [Read the rest of the archives here.](https://buttondown.email/laymansguide/archive)
 
 Okay, now we understand how the open, unfettered internet of the 1990s worked. But we are still nowhere near understand the modern Internet until we understand how security is applied. Let’s look at one of the earliest features first.
@@ -34,7 +34,7 @@ At the next level, the TCP layer contains port information. A firewall can block
 
 ## Hostname filtering
 
-At higher levels of filtering (involving yet more processing power), the router might even block certain hostnames. Remember that the public IP address of the server is needed before a request can be sent, and this IP address is obtained through a DNS query ([Issue 29]({filename}/season3/issue029/issue029.md))). If a firewall intercepts and processes the DNS query and blocks the DNS query to resolve that hostname, the device never obtains the public IP address of the server and won’t be able to send the request.
+At higher levels of filtering (involving yet more processing power), the router might even block certain hostnames. Remember that the public IP address of the server is needed before a request can be sent, and this IP address is obtained through a DNS query ([Issue 29]({filename}/season03/issue029/issue029.md))). If a firewall intercepts and processes the DNS query and blocks the DNS query to resolve that hostname, the device never obtains the public IP address of the server and won’t be able to send the request.
 
 ## Advanced filtering
 

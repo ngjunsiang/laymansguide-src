@@ -5,7 +5,7 @@ Category: Season 7
 Slug: issue083
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2020-08-08 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A database system follows rules that enable multiple users to send commands to the database at the same time. The system attempts to execute each action one at a time, locking data that is in use by other users, and ensuring that each user does not carry out actions that they are not permitted to. Such systems are better able to prevent data corruption compared to a text-based system.
 

@@ -5,7 +5,7 @@ Category: Season 5
 Slug: issue062
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2020-03-03 17:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A cache miss is slow, and a cache hit is fast. This difference in cache reading speed can be used to transmit secrets out from the cache, which cannot be read directly by programs.
 
@@ -32,7 +32,7 @@ Address 138: 137 ns
 …  
 Address 256: 135 ns
 
-Can you tell what the secret number is? It’s the one with an *obviously lower* request latency. In this case, the other addresses didn’t have a copy of their data already in the cache, so they result in a cache miss ([Issue 57]({filename}/season5/issue057/issue057.md)))—the CPU has to go to main memory to read the data again, and that’s slow. Address 137 already had its data loaded before, and a copy of it was already in the cache, so loading it again results in a cache hit and is fast.
+Can you tell what the secret number is? It’s the one with an *obviously lower* request latency. In this case, the other addresses didn’t have a copy of their data already in the cache, so they result in a cache miss ([Issue 57]({filename}/season05/issue057/issue057.md)))—the CPU has to go to main memory to read the data again, and that’s slow. Address 137 already had its data loaded before, and a copy of it was already in the cache, so loading it again results in a cache hit and is fast.
 
 ## Treating memory addresses as data
 
@@ -52,7 +52,7 @@ The snooping program would then:
 
 3) Determine that memory address 137 has obviously lower request latency, and store the “transmitted” secret: “137”
 
-It’s a lot of work to get a single byte (256 possible values), but computers are good at doing lots of tedious work in a short amount of time. Using sample working code that exploits out-of-order execution ([Issue 58]({filename}/season5/issue058/issue058.md))) and speculative processing ([Issue 60]({filename}/season5/issue060/issue060.md))), coupled with a snooping program like the one we described above, the Meltdown and Spectre authors are able to leak data at a rate of about 580 KB/s, which seems slow. But there are 86,400 seconds in a day, so that’s roughly 43 GB/day at full exploit speed! (There are 4 videos of demonstration exploits near the bottom of the [Meltdown page](https://meltdownattack.com/).) Malicious actors would probably do it at a slower rate to keep it covert, but in the weeks or months it would take to notice something was amiss with the memory access operations, that’s a lot of data they can siphon off … .
+It’s a lot of work to get a single byte (256 possible values), but computers are good at doing lots of tedious work in a short amount of time. Using sample working code that exploits out-of-order execution ([Issue 58]({filename}/season05/issue058/issue058.md))) and speculative processing ([Issue 60]({filename}/season05/issue060/issue060.md))), coupled with a snooping program like the one we described above, the Meltdown and Spectre authors are able to leak data at a rate of about 580 KB/s, which seems slow. But there are 86,400 seconds in a day, so that’s roughly 43 GB/day at full exploit speed! (There are 4 videos of demonstration exploits near the bottom of the [Meltdown page](https://meltdownattack.com/).) Malicious actors would probably do it at a slower rate to keep it covert, but in the weeks or months it would take to notice something was amiss with the memory access operations, that’s a lot of data they can siphon off … .
 
 We’ve covered quite a bit of technical ground, so I’ll summarise.
 

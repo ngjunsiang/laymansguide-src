@@ -5,7 +5,7 @@ Category: Season 10
 Slug: issue125
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-06-19 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The VGA video format originated in the time of cathode-ray televisions (CRTs). It was superseded by HDMI, a video format standardised by consumer electronics companies. DisplayPort, on the other hand, is a video format standardised by computer display companies.
 
@@ -19,7 +19,7 @@ DisplayPort is a computer display standard, focused on computing needs. DisplayP
 
 ## Analog vs digital formats: a recap
 
-Digital formats differ from analog formats, because they do not carry the raw signal for the device. Instead, they carry information about the image, encoding the image data ([Issue 43]({filename}/season4/issue043/issue043.md))) into video form; after all, video is just a series of moving images! The device takes on the responsibility of figuring out how to make the images appear on-screen, which is why digital TVs require significantly more electronics than CRT TVs.
+Digital formats differ from analog formats, because they do not carry the raw signal for the device. Instead, they carry information about the image, encoding the image data ([Issue 43]({filename}/season04/issue043/issue043.md))) into video form; after all, video is just a series of moving images! The device takes on the responsibility of figuring out how to make the images appear on-screen, which is why digital TVs require significantly more electronics than CRT TVs.
 
 ## Analog to digital conversion
 

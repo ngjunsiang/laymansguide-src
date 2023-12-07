@@ -5,7 +5,7 @@ Category: Season 10
 Slug: issue130
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-07-24 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The larger the surface area, the faster an object loses heat. The larger the temperature difference between an object and its surroundings, the faster the object loses heat. Heat is bad for computers, and CPUs will need cooling to be able to process computations quickly. A mobile phone thus typically uses no more than 4 W of power, a laptop can use 25–45 W, and a desktop can usually use 65 W and more. Two popular ways of increasing the cooling capacity of a device is to attach a larger piece of metal to the chip (passive cooling), or use a fan to force air over the heatsink (active cooling).
 
@@ -42,13 +42,17 @@ Ughh, power bricks … so many different types, with different connectors, and w
 
 In a laptop, you really do not want the power supply dumping this heat *into the laptop*! The laptop already has enough work to do getting heat from the CPU out of that cramped space into the surroundings. You don’t want to give it more heat to remove, and risk throttling the CPU’s performance ([Issue 129]({filename}/season10/issue129/issue129.md))). It’s better that the AC converter/power brick remains external to the laptop, dumping that heat into the surroundings directly without heating up the laptop’s internal space.
 
-![An Apple power adapter, with the cover removed]({attach}/season10/issue130/issue130_01.jpg)<br />
-<small>The internals of the Apple AC converter (i.e. power adapter)<br />Source: [Ken Shiriff](http://www.righto.com/2015/11/macbook-charger-teardown-surprising.html)</small>
+<figure>
+    ![An Apple power adapter, with the cover removed]({attach}/season10/issue130/issue130_01.jpg)
+    <figcaption>The internals of the Apple AC converter (i.e. power adapter)<br />Source: [Ken Shiriff](http://www.righto.com/2015/11/macbook-charger-teardown-surprising.html)</figcaption>    
+</figure>
 
 In larger devices—the Mac Mini, game consoles (e.g. PS4 or Xbox One), and larger desktops, there’s plenty of space in the device’s internals, and they have sufficiently powerful cooling systems that can remove this heat. In desktops especially, the power supply may be large enough that it has its own cooling fan!
 
-![A desktop power supply, with the cover removed]({attach}/season10/issue130/issue130_02.jpg)<br />
-<small>The internals of a desktop power supply.<br />Notice the cooling fan mounted on the back with 4 silver screws, and the two silver heatsinks mounted vertically<br />Source: [Wikipedia](https://en.wikipedia.org/wiki/Power_supply_unit_(computer))</small>
+<figure>
+    ![A desktop power supply, with the cover removed]({attach}/season10/issue130/issue130_02.jpg)
+    <figcaption>The internals of a desktop power supply.<br />Notice the cooling fan mounted on the back with 4 silver screws, and the two silver heatsinks mounted vertically<br />Source: [Wikipedia](https://en.wikipedia.org/wiki/Power_supply_unit_(computer))</figcaption>    
+</figure>
 
 So for large devices, it makes sense to hide the power supply within the device for a sleeker look.
 

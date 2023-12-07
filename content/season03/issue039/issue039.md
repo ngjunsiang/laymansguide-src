@@ -5,7 +5,7 @@ Category: Season 3
 Slug: issue039
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-09-21 08:00
 
 **Previously:** When a webpage document loads (Stage 1), it is processed by the web browser, which then
 loads other requested resources, such as stylesheets, images, and scripts (Stage 2). Scripts and other interactive code may then request more resources (data fetches, images, icons, data, etc) which are then loaded subsequently (Stage 3, 4, 5, …).
@@ -21,7 +21,7 @@ Computers use the same trick, and it is called **caching**. Any information it n
 When you load a webpage or service and send requests to it, the first thing that happens is the DNS query. Once your OS knows the IP address to send requests to, it doesn’t make sense for it to keep querying the hostname, does it? IP addresses don’t change that quickly! The computer stores the hostnames and associated IP addresses in the DNS cache. You can view the DNS cache on a Windows PC by opening Command Prompt and typing `ipconfig /displaydns`.
 
 
-![The DNS cache]({attach}/season3/issue039/issue039_01.jpg)<br />
+![The DNS cache]({attach}/season03/issue039/issue039_01.jpg)<br />
 <small>The output of `ipconfig /displaydns`<br />
 (I used Powershell instead of Command Prompt,
 but it will look the same in Command Prompt.)</small>
@@ -37,15 +37,17 @@ When this happens, tech support will usually just flush the DNS cache to remove 
 
 Notice that the first time your web browser loads any page you haven’t visited before, it often takes quite a while, but subsequent loads are really fast? That’s because we now skip a DNS query (grabbing the IP address from the DNS cache instead). Each time we do a lookup to retrieve a file or piece of information from the server, we can skip the DNS query!
 
-The caching trick isn’t applied only to the IP address; many elements you see on the page have been cached: the document itself, images, scripts, stylesheets, … most of the elements from [Issue 38]({filename}/season3/issue038/issue038.md)) are cacheable, and the browser will cache it.
+The caching trick isn’t applied only to the IP address; many elements you see on the page have been cached: the document itself, images, scripts, stylesheets, … most of the elements from [Issue 38]({filename}/season03/issue038/issue038.md)) are cacheable, and the browser will cache it.
 
 How long does the browser cache these files? It depends ... I know it’s not an answer you like since it means more things to learn about, but I’ll keep it short.
 
-Remember this? It’s the response header we saw from [Issue 8]({filename}/season1/issue008/issue008.md)) on HTTP error codes:
+Remember this? It’s the response header we saw from [Issue 8]({filename}/season01/issue008/issue008.md)) on HTTP error codes:
 
 
-![HTTP response header]({attach}/season1/issue008/issue008_01.png)
-<small>A response header from Hypothes.is</small>
+<figure>
+    ![HTTP response header]({attach}/season01/issue008/issue008_01.png)
+    <figcaption>A response header from Hypothes.is</figcaption>    
+</figure>
 
 
 See the line that says `Cache-Control: no-cache`? That is the server, hypothes.is, asking my browser not to cache this response (because the next time it makes the same API request, the response might be different).

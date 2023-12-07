@@ -5,7 +5,7 @@ Category: Season 3
 Slug: issue037
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-09-07 08:00
 
 **Previously:** Latency is the time duration between a ping packet being sent out and its response being received. It is an indication of how far away a target server is.
 
@@ -13,7 +13,7 @@ Last issue, we saw that the latency for google.com's servers was almost 8× shor
 
 ## traceroute
 
-I use the commandline application ([Issue 15]({filename}/season2/issue015/issue015.md))) `traceroute` to display the entire route taken by the data packet. The commandline prompt in Linux usually starts with a `$`, so any text you see after a beginning `$` in the same line is the command I am using. Everything that follows is the output from the `traceroute` application. the `-T` option tells `traceroute` to use TCP packets to trace the path of our data packets.
+I use the commandline application ([Issue 15]({filename}/season02/issue015/issue015.md))) `traceroute` to display the entire route taken by the data packet. The commandline prompt in Linux usually starts with a `$`, so any text you see after a beginning `$` in the same line is the command I am using. Everything that follows is the output from the `traceroute` application. the `-T` option tells `traceroute` to use TCP packets to trace the path of our data packets.
 
 ```
 $ traceroute -T google.com
@@ -42,13 +42,15 @@ traceroute to google.com (74.125.24.138), 30 hops max, 60 byte packets
 Wall of numbers and text! Whoa, scary! It’s all right, I’ll throw that output into Google Sheets and prettify it a bit:
 
 
-![prettified traceroute output for google.com]({attach}/season3/issue037/issue037_01.png)<br />
-<small>The traceroute output for google.com, prettified</small>
+<figure>
+    ![prettified traceroute output for google.com]({attach}/season03/issue037/issue037_01.png)
+    <figcaption>The traceroute output for google.com, prettified</figcaption>    
+</figure>
 
 
 `traceroute` sends 3 TCP packets, tracing the path they take to the destination IP address. Each time the data packet gets forwarded to another gateway, it is considered a ‘hop’.
 
-`traceroute` also helps us do a **reverse DNS lookup**; a DNS query is when you want to find out the IP address associated with a hostname, a **reverse DNS lookup** helps you find out which hostname is associated with an IP address. IP addresses with successful reverse DNS lookups have the hostname shown for easier reading; those that didn’t will have only the IP address shown. Some servers are configured to block `traceroute` packets (done by the [firewall]({filename}/season3/issue034/issue034.md))), and thus return no information; these are represented by asterisks (`*`) in the output.
+`traceroute` also helps us do a **reverse DNS lookup**; a DNS query is when you want to find out the IP address associated with a hostname, a **reverse DNS lookup** helps you find out which hostname is associated with an IP address. IP addresses with successful reverse DNS lookups have the hostname shown for easier reading; those that didn’t will have only the IP address shown. Some servers are configured to block `traceroute` packets (done by the [firewall]({filename}/season03/issue034/issue034.md))), and thus return no information; these are represented by asterisks (`*`) in the output.
 
 As the data packets are sent from my router (`_gateway` in the output) to the first ISP gateway (`27.104.128.1`), they don’t always take the same path to the destination. Some of the internet servers along the path are programmed with algorithms that will send the data packets to a group of servers. This group of servers are configured to work together to share the packet-routing load. Two data packets sent through the same internet server may end up getting routed to different places along the route.
 
@@ -57,8 +59,10 @@ Notice that each hop has a latency associated with it. This is the time taken fo
 Let’s look the `traceroute` output for baidu.com:
 
 
-![prettified traceroute output for baidu.com]({attach}/season3/issue037/issue037_02.png)<br />
-<small>The traceroute output for baidu.com, prettified</small>
+<figure>
+    ![prettified traceroute output for baidu.com]({attach}/season03/issue037/issue037_02.png)
+    <figcaption>The traceroute output for baidu.com, prettified</figcaption>    
+</figure>
 
 
 Notice that:
@@ -68,7 +72,7 @@ Notice that:
 3. But they take longer, because some of the servers along the way have really high latency (almost 300 milliseconds; that’s slower than human reaction time)
 4. My ISP is M1, but sometimes the packets can go through other ISP servers as well.[^1] Hop 7 goes through Starhub’s internet servers.
 
-[^1]: Remember that internet servers are supposed to cooperate with each other and forward data packets properly according to Internet Protocol ([Issue 27]({filename}/season3/issue027/issue027.md))). That is how the Internet can continue running smoothly. If servers stop obeying this protocol, the Internet will no longer be a connected space, but will become segregated depending on which servers are willing to forward data packets to each other.<br/>
+[^1]: Remember that internet servers are supposed to cooperate with each other and forward data packets properly according to Internet Protocol ([Issue 27]({filename}/season03/issue027/issue027.md))). That is how the Internet can continue running smoothly. If servers stop obeying this protocol, the Internet will no longer be a connected space, but will become segregated depending on which servers are willing to forward data packets to each other.<br/>
 For instance, if China blocks some web services (Facebook, Twitter, et al), then packets from those services cannot be routed through China’s servers.
 
 -----

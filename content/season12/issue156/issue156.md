@@ -5,7 +5,7 @@ Category: Season 12
 Slug: issue156
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2022-01-22 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Translating a set of instructions before executing it will always lead to a slowdown, although sometimes this may not be noticeable to users.
 
@@ -33,7 +33,7 @@ Whenever your Android phone finishes installing an Android update, there is alwa
 
 ## Compilers vs interpreters
 
-Back in [Issue 54]({filename}/season5/issue054/issue054.md)), I mentioned in a footnote that
+Back in [Issue 54]({filename}/season05/issue054/issue054.md)), I mentioned in a footnote that
 
 > Purists will argue with me that Python technically runs through an interpreter, not a compiler. At this point, the distinction between the two terms for layfolks is not critical, and I choose clarity over accuracy at this point until I can delve into more detail in a future issue.
 

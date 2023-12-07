@@ -5,7 +5,7 @@ Category: Season 13
 Slug: issue164
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2022-03-19 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Software that we use usually comes from the OS makers, or from third-party developers. These two groups of developers are not the same, and might even have conflicting intentions and goals.
 
@@ -33,7 +33,7 @@ Where all our software at?
 
 ## Software for Linux
 
-In the very early days, because there were a number of different hardware configurations that weren’t as compatible as they are now, Linux software was distributed as source code. You downloaded a zip file containing programming code, you ran a compiler program to compile the code ([Issue 54]({filename}/season5/issue054/issue054.md))) into an executable program. Then there is usually an **installer**, a shell script that puts the compiled program in the correct place so the OS can find it, and creates other helper files (like configuration information).
+In the very early days, because there were a number of different hardware configurations that weren’t as compatible as they are now, Linux software was distributed as source code. You downloaded a zip file containing programming code, you ran a compiler program to compile the code ([Issue 54]({filename}/season05/issue054/issue054.md))) into an executable program. Then there is usually an **installer**, a shell script that puts the compiled program in the correct place so the OS can find it, and creates other helper files (like configuration information).
 
 And then you had to check their website (or even email them, in the days before the mainstream Internet) regularly to see if there are any bugfixes, and if yes, you downloaded the *new* source code and repeated the process …
 
@@ -51,14 +51,16 @@ This means that for the bulk of users, software distribution on Linux is **centr
 
 At the same time, if users wish, they are still able to download compiled executables from the internet and run them (with the usual caveats, of course). They can also download source code, compile it themselves, and then run it. These options do not offer the same ease of maintainability as software installed through a package manager, since there is no repository to check for updates.
 
-![Steam website showing Install Steam button for Linux. A popup asks what should Firefox do with the file, steam_latest.deb]({attach}/season13/issue164/issue164_01.png)
-<small>This is what many install pages look like on Linux, for software with Linux versions.<br />The Install button usually downloads a compiled executable, which can be run on the computer.<br />But installing through the distro’s package manager is recommended.</small>
+<figure>
+    ![Steam website showing Install Steam button for Linux. A popup asks what should Firefox do with the file, steam_latest.deb]({attach}/season13/issue164/issue164_01.png)
+    <figcaption>This is what many install pages look like on Linux, for software with Linux versions.<br />The Install button usually downloads a compiled executable, which can be run on the computer.<br />But installing through the distro’s package manager is recommended.</figcaption>    
+</figure>
 
 No system updates sneaking up on you from the OS maker; updates and new software all come from the repository through the package manager. Unless you decide otherwise.
 
 **Issue summary:** Linux software is distributed through Linux distros. The maintainers of distros maintain repositories of software that have been tested with the distro. Most users will access software in the distro’s repositories through a program called a package manager. So users have full control over when updates and new software should be installed.
 
-This is as far as I’ll go for technical detail on Linux. I meant this to pick up from [Season 8]({filename}/season8/issue092/issue092.md)) on apps. It’s easier to go into the bird’s-eye view of how this works on Linux, because I’m more familiar with it; on the Windows and MacOS side of things it tends to be more esoteric and proprietary.
+This is as far as I’ll go for technical detail on Linux. I meant this to pick up from [Season 8]({filename}/season08/issue092/issue092.md)) on apps. It’s easier to go into the bird’s-eye view of how this works on Linux, because I’m more familiar with it; on the Windows and MacOS side of things it tends to be more esoteric and proprietary.
 
 And it’s instructive to know this because … so far this season, we have been talking about distribution—content, code, and software. Notice how all of them involve infrastructure: worldwide clusters of servers for content distribution, a history of code changes for code distribution (and collaboration), and now we have repositories and package managers for software distribution.
 

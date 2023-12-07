@@ -5,7 +5,7 @@ Category: Season 13
 Slug: issue169
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2022-04-23 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A search engine uses bots to build up a database of URLs and their contents. The search engine uses various algorithms to determine the most relevant results for a search request.
 

@@ -5,7 +5,7 @@ Category: Season 12
 Slug: issue154
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2022-01-08 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The cloud offers standard digital business services, accessible through a web interface and API, which any developer (with a credit card) can use. Developers don’t have to reinvent the wheel, so long as they know how to use web APIs.
 
@@ -15,7 +15,7 @@ But what is stopping us from allowing them to run near-natively in the desktop, 
 
 ## Introduction to Emulation
 
-What you are seeking is a feature known as **emulation**, in which your operating system (OS), which we shall again call the **host**, *emulates* the instruction set ([Issue 53]({filename}/season5/issue053/issue053.md))) that the application is compiled for. In other words, the host OS:
+What you are seeking is a feature known as **emulation**, in which your operating system (OS), which we shall again call the **host**, *emulates* the instruction set ([Issue 53]({filename}/season05/issue053/issue053.md))) that the application is compiled for. In other words, the host OS:
 
 1. presents itself as the “correct” machine type to the application (“hello program, I listen to x86 instructions and respond to x86 instructions, so please treat me like an x86 processor”),
 2. transparently interprets its machine code into its instruction set’s machine code (through a program called an **emulation layer**),
@@ -23,16 +23,18 @@ What you are seeking is a feature known as **emulation**, in which your operatin
 
 Depending on how different the two instruction sets are, the complexity of this task differs greatly. Not much point going into detail here in a layman’s newsletter, so instead I’ll briefly illustrate some instances of emulation in the wild.
 
-The three main instruction sets discussed here are x86 (32-bit), x86-64 (64-bit), and ARM[^1] ([Issue 53]({filename}/season5/issue053/issue053.md))).
+The three main instruction sets discussed here are x86 (32-bit), x86-64 (64-bit), and ARM[^1] ([Issue 53]({filename}/season05/issue053/issue053.md))).
 
 [^1]: ARM actually has a 32-bit instruction set—AArch32 and a 64-bit instruction set—AArch64, which are incompatible. But since Apple switched to AArch64 starting from the iPhone 5S (2013), other mobile device manufacturers have followed suit, and AArch64 is now the main instruction set used on mobile. In this issue, I use ARM to refer to AArch64.
 
 ## Windows-to-Windows emulation (WOW64)
 
-Do you remember the great 32-to-64-bit schism of the late 2000s ([Issue 55]({filename}/season5/issue055/issue055.md)))? There was a period of time when people got confused whether a Windows program they had could run on a 32-bit x86 processor or a 64-bit x86-64 processor: programs compiled for the latter could not run on the former, but programs compiled for the former could run on the latter.
+Do you remember the great 32-to-64-bit schism of the late 2000s ([Issue 55]({filename}/season05/issue055/issue055.md)))? There was a period of time when people got confused whether a Windows program they had could run on a 32-bit x86 processor or a 64-bit x86-64 processor: programs compiled for the latter could not run on the former, but programs compiled for the former could run on the latter.
 
-![screenshot of download options for WinRAR, showing 32-bit and 64-bit options]({attach}/season12/issue154/issue154_01.png)
-<small>Some download sites still ask you to make this choice between downloading the 32-bit or 64-bit version, usually for users who for whatever reason have opted not to upgrade to 64-bit processors.</small>
+<figure>
+    ![screenshot of download options for WinRAR, showing 32-bit and 64-bit options]({attach}/season12/issue154/issue154_01.png)
+    <figcaption>Some download sites still ask you to make this choice between downloading the 32-bit or 64-bit version, usually for users who for whatever reason have opted not to upgrade to 64-bit processors.</figcaption>    
+</figure>
 
 That was a lie. Programs compiled for Windows on x86 cannot run *natively* on x86-64, and vice-versa. x86 and x86-64, while looking similar, are different instruction sets. x86 instructions have to be translated into x86-64 instructions to run on a 64-bit processor.
 

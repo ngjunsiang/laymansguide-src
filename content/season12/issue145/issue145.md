@@ -5,11 +5,11 @@ Category: Season 12
 Slug: issue145
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-11-06 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) In 1999, VMware launched VMware Workstation, which allowed multiple operating systems to run off a single machine.
 
-In Season 5 ([Issue 53]({filename}/season5/issue054/issue054.md))), I went into some detail on how our programs work. The programming language they are written in gets _compiled_ into CPU instructions, which get carried out by the CPU.
+In Season 5 ([Issue 53]({filename}/season05/issue054/issue054.md))), I went into some detail on how our programs work. The programming language they are written in gets _compiled_ into CPU instructions, which get carried out by the CPU.
 
 But the program does not handle everything on its own. In fact, it does not usually have direct access to hardware (unless requested from and provided by the operating system (OS)). All such access is abstracted and mediated through the operating system. The program requests and receives memory space, reads and writes files, and processes keyboard/mouse input—through the operating system.
 

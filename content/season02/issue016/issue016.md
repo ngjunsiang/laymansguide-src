@@ -5,7 +5,7 @@ Category: Season 2
 Slug: issue016
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-03-30 08:00
 
 So you just got back from a trip with lots of photos in your camera. You take the SD card out from the camera, put it in your laptop, open up the photos … and realise they all have the wrong white balance set.
 

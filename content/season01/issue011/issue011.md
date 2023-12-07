@@ -5,7 +5,7 @@ Category: Season 1
 Slug: issue011
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-02-23 08:00
 
 In the last issue, I showed you how I create HTTP requests with custom headers. I put my developer API key in the request header and Hypothes.is gave me a response containing my profile data.
 

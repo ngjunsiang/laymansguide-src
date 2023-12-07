@@ -5,7 +5,7 @@ Category: Season 11
 Slug: issue131
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-07-31 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) AC power from the wall uses electric current that alternates directions, while DC power from batteries uses electric current that flows in one direction only. All electronics are DC-only, and require an AC-DC adapter to be powered from the wall. The AC-DC conversion produces a significant amount of heat; AC-DC adapters are usually external unless the device has sufficient space or cooling capacity for it.
 
@@ -17,7 +17,7 @@ The common model of a computer is that it … computes. It calculates. It takes 
 
 That’s not quite right.
 
-While a computer does carry out compute operations, these are far outnumbered by load/store operations ([Issue 58]({filename}/season5/issue058/issue058.md))). Why so much loading and storing of data?
+While a computer does carry out compute operations, these are far outnumbered by load/store operations ([Issue 58]({filename}/season05/issue058/issue058.md))). Why so much loading and storing of data?
 
 ## Moving data
 
@@ -44,12 +44,14 @@ This involves far more loading and storing than computation. And there are limit
 
 How does data get transferred? Through very fine wires usually. One side (e.g. the CPU) applies a voltage to the wire, the other side (e.g. memory) checks the voltage on the wire. No applied voltage = 0, applied voltage = 1.
 
-How does the CPU know when to apply the voltage, and the memory know when to check it? These operations are synchronised through cycles, like a highly coordinated factory. A CPU operates on a frequency of up to billions of cycles per second, each cycle potentially transferring one bit of data ([Issue 40]({filename}/season4/issue040/issue040.md))) if there are no delays.
+How does the CPU know when to apply the voltage, and the memory know when to check it? These operations are synchronised through cycles, like a highly coordinated factory. A CPU operates on a frequency of up to billions of cycles per second, each cycle potentially transferring one bit of data ([Issue 40]({filename}/season04/issue040/issue040.md))) if there are no delays.
 
 Typically, the transfer rate is somewhat slower; how do we transfer more data per second? By adding more wires! With two wires, we can transfer two bits per cycle; four wires = four bits per second, eight wires = 8 bits per second … at some point, we run into a different problem. The CPU is a small chip, and there is only so much surface area for us to connect wires to.
 
-![An Intel Skylake CPU, showing the pins underneath]({attach}/season11/issue131/issue131_01.jpg)<br />
-<small>An Intel Skylake desktop CPU.<br />Each gold contact on the under-surface connects to a pin on the motherboard when the CPU is seated properly in its socket<br />Source: [Wikipedia](https://en.wikipedia.org/wiki/Skylake_(microarchitecture))</small>
+<figure>
+    ![An Intel Skylake CPU, showing the pins underneath]({attach}/season11/issue131/issue131_01.jpg)
+    <figcaption>An Intel Skylake desktop CPU.<br />Each gold contact on the under-surface connects to a pin on the motherboard when the CPU is seated properly in its socket<br />Source: [Wikipedia](https://en.wikipedia.org/wiki/Skylake_(microarchitecture))</figcaption>    
+</figure>
 
 Well, that just sucks.
 

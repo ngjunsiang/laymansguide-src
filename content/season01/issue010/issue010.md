@@ -5,7 +5,7 @@ Category: Season 1
 Slug: issue010
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-02-16 08:00
 
 **Short answer:** They actually don’t. This is not a snarky answer; it is true! Think about it. When the server receives a request, it has no idea if it’s coming from real-you, or someone pretending to be you. All it knows is your IP address, your user agent, and your request. And all three can actually be spoofed (but we won’t go into detail here).
 
@@ -33,15 +33,19 @@ https://hypothes.is/api/profile (without custom header)
 I need to submit a shared secret in my request to let the server know, “hey, I really am kureshii! Look, this is the shared secret which you gave to me when I set up my account”.
 
 
-![Screenshot of the Hypothes.is developer page providing a developer API key]({attach}/season1/issue010/issue010_01.png)
-<small>The shared secret I share with the Hypothes.is server: my developer API key</small>
+<figure>
+    ![Screenshot of the Hypothes.is developer page providing a developer API key]({attach}/season01/issue010/issue010_01.png)
+    <figcaption>The shared secret I share with the Hypothes.is server: my developer API key</figcaption>    
+</figure>
 
 
 How do I put that shared secret in the header? I could write a few lines of code in Python, a programming language … but I found an online API tester, which makes my life a bit easier. I just need to fill in the appropriate text fields:
 
 
-![Screenshot of the API tester]({attach}/season1/issue010/issue010_02.png)
-<small>The API tester makes it really easy for me to create and send HTTP requests with customised headers</small>
+<figure>
+    ![Screenshot of the API tester]({attach}/season01/issue010/issue010_02.png)
+    <figcaption>The API tester makes it really easy for me to create and send HTTP requests with customised headers</figcaption>    
+</figure>
 
 
 When the server receives the header with my developer API key, it can verify that the key is correct, and hence give me my profile data.

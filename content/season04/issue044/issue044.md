@@ -5,7 +5,7 @@ Category: Season 4
 Slug: issue044
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-10-26 08:00
 
 **Previously:** Colour is stored as a combination of red, green, and blue. In a computer system, each
 colour is stored as one byte (8 bits), allowing for 256 different levels. An image is made up of many such pixels of colour.

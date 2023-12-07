@@ -5,7 +5,7 @@ Category: Season 3
 Slug: issue033
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-08-10 08:00
 
 Previously: The devices on your home network share the single ISP-assigned IP address through your router. The router rewrites the source IP and port number on outgoing data packets, and rewrites the destination IP and port number on incoming data packets, acting as a middleman for your devices so that they can access the Internet.
 
@@ -17,7 +17,7 @@ And then I went on the explain how the source and destination IP addresses are t
 
 Well, now is the time to talk about what’s going on through the Transmission Control Protocol (TCP). Within a single device, you often have different software services running:
 
-1. DNS querying ([Issue 29]({filename}/season3/issue029/issue029.md)))
+1. DNS querying ([Issue 29]({filename}/season03/issue029/issue029.md)))
 2. Internet time synchronisation (over the Network Time Protocol)
 3. Software updaters checking for updates online
 4. Skype/Zoom/videoconferencing
@@ -57,7 +57,7 @@ Just like there is a source and destination IP address, there is also a source a
 
 With so many types of data being transferred over the Internet, how do things not get mixed up?
 
-Reserved port numbers is how. The well-known internet traffic data types have standardised protocols: web traffic follows HyperText Transfer Protocol (HTTP - [Issue 7]({filename}/season1/issue007/issue007.md))), some types of file transfer occur in accordance with the File Transfer Protocol (FTP), DNS queries obey the DNS protocol, etc.
+Reserved port numbers is how. The well-known internet traffic data types have standardised protocols: web traffic follows HyperText Transfer Protocol (HTTP - [Issue 7]({filename}/season01/issue007/issue007.md))), some types of file transfer occur in accordance with the File Transfer Protocol (FTP), DNS queries obey the DNS protocol, etc.
 
 These well-known protocols are assigned standard port numbers by IANA, the same authority that manages known IP addresses. HTTP uses port 80. FTP uses port 20 (data transfer) and 21 (control). DNS uses port 53. You can find the [full list of well-known port numbers on Wikipedia](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers). Port numbers 1 to 1023 are reserved for this purpose and may not be used publicly for other purposes.
 

@@ -5,7 +5,7 @@ Category: Season 12
 Slug: issue146
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-11-13 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Programs do not usually deal with the gnarly details of hardware, but instead access it through an interface. They access storage devices through a filesystem, and access hardware through drivers.
 
@@ -29,11 +29,11 @@ Some operating systems/programs provide drivers for RAM disks—a storage disk t
 
 ## Virtual memory
 
-In [Issue 55]({filename}/season5/issue055/issue055.md)), I explained how the operating system offers and controls access to computer memory, the pagefile ([Issue 117]({filename}/season9/issue117/issue117.md))), as well as hardware devices through a single addressing interface: virtual memory.
+In [Issue 55]({filename}/season05/issue055/issue055.md)), I explained how the operating system offers and controls access to computer memory, the pagefile ([Issue 117]({filename}/season09/issue117/issue117.md))), as well as hardware devices through a single addressing interface: virtual memory.
 
 When a program requests access to the printer and the OS responds with “here, you can send your request to memory address 0x35a4b2ff”, how is it to know if the data is going to a physical printer, or to a virtual one[^1]?
 
-[^1]: These virtual printers do, in fact, exist. It is why some OSes offer a “Print to PDF” printer device: the program effectively sends print commands to another program, which interprets the commands to produce a PDF file. This is possible because both printers and the PDF format share a common language: Postscript (see [Issue 51]({filename}/season4/issue051/issue051.md))).
+[^1]: These virtual printers do, in fact, exist. It is why some OSes offer a “Print to PDF” printer device: the program effectively sends print commands to another program, which interprets the commands to produce a PDF file. This is possible because both printers and the PDF format share a common language: Postscript (see [Issue 51]({filename}/season04/issue051/issue051.md))).
 
 ## Virtual hardware
 
@@ -44,9 +44,9 @@ Take a look at your Device Manager in Control Panel. What do you see?
 
 A whole set of drivers and interfaces which the OS uses to carry out its work.
 
-Many of these were initialised during bootup ([Issue 112]({filename}/season9/issue112/issue112.md))), when the OS kernel (the core of the OS) enumerates the available hardware by sending out signals and seeing what hardware responds.
+Many of these were initialised during bootup ([Issue 112]({filename}/season09/issue112/issue112.md))), when the OS kernel (the core of the OS) enumerates the available hardware by sending out signals and seeing what hardware responds.
 
-So a bunch of engineers at VMware thought: what if we ... made drivers to present virtual hardware emulating the CPU, memory, storage devices, ... and even the chipset? What if we then we booted the BIOS (the bootup program loaded on a computer’s mainboard; see [Issue 112]({filename}/season9/issue112/issue112.md))), got the virtual hardware to respond when the BIOS enumerates hardware, and then basically simulated all the signals that hardware would actually send?
+So a bunch of engineers at VMware thought: what if we ... made drivers to present virtual hardware emulating the CPU, memory, storage devices, ... and even the chipset? What if we then we booted the BIOS (the bootup program loaded on a computer’s mainboard; see [Issue 112]({filename}/season09/issue112/issue112.md))), got the virtual hardware to respond when the BIOS enumerates hardware, and then basically simulated all the signals that hardware would actually send?
 
 We end up with a virtual machine—one that you can actually install an OS on!
 

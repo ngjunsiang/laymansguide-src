@@ -5,7 +5,7 @@ Category: Season 6
 Slug: issue067
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2020-04-11 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) DoubleClick, the first commercially successfully ad server, launched in 1996. It ran a system that tracked the performance of banner ads across 30 sites, working to optimise their return on investment. This was made possible by standardisation of the web (thanks to the HTTP specification), and the birth of Javascript, a scripting language integrated into the webpage rather than being a separate module from it. All of this happened in 1995–1996.
 
@@ -15,12 +15,14 @@ Modified:
 
 Back [in Oct 22, 1996, Yahoo! already had advertising](https://web.archive.org/web/19961022175643/http://www10.yahoo.com:80/) front and centre, right above its search bar. (Google had not even been founded yet.)
 
-![Screenshot of Yahoo! from Oct 22, 1996]({attach}/season6/issue067/issue067_01.png)<br />
-<small>Yahoo! in 1996 already had advertising right above the search bar</small>
+<figure>
+    ![Screenshot of Yahoo! from Oct 22, 1996]({attach}/season06/issue067/issue067_01.png)
+    <figcaption>Yahoo! in 1996 already had advertising right above the search bar</figcaption>    
+</figure>
 
 The URL of that page was http://www10.yahoo.com:80/, and we can see a few things from that:
 
-1. HTTP 1.0 had not been fully effected yet. When it was, port 80 would be standardised as the port for the Internet. Before that happened, though, you sometimes had to specify the port ([Issue 33]({filename}/season3/issue033/issue033.md))) for your web browser to send the request through.
+1. HTTP 1.0 had not been fully effected yet. When it was, port 80 would be standardised as the port for the Internet. Before that happened, though, you sometimes had to specify the port ([Issue 33]({filename}/season03/issue033/issue033.md))) for your web browser to send the request through.
 2. The Internet was small, but it was big enough for Yahoo! to need more than 1 server to serve its homepage. Yahoo had one domain name, yahoo.com, to route all internet traffic through, but it had to somehow direct this traffic to multiple servers. 1 such server was www.yahoo.com, the others were named www2.yahoo.com, www3.yahoo.com, ... you get the idea.
 3. HTTPS was not yet a thing. Privacy was the last thing on peoples’ minds. Who cares what you were searching for? There wasn’t much on the Internet to implicate people with yet. You couldn’t book hotels or buy stuff online or send a tweet. The Internet was an interesting place, far removed from real life.
 
@@ -37,7 +39,7 @@ That link is doing quite a number of things: it is sending an HTTP request to Ya
 - **http://la.yahoo.com**  
   This is the page that users should be redirected to.
 
-Back in 1996, websites like Yahoo! could already track how many times an ad was clicked before redirecting users to the actual page. But it had no way of knowing anything about the user who clicked it. The only information it would have was the user’s IP address ([Issue 27]({filename}/season3/issue027/issue027.md))).
+Back in 1996, websites like Yahoo! could already track how many times an ad was clicked before redirecting users to the actual page. But it had no way of knowing anything about the user who clicked it. The only information it would have was the user’s IP address ([Issue 27]({filename}/season03/issue027/issue027.md))).
 
 You might find it surprising that none of this requires Javascript; in fact, that page doesn’t have a single scrap of Javascript in it!
 

@@ -5,11 +5,11 @@ Category: Season 9
 Slug: issue106
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-02-06 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The OS takes care of booting up, login and user management, window management, memory allocation, storage interfaces, background services, peripheral management, and much more. Access to these services, where allowed, is provided in the form of software libraries that developers can use.
 
-So far, what we understand about storage is that apps send data to an operating system (OS), which then stores it on storage devices (such as hard disks, solid state disks, etc) for later retrieval. And in [Issues 99]({filename}/season8/issue099/issue099.md)) & [100]({filename}/season8/issue100/issue100.md)), I explained that eventually everything gets stored as a file.
+So far, what we understand about storage is that apps send data to an operating system (OS), which then stores it on storage devices (such as hard disks, solid state disks, etc) for later retrieval. And in [Issues 99]({filename}/season08/issue099/issue099.md)) & [100]({filename}/season08/issue100/issue100.md)), I explained that eventually everything gets stored as a file.
 
 What exactly is a file?
 

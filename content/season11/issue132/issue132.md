@@ -5,7 +5,7 @@ Category: Season 11
 Slug: issue132
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-08-07 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) CPUs have limited throughput, since there is a max frequency they can operate at, and a limit to the number of wires they can be connected to (throughput = no. of wires × frequency). Later designs of early computers increased the capability of computers by delegating more work to secondary chips.
 
@@ -15,8 +15,10 @@ The AT form factor, by IBM, is one of the early ones. An AT motherboard looks so
 
 ## The AT mainboard
 
-![An AT motherboard]({attach}/season11/issue132/issue132_01.jpg)<br />
-<small>An AT motherboard, with key components outlined.<br />Annotations are my own.<br />Original: [Wikipedia](https://en.wikipedia.org/wiki/Skylake_(microarchitecture))</small>
+<figure>
+    ![An AT motherboard]({attach}/season11/issue132/issue132_01.jpg)
+    <figcaption>An AT motherboard, with key components outlined.<br />Annotations are my own.<br />Original: [Wikipedia](https://en.wikipedia.org/wiki/Skylake_(microarchitecture))</figcaption>    
+</figure>
 
 Graphics cards, usually added as an expansion card, communicated with the CPU (under the heatsink) through a chipset, while the CPU communicated with memory through another chipset.
 

@@ -5,7 +5,7 @@ Category: Season 3
 Slug: issue036
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-08-31 08:00
 
 Previously: VPNs link devices that are not within the same network using an encrypted tunnel that prevents gateways from snooping on the data packet as it passes en-route.
 
@@ -29,7 +29,7 @@ In WWII, a ping is a sound pulse emitted by submarines to detect other submarine
 
 An internet ping does not sound like a ping, but it serves a different function through a similar idea. By sending out a data packet to a target server, and measuring the time it takes to get a response, it can “gauge the distance” that the device is away from the target server.
 
-On any laptop, you can measure the latency of any server using a commandline application ([Issue 15]({filename}/season2/issue015/issue015.md))) called `ping`. Here, I will show you the output from `ping` while it pings two different servers.
+On any laptop, you can measure the latency of any server using a commandline application ([Issue 15]({filename}/season02/issue015/issue015.md))) called `ping`. Here, I will show you the output from `ping` while it pings two different servers.
 
 The commandline prompt in Linux usually starts with a `$`, so any text you see after a beginning `$` in the same line is the command I am using. Everything that follows is the output from the `ping` application. the `-c 20` option tells `ping` to measure the latency statistics from sending 20 packets of data to the specified server.
 

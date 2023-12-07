@@ -5,7 +5,7 @@ Category: Season 2
 Slug: issue019
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-04-20 08:00
 
 Have you ever worked on a large document with a team of people before? If you have, did it go well? Did people get along and not get into conflict with each other over conflicting ideas or changes? If it did, please drop me an email and let me know! In my experience it is so frustrating and I have difficulty seeing how it can be done without some kind of standardised, automated process for keeping everyone updated.
 
@@ -28,18 +28,20 @@ But what about software, which often consists of more than one file? The additio
 
 The modern-day tool which (almost) all developers have standardised on is called git, and it was [made in 2005](https://en.wikipedia.org/wiki/Git#History). Its name is Git, and it was written by Linus Torvalds, the same man who first began working on the Linux kernel.
 
-Git tracks changes across _multiple files_. For example, if you added a new About page to your project, it may involve adding a new file about.html (the actual content), updating app.py (to create a new route so people can access the URL), and adding a new line to the changelog (so other members of your team have an easy-to-read changelog). You inform the git server (we covered clients and servers in [Issue 7](https://buttondown.email/laymansguide/archive/b36f0f43-e8f5-402d-8c6a-c2a28f5ff556)) that you have changed those 3 files by creating a **commit**. Git can prepare those commits for you, and they look like this:
+Git tracks changes across _multiple files_. For example, if you added a new About page to your project, it may involve adding a new file about.html (the actual content), updating app.py (to create a new route so people can access the URL), and adding a new line to the changelog (so other members of your team have an easy-to-read changelog). You inform the git server (we covered clients and servers in [Issue 7]({filename}/season01/issue007/issue007.md)) that you have changed those 3 files by creating a **commit**. Git can prepare those commits for you, and they look like this:
 
-![A commit on Github]({attach}/season2/issue019/issue019_01.png)
-<small>A git commit on Github. Yup, this newsletter is also a project on Github.</small>
+<figure>
+    ![A commit on Github]({attach}/season02/issue019/issue019_01.png)
+    <figcaption>A git commit on Github. Yup, this newsletter is also a project on Github.</figcaption>    
+</figure>
 
 The screenshot above makes it look fancy, but a commit is really just a simple text file that records the changes of the commit.
 
 ```
     Issue 014 updates
 
---- a/season2/issue014/issue014.md
-+++ b/season2/issue014/issue014.md
+--- a/season02/issue014/issue014.md
++++ b/season02/issue014/issue014.md
 @@ -57,7 +57,7 @@ Beyond writing apps, code is also written for many other purposes. I outline som
  Yes, code can be written to process data! This is one of the coolest uses of software, because manually searching through data and performing calculations is tedious, and computers can do it so much faster.
 
@@ -62,7 +64,7 @@ If you’ve ever thought “hmm, when did this part change? I don’t remember i
 
 If you don’t want your code being online, git can be installed on your own computer, but the far more popular way that developers use it is in the cloud. And the most popular platform for code today is [Github](https://github.com/about). It’s so popular that Microsoft, realising just [how much of their code is on Github](https://github.com/Microsoft), decided [to buy Github](https://blogs.microsoft.com/blog/2018/06/04/microsoft-github-empowering-developers/).
 
-When you create a Github account, you get a repository that you can put your code in. This repository is managed by a git server that you can push commits to, and pull changes from. You get complete change history for your code that is uploaded (here’s the [change history for this newsletter](https://github.com/ngjunsiang/laymansguide/commits/master)). You don’t have the same level of control you would over a git server that you run yourself, but it saves you much more time and hassle.
+When you create a Github account, you get a repository that you can put your code in. This repository is managed by a git server that you can push commits to, and pull changes from. You get complete change history for your code that is uploaded (here’s the [change history for this newsletter](https://github.com/ngjunsiang/laymansguide/commits/release)). You don’t have the same level of control you would over a git server that you run yourself, but it saves you much more time and hassle.
 
 ## Using a VCS for non-code purposes
 

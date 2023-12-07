@@ -5,7 +5,7 @@ Category: Season 8
 Slug: issue097
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2020-12-05 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Mobile apps are sandboxed by the operating system. As a result, they have to bundle all the libraries they need, and are not allowed to share libraries with other apps. This results in mobile apps with huge filesizes.
 
@@ -13,7 +13,7 @@ This issue is going to be short, because laptop apps are … well, almost unlimi
 
 Web apps are sandboxed by the web browser. Mobile apps are sandboxed by the mobile operating system (OS). Laptop apps are sandboxed by hte desktop OS (yup, Windows on laptop and desktop is practically the same).
 
-The main difference here lies in the difference between a mobile and desktop OS. Mobile OSes do not allow mobile apps to share libraries with other apps, and restrict their privileges ([Issue 96]({filename}/season8/issue096/issue096.md))). Desktop OSes, on the other hand, let you do anything that is computationally possible … if you have permission.
+The main difference here lies in the difference between a mobile and desktop OS. Mobile OSes do not allow mobile apps to share libraries with other apps, and restrict their privileges ([Issue 96]({filename}/season08/issue096/issue096.md))). Desktop OSes, on the other hand, let you do anything that is computationally possible … if you have permission.
 
 ## The Admin account
 
@@ -32,8 +32,8 @@ This app can:
 3. Send data to any device, or receive data from any device
 4. Make changes to storage devices, including the disk where the OS itself is installed (but not the partition[^1] where the OS is installed)
 5. Run programs in the background
-6. Send data over the network to any IP address, over any port ([Issue 33]({filename}/season3/issue033/issue033.md)))
-7. Prevent other programs from doing so ([Issue 34]({filename}/season3/issue034/issue034.md)))
+6. Send data over the network to any IP address, over any port ([Issue 33]({filename}/season03/issue033/issue033.md)))
+7. Prevent other programs from doing so ([Issue 34]({filename}/season03/issue034/issue034.md)))
 8. Install libraries that can be used by other programs
 9. Access OS settings and make changes that affect OS operation
 10. ... and many more things!

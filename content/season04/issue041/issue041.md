@@ -5,7 +5,7 @@ Category: Season 4
 Slug: issue041
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-10-05 08:00
 
 **Previously:** 8 bits comprise 1 byte. Humans count bytes in multiples of thousands, while computers count bytes in multiples of 1,024.
 
@@ -19,13 +19,17 @@ To put things in some context, keep in mind that ASCII actually predates the int
 
 In the 1920s, the Murray code was developed into the International Telegraph Alphabet No. 2 code (ITA2 code). Behold:
 
-![ITA2 table]({attach}/season4/issue041/issue041_01.jpg)<br />
-<small>Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:International_Telegraph_Alphabet_2.jpg)</small>
+<figure>
+    ![ITA2 table]({attach}/season04/issue041/issue041_01.jpg)
+    <figcaption>Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:International_Telegraph_Alphabet_2.jpg)</figcaption>    
+</figure>
 
 But the Murray code actually used more bits to transmit the same information! In Morse code, every letter is represented with between 1 to 5 symbols. Each symbol is either a dash or a dot:
 
-![Morse Code table]({attach}/season4/issue041/issue041_02.png)<br />
-<small>Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:International_Morse_Code.svg)</small>
+<figure>
+    ![Morse Code table]({attach}/season04/issue041/issue041_02.png)
+    <figcaption>Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:International_Morse_Code.svg)</figcaption>    
+</figure>
 
 What do we gain from using more symbols to transmit each number or letter? If you compare the two, you see that ITA2 has some things that are missing in Morse code:
 
@@ -40,7 +44,7 @@ Symbols and spaces are easy enough to understand, and very welcome; if you’ve 
 
 With the advent of the typewriter, people had access to nicely formatted text. You could type text on multiple rows instead of one long row! But you had to remember to do the actions when using a typewriter for it to be formatted properly.
 
-![A typewriter on a table]({attach}/season4/issue041/issue041_03.jpg)<br />
+![A typewriter on a table]({attach}/season04/issue041/issue041_03.jpg)<br />
 <small>The Underwood Five typewriter<br />
 Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Underwoodfive.jpg)</small>
 
@@ -54,7 +58,7 @@ ITA2 could not only send letters and symbols, it could send formatting commands!
 
 The ASCII code chart expands the capabilities of ITA2, while requiring 7 bits for each character. Each character is situated in a specific row and column, out of 8 columns and 16 rows which are numbered starting from 0. (Note that 8 is 2^3 and requires 3 bits, 16 is 2^4 and requires 4 bits.)
 
-![ASCII code chart]({attach}/season4/issue041/issue041_04.png)<br />
+![ASCII code chart]({attach}/season04/issue041/issue041_04.png)<br />
 <small>(An early version of) The US ASCII code chart. Each row number is represented by 4 bits, while each column number is represented by 3 bits.<br />
 Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:USASCII_code_chart.png)</small>
 
@@ -79,8 +83,10 @@ I won’t explain the rest in this supposedly-short newsletter, but if you’re 
 
 In a basic text file, text is still stored using ASCII (although it has seen some modifications since). Some of the control codes are obsolete, while some are still in use today. Remember this image from Issue 12?
 
-![An HTTP request captured in Wireshark showing my developer API key]({attach}/season1/issue012/issue012_01.png)<br />
-<small>An HTTP request captured in Wireshark.</small>
+<figure>
+    ![An HTTP request captured in Wireshark showing my developer API key]({attach}/season01/issue012/issue012_01.png)
+    <figcaption>An HTTP request captured in Wireshark.</figcaption>    
+</figure>
 
 The `\r` and `\n` you see there are control codes. They stand for 'return' and 'newline', the modern equivalent of 'carriage return' and 'line feed'.
 

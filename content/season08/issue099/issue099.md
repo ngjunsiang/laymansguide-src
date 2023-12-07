@@ -5,7 +5,7 @@ Category: Season 8
 Slug: issue099
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2020-12-19 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Apps generally handle three categories of files: its own (permanent) app files, (shared) user files, and (ephemeral) temporary files.
 
@@ -32,7 +32,7 @@ I personally prefer this because you have everything sorted into sensible top-le
 [^2]: There’s lots of things that make less sense once we get into more detail, but fortunately we don’t do that here.
 
 - an `/Applications` folder for apps
-- a `/Library` folder for shared files (see [Issue 17]({filename}/season2/issue017/issue017.md)), but on Mac this extends to things like sounds, profile pics, colors, ...)
+- a `/Library` folder for shared files (see [Issue 17]({filename}/season02/issue017/issue017.md)), but on Mac this extends to things like sounds, profile pics, colors, ...)
 - a `/System` folder for, well, you know what.
 - a `/Network` folder for accessing resources on the network (such as shared folders)
 - a `/Users` folder for accessing user folders and files

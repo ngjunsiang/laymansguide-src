@@ -5,7 +5,7 @@ Category: Season 13
 Slug: issue167
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2022-04-09 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) There are easy and quick ways to check the validity of the most common advice for resolving system slowdown. But it still seems to happen even after these tips have been tried.
 
@@ -21,7 +21,7 @@ I mentioned in [Issue 119]({filename}/season10/issue119/issue119.md)) that fragm
 
 ## SQLite, a blessing and a curse
 
-[SQLite](https://sqlite.org/index.html) is a popular file-based relational database ([Issue 87]({filename}/season7/issue087/issue087.md))) used by many Android apps (including WhatsApp!). This means that unlike other databases, which require a separate database program to run, SQLite just requires the programmer to bundle an appropriate library for their programming language instead of running a separate program. It makes management of data much easier for the app developers, and it is also fast—usually.
+[SQLite](https://sqlite.org/index.html) is a popular file-based relational database ([Issue 87]({filename}/season07/issue087/issue087.md))) used by many Android apps (including WhatsApp!). This means that unlike other databases, which require a separate database program to run, SQLite just requires the programmer to bundle an appropriate library for their programming language instead of running a separate program. It makes management of data much easier for the app developers, and it is also fast—usually.
 
 However, [a 2016 study found that it contributes to fragmentation](https://www.tuxera.com/blog/why-is-my-android-phone-slowing-down/) on the Android filesystem. Even after clearing the app’s data, once SQLite starts storing data again, it tends to store them in many small chunks instead of fewer but larger chunks. On Android devices, which use the slower UFS interface, searching through the database involves reading each database chunk to see if the requested data is there; this gets slower as the database grows, and SQLite adds more chunks to the storage device.
 

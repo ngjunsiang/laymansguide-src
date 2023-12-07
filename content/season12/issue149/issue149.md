@@ -5,7 +5,7 @@ Category: Season 12
 Slug: issue149
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-12-04 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Renting out virtual hardware instead of physical hardware meant that instead of having to move hardware around and manage it, you could send the *data* for running an OS to the hosting company and have them be responsible for hardware operations.
 
@@ -29,7 +29,7 @@ But programs don’t need real or virtual hardware; they need OS libraries which
 
 The technology that enables OSes to let programs think they are running exclusively, protected from other programs, is called OS-level virtualisation, but more widely referred to as **containerisation**.
 
-An OS (with the appropriate software & support) can run multiple **containers**, each container acting like a sandbox ([Issue 92]({filename}/season8/issue092/issue092.md))) for the software within. In each container, software has access to OS features, but are unable to affect software outside of the container. Each container appears to have exclusive access to (a portion of) the system’s network, storage, compute, and memory resources.
+An OS (with the appropriate software & support) can run multiple **containers**, each container acting like a sandbox ([Issue 92]({filename}/season08/issue092/issue092.md))) for the software within. In each container, software has access to OS features, but are unable to affect software outside of the container. Each container appears to have exclusive access to (a portion of) the system’s network, storage, compute, and memory resources.
 
 ## Managing containers
 

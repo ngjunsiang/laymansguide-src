@@ -5,7 +5,7 @@ Category: Season 1
 Slug: issue007
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-01-26 08:00
 
 Before I jump into talking about requests, maybe we should start with a more fundamental question: what is HTTP?
 

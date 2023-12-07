@@ -5,7 +5,7 @@ Category: Season 4
 Slug: issue047
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-11-16 08:00
 
 **Previously:** Computers compress image and audio data through a process similar to summarising: it analyses the data using algorithms that use brightness and colour instead of RGB values for images, and different frequencies of sound rather than samples at different points in time for audio. These algorithms then discard parts of the information that human senses do not perceive easily, and reduce the resolution of other parts that human senses are not as sensitive to.
 
@@ -27,7 +27,7 @@ In lossless compression, the predictive algorithm already knows what the next sa
 
 The most common image formats that use compression are GIF (yes, really) and PNG. Some kinds of images, such as screenshots, have patterns that are repeated. The algorithm used in GIF and PNG, LZ77, attempts to spot these patterns, and reduce them to 1) the repeating portion, and 2) the number of repetitions. This is known as **run-length encoding**. The nature of images makes the process easier, as each pixel only has 256 possible values rather than 65536.
 
-Those patterns are stored in a table, and *references* to them are used instead. So instead of saying “Pattern 0101011101110110”, the algorithm will store a list of these patterns, and refer to them as Pattern 0, Pattern 1, Pattern 10, Pattern 11, … (these are 1, 2, 3, and 4 respectively, in binary representation ([Issue 40]({filename}/season4/issue040/issue040.md)))).
+Those patterns are stored in a table, and *references* to them are used instead. So instead of saying “Pattern 0101011101110110”, the algorithm will store a list of these patterns, and refer to them as Pattern 0, Pattern 1, Pattern 10, Pattern 11, … (these are 1, 2, 3, and 4 respectively, in binary representation ([Issue 40]({filename}/season04/issue040/issue040.md)))).
 
 This is known as **entropy coding**. By linking the longest pattern with the smallest reference number (i.e. Pattern 0), the next-longest pattern with the next-smallest reference number (Pattern 1, 10, 11, 100, 101, 110, …) you can reduce quite significantly the number of bits needed to represent the image.
 
@@ -55,8 +55,10 @@ When the first zip file compressed its contents, the predictability of the resul
 
 If you want greater compression, use a higher compression setting on the original file instead.
 
-![7zip archive settings, showing options for compression level, compression method, and dictionary size]({attach}/season4/issue047/issue047_01.png)<br />
-<small>7zip archive settings for zip files.<br />Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Colorcomp.jpg)</small>
+<figure>
+    ![7zip archive settings, showing options for compression level, compression method, and dictionary size]({attach}/season04/issue047/issue047_01.png)
+    <figcaption>7zip archive settings for zip files.<br />Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Colorcomp.jpg)</figcaption>    
+</figure>
 
 A higher *compression level* generally causes the algorithm to try more combinations and iterations of compression, a larger *dictionary size* enables the algorithm to use more pattern references. Play with these two settings to find the best tradeoff between compression time and compression ratio (the ratio of final filesize to original filesize).
 

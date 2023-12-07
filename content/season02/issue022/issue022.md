@@ -5,7 +5,7 @@ Category: Season 2
 Slug: issue022
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-05-11 08:00
 
 Last week I introduced forking and merging, which are how developers ensure that they don't override other peoples’ work. They fork a repository to create their own copy, make the changes required to introduce the feature they want, and then merge it back with the main repository when it is ready, for the repository owner to review.
 
@@ -19,8 +19,10 @@ By now your idea of a developers’ workflow might look something like this:
 4. If the tests pass, send a pull request to the repository owner to merge this branch with the main branch.
 
 
-![A commit on Github]({attach}/season2/issue022/issue022_01.png)
-<small>Git branching. From [Atlassian’s git branch tutorial](https://www.atlassian.com/git/tutorials/using-branches).</small>
+<figure>
+    ![A commit on Github]({attach}/season02/issue022/issue022_01.png)
+    <figcaption>Git branching. From [Atlassian’s git branch tutorial](https://www.atlassian.com/git/tutorials/using-branches).</figcaption>    
+</figure>
 
 
 You can imagine that steps 2 and 3, the bread and butter of developers everywhere, is really tedious. Write code, test fails. Edit code, test fails again. On and on and on.
@@ -37,8 +39,10 @@ One step less! But the part that developers dread is usually merging, which is w
 ## Merge conflicts
 
 
-![A commit on Github]({attach}/season2/issue022/issue022_01.png)
-<small>Git merging. From [Atlassian’s git merge tutorial](https://www.atlassian.com/git/tutorials/using-branches/git-merge).</small>
+<figure>
+    ![A commit on Github]({attach}/season02/issue022/issue022_01.png)
+    <figcaption>Git merging. From [Atlassian’s git merge tutorial](https://www.atlassian.com/git/tutorials/using-branches/git-merge).</figcaption>    
+</figure>
 
 
 Most development teams organise their work into (at least) 3 types of branches:

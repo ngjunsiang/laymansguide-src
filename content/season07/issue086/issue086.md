@@ -5,7 +5,7 @@ Category: Season 7
 Slug: issue086
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2020-09-05 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Forms that naïvely inject user-submitted data into a SQL query template may end up sending valid SQL commands to the database, with disastrous consequences.
 

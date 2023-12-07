@@ -5,7 +5,7 @@ Category: Season 10
 Slug: issue129
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-07-17 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Upgradable parts need a slot or socket to be inserted into; these slots/sockets need to be made robust enough, causing them to take up more space than a soldered part. Devices which were designed to be small and portable generally eliminate these as far as possible, opting to have parts directly soldered to the board instead.
 
@@ -53,20 +53,26 @@ In practice, this means that a bare chip can only run about 4 W before it starts
 
 The simplest way to cool a chip is to slap a piece of metal on it to increase the surface area (factor 2). This is known as **passive cooling**. A paste called **thermal paste** is applied between the heatsink and chip to improve the transfer of heat. To pack as much surface area as possible into a tiny space, this piece of metal usually has long, thin fins, giving the characteristic look of heatsinks:
 
-![A passive heatsink on a chip]({attach}/season10/issue129/issue129_01.jpg)<br />
-<small>A passive heatsink on the northbridge chip of a computer mainboard<br />Source: found on [Superuser](https://superuser.com/questions/1043094/difference-between-active-and-passive-heatsink)</small>
+<figure>
+    ![A passive heatsink on a chip]({attach}/season10/issue129/issue129_01.jpg)
+    <figcaption>A passive heatsink on the northbridge chip of a computer mainboard<br />Source: found on [Superuser](https://superuser.com/questions/1043094/difference-between-active-and-passive-heatsink)</figcaption>    
+</figure>
 
 The effectiveness of passive heatsinks depends on the ambient airflow around it. Some creative setups that manage to get *the metal case itself* in contact with the CPU can readily cool up to 45 W, with zero fan noise!
 
 For mobile phones, tablets, and laptops, such heatsinks would add too much to the device thickness. Instead, the CPUs are usually in direct contact with a larger metal surface, sometimes even the metal back of the device; this is why they feel warm to you in the first place. This allows tablets to use up to approx. 8 W of power.
 
-![Logic board cover in an iPad]({attach}/season10/issue129/issue129_02.jpg)<br />
-<small>The logic board cover in an iPad Pro 11 has copper inside; it helps to spread heat to the rest of the device instead of concentrating it all in one spot<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPad+Pro+11-Inch+Teardown/115457)</small>
+<figure>
+    ![Logic board cover in an iPad]({attach}/season10/issue129/issue129_02.jpg)
+    <figcaption>The logic board cover in an iPad Pro 11 has copper inside; it helps to spread heat to the rest of the device instead of concentrating it all in one spot<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPad+Pro+11-Inch+Teardown/115457)</figcaption>    
+</figure>
 
 Where there isn’t this luxury of space, another option is to use a slim heatsink, and increase its cooling ability by forcing air through it. This form of cooling is called **active cooling**, and usually done with a fan of some sort, a popular option for thicker laptops. This allows laptops to run between 25–45 W, and desktop computers to run 65 W and hotter (with larger heatsinks, of course)
 
-![An active heatsink on a chip]({attach}/season10/issue129/issue129_03.jpg)<br />
-<small>An active heatsink on the CPU of a computer mainboard<br />Source: found on [Superuser](https://superuser.com/questions/1043094/difference-between-active-and-passive-heatsink)</small>
+<figure>
+    ![An active heatsink on a chip]({attach}/season10/issue129/issue129_03.jpg)
+    <figcaption>An active heatsink on the CPU of a computer mainboard<br />Source: found on [Superuser](https://superuser.com/questions/1043094/difference-between-active-and-passive-heatsink)</figcaption>    
+</figure>
 
 These numbers are for stereotypical mobile devices, laptops, and desktops; stranger or hybrid designs may have different cooling capacities (e.g. a tiny cube desktop might only have 25–35 W of cooling capacity).
 

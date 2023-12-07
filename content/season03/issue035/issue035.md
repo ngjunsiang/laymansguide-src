@@ -5,7 +5,7 @@ Category: Season 3
 Slug: issue035
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-08-24 08:00
 
 Previously: Firewalls block data packets that match certain rules. They decrypt the data packet layer by layer, dropping those that match its programmed rules without allowing them to be forwarded to the next point in its journey. The type of filtering that can be applied depends on the processing power available to the router, since some information is hidden more deeply in the data packet than others. Such filtering is typically circumvented by the use of VPNs, or other means of encrypting the data that is required.
 

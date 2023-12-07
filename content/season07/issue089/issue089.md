@@ -5,7 +5,7 @@ Category: Season 7
 Slug: issue089
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2020-09-26 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Document databases organise data into documents, each containing a number of field-value pairs. each value can itself be a document, and multiple values/documents can be grouped under a field. Document databases do not enforce data consistency across documents, so those rules need to be managed by the application which is using the database. This allows document databases to continue operating even when partitioned, at the cost of some consistency.
 
@@ -28,8 +28,10 @@ Okay, stay with me here, I know you are thinking of a horizontal and a vertical 
 
 That’s what I’m talking about. And it looks like this:
 
-![Wikipedia multilingual network graph, showing circles representing languages, and arrows between pairs of circles, representing editors who edited both languages.]({attach}/season7/issue089/issue089_01.png)<br />
-<small>This network graph shows the co-editing patterns on Wikipedia. The size of the arrows indicate the number of Wikipedia editors for one language edition of Wikipedia, who also edited another language edition.<br />Source: [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Wikipedia_multilingual_network_graph_July_2013.svg)</small>
+<figure>
+    ![Wikipedia multilingual network graph, showing circles representing languages, and arrows between pairs of circles, representing editors who edited both languages.]({attach}/season07/issue089/issue089_01.png)
+    <figcaption>This network graph shows the co-editing patterns on Wikipedia. The size of the arrows indicate the number of Wikipedia editors for one language edition of Wikipedia, who also edited another language edition.<br />Source: [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Wikipedia_multilingual_network_graph_July_2013.svg)</figcaption>    
+</figure>
 
 Okay, phew.
 

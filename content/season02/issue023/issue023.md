@@ -5,7 +5,7 @@ Category: Season 2
 Slug: issue023
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-05-18 08:00
 
 Last week, we took a look at part of the (heavily simplified) software development pipeline:
 

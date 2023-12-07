@@ -5,7 +5,7 @@ Category: Season 7
 Slug: issue085
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2020-08-29 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) SQL queries let you join multiple tables based on specified conditions using the JOIN keyword. This enables crafting complex queries to return only the specific data that is required.
 
@@ -16,9 +16,9 @@ SQL databases are really powerful; this is usually a good thing since it allows 
 
 ## Adding data to an SQL database
 
-Adding data to an SQL database is easy. If our `Customer` table looks like this (from [Issue 84]({filename}/season7/issue084/issue084.md))):
+Adding data to an SQL database is easy. If our `Customer` table looks like this (from [Issue 84]({filename}/season07/issue084/issue084.md))):
 
-![Screenshot of a Customer data table, with custID, custName, custEmail, and custContact columns.]({attach}/season7/issue084/issue084_01.png)
+![Screenshot of a Customer data table, with custID, custName, custEmail, and custContact columns.]({attach}/season07/issue084/issue084_01.png)
 
 The relevant SQL query to add another customer is:
 

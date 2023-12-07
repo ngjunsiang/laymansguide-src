@@ -5,7 +5,7 @@ Category: Season 5
 Slug: issue055
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2020-01-11 08:00
 
 **Previously:** To get useful output from a CPU, we must translate the operations we want it to perform into CPU instructions, in a process known as **compiling**. Most compilers convert programming code into CPU instructions.
 

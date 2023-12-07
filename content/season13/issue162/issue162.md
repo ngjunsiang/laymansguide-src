@@ -5,7 +5,7 @@ Category: Season 13
 Slug: issue162
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2022-03-05 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Cross-site scripting attacks occur when a webpage loads malicious code from a third-party, usually carried out by a script in the page. Today, websites are protected from loading unauthorised scripts through cross-origin resource sharing (CORS) policy implemented in browsers, which only allows a website to load scripts from authorised domains.
 
@@ -21,13 +21,17 @@ I’m going with [Source Sans](https://fonts.adobe.com/fonts/source-sans), an op
 
 [^2]: The one I use is called [Fontforge](https://fontforge.org), and it is open-source.
 
-![Fontforge with Source Sans Pro Regular open, showing glyphs]({attach}/season13/issue162/issue162_01.png)
-<small>Source Sans Pro Regular, in Fontforge.</small>
+<figure>
+    ![Fontforge with Source Sans Pro Regular open, showing glyphs]({attach}/season13/issue162/issue162_01.png)
+    <figcaption>Source Sans Pro Regular, in Fontforge.</figcaption>    
+</figure>
 
 You might already be aware that fonts contain **glyphs**, which are the shapes of each separate character. What makes up those glyphs?
 
-![Uppercase Q from Source Sans Pro Regular]({attach}/season13/issue162/issue162_02.png)
-<small>Uppercase Q from Source Sans Pro Regular.</small>
+<figure>
+    ![Uppercase Q from Source Sans Pro Regular]({attach}/season13/issue162/issue162_02.png)
+    <figcaption>Uppercase Q from Source Sans Pro Regular.</figcaption>    
+</figure>
 
 These glyphs are mathematical shapes. They are stored as a series of points, joined by curves[^3] or straight lines[^4], which are stored as numbers. The diagrams we draw in Microsoft Word are much the same!
 

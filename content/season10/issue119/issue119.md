@@ -5,7 +5,7 @@ Category: Season 10
 Slug: issue119
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-05-08 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A hard disk consists of a read arm, and a set of magnetic platters which store data. To read or write data, the read arm must move to the appropriate track of the rotating platter, and detect the magnetic field (for reading), or attempt to magnetise the domains on the platter (for writing). Operations that require the read arm to access different parts of the magnetic platters intermittently result in slower read speeds.
 
@@ -19,15 +19,19 @@ It is, to put it simply, a small circuit board with lots of chips, that plugs in
 
 It has multiple storage chips, quite similar to the ones in your thumb drives/flash drives but much faster, and one controller chip to rule em all.
 
-![Solid state disk inserted into laptop slot]({attach}/season10/issue119/issue119_01.jpg)<br />
-<small>A solid state disk, plugged into a laptop slot (but not secured)</small>
+<figure>
+    ![Solid state disk inserted into laptop slot]({attach}/season10/issue119/issue119_01.jpg)
+    <figcaption>A solid state disk, plugged into a laptop slot (but not secured)</figcaption>    
+</figure>
 
 ## Hmm ... like computer memory?
 
 Computer memory also consists of chips on a circuit board, right? But memory gets wiped after the computer loses power ... but that doesn’t happen with SSDs; why?
 
-![Computer memory inserted into memory slot]({attach}/season10/issue119/issue119_02.png)<br />
-<small>Computer memory sticks, inserted into the memory slot of a computer motherboard</small>
+<figure>
+    ![Computer memory inserted into memory slot]({attach}/season10/issue119/issue119_02.png)
+    <figcaption>Computer memory sticks, inserted into the memory slot of a computer motherboard</figcaption>    
+</figure>
 
 Computer memory uses capacitors, which are like micro-sized batteries. They hold a charge when powered, and store either a 1 or 0 state by being charged or uncharged, respectively.
 

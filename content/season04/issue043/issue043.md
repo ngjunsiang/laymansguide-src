@@ -5,7 +5,7 @@ Category: Season 4
 Slug: issue043
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-10-19 08:00
 
 **Previously:** Unicode is an encoding format which is meant to support every language, ever. Most websites, apps, and interfaces support it today.
 
@@ -21,7 +21,7 @@ In this issue, I’ll be summarising and oversimplifying decades of colour theor
 
 Any effective colour system must take into account how the human eye is structured, and how vision occurs. Today, we understand that humans are trichromatic: there are 3 types of cone cells in the eye (and also 1 type of rod cell, which I won’t be explaining here), and each one recognises a different shade of colour: red, green, blue. Each type of cone cell can differentiate roughly 100 different shades, which theoretically enables us to distinguish 1 million shades of colour (100^3).
 
-So it makes good sense that our colour systems in computers evolved similarly, to store single dots of colour as a combination of red, green, and blue. To be able to store 100 different shades, we will need at least 7 bits (2^7 = 128), but [computer systems like things in 8s]({filename}/season4/issue040/issue040.md)). For this and other historical reasons, 1 byte (8 bits) are used for each shade, giving us 256 shades of red, green, and blue each. That’s over 16 million (256^3) shades of colour!
+So it makes good sense that our colour systems in computers evolved similarly, to store single dots of colour as a combination of red, green, and blue. To be able to store 100 different shades, we will need at least 7 bits (2^7 = 128), but [computer systems like things in 8s]({filename}/season04/issue040/issue040.md)). For this and other historical reasons, 1 byte (8 bits) are used for each shade, giving us 256 shades of red, green, and blue each. That’s over 16 million (256^3) shades of colour!
 
 ## Colour encoding
 
@@ -32,8 +32,10 @@ Since one byte stores one colour value, three bytes are needed for a single spot
 
 So now you know what to do with colour pickers in applications: just find the combination of red, green, and blue that is closest to the colour you want!
 
-![The Microsoft Paint colour picker]({attach}/season4/issue043/issue043_01.png)<br />
-<small>A colour picker, common in graphics applications. This one is from Microsoft Paint.</small>
+<figure>
+    ![The Microsoft Paint colour picker]({attach}/season04/issue043/issue043_01.png)
+    <figcaption>A colour picker, common in graphics applications. This one is from Microsoft Paint.</figcaption>    
+</figure>
 
 You can play with a simple colour wheel on [colorspire.com](https://www.colorspire.com/rgb-color-wheel/), or if you’re feeling more adventurous, try the more technical one on [rapidtables.com](https://www.rapidtables.com/web/color/RGB_Color.html).
 
@@ -43,7 +45,7 @@ On a screen, colours are produced by millions of liquid crystals (in LCDs) or li
 
 It is extremely difficult to manufacture pixels that can produce any colour; this would require that the crystal or diode can emit light of different frequencies. Instead, the display industry has settled on combining 3 sub-pixels into a pixel. Each sub-pixel produces—you guessed it—either red, green, or blue light.
 
-![Close-up of LCD/LED pixels from various displays]({attach}/season4/issue043/issue043_02.png)<br />
+![Close-up of LCD/LED pixels from various displays]({attach}/season04/issue043/issue043_02.png)<br />
 <small>Extreme close-up shots of pixels.<br />
 Taken from [lcdtech.info](http://lcdtech.info/en/tests/lcd.pixels.structure.htm).</small>
 
@@ -76,7 +78,7 @@ I get carried away easily explaining colour, and it took incredible discipline t
 
 **Next issue:** Image resolution
 
-![Meme: One does not simply resize an image]({attach}/season4/issue043/issue043_03.jpg)
+![Meme: One does not simply resize an image]({attach}/season04/issue043/issue043_03.jpg)
 
 After examining a single pixel, I’ll look at a whole image: what does it take to trick our brains into seeing an image instead of a collection of pixels?
 

@@ -5,7 +5,7 @@ Category: Season 4
 Slug: issue040
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2019-09-28 08:00
 
 **Previously:** Networks enable data packets to get from one computer in the network to another through gateways that forward the data packets according to fixed rules. These rules are encoded in the various protocols followed by network systems, and all computers on the network agree to follow the same protocol.
 

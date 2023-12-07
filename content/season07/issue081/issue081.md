@@ -5,7 +5,7 @@ Category: Season 7
 Slug: issue081
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2020-07-25 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) An index is a separate table containing key terms in the database (usually names, IDs, or some other key identifier), alongside the row numbers where they are found. An index greatly speeds up row lookups, but slows down the writing of new rows.
 

@@ -5,7 +5,7 @@ Category: Season 10
 Slug: issue120
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2021-05-15 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Solid-state disks are much faster than hard disks because they have no moving parts, so no time is wasted waiting for parts to get into the right position. However, they are more expensive than hard disk drives.
 
@@ -41,8 +41,10 @@ If you insert a device and Windows says it does not recognise it, you can be sur
 
 On your computer, you can view a list of your devices and inspect their driver details using Device Manager.
 
-![Device Manager in Windows 10]({attach}/season10/issue120/issue120_01.png)<br />
-<small>Device Manager in Windows 10</small>
+<figure>
+    ![Device Manager in Windows 10]({attach}/season10/issue120/issue120_01.png)
+    <figcaption>Device Manager in Windows 10</figcaption>    
+</figure>
 
 ## Generic drivers
 

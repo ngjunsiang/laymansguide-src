@@ -5,7 +5,7 @@ Category: Season 1
 Slug: issue003
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2018-12-29 08:00
 
 You would think that the first challenge in writing an app is learning the programming language. In my case, there was an even more fundamental challenge to overcome first: how to get my data.
 
@@ -13,15 +13,19 @@ We don’t think about who actually owns the data you upload onto the internet u
 
 “Well, maybe if I learn programming and figure out a way for an app to load these pages and save them automatically, it could go a lot faster.” It certainly can; this method is called page scraping (more on this possibly in a future issue; but not now). But it means your app will have to deal with HTML data, like this:
 
-![Snippet of the Instapaper page source, in HTML]({attach}/season1/issue003/issue003_01.png)
-<small>Instapaper page source. That’s HTML.</small>
+<figure>
+    ![Snippet of the Instapaper page source, in HTML]({attach}/season01/issue003/issue003_01.png)
+    <figcaption>Instapaper page source. That’s HTML.</figcaption>    
+</figure>
 
 Whoa. I may have intentionally formatted it to make it look more dense, but I mean no deceit; in fact, this is closer to what your app has to deal with than nicely formatted code (which will have you tearing your hair out when you have to strip out all the newlines and spaces and tabs from it).
 
 Instapaper’s Notes page is actually not complex; visually it looks like this (I have cropped the sidebar since that didn’t appear in the code chunk above):
 
-![Screenshot of my Instapaper notes page]({attach}/season1/issue003/issue003_02.png)
-<small>Instapaper notes page. Sidebars have been cropped off.</small>
+<figure>
+    ![Screenshot of my Instapaper notes page]({attach}/season01/issue003/issue003_02.png)
+    <figcaption>Instapaper notes page. Sidebars have been cropped off.</figcaption>    
+</figure>
 
 What are all those things (they’re called HTML tags) doing in the page source? They tell the browser how to format the text, usually to appeal to internet users. But when all you want is the raw data, these tags are annoying and tedious to sort through and remove.
 

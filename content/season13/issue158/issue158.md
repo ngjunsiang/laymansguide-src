@@ -5,7 +5,7 @@ Category: Season 13
 Slug: issue158
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2022-02-05 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Time is synchronised from higher-precision sources through a protocol called Network Time Protocol (NTP). A public pool of time servers is available for synchronisation at pool.ntp.org.
 

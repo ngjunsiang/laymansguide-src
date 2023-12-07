@@ -5,7 +5,7 @@ Category: Season 13
 Slug: issue160
 Author: J S Ng
 Summary: 
-Modified: 
+Modified: 2022-02-19 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Instead of GPS satellites, smartphones can also use wifi points and cell towers to determine their position (if enabled in the OS).
 
@@ -19,13 +19,13 @@ What about content?
 
 You make a website, type in the headers and body text, upload the images and videos … and it just works right?
 
-Let’s think through the **distribution** of that content. Text is generally small in size and easy to pass around, even through multiple hops ([Issue 36]({filename}/season3/issue036/issue036.md))) from server to client.
+Let’s think through the **distribution** of that content. Text is generally small in size and easy to pass around, even through multiple hops ([Issue 36]({filename}/season03/issue036/issue036.md))) from server to client.
 
 ### Server load
 
-What about the heavy stuff, like hi-res images and videos? Thousands or millions of clients all requesting the same large video file from your hosting server. That server is going to be spending many CPU cycles ([Issue 58]({filename}/season5/issue058/issue058.md))) receiving requests, retrieving the data, splitting and encapsulating it into data packets to be sent out. All that processing adds to the server load. If there are too many clients waiting for the same data ... they gonna wait. And that adds to latency ([Issue 36]({filename}/season3/issue036/issue036.md))); those viewers are going to be seeing loading spinners for a while.
+What about the heavy stuff, like hi-res images and videos? Thousands or millions of clients all requesting the same large video file from your hosting server. That server is going to be spending many CPU cycles ([Issue 58]({filename}/season05/issue058/issue058.md))) receiving requests, retrieving the data, splitting and encapsulating it into data packets to be sent out. All that processing adds to the server load. If there are too many clients waiting for the same data ... they gonna wait. And that adds to latency ([Issue 36]({filename}/season03/issue036/issue036.md))); those viewers are going to be seeing loading spinners for a while.
 
-Some of that processing can be mitigated with techniques such as caching ([Issue 39]({filename}/season3/issue039/issue039.md))), but not enough; you will eventually need to add more servers.
+Some of that processing can be mitigated with techniques such as caching ([Issue 39]({filename}/season03/issue039/issue039.md))), but not enough; you will eventually need to add more servers.
 
 ### Bandwidth and transfer fees
 
