@@ -40,7 +40,7 @@ class Article:
             f.write(self.content)
 
 def mkfig(match) -> str:
-    alt_text, img_url, caption = match
+    alt_text, img_url, caption = match.group(1), match.group(2), match.group(3)
     return f"""<figure>
     ![{alt_text}]({img_url})
     <figcaption>{caption}</figcaption>    
@@ -62,6 +62,5 @@ for issue in issues:
     path = os.path.join("content", season, name, issue["file"])
     
     article = Article.from_file(path)
-    for match in re_fig.findall(article.content):
-        print(mkfig(match))
-    # article.to_file(path)
+    article.content = re_fig.sub(mkfig, article.content)
+    article.to_file(path)
