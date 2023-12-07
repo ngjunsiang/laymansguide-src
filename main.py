@@ -48,14 +48,14 @@ def mkfig(match) -> str:
     
 
 
-re_fig = re.compile(r"\!\[(.*?)\]\((.+?)\)\n*<small>(.*?)</small>")
-# re_fig = re.compile(r"\!")
+re_fig = re.compile(r"\!\[(.*?)\]\((.+?)\)\n*(?:<br />)*\n*<small>(.*?)</small>", re.MULTILINE)
 
 
 with open("metadata.csv") as f:
     issues = list(csv.DictReader(f))
 
 for issue in issues:
+    print(issue["file"])
     _, num = issue["category"].split(" ")
     season = f"season{int(num):02}"
     name, _ = os.path.splitext(issue["file"])
