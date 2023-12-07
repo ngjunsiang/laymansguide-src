@@ -36,9 +36,7 @@ So that’s another way of representing image information: you can either repres
 Since the human eye is less sensitive to chroma (colour) information, in the JPEG image format, the chroma components are compressed by averaging each 2×2 group of pixels into 1 value for U and V each. (This process is known as subsampling.) Theoretically that halves the amount of data required for the same image! (4/4 Y + 1/4 U + 1/4 V = 6/12 of the original information)
 
 ![4 images with different chroma subsampling]({attach}/season4/issue046/issue046_01.jpg)<br />
-<small>Compare the image without chroma compression (4:4:4) to the image with chroma compression (4:2:0).<br />
-Without scrutiny, the human eye is not very sensitive to lower resolution in chroma.<br />
-Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Colorcomp.jpg)</small>
+<small>Compare the image without chroma compression (4:4:4) to the image with chroma compression (4:2:0).<br />Without scrutiny, the human eye is not very sensitive to lower resolution in chroma.<br />Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Colorcomp.jpg)</small>
 
 ## Lossy image compression: luma
 

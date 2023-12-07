@@ -20,16 +20,14 @@ Obviously when you loaded the page, some information already went to the server 
 Let’s revisit HuffPost again, this time filtering only for image loads:
 
 ![Screenshot of DevTools in Vivaldi browser, filtered to show only image loads.]({attach}/season6/issue074/issue074_01.png)<br />
-<small>Chrome DevTools showing filtered image requests.<br />
-A request for a tracking pixel is highlighted in blue.</small>
+<small>Chrome DevTools showing filtered image requests.<br />A request for a tracking pixel is highlighted in blue.</small>
 
 Hmm … why does an image request need to be so long? Anytime you see a long URL like that, with a `?` after the URL proper, and peppered with `&`s and `=`s, alarm bells should be going off in your head: data is being sent to the server ([Issue 70]({filename}/season6/issue070/issue070.md)))!
 
 Let’s see what this image looks like:
 
 ![Vivaldi browser tab showing a tracking pixel.]({attach}/season6/issue074/issue074_02.png)<br />
-<small>This is a tracking pixel.<br />
-You can’t see it. The image info sidebar shows that its dimensions are 1×1 pixels.</small>
+<small>This is a tracking pixel.<br />You can’t see it. The image info sidebar shows that its dimensions are 1×1 pixels.</small>
 
 Wha—?!
 

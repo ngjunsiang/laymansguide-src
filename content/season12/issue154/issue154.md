@@ -31,7 +31,7 @@ The three main instruction sets discussed here are x86 (32-bit), x86-64 (64-bit)
 
 Do you remember the great 32-to-64-bit schism of the late 2000s ([Issue 55]({filename}/season5/issue055/issue055.md)))? There was a period of time when people got confused whether a Windows program they had could run on a 32-bit x86 processor or a 64-bit x86-64 processor: programs compiled for the latter could not run on the former, but programs compiled for the former could run on the latter.
 
-![screenshot of download options for WinRAR, showing 32-bit and 64-bit options]({attach}/season12/issue154/issue154_01.png)  
+![screenshot of download options for WinRAR, showing 32-bit and 64-bit options]({attach}/season12/issue154/issue154_01.png)
 <small>Some download sites still ask you to make this choice between downloading the 32-bit or 64-bit version, usually for users who for whatever reason have opted not to upgrade to 64-bit processors.</small>
 
 That was a lie. Programs compiled for Windows on x86 cannot run *natively* on x86-64, and vice-versa. x86 and x86-64, while looking similar, are different instruction sets. x86 instructions have to be translated into x86-64 instructions to run on a 64-bit processor.

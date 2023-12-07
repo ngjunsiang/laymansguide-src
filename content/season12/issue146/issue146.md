@@ -40,9 +40,7 @@ When a program requests access to the printer and the OS responds with “here, 
 Take a look at your Device Manager in Control Panel. What do you see?
 
 ![screenshot of Device Manager in Windows 10]({attach}/season12/issue146/issue146_01.jpg)  
-<small>Device Manager in Windows 10  
-Note that what you are seeing are not the actual hardware (which the OS cannot possibly know).  
-These are interfaces to the hardware.</small>
+<small>Device Manager in Windows 10<br />Note that what you are seeing are not the actual hardware (which the OS cannot possibly know). These are interfaces to the hardware.</small>
 
 A whole set of drivers and interfaces which the OS uses to carry out its work.
 

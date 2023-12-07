@@ -18,8 +18,7 @@ As part of my research for this season, I installed [uMatrix](https://github.com
 Once installed, it adds a button beside the address bar. When clicked, this button pops up a matrix showing the number of resources loaded from each domain:
 
 ![Screenshot of uMatrix in Firefox browser, showing default settings.]({attach}/season6/issue078/issue078_01.png)<br />
-<small>uMatrix in Firefox showing default settings.<br />
-Items highlighted in green are permitted to load, items in red are blocked.</small>
+<small>uMatrix in Firefox showing default settings.<br />Items highlighted in green are permitted to load, items in red are blocked.</small>
 
 ## Understanding the Matrix
 
@@ -67,8 +66,7 @@ Error 405. Looks like I broke something. This is the tedious part: I whitelist o
 It turns out the Dropbox webpage is doing a surprising number of things behind the scenes! By the time I managed to get a login, uMatrix looked like this:
 
 ![Screenshot of uMatrix in Firefox browser, showing some domains whitelisted.]({attach}/season6/issue078/issue078_03.png)<br />
-<small>uMatrix in Firefox showing settings that got Dropbox working.<br />
-I had to allow embedded frames from dropboxcaptcha.com and google.com as well.</small>
+<small>uMatrix in Firefox showing settings that got Dropbox working.<br />I had to allow embedded frames from dropboxcaptcha.com and google.com as well.</small>
 
 ## Spotting the patterns
 

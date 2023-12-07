@@ -39,7 +39,7 @@ Google innovated over the old model in one unique way though.
 
 Early CPC models literally just counted clicks on a link and invoiced you accordingly. As the number of advertisers buying ads rocketed, the publishers switched to an auction model: highest bidder wins. This model disadvantaged smaller companies, who had much smaller advertising budgets, and could not out-compete the big ad-buyers on price.
 
-Google (back then still a tiny company) saw this and,  inspired by its search engine algorithm, introduced one change to it: if an ad with a lower bid got more clicks than ads with higher bids, it could climb the ranking ladder.
+Google (back then still a tiny company) saw this and, inspired by its search engine algorithm, introduced one change to it: if an ad with a lower bid got more clicks than ads with higher bids, it could climb the ranking ladder.
 
 Now the race is on to grab every user click, with new services and web media. Facebook launched in 2004, YouTube in 2005, Twitter in 2006.
 

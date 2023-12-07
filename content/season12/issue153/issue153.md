@@ -29,12 +29,12 @@ Amazon was the first to realise that whatever they were doing to scale Amazon’
 
 The Cloud is a collection of services that can be plugged in to an application, in lieu of writing your own code. Instead of implementing your own storage server, you could use Google Cloud Storage, or Amazon S3, or Microsoft Azure Storage, etc. You access these and other services typically through a web API ([Issue 4]({filename}/season1/issue004/issue004.md))), and have the option to manage them through a web interface.
 
-![screenshot of Google Cloud Storage’s web interface]({attach}/season12/issue153/issue153_01.png)  
+![screenshot of Google Cloud Storage’s web interface]({attach}/season12/issue153/issue153_01.png)
 <small>Google Cloud Storage web interface</small>
 
 Besides virtual machines ([Issue 147]({filename}/season12/issue147/issue147.md))), cloud offerings span multiple layers of abstraction.
 
-![Google Cloud Storage’s main cloud offerings]({attach}/season12/issue153/issue153_02.png)  
+![Google Cloud Storage’s main cloud offerings]({attach}/season12/issue153/issue153_02.png)
 <small>Google Cloud main offerings</small>
 
 Here are Google’s mainstay offerings:

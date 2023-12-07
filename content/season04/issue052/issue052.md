@@ -16,7 +16,7 @@ I mentioned earlier that PDF is an incredibly complex and powerful format. You c
 Sure, that’s why I’m writing this newsletter :) Now if you flip to page 238 of the reference manual (I’m just kidding, don’t go download the reference manual now!) and look at Example 1, you see this:
 
 ```
-This example illustrates the most straightforward use of a font. The text ABC is placed10 inches from the
+This example illustrates the most straightforward use of a font. The text ABC is placed 10 inches from the
 bottom of the page and 4 inches from the left edge, using 12-point Helvetica.
 
 BT
@@ -35,7 +35,7 @@ d) Paint the glyphs for a string of characters at that position.
 e) End the text object.
 ```
 
-Remember when I showed you some markup languages in [Issue 50]({filename}/season4/issue050/issue050.md))? Here’s another one, but much more concise and much more specific: it lets you specify font and position for each string of characters. There are additional formatting codes for changing the colour, changing the text format to an outlined version, and making various other kinds of changes.
+Remember when I showed you some markup languages in [Issue 50]({filename}/season4/issue050/issue050.md)? Here’s another one, but much more concise and much more specific: it lets you specify font and position for each string of characters. There are additional formatting codes for changing the colour, changing the text format to an outlined version, and making various other kinds of changes.
 
 ## How PDF documents display this text
 
