@@ -4,7 +4,7 @@ Tags:
 Category: Season 02
 Slug: issue024
 Author: J S Ng
-Summary: 
+Summary: A bug tracker, or issue tracker, is where users can submit problems they encounter with the software. To submit a helpful issue, users should understand the project’s philosophy and purpose, and read the contributing guidelines.
 Modified: 2019-05-25 13:18
 
 Last week, we talked about how developers plan out a project and describe specifically what needs to be done: they write out a specification, and then they write code to make their app meet the specification. Specifications are also used to standardise the way apps communicate, such as they way to report time.

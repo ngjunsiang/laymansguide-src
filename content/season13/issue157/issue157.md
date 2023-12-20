@@ -4,7 +4,7 @@ Tags:
 Category: Season 13
 Slug: issue157
 Author: J S Ng
-Summary: 
+Summary: Time is synchronised from higher-precision sources through a protocol called Network Time Protocol (NTP). A public pool of time servers is available for synchronisation at pool.ntp.org.
 Modified: 2022-01-29 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) To speed up execution and avoid translation overhead, some systems employ ahead-of-time translation, storing the translated instructions to be executed in future. But many systems employ a mix of just-in-time (JIT) and ahead-of-time (AOT) techniques.

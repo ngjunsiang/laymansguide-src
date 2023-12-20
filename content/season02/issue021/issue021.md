@@ -4,7 +4,7 @@ Tags:
 Category: Season 02
 Slug: issue021
 Author: J S Ng
-Summary: 
+Summary: n git, forking a repository creates a copy of it for you to work on. Merging a repository with the original combines the commits from both so that they become one repository again. Conflicts arising from commits from both codepaths that affect the same part of the code will need to be resolved manually. Developers do most of this forking and merging in Github, an online platform for working on and talking about code.
 Modified: 2019-05-04 08:00
 
 So far I have been describing things as though only one developer was working on a project. What happens when two developers are involved? Any kind of collaboration between people working on one thing usually leads to issues coordinating their efforts. How do developers manage this?

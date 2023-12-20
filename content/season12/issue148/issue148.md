@@ -4,7 +4,7 @@ Tags:
 Category: Season 12
 Slug: issue148
 Author: J S Ng
-Summary: 
+Summary: Renting out virtual hardware instead of physical hardware meant that instead of having to move hardware around and manage it, you could send the *data* for running an OS to the hosting company and have them be responsible for hardware operations.
 Modified: 2021-11-27 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Running a virtual machine is like running a physical machine, but within a window in your OS.

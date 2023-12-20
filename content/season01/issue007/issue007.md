@@ -4,7 +4,7 @@ Tags:
 Category: Season 01
 Slug: issue007
 Author: J S Ng
-Summary: 
+Summary: HTTP is a set of rules for sending and receiving webpages that link to other webpages. According to the rules, if you want a webpages, you (the client) must send a (HTTP) request to a server, which will return a response.
 Modified: 2019-01-26 08:00
 
 Before I jump into talking about requests, maybe we should start with a more fundamental question: what is HTTP?

@@ -4,7 +4,7 @@ Tags: app, operating system
 Category: Season 08
 Slug: issue102
 Author: J S Ng
-Summary: 
+Summary: Applications are assigned a thread by the OS for running a sequence of instructions. The instructions are executed sequentially, and the app cannot proceed if it gets stuck on any instruction.
 Modified: 2021-01-09 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) An app crashes when it encounters a situation it can’t handle, or when it attempts to perform an operation that is disallowed by the operating system.

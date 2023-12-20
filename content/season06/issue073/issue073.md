@@ -4,7 +4,7 @@ Tags: cache
 Category: Season 06
 Slug: issue073
 Author: J S Ng
-Summary: 
+Summary: When a page loads advertisements through header bidding, it sends your cookie along with other information to an **ad exchange**. The ad exchange conducts automated bidding among the ad-buyers, determines the winner(s), and sends the winning code(s) back to your browser. Your browser then sends these codes to the **CDN**, which sends back the winning ads for your page to render in your browser.
 Modified: 2020-05-23 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) QuantCast gathers a large amount of data on internet users directly through its **cookie** (which other publishers serve through their websites), and also by cross-checking it against data which it purchases from other **data brokers** who gather their information through other means, such as internet activity and credit card transactions.

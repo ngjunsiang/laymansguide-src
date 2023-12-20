@@ -4,7 +4,7 @@ Tags:
 Category: Season 07
 Slug: issue087
 Author: J S Ng
-Summary: 
+Summary: Relational databases are designed to maintain a well-structured set of data tables through constraint rules. This makes them very useful for preventing accidental inconsistencies in data, but make any changes to the data schema difficult to implement. Changing from one schema to another involves downtime and a migration.
 Modified: 2020-09-12 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) To increase the performance of a distributed database, we can scale up/scale vertically by increasing the computers’ performance, or scale out/scale horizontally by adding more computers. Distributed databases can only prioritise two of the following three factors: consistency, availability, partitioning (CAP theorem).

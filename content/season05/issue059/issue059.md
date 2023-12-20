@@ -4,7 +4,7 @@ Tags: cache, cpu
 Category: Season 05
 Slug: issue059
 Author: J S Ng
-Summary: 
+Summary: A set of instructions can trick a CPU into reordering load instructions so that the data is temporarily loaded into the cache before the instructions are retired. The cache can then be snooped to retrieve the data.
 Modified: 2020-02-08 08:00
 
 **Previously:** The CPU comprises different types of execution units. All the execution units can run at the same time, but they may execute instructions over different numbers of clock cycles. To minimise wait time, CPU instructions are carried out in an order that keeps the execution units busy as often as possible.

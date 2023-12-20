@@ -4,7 +4,7 @@ Tags: app
 Category: Season 02
 Slug: issue026
 Author: J S Ng
-Summary: 
+Summary: A developer can simply put up a download on a webpage and hope people download it and figure out how to get the app on their devices. But often, the more popular way is to publish the app to a repository (also known as an app store, for mobile devices). Before this can be done, the code or application needs to be packaged according to the requirements of the repository.
 Modified: 2019-06-15 08:00
 
 In the past 12 issues I’ve talked a bit about different kinds of programs ([web, desktop, mobile, …]({filename}/season02/issue014/issue014.md))), different kinds of code ([frontend, backend]({filename}/season02/issue014/issue014.md))), tools that programmers use while programming ([command line]({filename}/season02/issue015/issue015.md)), [libraries]({filename}/season02/issue017/issue017.md)) and [frameworks]({filename}/season02/issue018/issue018.md)), [version control]({filename}/season02/issue019/issue019.md)), [bug/issue trackers]({filename}/season02/issue024/issue024.md)), [text editors and integrated development environments]({filename}/season02/issue025/issue025.md))), and ideas they use to work more efficiently ([specifications]({filename}/season02/issue023/issue023.md)), [testing]({filename}/season02/issue020/issue020.md)), [continuous integration]({filename}/season02/issue022/issue022.md))).

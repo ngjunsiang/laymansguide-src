@@ -4,7 +4,7 @@ Tags: document
 Category: Season 04
 Slug: issue050
 Author: J S Ng
-Summary: 
+Summary: An HTML file contains markup tags that tell the browser how to interpret and format the text within the tags. Other document formats usually use tags in a similar way. These tags constitute a markup language that any app can use to mark up its own text too.
 Modified: 2019-12-07 08:00
 
 **Previously:** A file consists of data, preceded by a file header which describes the data. Software (including operating systems) detect the kind of data contained in a file by 1) glancing at the file extension, 2) looking at its declared MIME type (if any), and 3) checking the file header.

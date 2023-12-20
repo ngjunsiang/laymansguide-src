@@ -4,7 +4,7 @@ Tags:
 Category: Season 07
 Slug: issue084
 Author: J S Ng
-Summary: 
+Summary: SQL queries let you join multiple tables based on specified conditions using the JOIN keyword. This enables crafting complex queries to return only the specific data that is required.
 Modified: 2020-08-22 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Structured Query Language (SQL) is a computer language for managing data in databases. It has keywords and keyphrases that let you filter rows and columns, group and order data, perform basic arithmetic on data, and more. It is complex and powerful, but astute and efficient use requires specialised training.

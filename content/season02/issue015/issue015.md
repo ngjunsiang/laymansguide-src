@@ -4,7 +4,7 @@ Tags:
 Category: Season 02
 Slug: issue015
 Author: J S Ng
-Summary: 
+Summary: A command line is a way of giving commands to the computer in the form of text. An instruction consists of the name of the program to be run, and the options that it needs to use. Command lines provide a fallback mechanism when graphical interfaces break down, and are a much more remote-friendly interface.
 Modified: 2019-03-23 08:00
 
 If something’s not working correctly in your operating system, someone has to dig into the settings and configuration, figure out what’s wrong, and resolve the issue. If you have ever been in those shoes, you have been basically doing a sysadmin’s job. (Okay, put away those pitchforks you sysadmin purists and hear me out …)

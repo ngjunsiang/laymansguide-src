@@ -4,7 +4,7 @@ Tags:
 Category: Season 04
 Slug: issue043
 Author: J S Ng
-Summary: 
+Summary: Colour is stored as a combination of red, green, and blue. In a computer system, each
 Modified: 2019-10-19 08:00
 
 **Previously:** Unicode is an encoding format which is meant to support every language, ever. Most websites, apps, and interfaces support it today.

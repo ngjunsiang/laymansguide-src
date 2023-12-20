@@ -4,7 +4,7 @@ Tags:
 Category: Season 09
 Slug: issue111
 Author: J S Ng
-Summary: 
+Summary: Moving a file (within the same disk region) merely updates its file table record, and this happens really quickly. Copying a file, or moving it to a different disk/region, involves copying the contents and then updating the file table record, and is considerably slower. Deleting a file only requires that its file table record be removed, and is a very fast operation (if it does not involve the Recycle Bin).
 Modified: 2021-03-13 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Filesystem journals are a record of changes made to the disk, so as to enable those changes to be rolled back, or to be completed properly in case of sudden interruption.

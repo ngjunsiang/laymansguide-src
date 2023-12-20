@@ -4,7 +4,7 @@ Tags:
 Category: Season 10
 Slug: issue121
 Author: J S Ng
-Summary: 
+Summary: 3D models are represented with vertices (points), edges (line segments between points), and faces in a computer. Images known as textures can be mapped to faces to give the impression of detail.
 Modified: 2021-05-22 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Driver files provide information about the driver, and instructions on how to receive information from the device, and encode information to be passed to the device. The operating system may come with generic driver files for the device, but custom driver files might provide better performance or additional features.

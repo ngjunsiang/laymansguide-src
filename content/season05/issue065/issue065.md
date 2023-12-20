@@ -4,7 +4,7 @@ Tags: app, cache, memory, operating system
 Category: Season 05
 Slug: issue065
 Author: J S Ng
-Summary: 
+Summary: Shared memory helps to reduce the amount of memory needed by all the applications running on an operating system. It also allows applications to send data to each other, and to communicate.
 Modified: 2020-03-28 17:12
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Meltdown and Spectre require the programs executing them to have access to kernel memory space. Kernel address isolation attempts to prevent the program from even having access to the kernel address space in the first place. TLB flushing changes the virtual-to-physical memory mapping, disrupting Spectre’s reliance on a consistent virtual-to-physical memory mapping.

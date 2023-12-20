@@ -4,7 +4,7 @@ Tags: document
 Category: Season 03
 Slug: issue038
 Author: J S Ng
-Summary: 
+Summary: When a webpage document loads (Stage 1), it is processed by the web browser, which then
 Modified: 2019-09-14 08:00
 
 **Previously:** Data packets hop from server to server. The more hops a packet must undergo, the longer the latency. The slower the servers along the route, the longer the latency as well.

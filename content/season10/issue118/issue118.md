@@ -4,7 +4,7 @@ Tags:
 Category: Season 10
 Slug: issue118
 Author: J S Ng
-Summary: 
+Summary: A hard disk consists of a read arm, and a set of magnetic platters which store data. To read or write data, the read arm must move to the appropriate track of the rotating platter, and detect the magnetic field (for reading), or attempt to magnetise the domains on the platter (for writing). Operations that require the read arm to access different parts of the magnetic platters intermittently result in slower read speeds.
 Modified: 2021-05-01 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Operating systems use a page file on the storage disk as a complement to physical memory. This allows OSes to behave more performantly than they would if they did not have a page file. Data that is rarely accessed is moved to the pagefile (“paged out”), and can be paged in when it is needed later, albeit with a performance hit.

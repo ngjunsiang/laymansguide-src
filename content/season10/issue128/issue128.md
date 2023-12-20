@@ -4,7 +4,7 @@ Tags: memory
 Category: Season 10
 Slug: issue128
 Author: J S Ng
-Summary: 
+Summary: Upgradable parts need a slot or socket to be inserted into; these slots/sockets need to be made robust enough, causing them to take up more space than a soldered part. Devices which were designed to be small and portable generally eliminate these as far as possible, opting to have parts directly soldered to the board instead.
 Modified: 2021-07-10 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) USB Power Delivery is a specification that describes how much voltage and current can be supplied by different categories of USB cables. It allows power delivery at different levels for all kids of connected devices, up to 100W. This should help to simplify cable setups that otherwise require multiple kinds of cables between two closely interconnected devices (such as a laptop and an external monitor).

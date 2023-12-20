@@ -4,7 +4,7 @@ Tags:
 Category: Season 03
 Slug: issue033
 Author: J S Ng
-Summary: 
+Summary: When an app makes a network request through the OS, the OS adds the source and destination port number to the query in accordance with TCP. When the OS receives the response, it forwards the data to the app which is mapped to the destination port number. Port numbers 1-1023 are registered to standard Internet services, port numbers 1024 to 49151 may be registered to other services, and port numbers 49152 to 65535 may be used by anyone.
 Modified: 2019-08-10 08:00
 
 Previously: The devices on your home network share the single ISP-assigned IP address through your router. The router rewrites the source IP and port number on outgoing data packets, and rewrites the destination IP and port number on incoming data packets, acting as a middleman for your devices so that they can access the Internet.

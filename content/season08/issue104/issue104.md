@@ -4,7 +4,7 @@ Tags: app
 Category: Season 08
 Slug: issue104
 Author: J S Ng
-Summary: 
+Summary: Shared secrets allow secured access to resources, such as databases or other services. These shared secrets are typically kept on a server controlled by the app developer. For mobile apps, they are usually stored with the operating system, inaccessible to other apps.
 Modified: 2021-01-23 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A race condition happens when threads depend on instructions happening with coincidental timing for success. When instructions are not executed with appropriate timing, one or more threads can get stuck waiting on a response that never comes.

@@ -4,7 +4,7 @@ Tags:
 Category: Season 11
 Slug: issue137
 Author: J S Ng
-Summary: 
+Summary: The M1 goes one step further: not only does it make do with fewer chips, it does so with passive cooling!
 Modified: 2021-09-11 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Slim laptops have been undergoing a gradual transition: more and more of their chips are no longer available as a replaceable card, but instead soldered directly to the mainboard. Since 2017/2018, most slim laptops pretty much have CPU, memory, storage, and network chips all soldered directly to the mainboard.

@@ -4,7 +4,7 @@ Tags: cache, cpu
 Category: Season 05
 Slug: issue058
 Author: J S Ng
-Summary: 
+Summary: The CPU comprises different types of execution units. All the execution units can run at the same time, but they may execute instructions over different numbers of clock cycles. To minimise wait time, CPU instructions are carried out in an order that keeps the execution units busy as often as possible.
 Modified: 2020-02-01 08:00
 
 **Previously:** The CPU stores data for ready access in the CPU cache. Accessing data from the CPU cache is much faster than accessing data from main memory. When the CPU needs data from a memory address, it looks in the cache first. If the data is not there (a **cache miss**), it will load the data from the memory address, and store a copy in the cache for faster reference in future. The CPU cache is managed by the CPU and is invisible to the OS. Programs that need to ensure the data in the cache is “fresh” can perform a cache flush and reload.

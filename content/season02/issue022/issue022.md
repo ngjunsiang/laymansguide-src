@@ -4,7 +4,7 @@ Tags:
 Category: Season 02
 Slug: issue022
 Author: J S Ng
-Summary: 
+Summary: Continuous Integration means merging changes back to the main branch as often as possible. This means keeping code changes as small as possible, and using automated testing to speed up the development process.
 Modified: 2019-05-11 08:00
 
 Last week I introduced forking and merging, which are how developers ensure that they don't override other peoples’ work. They fork a repository to create their own copy, make the changes required to introduce the feature they want, and then merge it back with the main repository when it is ready, for the repository owner to review.

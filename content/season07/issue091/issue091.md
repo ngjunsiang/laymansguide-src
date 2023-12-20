@@ -4,7 +4,7 @@ Tags:
 Category: Season 07
 Slug: issue091
 Author: J S Ng
-Summary: 
+Summary: Depending on what you need a database for, there may be online database platforms that can manage and automate much of the work for you. Airtable, Smartsheet, Knack, and Zoho Creator are just 4 of many options that offer an easier way to set up and input your data, then access them through apps or other means.
 Modified: 2020-10-11 11:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A URI (Uniform Resource Identifier) is required to connect to a database. This URI can be provided by a hosting service provider that runs your own database for you, or by a cloud service provider that runs your database on their platform.

@@ -4,7 +4,7 @@ Tags:
 Category: Season 04
 Slug: issue040
 Author: J S Ng
-Summary: 
+Summary: A bit is a unit of measurement for information. 1 bit of information is enough to reduce the uncertainty by 50%. 8 bits comprise 1 byte. Humans count bytes in multiples of thousands, while computers count bytes in multiples of 1,024.
 Modified: 2019-09-28 08:00
 
 **Previously:** Networks enable data packets to get from one computer in the network to another through gateways that forward the data packets according to fixed rules. These rules are encoded in the various protocols followed by network systems, and all computers on the network agree to follow the same protocol.

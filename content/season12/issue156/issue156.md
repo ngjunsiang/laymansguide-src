@@ -4,7 +4,7 @@ Tags:
 Category: Season 12
 Slug: issue156
 Author: J S Ng
-Summary: 
+Summary: To speed up execution and avoid translation overhead, some systems employ ahead-of-time translation, storing the translated instructions to be executed in future. But many systems employ a mix of just-in-time (JIT) and ahead-of-time (AOT) techniques.
 Modified: 2022-01-22 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Translating a set of instructions before executing it will always lead to a slowdown, although sometimes this may not be noticeable to users.

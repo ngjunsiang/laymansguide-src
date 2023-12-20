@@ -4,7 +4,7 @@ Tags:
 Category: Season 04
 Slug: issue049
 Author: J S Ng
-Summary: 
+Summary: A file consists of data, preceded by a file header which describes the data. Software (including operating systems) detect the kind of data contained in a file by 1) glancing at the file extension, 2) looking at its declared MIME type (if any), and 3) checking the file header, in order of difficulty and accuracy.
 Modified: 2019-11-30 08:00
 
 **Previously:** A video container can hold one or more audio, video, or text data streams. To encode or decode a data stream, you need to have the necessary codec installed. Most video runs at 25 or 30 fps, with high-quality video going up to 60 fps. You can use a program like MediaInfo to help you decipher the streams inside a video container file.

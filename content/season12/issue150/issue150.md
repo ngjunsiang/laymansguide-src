@@ -4,7 +4,7 @@ Tags:
 Category: Season 12
 Slug: issue150
 Author: J S Ng
-Summary: 
+Summary: System VMs provide a set of virtualised hardware that the OS interacts with. Process VMs provide a set of libraries that a program (written in that programming language) interacts with.
 Modified: 2021-12-11 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Containers are one layer of virtualisation above virtual machines: containerisation systems virtualise access to the operating system, presenting a virtual interface that provides software with the resources it needs, without being aware of software running in other containers on the same system.

@@ -4,7 +4,7 @@ Tags:
 Category: Season 03
 Slug: issue034
 Author: J S Ng
-Summary: 
+Summary: Firewalls block data packets that match certain rules. They decrypt the data packet layer by layer, dropping those that match its programmed rules without allowing them to be forwarded to the next point in its journey. The type of filtering that can be applied depends on the processing power available to the router, since some information is hidden more deeply in the data packet than others. Such filtering is typically circumvented by the use of VPNs, or other means of encrypting the data that is required.
 Modified: 2019-08-17 08:00
 
 Previously: Data is encapsulated when it goes out from an app onto the internet as a request or response. First, in the TCP layer, the OS tags the request with the pre-assigned port number so that it can forward the response to the correct app later. Next, in the IP layer, the network card adds source and destination IP address information so that the data packet arrives at the correct destination server, and the destination server can send the response back to the correct computer. As the packet goes through the router, the router replaces the (source) private IP address assigned to the device by the router with the public IP address assigned to the router by the ISP.

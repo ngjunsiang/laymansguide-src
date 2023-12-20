@@ -4,7 +4,7 @@ Tags: memory, operating system
 Category: Season 09
 Slug: issue105
 Author: J S Ng
-Summary: 
+Summary: The OS takes care of booting up, login and user management, window management, memory allocation, storage interfaces, background services, peripheral management, and much more. Access to these services, where allowed, is provided in the form of software libraries that developers can use.
 Modified: 2021-01-30 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Shared secrets allow secured access to resources, such as databases or other services. These shared secrets are typically kept on a server controlled by the app developer. For mobile apps, they are usually stored with the operating system, inaccessible to other apps.

@@ -4,7 +4,7 @@ Tags:
 Category: Season 07
 Slug: issue082
 Author: J S Ng
-Summary: 
+Summary: A database system follows rules that enable multiple users to send commands to the database at the same time. The system attempts to execute each action one at a time, locking data that is in use by other users, and ensuring that each user does not carry out actions that they are not permitted to. Such systems are better able to prevent data corruption compared to a text-based system.
 Modified: 2020-08-01 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Putting all data into one table results in unnecessary duplication of data. Making data atomic by splitting it up into multiple tables makes the data easier to work with, but requires multiple lookups and joins to get the required data. A standard database language, SQL, makes it possible to write queries that are supported by multiple databases.

@@ -4,7 +4,7 @@ Tags:
 Category: Season 11
 Slug: issue142
 Author: J S Ng
-Summary: 
+Summary: Using the same hardware for both smartphones and laptops would make it much easier to write apps for both platforms. The closer they are in features, hardware, and software support, the easier things will be for developers.
 Modified: 2021-10-16 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The Apple A14 and Apple M1 are essentially the same chip architecture: they use almost the same building blocks, just with different numbers of them. On top of that, the Apple M1 implements unified memory, allowing the CPU and GPU (and other SoC components) to share the same system memory, greatly facilitating intra-chip communication.

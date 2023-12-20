@@ -4,7 +4,7 @@ Tags:
 Category: Season 02
 Slug: issue019
 Author: J S Ng
-Summary: 
+Summary: A **version control system** (VCS) tracks changes to documents. Git is a version control system for source code. Keeping a change history enables a VCS to roll back code in a previous point in time. A change history can also be used in areas other than coding.
 Modified: 2019-04-20 08:00
 
 Have you ever worked on a large document with a team of people before? If you have, did it go well? Did people get along and not get into conflict with each other over conflicting ideas or changes? If it did, please drop me an email and let me know! In my experience it is so frustrating and I have difficulty seeing how it can be done without some kind of standardised, automated process for keeping everyone updated.

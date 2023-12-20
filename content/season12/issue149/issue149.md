@@ -4,7 +4,7 @@ Tags:
 Category: Season 12
 Slug: issue149
 Author: J S Ng
-Summary: 
+Summary: Containers are one layer of virtualisation above virtual machines: containerisation systems virtualise access to the operating system, presenting a virtual interface that provides software with the resources it needs, without being aware of software running in other containers on the same system.
 Modified: 2021-12-04 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Renting out virtual hardware instead of physical hardware meant that instead of having to move hardware around and manage it, you could send the *data* for running an OS to the hosting company and have them be responsible for hardware operations.

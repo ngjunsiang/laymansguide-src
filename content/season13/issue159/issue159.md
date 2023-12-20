@@ -4,7 +4,7 @@ Tags:
 Category: Season 13
 Slug: issue159
 Author: J S Ng
-Summary: 
+Summary: nstead of GPS satellites, smartphones can also use wifi points and cell towers to determine their position (if enabled in the OS).
 Modified: 2022-02-12 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) To get your location using GPS, your phone requests information from four overhead GPS satellites: their location, and the distance between them and your phone. With this information, your phone can calculate its location.

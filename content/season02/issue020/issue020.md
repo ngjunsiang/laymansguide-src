@@ -4,7 +4,7 @@ Tags:
 Category: Season 02
 Slug: issue020
 Author: J S Ng
-Summary: 
+Summary: Testing is the only way to know your app really works. Tests can be set up for the different parts of your app, from the basic building blocks to the main code and finally even the interface, including web pages.
 Modified: 2019-04-27 08:00
 
 Last issue, I introduced **version control**, the idea that you can set things up in a way that lets you see the **change history** of a document. This lets you undo changes which you later come to regret, and compare the document to a previous point in history. If you have a version control system (VCS) set up, you can commit changes to it and view a list of those changes later.

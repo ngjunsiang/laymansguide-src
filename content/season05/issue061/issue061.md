@@ -4,7 +4,7 @@ Tags: cache, cpu, memory
 Category: Season 05
 Slug: issue061
 Author: J S Ng
-Summary: 
+Summary: A cache miss is slow, and a cache hit is fast. This difference in cache reading speed can be used to transmit secrets out from the cache, which cannot be read directly by programs.
 Modified: 2020-02-22 08:00
 
 **Previously:** Speculative execution is a feature that lets the CPU speed up execution if it correctly predicts a decision point. The CPU carries out the operations along the predicted decision branch and loads the results if it predicts correctly.

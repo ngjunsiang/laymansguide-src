@@ -4,7 +4,7 @@ Tags: cache
 Category: Season 13
 Slug: issue167
 Author: J S Ng
-Summary: 
+Summary: Fragmentation is likely a contributor of system slowdown, particularly for mobile devices: the databases used by most mobile apps tend to store data in many small chunks rather than fewer big chunks, which slows down data search operations. The most effective measure for improving device responsiveness is usually to clear the app cache, so the app does not attempt to read previous data from storage.
 Modified: 2022-04-09 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) There are easy and quick ways to check the validity of the most common advice for resolving system slowdown. But it still seems to happen even after these tips have been tried.

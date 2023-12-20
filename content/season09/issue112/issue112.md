@@ -4,7 +4,7 @@ Tags: memory, operating system
 Category: Season 09
 Slug: issue112
 Author: J S Ng
-Summary: 
+Summary: When a computer is booted up, it runs the BIOS from a chip on the motherboard. The chip checks that core parts are present, checks for a storage disk containing a bootloader, loads it into memory, and hands over control. The bootloader loads the operating system kernel. The operating system kernel then does whatever it needs to do to get the system ready for use.
 Modified: 2021-03-20 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Moving a file (within the same disk region) merely updates its file table record, and this happens really quickly. Copying a file, or moving it to a different disk/region, involves copying the contents and then updating the file table record, and is considerably slower. Deleting a file only requires that its file table record be removed, and is a very fast operation (if it does not involve the Recycle Bin).

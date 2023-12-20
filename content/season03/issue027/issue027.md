@@ -4,7 +4,7 @@ Tags:
 Category: Season 03
 Slug: issue027
 Author: J S Ng
-Summary: 
+Summary: P addresses are a string of four numbers. A list of reserved IP addresses is managed by IANA, and all Internet registries agree to forward data packets according to that list. A data packet sent from a client goes to its gateway. At the gateway, the destination IP address is checked against the gateway’s forwarding tables. If the IP address is found in the forwarding table, it gets sent along that route, otherwise it gets forwarded to the next gateway, … until it reaches its destination.
 Modified: 2019-06-29 08:00
 
 In Season 2, I took a detour to introduce some cool things that developers typically work with, and ideas they implement to make their work as smooth as possible.

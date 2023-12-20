@@ -4,7 +4,7 @@ Tags:
 Category: Season 03
 Slug: issue031
 Author: J S Ng
-Summary: 
+Summary: DHCP is a protocol by which a router assigns IP addresses to devices that connect to it. Static IP addresses are IP addresses that are reserved for a device, so that the device always gets the same IP address when it connects.
 Modified: 2019-07-27 08:00
 
 Previously: Private IP addresses are special IP addresses that routers will treat as belonging to devices within the private network, and not outside it. Data packets sent to private IP addresses will never make it past the gateway into the internet. This system allows multiple devices within a private network to share a public IP address.

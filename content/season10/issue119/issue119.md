@@ -4,7 +4,7 @@ Tags:
 Category: Season 10
 Slug: issue119
 Author: J S Ng
-Summary: 
+Summary: Solid-state disks are much faster than hard disks because they have no moving parts, so no time is wasted waiting for parts to get into the right position. However, they are more expensive than hard disk drives.
 Modified: 2021-05-08 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A hard disk consists of a read arm, and a set of magnetic platters which store data. To read or write data, the read arm must move to the appropriate track of the rotating platter, and detect the magnetic field (for reading), or attempt to magnetise the domains on the platter (for writing). Operations that require the read arm to access different parts of the magnetic platters intermittently result in slower read speeds.

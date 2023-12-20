@@ -4,7 +4,7 @@ Tags:
 Category: Season 03
 Slug: issue030
 Author: J S Ng
-Summary: 
+Summary: Private IP addresses are special IP addresses that routers will treat as belonging to devices within the private network, and not outside it. Data packets sent to private IP addresses will never make it past the gateway into the internet. This system allows multiple devices within a private network to share a public IP address.
 Modified: 2019-07-20 08:00
 
 Previously: Your web browser resolves a hostname (finds out which IP address a hostname points to) by sending a DNS query to its gateway.

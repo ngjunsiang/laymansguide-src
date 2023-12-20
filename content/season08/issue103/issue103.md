@@ -4,7 +4,7 @@ Tags: app, operating system
 Category: Season 08
 Slug: issue103
 Author: J S Ng
-Summary: 
+Summary: A race condition happens when threads depend on instructions happening with coincidental timing for success. When instructions are not executed with appropriate timing, one or more threads can get stuck waiting on a response that never comes.
 Modified: 2021-01-16 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Applications are assigned a thread by the OS for running a sequence of instructions. The instructions are executed sequentially, and the app cannot proceed if it gets stuck on any instruction.

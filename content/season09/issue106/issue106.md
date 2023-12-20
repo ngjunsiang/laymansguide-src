@@ -4,7 +4,7 @@ Tags: operating system
 Category: Season 09
 Slug: issue106
 Author: J S Ng
-Summary: 
+Summary: A hard disk is organised into sectors, which are the smallest unit of storage. The OS’s filesystem determines how and where to store each file on the hard disk. The filesystem manages the file metadata in a file table, separate from the actual contents of the file.
 Modified: 2021-02-06 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The OS takes care of booting up, login and user management, window management, memory allocation, storage interfaces, background services, peripheral management, and much more. Access to these services, where allowed, is provided in the form of software libraries that developers can use.

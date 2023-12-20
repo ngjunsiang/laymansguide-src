@@ -4,7 +4,7 @@ Tags:
 Category: Season 02
 Slug: issue017
 Author: J S Ng
-Summary: 
+Summary: Libraries make it easier to do the same thing in a programming language, or enable advanced functionality that wasn’t available previously. Libraries are usually specific to a particular programming language, and can’t be used in another programming language.
 Modified: 2019-04-06 08:00
 
 Welcome back! Last issue must have been exhausting to read, and I want this issue to be more readily digestible. So there’re only going to be two examples. Promise.

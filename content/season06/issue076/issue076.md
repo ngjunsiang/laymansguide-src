@@ -4,7 +4,7 @@ Tags:
 Category: Season 06
 Slug: issue076
 Author: J S Ng
-Summary: 
+Summary: Cookies with the same domain as the site are first-party cookies, while cookies with domains different from the site are third-party cookies. Cookies are used for all kinds of purposes, from remembering browsing sessions, to logging users in, to tracking their identity across websites. Blocking all third-party cookies indiscriminately can result in most of not all of these functions breaking.
 Modified: 2020-06-13 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) By not enforcing strict cookie policies on their own sites, publishers allowed advertisers to sneakily set cookies on their site audience. This allowed advertisers to reach the same audience via their advertising slots on other websites, which could be bought more cheaply. The publishers were cut out of the value chain and were not longer “gatekeepers” to their own site readers. They could not sell their advertising slots at a premium.

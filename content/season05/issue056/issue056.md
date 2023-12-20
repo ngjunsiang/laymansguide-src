@@ -4,7 +4,7 @@ Tags: operating system, memory
 Category: Season 05
 Slug: issue056
 Author: J S Ng
-Summary: 
+Summary: The operating system is responsible for listing and managing the computer’s resources, making them available to programs running on the computer, and making sure they only use what they are allowed to.
 Modified: 2020-01-18 08:00
 
 **Previously:** The CPU just executes instruction after instruction after instruction. Each instruction may consist of loading data from a memory location, sending data to a memory location, or performing operations on the data it is holding.

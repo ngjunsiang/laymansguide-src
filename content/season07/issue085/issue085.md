@@ -4,7 +4,7 @@ Tags:
 Category: Season 07
 Slug: issue085
 Author: J S Ng
-Summary: 
+Summary: Forms that naïvely inject user-submitted data into a SQL query template may end up sending valid (but otherwise unathorised) SQL commands to the database, with disastrous consequences.
 Modified: 2020-08-29 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) SQL queries let you join multiple tables based on specified conditions using the JOIN keyword. This enables crafting complex queries to return only the specific data that is required.

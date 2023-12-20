@@ -4,7 +4,7 @@ Tags:
 Category: Season 06
 Slug: issue068
 Author: J S Ng
-Summary: 
+Summary: Advertising was sold on a CPM model (cost per thousand impressions) in the early Internet, until the dot-com bust forced companies to reconsider their ad-buying strategy. The CPC model (cost per click) became more popular, but was still not very user-targeted. It would take QuantCast, founded in 2006, to figure out a way to gather data on users and build a coherent profile of each demographic.
 Modified: 2020-04-18 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Each click on a link, or even an ad, sends data to the server. This information can include an ID for the link you clicked, or the category of ad you clicked. But without Javascript, the webpage can’t know very much about you.

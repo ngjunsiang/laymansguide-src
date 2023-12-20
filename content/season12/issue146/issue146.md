@@ -4,7 +4,7 @@ Tags: virtualisation
 Category: Season 12
 Slug: issue146
 Author: J S Ng
-Summary: 
+Summary: Virtual hardware can be created in the form of drivers that respond to a program’s requests for hardware resources. If a bootup program enumerates hardware devices and receives a response, then as long as it continues to receive valid and correct responses, it can work with the virtual hardware to run an operating system.
 Modified: 2021-11-13 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Programs do not usually deal with the gnarly details of hardware, but instead access it through an interface. They access storage devices through a filesystem, and access hardware through drivers.

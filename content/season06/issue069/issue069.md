@@ -4,7 +4,7 @@ Tags:
 Category: Season 06
 Slug: issue069
 Author: J S Ng
-Summary: 
+Summary: Cookies are little fragments of information with a name and a value, and associated with a domain address. They are most commonly used to identify new or returning users. This cookie is issued by a website upon the first visit, stored in the browser, and returned to the issuing server whenever the server requests it.
 Modified: 2020-04-25 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The old CPM model (cost per thousand impressions) in the early Internet was replaced by the CPC model (cost per click) after the dot-com bust. But CPC only works well if publishers and advertisers could get users to click; they need to target advertisements accurately to users. QuantCast figured out a way to do so in 2006.

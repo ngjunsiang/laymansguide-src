@@ -4,7 +4,7 @@ Tags: app
 Category: Season 08
 Slug: issue099
 Author: J S Ng
-Summary: 
+Summary: MacOS, Linux, and other similar systems treat everything as a file, organised into appropriate subfolders.
 Modified: 2020-12-19 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Apps generally handle three categories of files: its own (permanent) app files, (shared) user files, and (ephemeral) temporary files.

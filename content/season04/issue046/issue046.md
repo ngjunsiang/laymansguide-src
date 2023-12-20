@@ -4,7 +4,7 @@ Tags: compression
 Category: Season 04
 Slug: issue046
 Author: J S Ng
-Summary: 
+Summary: Computers compress image and audio data through a process similar to summarising: it analyses the data using algorithms that use brightness and colour instead of RGB values for images, and different frequencies of sound rather than samples at different points in time for audio. These algorithms then discard parts of the information that human senses do not perceive easily, and reduce the resolution of other parts that human senses are not as sensitive to.
 Modified: 2019-11-09 08:00
 
 **Previously:** Humans can distinguish 120 dB of loudness, which means the loudest perceivable sound is a million times louder than the softest perceivable sound. CD audio provides 16 bits of information per sample, sufficient to provide 96 dB. Humans have a hearing range from 20 Hz to 20 kHz. CD audio is sampled at 44.1 kHz. Uncompressed audio thus requires 705,600 bits per second, or 86 kB/s.

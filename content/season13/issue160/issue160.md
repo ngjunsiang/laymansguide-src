@@ -4,7 +4,7 @@ Tags:
 Category: Season 13
 Slug: issue160
 Author: J S Ng
-Summary: 
+Summary: A content delivery network comprises multiple servers around the world that are able to quickly distribute static content (typically images and video) to viewers that request it. This avoids overloading the hosting server, which would otherwise have to serve data over the network, possibly through many intermediary hops.
 Modified: 2022-02-19 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Instead of GPS satellites, smartphones can also use wifi points and cell towers to determine their position (if enabled in the OS).

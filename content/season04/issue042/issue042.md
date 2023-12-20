@@ -4,7 +4,7 @@ Tags:
 Category: Season 04
 Slug: issue042
 Author: J S Ng
-Summary: 
+Summary: Unicode is an encoding format which is meant to support every language, ever. Most websites, apps, and interfaces support it today.
 Modified: 2019-10-15 22:22
 
 Title: Issue 42: Unicode, computers go international

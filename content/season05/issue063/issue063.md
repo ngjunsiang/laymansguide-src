@@ -4,7 +4,7 @@ Tags: cache
 Category: Season 05
 Slug: issue063
 Author: J S Ng
-Summary: 
+Summary: For Meltdown and Spectre to work, they need two things: (1) Permission to carry out instructions (i.e. run programs) on the OS, and (2) knowledge of where the kernel address space is.
 Modified: 2020-03-07 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) To snoop the cache, we:

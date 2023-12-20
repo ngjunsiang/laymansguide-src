@@ -4,7 +4,7 @@ Tags:
 Category: Season 10
 Slug: issue122
 Author: J S Ng
-Summary: 
+Summary: Computers are general-purpose machines that usually process integer calculations. The graphics pipeline requires more specialised hardware that can process decimal number calculations. This is why high-performance graphics usually requires a graphics card.
 Modified: 2021-05-29 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) 3D models are represented with vertices (points), edges (line segments between points), and faces in a computer. Images known as textures can be mapped to faces to give the impression of detail.

@@ -4,7 +4,7 @@ Tags:
 Category: Season 03
 Slug: issue028
 Author: J S Ng
-Summary: 
+Summary: Domain names consist of an optional subdomain, the domain name, and the top-level domain. The top-level domains are managed by a registry, which receives registration requests from domain name registrars, and maintains registrant information for each domain under their TLD in a WHOIS database. The domain name registrars let you configure which IP address to forward data packets to, and propagate that information through their DNS servers so that data packets will be routed accordingly.
 Modified: 2019-07-06 08:00
 
 Last issue, I introduced IP addresses: a string of four numbers that tells routers where to send the data packet. These IP addresses are managed by the Internet Assigned Numbers Authority (IANA), and Internet registries everywhere agree to configure their routers to abide by this agreement. Without this coordination, our data won’t be able to make it across the Internet so easily.

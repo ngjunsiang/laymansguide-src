@@ -4,7 +4,7 @@ Tags:
 Category: Season 06
 Slug: issue075
 Author: J S Ng
-Summary: 
+Summary: By not enforcing strict cookie policies on their own sites, publishers allowed advertisers to sneakily set cookies on their site audience. This allowed advertisers to reach the same audience via their advertising slots on other websites, which could be bought more cheaply. The publishers were cut out of the value chain and were no longer “gatekeepers” to their own site readers. They could not sell their advertising slots at a premium.
 Modified: 2020-06-06 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Data companies use the data they have gathered to determine what ads to serve you when you visit sites that load their cookie-setting scripts. This data is sent from your browser via a document request, or via a tracking pixel request.

@@ -4,7 +4,7 @@ Tags: document
 Category: Season 04
 Slug: issue051
 Author: J S Ng
-Summary: 
+Summary: PDF is the gold standard for universal compatibility (supported by most software and platforms) and visual fidelity (displays exactly the same way). When you need things to appear on a different device in exactly the same way you created it, without having to install additional software, use PDF.
 Modified: 2019-12-14 08:00
 
 **Previously:** An HTML file contains markup tags that tell the browser how to interpret and format the text within the tags. Other document formats usually use tags in a similar way. These tags constitute a markup language that any app can use to mark up its own text too.

@@ -4,7 +4,7 @@ Tags: cache
 Category: Season 03
 Slug: issue039
 Author: J S Ng
-Summary: 
+Summary: Your computer and browser speed up a lot of lookups by caching information that is unlikely to change from the last view. When the same information is requested, your computer or browser will first look in the cache to find that information, and retrieve it from cache if it is there, otherwise it will load the information (and store it in cache if allowed to). There are usually ways to bypass a cache if the information is stale or no longer correct.
 Modified: 2019-09-21 08:00
 
 **Previously:** When a webpage document loads (Stage 1), it is processed by the web browser, which then

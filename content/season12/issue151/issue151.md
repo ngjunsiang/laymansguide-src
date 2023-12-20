@@ -4,7 +4,7 @@ Tags:
 Category: Season 12
 Slug: issue151
 Author: J S Ng
-Summary: 
+Summary: The Java Runtime Environment (JRE) bundles the Java VM and supporting libraries. The JRE has to be installed on the user’s system for Java programs to work, unless the program bundles the supporting libraries. Solo programmers can start programming with OpenJDK for free with fewer features and less support, while commercial companies can license Oracle JDK for better support and features.
 Modified: 2021-12-18 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) System VMs provide a set of virtualised hardware that the OS interacts with. Process VMs provide a set of libraries that a program (written in that programming language) interacts with.

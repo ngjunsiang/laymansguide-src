@@ -4,7 +4,7 @@ Tags:
 Category: Season 10
 Slug: issue120
 Author: J S Ng
-Summary: 
+Summary: Driver files provide information about the driver, and instructions on how to receive information from the device, and encode information to be passed to the device. The operating system may come with generic driver files for the device, but custom driver files might provide better performance or additional features.
 Modified: 2021-05-15 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Solid-state disks are much faster than hard disks because they have no moving parts, so no time is wasted waiting for parts to get into the right position. However, they are more expensive than hard disk drives.

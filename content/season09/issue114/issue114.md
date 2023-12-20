@@ -4,7 +4,7 @@ Tags: operating system
 Category: Season 09
 Slug: issue114
 Author: J S Ng
-Summary: 
+Summary: Embedded operating systems are unlike user operating systems. They are designed to run the software needed for an appliance’s operation, and are not meant to be used by users directly. Since they are considered somewhere between software and hardware, they are usually referred to as firmware.
 Modified: 2021-04-03 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) If you can’t get to a BIOS screen, it is likely a hardware problem and has to be solved by a technician. If you can’t get the the OS loading screen, it’s a bootloader problem and needs to be solved with more geekery. If something goes wrong with OS loading, and fails to fix itself on subsequent reboots, it’s probably time for a system refresh or reinstall.

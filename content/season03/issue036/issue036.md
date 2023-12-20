@@ -4,7 +4,7 @@ Tags:
 Category: Season 03
 Slug: issue036
 Author: J S Ng
-Summary: 
+Summary: Latency is the time duration between a ping packet being sent out and its response being received. It is an indication of how far away a target server is.
 Modified: 2019-08-31 08:00
 
 Previously: VPNs link devices that are not within the same network using an encrypted tunnel that prevents gateways from snooping on the data packet as it passes en-route.

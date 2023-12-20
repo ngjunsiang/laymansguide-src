@@ -4,7 +4,7 @@ Tags: cache, cpu, operating system
 Category: Season 05
 Slug: issue060
 Author: J S Ng
-Summary: 
+Summary: Speculative execution is a feature that let’s the CPU speed up execution if it correctly predicts a decision point. The CPU carries out the operations along the predicted decision branch and loads the results if it predicts correctly.
 Modified: 2020-02-15 08:00
 
 **Previously:** A set of instructions can trick a CPU into reordering load instructions so that the data is temporarily loaded into the cache before the instructions are retired. The cache can then be snooped to retrieve the data.

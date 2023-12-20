@@ -4,7 +4,7 @@ Tags:
 Category: Season 03
 Slug: issue035
 Author: J S Ng
-Summary: 
+Summary: VPNs link devices that are not within the same network, such that they can behave as though they are. By encrypting the packet data before it is sent between devices, the VPN software hides these packets from being snooped (i.e. spied upon), effectively forming an encrypted tunnel for information to travel between devices. This enables devices to circumvent firewalls and protect the privacy of information in the data packets.
 Modified: 2019-08-24 08:00
 
 Previously: Firewalls block data packets that match certain rules. They decrypt the data packet layer by layer, dropping those that match its programmed rules without allowing them to be forwarded to the next point in its journey. The type of filtering that can be applied depends on the processing power available to the router, since some information is hidden more deeply in the data packet than others. Such filtering is typically circumvented by the use of VPNs, or other means of encrypting the data that is required.

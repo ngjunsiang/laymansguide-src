@@ -4,7 +4,7 @@ Tags: operating system
 Category: Season 09
 Slug: issue116
 Author: J S Ng
-Summary: 
+Summary: Hibernation mode causes the computer to store the data configuration into a hibernation file on disk. When powered up, the OS reads the data configuration from the file back into memory. This lets the system avoid having to do a full shutdown and bootup; it performs a shorter version of these two sequences instead.
 Modified: 2021-04-17 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) When you shut a computer down, it sends an exit signal to all running programs to get them to do their exit routine. This process can sometimes take a long time. To preserve the data configuration in memory while minimising power draw, a computer can go into standby mode: all hardware except the memory gets powered down, until the computer is woken up from standby.

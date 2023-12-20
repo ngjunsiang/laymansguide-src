@@ -4,7 +4,7 @@ Tags: operating system
 Category: Season 09
 Slug: issue115
 Author: J S Ng
-Summary: 
+Summary: When you shut a computer down, it sends an exit signal to all running programs to get them to do their exit routine. This process can sometimes take a long time. To preserve the data configuration in memory while minimising power draw, a computer can go into standby mode: all hardware except the memory gets powered down, until the computer is woken up from standby.
 Modified: 2021-04-10 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Embedded operating systems are unlike user operating systems. They are designed to run the software needed for an appliance’s operation, and are not meant to be used by users directly. Since they are considered somewhere between software and hardware, they are usually referred to as firmware.

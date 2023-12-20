@@ -4,7 +4,7 @@ Tags:
 Category: Season 07
 Slug: issue083
 Author: J S Ng
-Summary: 
+Summary: Structured Query Language (SQL) is a computer language for managing data in databases. It has keywords and keyphrases that let you filter rows and columns, group and order data, perform basic arithmetic on data, and more. It is complex and powerful, but using it in an astute and efficient manner requires specialised training.
 Modified: 2020-08-08 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A database system follows rules that enable multiple users to send commands to the database at the same time. The system attempts to execute each action one at a time, locking data that is in use by other users, and ensuring that each user does not carry out actions that they are not permitted to. Such systems are better able to prevent data corruption compared to a text-based system.

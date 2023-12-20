@@ -19,6 +19,8 @@ class Article:
             "modified": ""
         }
         self.content: str = content
+        self.prev: str
+        self.next: str
 
     @classmethod
     def from_file(cls, path: str) -> "Article":
@@ -31,6 +33,18 @@ class Article:
                 article.metadata[field.lower()] = value.strip()
             article.content = f.read()
         return article
+
+    def get_summary(self) -> str | None:
+        label = "**Issue summary:** "
+        summ_pos = self.content.find(label)
+        if summ_pos == -1:
+            print(f"Could not find summary in {self.metadata['title']}")
+            return
+        try:
+            summ_end = self.content.find("\n", summ_pos)
+        except:
+            breakpoint()
+        return self.content[summ_pos:summ_end].lstrip(label)
 
     def to_file(self, path: str) -> None:
         with open(path, 'w') as f:
@@ -62,7 +76,6 @@ for issue in issues:
     path = os.path.join("content", season, name, issue["file"])
 
     article = Article.from_file(path)
-    prefix, num = article.metadata["category"].split(" ")
-    article.metadata["category"] = f"{prefix} {int(num):02}"
+    article.metadata["summary"] = article.get_summary() or ""
     # article.content = re.sub("\)\n\*", ")  \n*", article.content)
     article.to_file(path)

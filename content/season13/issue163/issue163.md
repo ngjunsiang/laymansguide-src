@@ -4,7 +4,7 @@ Tags:
 Category: Season 13
 Slug: issue163
 Author: J S Ng
-Summary: 
+Summary: Software that we use usually comes from the OS makers, or from third-party developers. These two groups of developers are not the same, and might even have conflicting intentions and goals.
 Modified: 2022-03-12 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Typeface families consist of multiple fonts for each style in the typeface. Each font consists of glyphs, which are mathematical shapes described by curves joining points. These shapes need to be rasterised for display on a computer screen, or for printing on paper. Font files usually come in `.ttf`, `.otf`, or `.woff` formats.

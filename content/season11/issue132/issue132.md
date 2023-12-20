@@ -4,7 +4,7 @@ Tags:
 Category: Season 11
 Slug: issue132
 Author: J S Ng
-Summary: 
+Summary: Chipsets served as go-betweens in the AT form factor by IBM.
 Modified: 2021-08-07 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) CPUs have limited throughput, since there is a max frequency they can operate at, and a limit to the number of wires they can be connected to (throughput = no. of wires × frequency). Later designs of early computers increased the capability of computers by delegating more work to secondary chips.

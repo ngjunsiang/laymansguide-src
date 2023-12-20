@@ -4,7 +4,7 @@ Tags:
 Category: Season 04
 Slug: issue041
 Author: J S Ng
-Summary: 
+Summary: n computers that can encode and decode ASCII, text is stored as a 7-bit sequence. Text consists of letters, numbers, symbols, and control codes.
 Modified: 2019-10-05 08:00
 
 **Previously:** 8 bits comprise 1 byte. Humans count bytes in multiples of thousands, while computers count bytes in multiples of 1,024.

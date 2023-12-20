@@ -4,7 +4,7 @@ Tags:
 Category: Season 04
 Slug: issue044
 Author: J S Ng
-Summary: 
+Summary: An image’s resolution describes its dimensions. Its pixel resolution gives an indication of its physical size (if printed or displayed on a screen), and thus its sharpness. A display with imperceptibly small pixels is often referred to as a Retina display (Apple’s branding) or as a high-PPI display; this requires at least 220 PPI nominally. For an image to be printed sharply, it needs at least 300 DPI.
 Modified: 2019-10-26 08:00
 
 **Previously:** Colour is stored as a combination of red, green, and blue. In a computer system, each

@@ -4,7 +4,7 @@ Tags:
 Category: Season 12
 Slug: issue144
 Author: J S Ng
-Summary: 
+Summary: n 1999, VMware launched VMware Workstation, which allowed multiple operating systems to run off a single machine.
 Modified: 2021-10-30 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The Apple M1 is a souped-up iPhone processor, with unified memory.

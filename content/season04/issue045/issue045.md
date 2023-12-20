@@ -4,7 +4,7 @@ Tags:
 Category: Season 04
 Slug: issue045
 Author: J S Ng
-Summary: 
+Summary: Humans can distinguish 120 dB of loudness, which means the loudest perceivable sound is a million times louder than the softest perceivable sound. CD audio provides 16 bits of information per sample, sufficient to provide 96 dB. Humans have a hearing range from 20 Hz to 20 kHz. CD audio is sampled at 44.1 kHz. Uncompressed audio thus requires 705,600 bits per second, or 86 KiB/s.
 Modified: 2019-11-02 08:00
 
 **Previously:** An image’s resolution describes its dimensions. Its pixel resolution gives an indication of its physical size (if printed or displayed on a screen), and thus its sharpness. A display with imperceptibly small pixels is often referred to as a Retina display (Apple’s branding) or as a high-PPI display; this requires at least 220 PPI (pixels per inch) nominally. For an image to be printed sharply, it needs at least 300 DPI (dots per inch) on paper.

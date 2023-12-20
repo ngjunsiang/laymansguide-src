@@ -4,7 +4,7 @@ Tags:
 Category: Season 07
 Slug: issue086
 Author: J S Ng
-Summary: 
+Summary: To increase the performance of a distributed database, we can scale up/scale vertically by increasing the computers’ performance, or scale out/scale horizontally by adding more computers. Distributed databases can only prioritise two of the following three factors: consistency, availability, partitioning (CAP theorem).
 Modified: 2020-09-05 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Forms that naïvely inject user-submitted data into a SQL query template may end up sending valid SQL commands to the database, with disastrous consequences.

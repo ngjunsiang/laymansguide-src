@@ -4,7 +4,7 @@ Tags:
 Category: Season 03
 Slug: issue032
 Author: J S Ng
-Summary: 
+Summary: When a request from a device on the network is to be forwarded to the gateway, it has to traverse different networks. The router helps it by rewriting the source IP and port number, keeping track of the originating IP and port. When a response is received, it rewrites the destination IP and port so that the response will reach the originating device.
 Modified: 2019-08-03 08:00
 
 Previously: A router assigns IP addresses automatically using DHCP. It reserves any registered static IP addresses for devices identified by their MAC address, and assigns the remaining private IP addresses in the pool to any devices that request one. Each IP address has a lease period, after which the device must request an IP address again.

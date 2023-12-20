@@ -4,7 +4,7 @@ Tags:
 Category: Season 12
 Slug: issue153
 Author: J S Ng
-Summary: 
+Summary: The cloud offers standard digital business services, accessible through a web interface and API, which any developer (with a credit card) can use. Developers don’t have to reinvent the wheel, so long as they know how to use web APIs.
 Modified: 2022-01-01 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Actually making a web application requires you to set up lots of supporting software and carry out lots of steps to create a suitable app environment.

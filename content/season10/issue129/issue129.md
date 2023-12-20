@@ -4,7 +4,7 @@ Tags:
 Category: Season 10
 Slug: issue129
 Author: J S Ng
-Summary: 
+Summary: The larger the surface area, the faster an object loses heat. The larger the temperature difference between object and surroundings, the faster the object loses heat. Heat is bad for computers, and CPUs will need cooling to be able to process computations quickly. A mobile phone thus typically uses no more than 4 W of power, a laptop can use 25–45 W, and a desktop can usually use 65 W and more. Two popular ways of increasing the cooling capacity of a device is to attach a larger piece of metal to the chip (passive cooling), or use a fan to force air over the heatsink (active cooling).
 Modified: 2021-07-17 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Upgradable parts need a slot or socket to be inserted into; these slots/sockets need to be made robust enough, causing them to take up more space than a soldered part. Devices which were designed to be small and portable generally eliminate these as far as possible, opting to have parts directly soldered to the board instead.

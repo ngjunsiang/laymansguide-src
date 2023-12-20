@@ -4,7 +4,7 @@ Tags: app
 Category: Season 02
 Slug: issue018
 Author: J S Ng
-Summary: 
+Summary: While libraries make it easier to do the same thing in a programming language, a framework makes it easier to make a particular kind of app. Like libraries, frameworks are usually specific to a particular programming language, and can’t be used in another programming language.
 Modified: 2019-04-13 08:00
 
 Last issue, I introduced libraries, which are basically magic spells. You call them, they do advanced magic in the background, and return magical results to your code. Or they simplify complicated code, wrapping them up into functions that are easy to call.

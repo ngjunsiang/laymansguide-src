@@ -4,7 +4,7 @@ Tags: compression
 Category: Season 04
 Slug: issue048
 Author: J S Ng
-Summary: 
+Summary: A video container can hold one or more audio, video, or text data streams. To encode or decode a data stream, you need to have the necessary codec installed[^1]. Most video runs at 25 or 30 fps, with high-quality video going up to 60 fps. You can use a program like MediaInfo to help you decipher the streams inside a video container file.
 Modified: 2019-11-23 08:00
 
 **Previously:** Data cannot be compressed beyond its predictability limit in a lossless fashion. Lossless compression does not discard any information. It spots patterns in the data and represents them with fewer bits, through a combination of predictive coding, run-length encoding, and entropy coding.

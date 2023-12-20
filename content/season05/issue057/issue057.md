@@ -4,7 +4,7 @@ Tags: cache, cpu, memory
 Category: Season 05
 Slug: issue057
 Author: J S Ng
-Summary: 
+Summary: The CPU stores data for ready access in the CPU cache. Accessing data from the CPU cache is much faster than accessing data from memory. When the CPU needs data from a memory address, it looks in the cache first. If the data is not there (a **cache miss**), it will load the data from the memory address, and store a copy in the cache for faster reference in future. The CPU cache is managed by the CPU and is invisible to the OS. Programs that need to ensure the data in the cache is “fresh” can perform a cache flush and reload.
 Modified: 2020-01-25 08:00
 
 **Previously:** The operating system is responsible for listing and managing the computer’s resources, making them available to programs running on the computer, and making sure they only use what they are allowed to.

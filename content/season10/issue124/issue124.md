@@ -4,7 +4,7 @@ Tags:
 Category: Season 10
 Slug: issue124
 Author: J S Ng
-Summary: 
+Summary: The VGA video format originated in the time of cathode-ray televisions (CRTs). It was superseded by HDMI, a video format standardised by consumer electronics companies. DisplayPort, on the other hand, is a video format standardised by computer display companies.
 Modified: 2021-06-12 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Graphics cards contain lots of tiny cores that are much better at performing the same calculation for lots of decimal numbers. These cores are organised into compute units; a graphics card with more compute units can perform more calculations every second. Graphics cards have their own onboard memory, separate from the CPU. GPU memory is different from computer memory; it is configured for much higher data throughput. Integrated graphics are GPUs that are integrated into a CPU chip; these do not have their own onboard memory, and share memory with the CPU.

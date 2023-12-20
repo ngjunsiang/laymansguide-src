@@ -4,7 +4,7 @@ Tags: app
 Category: Season 08
 Slug: issue096
 Author: J S Ng
-Summary: 
+Summary: Mobile apps are sandboxed by the operating system. As a result, they have to bundle all the libraries they need, and are not allowed to share libraries with other apps. This results in mobile apps with huge filesizes.
 Modified: 2020-11-28 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Mobile apps, unlike web apps, can bundle resources and libraries to be installed to a mobile device. They can also request access to storage, and typically have a higher memory limit than web apps.

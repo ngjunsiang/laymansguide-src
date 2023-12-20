@@ -4,7 +4,7 @@ Tags:
 Category: Season 02
 Slug: issue023
 Author: J S Ng
-Summary: 
+Summary: Specifications describe the details of how a piece of hardware/software should work in order to meet a set of requirements. When well written and well implemented, they aid the coordination of the multitude of devices across the world, enabling them to communicate seamlessly, unambiguously, and unnoticeably with each other. Your devices work because they follow specifications.
 Modified: 2019-05-18 08:00
 
 Last week, we took a look at part of the (heavily simplified) software development pipeline:

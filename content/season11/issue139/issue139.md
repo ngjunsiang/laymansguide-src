@@ -4,7 +4,7 @@ Tags: memory
 Category: Season 11
 Slug: issue139
 Author: J S Ng
-Summary: 
+Summary: Around 2015, the high-performance computer industry quickly realised that this would be much more efficient if the CPU and GPU could *share the same memory*.
 Modified: 2021-09-25 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A system-on-chip (SoC) combines the core functionality of a system—processing, graphics, memory, and control—into a single chip package.

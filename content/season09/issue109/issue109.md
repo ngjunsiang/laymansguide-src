@@ -4,7 +4,7 @@ Tags: cache, memory
 Category: Season 09
 Slug: issue109
 Author: J S Ng
-Summary: 
+Summary: Fast writes dump the data to a write cache (in computer memory), then update the file table to look like the file is already written to disk. However, if power is cut before all data is properly moved from the write cache to disk, the data in memory is lost, and file corruption usually results.
 Modified: 2021-02-27 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Safe writes ensure that all the data is written to disk sectors properly first before updating the file table. The result is that write operations take a longer time to complete.

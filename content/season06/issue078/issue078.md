@@ -4,7 +4,7 @@ Tags: cache
 Category: Season 06
 Slug: issue078
 Author: J S Ng
-Summary: 
+Summary: Modern webpages rely on many third-party resources for their functionality. Blocking access to some domains may cause these webpages to break and stop working.
 Modified: 2020-07-04 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The default settings of most browsers expose a lot of information to scripts that request it. To prevent such scripts from running, we need services that can filter **the source** of these scripts. These services generally work by matching browser requests against a blacklist, and blocking the request if it comes from a domain known to host malicious scripts.

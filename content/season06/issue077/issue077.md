@@ -4,7 +4,7 @@ Tags:
 Category: Season 06
 Slug: issue077
 Author: J S Ng
-Summary: 
+Summary: The default settings of most browsers expose a lot of information to scripts that request it. To prevent such scripts from running, we need services that can filter **the source** of these scripts. These services generally work by matching browser requests against a blacklist, and blocking the request if it comes from a domain known to host malicious scripts.
 Modified: 2020-06-20 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Cookies with the same domain as the site are first-party cookies, while cookies with domains different from the site are third-party cookies. Cookies are used for all kinds of purposes, from remembering browsing sessions, to logging users in, to tracking their identity across websites. Blocking all third-party cookies indiscriminately can result in most if not all of these functions breaking. And yet, not blocking them at all means that you are being tracked across all your browsing sessions, likely without your explicit permission.

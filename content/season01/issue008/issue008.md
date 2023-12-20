@@ -4,7 +4,7 @@ Tags:
 Category: Season 01
 Slug: issue008
 Author: J S Ng
-Summary: 
+Summary: A request or a response consists of a header and a body. The response header contains information about the response. The status code in the response header determines if the request was successful or unsuccessful.
 Modified: 2019-02-02 08:00
 
 Last issue, I said that HTTP is a set of rules for sending and receiving documents that link to other documents. According to those rules, if you want a webpage, you (the client) must send a (HTTP) request to a server, which will return a response.

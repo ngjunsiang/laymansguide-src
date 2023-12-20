@@ -4,7 +4,7 @@ Tags:
 Category: Season 06
 Slug: issue067
 Author: J S Ng
-Summary: 
+Summary: Each click on a link, or even an ad, sends data to the server. This information can include an ID for the link you clicked, or the category of ad you clicked. But without Javascript, the webpage can’t know very much about you.
 Modified: 2020-04-11 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) DoubleClick, the first commercially successfully ad server, launched in 1996. It ran a system that tracked the performance of banner ads across 30 sites, working to optimise their return on investment. This was made possible by standardisation of the web (thanks to the HTTP specification), and the birth of Javascript, a scripting language integrated into the webpage rather than being a separate module from it. All of this happened in 1995–1996.

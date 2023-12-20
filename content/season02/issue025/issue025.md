@@ -4,7 +4,7 @@ Tags:
 Category: Season 02
 Slug: issue025
 Author: J S Ng
-Summary: 
+Summary: A text editor helps programmers to edit their code. An IDE (integrated development environment) helps programmers to see what’s going on in their code, test their code’s performance, and provide almost all the necessary tools in one package.
 Modified: 2019-06-01 08:00
 
 Last week, I introduced issue trackers, which are software tools that developers use to keep track of problems and issues with their software. Issue trackers are usually places that users can submit bug reports to help out the developers in tracking down a bug.

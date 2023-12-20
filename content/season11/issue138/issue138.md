@@ -4,7 +4,7 @@ Tags:
 Category: Season 11
 Slug: issue138
 Author: J S Ng
-Summary: 
+Summary: A system-on-chip (SoC) combines the core functionality of a system—processing, graphics, memory, and control—into a single chip package.
 Modified: 2021-09-18 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The M1 goes one step further: not only does it make do with fewer chips, it does so with passive cooling.

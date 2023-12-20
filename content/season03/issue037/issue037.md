@@ -4,7 +4,7 @@ Tags:
 Category: Season 03
 Slug: issue037
 Author: J S Ng
-Summary: 
+Summary: The process of forwarding data packets from server to server takes time. Each hop a data packet takes adds to the latency. The more hops a packet must undergo, the longer the latency. The slower the servers along the route, the longer the latency as well.
 Modified: 2019-09-07 08:00
 
 **Previously:** Latency is the time duration between a ping packet being sent out and its response being received. It is an indication of how far away a target server is.

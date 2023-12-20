@@ -4,7 +4,7 @@ Tags:
 Category: Season 07
 Slug: issue090
 Author: J S Ng
-Summary: 
+Summary: A URI (Uniform Resource Identifier) is required to connect to a database. This URI can be provided by a hosting service provider that runs your own database for you, or by a cloud service provider that runs your database on their platform.
 Modified: 2020-10-03 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Graph databases treat the details of things as secondary, and optimise for managing the network of relationships. A graph database can quickly look up how things are related to each other, and return the results.

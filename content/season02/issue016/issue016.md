@@ -4,7 +4,7 @@ Tags:
 Category: Season 02
 Slug: issue016
 Author: J S Ng
-Summary: 
+Summary: Everybody has a simpleton in their pocket, and maybe one at home on the desk. These simpletons are able to run sets of instructions that they are carrying. You can give them more sets of instructions, often obtained through a Store. Some of the really good instruction sets will cost some money, though. And almost none of them will get the simpleton to do exactly what you want.
 Modified: 2019-03-30 08:00
 
 So you just got back from a trip with lots of photos in your camera. You take the SD card out from the camera, put it in your laptop, open up the photos … and realise they all have the wrong white balance set.

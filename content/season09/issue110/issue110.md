@@ -4,7 +4,7 @@ Tags: memory
 Category: Season 09
 Slug: issue110
 Author: J S Ng
-Summary: 
+Summary: Filesystem journals are a record of changes made to the disk, so as to enable those changes to be rolled back, or to be completed properly in case of sudden interruption.
 Modified: 2021-03-06 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Fast writes dump the data to a write cache (in computer memory), then update the file table to look like the file is already written to disk. However, if power is cut before all data is properly moved from the write cache to disk, the data in memory is lost, and file corruption usually results.

@@ -4,7 +4,7 @@ Tags: cpu, memory
 Category: Season 05
 Slug: issue054
 Author: J S Ng
-Summary: 
+Summary: To get useful output from a CPU, we must translate the operations we want it to perform into CPU instructions, in a process known as **compiling**. Most compilers convert programming code into CPU instructions.
 Modified: 2020-01-04 08:00
 
 **Previously:** CPUs are unconscious slaves that simply execute instruction after instruction, at a very fast rate.

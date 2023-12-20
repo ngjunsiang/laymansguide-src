@@ -4,7 +4,7 @@ Tags:
 Category: Season 13
 Slug: issue158
 Author: J S Ng
-Summary: 
+Summary: To get your location using GPS, your phone receives information from four overhead GPS satellites: their location, and the distance between them and your phone. With this information, your phone can calculate its location.
 Modified: 2022-02-05 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Time is synchronised from higher-precision sources through a protocol called Network Time Protocol (NTP). A public pool of time servers is available for synchronisation at pool.ntp.org.

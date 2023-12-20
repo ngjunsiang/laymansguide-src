@@ -4,7 +4,7 @@ Tags:
 Category: Season 09
 Slug: issue108
 Author: J S Ng
-Summary: 
+Summary: Safe writes ensure that all the data is written to disk sectors properly first before updating the file table. The result is that write operations take a longer time to complete.
 Modified: 2021-02-20 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) When write operations are interrupted prematurely, filesystem corruption often results.
