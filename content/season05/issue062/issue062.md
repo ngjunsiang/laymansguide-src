@@ -1,7 +1,7 @@
 Title: Issue 62: Cache snooping
 Date: 2020-03-03 17:00
-Tags: 
-Category: Season 5
+Tags: cache, cpu
+Category: Season 05
 Slug: issue062
 Author: J S Ng
 Summary: 

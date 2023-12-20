@@ -1,7 +1,7 @@
 Title: Issue 71: The Rise of Audience Analytics
 Date: 2020-05-09 08:00
 Tags: 
-Category: Season 6
+Category: Season 06
 Slug: issue071
 Author: J S Ng
 Summary: 

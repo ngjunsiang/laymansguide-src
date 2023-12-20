@@ -1,7 +1,7 @@
 Title: Issue 17: Libraries
 Date: 2019-04-06 08:00
 Tags: 
-Category: Season 2
+Category: Season 02
 Slug: issue017
 Author: J S Ng
 Summary: 

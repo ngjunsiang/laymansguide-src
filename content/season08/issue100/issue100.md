@@ -1,7 +1,7 @@
 Title: Issue 100: Where does all the app data go? A look at Windows systems
 Date: 2020-12-26 08:00
-Tags: 
-Category: Season 8
+Tags: app
+Category: Season 08
 Slug: issue100
 Author: J S Ng
 Summary: 

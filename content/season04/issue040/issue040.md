@@ -1,7 +1,7 @@
 Title: Issue 40: Bits and bytes
 Date: 2019-09-28 08:00
 Tags: 
-Category: Season 4
+Category: Season 04
 Slug: issue040
 Author: J S Ng
 Summary: 

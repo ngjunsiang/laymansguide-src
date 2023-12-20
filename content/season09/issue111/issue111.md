@@ -1,7 +1,7 @@
 Title: Issue 111: Copying, moving, and deleting files
 Date: 2021-03-13 08:00
 Tags: 
-Category: Season 9
+Category: Season 09
 Slug: issue111
 Author: J S Ng
 Summary: 

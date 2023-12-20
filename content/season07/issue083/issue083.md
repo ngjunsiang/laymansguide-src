@@ -1,7 +1,7 @@
 Title: Issue 83: Structured Query Language
 Date: 2020-08-08 08:00
 Tags: 
-Category: Season 7
+Category: Season 07
 Slug: issue083
 Author: J S Ng
 Summary: 

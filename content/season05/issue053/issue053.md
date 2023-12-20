@@ -1,7 +1,7 @@
 Title: Issue 53: The CPU is an instruction-obeying slave
 Date: 2019-12-28 08:00
-Tags: 
-Category: Season 5
+Tags: cpu
+Category: Season 05
 Slug: issue053
 Author: J S Ng
 Summary: 

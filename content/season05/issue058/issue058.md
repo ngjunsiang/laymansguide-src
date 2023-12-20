@@ -1,7 +1,7 @@
 Title: Issue 58: CPU Optimisation Part 1 – Out-of-Order Processing
 Date: 2020-02-01 08:00
-Tags: 
-Category: Season 5
+Tags: cache, cpu
+Category: Season 05
 Slug: issue058
 Author: J S Ng
 Summary: 

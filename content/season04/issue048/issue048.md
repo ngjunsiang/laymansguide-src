@@ -1,7 +1,7 @@
 Title: Issue 48: Of containers and codecs
 Date: 2019-11-23 08:00
-Tags: 
-Category: Season 4
+Tags: compression
+Category: Season 04
 Slug: issue048
 Author: J S Ng
 Summary: 
@@ -73,10 +73,8 @@ About a decade ago, when video formats proliferated like a tropical ecosystem, c
 
 You can use a program like [MediaInfo](https://mediaarea.net/en/MediaInfo) to help you read the metadata and figure out the container and stream formats. Here’s an example of the information it shows about the only video file on my laptop at the moment:
 
-<figure>
-    ![MediaInfo screenshot showing container, video stream, and audio stream information]({attach}/season04/issue048/issue048_01.png)
-    <figcaption>Mediainfo screenshot showing metadata for an MP4 file containing an h264 (a.k.a. AVC) video stream and an AAC audio stream.</figcaption>    
-</figure>
+![MediaInfo screenshot showing container, video stream, and audio stream information]({attach}/season04/issue048/issue048_01.png)  
+*Mediainfo screenshot showing metadata for an MP4 file containing an h264 (a.k.a. AVC) video stream and an AAC audio stream.*    
 
 **Issue summary:** A video container can hold one or more audio, video, or text data streams. To encode or decode a data stream, you need to have the necessary codec installed[^1]. Most video runs at 25 or 30 fps, with high-quality video going up to 60 fps. You can use a program like MediaInfo to help you decipher the streams inside a video container file.
 

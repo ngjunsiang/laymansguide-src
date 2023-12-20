@@ -1,7 +1,7 @@
 Title: Issue 86: Distributed databases
 Date: 2020-09-05 08:00
 Tags: 
-Category: Season 7
+Category: Season 07
 Slug: issue086
 Author: J S Ng
 Summary: 

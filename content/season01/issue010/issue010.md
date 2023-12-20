@@ -1,7 +1,7 @@
 Title: Issue 10: How do websites actually know if you are really you?
 Date: 2019-02-16 08:00
 Tags: 
-Category: Season 1
+Category: Season 01
 Slug: issue010
 Author: J S Ng
 Summary: 
@@ -33,19 +33,15 @@ https://hypothes.is/api/profile (without custom header)
 I need to submit a shared secret in my request to let the server know, “hey, I really am kureshii! Look, this is the shared secret which you gave to me when I set up my account”.
 
 
-<figure>
-    ![Screenshot of the Hypothes.is developer page providing a developer API key]({attach}/season01/issue010/issue010_01.png)
-    <figcaption>The shared secret I share with the Hypothes.is server: my developer API key</figcaption>    
-</figure>
+![Screenshot of the Hypothes.is developer page providing a developer API key]({attach}/season01/issue010/issue010_01.png)  
+*The shared secret I share with the Hypothes.is server: my developer API key*    
 
 
 How do I put that shared secret in the header? I could write a few lines of code in Python, a programming language … but I found an online API tester, which makes my life a bit easier. I just need to fill in the appropriate text fields:
 
 
-<figure>
-    ![Screenshot of the API tester]({attach}/season01/issue010/issue010_02.png)
-    <figcaption>The API tester makes it really easy for me to create and send HTTP requests with customised headers</figcaption>    
-</figure>
+![Screenshot of the API tester]({attach}/season01/issue010/issue010_02.png)  
+*The API tester makes it really easy for me to create and send HTTP requests with customised headers*    
 
 
 When the server receives the header with my developer API key, it can verify that the key is correct, and hence give me my profile data.

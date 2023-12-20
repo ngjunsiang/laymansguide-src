@@ -1,7 +1,7 @@
 Title: Issue 44: Image resolution
 Date: 2019-10-26 08:00
 Tags: 
-Category: Season 4
+Category: Season 04
 Slug: issue044
 Author: J S Ng
 Summary: 

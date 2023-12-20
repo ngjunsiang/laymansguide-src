@@ -1,7 +1,7 @@
 Title: Issue 75: The Costs of Data Leakage
 Date: 2020-06-06 08:00
 Tags: 
-Category: Season 6
+Category: Season 06
 Slug: issue075
 Author: J S Ng
 Summary: 

@@ -1,7 +1,7 @@
 Title: Issue 57: Cache, the CPU’s working space
 Date: 2020-01-25 08:00
-Tags: 
-Category: Season 5
+Tags: cache, cpu, memory
+Category: Season 05
 Slug: issue057
 Author: J S Ng
 Summary: 

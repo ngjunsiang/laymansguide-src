@@ -1,6 +1,6 @@
 Title: Issue 145: What an app wants, what an app needs
 Date: 2021-11-06 08:00
-Tags: 
+Tags: app, operating system
 Category: Season 12
 Slug: issue145
 Author: J S Ng

@@ -1,7 +1,7 @@
 Title: Issue 13: How do I use HTTPS?
 Date: 2019-03-09 08:00
 Tags: 
-Category: Season 1
+Category: Season 01
 Slug: issue013
 Author: J S Ng
 Summary: 
@@ -14,27 +14,20 @@ Last issue I compared HTTPS and HTTP, and explained why you should use HTTPS as 
 Most web browsers now indicate whether you are using HTTP or HTTPS in the address bar.
 
 
-<figure>
-    ![The difference between Chrome 67 and 68]({attach}/season01/issue013/issue013_01.png)
-    <figcaption>Since version 68, Google Chrome marks HTTP sites as insecure in the address bar</figcaption>    
-</figure>
+![The difference between Chrome 67 and 68]({attach}/season01/issue013/issue013_01.png)  
+*Since version 68, Google Chrome marks HTTP sites as insecure in the address bar*    
 
 
-![Firefox address bar: HTTP]({attach}/season01/issue013/issue013_02.png)<br/>
-<figure>
-    ![Firefox address bar: HTTPS]({attach}/season01/issue013/issue013_03.png)
-    <figcaption>Firefox uses a green lock icon in the address bar to indicate that you are using HTTPS to access the website</figcaption>    
-</figure>
+![Firefox address bar: HTTP]({attach}/season01/issue013/issue013_02.png)  
+![Firefox address bar: HTTPS]({attach}/season01/issue013/issue013_03.png)  
+*Firefox uses a green lock icon in the address bar to indicate that you are using HTTPS to access the website*    
 
 I can’t possibly keep you updated on how every single browser informs you that you are using HTTPS instead of HTTP, so here’s a guideline instead: look for a lock icon, a green instead of red icon, or something that says “secure” and not “insecure”.
 
 If you are still not sure, click the green/lock icon for more information:
 
-
-<figure>
-    ![Firefox connection information dialog]({attach}/season01/issue013/issue013_04.png)
-    <figcaption>Firefox displays additional information when you click on the lock icon. Other browsers do this as well.</figcaption>    
-</figure>
+![Firefox connection information dialog]({attach}/season01/issue013/issue013_04.png)  
+*Firefox displays additional information when you click on the lock icon. Other browsers do this as well.*    
 
 
 ## How do I actually use HTTPS?

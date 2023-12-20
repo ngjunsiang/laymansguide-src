@@ -1,7 +1,7 @@
 Title: Issue 49: What is a File?
 Date: 2019-11-30 08:00
 Tags: 
-Category: Season 4
+Category: Season 04
 Slug: issue049
 Author: J S Ng
 Summary: 
@@ -29,10 +29,8 @@ If you want to figure out such a file format, you would have to **reverse-engine
 
 Another example: The MP3 file format is simpler (although not easier to decode). Audio data is organised into frames, each frame having its own header followed by data. What about the artist name, record label, genre, date of release, and other information that comes with the file? All that is stored within the ID3 portion of the file metadata.
 
-<figure>
-    ![MP3 file structure showing internal structure]({attach}/season04/issue049/issue049_01.png)
-    <figcaption>The MP3 file structure<br />Image from [Wikipedia](https://en.wikipedia.org/wiki/MP3#/media/File:Mp3filestructure.svg)</figcaption>    
-</figure>
+![MP3 file structure showing internal structure]({attach}/season04/issue049/issue049_01.png)  
+*The MP3 file structure<br />Image from [Wikipedia](https://en.wikipedia.org/wiki/MP3#/media/File:Mp3filestructure.svg)*    
 
 # File extension
 

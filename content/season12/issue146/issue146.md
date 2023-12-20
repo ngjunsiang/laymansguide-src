@@ -1,6 +1,6 @@
 Title: Issue 146: Virtual hardware
 Date: 2021-11-13 08:00
-Tags: 
+Tags: virtualisation
 Category: Season 12
 Slug: issue146
 Author: J S Ng

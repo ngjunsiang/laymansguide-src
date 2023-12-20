@@ -1,7 +1,7 @@
 Title: Issue 108: Safeguarding data operations
 Date: 2021-02-20 08:00
 Tags: 
-Category: Season 9
+Category: Season 09
 Slug: issue108
 Author: J S Ng
 Summary: 

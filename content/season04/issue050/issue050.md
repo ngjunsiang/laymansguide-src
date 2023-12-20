@@ -1,7 +1,7 @@
 Title: Issue 50: Complex file formats and the Document
 Date: 2019-12-07 08:00
-Tags: 
-Category: Season 4
+Tags: document
+Category: Season 04
 Slug: issue050
 Author: J S Ng
 Summary: 
@@ -27,10 +27,8 @@ HTML is not a programming language. You can’t write code and tell a computer t
 
 This is (a snippet of) the previous issue, as an HTML file:
 
-<figure>
-    ![Snippet of HTML from Issue 49]({attach}/season04/issue050/issue050_01.png)
-    <figcaption>Issue 49 as an HTML file</figcaption>    
-</figure>
+![Snippet of HTML from Issue 49]({attach}/season04/issue050/issue050_01.png)  
+*Issue 49 as an HTML file*    
 
 Thank goodness we have syntax highlighting, which should make it easier to notice all the little tags that start with an open angled bracket `<` and closed angled bracket `>`. These are called HTML tags, and they signify the start and end of segments in the document.
 
@@ -45,10 +43,8 @@ Thank goodness we have syntax highlighting, which should make it easier to notic
 
 What are those `class="…"` attributes in the tags? The web browser creates a content element for each tag, and styles it according to the predefined style class in the document, defined inside `<style>…</style>`. This is what that section looks like when expanded:
 
-<figure>
-    ![Styles for the Issue 49 HTML file]({attach}/season04/issue050/issue050_02.png)
-    <figcaption>Element styles for Issue 49</figcaption>    
-</figure>
+![Styles for the Issue 49 HTML file]({attach}/season04/issue050/issue050_02.png)  
+*Element styles for Issue 49*    
 
 I don’t need to explain the specifications for you to notice that `<h1>`, `<h2>`, `<h3>` etc all have a slightly different style defined for them. `.app` is a little different; it starts with a period (`.`) and is applied to everything that has the `class="app"` attribute (*psst* … that’s the `<body>` element from the earlier image!).
 
@@ -82,10 +78,8 @@ Suppose we do that with a DOCX file … heck, lets convert Issue 49 into a DOCX,
 
 Don’t run! Most of it is unimportantly technical, we’ll just jump right into the interesting part which is `document.xml`, so take a deep breath …
 
-<figure>
-    ![document.xml]({attach}/season04/issue050/issue050_06.png)
-    <figcaption>document.xml</figcaption>    
-</figure>
+![document.xml]({attach}/season04/issue050/issue050_06.png)  
+*document.xml*    
 
 Okay, ouch. That’s a different tag language, called e**X**tensible **M**arkup **L**anguage (XML). Interestingly enough, each of those tags starts with `w:`, followed by some familiar phrases: `body`, `p`, and others that are not so familiar.
 

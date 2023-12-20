@@ -1,7 +1,7 @@
 Title: Issue 26: Software distribution
 Date: 2019-06-15 08:00
-Tags: 
-Category: Season 2
+Tags: app
+Category: Season 02
 Slug: issue026
 Author: J S Ng
 Summary: 

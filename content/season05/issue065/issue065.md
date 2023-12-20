@@ -1,7 +1,7 @@
 Title: Issue 65: Memory Sharing in the Operating System
 Date: 2020-03-28 17:12
-Tags: 
-Category: Season 5
+Tags: app, cache, memory, operating system
+Category: Season 05
 Slug: issue065
 Author: J S Ng
 Summary: 
@@ -19,10 +19,8 @@ You can reveal the shared memory column by right-clicking on the column labels a
 
 or this:
 
-<figure>
-    ![Screenshot of system monitor in KDE, showing shared memory usage]({attach}/season05/issue065/issue065_02.png)
-    <figcaption>System Monitor in KDE (Linux).</figcaption>    
-</figure>
+![Screenshot of system monitor in KDE, showing shared memory usage]({attach}/season05/issue065/issue065_02.png)  
+*System Monitor in KDE (Linux).*    
 
 What is this shared memory?
 
@@ -52,10 +50,8 @@ Ah! System Monitor actually reveals more details about how an application uses m
 
 Here’s Firefox:
 
-<figure>
-    ![Screenshot of detailed memory usage in Firefox on KDE]({attach}/season05/issue065/issue065_03.png)
-    <figcaption>Firefox detailed memory usage in KDE (Linux).</figcaption>    
-</figure>
+![Screenshot of detailed memory usage in Firefox on KDE]({attach}/season05/issue065/issue065_03.png)  
+*Firefox detailed memory usage in KDE (Linux).*    
 
 Oops, too much detail. Heres the gist:
 
@@ -73,15 +69,11 @@ I do my newsletter writing mainly in an app called Atom, made by Github. Atom ru
 
 In system monitor, I can see an app named atom, and one named electron. Let’s inspect them both.
 
-<figure>
-    ![Screenshot of detailed memory usage for electron on KDE]({attach}/season05/issue065/issue065_04.png)
-    <figcaption>Electron detailed memory usage in KDE (Linux).</figcaption>    
-</figure>
+![Screenshot of detailed memory usage for electron on KDE]({attach}/season05/issue065/issue065_04.png)  
+*Electron detailed memory usage in KDE (Linux).*    
 
-<figure>
-    ![Screenshot of detailed memory usage for atom on KDE]({attach}/season05/issue065/issue065_05.png)
-    <figcaption>Atom detailed memory usage in KDE (Linux).</figcaption>    
-</figure>
+![Screenshot of detailed memory usage for atom on KDE]({attach}/season05/issue065/issue065_05.png)  
+*Atom detailed memory usage in KDE (Linux).*    
 
 We can see that:
 

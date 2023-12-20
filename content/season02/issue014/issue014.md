@@ -1,7 +1,7 @@
 Title: Issue 14: What do developers do?
 Date: 2019-03-16 08:00
-Tags: 
-Category: Season 2
+Tags: app
+Category: Season 02
 Slug: issue014
 Author: J S Ng
 Summary: 
@@ -38,10 +38,8 @@ Anytime there are two (or more) kinds of people, there is the potential for them
 A “stack” is a way of thinking about applications that work together; as you go from frontend deeper into the backend, you are going down the stack. Complex applications can have more than 20 different services running concurrently, and a full-stack developer needs the skills to diagnose what is happening when something goes wrong *somewhere* in the system.
 
 
-<figure>
-    ![A stack consisting of user interface, user interface plus interaction, server communication, and server]({attach}/season02/issue014/issue014_01.png)
-    <figcaption>A web development stack, just one of many. From [Eden Vital on Medium](https://medium.com/@edenvidal/the-rise-of-the-full-stack-designer-and-the-tools-he-uses-3daf015eb3fc).</figcaption>    
-</figure>
+![A stack consisting of user interface, user interface plus interaction, server communication, and server]({attach}/season02/issue014/issue014_01.png)  
+*A web development stack, just one of many. From [Eden Vital on Medium](https://medium.com/@edenvidal/the-rise-of-the-full-stack-designer-and-the-tools-he-uses-3daf015eb3fc).*    
 
 
 Frontend, backend, and full-stack describe which part of the code a developer is working on. But the kind of application a development team is working on can vary widely depending on where it is being used.
@@ -90,10 +88,8 @@ To manage low-level code, developers write compilers, interpreters, and debugger
 Low-level code and high-level code are not a classification; they are a sliding scale. You can place different programming languages on this scale to indicate what level of abstraction they work at.
 
 
-<figure>
-    ![Programming languages arranged from low-level to high-level]({attach}/season02/issue014/issue014_02.png)
-    <figcaption>Some programming languages, arranged from low-level (left) to high-level (right). From [codecommit.com](http://www.codecommit.com/blog/java/defining-high-mid-and-low-level-languages)</figcaption>    
-</figure>
+![Programming languages arranged from low-level to high-level]({attach}/season02/issue014/issue014_02.png)  
+*Some programming languages, arranged from low-level (left) to high-level (right). From [codecommit.com](http://www.codecommit.com/blog/java/defining-high-mid-and-low-level-languages)*    
 
 
 -----

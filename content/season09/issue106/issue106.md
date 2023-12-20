@@ -1,7 +1,7 @@
 Title: Issue 106: Organising storage
 Date: 2021-02-06 08:00
-Tags: 
-Category: Season 9
+Tags: operating system
+Category: Season 09
 Slug: issue106
 Author: J S Ng
 Summary: 

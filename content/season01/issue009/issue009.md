@@ -1,7 +1,7 @@
 Title: Issue 9: How do I make an HTTP request?
 Date: 2019-02-09 08:00
 Tags: 
-Category: Season 1
+Category: Season 01
 Slug: issue009
 Author: J S Ng
 Summary: 
@@ -10,10 +10,8 @@ Modified: 2019-02-09 08:00
 Last issue, I talked about HTTP response headers, and how they inform the client about the request status using a status code. Let’s talk about the HTTP request today. An HTTP request header looks like this:
 
 
-<figure>
-    ![An HTTP request header]({attach}/season01/issue009/issue009_01.png)
-    <figcaption>A request header</figcaption>    
-</figure>
+![An HTTP request header]({attach}/season01/issue009/issue009_01.png)  
+*A request header*    
 
 
 Really simple. In Issue 6, I said that to use an API we need to send a request using HTTP methods such as GET, POST, DELETE. You can see the GET method in use here. It’s literally just a word in the request header! Followed by the URL which we are requesting, in his case I’m searching for annotations made by me on Hypothes.is.

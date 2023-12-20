@@ -15,17 +15,13 @@ This week, I attempt to untangle the confusion around **USB Type-C**, informally
 
 It is a connector standard. It sets standards for *this* connector:
 
-<figure>
-    ![Picture of a USB-C plug]({attach}/season10/issue126/issue126_01.jpg)
-    <figcaption>USB-C plug<br />Image via [Wikipedia](https://en.wikipedia.org/wiki/USB-C)</figcaption>    
-</figure>
+![Picture of a USB-C plug]({attach}/season10/issue126/issue126_01.jpg)  
+*USB-C plug<br />Image via [Wikipedia](https://en.wikipedia.org/wiki/USB-C)*    
 
 What does a connector standard do? It determines how many pins the connector should have, and what each of the pins should be used for, how the connector should be shaped, how the docking port (where the cable gets plugged into) should be designed, and other similar details. It’s all about the docking.
 
-<figure>
-    ![Pinout diagram of a USB-C plug]({attach}/season10/issue126/issue126_02.png)
-    <figcaption>Pinout diagram of a USB-C plug<br />Image via [Wikipedia](https://en.wikipedia.org/wiki/USB-C)</figcaption>    
-</figure>
+![Pinout diagram of a USB-C plug]({attach}/season10/issue126/issue126_02.png)  
+*Pinout diagram of a USB-C plug<br />Image via [Wikipedia](https://en.wikipedia.org/wiki/USB-C)*    
 
 ## But won’t somebody think about the data?!
 
@@ -37,10 +33,8 @@ While USB 2.0 (or Hi-Speed USB) supported a transfer rate of *up to* 60 MB/s, US
 
 We don’t have to worry so much about these versions, because USB is designed to be backward-compatible. That means all devices that support USB2 also support USB1, and all devices supporting USB3 also support USB2. The primary advantage that each successive USB version has over previous versions is higher throughput, more supported features, and more connectors to confuse (okay, that last isn’t an advantage 😛).
 
-<figure>
-    ![Connector shapes for different USB versions]({attach}/season10/issue126/issue126_03.png)
-    <figcaption>Comparison of USB connector plugs, excluding USB Type-C plugs<br />Image via [Wikipedia](https://en.wikipedia.org/wiki/USB_hardware)</figcaption>    
-</figure>
+![Connector shapes for different USB versions]({attach}/season10/issue126/issue126_03.png)  
+*Comparison of USB connector plugs, excluding USB Type-C plugs<br />Image via [Wikipedia](https://en.wikipedia.org/wiki/USB_hardware)*    
 
 As you can see, this makes for a lot of confusion, especially when compatibility is mixed: USB2 ‘A’ connectors are meant to go into USB3 ‘A’ receptacles, but USB2 ‘B’ connectors aren’t meant to go into USB3 ‘B’ receptacles …!
 

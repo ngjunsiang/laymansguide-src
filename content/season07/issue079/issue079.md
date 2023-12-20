@@ -1,7 +1,7 @@
 Title: Issue 79: A Base for Data
 Date: 2020-07-11 08:00
 Tags: 
-Category: Season 7
+Category: Season 07
 Slug: issue079
 Author: J S Ng
 Summary: 

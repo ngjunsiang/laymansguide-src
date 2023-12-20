@@ -1,7 +1,7 @@
 Title: Issue 101: Why apps crash
 Date: 2021-01-02 08:00
-Tags: 
-Category: Season 8
+Tags: app, memory, operating system
+Category: Season 08
 Slug: issue101
 Author: J S Ng
 Summary: 

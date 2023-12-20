@@ -15,10 +15,8 @@ The AT form factor, by IBM, is one of the early ones. An AT motherboard looks so
 
 ## The AT mainboard
 
-<figure>
-    ![An AT motherboard]({attach}/season11/issue132/issue132_01.jpg)
-    <figcaption>An AT motherboard, with key components outlined.<br />Annotations are my own.<br />Original: [Wikipedia](https://en.wikipedia.org/wiki/Skylake_(microarchitecture))</figcaption>    
-</figure>
+![An AT motherboard]({attach}/season11/issue132/issue132_01.jpg)  
+*An AT motherboard, with key components outlined.<br />Annotations are my own.<br />Original: [Wikipedia](https://en.wikipedia.org/wiki/Skylake_(microarchitecture))*    
 
 Graphics cards, usually added as an expansion card, communicated with the CPU (under the heatsink) through a chipset, while the CPU communicated with memory through another chipset.
 

@@ -1,7 +1,7 @@
 Title: Issue 64: Fixing Meltdown and Spectre
 Date: 2020-03-14 08:00
-Tags: 
-Category: Season 5
+Tags: cpu, operating system
+Category: Season 05
 Slug: issue064
 Author: J S Ng
 Summary: 

@@ -1,7 +1,7 @@
 Title: Issue 92: All about apps
 Date: 2020-10-31 08:00
-Tags: 
-Category: Season 8
+Tags: app
+Category: Season 08
 Slug: issue092
 Author: J S Ng
 Summary: 

@@ -1,7 +1,7 @@
 Title: Issue 36: Latency
 Date: 2019-08-31 08:00
 Tags: 
-Category: Season 3
+Category: Season 03
 Slug: issue036
 Author: J S Ng
 Summary: 

@@ -1,6 +1,6 @@
 Title: Issue 166: A cause of system slowdown: caches
 Date: 2022-04-02 08:00
-Tags: 
+Tags: cache
 Category: Season 13
 Slug: issue166
 Author: J S Ng

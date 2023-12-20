@@ -1,7 +1,7 @@
 Title: Issue 39: Caches and caching
 Date: 2019-09-21 08:00
-Tags: 
-Category: Season 3
+Tags: cache
+Category: Season 03
 Slug: issue039
 Author: J S Ng
 Summary: 
@@ -44,10 +44,8 @@ How long does the browser cache these files? It depends ... I know it’s not an
 Remember this? It’s the response header we saw from [Issue 8]({filename}/season01/issue008/issue008.md)) on HTTP error codes:
 
 
-<figure>
-    ![HTTP response header]({attach}/season01/issue008/issue008_01.png)
-    <figcaption>A response header from Hypothes.is</figcaption>    
-</figure>
+![HTTP response header]({attach}/season01/issue008/issue008_01.png)  
+*A response header from Hypothes.is*    
 
 
 See the line that says `Cache-Control: no-cache`? That is the server, hypothes.is, asking my browser not to cache this response (because the next time it makes the same API request, the response might be different).

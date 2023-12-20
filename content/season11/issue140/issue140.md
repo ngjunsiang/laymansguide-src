@@ -1,6 +1,6 @@
 Title: Issue 140: The shared memory dream
 Date: 2021-10-02 08:00
-Tags: 
+Tags: memory
 Category: Season 11
 Slug: issue140
 Author: J S Ng
@@ -25,10 +25,8 @@ So in 2015, the high-performance folks (working with workstations and servers) w
 
 Remember this diagram?
 
-<figure>
-    ![Chipset diagram of ATX systems for Intel Core (i-Series)]({attach}/season11/issue134/issue134_02.gif)
-    <figcaption>An Intel Core i-series ATX system chipset diagram.<br />The MCH is merged into the CPU, but still a discrete unit.<br />DDR refers to computer memory, while GDDR refers to graphics card memory ([Issue123]({filename}/season10/issue123/issue123.md)))<br />Source: [Ars](https://arstechnica.com/gadgets/2009/09/intel-launches-all-new-pc-architecture-with-core-i5i7-cpus/)</figcaption>    
-</figure>
+![Chipset diagram of ATX systems for Intel Core (i-Series)]({attach}/season11/issue134/issue134_02.gif)  
+*An Intel Core i-series ATX system chipset diagram.<br />The MCH is merged into the CPU, but still a discrete unit.<br />DDR refers to computer memory, while GDDR refers to graphics card memory ([Issue123]({filename}/season10/issue123/issue123.md)))<br />Source: [Ars](https://arstechnica.com/gadgets/2009/09/intel-launches-all-new-pc-architecture-with-core-i5i7-cpus/)*    
 
 Apple is pretty tight-lipped about the technical details of its products, but if the industry standard is anything to go by, the GPU will usually have its own memory, separate from the CPU.
 

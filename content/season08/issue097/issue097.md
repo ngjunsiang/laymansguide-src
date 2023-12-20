@@ -1,7 +1,7 @@
 Title: Issue 97: Laptop apps
 Date: 2020-12-05 08:00
-Tags: 
-Category: Season 8
+Tags: app, operating system
+Category: Season 08
 Slug: issue097
 Author: J S Ng
 Summary: 

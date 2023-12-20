@@ -1,7 +1,7 @@
 Title: Issue 6: How do you use an API?
 Date: 2019-01-19 08:00
 Tags: 
-Category: Season 1
+Category: Season 01
 Slug: issue006
 Author: J S Ng
 Summary: 

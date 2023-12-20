@@ -1,7 +1,7 @@
 Title: Issue 76: Third-parties and cross-site resources
 Date: 2020-06-13 08:00
 Tags: 
-Category: Season 6
+Category: Season 06
 Slug: issue076
 Author: J S Ng
 Summary: 

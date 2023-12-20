@@ -1,7 +1,7 @@
 Title: Issue 112: Bootstrapping into existence (bootup)
 Date: 2021-03-20 08:00
-Tags: 
-Category: Season 9
+Tags: memory, operating system
+Category: Season 09
 Slug: issue112
 Author: J S Ng
 Summary: 

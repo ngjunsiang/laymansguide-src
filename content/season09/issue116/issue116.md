@@ -1,7 +1,7 @@
 Title: Issue 116: Hibernation
 Date: 2021-04-17 08:00
-Tags: 
-Category: Season 9
+Tags: operating system
+Category: Season 09
 Slug: issue116
 Author: J S Ng
 Summary: 

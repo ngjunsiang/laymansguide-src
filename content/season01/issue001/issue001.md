@@ -1,7 +1,7 @@
 Title: Issue 1: Why make an app?
 Date: 2018-12-15 07:00
 Tags: 
-Category: Season 1
+Category: Season 01
 Slug: issue001
 Author: J S Ng
 Summary: 
@@ -20,17 +20,13 @@ If your impression of “social reading” brings to mind Facebook, Twitter and 
 
 Readmill was shaped primarily around that. The first thing it brought was a permalink to each highlight you made. A permalink is short for a “permanent link”, a bit of text that you can send to someone, paste into the address bar of a web browser, and be taken to a webpage that you want them to see.
 
-<figure>
-    ![Screenshot of a Readmill highlight page]({attach}/season01/issue001/issue001_01.jpg)
-    <figcaption>A Readmill highlight on the Readmill webpage (with a permalink)</figcaption>    
-</figure>
+![Screenshot of a Readmill highlight page]({attach}/season01/issue001/issue001_01.jpg)  
+*A Readmill highlight on the Readmill webpage (with a permalink)*    
 
 These highlights (optionally) appeared in-location in the mobile apps. You could choose to have them off, for focused reading, or to have them on, for the serendipitous experience of meeting someone else who has something to say about what you are reading.
 
-<figure>
-    ![Screenshot of a Readmill highlight in the app]({attach}/season01/issue001/issue001_02.png)
-    <figcaption>A Readmill highlight in the Readmill app</figcaption>    
-</figure>
+![Screenshot of a Readmill highlight in the app]({attach}/season01/issue001/issue001_02.png)  
+*A Readmill highlight in the Readmill app*    
 
 The social reading experience seemed gimmicky at first, but the turning point came for me when Clive Thompson, who had just published Smarter Than You Think, started replying to notes and comments in his book. Being able to speak with the books author on specific highlights was world-changing. You could ask questions about points in the book that weren’t clear to you, and have the author clarify it right there. You could mention something it reminds you of, and have the author point you to an article they read or wrote about the same idea. And these were available to other users of the service. Better yet, their correspondence with the author was available to you too! I regret not taking screenshots of some of the exchanges I had; I never expected I would need them at some point.
 

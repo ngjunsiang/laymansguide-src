@@ -1,7 +1,7 @@
 Title: Issue 72: The Data Brokers
 Date: 2020-05-16 08:00
 Tags: 
-Category: Season 6
+Category: Season 06
 Slug: issue072
 Author: J S Ng
 Summary: 

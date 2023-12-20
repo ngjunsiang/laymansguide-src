@@ -1,7 +1,7 @@
 Title: Issue 60: CPU Optimisation Part 2 – Speculative Execution and Spectre
 Date: 2020-02-15 08:00
-Tags: 
-Category: Season 5
+Tags: cache, cpu, operating system
+Category: Season 05
 Slug: issue060
 Author: J S Ng
 Summary: 

@@ -1,7 +1,7 @@
 Title: Issue 56: Operating Systems and resource management
 Date: 2020-01-18 08:00
-Tags: 
-Category: Season 5
+Tags: operating system, memory
+Category: Season 05
 Slug: issue056
 Author: J S Ng
 Summary: 

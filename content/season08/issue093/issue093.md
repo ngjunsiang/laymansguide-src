@@ -1,7 +1,7 @@
 Title: Issue 93: What's in a web app?
 Date: 2020-11-07 08:00
-Tags: 
-Category: Season 8
+Tags: app, cache
+Category: Season 08
 Slug: issue093
 Author: J S Ng
 Summary: 
@@ -24,10 +24,8 @@ As a web-first programming language, Javascript programs were not expected to ha
 5. For data that is only needed in that tab (e.g. partially filled form data), and can be safely deleted when the tab is closed, the browser provides **sessionstorage**. This works similarly to localstorage.
 6. For more significant amounts of data, web apps can use IndexedDB, a more advanced database also managed in the browser. It is a document database ([Issue 88]({filename}/season07/issue088/issue088.md))), with each document tagged to a key in a key-object system.
 
-<figure>
-    ![Firefox DevTools, showing the Storage tab. Local Storage is selected, displaying a list of keys and values.]({attach}/season08/issue093/issue093_01.png)
-    <figcaption>DevTools in Firefox lets you inspect the data that web apps keep.<br />The Storage tab shows what is stored in cache, cookies, IndexedDB, localstorage, and sessionstorage.<br />IndexedDB, localstorage, and sessionstorage are key-value databases that store the data (value) tagged to a key.</figcaption>    
-</figure>
+![Firefox DevTools, showing the Storage tab. Local Storage is selected, displaying a list of keys and values.]({attach}/season08/issue093/issue093_01.png)  
+*DevTools in Firefox lets you inspect the data that web apps keep.<br />The Storage tab shows what is stored in cache, cookies, IndexedDB, localstorage, and sessionstorage.<br />IndexedDB, localstorage, and sessionstorage are key-value databases that store the data (value) tagged to a key.*    
 
 ## Requesting and receiving data on a server
 

@@ -1,7 +1,7 @@
 Title: Issue 23: Specifications in software
 Date: 2019-05-18 08:00
 Tags: 
-Category: Season 2
+Category: Season 02
 Slug: issue023
 Author: J S Ng
 Summary: 

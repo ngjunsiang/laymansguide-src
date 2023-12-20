@@ -1,7 +1,7 @@
 Title: Issue 109: Speeding up data operations
 Date: 2021-02-27 08:00
-Tags: 
-Category: Season 9
+Tags: cache, memory
+Category: Season 09
 Slug: issue109
 Author: J S Ng
 Summary: 

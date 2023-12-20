@@ -1,7 +1,7 @@
 Title: Issue 84: JOIN – supercharged VLOOKUP
 Date: 2020-08-22 08:00
 Tags: 
-Category: Season 7
+Category: Season 07
 Slug: issue084
 Author: J S Ng
 Summary: 

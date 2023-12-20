@@ -1,7 +1,7 @@
 Title: Issue 43: Images, a mosaic of 3 colours
 Date: 2019-10-19 08:00
 Tags: 
-Category: Season 4
+Category: Season 04
 Slug: issue043
 Author: J S Ng
 Summary: 
@@ -32,10 +32,8 @@ Since one byte stores one colour value, three bytes are needed for a single spot
 
 So now you know what to do with colour pickers in applications: just find the combination of red, green, and blue that is closest to the colour you want!
 
-<figure>
-    ![The Microsoft Paint colour picker]({attach}/season04/issue043/issue043_01.png)
-    <figcaption>A colour picker, common in graphics applications. This one is from Microsoft Paint.</figcaption>    
-</figure>
+![The Microsoft Paint colour picker]({attach}/season04/issue043/issue043_01.png)  
+*A colour picker, common in graphics applications. This one is from Microsoft Paint.*    
 
 You can play with a simple colour wheel on [colorspire.com](https://www.colorspire.com/rgb-color-wheel/), or if you’re feeling more adventurous, try the more technical one on [rapidtables.com](https://www.rapidtables.com/web/color/RGB_Color.html).
 

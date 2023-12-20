@@ -51,10 +51,8 @@ This means that for the bulk of users, software distribution on Linux is **centr
 
 At the same time, if users wish, they are still able to download compiled executables from the internet and run them (with the usual caveats, of course). They can also download source code, compile it themselves, and then run it. These options do not offer the same ease of maintainability as software installed through a package manager, since there is no repository to check for updates.
 
-<figure>
-    ![Steam website showing Install Steam button for Linux. A popup asks what should Firefox do with the file, steam_latest.deb]({attach}/season13/issue164/issue164_01.png)
-    <figcaption>This is what many install pages look like on Linux, for software with Linux versions.<br />The Install button usually downloads a compiled executable, which can be run on the computer.<br />But installing through the distro’s package manager is recommended.</figcaption>    
-</figure>
+![Steam website showing Install Steam button for Linux. A popup asks what should Firefox do with the file, steam_latest.deb]({attach}/season13/issue164/issue164_01.png)  
+*This is what many install pages look like on Linux, for software with Linux versions.<br />The Install button usually downloads a compiled executable, which can be run on the computer.<br />But installing through the distro’s package manager is recommended.*    
 
 No system updates sneaking up on you from the OS maker; updates and new software all come from the repository through the package manager. Unless you decide otherwise.
 

@@ -69,17 +69,13 @@ As digital television became more feasible due to decreasing microprocessor and 
 
 An early competitor, Digital Visual Interface (**DVI**), was launched by a working group convened by some computer makers (Intel, Silicon Image, Compaq, Fujitsu, HP, IBM, NEC). It was very quickly superceded by High-Definition Multimedia Interface (**HDMI**), an interface which implemented standards set by consumer electronics companies (Hitachi, Sanyo, Silicon Image, Sony, Technicolor, Toshiba).
 
-<figure>
-    ![HDMI and mini-HDMI connectors displayed top-to-bottom]({attach}/season10/issue124/issue124_03.jpg)
-    <figcaption>HDMI and mini-HDMI connectors displayed from top to bottom. Both support the HDMI video standard<br />Image via [DataPro](https://www.datapro.net/techinfo/hdmi_info.html)</figcaption>    
-</figure>
+![HDMI and mini-HDMI connectors displayed top-to-bottom]({attach}/season10/issue124/issue124_03.jpg)  
+*HDMI and mini-HDMI connectors displayed from top to bottom. Both support the HDMI video standard<br />Image via [DataPro](https://www.datapro.net/techinfo/hdmi_info.html)*    
 
 This was followed by the DisplayPort (**DP**) standard, developed by PC and chip manufacturers and standardised by VESA, and released in in 2006.
 
-<figure>
-    ![DisplayPort, mini-DisplayPort, and Thunderbolt Type-C connectors displayed side-by-side]({attach}/season10/issue124/issue124_04.jpg)
-    <figcaption>DisplayPort, mini-DisplayPort, and Thunderbolt Type-C connectors displayed from left to right. All three support the DisplayPort video standard<br />Image via [DataPro](https://www.datapro.net/techinfo/displayport_info.html)</figcaption>    
-</figure>
+![DisplayPort, mini-DisplayPort, and Thunderbolt Type-C connectors displayed side-by-side]({attach}/season10/issue124/issue124_04.jpg)  
+*DisplayPort, mini-DisplayPort, and Thunderbolt Type-C connectors displayed from left to right. All three support the DisplayPort video standard<br />Image via [DataPro](https://www.datapro.net/techinfo/displayport_info.html)*    
 
 **Issue summary:** The VGA video format originated in the time of cathode-ray televisions (CRTs). It was superseded by HDMI, a video format standardised by consumer electronics companies. DisplayPort, on the other hand, is a video format standardised by computer display companies.
 

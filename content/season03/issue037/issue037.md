@@ -1,7 +1,7 @@
 Title: Issue 37: Traceroute–Google Maps for data packets
 Date: 2019-09-07 08:00
 Tags: 
-Category: Season 3
+Category: Season 03
 Slug: issue037
 Author: J S Ng
 Summary: 
@@ -42,10 +42,8 @@ traceroute to google.com (74.125.24.138), 30 hops max, 60 byte packets
 Wall of numbers and text! Whoa, scary! It’s all right, I’ll throw that output into Google Sheets and prettify it a bit:
 
 
-<figure>
-    ![prettified traceroute output for google.com]({attach}/season03/issue037/issue037_01.png)
-    <figcaption>The traceroute output for google.com, prettified</figcaption>    
-</figure>
+![prettified traceroute output for google.com]({attach}/season03/issue037/issue037_01.png)  
+*The traceroute output for google.com, prettified*    
 
 
 `traceroute` sends 3 TCP packets, tracing the path they take to the destination IP address. Each time the data packet gets forwarded to another gateway, it is considered a ‘hop’.
@@ -59,10 +57,8 @@ Notice that each hop has a latency associated with it. This is the time taken fo
 Let’s look the `traceroute` output for baidu.com:
 
 
-<figure>
-    ![prettified traceroute output for baidu.com]({attach}/season03/issue037/issue037_02.png)
-    <figcaption>The traceroute output for baidu.com, prettified</figcaption>    
-</figure>
+![prettified traceroute output for baidu.com]({attach}/season03/issue037/issue037_02.png)  
+*The traceroute output for baidu.com, prettified*    
 
 
 Notice that:

@@ -1,7 +1,7 @@
 Title: Issue 46: Lossy compression
 Date: 2019-11-09 08:00
-Tags: 
-Category: Season 4
+Tags: compression
+Category: Season 04
 Slug: issue046
 Author: J S Ng
 Summary: 
@@ -35,10 +35,8 @@ So that’s another way of representing image information: you can either repres
 
 Since the human eye is less sensitive to chroma (colour) information, in the JPEG image format, the chroma components are compressed by averaging each 2×2 group of pixels into 1 value for U and V each. (This process is known as subsampling.) Theoretically that halves the amount of data required for the same image! (4/4 Y + 1/4 U + 1/4 V = 6/12 of the original information)
 
-<figure>
-    ![4 images with different chroma subsampling]({attach}/season04/issue046/issue046_01.jpg)
-    <figcaption>Compare the image without chroma compression (4:4:4) to the image with chroma compression (4:2:0).<br />Without scrutiny, the human eye is not very sensitive to lower resolution in chroma.<br />Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Colorcomp.jpg)</figcaption>    
-</figure>
+![4 images with different chroma subsampling]({attach}/season04/issue046/issue046_01.jpg)  
+*Compare the image without chroma compression (4:4:4) to the image with chroma compression (4:2:0).<br />Without scrutiny, the human eye is not very sensitive to lower resolution in chroma.<br />Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Colorcomp.jpg)*    
 
 ## Lossy image compression: luma
 

@@ -1,7 +1,7 @@
 Title: Issue 77: Wearing clothes on the Internet
 Date: 2020-06-20 08:00
 Tags: 
-Category: Season 6
+Category: Season 06
 Slug: issue077
 Author: J S Ng
 Summary: 

@@ -1,7 +1,7 @@
 Title: Issue 2: Don’t reinvent the wheel
 Date: 2018-12-22 08:00
 Tags: 
-Category: Season 1
+Category: Season 01
 Slug: issue002
 Author: J S Ng
 Summary: 
@@ -11,17 +11,13 @@ Just thinking about recreating the Readmill reading experience in an app was min
 
 As a way to have highlight permalinks, [Hypothes.is](https://hypothes.is/about) looks really promising. I can link people to highlights I have made, and they can reply inline, and the whole conversation can be referenced via a convenient URL ([such as this](https://hypothes.is/a/8jaysPv0QFuycAmGgdqTgQ)). It even appears in context if you [load the Hypothes.is extension](https://web.hypothes.is/start/) while on the page.
 
-<figure>
-    ![Screenshot of a highlight on the Hypothes.is website]({attach}/season01/issue002/issue002_01.png)
-    <figcaption>One of my highlights in Hypothes.is. It has its own permalink!</figcaption>    
-</figure>
+![Screenshot of a highlight on the Hypothes.is website]({attach}/season01/issue002/issue002_01.png)  
+*One of my highlights in Hypothes.is. It has its own permalink!*    
 
 The best part? I already have an account, and quite a few highlights in there for use. No need to write the whole annotation system myself! Now I just need to figure out how to get my annotations from there, and put new annotations into the Hypothes.is service.
 
-<figure>
-    ![Screenshot of profile page from the Hypothes.is website]({attach}/season01/issue002/issue002_02.png)
-    <figcaption>My Hypothes.is profile and annotations</figcaption>    
-</figure>
+![Screenshot of profile page from the Hypothes.is website]({attach}/season01/issue002/issue002_02.png)  
+*My Hypothes.is profile and annotations*    
 
 First, I will need to figure out how to read and write the data from the website, and how to interpret it.
 

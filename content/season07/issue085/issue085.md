@@ -1,7 +1,7 @@
 Title: Issue 85: SQL Injections
 Date: 2020-08-29 08:00
 Tags: 
-Category: Season 7
+Category: Season 07
 Slug: issue085
 Author: J S Ng
 Summary: 

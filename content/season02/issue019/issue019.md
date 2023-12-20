@@ -1,7 +1,7 @@
 Title: Issue 19: Version control and git
 Date: 2019-04-20 08:00
 Tags: 
-Category: Season 2
+Category: Season 02
 Slug: issue019
 Author: J S Ng
 Summary: 
@@ -30,10 +30,8 @@ The modern-day tool which (almost) all developers have standardised on is called
 
 Git tracks changes across _multiple files_. For example, if you added a new About page to your project, it may involve adding a new file about.html (the actual content), updating app.py (to create a new route so people can access the URL), and adding a new line to the changelog (so other members of your team have an easy-to-read changelog). You inform the git server (we covered clients and servers in [Issue 7]({filename}/season01/issue007/issue007.md)) that you have changed those 3 files by creating a **commit**. Git can prepare those commits for you, and they look like this:
 
-<figure>
-    ![A commit on Github]({attach}/season02/issue019/issue019_01.png)
-    <figcaption>A git commit on Github. Yup, this newsletter is also a project on Github.</figcaption>    
-</figure>
+![A commit on Github]({attach}/season02/issue019/issue019_01.png)  
+*A git commit on Github. Yup, this newsletter is also a project on Github.*    
 
 The screenshot above makes it look fancy, but a commit is really just a simple text file that records the changes of the commit.
 

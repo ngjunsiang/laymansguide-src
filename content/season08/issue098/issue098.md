@@ -1,7 +1,7 @@
 Title: Issue 98: Temporary files
 Date: 2020-12-12 08:00
-Tags: 
-Category: Season 8
+Tags: cache
+Category: Season 08
 Slug: issue098
 Author: J S Ng
 Summary: 

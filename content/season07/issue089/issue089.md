@@ -1,7 +1,7 @@
 Title: Issue 89: Graph Databases
 Date: 2020-09-26 08:00
-Tags: 
-Category: Season 7
+Tags: document
+Category: Season 07
 Slug: issue089
 Author: J S Ng
 Summary: 
@@ -28,10 +28,8 @@ Okay, stay with me here, I know you are thinking of a horizontal and a vertical 
 
 That’s what I’m talking about. And it looks like this:
 
-<figure>
-    ![Wikipedia multilingual network graph, showing circles representing languages, and arrows between pairs of circles, representing editors who edited both languages.]({attach}/season07/issue089/issue089_01.png)
-    <figcaption>This network graph shows the co-editing patterns on Wikipedia. The size of the arrows indicate the number of Wikipedia editors for one language edition of Wikipedia, who also edited another language edition.<br />Source: [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Wikipedia_multilingual_network_graph_July_2013.svg)</figcaption>    
-</figure>
+![Wikipedia multilingual network graph, showing circles representing languages, and arrows between pairs of circles, representing editors who edited both languages.]({attach}/season07/issue089/issue089_01.png)  
+*This network graph shows the co-editing patterns on Wikipedia. The size of the arrows indicate the number of Wikipedia editors for one language edition of Wikipedia, who also edited another language edition.<br />Source: [Wikimedia Commons](https://en.wikipedia.org/wiki/File:Wikipedia_multilingual_network_graph_July_2013.svg)*    
 
 Okay, phew.
 

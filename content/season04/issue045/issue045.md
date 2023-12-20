@@ -1,7 +1,7 @@
 Title: Issue 45: Audio, a sampling of values
 Date: 2019-11-02 08:00
 Tags: 
-Category: Season 4
+Category: Season 04
 Slug: issue045
 Author: J S Ng
 Summary: 
@@ -30,10 +30,8 @@ These vibrations can be produced by computers through speakers. The cones of a s
 If we plot the vibrations of air on a graph known as a waveform, they look something like this:
 
 
-<figure>
-    ![Audio waveform]({attach}/season04/issue045/issue045_01.png)
-    <figcaption>An audio waveform<br />Image by [Gordon Johnson](https://pixabay.com/users/GDJ-1086657/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1781570) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1781570).</figcaption>    
-</figure>
+![Audio waveform]({attach}/season04/issue045/issue045_01.png)  
+*An audio waveform<br />Image by [Gordon Johnson](https://pixabay.com/users/GDJ-1086657/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1781570) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1781570).*    
 
 
 This waveform is converted into numeric values through a process called **Pulse Code Modulation** (PCM). If you see the acronym PCM or LPCM in any audio-related file, this is likely what it is referring to.

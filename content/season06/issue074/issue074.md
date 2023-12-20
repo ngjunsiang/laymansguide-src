@@ -1,7 +1,7 @@
 Title: Issue 74: The Walls Have Pixels
 Date: 2020-05-30 08:00
-Tags: 
-Category: Season 6
+Tags: document
+Category: Season 06
 Slug: issue074
 Author: J S Ng
 Summary: 
@@ -19,19 +19,15 @@ Obviously when you loaded the page, some information already went to the server 
 
 Let’s revisit HuffPost again, this time filtering only for image loads:
 
-<figure>
-    ![Screenshot of DevTools in Vivaldi browser, filtered to show only image loads.]({attach}/season06/issue074/issue074_01.png)
-    <figcaption>Chrome DevTools showing filtered image requests.<br />A request for a tracking pixel is highlighted in blue.</figcaption>    
-</figure>
+![Screenshot of DevTools in Vivaldi browser, filtered to show only image loads.]({attach}/season06/issue074/issue074_01.png)  
+*Chrome DevTools showing filtered image requests.<br />A request for a tracking pixel is highlighted in blue.*    
 
 Hmm … why does an image request need to be so long? Anytime you see a long URL like that, with a `?` after the URL proper, and peppered with `&`s and `=`s, alarm bells should be going off in your head: data is being sent to the server ([Issue 70]({filename}/season06/issue070/issue070.md)))!
 
 Let’s see what this image looks like:
 
-<figure>
-    ![Vivaldi browser tab showing a tracking pixel.]({attach}/season06/issue074/issue074_02.png)
-    <figcaption>This is a tracking pixel.<br />You can’t see it. The image info sidebar shows that its dimensions are 1×1 pixels.</figcaption>    
-</figure>
+![Vivaldi browser tab showing a tracking pixel.]({attach}/season06/issue074/issue074_02.png)  
+*This is a tracking pixel.<br />You can’t see it. The image info sidebar shows that its dimensions are 1×1 pixels.*    
 
 Wha—?!
 

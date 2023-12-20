@@ -1,7 +1,7 @@
 Title: Issue 90: Using a database
 Date: 2020-10-03 08:00
 Tags: 
-Category: Season 7
+Category: Season 07
 Slug: issue090
 Author: J S Ng
 Summary: 

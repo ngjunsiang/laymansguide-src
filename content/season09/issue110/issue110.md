@@ -1,7 +1,7 @@
 Title: Issue 110: Safeguarding against data corruption with a journal
 Date: 2021-03-06 08:00
-Tags: 
-Category: Season 9
+Tags: memory
+Category: Season 09
 Slug: issue110
 Author: J S Ng
 Summary: 

@@ -1,7 +1,7 @@
 Title: Issue 34: Firewalls
 Date: 2019-08-17 08:00
 Tags: 
-Category: Season 3
+Category: Season 03
 Slug: issue034
 Author: J S Ng
 Summary: 

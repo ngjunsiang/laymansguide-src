@@ -17,10 +17,8 @@ Mainboards at this point were complicated enough that as part of the marketing, 
 
 This is the chipset diagram of a typical mainboard for the Pentium 4:
 
-<figure>
-    ![Chipset diagram of a mainboard for the Pentium 4]({attach}/season11/issue133/issue133_02.jpg)
-    <figcaption>I tried to find a chipset diagram that used human terms instead of acronyms.<br />This is the best I could do. Annotations my own.<br />Source: [Hexus](https://www.hexus.net/tech/reviews/mainboard/635-sis655fx-dual-channel-p4-chipset/?page=2)</figcaption>    
-</figure>
+![Chipset diagram of a mainboard for the Pentium 4]({attach}/season11/issue133/issue133_02.jpg)  
+*I tried to find a chipset diagram that used human terms instead of acronyms.<br />This is the best I could do. Annotations my own.<br />Source: [Hexus](https://www.hexus.net/tech/reviews/mainboard/635-sis655fx-dual-channel-p4-chipset/?page=2)*    
 
 The **memory controller hub** (MCH) now takes on a much bigger role; it is managing data transfer between the CPU, graphics card, computer memory, *and* the PCH.
 
@@ -30,10 +28,8 @@ The **peripheral controller hub** (PCH), while managing connections to many more
 
 And this is where the components are found on the motherboard:
 
-<figure>
-    ![A mainboard for the Pentium 4]({attach}/season11/issue133/issue133_01.jpg)
-    <figcaption>A motherboard for the Pentium 4, with key components outlined.<br />Annotations are my own.</figcaption>    
-</figure>
+![A mainboard for the Pentium 4]({attach}/season11/issue133/issue133_01.jpg)  
+*A motherboard for the Pentium 4, with key components outlined.<br />Annotations are my own.*    
 
 The CPU clearly draws the most power and produces the most heat here. But notice now that the MCH is no longer bare; it now produces so much heat ([4–10 W](https://hexus.net/tech/news/mainboard/132515-der8auer-examines-amd-x570-chipset-power-consumption/)) that it needs to be passively cooled with a heatsink ([Issue 129]({filename}/season10/issue129/issue129.md))). the PCH, on the other hand, is still chill enough to get by bare naked (4 W or less).
 

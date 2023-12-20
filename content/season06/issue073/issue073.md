@@ -1,7 +1,7 @@
 Title: Issue 73: The Heart of Darkness (Header Bidding)
 Date: 2020-05-23 08:00
-Tags: 
-Category: Season 6
+Tags: cache
+Category: Season 06
 Slug: issue073
 Author: J S Ng
 Summary: 

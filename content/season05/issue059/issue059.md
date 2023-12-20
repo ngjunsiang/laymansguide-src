@@ -1,7 +1,7 @@
 Title: Issue 59: Meltdown
 Date: 2020-02-08 08:00
-Tags: 
-Category: Season 5
+Tags: cache, cpu
+Category: Season 05
 Slug: issue059
 Author: J S Ng
 Summary: 

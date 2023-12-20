@@ -1,7 +1,7 @@
 Title: Issue 52: PDFs part 2 – Text and images
 Date: 2019-12-21 08:00
-Tags: 
-Category: Season 4
+Tags: document
+Category: Season 04
 Slug: issue052
 Author: J S Ng
 Summary: 

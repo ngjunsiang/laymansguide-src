@@ -1,7 +1,7 @@
 Title: Issue 114: In the beginning (firmware)
 Date: 2021-04-03 08:00
-Tags: 
-Category: Season 9
+Tags: operating system
+Category: Season 09
 Slug: issue114
 Author: J S Ng
 Summary: 

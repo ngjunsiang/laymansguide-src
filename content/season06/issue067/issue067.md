@@ -1,7 +1,7 @@
 Title: Issue 67: The Innocent Times
 Date: 2020-04-11 08:00
 Tags: 
-Category: Season 6
+Category: Season 06
 Slug: issue067
 Author: J S Ng
 Summary: 
@@ -15,10 +15,8 @@ Modified: 2020-04-11 08:00
 
 Back [in Oct 22, 1996, Yahoo! already had advertising](https://web.archive.org/web/19961022175643/http://www10.yahoo.com:80/) front and centre, right above its search bar. (Google had not even been founded yet.)
 
-<figure>
-    ![Screenshot of Yahoo! from Oct 22, 1996]({attach}/season06/issue067/issue067_01.png)
-    <figcaption>Yahoo! in 1996 already had advertising right above the search bar</figcaption>    
-</figure>
+![Screenshot of Yahoo! from Oct 22, 1996]({attach}/season06/issue067/issue067_01.png)  
+*Yahoo! in 1996 already had advertising right above the search bar*    
 
 The URL of that page was http://www10.yahoo.com:80/, and we can see a few things from that:
 

@@ -1,7 +1,7 @@
 Title: Issue 81: Data Normalisation
 Date: 2020-07-25 08:00
 Tags: 
-Category: Season 7
+Category: Season 07
 Slug: issue081
 Author: J S Ng
 Summary: 

@@ -1,7 +1,7 @@
 Title: Issue 35: Virtual Private Networks (VPNs)
 Date: 2019-08-24 08:00
 Tags: 
-Category: Season 3
+Category: Season 03
 Slug: issue035
 Author: J S Ng
 Summary: 

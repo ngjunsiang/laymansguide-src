@@ -1,7 +1,7 @@
 Title: Issue 99: Where does all the app data go? A look at Mac-like systems
 Date: 2020-12-19 08:00
-Tags: 
-Category: Season 8
+Tags: app
+Category: Season 08
 Slug: issue099
 Author: J S Ng
 Summary: 

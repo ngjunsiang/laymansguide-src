@@ -1,6 +1,6 @@
 Title: Issue 131: What do early CPUs and startup founders have in common?
 Date: 2021-07-31 08:00
-Tags: 
+Tags: cache
 Category: Season 11
 Slug: issue131
 Author: J S Ng
@@ -48,10 +48,8 @@ How does the CPU know when to apply the voltage, and the memory know when to che
 
 Typically, the transfer rate is somewhat slower; how do we transfer more data per second? By adding more wires! With two wires, we can transfer two bits per cycle; four wires = four bits per second, eight wires = 8 bits per second … at some point, we run into a different problem. The CPU is a small chip, and there is only so much surface area for us to connect wires to.
 
-<figure>
-    ![An Intel Skylake CPU, showing the pins underneath]({attach}/season11/issue131/issue131_01.jpg)
-    <figcaption>An Intel Skylake desktop CPU.<br />Each gold contact on the under-surface connects to a pin on the motherboard when the CPU is seated properly in its socket<br />Source: [Wikipedia](https://en.wikipedia.org/wiki/Skylake_(microarchitecture))</figcaption>    
-</figure>
+![An Intel Skylake CPU, showing the pins underneath]({attach}/season11/issue131/issue131_01.jpg)  
+*An Intel Skylake desktop CPU.<br />Each gold contact on the under-surface connects to a pin on the motherboard when the CPU is seated properly in its socket<br />Source: [Wikipedia](https://en.wikipedia.org/wiki/Skylake_(microarchitecture))*    
 
 Well, that just sucks.
 

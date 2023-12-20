@@ -1,7 +1,7 @@
 Title: Issue 4: What is an API?
 Date: 2019-01-05 08:00
 Tags: 
-Category: Season 1
+Category: Season 01
 Slug: issue004
 Author: J S Ng
 Summary: 
@@ -14,10 +14,8 @@ Modified: 2019-01-05 08:00
 If a human wanted to access my Hypothes.is profile page, they would access [https://hypothes.is/users/kureshii](https://hypothes.is/users/kureshii) and see a nicely formatted profile page.
 
 
-<figure>
-    ![Screenshot of a Hypothes.is profile page]({attach}/season01/issue004/issue004_01.png)
-    <figcaption>My Hypothe.is profile page. Yeah, you already saw this in Issue 2. </figcaption>    
-</figure>
+![Screenshot of a Hypothes.is profile page]({attach}/season01/issue004/issue004_01.png)  
+*My Hypothe.is profile page. Yeah, you already saw this in Issue 2.*    
 
 
 If an app wanted a data-only view, it could access [https://hypothes.is/api/search?user=kureshii](https://hypothes.is/api/search?user=kureshii) and get the same data:
@@ -40,10 +38,8 @@ Maybe when I move on to ebooks.)</small>
 
 
 
-[<figure>
-    ![Video of Douglas pronouncing 'JSON'](https://img.youtube.com/vi/zhVdWQWKRqM/0.jpg)](https://www.youtube.com/watch?v=zhVdWQWKRqM)
-    <figcaption>How do you pronounce JSON? [Here’s a Youtube video](https://www.youtube.com/watch?v=zhVdWQWKRqM) of Douglas telling you he doesn’t care how you pronounce it (he pronounces it “jay-sun” like Jason, I pronounce it “jay-sawn”. Whatever.)</figcaption>    
-</figure>
+[![Video of Douglas pronouncing 'JSON'](https://img.youtube.com/vi/zhVdWQWKRqM/0.jpg)](https://www.youtube.com/watch?v=zhVdWQWKRqM)  
+*How do you pronounce JSON? [Here’s a Youtube video](https://www.youtube.com/watch?v=zhVdWQWKRqM) of Douglas telling you he doesn’t care how you pronounce it (he pronounces it “jay-sun” like Jason, I pronounce it “jay-sawn”. Whatever.)*    
 
 
 By the way, I believe API is pronounced “ay-pee-aye”. Some people may pronounce it “ah-pee”, “ay-pee” or something. Try not to laugh.

@@ -1,7 +1,7 @@
 Title: Issue 102:  Threading
 Date: 2021-01-09 08:00
-Tags: 
-Category: Season 8
+Tags: app, operating system
+Category: Season 08
 Slug: issue102
 Author: J S Ng
 Summary: 

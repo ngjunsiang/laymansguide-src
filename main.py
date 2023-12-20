@@ -6,7 +6,7 @@ import re
 
 class Article:
     __slots__ = ("metadata", "content")
-    
+
     def __init__(self, content: str = "") -> None:
         self.metadata: dict[str, str] = {
             "title": "",
@@ -45,7 +45,7 @@ def mkfig(match) -> str:
     ![{alt_text}]({img_url})
     <figcaption>{caption}</figcaption>    
 </figure>"""
-    
+
 
 
 re_fig = re.compile(r"\!\[(.*?)\]\((.+?)\)\n*(?:<br />)*\n*<small>(.*?)</small>", re.MULTILINE)
@@ -60,7 +60,9 @@ for issue in issues:
     season = f"season{int(num):02}"
     name, _ = os.path.splitext(issue["file"])
     path = os.path.join("content", season, name, issue["file"])
-    
+
     article = Article.from_file(path)
-    article.content = re_fig.sub(mkfig, article.content)
+    prefix, num = article.metadata["category"].split(" ")
+    article.metadata["category"] = f"{prefix} {int(num):02}"
+    # article.content = re.sub("\)\n\*", ")  \n*", article.content)
     article.to_file(path)

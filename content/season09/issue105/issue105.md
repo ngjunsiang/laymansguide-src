@@ -1,7 +1,7 @@
 Title: Issue 105: Operating Systems
 Date: 2021-01-30 08:00
-Tags: 
-Category: Season 9
+Tags: memory, operating system
+Category: Season 09
 Slug: issue105
 Author: J S Ng
 Summary: 

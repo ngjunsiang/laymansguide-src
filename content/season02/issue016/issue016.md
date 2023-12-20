@@ -1,7 +1,7 @@
 Title: Issue 16: Shell scripts and automation
 Date: 2019-03-30 08:00
 Tags: 
-Category: Season 2
+Category: Season 02
 Slug: issue016
 Author: J S Ng
 Summary: 

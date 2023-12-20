@@ -9,10 +9,8 @@ Modified: 2021-08-28 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Light takes 0.3 ns to travel 10 cm, approximately the distance by wire between the CPU and the MCH. This potentially causes operations between the CPU and MCH to slow down by one cycle, at frequencies above 3 GHz. One way the Intel Core i-series resolves this conundrum is to move the MCH *into* the CPU.
 
-<figure>
-    ![Chipset diagram of ATX systems for Intel Core (i-Series)]({attach}/season11/issue134/issue134_02.gif)
-    <figcaption>An Intel Core i-series ATX system chipset diagram.<br />The MCH is merged into the CPU, but still a discrete unit.<br />DDR refers to computer memory, while GDDR refers to graphics card memory ([Issue123]({filename}/season10/issue123/issue123.md)))<br />Source: [Ars](https://arstechnica.com/gadgets/2009/09/intel-launches-all-new-pc-architecture-with-core-i5i7-cpus/)</figcaption>    
-</figure>
+![Chipset diagram of ATX systems for Intel Core (i-Series)]({attach}/season11/issue134/issue134_02.gif)  
+*An Intel Core i-series ATX system chipset diagram.<br />The MCH is merged into the CPU, but still a discrete unit.<br />DDR refers to computer memory, while GDDR refers to graphics card memory ([Issue123]({filename}/season10/issue123/issue123.md)))<br />Source: [Ars](https://arstechnica.com/gadgets/2009/09/intel-launches-all-new-pc-architecture-with-core-i5i7-cpus/)*    
 
 Time to close up some open plot points from last issue:
 
@@ -34,10 +32,8 @@ Multiple CPUs are created on a single die this way, then individually cut and pr
 
 Besides being able to cram more transistors into the same space, it turns out that smaller components also use much less power! So we not only get performance gains, we get power efficiency gains as well—two birds with one stone.
 
-<figure>
-    ![CPU diagram of the Intel Core i7 (1st-gen)]({attach}/season11/issue135/issue135_01.jpg)
-    <figcaption>CPU diagram of the Intel Core i7 (1st-gen)<br />The memory controller, misc. IO, and QPI areas perform the role that the MCH used to take up<br />Source: [AnandTech](https://www.anandtech.com/print/2658/)</figcaption>    
-</figure>
+![CPU diagram of the Intel Core i7 (1st-gen)]({attach}/season11/issue135/issue135_01.jpg)  
+*CPU diagram of the Intel Core i7 (1st-gen)<br />The memory controller, misc. IO, and QPI areas perform the role that the MCH used to take up<br />Source: [AnandTech](https://www.anandtech.com/print/2658/)*    
 
 ## Moving in
 

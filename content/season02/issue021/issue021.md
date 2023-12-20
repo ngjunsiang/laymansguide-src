@@ -1,7 +1,7 @@
 Title: Issue 21: Forking and merging
 Date: 2019-05-04 08:00
 Tags: 
-Category: Season 2
+Category: Season 02
 Slug: issue021
 Author: J S Ng
 Summary: 

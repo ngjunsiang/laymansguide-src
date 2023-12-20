@@ -1,7 +1,7 @@
 Title: Issue 78: uMatrix: voyuering the voyeurs
 Date: 2020-07-04 08:00
-Tags: 
-Category: Season 6
+Tags: cache
+Category: Season 06
 Slug: issue078
 Author: J S Ng
 Summary: 
@@ -17,10 +17,8 @@ As part of my research for this season, I installed [uMatrix](https://github.com
 
 Once installed, it adds a button beside the address bar. When clicked, this button pops up a matrix showing the number of resources loaded from each domain:
 
-<figure>
-    ![Screenshot of uMatrix in Firefox browser, showing default settings.]({attach}/season06/issue078/issue078_01.png)
-    <figcaption>uMatrix in Firefox showing default settings.<br />Items highlighted in green are permitted to load, items in red are blocked.</figcaption>    
-</figure>
+![Screenshot of uMatrix in Firefox browser, showing default settings.]({attach}/season06/issue078/issue078_01.png)  
+*uMatrix in Firefox showing default settings.<br />Items highlighted in green are permitted to load, items in red are blocked.*    
 
 ## Understanding the Matrix
 
@@ -60,19 +58,15 @@ Other third-party domains are blacklisted by default (highlighted in light red) 
 
 That’s interesting … blocking all third-party resources does not stop the page from loading at all! So what are those resources doing (especially the 63 scripts from cfl.dropboxstatic.com)? Let’s continue using the webpage to find out.
 
-<figure>
-    ![Screenshot of Error (405) when logging in with all third-party resources blocked.]({attach}/season06/issue078/issue078_02.png)
-    <figcaption>`Error (405)` means `Method Not Allowed`, implying that something is missing from the webpage resulting in it not understanding what to do. Oops.</figcaption>    
-</figure>
+![Screenshot of Error (405) when logging in with all third-party resources blocked.]({attach}/season06/issue078/issue078_02.png)  
+*`Error (405)` means `Method Not Allowed`, implying that something is missing from the webpage resulting in it not understanding what to do. Oops.*    
 
 Error 405. Looks like I broke something. This is the tedious part: I whitelist one domain at a time, reloading the page each time to see if anything changes.
 
 It turns out the Dropbox webpage is doing a surprising number of things behind the scenes! By the time I managed to get a login, uMatrix looked like this:
 
-<figure>
-    ![Screenshot of uMatrix in Firefox browser, showing some domains whitelisted.]({attach}/season06/issue078/issue078_03.png)
-    <figcaption>uMatrix in Firefox showing settings that got Dropbox working.<br />I had to allow embedded frames from dropboxcaptcha.com and google.com as well.</figcaption>    
-</figure>
+![Screenshot of uMatrix in Firefox browser, showing some domains whitelisted.]({attach}/season06/issue078/issue078_03.png)  
+*uMatrix in Firefox showing settings that got Dropbox working.<br />I had to allow embedded frames from dropboxcaptcha.com and google.com as well.*    
 
 ## Spotting the patterns
 

@@ -1,7 +1,7 @@
 Title: Issue 117: Swap space
 Date: 2021-04-24 08:00
-Tags: 
-Category: Season 9
+Tags: cpu, memory, operating system
+Category: Season 09
 Slug: issue117
 Author: J S Ng
 Summary: 

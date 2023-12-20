@@ -1,7 +1,7 @@
 Title: Issue 32: Sharing a public IP address: Network Address Traversal
 Date: 2019-08-03 08:00
 Tags: 
-Category: Season 3
+Category: Season 03
 Slug: issue032
 Author: J S Ng
 Summary: 
@@ -18,10 +18,8 @@ Remember that when your phone/laptop/device first connects to the router, it doe
 In Issue 8, I gave an example of the *content* of a response:
 
 
-<figure>
-    ![An HTTP response header from Hypothes.is]({attach}/season01/issue008/issue008_01.png)
-    <figcaption>The response header from Hypothes.is</figcaption>    
-</figure>
+![An HTTP response header from Hypothes.is]({attach}/season01/issue008/issue008_01.png)  
+*The response header from Hypothes.is*    
 
 
 This is like the header of a letter that Hypothes.is writes to my web browser (with a company letterhead and all that), saying that it received my request (HTTP 200 OK), and the content of my request (not shown) follows after this header.

@@ -1,7 +1,7 @@
 Title: Issue 103: Why apps hang even with multiple threads
 Date: 2021-01-16 08:00
-Tags: 
-Category: Season 8
+Tags: app, operating system
+Category: Season 08
 Slug: issue103
 Author: J S Ng
 Summary: 

@@ -1,7 +1,7 @@
 Title: Issue 7: What is HTTP?
 Date: 2019-01-26 08:00
 Tags: 
-Category: Season 1
+Category: Season 01
 Slug: issue007
 Author: J S Ng
 Summary: 

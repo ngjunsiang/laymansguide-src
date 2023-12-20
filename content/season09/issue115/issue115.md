@@ -1,7 +1,7 @@
 Title: Issue 115: Shutdown & standby
 Date: 2021-04-10 08:00
-Tags: 
-Category: Season 9
+Tags: operating system
+Category: Season 09
 Slug: issue115
 Author: J S Ng
 Summary: 

@@ -1,7 +1,7 @@
 Title: Issue 91: Commercial database alternatives
 Date: 2020-10-11 11:00
 Tags: 
-Category: Season 7
+Category: Season 07
 Slug: issue091
 Author: J S Ng
 Summary: 

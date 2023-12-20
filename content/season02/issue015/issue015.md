@@ -1,7 +1,7 @@
 Title: Issue 15: Sysadmins and the command line
 Date: 2019-03-23 08:00
 Tags: 
-Category: Season 2
+Category: Season 02
 Slug: issue015
 Author: J S Ng
 Summary: 

@@ -1,7 +1,7 @@
 Title: Issue 88: Document Databases
 Date: 2020-09-19 08:00
-Tags: 
-Category: Season 7
+Tags: document
+Category: Season 07
 Slug: issue088
 Author: J S Ng
 Summary: 

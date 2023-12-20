@@ -1,7 +1,7 @@
 Title: Issue 82: Multiplayer databases
 Date: 2020-08-01 08:00
 Tags: 
-Category: Season 7
+Category: Season 07
 Slug: issue082
 Author: J S Ng
 Summary: 

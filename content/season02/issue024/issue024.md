@@ -1,7 +1,7 @@
 Title: Issue 24: Issue trackers, Bug trackers
 Date: 2019-05-25 13:18
 Tags: 
-Category: Season 2
+Category: Season 02
 Slug: issue024
 Author: J S Ng
 Summary: 
@@ -22,10 +22,8 @@ Software everywhere is full of bugs. They are like bacteria; you can kill them b
 In the early days of electromechanical computers, which carried out computation through a mix of electrical and mechanical parts, problems that arose during the computer’s operation were not always caused by wrong instructions sent to the computer. In 1946, operators of the Harvard Mark II encountered an error that was eventually traced to a moth trapped in a relay. Bug hunting then was literal; today it is figurative, but the term has stuck.
 
 
-<figure>
-    ![A dead moth taped to a page]({attach}/season02/issue024/issue024_04.jpg)
-    <figcaption>A page from the Harvard Mark II electromechanical computer's log, featuring a dead moth that was removed from the device. [Source: Wikipedia](https://en.wikipedia.org/wiki/Software_bug)</figcaption>    
-</figure>
+![A dead moth taped to a page]({attach}/season02/issue024/issue024_04.jpg)  
+*A page from the Harvard Mark II electromechanical computer's log, featuring a dead moth that was removed from the device. [Source: Wikipedia](https://en.wikipedia.org/wiki/Software_bug)*    
 
 
 ## How do developers keep track of so many bugs?
@@ -37,10 +35,8 @@ Software that helps to keep track of bugs are known as bug trackers. Today, when
 Such features may also come with other software or services; Github has a built-in issue tracker.
 
 
-<figure>
-    ![Github’s issue tracker]({attach}/season02/issue024/issue024_01.png)
-    <figcaption>Github’s issue tracker. From Kenneth Reitz’s `requests` package.</figcaption>    
-</figure>
+![Github’s issue tracker]({attach}/season02/issue024/issue024_01.png)  
+*Github’s issue tracker. From Kenneth Reitz’s `requests` package.*    
 
 
 This is where developers working on a piece of software can report bugs or issues they discovered. Often, these reports also come from users of the software.
@@ -48,10 +44,8 @@ This is where developers working on a piece of software can report bugs or issue
 Through the issue created in the issue tracker, developers can communicate with the user who reported the bug, ask for more information, clarify uses of the software, assign the problem to other developers, or close the issue if it is resolved.
 
 
-<figure>
-    ![An issue in Github’s issue tracker]({attach}/season02/issue024/issue024_02.png)
-    <figcaption>What an issue in Github looks like. From Kenneth Reitz’s `requests` package.</figcaption>    
-</figure>
+![An issue in Github’s issue tracker]({attach}/season02/issue024/issue024_02.png)  
+*What an issue in Github looks like. From Kenneth Reitz’s `requests` package.*    
 
 
 Projects will often have a contributing guideline to help users understand how best to write a good bug report. Reading and understanding a bug report can be really trying, especially if it is unclear or does not provide enough information, and this can make the debugging work of developers an emotional drain.
@@ -59,10 +53,8 @@ Projects will often have a contributing guideline to help users understand how b
 It is considered polite to read the project intro and contributing guidelines to understand how the project is being managed and how to write a helpful bug report.
 
 
-<figure>
-    ![Contribution guidelines for requests]({attach}/season02/issue024/issue024_03.png)
-    <figcaption>Contributing guidelines for Kenneth Reitz’s `requests` package.</figcaption>    
-</figure>
+![Contribution guidelines for requests]({attach}/season02/issue024/issue024_03.png)  
+*Contributing guidelines for Kenneth Reitz’s `requests` package.*    
 
 
 Issue trackers are never empty. Popular software gets lots of attention from users, who will use it in all kinds of ways not considered or intended by the developers, so there is always something to be worked on!

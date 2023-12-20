@@ -1,7 +1,7 @@
 Title: Issue 95: What’s in a mobile app?
 Date: 2020-11-21 08:00
-Tags: 
-Category: Season 8
+Tags: app, memory, operating system
+Category: Season 08
 Slug: issue095
 Author: J S Ng
 Summary: 

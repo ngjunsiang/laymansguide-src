@@ -19,10 +19,8 @@ Today, let’s see how the iPhone has evolved.
 
 Rewind to 2008: one year after the first-generation iPhone was launched, the iPhone 3G was released. These early smartphones let us see every little chip that was required to run a smartphone:
 
-<figure>
-    ![iPhone 3G mainboard, with parts labelled]({attach}/season11/issue138/issue138_01.jpg)
-    <figcaption>iPhone 3G mainboard, with parts labelled<br />There are lots of small, auxiliary processors around the CPU.<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPhone+3G+Teardown/600)</figcaption>    
-</figure>
+![iPhone 3G mainboard, with parts labelled]({attach}/season11/issue138/issue138_01.jpg)  
+*iPhone 3G mainboard, with parts labelled<br />There are lots of small, auxiliary processors around the CPU.<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPhone+3G+Teardown/600)*    
 
 In spirit and form, the early smartphones were a lot like the early desktop mainboards ([Issue 132]({filename}/season11/issue132/issue132.md))): lots of chips performing highly specific functions.
 
@@ -34,17 +32,13 @@ At this point, Apple was still using a CPU based on a design by ARM, and manufac
 
 This time, Apple had switched to an internal layout distinctly different from the iPhone 3G, and the basic layout (mainboard beside battery) would become a pattern for subsequent iPhone generations: battery taking up almost half the space, charging and audio circuitry at the bottom near the charging port, camera and antennas near the top, and everything else beside the battery.
 
-<figure>
-    ![iPhone 4 and iPhone 12 Pro]({attach}/season11/issue138/issue138_02.jpg)
-    <figcaption>iPhone 4 on the left, iPhone 12 Pro on the right<br />The basic layout of the iPhone has been preserved over a decade.<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPhone+4+Teardown/3130) and [iFixit](https://www.ifixit.com/Teardown/iPhone+12+and+12+Pro+Teardown/137669)</figcaption>    
-</figure>
+![iPhone 4 and iPhone 12 Pro]({attach}/season11/issue138/issue138_02.jpg)  
+*iPhone 4 on the left, iPhone 12 Pro on the right<br />The basic layout of the iPhone has been preserved over a decade.<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPhone+4+Teardown/3130) and [iFixit](https://www.ifixit.com/Teardown/iPhone+12+and+12+Pro+Teardown/137669)*    
 
 What’s the difference between this layout and the 3G? Let’s have a look at the iPhone 4’s mainboard:
 
-<figure>
-    ![iPhone 4 mainboard]({attach}/season11/issue138/issue138_03.jpg)
-    <figcaption>iPhone 4 mainboard. I got lazy with the labelling because, well, there’s nothing to label!<br />The CPU is the huge chip labelled “A4”, and there’s memory and the 3G chip on the back.<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPhone+4+Teardown/3130)</figcaption>    
-</figure>
+![iPhone 4 mainboard]({attach}/season11/issue138/issue138_03.jpg)  
+*iPhone 4 mainboard. I got lazy with the labelling because, well, there’s nothing to label!<br />The CPU is the huge chip labelled “A4”, and there’s memory and the 3G chip on the back.<br />Source: [iFixit](https://www.ifixit.com/Teardown/iPhone+4+Teardown/3130)*    
 
 Similar to the transition from AT to ATX motherboards ([Issue 132]({filename}/season11/issue132/issue132.md)) and [134]({filename}/season11/issue134/issue134.md))), the iPhone underwent a great miniaturisation—in a single generation!
 

@@ -1,7 +1,7 @@
 Title: Issue 22: Continuous Integration in software
 Date: 2019-05-11 08:00
 Tags: 
-Category: Season 2
+Category: Season 02
 Slug: issue022
 Author: J S Ng
 Summary: 
@@ -19,10 +19,8 @@ By now your idea of a developers’ workflow might look something like this:
 4. If the tests pass, send a pull request to the repository owner to merge this branch with the main branch.
 
 
-<figure>
-    ![A commit on Github]({attach}/season02/issue022/issue022_01.png)
-    <figcaption>Git branching. From [Atlassian’s git branch tutorial](https://www.atlassian.com/git/tutorials/using-branches).</figcaption>    
-</figure>
+![A commit on Github]({attach}/season02/issue022/issue022_01.png)  
+*Git branching. From [Atlassian’s git branch tutorial](https://www.atlassian.com/git/tutorials/using-branches).*    
 
 
 You can imagine that steps 2 and 3, the bread and butter of developers everywhere, is really tedious. Write code, test fails. Edit code, test fails again. On and on and on.
@@ -39,10 +37,8 @@ One step less! But the part that developers dread is usually merging, which is w
 ## Merge conflicts
 
 
-<figure>
-    ![A commit on Github]({attach}/season02/issue022/issue022_01.png)
-    <figcaption>Git merging. From [Atlassian’s git merge tutorial](https://www.atlassian.com/git/tutorials/using-branches/git-merge).</figcaption>    
-</figure>
+![A commit on Github]({attach}/season02/issue022/issue022_01.png)  
+*Git merging. From [Atlassian’s git merge tutorial](https://www.atlassian.com/git/tutorials/using-branches/git-merge).*    
 
 
 Most development teams organise their work into (at least) 3 types of branches:

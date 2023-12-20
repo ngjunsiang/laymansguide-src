@@ -1,7 +1,7 @@
 Title: Issue 5: What is JSON?
 Date: 2019-01-12 08:00
 Tags: 
-Category: Season 1
+Category: Season 01
 Slug: issue005
 Author: J S Ng
 Summary: 
@@ -10,10 +10,8 @@ Modified: 2019-01-12 08:00
 Say you want to send some data to another app. Let’s say it’s an annotation from Hypothes.is:
 
 
-<figure>
-    ![Screenshot of a Hypothes.is highlight page]({attach}/season01/issue005/issue005_01.png)
-    <figcaption>A highlight in Hypothes.is, to illustrate the various bits of info that must be sent. </figcaption>    
-</figure>
+![Screenshot of a Hypothes.is highlight page]({attach}/season01/issue005/issue005_01.png)  
+*A highlight in Hypothes.is, to illustrate the various bits of info that must be sent.*    
 
 
 What data is included in this annotation?
@@ -48,10 +46,8 @@ What? You mean processing XML requires money? Of course! Think about it:
 Amid other competing standards, JSON won out and became a de facto standard for applications to exchange data. Which makes things a little easier for everyone: when we can agree on one de facto standard, everyone knows they gotta make things that support it. So it’s really easy to find something that can help me process JSON.
 
 
-<figure>
-    ![Data from the Hypothes.is API, JSON]({attach}/season01/issue005/issue005_02.png)
-    <figcaption>The same annotation, in JSON format</figcaption>    
-</figure>
+![Data from the Hypothes.is API, JSON]({attach}/season01/issue005/issue005_02.png)  
+*The same annotation, in JSON format*    
 
 
 Issue summary: JSON is the de facto data format for sending data over the web. Almost everything you use that was updated significantly in the last 5 years is probably using JSON-formatted data in some way.

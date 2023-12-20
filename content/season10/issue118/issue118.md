@@ -21,10 +21,8 @@ To write data, you pass a current through the electromagnet to magnetise the dom
 
 Put 3-5 platters together, attach the electromagnet to a moving arm (called the read arm), control the whole thing with some microchips, and you have a hard disk.
 
-<figure>
-    ![Open hard disk]({attach}/season10/issue118/issue118_01.gif)
-    <figcaption>A picture of an opened hard disk, showing the read arms and magnetic platters</figcaption>    
-</figure>
+![Open hard disk]({attach}/season10/issue118/issue118_01.gif)  
+*A picture of an opened hard disk, showing the read arms and magnetic platters*    
 
 ## Characteristics of a hard disk
 

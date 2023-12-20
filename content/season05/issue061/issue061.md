@@ -1,7 +1,7 @@
 Title: Issue 61: Mapping the cache
 Date: 2020-02-22 08:00
-Tags: 
-Category: Season 5
+Tags: cache, cpu, memory
+Category: Season 05
 Slug: issue061
 Author: J S Ng
 Summary: 

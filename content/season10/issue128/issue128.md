@@ -1,6 +1,6 @@
 Title: Issue 128: Upgradeability
 Date: 2021-07-10 08:00
-Tags: 
+Tags: memory
 Category: Season 10
 Slug: issue128
 Author: J S Ng
@@ -25,17 +25,13 @@ On a desktop, you could upgrade a number of components.
 
 Desktop CPUs were purchased separately, and had to be installed into a socket on a mainboard (also called a motherboard).
 
-<figure>
-    ![Intel CPU socket]({attach}/season10/issue128/issue128_01.jpg)
-    <figcaption>A CPU socket on a mainboard<br />Source: [Digital Trends](https://www.digitaltrends.com/computing/what-are-intels-lga-processor-sockets/)</figcaption>    
-</figure>
+![Intel CPU socket]({attach}/season10/issue128/issue128_01.jpg)  
+*A CPU socket on a mainboard<br />Source: [Digital Trends](https://www.digitaltrends.com/computing/what-are-intels-lga-processor-sockets/)*    
 
 Desktop computer memory was likewise purchased separately, and slotted in:
 
-<figure>
-    ![Desktop memory slots]({attach}/season10/issue128/issue128_02.jpg)
-    <figcaption>Memory slots on a desktop mainboard<br />Source: [Bleuwire](https://bleuwire.com/how-to-determine-memory-slots-motherboard-windows-10/)</figcaption>    
-</figure>
+![Desktop memory slots]({attach}/season10/issue128/issue128_02.jpg)  
+*Memory slots on a desktop mainboard<br />Source: [Bleuwire](https://bleuwire.com/how-to-determine-memory-slots-motherboard-windows-10/)*    
 
 On top of that, you still had to buy your own DVD/Bluray drives, storage disks, and other peripherals, to be plugged in laboriously to the mainboard. Many of these features made it into laptops as well.
 
@@ -45,22 +41,16 @@ Because of the smaller space available, the CPU socket had to go. Most laptops h
 
 But laptops retained the ability to upgrade memory through the use of memory slots. These were oriented flat along the board to reduce space.
 
-<figure>
-    ![Laptop memory slots]({attach}/season10/issue128/issue128_03.jpg)
-    <figcaption>Memory slots on a laptop<br />Source: [Laptopmag](https://www.laptopmag.com/articles/ram-upgrade-tutorial)</figcaption>    
-</figure>
+![Laptop memory slots]({attach}/season10/issue128/issue128_03.jpg)  
+*Memory slots on a laptop<br />Source: [Laptopmag](https://www.laptopmag.com/articles/ram-upgrade-tutorial)*    
 
 And they also retained the ability to swap out or replace their disks, whether hard disk or solid state drive.
 
-<figure>
-    ![Laptop hard disk slot]({attach}/season10/issue128/issue128_04.jpg)
-    <figcaption>The hard disk slot on a laptop<br />Source: [TweakTown](https://www.tweaktown.com/tweakipedia/2/upgrading-your-laptop-to-a-new-high-performance-ssd-and-ram/index.html)</figcaption>    
-</figure>
+![Laptop hard disk slot]({attach}/season10/issue128/issue128_04.jpg)  
+*The hard disk slot on a laptop<br />Source: [TweakTown](https://www.tweaktown.com/tweakipedia/2/upgrading-your-laptop-to-a-new-high-performance-ssd-and-ram/index.html)*    
 
-<figure>
-    ![Laptop SSD slots]({attach}/season10/issue128/issue128_05.jpg)
-    <figcaption>The SSD slots on a laptop<br />Source: [EaseUS](https://www.easeus.com/backup-utility/clone-m2-ssd-to-larger-m2-ssd.html)</figcaption>    
-</figure>
+![Laptop SSD slots]({attach}/season10/issue128/issue128_05.jpg)  
+*The SSD slots on a laptop<br />Source: [EaseUS](https://www.easeus.com/backup-utility/clone-m2-ssd-to-larger-m2-ssd.html)*    
 
 ## Limitations of upgradable parts
 

@@ -1,7 +1,7 @@
 Title: Issue 28: Domain Names and DNS
 Date: 2019-07-06 08:00
 Tags: 
-Category: Season 3
+Category: Season 03
 Slug: issue028
 Author: J S Ng
 Summary: 

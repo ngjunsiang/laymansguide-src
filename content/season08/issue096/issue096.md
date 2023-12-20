@@ -1,7 +1,7 @@
 Title: Issue 96: Why are mobile apps so large in size?
 Date: 2020-11-28 08:00
-Tags: 
-Category: Season 8
+Tags: app
+Category: Season 08
 Slug: issue096
 Author: J S Ng
 Summary: 

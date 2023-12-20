@@ -224,6 +224,17 @@ files = [
 ]
 
 [[package]]
+name = "invoke"
+version = "2.2.0"
+description = "Pythonic task execution"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "invoke-2.2.0-py3-none-any.whl", hash = "sha256:6ea924cc53d4f78e3d98bc436b08069a03077e6f85ad1ddaa8a116d7dad15820"},
+    {file = "invoke-2.2.0.tar.gz", hash = "sha256:ee6cbb101af1a859c7fe84f2a264c059020b0cb7fe3535f9424300ab568f6bd5"},
+]
+
+[[package]]
 name = "jinja2"
 version = "3.1.2"
 description = "A very fast and expressive template engine."
@@ -399,6 +410,23 @@ watchfiles = ">=0.21.0"
 
 [package.extras]
 markdown = ["markdown (>=3.1)"]
+
+[[package]]
+name = "pelican-neighbors"
+version = "1.2.0"
+description = "Neighbors is a Pelican plugin that adds Next/Previous links to articles"
+optional = false
+python-versions = ">=3.6.2,<4.0"
+files = [
+    {file = "pelican-neighbors-1.2.0.tar.gz", hash = "sha256:1cbeee08f4d2e135452c044924c3f8e5e39ff083dcfb7485e8eeafdab9d2e445"},
+    {file = "pelican_neighbors-1.2.0-py3-none-any.whl", hash = "sha256:963df1d27dd8b34ac7b85320e63184d3f4e396e4570a3d49f5911246387a35bb"},
+]
+
+[package.dependencies]
+pelican = ">=3,<5"
+
+[package.extras]
+markdown = ["markdown (>=3.2,<4.0)"]
 
 [[package]]
 name = "pygments"
@@ -640,4 +668,4 @@ anyio = ">=3.0.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10.0,<3.11"
-content-hash = "224b72da5e6126f8b185d6b33f90493d18b219b4675de23d69e62c30219eeb15"
+content-hash = "a03ac5e0e220131ab8e37eebbed3a6c01558242b740a5662a437bca96f333811"

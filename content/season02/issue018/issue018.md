@@ -1,7 +1,7 @@
 Title: Issue 18: Frameworks
 Date: 2019-04-13 08:00
-Tags: 
-Category: Season 2
+Tags: app
+Category: Season 02
 Slug: issue018
 Author: J S Ng
 Summary: 

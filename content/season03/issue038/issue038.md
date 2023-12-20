@@ -1,7 +1,7 @@
 Title: Issue 38: Loading a web page
 Date: 2019-09-14 08:00
-Tags: 
-Category: Season 3
+Tags: document
+Category: Season 03
 Slug: issue038
 Author: J S Ng
 Summary: 
@@ -16,19 +16,15 @@ Last issue, I showed the route taken by data packets being sent to google.com, a
 The Github repository where I keep my laymansguide files can be viewed on a webpage, and it looks like this:
 
 
-<figure>
-    ![Github page for laymansguide]({attach}/season03/issue038/issue038_01.png)
-    <figcaption>Github page for laymansguide</figcaption>    
-</figure>
+![Github page for laymansguide]({attach}/season03/issue038/issue038_01.png)  
+*Github page for laymansguide*    
 
 
 Loading this page with the Network tab of Developer Tools open produces this report:
 
 
-<figure>
-    ![Developer Tools showing network activity while loading a Github page]({attach}/season03/issue038/issue038_02.png)
-    <figcaption>Developer Tools, Network view</figcaption>    
-</figure>
+![Developer Tools showing network activity while loading a Github page]({attach}/season03/issue038/issue038_02.png)  
+*Developer Tools, Network view*    
 
 
 This is a summary of the network activity that is happening while the page is loading. The top ribbon, showing time in milliseconds (ms) and a series of horizontal lines, is what is known as a _waterfall chart_. (You can also see this chart in the rightmost column below the ribbon.)
@@ -87,19 +83,15 @@ loads other requested resources, such as stylesheets, images, and scripts (Stage
 **Bonus content:** I tried this with the Baidu homepage, which looks like this:
 
 
-<figure>
-    ![Baidu homepage]({attach}/season03/issue038/issue038_03.png)
-    <figcaption>Baidu homepage</figcaption>    
-</figure>
+![Baidu homepage]({attach}/season03/issue038/issue038_03.png)  
+*Baidu homepage*    
 
 
 and the network activity from loading it:
 
 
-<figure>
-    ![Developer Tools showing network activity while loading Baidu homepage]({attach}/season03/issue038/issue038_04.png)
-    <figcaption>Developer Tools, Network view</figcaption>    
-</figure>
+![Developer Tools showing network activity while loading Baidu homepage]({attach}/season03/issue038/issue038_04.png)  
+*Developer Tools, Network view*    
 
 
 It takes slightly longer (about 400 ms longer) to load, but most of that time is from loading a single `gif`. I wont examine the elements here, in the season on the internet cloud, I’ll explain more what some of these elements do.

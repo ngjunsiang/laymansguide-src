@@ -1,7 +1,7 @@
 Title: Issue 54: Compiling programming code into CPU instructions
 Date: 2020-01-04 08:00
-Tags: 
-Category: Season 5
+Tags: cpu, memory
+Category: Season 05
 Slug: issue054
 Author: J S Ng
 Summary: 

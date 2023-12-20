@@ -1,7 +1,7 @@
 Title: Issue 66: Before the Cloud
 Date: 2020-04-04 08:00
 Tags: 
-Category: Season 6
+Category: Season 06
 Slug: issue066
 Author: J S Ng
 Summary: 

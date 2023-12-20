@@ -1,7 +1,7 @@
 Title: Issue 94: Why do web browsers take up so much memory?
 Date: 2020-11-14 08:00
-Tags: 
-Category: Season 8
+Tags: app, cache, memory, operating system
+Category: Season 08
 Slug: issue094
 Author: J S Ng
 Summary: 
@@ -29,10 +29,8 @@ I have a browser tab open now, with a Google Sheet loaded. What is the Google Sh
 
 DevTools has a really cool tab labelled “Memory”, and it has a nice visual depiction of what the app is doing with all that memory:
 
-<figure>
-    ![Firefox DevTools, showing the Memory tab. The app is using 83.84MB of memory, and 32MiB of that is used by objects.]({attach}/season08/issue094/issue094_01.png)
-    <figcaption>DevTools in Firefox lets you inspect the memory that web apps use.<br />The Memory tab shows what is stored in memory.<br />Most of the memory here is being taken up by javascript objects.</figcaption>    
-</figure>
+![Firefox DevTools, showing the Memory tab. The app is using 83.84MB of memory, and 32MiB of that is used by objects.]({attach}/season08/issue094/issue094_01.png)  
+*DevTools in Firefox lets you inspect the memory that web apps use.<br />The Memory tab shows what is stored in memory.<br />Most of the memory here is being taken up by javascript objects.*    
 
 Javascript `object`s here are Javascript’s own internal representation of data, which is quite similar to a document database’s format. Altogether, they take up 32 MiB of memory space (difference between MB and MiB is covered in [Issue 40]({filename}/season04/issue040/issue040.md))). Google Sheets is juggling a lot of data internally, data which is not stored in IndexedDB or localstorage!
 

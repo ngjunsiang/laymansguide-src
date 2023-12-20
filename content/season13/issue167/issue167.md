@@ -1,6 +1,6 @@
 Title: Issue 167: Database fragmentation
 Date: 2022-04-09 08:00
-Tags: 
+Tags: cache
 Category: Season 13
 Slug: issue167
 Author: J S Ng

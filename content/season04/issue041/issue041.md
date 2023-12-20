@@ -1,7 +1,7 @@
 Title: Issue 41: ASCII, the typewriter digitised
 Date: 2019-10-05 08:00
 Tags: 
-Category: Season 4
+Category: Season 04
 Slug: issue041
 Author: J S Ng
 Summary: 
@@ -19,17 +19,13 @@ To put things in some context, keep in mind that ASCII actually predates the int
 
 In the 1920s, the Murray code was developed into the International Telegraph Alphabet No. 2 code (ITA2 code). Behold:
 
-<figure>
-    ![ITA2 table]({attach}/season04/issue041/issue041_01.jpg)
-    <figcaption>Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:International_Telegraph_Alphabet_2.jpg)</figcaption>    
-</figure>
+![ITA2 table]({attach}/season04/issue041/issue041_01.jpg)  
+*Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:International_Telegraph_Alphabet_2.jpg)*    
 
 But the Murray code actually used more bits to transmit the same information! In Morse code, every letter is represented with between 1 to 5 symbols. Each symbol is either a dash or a dot:
 
-<figure>
-    ![Morse Code table]({attach}/season04/issue041/issue041_02.png)
-    <figcaption>Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:International_Morse_Code.svg)</figcaption>    
-</figure>
+![Morse Code table]({attach}/season04/issue041/issue041_02.png)  
+*Image from [Wikimedia Commons](https://en.wikipedia.org/wiki/File:International_Morse_Code.svg)*    
 
 What do we gain from using more symbols to transmit each number or letter? If you compare the two, you see that ITA2 has some things that are missing in Morse code:
 
@@ -83,10 +79,8 @@ I won’t explain the rest in this supposedly-short newsletter, but if you’re 
 
 In a basic text file, text is still stored using ASCII (although it has seen some modifications since). Some of the control codes are obsolete, while some are still in use today. Remember this image from Issue 12?
 
-<figure>
-    ![An HTTP request captured in Wireshark showing my developer API key]({attach}/season01/issue012/issue012_01.png)
-    <figcaption>An HTTP request captured in Wireshark.</figcaption>    
-</figure>
+![An HTTP request captured in Wireshark showing my developer API key]({attach}/season01/issue012/issue012_01.png)  
+*An HTTP request captured in Wireshark.*    
 
 The `\r` and `\n` you see there are control codes. They stand for 'return' and 'newline', the modern equivalent of 'carriage return' and 'line feed'.
 

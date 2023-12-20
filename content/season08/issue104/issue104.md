@@ -1,7 +1,7 @@
 Title: Issue 104: Storing sensitive data
 Date: 2021-01-23 08:00
-Tags: 
-Category: Season 8
+Tags: app
+Category: Season 08
 Slug: issue104
 Author: J S Ng
 Summary: 

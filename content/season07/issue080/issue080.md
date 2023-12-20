@@ -1,7 +1,7 @@
 Title: Issue 80: Indexing
 Date: 2020-07-18 08:00
 Tags: 
-Category: Season 7
+Category: Season 07
 Slug: issue080
 Author: J S Ng
 Summary: 

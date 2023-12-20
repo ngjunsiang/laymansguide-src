@@ -1,7 +1,7 @@
 Title: Issue 11: How does wifi work?
 Date: 2019-02-23 08:00
 Tags: 
-Category: Season 1
+Category: Season 01
 Slug: issue011
 Author: J S Ng
 Summary: 

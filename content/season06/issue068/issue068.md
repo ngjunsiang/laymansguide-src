@@ -1,7 +1,7 @@
 Title: Issue 68: The Age of Bloat
 Date: 2020-04-18 08:00
 Tags: 
-Category: Season 6
+Category: Season 06
 Slug: issue068
 Author: J S Ng
 Summary: 

@@ -1,6 +1,6 @@
 Title: Issue 165: The myths of system slowdown
 Date: 2022-03-26 08:00
-Tags: 
+Tags: memory
 Category: Season 13
 Slug: issue165
 Author: J S Ng

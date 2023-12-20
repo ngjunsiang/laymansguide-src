@@ -1,7 +1,7 @@
 Title: Issue 87: Relational Databases
 Date: 2020-09-12 08:00
 Tags: 
-Category: Season 7
+Category: Season 07
 Slug: issue087
 Author: J S Ng
 Summary: 

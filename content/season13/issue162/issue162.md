@@ -21,17 +21,13 @@ I’m going with [Source Sans](https://fonts.adobe.com/fonts/source-sans), an op
 
 [^2]: The one I use is called [Fontforge](https://fontforge.org), and it is open-source.
 
-<figure>
-    ![Fontforge with Source Sans Pro Regular open, showing glyphs]({attach}/season13/issue162/issue162_01.png)
-    <figcaption>Source Sans Pro Regular, in Fontforge.</figcaption>    
-</figure>
+![Fontforge with Source Sans Pro Regular open, showing glyphs]({attach}/season13/issue162/issue162_01.png)  
+*Source Sans Pro Regular, in Fontforge.*    
 
 You might already be aware that fonts contain **glyphs**, which are the shapes of each separate character. What makes up those glyphs?
 
-<figure>
-    ![Uppercase Q from Source Sans Pro Regular]({attach}/season13/issue162/issue162_02.png)
-    <figcaption>Uppercase Q from Source Sans Pro Regular.</figcaption>    
-</figure>
+![Uppercase Q from Source Sans Pro Regular]({attach}/season13/issue162/issue162_02.png)  
+*Uppercase Q from Source Sans Pro Regular.*    
 
 These glyphs are mathematical shapes. They are stored as a series of points, joined by curves[^3] or straight lines[^4], which are stored as numbers. The diagrams we draw in Microsoft Word are much the same!
 

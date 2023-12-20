@@ -1,7 +1,7 @@
 Title: Issue 55: Addressing memory
 Date: 2020-01-11 08:00
-Tags: 
-Category: Season 5
+Tags: cpu, memory
+Category: Season 05
 Slug: issue055
 Author: J S Ng
 Summary: 

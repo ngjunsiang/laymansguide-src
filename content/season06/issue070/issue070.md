@@ -1,7 +1,7 @@
 Title: Issue 70: The Cookie Factory
 Date: 2020-05-02 08:00
 Tags: 
-Category: Season 6
+Category: Season 06
 Slug: issue070
 Author: J S Ng
 Summary: 

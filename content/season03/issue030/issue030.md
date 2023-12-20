@@ -1,7 +1,7 @@
 Title: Issue 30: Private IP Addresses
 Date: 2019-07-20 08:00
 Tags: 
-Category: Season 3
+Category: Season 03
 Slug: issue030
 Author: J S Ng
 Summary: 
