@@ -4,7 +4,7 @@ Tags: app
 Category: Season 02
 Slug: issue014
 Author: J S Ng
-Summary: Developers can specialise in frontend, backend, or full-stack development. They write applications for more purposes than I can really count. Not all code is written for an application; some code is written for specialised purposes. And code can be written at different levels of abstraction. High-level code is easier to understand and write because it hides the details of how a computer operates, while low-level code is detailed and able to squeeze the most performance from a computer, but difficult to understand and write.
+Summary: 
 Modified: 2019-03-16 08:00
 
 Last season, I used an app I was making to get into the differences between HTTP and HTTPS. It wrapped things up at a point I’m pretty happy with, left some questions unanswered (for now), and got me thinking what to cover next. I’ve thought about how best to cover the remaining topics, and I could well continue in the same thread, going on to say more (relevant and untechnical) things about networking and its technicalities, but from experience it gets dry and dreary very quickly.

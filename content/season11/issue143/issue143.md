@@ -4,7 +4,7 @@ Tags:
 Category: Season 11
 Slug: issue143
 Author: J S Ng
-Summary: The Apple M1 is a souped-up iPhone processor, with unified memory.
+Summary: 
 Modified: 2021-10-23 08:00
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Using the same hardware for both smartphones and laptops would make it much easier to write apps for both platforms. The closer they are in features, hardware, and software support, the easier things will be for developers.
