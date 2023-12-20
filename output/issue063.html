@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 63: Limitations of Meltdown and Spectre</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+    <meta name="tags" content="cache" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-05.html">Season 05</a></p>
+  <header>
+    <h2>
+      <a href="/issue063.html" rel="bookmark"
+         title="Permalink to Issue 63: Limitations of Meltdown and Spectre">Issue 63: Limitations of Meltdown and Spectre</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2020-03-07T08:00:00+08:00">
+    Sat 07 March 2020
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> To snoop the cache, we:</p>
+<ol>
+<li>Flush the cache corresponding to the 256 memory addresses (to get a cache miss when attempting to load the data from memory)</li>
+<li>Load the secret value using Meltdown or Spectre attacks (the secret value is only one byte, and cannot be greater than 256, so 256 addresses are sufficient)</li>
+<li>Load the memory address from step 1 that corresponds to the value of the secret - this address is now cached, and the next request for it again will result in a cache hit</li>
+<li>Request each address and look for the one with a lower request latency</li>
+</ol>
+<p>At the heart of the exploit is a cache which, being managed by hardware, is not subject to more fine-grained OS control. This is presumed to be safe by engineers, since you can’t access data directly from hardware easily. But as we have seen in this season, with the right exploit, you can still get to that data, with or without permission.</p>
+<p>Just how vulnerable are we to Meltdown and Spectre?</p>
+<h2>Getting permission</h2>
+<p>Every exploit relies on one or more things to work before it can do its things. Meltdown and Spectre require a way to run themselves on the CPU, in the OS. That means a black hat hacker will have to obtain illegal access to the OS, and there are a few common ways to do so:</p>
+<ol>
+<li>
+<p><strong>By cracking a password</strong><br>
+   If the hash of a password (future season) is leaked, hackers can try to reverse-engineer the original password that led to that hash. This requires A LOT of CPU time, and is often not feasible for properly hashed passwords.</p>
+</li>
+<li>
+<p><strong>Getting a password from an unsuspecting user</strong><br>
+   Other people, usually admins and employees, of the OS will already have access to it. A black hat hacker can try to get the password from them through phishing means, or trying to get keystroke-logging malware onto a flash drive they use, or simply posing as a contractor who needs the password for … whatever reason.</p>
+</li>
+<li>
+<p><strong>Exploiting vulnerabilities</strong><br>
+   There are many ways to get an OS to carry out instructions it is not supposed to. An improperly secured web app could receive malicious form data from any of its pages that tells the database to return supposedly-secured information. An improperly configured web server could be exploited by sending it more data than it requested. (Just see the number of “buffer overflow” entries <a href="https://www.cvedetails.com/vulnerability-list/vendor_id-45/product_id-66/opov-1/Apache-Http-Server.html">on this page</a>). If it is not properly written to know what to do with this excess data, and naïvely stores it into memory or processes it, that leads to Bad Things Happening.</p>
+</li>
+</ol>
+<p>Once the black hat hackers find a way to get permission to run things in the OS, they are in lala-land! Not quite. There are different levels of permissions, and the most restrictive ones might not let you run any programs except from a whitelist. At the other end of the privilege spectrum, <strong>root</strong> accounts let you do pretty much everything and anything. This is why if you are ever asked to be root (or Admin) of a computer (including your router), you should really keep that password in a safe and secure place, such as a password manager.</p>
+<h2>Knowing where the loot is</h2>
+<p>During that tiny window of opportunity, the black hat hackers are trying to read data from parts of virtual memory they are not allowed to access. But which are those parts?</p>
+<p>Within the physical memory part of the virtual memory space—</p>
+<p>Okay, quick unpacking here. Remember that the virtual memory space is where all our devices get an address? Hard drives, USB devices, network interfaces, … and of course, physical memory (also known as “RAM”—yes, the same RAM you usually see on the specs of computers). Programs request data from and send data to these devices by using their virtual memory addresses. Each cell in physical memory also gets an address in virtual memory space.</p>
+<p>Within the physical memory part of the virtual memory space, there are portions which are set aside <em>for the OS only</em>. This is the <strong>kernel address space</strong>, which is where critical information such as user privilege tables and OS state get stored. Knowing the addresses in the kernel address space is a big requirement for many exploits, so OS engineers obviously put a lot of work into make sure they are as hard to guess or discover as possible.</p>
+<p><strong>Issue summary:</strong> For Meltdown and Spectre to work, they need two things: (1) Permission to carry out instructions (i.e. run programs) on the OS, and (2) knowledge of where the kernel address space is.</p>
+<p>Problem (1) has been with us since the operating system was born. Problem (2) is also not new: it’s basically figuring out where the HQ is. Spies have also been doing that since time immemorial. But we are now dealing with a space where humans cannot tread: the virtual memory space. Hackers are sending preprogrammed chunks of compiled code into the computer to sniff out data-loot and get it out, while we are programming computers to try to detect such attempts and warn us about them or stop them outright.</p>
+<p>Meanwhile, the processor manufacturers are trying to make everything happen faster. They are, of course, trying to prevent hackers from doing their thing, but it’s hard to do that while also trying to make things go faster. Next issue, I’ll try to show you how many of these fixes (whether complete or incomplete) inevitably lead to lower CPU performance.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S5] Issue 64: Fixing Meltdown and Spectre</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>a cookie? [Issue 8]</li>
+<li>XSS? [Issue 8]</li>
+<li>a CDN? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>firmware? [Issue 34]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+<li>What is involved in installing a piece of software? [Issue 48]</li>
+<li>How do apps know where a file starts and ends? [Issue 49]</li>
+<li>What is a password hash? [Issue 63]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2020-03-07T08:00:00+08:00">
+      Sat 07 March 2020
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+    <p>
+        Tags:
+            <a href="/tag/cache.html">cache</a>
+    </p>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue062.html">
+                Issue 62: Cache snooping
+            </a>
+        </li>
+        <li>
+            <a href="/issue064.html">
+                Issue 64: Fixing Meltdown and Spectre
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

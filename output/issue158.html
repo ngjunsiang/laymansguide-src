@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 158: GPS</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-13.html">Season 13</a></p>
+  <header>
+    <h2>
+      <a href="/issue158.html" rel="bookmark"
+         title="Permalink to Issue 158: GPS">Issue 158: GPS</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2022-02-05T08:00:00+08:00">
+    Sat 05 February 2022
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> Time is synchronised from higher-precision sources through a protocol called Network Time Protocol (NTP). A public pool of time servers is available for synchronisation at pool.ntp.org.</p>
+<p>Ah, GPS. The only topic that actually has almost nothing to do with computing ... and yet the mobile computers in our pocket rely on it so much.</p>
+<h2>A short history</h2>
+<p>The Global Positioning System (GPS) was born of the space age, in 1973, before computers even went mainstream. It was originally used for military applications, particularly for navigation. It was first widely used in a political conflict in the Gulf War (1990–1991). The public finally had access to it in 1996, after US President Bill Clinton issued a policy directive for it to be dual-use (used for both military and civilian purposes).</p>
+<h2>Principles</h2>
+<p>The principle of triangulation far predates GPS. Triangles have been used to estimate distance since antiquity; there is evidence of such techniques being used from sources as far back as 6th century BC.</p>
+<p>In essence, if you know the location of two reference points, then with those two reference points and your own location as the third point, you can draw a triangle and solve a little geometry puzzle to figure out your own location.</p>
+<p>If you were hiking or just taking a walk, you need to have at least two landmarks with locations marked on a map. As long as you stop somewhere with good visibility, you can get your bearings to those landmarks on the map, draw a line backward from each landmark following your bearing, and the intersection of the lines from each landmark will show your location.</p>
+<p>But digital compasses are not ubiquitous in all devices yet; typically they are only included in high-end phones. A simpler way for devices to get their location is to estimate their distance to the two landmarks. This they can do using radio waves, which travel at (close to) the speed of light: 300 million metres per second. Provided the landmarks contain devices that can receive this signal and send it back, the time delay can be used to calculate the distance between the device and landmark.</p>
+<h2>The GPS network</h2>
+<p>For this to work globally, you are going to need such landmarks positioned all over the world, within receiving range of any device. These landmarks need to be:</p>
+<ol>
+<li>electrically powered, so they can broadcast signals</li>
+<li>tall, very tall, since radio waves do not follow Earth’s curvature. A short tower would not be able to receive signals for devices that are too far away: the signal would be blocked by the Earths curved surface!</li>
+<li>aware of their own position, and synchronised at regular intervals</li>
+</ol>
+<p>Let’s solve problem 2 first: instead of building millions of towers worldwide (and how would we do that on the oceans?), we can just launch satellites into space to serve as landmarks for triangulating position. GPS satellites orbit at an altitude of 20,200 km, almost twice of Earth’s diameter, allowing any of them to be reached from almost half of the Earth’s surface.</p>
+<p>Solving problem 3: if we launch enough satellites, they can continually synchronise their clocks with each other, and triangulate their own position relative to other satellites.</p>
+<p>Solving problem 1: satellites all face this common problem of needing electrical power. They have largely resolved it with the use of solar panels.</p>
+<h2>Getting your location using GPS</h2>
+<p>When your smartphone tries to triangulate its location using GPS, it gets its distance from four overhead satellites, along with their location (remember that there is an altitude component!). It then determines its position from this information using triangulation.</p>
+<p>The triangulation calculation here is rather more complicated, given that the satellites are in constant motion and not geostationary (above the same spot on earth all the time). At an orbit altitude of 20,200 km, even radio waves, travelling at lightspeed, still take about 0.07 seconds to reach your phone from a GPS satellite. But it is possible, and your phone does it each time you get your location from GPS—to a precision of about 10m!</p>
+<p><strong>Issue summary:</strong> To get your location using GPS, your phone receives information from four overhead GPS satellites: their location, and the distance between them and your phone. With this information, your phone can calculate its location.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S13] Issue 159: Wifi &amp; cell tower location tracking</p>
+<p>Receiving radio signals all the time requires the receiving unit to be on all the time; if you use GPS heavily you will find your battery draining quickly!</p>
+<p>The reason our smartphones can maintain such good battery life is that they <em>don’t</em> use GPS most of the time. After all, it is not possible to get GPS in a lot of places: in basements, tunnels, anywhere you can’t get a solid signal from four overhead satellites. There are less energy-costly ways to get your location these days, especially if high precision isn’t necessary.</p>
+<p>Next issue, let’s look at how wifi and cell towers come in!</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>XSS? [Issue 8]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2022-02-05T08:00:00+08:00">
+      Sat 05 February 2022
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue157.html">
+                Issue 157: NTP and time-syncing
+            </a>
+        </li>
+        <li>
+            <a href="/issue159.html">
+                Issue 159: Wifi & cell tower location tracking
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

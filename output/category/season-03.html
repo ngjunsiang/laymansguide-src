@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Layman's Guide to Computing - Season 03 category</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<h2>Articles in the Season 03 category</h2>
+
+
+        <article>
+                <header> <h2><a href="/issue027.html" rel="bookmark" title="Permalink to Issue 27: What is an IP address?">Issue 27: What is an IP address?</a></h2> </header>
+                <section><p>P addresses are a string of four numbers. A list of reserved IP addresses is managed by IANA, and all Internet registries agree to forward data packets according to that list. A data packet sent from a client goes to its gateway. At the gateway, the destination IP address is checked against the gateway’s forwarding tables. If the IP address is found in the forwarding table, it gets sent along that route, otherwise it gets forwarded to the next gateway, … until it reaches its destination.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2019-06-29T08:00:00+08:00"> Sat 29 June 2019 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue028.html" rel="bookmark" title="Permalink to Issue 28: Domain Names and DNS">Issue 28: Domain Names and DNS</a></h2> </header>
+                <section><p>Domain names consist of an optional subdomain, the domain name, and the top-level domain. The top-level domains are managed by a registry, which receives registration requests from domain name registrars, and maintains registrant information for each domain under their TLD in a WHOIS database. The domain name registrars let you configure which IP address to forward data packets to, and propagate that information through their DNS servers so that data packets will be routed accordingly.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2019-07-06T08:00:00+08:00"> Sat 06 July 2019 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue029.html" rel="bookmark" title="Permalink to Issue 29: How to resolve a hostname">Issue 29: How to resolve a hostname</a></h2> </header>
+                <section><p>Resolving a hostname means answering the question “which IP address does this hostname point to?”. Your web browser seeks this answer by sending a DNS query to the gateway. If the gateway is unable to provide a satisfactory answer, you can configure your network interface to send the DNS query to a different DNS server.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2019-07-13T08:00:00+08:00"> Sat 13 July 2019 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue030.html" rel="bookmark" title="Permalink to Issue 30: Private IP Addresses">Issue 30: Private IP Addresses</a></h2> </header>
+                <section><p>Private IP addresses are special IP addresses that routers will treat as belonging to devices within the private network, and not outside it. Data packets sent to private IP addresses will never make it past the gateway into the internet. This system allows multiple devices within a private network to share a public IP address.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2019-07-20T08:00:00+08:00"> Sat 20 July 2019 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue031.html" rel="bookmark" title="Permalink to Issue 31: Getting a private IP address: DHCP (and DDNS)">Issue 31: Getting a private IP address: DHCP (and DDNS)</a></h2> </header>
+                <section><p>DHCP is a protocol by which a router assigns IP addresses to devices that connect to it. Static IP addresses are IP addresses that are reserved for a device, so that the device always gets the same IP address when it connects.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2019-07-27T08:00:00+08:00"> Sat 27 July 2019 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue032.html" rel="bookmark" title="Permalink to Issue 32: Sharing a public IP address: Network Address Traversal">Issue 32: Sharing a public IP address: Network Address Traversal</a></h2> </header>
+                <section><p>When a request from a device on the network is to be forwarded to the gateway, it has to traverse different networks. The router helps it by rewriting the source IP and port number, keeping track of the originating IP and port. When a response is received, it rewrites the destination IP and port so that the response will reach the originating device.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2019-08-03T08:00:00+08:00"> Sat 03 August 2019 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue033.html" rel="bookmark" title="Permalink to Issue 33: Port numbers">Issue 33: Port numbers</a></h2> </header>
+                <section><p>When an app makes a network request through the OS, the OS adds the source and destination port number to the query in accordance with TCP. When the OS receives the response, it forwards the data to the app which is mapped to the destination port number. Port numbers 1-1023 are registered to standard Internet services, port numbers 1024 to 49151 may be registered to other services, and port numbers 49152 to 65535 may be used by anyone.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2019-08-10T08:00:00+08:00"> Sat 10 August 2019 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue034.html" rel="bookmark" title="Permalink to Issue 34: Firewalls">Issue 34: Firewalls</a></h2> </header>
+                <section><p>Firewalls block data packets that match certain rules. They decrypt the data packet layer by layer, dropping those that match its programmed rules without allowing them to be forwarded to the next point in its journey. The type of filtering that can be applied depends on the processing power available to the router, since some information is hidden more deeply in the data packet than others. Such filtering is typically circumvented by the use of VPNs, or other means of encrypting the data that is required.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2019-08-17T08:00:00+08:00"> Sat 17 August 2019 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue035.html" rel="bookmark" title="Permalink to Issue 35: Virtual Private Networks (VPNs)">Issue 35: Virtual Private Networks (VPNs)</a></h2> </header>
+                <section><p>VPNs link devices that are not within the same network, such that they can behave as though they are. By encrypting the packet data before it is sent between devices, the VPN software hides these packets from being snooped (i.e. spied upon), effectively forming an encrypted tunnel for information to travel between devices. This enables devices to circumvent firewalls and protect the privacy of information in the data packets.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2019-08-24T08:00:00+08:00"> Sat 24 August 2019 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue036.html" rel="bookmark" title="Permalink to Issue 36: Latency">Issue 36: Latency</a></h2> </header>
+                <section><p>Latency is the time duration between a ping packet being sent out and its response being received. It is an indication of how far away a target server is.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2019-08-31T08:00:00+08:00"> Sat 31 August 2019 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue037.html" rel="bookmark" title="Permalink to Issue 37: Traceroute–Google Maps for data packets">Issue 37: Traceroute–Google Maps for data packets</a></h2> </header>
+                <section><p>The process of forwarding data packets from server to server takes time. Each hop a data packet takes adds to the latency. The more hops a packet must undergo, the longer the latency. The slower the servers along the route, the longer the latency as well.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2019-09-07T08:00:00+08:00"> Sat 07 September 2019 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue038.html" rel="bookmark" title="Permalink to Issue 38: Loading a web page">Issue 38: Loading a web page</a></h2> </header>
+                <section><p>When a webpage document loads (Stage 1), it is processed by the web browser, which then</p></section>
+                <footer>
+                    <p>Published: <time datetime="2019-09-14T08:00:00+08:00"> Sat 14 September 2019 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue039.html" rel="bookmark" title="Permalink to Issue 39: Caches and caching">Issue 39: Caches and caching</a></h2> </header>
+                <section><p>Your computer and browser speed up a lot of lookups by caching information that is unlikely to change from the last view. When the same information is requested, your computer or browser will first look in the cache to find that information, and retrieve it from cache if it is there, otherwise it will load the information (and store it in cache if allowed to). There are usually ways to bypass a cache if the information is stale or no longer correct.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2019-09-21T08:00:00+08:00"> Sat 21 September 2019 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+
+
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

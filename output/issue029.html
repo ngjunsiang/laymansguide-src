@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 29: How to resolve a hostname</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-03.html">Season 03</a></p>
+  <header>
+    <h2>
+      <a href="/issue029.html" rel="bookmark"
+         title="Permalink to Issue 29: How to resolve a hostname">Issue 29: How to resolve a hostname</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2019-07-13T08:00:00+08:00">
+    Sat 13 July 2019
+  </time></p>
+  <p>Previously: An IP address is a string of four numbers that looks like 255.255.128.1. IP addresses are a list managed by the IANA, and all Internet registries agree to route data packets through their servers according to that list, so that you can send your data to anyone whose IP address you know. If you don't know their IP address, but you know their domain name, you can look up the domain name in a WHOIS database through a Domain Name Server to get their IP address.</p>
+<p><img alt="Resolving host message in a Chrome browser" src="/issue029_01.png"><br>
+<em>A really old screenshot of Chrome, showing the resolving host message. <a href="https://www.webnots.com/what-is-resolving-host-or-domain-name/">Source: Webnots</a></em>    </p>
+<p>I think it’s basically impossible to be living in the age of the Internet and not have encountered one of those absolutely annoying times when your web browser just seems to be stuck on “resolving host …” for what seems like <em>forever</em>. What <em>is</em> it doing? And what does resolving host mean?!</p>
+<p>Let’s address the second part first:</p>
+<h2>What is a host?</h2>
+<p>In the early days of the internet, before blogging happened, if you wanted your own webpage you had to write the content and code yourself and put it up somewhere that people can access. the one place almost everybody in my generation knew could do this was Yahoo! GeoCities, a <strong>web hosting service</strong>. They are called hosting services because they act like a host to your content, serving them biscuits and water, making sure they know the wifi password to the place, and the way to the bathroom.</p>
+<p>This is why the part of the domain name after the subdomain, i.e. facebook.com or google.com without the www in front, is also known as the <strong>hostname</strong>; on the internet, that is literally the name of the host(ing server) that holds your content.</p>
+<h2>What does resolving mean?</h2>
+<p><a href="https://www.merriam-webster.com/dictionary/resolve">Merriam-Webster online:</a></p>
+<blockquote>
+<p><strong>resolve</strong> <em>verb</em></p>
+<p>re·​solve | \ ri-ˈzälv</p>
+<p>4 b : to find an answer to</p>
+</blockquote>
+<p>To resolve a hostname is to seek an answer to the question “which IP address does this hostname point to?”</p>
+<p>Your web browser, bless its poor soul, has to ask this question every time you type a URL into the address bar. It does not keep a list of domain names (and the addresses they map to), so someone else has to seek the answer for it.</p>
+<p>This someone, or rather something, is a Domain Name Service.</p>
+<h2>DNS: Domain Name Service</h2>
+<p><img alt="Network connection properties window" src="/issue029_02.png"><br>
+<em>Network connection properties, a window that one used to see very often when configuring a router. <a href="https://helpdeskgeek.com/networking/change-ip-address-and-dns-servers-using-the-command-prompt/">Source: Help Desk Geek</a></em>    </p>
+<p>In the days when you had to set up your router through a LAN cable connected to your internet-less laptop, this was a screen you would see regularly. You had to do this because you had to set your gateway address to point to the router’s default IP address in order to access its internal admin page.</p>
+<p>But I talked about gateways back in (<a href="/issue027.html">Issue 27</a>)), so we’re here to talk about DNS servers instead.</p>
+<p>Just like other data request packets, the request to resolve a host (known as a <strong>DNS query</strong>) first goes to the gateway (usually your router). If it can’t be resolved there, it gets forwarded to the next gateway (your ISP), and it keeps getting forwarded until it reaches a server that is able to answer that query and return the long-desired IP Address (hey, a few seconds is already lifetime for an HTTP session!)</p>
+<p>Usually, this request would be resolved by your ISP’s DNS servers. But sometimes the ISP gets a little swamped, or their DNS server decided to call in sick, or didn’t update its WHOIS databases properly and gave you a wrong answer, or … anyway, if you wanted to bypass that DNS server and try another one, you could input its IP address in the Preferred DNS Server field above.</p>
+<p>Short question for you, dear reader: Why does the Preferred DNS Server field require an IP address and not a hostname?</p>
+<p>Advice on the Internet these days suggests that if you find your browser is taking a little too long to resolve a hostname, you can try configuring your network interface to use <a href="https://developers.google.com/speed/public-dns/">Google Public DNS</a> instead. Since this is a newsletter and not a helpdesk, I won’t go into the details here but you can always drop me a message if you need help.</p>
+<p><strong>Issue summary:</strong> Resolving a hostname means answering the question “which IP address does this hostname point to?”. Your web browser seeks this answer by sending a DNS query to the gateway. If the gateway is unable to provide a satisfactory answer, you can configure your network interface to send the DNS query to a different DNS server.</p>
+<hr>
+<p>This a is a nice, sweet, and short issue, though it took almost as long to write as Issue 28. Crazy, I know.</p>
+<p>I have more to say about DNS, but I don’t think it belongs in this issue. I’ll figure out where to slot that info, whenever it becomes more relevant :)</p>
+<p>I hope a picture of how your browser gets its data is gradually forming in your head: registries looking up databases of addresses, requests getting forwarded to higher and higher gateways, and now hostnames resolving into IP addresses.</p>
+<p>Yeah I really should have introduced hostnames last issue, but couldn't find a place to put them without making the issue more unwieldy than it needs to be. I think it made perfect sense here.</p>
+<p>Did you answer the question above? It’s meant to make you think a little; that helps a lot for remembering what you read. You have to input the DNS Server as an IP address because if you used a hostname, your laptop would have to resolve that hostname <em>before</em> knowing where to send the DNS query. For this reason, Google Public DNS makes its DNS Server IP addresses easy to remember: 8.8.8.8 and 8.8.4.4.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> Private IP addresses – how do I use one IP address for all my devices?</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>a cookie? [Issue 8]</li>
+<li>a cache? [Issue 8]</li>
+<li>XSS? [Issue 8]</li>
+<li>a CDN? [Issue 8]</li>
+<li>Unicode? And what does it have to do with emoji? [Issue 8]</li>
+<li>those '\r\n's in the HTTP request packet [Issue 12,17]?</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>ASCII? [Issue 23]</li>
+<li>compiling code into an application [Issue 26]?</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2019-07-13T08:00:00+08:00">
+      Sat 13 July 2019
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue028.html">
+                Issue 28: Domain Names and DNS
+            </a>
+        </li>
+        <li>
+            <a href="/issue030.html">
+                Issue 30: Private IP Addresses
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

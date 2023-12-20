@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Layman's Guide to Computing - cache tag</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<h2>Articles tagged with cache</h2>
+
+
+        <article>
+                <header> <h2><a href="/issue039.html" rel="bookmark" title="Permalink to Issue 39: Caches and caching">Issue 39: Caches and caching</a></h2> </header>
+                <section><p>Your computer and browser speed up a lot of lookups by caching information that is unlikely to change from the last view. When the same information is requested, your computer or browser will first look in the cache to find that information, and retrieve it from cache if it is there, otherwise it will load the information (and store it in cache if allowed to). There are usually ways to bypass a cache if the information is stale or no longer correct.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2019-09-21T08:00:00+08:00"> Sat 21 September 2019 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue057.html" rel="bookmark" title="Permalink to Issue 57: Cache, the CPU’s working space">Issue 57: Cache, the CPU’s working space</a></h2> </header>
+                <section><p>The CPU stores data for ready access in the CPU cache. Accessing data from the CPU cache is much faster than accessing data from memory. When the CPU needs data from a memory address, it looks in the cache first. If the data is not there (a <strong>cache miss</strong>), it will load the data from the memory address, and store a copy in the cache for faster reference in future. The CPU cache is managed by the CPU and is invisible to the OS. Programs that need to ensure the data in the cache is “fresh” can perform a cache flush and reload.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2020-01-25T08:00:00+08:00"> Sat 25 January 2020 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue058.html" rel="bookmark" title="Permalink to Issue 58: CPU Optimisation Part 1 – Out-of-Order Processing">Issue 58: CPU Optimisation Part 1 – Out-of-Order Processing</a></h2> </header>
+                <section><p>The CPU comprises different types of execution units. All the execution units can run at the same time, but they may execute instructions over different numbers of clock cycles. To minimise wait time, CPU instructions are carried out in an order that keeps the execution units busy as often as possible.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2020-02-01T08:00:00+08:00"> Sat 01 February 2020 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue059.html" rel="bookmark" title="Permalink to Issue 59: Meltdown">Issue 59: Meltdown</a></h2> </header>
+                <section><p>A set of instructions can trick a CPU into reordering load instructions so that the data is temporarily loaded into the cache before the instructions are retired. The cache can then be snooped to retrieve the data.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2020-02-08T08:00:00+08:00"> Sat 08 February 2020 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue060.html" rel="bookmark" title="Permalink to Issue 60: CPU Optimisation Part 2 – Speculative Execution and Spectre">Issue 60: CPU Optimisation Part 2 – Speculative Execution and Spectre</a></h2> </header>
+                <section><p>Speculative execution is a feature that let’s the CPU speed up execution if it correctly predicts a decision point. The CPU carries out the operations along the predicted decision branch and loads the results if it predicts correctly.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2020-02-15T08:00:00+08:00"> Sat 15 February 2020 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue061.html" rel="bookmark" title="Permalink to Issue 61: Mapping the cache">Issue 61: Mapping the cache</a></h2> </header>
+                <section><p>A cache miss is slow, and a cache hit is fast. This difference in cache reading speed can be used to transmit secrets out from the cache, which cannot be read directly by programs.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2020-02-22T08:00:00+08:00"> Sat 22 February 2020 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue062.html" rel="bookmark" title="Permalink to Issue 62: Cache snooping">Issue 62: Cache snooping</a></h2> </header>
+                <section></section>
+                <footer>
+                    <p>Published: <time datetime="2020-03-03T17:00:00+08:00"> Tue 03 March 2020 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue063.html" rel="bookmark" title="Permalink to Issue 63: Limitations of Meltdown and Spectre">Issue 63: Limitations of Meltdown and Spectre</a></h2> </header>
+                <section><p>For Meltdown and Spectre to work, they need two things: (1) Permission to carry out instructions (i.e. run programs) on the OS, and (2) knowledge of where the kernel address space is.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2020-03-07T08:00:00+08:00"> Sat 07 March 2020 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue065.html" rel="bookmark" title="Permalink to Issue 65: Memory Sharing in the Operating System">Issue 65: Memory Sharing in the Operating System</a></h2> </header>
+                <section><p>Shared memory helps to reduce the amount of memory needed by all the applications running on an operating system. It also allows applications to send data to each other, and to communicate.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2020-03-28T17:12:00+08:00"> Sat 28 March 2020 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue073.html" rel="bookmark" title="Permalink to Issue 73: The Heart of Darkness (Header Bidding)">Issue 73: The Heart of Darkness (Header Bidding)</a></h2> </header>
+                <section><p>When a page loads advertisements through header bidding, it sends your cookie along with other information to an <strong>ad exchange</strong>. The ad exchange conducts automated bidding among the ad-buyers, determines the winner(s), and sends the winning code(s) back to your browser. Your browser then sends these codes to the <strong>CDN</strong>, which sends back the winning ads for your page to render in your browser.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2020-05-23T08:00:00+08:00"> Sat 23 May 2020 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue078.html" rel="bookmark" title="Permalink to Issue 78: uMatrix: voyuering the voyeurs">Issue 78: uMatrix: voyuering the voyeurs</a></h2> </header>
+                <section><p>Modern webpages rely on many third-party resources for their functionality. Blocking access to some domains may cause these webpages to break and stop working.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2020-07-04T08:00:00+08:00"> Sat 04 July 2020 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue093.html" rel="bookmark" title="Permalink to Issue 93: What's in a web app?">Issue 93: What's in a web app?</a></h2> </header>
+                <section><p>Web apps have limited access to the device’ storage, and can only store data in browser-managed databases. Progressive Web Apps (PWAs) can additionally register service workers that run in the background. Because they are so cleanly sandboxed, they can be easily removed by clearing the browser cache and storage, and deregistering any service workers manually.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2020-11-07T08:00:00+08:00"> Sat 07 November 2020 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue094.html" rel="bookmark" title="Permalink to Issue 94: Why do web browsers take up so much memory?">Issue 94: Why do web browsers take up so much memory?</a></h2> </header>
+                <section><p>Web apps require the browser to request memory on their behalf, and thus their memory usage shows up under the browser process in the OS Task Manager. Web apps use this data to store a more convenient (but larger) representation of the webpage document, and to store the data needed by the app.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2020-11-14T08:00:00+08:00"> Sat 14 November 2020 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue098.html" rel="bookmark" title="Permalink to Issue 98: Temporary files">Issue 98: Temporary files</a></h2> </header>
+                <section><p>Apps generally handle three categories of files: its own (permanent) app files, (shared) user files, and (ephemeral) temporary files.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2020-12-12T08:00:00+08:00"> Sat 12 December 2020 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue109.html" rel="bookmark" title="Permalink to Issue 109: Speeding up data operations">Issue 109: Speeding up data operations</a></h2> </header>
+                <section><p>Fast writes dump the data to a write cache (in computer memory), then update the file table to look like the file is already written to disk. However, if power is cut before all data is properly moved from the write cache to disk, the data in memory is lost, and file corruption usually results.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2021-02-27T08:00:00+08:00"> Sat 27 February 2021 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue131.html" rel="bookmark" title="Permalink to Issue 131: What do early CPUs and startup founders have in common?">Issue 131: What do early CPUs and startup founders have in common?</a></h2> </header>
+                <section><p>CPUs have limited throughput, since there is a max frequency they can operate at, and a limit to the number of wires they can be connected to (throughput = no. of wires × frequency). Later designs of early computers increased the capability of computers by delegating more work to secondary chips.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2021-07-31T08:00:00+08:00"> Sat 31 July 2021 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue166.html" rel="bookmark" title="Permalink to Issue 166: A cause of system slowdown: caches">Issue 166: A cause of system slowdown: caches</a></h2> </header>
+                <section><p>Caches speed up app operations by storing temporary data on the device’s storage. This assumes that access to storage is much faster than access to the file’s original source. On Android, users can clear an app’s cache, but not the system cache.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2022-04-02T08:00:00+08:00"> Sat 02 April 2022 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+        <article>
+                <header> <h2><a href="/issue167.html" rel="bookmark" title="Permalink to Issue 167: Database fragmentation">Issue 167: Database fragmentation</a></h2> </header>
+                <section><p>Fragmentation is likely a contributor of system slowdown, particularly for mobile devices: the databases used by most mobile apps tend to store data in many small chunks rather than fewer big chunks, which slows down data search operations. The most effective measure for improving device responsiveness is usually to clear the app cache, so the app does not attempt to read previous data from storage.</p></section>
+                <footer>
+                    <p>Published: <time datetime="2022-04-09T08:00:00+08:00"> Sat 09 April 2022 </time></p>
+                    <address>By
+                        <a href="/author/j-s-ng.html">J S Ng</a>
+                    </address>
+                </footer>
+        </article>
+
+
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

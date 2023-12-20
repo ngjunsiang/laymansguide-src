@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 39: Caches and caching</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+    <meta name="tags" content="cache" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-03.html">Season 03</a></p>
+  <header>
+    <h2>
+      <a href="/issue039.html" rel="bookmark"
+         title="Permalink to Issue 39: Caches and caching">Issue 39: Caches and caching</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2019-09-21T08:00:00+08:00">
+    Sat 21 September 2019
+  </time></p>
+  <p><strong>Previously:</strong> When a webpage document loads (Stage 1), it is processed by the web browser, which then
+loads other requested resources, such as stylesheets, images, and scripts (Stage 2). Scripts and other interactive code may then request more resources (data fetches, images, icons, data, etc) which are then loaded subsequently (Stage 3, 4, 5, …).</p>
+<p>Last issue, I showed you using Developer Tools how a webpage is loaded in stages, and how that contributes to latency alongside DNS querying and data routing. We saw that it could add up to a few seconds of latency, which would be unbearable for a lot of people (first-world problems!).</p>
+<p>Searching for anything takes time. Need to fill out a form? You need to search for a pen first. Need to call someone? Before speed dial and contacts apps existed, You used to need to look up a number in order to dial it. If you do it often enough, you would make sure you always had a pen with you, or you would write the number somewhere convenient for you to see so you don’t need to hunt for it.</p>
+<p>Computers use the same trick, and it is called <strong>caching</strong>. Any information it needs repeatedly which is unchanging is stored in a <strong>cache</strong>. What kind of caches does a computer use to reduce network latency?</p>
+<h2>DNS cache</h2>
+<p>When you load a webpage or service and send requests to it, the first thing that happens is the DNS query. Once your OS knows the IP address to send requests to, it doesn’t make sense for it to keep querying the hostname, does it? IP addresses don’t change that quickly! The computer stores the hostnames and associated IP addresses in the DNS cache. You can view the DNS cache on a Windows PC by opening Command Prompt and typing <code>ipconfig /displaydns</code>.</p>
+<p><img alt="The DNS cache" src="/issue039_01.jpg"><br />
+<small>The output of <code>ipconfig /displaydns</code><br />
+(I used Powershell instead of Command Prompt,
+but it will look the same in Command Prompt.)</small></p>
+<p>The computer always goes to the DNS cache first. If it can’t find the hostname (e.g. facebook.com) in the DNS cache, it will perform a lookup, then store the hostname and associated IP address in DNS cache. This information is stored for a day, then discarded, just in case the information has been refreshed.</p>
+<p>Sometimes, this causes problems. A company or service may be in the process of moving servers and thus changing IP addresses. If the move didn’t go smoothly, your computer may be stuck with the wrong DNS information for some hosts. Or sometimes something just goes wrong with the DNS query and you are stuck with bad information.</p>
+<p>When this happens, tech support will usually just flush the DNS cache to remove all information from it (yes, the bad with the good). On Windows, you can do so by opening Command Prompt and typing <code>ipconfig /flushdns</code>.</p>
+<h2>Browser cache</h2>
+<p>Notice that the first time your web browser loads any page you haven’t visited before, it often takes quite a while, but subsequent loads are really fast? That’s because we now skip a DNS query (grabbing the IP address from the DNS cache instead). Each time we do a lookup to retrieve a file or piece of information from the server, we can skip the DNS query!</p>
+<p>The caching trick isn’t applied only to the IP address; many elements you see on the page have been cached: the document itself, images, scripts, stylesheets, … most of the elements from <a href="/issue038.html">Issue 38</a>) are cacheable, and the browser will cache it.</p>
+<p>How long does the browser cache these files? It depends ... I know it’s not an answer you like since it means more things to learn about, but I’ll keep it short.</p>
+<p>Remember this? It’s the response header we saw from <a href="/issue008.html">Issue 8</a>) on HTTP error codes:</p>
+<p><img alt="HTTP response header" src="/issue008_01.png"><br>
+<em>A response header from Hypothes.is</em>    </p>
+<p>See the line that says <code>Cache-Control: no-cache</code>? That is the server, hypothes.is, asking my browser not to cache this response (because the next time it makes the same API request, the response might be different).</p>
+<p>The server can also set a different <code>Cache-Control</code> time, especially for resources that are used repeatedly on pages (such as logos and headers). On heavily accessed sites, these resources may have a <code>Cache-Control</code> time of up to a year!</p>
+<p>If you want to bypass the cached version of the page and force a full reload, you can do so on most browsers using the hotkey <code>Ctrl-F5</code> instead of <code>F5</code>.</p>
+<h2>Flushing the browser cache</h2>
+<p>The browser typically stores cached files and data until it exceeds the storage limit set in the browser, at which point it will begin ejecting the oldest files. You can force the browser to remove these files through a menu setting usually named something like “Clear browsing data” or just “Clear data”.</p>
+<p>On some sites, especially internet banking sites, you may be asked to flush your cache after you log out; they are asking you to clear cached files and cookies stored in the browser, especially if you are on a public computer or some device that is not your own. the hotkey for doing so (if you are on a laptop) is usually <code>Ctrl-Shift-Del</code>.</p>
+<p><strong>Issue summary:</strong> Your computer and browser speed up a lot of lookups by caching information that is unlikely to change from the last view. When the same information is requested, your computer or browser will first look in the cache to find that information, and retrieve it from cache if it is there, otherwise it will load the information (and store it in cache if allowed to). There are usually ways to bypass a cache if the information is stale or no longer correct.</p>
+<hr>
+<p>And Season 3’s a wrap! I know I may have mentioned that I don’t intend to write howtos in this newsletter, but clearing the cache is something I google for so often, and I see many others googling for it too, that I figured it might help to include a bit of info for those who want to know. At worst, many more people now know how to force-reload a page … 😅</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next season:</strong> I’ve talked so much about networks: how they work and what they do, and then used that to build up to an explanation for “why is the internet so slow?”. It’s not a complete explanation yet—that will still take awhile—but I think we’re off to a good start.</p>
+<p>As I wrote Season 3, it gradually became clear to me that before I start writing about cloud computing, I’m going to need to talk about data first. Computers ultimately store everything in binary, like <code>010101011100101000100101</code>, so how do they use something so basic to represent everything from text to images to audio to videos and more? and how do they set up a system for storing and retrieving this information easily?</p>
+<p>I’m not going to talk about binary and hex numbers much if at all; I don’t think it’s relevant for a newsletter like this. But since so many things are measured in bits and bytes, it’s impossible to escape that discussion. I want to build the issues up to answer questions I’ve been getting, like “why do my JPG files have this weird fuzz”, and “why are my audio files so large”, and “can I make this zip file smaller by putting it in another zip file”, and “why do I get these weird rectangles or question marks in my web browser”, and many more :)</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>a cookie? [Issue 8]</li>
+<li>~~a cache? [Issue 8]~~</li>
+<li>XSS? [Issue 8]</li>
+<li>a CDN? [Issue 8]</li>
+<li>Unicode? And what does it have to do with emoji? [Issue 8]</li>
+<li>those '\r\n’s in the HTTP request packet [Issue 12,17]?</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>ASCII? [Issue 23]</li>
+<li>compiling code into an application [Issue 26]?</li>
+<li>firmware? [Issue 34]</li>
+<li>What is HTML [Issue 38]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2019-09-21T08:00:00+08:00">
+      Sat 21 September 2019
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+    <p>
+        Tags:
+            <a href="/tag/cache.html">cache</a>
+    </p>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue038.html">
+                Issue 38: Loading a web page
+            </a>
+        </li>
+        <li>
+            <a href="/issue040.html">
+                Issue 40: Bits and bytes
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 167: Database fragmentation</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+    <meta name="tags" content="cache" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-13.html">Season 13</a></p>
+  <header>
+    <h2>
+      <a href="/issue167.html" rel="bookmark"
+         title="Permalink to Issue 167: Database fragmentation">Issue 167: Database fragmentation</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2022-04-09T08:00:00+08:00">
+    Sat 09 April 2022
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> There are easy and quick ways to check the validity of the most common advice for resolving system slowdown. But it still seems to happen even after these tips have been tried.</p>
+<p>Last issue, we talked about caches and why they are no longer as effective as a performance-boosting measure.</p>
+<p>This issue, let’s look into a solved problem that is not-as-solved on Android: file fragmentation.</p>
+<h2>Storage fragmentation on mobile devices</h2>
+<p>I mentioned in <a href="/issue119.html">Issue 119</a>) that fragmentation is not an issue for faster SSDs; the much lower latency of SSDs makes the retrieval of multiple file chunks from multiple locations trivially easy. But for slower storage devices, whether they are hard disk drives or SSDs over a UFS interface, fragmentation is very real. Unfortunately, its not just a simple matter of defragmenting a disk regularly<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. the source of this fragmentation comes from the way apps themselves store data.</p>
+<h2>SQLite, a blessing and a curse</h2>
+<p><a href="https://sqlite.org/index.html">SQLite</a> is a popular file-based relational database (<a href="/issue087.html">Issue 87</a>)) used by many Android apps (including WhatsApp!). This means that unlike other databases, which require a separate database program to run, SQLite just requires the programmer to bundle an appropriate library for their programming language instead of running a separate program. It makes management of data much easier for the app developers, and it is also fast—usually.</p>
+<p>However, <a href="https://www.tuxera.com/blog/why-is-my-android-phone-slowing-down/">a 2016 study found that it contributes to fragmentation</a> on the Android filesystem. Even after clearing the app’s data, once SQLite starts storing data again, it tends to store them in many small chunks instead of fewer but larger chunks. On Android devices, which use the slower UFS interface, searching through the database involves reading each database chunk to see if the requested data is there; this gets slower as the database grows, and SQLite adds more chunks to the storage device.</p>
+<p>The study ends on a pretty pessimistic note: there doesn’t seem to be any feasible mitigation other than making upstream code changes to SQLite, or designing a different filesystem that overcomes this limitation. But that was five years ago; with any luck some positive developments might have been made into this area. I’m still looking into it!</p>
+<p><strong>Issue summary:</strong> Fragmentation is likely a contributor of system slowdown, particularly for mobile devices: the databases used by most mobile apps tend to store data in many small chunks rather than fewer big chunks, which slows down data search operations. The most effective measure for improving device responsiveness is usually to clear the app cache, so the app does not attempt to read previous data from storage.</p>
+<p>That’s all I’ve managed to find out from reading; further research will either involve detailed tinkering and experimentation, or deeper reading, both of which are time-consuming.</p>
+<p>Short issue this time, because if I made it any longer I think it would be more technical than I would really like. Enjoy the brain-break!</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S13] Issue 168: Search engines</p>
+<p>How do search engines ... know everything?</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Defragmentation is discouraged on solid-state devices, as each read/write operation causes the storage medium to degrade. Under typical usage, a solid-state device can be expected to last many years. Defragmentation involves lots of read/write (as you are reading files and storing them elsewhere on the disk), hastens the degradation, and will shorten the lifespan of solid-state devices unnecessarily.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2022-04-09T08:00:00+08:00">
+      Sat 09 April 2022
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+    <p>
+        Tags:
+            <a href="/tag/cache.html">cache</a>
+    </p>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue166.html">
+                Issue 166: A cause of system slowdown: caches
+            </a>
+        </li>
+        <li>
+            <a href="/issue168.html">
+                Issue 168: Search engines
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

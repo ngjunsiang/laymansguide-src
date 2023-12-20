@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 38: Loading a web page</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+    <meta name="tags" content="document" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-03.html">Season 03</a></p>
+  <header>
+    <h2>
+      <a href="/issue038.html" rel="bookmark"
+         title="Permalink to Issue 38: Loading a web page">Issue 38: Loading a web page</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2019-09-14T08:00:00+08:00">
+    Sat 14 September 2019
+  </time></p>
+  <p><strong>Previously:</strong> Data packets hop from server to server. The more hops a packet must undergo, the longer the latency. The slower the servers along the route, the longer the latency as well.</p>
+<p>Last issue, I showed the route taken by data packets being sent to google.com, and to baidu.com. We don’t know what is in those data packets (yet), so in this issue I want to show you just how many requests/responses are involved in loading a webpage. I’ll be doing so using a tool that is available in Chrome and Firefox, which you might have accidentally opened before when you pressed some unknown hotkey combination, and wondered if you broke your browser. This tool is called <strong>Developer Tools</strong>, and it opens any time you right-click something in a webpage and then click 'Inspect Element', or if you press the <code>Ctrl-Alt-I</code> hotkey. It shows you what the backend of a webpage looks like, and today we’ll look at one of its features.</p>
+<h2>Loading a Github webpage</h2>
+<p>The Github repository where I keep my laymansguide files can be viewed on a webpage, and it looks like this:</p>
+<p><img alt="Github page for laymansguide" src="/issue038_01.png"><br>
+<em>Github page for laymansguide</em>    </p>
+<p>Loading this page with the Network tab of Developer Tools open produces this report:</p>
+<p><img alt="Developer Tools showing network activity while loading a Github page" src="/issue038_02.png"><br>
+<em>Developer Tools, Network view</em>    </p>
+<p>This is a summary of the network activity that is happening while the page is loading. The top ribbon, showing time in milliseconds (ms) and a series of horizontal lines, is what is known as a <em>waterfall chart</em>. (You can also see this chart in the rightmost column below the ribbon.)</p>
+<p>Each line represents the loading of a resource—anything that the page requests while it is loading. Lines stacked on top of each other represent resources that are being loaded simultaneously (ideal), while lines joined end-to-end represent resources that are being loaded in tandem, one after the other (not ideal).</p>
+<p>The resource list below it shows the resources that were loaded. You see that all kinds of files are needed: documents, stylesheets, scripts, image files (svg, gif, jpeg, png, webp), icons (.ico), and more. The vertical blue line represents the point where the web browser has loaded and processed the main document (first item in the resource list). The vertical red line represents the point where the webpage is considered to be loaded (able to display its main content), while secondary resources are still loading in the background.</p>
+<p>Why can’t they all be loaded simultaneously to save time? Sit down and I’ll tell you a story …</p>
+<h2>Timeline of a loading webpage</h2>
+<p>In the beginning was The Void. And then:</p>
+<ol>
+<li><code>laymansguide</code> loads (0–673 ms), because a request was sent for it when I asked my web browser to load <code>https://github.com/ngjunsiang/laymansguide</code>. This is the first resource in the list.</li>
+<li><code>laymansguide</code> is a webpage, an HTML (HyperText Markup Language) file, which I will explain in a future issue. Inside, it contains lines like these, isolated here for your reading pleasure:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;link</span><span class="w"> </span><span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="w"> </span><span class="na">href=</span><span class="s">&quot;https://github.githubassets.com/assets/frameworks-2e9090135c22aad5f56c2f72dcba7880.css&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span><span class="w"> </span><span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="w"> </span><span class="na">href=</span><span class="s">&quot;https://github.githubassets.com/assets/github-cbb49d8cd46cbc8c522a95d52b21ab53.css&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="nt">&lt;img</span><span class="w"> </span><span class="na">src=</span><span class="s">&quot;https://github.githubassets.com/images/search-key-slash.svg&quot;</span><span class="w"> </span><span class="na">alt=</span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;mr-2 header-search-key-slash&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;include-fragment</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;my-2&quot;</span><span class="nt">&gt;&lt;img</span><span class="w"> </span><span class="na">alt=</span><span class="s">&quot;Loading&quot;</span><span class="w"> </span><span class="na">src=</span><span class="s">&quot;https://github.githubassets.com/images/spinners/octocat-spinner-32.gif&quot;</span><span class="w"> </span><span class="na">width=</span><span class="s">&quot;32&quot;</span><span class="w"> </span><span class="na">height=</span><span class="s">&quot;32&quot;</span><span class="w"> </span><span class="nt">/&gt;&lt;/include-fragment&gt;</span>
+<span class="nt">&lt;img</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;avatar&quot;</span><span class="w"> </span><span class="na">src=</span><span class="s">&quot;https://avatars3.githubusercontent.com/u/45561895?s=40&amp;amp;v=4&quot;</span><span class="nt">&gt;</span>
+[...]
+</code></pre></div>
+
+<p>Lines like these in the document are interpreted by the web browser. They tell the browser that more resources are needed, and where they need to be loaded from (either through the <code>"href="</code> addresses or the <code>"src="</code> addresses). The web browser then sends more requests for these files. That is why you only see them loading <strong>after</strong> the document has loaded: my web browser has to receive and process the document first to know where to retrieve these files.</p>
+<p>The stylesheets (files that end in <code>.css</code>) tell the document how to style elements in the page. I won’t elaborate on that in detail here, perhaps in a different season of laymansguide.</p>
+<p>The images are … well, images. More on them in a future season about data types.</p>
+<p>The scripts, ah, that’s something to go into. While stylesheets and images are just information to be inserted into the page, scripts are actually code, usually Javascript code.</p>
+<p>This code does animations, calculation of time conversions, and many other things, including loading more resources. I’m not going to paste the whole script here, I don’t want to chase my readers away … okay, maybe just a couple of lines. The last script file that is loaded, <code>github-bootstrap-747cdfeb.js</code>, is a companion script file for the Bootstrap<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> framework that Github uses to simplify their webpage code. It has the following lines:</p>
+<div class="highlight"><pre><span></span><code><span class="k">[...]</span>
+<span class="na">const e</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">function(e) {const t = document.createElement(&quot;img&quot;)</span><span class="c1">;</span>
+<span class="w">                       </span><span class="na">return t.className</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;emoji&quot;}(this)</span><span class="c1">;</span>
+<span class="na">e.src</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">this.getAttribute(&quot;fallback-src&quot;) || &quot;&quot;,this.appendChild(e)</span>
+<span class="k">[...]</span>
+</code></pre></div>
+
+<p>This creates an <code>img</code> element named <code>e</code>, styles it according to the style class <code>emoji</code>, then associates it with the address retrieved from <code>fallback-src</code>, and finally it gets appended to another element in the page through the function <code>appendChild</code>. That’s right, this code inserts emojis, so the <code>laymansguide</code> document has to retrieve those emoji image files first. Before this script plays, the page won’t even know that those emojis are necessary.</p>
+<p>And now we come to the last part of the waterfall, where additional resources requested by scripts and other things are loaded. It’s not worth going through them in detail, we won’t learn much more from that. So let’s summarise.</p>
+<p><strong>Issue summary:</strong> When a webpage document loads (Stage 1), it is processed by the web browser, which then
+loads other requested resources, such as stylesheets, images, and scripts (Stage 2). Scripts and other interactive code may then request more resources (data fetches, images, icons, data, etc) which are then loaded subsequently (Stage 3, 4, 5, …).</p>
+<hr>
+<p><strong>Bonus content:</strong> I tried this with the Baidu homepage, which looks like this:</p>
+<p><img alt="Baidu homepage" src="/issue038_03.png"><br>
+<em>Baidu homepage</em>    </p>
+<p>and the network activity from loading it:</p>
+<p><img alt="Developer Tools showing network activity while loading Baidu homepage" src="/issue038_04.png"><br>
+<em>Developer Tools, Network view</em>    </p>
+<p>It takes slightly longer (about 400 ms longer) to load, but most of that time is from loading a single <code>gif</code>. I wont examine the elements here, in the season on the internet cloud, I’ll explain more what some of these elements do.</p>
+<p>So far, we have identified 3 sources of latency:</p>
+<ol>
+<li>DNS resolving (<a href="/issue029.html">Issue 29</a>)), which translates the domain names in the requests to IP addresses that we can request data from,</li>
+<li>Data packet routing (<a href="/issue037.html">Issue 37</a>)), which adds to latency with each hop through yet another gateway,</li>
+<li>Webpage loading (this issue), where documents or scripts that are loaded may request yet more resources.</li>
+</ol>
+<p>All of these layers of information gathering can add up to a few seconds of latency—a big turnoff for folks who have come to expect near-instantaneous response from apps. And often, our pages don’t appear to take that long to load, do they?</p>
+<p>In the next issue, the season finale, I’ll explain one common trick for making anything appear faster: it is called <strong>caching</strong>.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> What are caches? What is caching?</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>a cookie? [Issue 8]</li>
+<li>a cache? [Issue 8]</li>
+<li>XSS? [Issue 8]</li>
+<li>a CDN? [Issue 8]</li>
+<li>Unicode? And what does it have to do with emoji? [Issue 8]</li>
+<li>those '\r\n’s in the HTTP request packet [Issue 12,17]?</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>ASCII? [Issue 23]</li>
+<li>compiling code into an application [Issue 26]?</li>
+<li>firmware? [Issue 34]</li>
+<li>What is HTML [Issue 38]</li>
+</ul>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/">Bootstrap</a> is a <a href="/issue014.html">front-end</a>) <a href="/issue018.html">framework</a>) that makes it easy to create webpages. By loading a standard Bootstrap stylesheet and (optionally) a Bootstrap script, any front-end developer can add common elements (e.g. popovers, navigation bars, tooltips, cards, …) with fewer lines of code than if they wrote it from scratch.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2019-09-14T08:00:00+08:00">
+      Sat 14 September 2019
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+    <p>
+        Tags:
+            <a href="/tag/document.html">document</a>
+    </p>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue037.html">
+                Issue 37: Traceroute–Google Maps for data packets
+            </a>
+        </li>
+        <li>
+            <a href="/issue039.html">
+                Issue 39: Caches and caching
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

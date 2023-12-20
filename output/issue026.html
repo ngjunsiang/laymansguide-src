@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 26: Software distribution</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+    <meta name="tags" content="app" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-02.html">Season 02</a></p>
+  <header>
+    <h2>
+      <a href="/issue026.html" rel="bookmark"
+         title="Permalink to Issue 26: Software distribution">Issue 26: Software distribution</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2019-06-15T08:00:00+08:00">
+    Sat 15 June 2019
+  </time></p>
+  <p>In the past 12 issues I’ve talked a bit about different kinds of programs (<a href="/issue014.html">web, desktop, mobile, …</a>)), different kinds of code (<a href="/issue014.html">frontend, backend</a>)), tools that programmers use while programming (<a href="/issue015.html">command line</a>), <a href="/issue017.html">libraries</a>) and <a href="/issue018.html">frameworks</a>), <a href="/issue019.html">version control</a>), <a href="/issue024.html">bug/issue trackers</a>), <a href="/issue025.html">text editors and integrated development environments</a>)), and ideas they use to work more efficiently (<a href="/issue023.html">specifications</a>), <a href="/issue020.html">testing</a>), <a href="/issue022.html">continuous integration</a>)).</p>
+<p>To wrap this up, let’s answer one final question: how do they actually get their code out to the rest of the world?</p>
+<h2>Mobile apps</h2>
+<p>Let’s start with the easiest: mobile apps, of course, get published to the app store (<a href="https://www.apple.com/sg/ios/app-store/">Apple App Store</a>, or <a href="https://play.google.com/store">Google Play</a>, for most phones). Programmers could, of course, encourage people to enable installation of third-party apps and ask them to download and open an installation file … but how many people are going to do that?</p>
+<p>The process of putting an app onto the app store is known as <strong>publishing</strong>. This often involves lots of steps—see <a href="https://developer.android.com/studio/publish">Google Play’s publishing process</a>—including adding images and writing for the app’s page.</p>
+<p>Before a program can be uploaded, a lot of extra information is needed by the app store: the app author’s name and particulars, the version number, minimum OS requirements (e.g. some apps won’t work on Android versions older than 4.4), and so on. The app store may also need a manifest, a list of files in the app. The process of adding all this information and organising the files into something that can be uploaded to an app store is known as <strong>packaging</strong>.</p>
+<p>How is code for other platforms packaged and released? That depends, really, on the community.</p>
+<h2>Linux: software repositories</h2>
+<p>On Linux, in the old days, you had to download the source code, compile it into an application (<em>self-note: this needs explaining in a future issue</em>), and install updates for each application individually … this soon became a gargantuan effort for a user. Then some smart people got together and thought: why don’t we make a list of applications, and where they can be found? And then automate it so that a computer can download the source code and compile it automatically? Or, even better, have a central place containing compiled applications that can be downloaded, ready to use? And thus the software repository was born. (don’t confuse this with a code repository, which I introduced in <a href="/issue019.html">Issue 19</a>).)</p>
+<p>Each Linux distribution (<a href="https://www.ubuntu.com/">Ubuntu</a>, <a href="https://www.gnome.org/">GNOME</a>, <a href="https://linuxmint.com/">Linux Mint</a> are some of the more popular ones) has its own software repositories (also known as <strong>repos</strong>). These repositories contain the most important or popular applications that their users need, and are updated and maintained regularly by <strong>maintainers</strong>, developers who take on the role of testing code for compatibility. The maintainers often have to make changes, some little and some big, for the applications to run well with their distribution (also known as <strong>distro</strong>).</p>
+<p>Linux distros will often have multiple repositories to organise the huge list of applications available, and users can configure which repositories they want to use. They can edit the list of repositories directly, but most users will use a <strong>package manager</strong>, a program that helps users search for, install, and update the applications on their computer. Many of these package managers are command line applications, but there are graphical package managers available as well.</p>
+<h2>Plugins: it depends …</h2>
+<p>Really popular software that allows users to write and release their own plugins will often also have a way for users to search for them. For instance, Wordpress has a Plugins page for Wordpress users to add plugins to their Wordpress blog. Depending on what kind of plugins you are writing, the release process will vary widely. Sometimes this plugin repository is run by a community, sometimes it is run by the application developer, and sometimes it is run by a heroic volunteer, so … it depends :)</p>
+<h2>Libraries: package repositories</h2>
+<p>If you are learning a programming language, chances are you will have to use at least one third-party library. The easiest way to find them is with a package repository. These are the most popular package/gem repositories for the most popular programming languages:</p>
+<ul>
+<li>Python: <a href="https://pypi.org/">PyPI</a></li>
+<li>Ruby: <a href="https://rubygems.org/">RubyGem</a></li>
+<li>NodeJS: <a href="https://www.npmjs.com/">npm</a></li>
+<li>Javascript: uhh, wow … there’s just so many specialised ones and no single central repository. But <a href="https://yarnpkg.com/en/">yarn</a> is an up-and-rising one</li>
+</ul>
+<p><strong>Issue summary:</strong> A developer can simply put up a download on a webpage and hope people download it and figure out how to get the app on their devices. But often, the more popular way is to publish the app to a repository (also known as an app store, for mobile devices). Before this can be done, the code or application needs to be packaged according to the requirements of the repository.</p>
+<hr>
+<p>It’s the end of Season 2 of Layman’s Guide. I hope the programmer’s world looks a little less murky now, even if it looks a lot more complex!</p>
+<p>Many programming courses tell their students that they can just jump into programming without worrying about all these. And they often set up their courses minimally, introducing Github or a package repository on occasion when they can’t avoid it. But for the most part, they don’t explain what these parts of the programmer’s world are and how to use them.</p>
+<p>To me, that’s like bringing a friend from overseas to your country and not explaining how the transportation system works, how to buy things, what the most popular methods of payment are, how to cross the road … you can kind of hole yourself up at home and maybe venture out to the convenience store down the street, but what fun is that?</p>
+<p>These are tools and ideas you can learn and use separately from programming (I’m using Github to get version control on Layman’s Guide, in fact), and you can get really good with them while knowing very minimal programming. And if you learned anything from Season 2 that really rocked your world, gave you an idea for how to improve things, or changed your view of the way things are done, please drop me an email and let me know :)</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next season:</strong> Data? Cloud?</p>
+<p>Pick your own adventure! Let me know what you’d like me to write about next:</p>
+<p><strong>Data</strong>: different types of data (text, images, video, code). Why JPGs are so small and BMPs are so huge and PNGs are kinda in-between. Why video files are so huge and so difficult to compress. How do cloud companies prevent losing data when a hard disk goes kaput? Things like that.</p>
+<p><strong>Cloud</strong>: What happens to all the images I upload on Instagram? How does data actually travel from wherever it is to my laptop or smartphone? How do people actually start making their programs use the cloud? Things like that.</p>
+<p>I’ll take another break next weekend to get Season 3 hashed out. Expect the first issue end-June!</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>a cookie? [Issue 8]</li>
+<li>a cache? [Issue 8]</li>
+<li>XSS? [Issue 8]</li>
+<li>a CDN? [Issue 8]</li>
+<li>Unicode? And what does it have to do with emoji? [Issue 8]</li>
+<li>those '\r\n's in the HTTP request packet [Issue 12,17]?</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>ASCII? [Issue 23]</li>
+<li>compiling code into an application [Issue 26]?</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2019-06-15T08:00:00+08:00">
+      Sat 15 June 2019
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+    <p>
+        Tags:
+            <a href="/tag/app.html">app</a>
+    </p>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue025.html">
+                Issue 25: Text Editors and Integrated Development Environments
+            </a>
+        </li>
+        <li>
+            <a href="/issue027.html">
+                Issue 27: What is an IP address?
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

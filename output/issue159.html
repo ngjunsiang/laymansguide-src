@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 159: Wifi & cell tower location tracking</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-13.html">Season 13</a></p>
+  <header>
+    <h2>
+      <a href="/issue159.html" rel="bookmark"
+         title="Permalink to Issue 159: Wifi & cell tower location tracking">Issue 159: Wifi & cell tower location tracking</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2022-02-12T08:00:00+08:00">
+    Sat 12 February 2022
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> To get your location using GPS, your phone requests information from four overhead GPS satellites: their location, and the distance between them and your phone. With this information, your phone can calculate its location.</p>
+<p>Okay, so what happens when you are in a tunnel or building and can’t get GPS? How are you still able to use Google Maps to navigate that new sprawl of a mall?</p>
+<h2>Wifi Positioning System (WPS)</h2>
+<p>The principles of triangulation still work within a building, thank math 🙏 but now we need other landmarks to replace GPS satellites.</p>
+<p>What is something with a known (and ideally fixed) location, is electrically powered to receive and respond to signals, and there are enough of them to provide a sufficient number of landmarks for triangulation? If you are in a building with wifi, the wifi access points scattered throughout the building can probably provide this.</p>
+<p>No protocol is involved in <a href="https://en.wikipedia.org/wiki/Wi-Fi_positioning_system">wifi positioning</a>, largely because most routers do not carry a precise hardware clock and do not have any way to know their location precisely, and therefore cannot communicate this information meaningfully. Instead, wifi positioning is a collection of techniques for <em>guessing</em> your location. Your smartphone uses these techniques (usually through its operating system) in conjunction with available wifi networks around you to determine its own location.</p>
+<h2>Wifi positioning techniques</h2>
+<p>One way to figure out your location to proximal wifi points is to use the signal strength as a weak analogue for your distance from them. You can do a very rough position estimate with this.</p>
+<p>Another common technique is to look up the hardware address, or even IP address of the wifi point you are connected to, and just use it directly (with the assumption that wifi signals get too weak outside of a 10 m radius, so you have your location accurate to within ±10 m).</p>
+<h2>Wifi location databases</h2>
+<p>One way to keep track of wifi access points and their locations is through a global, public database. <a href="https://en.wikipedia.org/wiki/Wi-Fi_positioning_system#Public_Wi-Fi_location_databases">A number of these</a> are available, such as the <a href="https://location.services.mozilla.com/">Mozilla Location Service</a>.</p>
+<h2>Cell tower triangulation</h2>
+<p>What happens when you are outdoors, far from any wifi point? As long as you have mobile data enabled and are not in airplane mode, you are still going to be getting your cell signal from a cell tower ... which also meet the three basic criteria for device-based triangulation 😉</p>
+<p>Your smartphone can thus triangulate its location from cell towers that it is able to reach. Again, there is no protocol for this, since your smartphone does not communicate with the towers for the express purpose of obtaining location; it is a set of similar techniques, often implemented in the operating system.</p>
+<p><strong>Issue summary:</strong> Instead of GPS satellites, smartphones can also use wifi points and cell towers to determine their position (if enabled in the OS).</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S13] Issue 160: CDNs and content distribution</p>
+<p>Coincidentally, starting with time turned out to be a good idea: time information is sort of like content. It has an origin, and it gets distributed to “consumers” who want that information. As with all distribution systems, you have cascades of product that flow outward from this origin.</p>
+<p>We have covered time and space (I mean, location). Let’s move on to data: how does data get around the world from a few central sources?</p>
+<p>Back in <a href="/issue073.html">Issue 73</a>), when I explained how online advertising works, I mentioned that advertising content is served from a content delivery network (CDN). What is this and how does it work?</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>XSS? [Issue 8]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2022-02-12T08:00:00+08:00">
+      Sat 12 February 2022
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue158.html">
+                Issue 158: GPS
+            </a>
+        </li>
+        <li>
+            <a href="/issue160.html">
+                Issue 160: CDNs and content distribution
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

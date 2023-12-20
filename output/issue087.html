@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 87: Relational Databases</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-07.html">Season 07</a></p>
+  <header>
+    <h2>
+      <a href="/issue087.html" rel="bookmark"
+         title="Permalink to Issue 87: Relational Databases">Issue 87: Relational Databases</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2020-09-12T08:00:00+08:00">
+    Sat 12 September 2020
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> To increase the performance of a distributed database, we can scale up/scale vertically by increasing the computers’ performance, or scale out/scale horizontally by adding more computers. Distributed databases can only prioritise two of the following three factors: consistency, availability, partitioning (CAP theorem).</p>
+<p>I’ve already discussed one big strength of relational databases in <a href="/issue084.html">Issue 84</a>) when I illustrated how the JOIN keyword, one of many SQL commands (<a href="/issue083.html">Issue 83</a>)), can join our data from multiple tables into a single view. This is where we look under the surface to see what makes that possible.</p>
+<h2>Linking tables through foreign keys</h2>
+<p>From <a href="/issue084.html">Issue 84</a>):</p>
+<blockquote>
+<p>To join the <code>Customer</code> and <code>Sales</code> data so that we get the sales data along with <code>custName</code>, we would write a SQL query like this:</p>
+<p><code>SELECT salesID, orderDate, custID FROM Sales
+JOIN Customer ON Sales.custID = Customer.custID</code></p>
+<p>Here, <code>Sales.custID</code> refers to the <code>custID</code> of the <code>Sales</code> table, while <code>Customer.custID</code> refers to the <code>custID</code> of the <code>Customer</code> table. This query effectively says “select the <code>salesID</code>, <code>orderDate</code>, and <code>custID</code> columns from <code>Sales</code> table, and add data from the <code>Customer</code> table where the <code>custID</code> column matches”. This will return:</p>
+<p><img alt="Screenshot of an INNER JOIN operation between the Sales and Customer data tables, merged using custID values." src="/issue084_04.png"></p>
+</blockquote>
+<p>Did you catch the fact that there were actually <em>two</em> <code>custID</code> columns? One in the <code>Sales</code> table, and one in the <code>Customer</code> table ... by linking two tables like that, we actually introduce a point of potential breakage.</p>
+<p>Suppose one day, a customer goes out of business, or changes name, and the corresponding <code>Customer</code> entry gets deleted. Now if we accidentally attempt to retrieve <code>Sales</code> to that customer, the SQL command will fail because it is unable to find the entry.</p>
+<p>We can protect ourselves from this kind of error by declaring <code>Sales.custID</code> as a <strong>foreign key</strong> in <code>Customer</code>, thus informing the database that <code>Sales.custID</code> is actually a column from <code>Customer</code>. If we attempt to delete that customer again, the database will help to check if that entry is referenced by other tables as a foreign key. Entries can only be deleted if they are not referenced by other entries.</p>
+<p>These and other constraints allow us to protect ourselves from inadvertent harm, but over time, they accumulate and make a relational database very hard to modify. Database administrators will tell you to think about your database tables in advance, as even attempting to add a column or change a column type is going to be a pain in future!</p>
+<h2>The tradeoff: downtime for database maintenance and migrations</h2>
+<p>To modify a relational database, we have to shut it down<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, and <strong>migrate</strong> the database from the old schema to the new schema. In essence, we are exporting our data and re-importing it again. Attempting to migrate while the database is active—known as a <strong>live migration</strong>—is strongly discouraged, as changing a database while a migration is in progress can introduce data inconsistency; a real headache with constraints!</p>
+<p>Relational databases can also develop problems that require them to be shut down and rectified. It’s the tradeoff for having a consistent and structured way to store our data, and automated rules to enforce this structure.</p>
+<h2>Relational databases: excellent for predictable data needs</h2>
+<p>If you don’t expect to be changing your database schema often, or if you are able to design the schema to minimise such migrations, relational databases can be quite excellent for your needs. Please consult a professional database engineer if you are planning to use a database for your business needs.</p>
+<p><strong>Issue summary:</strong> Relational databases are designed to maintain a well-structured set of data tables through constraint rules. This makes them very useful for preventing accidental inconsistencies in data, but make any changes to the data schema difficult to implement. Changing from one schema to another involves downtime and a migration.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S7] Issue 88: Document Databases</p>
+<p>Relational databases work well for data that we can imagine as an Excel table. But often, we have data that might not share the same set of properties, or might not have a predictable structure (such as online collaboration data). Such data is more intuitively imagined as a set of documents than as a set of tables. What do databases that encourage a document-based model of data look like?</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>XSS? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>firmware? [Issue 34]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+<li>What is involved in installing a piece of software? [Issue 48]</li>
+<li>How do apps know where a file starts and ends? [Issue 49]</li>
+<li>What is a password hash? [Issue 63]</li>
+</ul>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>There are ways to avoid this, but I’ll let a <strong>real</strong> database administrator tell you about how to make it happen.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2020-09-12T08:00:00+08:00">
+      Sat 12 September 2020
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue086.html">
+                Issue 86: Distributed databases
+            </a>
+        </li>
+        <li>
+            <a href="/issue088.html">
+                Issue 88: Document Databases
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

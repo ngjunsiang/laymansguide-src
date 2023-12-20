@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 127: USB Type-C Power Delivery</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-10.html">Season 10</a></p>
+  <header>
+    <h2>
+      <a href="/issue127.html" rel="bookmark"
+         title="Permalink to Issue 127: USB Type-C Power Delivery">Issue 127: USB Type-C Power Delivery</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2021-07-03T08:00:00+08:00">
+    Sat 03 July 2021
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> USB is a (licensed) technical standard that describes how devices connect to each other through a cable. USB Type-C is a new connector standard that supports USB 3, DisplayPort, HDMI, and Thunderbolt. It is able to carry multiple types of data simultaneously, in limited combinations. In a USB connection, one device acts as the host while the other acts as the device; the host initiates all communication.</p>
+<p>Last week, I differentiated the USB Type-C <strong>cable</strong> specification from the USB3 <strong>data</strong> specification; the former describes how the cable and connector should be, while the latter describes how to transmit USB data over a Type-C cable. Remember that in addition to USB3 data, the Type-C cable can also transmit HDMI or DisplayPort video data!</p>
+<p>What else can a Type-C cable do? Oh, right—provide power to devices. In other words, charge them.</p>
+<h2>What’s wrong with USB2 charging?</h2>
+<p>Absolutely nothing! At this point, it was not expected that USB would be needed for powering anything more than some basic peripherals, like keyboards, mice, and anything less power-consuming than a small external hard disk. 5V (volts) of voltage with 0.5A (amperes) could provide 2.5W of power, and that was considered plenty enough.</p>
+<p>The USB Implementers’ Forum (USB-IF) didn’t want to set too high a standard for USB devices and peripherals (<em>including</em> USB-certified cables); original equipment manufacturers (OEMs), the ones who <em>actually had to manufacture the goods</em>, would complain about the high cost. Nobody likes being undercut by cheap knockoffs that don’t bother applying for the license and following the specs (do you notice the official USB logo when buying?). So for a long time, we had up to 2.5W of power from USB ports.</p>
+<p>And then tablets came along, drawing 8–12W of power to do whatever they have to. Aside from the iPad, which used its own connector, these were charged over USB. So their manufacturers had to come up with <em>kludges</em> to work around USB limitations. They had Quick Charge, Dash Charge, and all kinds of other standards which were not approved by the USB-IF, just to allow their cables to provide up to 12W of power (3A of current, more in some cases) to their tablets while charging.</p>
+<p>USB 3.0 bumped the limit up to 0.9A (providing 4.5W), which was nice but far from enough. The hard limit was the cable itself though: drawing anything more than 5A over the usual thin USB cables would cause them to heat up to unsafe levels. Clearly, something more was needed.</p>
+<h2>USB Power Delivery</h2>
+<p>From 2012, the USB-IF finally added a Power Delivery (PD) specification, which allowed power to be delivered over USB cables at <em>different voltages</em>.</p>
+<p>In addition to 5V, which is used by phones, tablets, and their power banks, the PD spec also allows charging at 9V (fast charging for some devices), 15V (for higher-power devices like the Nintendo Switch), and 20V (what most laptops use for PD charging). With a current of up to 5A, this technically allows up to 100W of power to be delivered—sufficient for pretty much all laptops.</p>
+<h3>Which voltage is used?</h3>
+<p>The actual voltage to be delivered by the charging host is <em>negotiated</em> with the host. When a charging device is connected, it communicates the voltages it can support, the host compares it with the voltages it can supply, and power at a supported voltage is delivered.</p>
+<h3>Can any cable be used?</h3>
+<p>Greater current requires a thicker cable to be used, as thinner cables have more resistance and will heat up to unsafe levels. A cable following the USB-PD specification will negotiate the correct voltage and current in any case, so if your cable is not charging at a level you know is supported by both your devices, do check the cable rating. You may have to buy a higher-rated cable.</p>
+<h2>Are there any advantages to buying a more expensive cable?</h2>
+<p>Users of external monitor screens and docking bays often have to connect multiple cables from those devices to their laptops for power, (USB) data, and video output. With USB Type-C and USB-PD specifications unifying these three requirements into one cable, we will (eventually) be able to connect a laptop to a Type-C monitor using a Type-C cable, and this cable will supply power plus allow the laptop to use all devices connected to the monitor.</p>
+<p>It’s supposed to simplify the physical cable mess, at the cost of having to manage a more complicated specification. Let’s see how that plays out in the next decade.</p>
+<p><strong>Issue summary:</strong> USB Power Delivery is a specification that describes how much voltage and current can be supplied by different categories of USB cables. It allows power delivery at different levels for all kinds of connected devices, up to 100W. This should help to simplify cable setups that otherwise require multiple kinds of cables between two closely interconnected devices (such as a laptop and an external monitor).</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S10] Issue 128: Upgradeability</p>
+<p>Millennials and other older computer users may remember the glory days of the desktop, when almost any component could be removed and swapped out for another. Laptops used to enjoy this upgradability to a lesser extent; the laptop memory and hard disk came as separate slotted cards that could be replaced with upgraded versions for increased performance.</p>
+<p>What happened to that trend today? The reason mainly lies in the realm of economics, but I figured I’d use the chance to dig a little deeper and explain what is going on with the hardware that no longer allows this to happen.</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>XSS? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2021-07-03T08:00:00+08:00">
+      Sat 03 July 2021
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue126.html">
+                Issue 126: USB Type-C
+            </a>
+        </li>
+        <li>
+            <a href="/issue128.html">
+                Issue 128: Upgradeability
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

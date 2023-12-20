@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 33: Port numbers</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-03.html">Season 03</a></p>
+  <header>
+    <h2>
+      <a href="/issue033.html" rel="bookmark"
+         title="Permalink to Issue 33: Port numbers">Issue 33: Port numbers</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2019-08-10T08:00:00+08:00">
+    Sat 10 August 2019
+  </time></p>
+  <p>Previously: The devices on your home network share the single ISP-assigned IP address through your router. The router rewrites the source IP and port number on outgoing data packets, and rewrites the destination IP and port number on incoming data packets, acting as a middleman for your devices so that they can access the Internet.</p>
+<p>In Issue 32, when I was explaining Network Address Traversal (NAT), I mentioned this:</p>
+<blockquote>
+<p>Another of those things is that TCP will give the request a port number. Yes, you might have heard this term when configuring routers. We won’t need to discuss port numbers yet, so let’s put that aside.</p>
+</blockquote>
+<p>And then I went on the explain how the source and destination IP addresses are tagged on through the Internet Protocol (IP).</p>
+<p>Well, now is the time to talk about what’s going on through the Transmission Control Protocol (TCP). Within a single device, you often have different software services running:</p>
+<ol>
+<li>DNS querying (<a href="/issue029.html">Issue 29</a>))</li>
+<li>Internet time synchronisation (over the Network Time Protocol)</li>
+<li>Software updaters checking for updates online</li>
+<li>Skype/Zoom/videoconferencing</li>
+<li>Instant messaging</li>
+<li>Web browsers</li>
+<li>Others . . .</li>
+</ol>
+<p>When a data packet comes in through the network chip and arrives at the operating system (OS), how does it know which software app to forward the data packet to?</p>
+<h2>Port numbers</h2>
+<p>When a software app needs to send a request or some data through the Internet, it has to go through the OS. The OS decides which software gets to use the Internet, and which ones don’t (that is what your firewall is for). If a software app has permission to access the internet, it requests a <strong>port number</strong> from the OS. The OS assigns the app a port number, and stores information about which application is mapped to which port number.</p>
+<p>When the software app sends data to the OS to be sent out via the network, the OS adds identifying information, including the source and destination port number, as part of TCP. Then the OS sends the resulting data packet to the network card to be forwarded to the gateway (via your LAN cable or wifi connection). The network card then adds the source and destination IP address information (and other identifying information) as part of IP, creating a larger data packet (which at this point is app data inside a TCP shell inside an IP shell ... like a Matryoshka doll).</p>
+<div class="highlight"><pre><span></span><code>Request #4676 to host
+Source IP:        <span class="gs">*27.104.229.65*</span>
+Source Port:      <span class="gs">*45784*</span>
+Destination IP:   172.217.26.78
+Destination Port: 80
+</code></pre></div>
+
+<p>When response data is returned, the OS checks the destination port number, looks up its list of assigned ports, and forwards the data to the correct app. Cycle complete!</p>
+<div class="highlight"><pre><span></span><code><span class="nv">Request</span><span class="w"> </span><span class="sc">#4676</span><span class="w"> </span><span class="nv">from</span><span class="w"> </span><span class="nv">host</span>
+<span class="nv">Source</span><span class="w"> </span><span class="nv">IP</span>:<span class="w">        </span><span class="mi">172</span>.<span class="mi">217</span>.<span class="mi">26</span>.<span class="mi">78</span>
+<span class="nv">Source</span><span class="w"> </span><span class="nv">Port</span>:<span class="w">      </span><span class="mi">54674</span><span class="w"> </span><span class="ss">(</span><span class="k">random</span><span class="w"> </span><span class="nv">port</span><span class="w"> </span><span class="nv">from</span><span class="w"> </span><span class="nv">host</span><span class="ss">)</span>
+<span class="nv">Destination</span><span class="w"> </span><span class="nv">IP</span>:<span class="w">   </span><span class="mi">27</span>.<span class="mi">104</span>.<span class="mi">229</span>.<span class="mi">65</span>
+<span class="nv">Destination</span><span class="w"> </span><span class="nv">Port</span>:<span class="w"> </span><span class="mi">45784</span>
+</code></pre></div>
+
+<p>Just like there is a source and destination IP address, there is also a source and destination port number. The source port number is the assigned port number from the OS. The destination port number, well ... how are we to know that?</p>
+<h2>Reserved port numbers</h2>
+<p>With so many types of data being transferred over the Internet, how do things not get mixed up?</p>
+<p>Reserved port numbers is how. The well-known internet traffic data types have standardised protocols: web traffic follows HyperText Transfer Protocol (HTTP - <a href="/issue007.html">Issue 7</a>)), some types of file transfer occur in accordance with the File Transfer Protocol (FTP), DNS queries obey the DNS protocol, etc.</p>
+<p>These well-known protocols are assigned standard port numbers by IANA, the same authority that manages known IP addresses. HTTP uses port 80. FTP uses port 20 (data transfer) and 21 (control). DNS uses port 53. You can find the <a href="https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers">full list of well-known port numbers on Wikipedia</a>. Port numbers 1 to 1023 are reserved for this purpose and may not be used publicly for other purposes.</p>
+<p>If your app is trying to query a hostname to get the associated IP address, the destination port number is 53. The app simply uses the standard port number depending on what service it is trying to use, and which protocol it is following. If your app is trying to request data from a web server, the destination port number is 80; your web browser actually requests https://google.com:80 but it will leave out the port number if it is a standard port number. You can also try requesting https://google.com:8000 but you won't get any data in return since nothing is listening on that port number at Google's end.</p>
+<p>Web servers will (by default) listen on port 80, FTP servers on port 21, DNS servers on port 53, and so on. Any traffic arriving with those port numbers will be directed to these (software) servers for processing.</p>
+<h2>Registered port numbers</h2>
+<p>Port numbers 1024 to 49151 are available for organisations, corporations, and other corporate bodies to request if they are setting up widespread area services. Whatsapp uses ports 4244, 5222, 5223, 5228, 5242. Apple uses port 5223 for push notifications. Google Play uses port 5228 for messaging. This makes it possible for these services to work without knowing what the port numbers of the software apps on the receiving end are mapped to.</p>
+<h2>Private port numbers</h2>
+<p>Port numbers 49152 to 65535 are available for anyone to use. Tinkerers, hackers, anyone who just needs a number to send data from.</p>
+<p>... and that’s a wrap. Source and destination IP addresses get data to the right computers, source and destination port numbers get data to the right apps in those computers.</p>
+<p><strong>Issue summary:</strong> When an app makes a network request through the OS, the OS adds the source and destination port number to the query in accordance with TCP. When the OS receives the response, it forwards the data to the app which is mapped to the destination port number. Port numbers 1-1023 are registered to standard Internet services, port numbers 1024 to 49151 may be registered to other services, and port numbers 49152 to 65535 may be used by anyone.</p>
+<hr>
+<p>Short and sweet! Issues 30-33 are my summary of how data packets find their way across the internet (via IP addresses) and to the right apps (via port numbers). It’s amazing that this is basically how almost all Internet traffic gets routed; the rules are simple and hence very scalable, you don’t need massive computation to get packets to the right places (but you do need massive hardware to process lots of packets quickly).</p>
+<p>In the next few issues, I’ll go into some security and performance considerations for internet traffic: firewalls and traffic blocking, VPNs, and internet speeds.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> Firewalls and traffic blocking</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>a cookie? [Issue 8]</li>
+<li>a cache? [Issue 8]</li>
+<li>XSS? [Issue 8]</li>
+<li>a CDN? [Issue 8]</li>
+<li>Unicode? And what does it have to do with emoji? [Issue 8]</li>
+<li>those '\r\n's in the HTTP request packet [Issue 12,17]?</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>ASCII? [Issue 23]</li>
+<li>compiling code into an application [Issue 26]?</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2019-08-10T08:00:00+08:00">
+      Sat 10 August 2019
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue032.html">
+                Issue 32: Sharing a public IP address: Network Address Traversal
+            </a>
+        </li>
+        <li>
+            <a href="/issue034.html">
+                Issue 34: Firewalls
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

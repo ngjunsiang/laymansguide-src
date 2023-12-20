@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 95: What’s in a mobile app?</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+    <meta name="tags" content="app" />
+    <meta name="tags" content="memory" />
+    <meta name="tags" content="operating system" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-08.html">Season 08</a></p>
+  <header>
+    <h2>
+      <a href="/issue095.html" rel="bookmark"
+         title="Permalink to Issue 95: What’s in a mobile app?">Issue 95: What’s in a mobile app?</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2020-11-21T08:00:00+08:00">
+    Sat 21 November 2020
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> Web apps require the browser to request memory on their behalf, and thus their memory usage shows up under the browser process in the OS Task Manager. Web apps use this data to store a more convenient (but larger) representation of the webpage document, and to store the data needed by the app.</p>
+<p>“Why use the mobile app when there’s already a website?”</p>
+<p>“Why even have a mobile app that looks almost exactly like the website?”</p>
+<p>I’m not going to answer from an aesthetic or user experience point of view, you’re all experts in your own preferences :) Instead, I’ll focus on whats actually under the hood in this newsletter issue.</p>
+<p>If you haven’t read <a href="/issue093.html">Issue 93</a>) on web apps (a.k.a. websites), I’d recommend you do that for the full context, because in this issue I’ll highlight some key differences between web apps and mobile apps.</p>
+<h2>Resources</h2>
+<p>Web apps have to request every single image, video, non-text object on the page via a web request. Caching (<a href="/issue039.html">Issue 39</a>))—storing these resources for offline use—can reduce subsequent load times, but the first load will still be the most painful.</p>
+<p>A mobile app can package the most common, unchanging resources (logos, button images, backgrounds, etc) into the mobile app itself, so they can be loaded directly in the app, without having to make a web request and wait for the response. This lets it load faster (theoretically … in practice, many apps still have to retrieve other data from the server, so the loading speed improvement is marginal)</p>
+<h2>Flexibility</h2>
+<p>The document object model, or DOM (<a href="/issue094.html">Issue 94</a>)) is how web apps keep track of all the elements and their contents on a page, but it is not the most efficient way to do so. A mobile app has more choice in deciding which user interface library (<a href="/issue017.html">Issue 17</a>)) it wants to use.</p>
+<h2>Storage access</h2>
+<p>A mobile app can request permission to access storage on the mobile device, allowing it to store files (images, data, ...) on the device without having to interrupt the user each time. It is not limited only to browser storage interfaces (localstorage, sessionstorage) and browser databases (IndexedDB)—see <a href="/issue093.html">Issue 93</a>)—but can use other kinds of interfaces and databases, if they are available on the mobile device, or bundled into the mobile app.</p>
+<h2>Memory use</h2>
+<p>Both Android and iOS impose a memory limit on each app that is running. And they treat a mobile browser as a single app, despite all the web apps running inside it. So a web app has to share that limit with all the other web apps running in the mobile browser (which is why your tabs have to reload so often—they are also cleared often!).</p>
+<p>On the other hand, a mobile app can have that per-app limit all to itself.</p>
+<hr>
+<p>All told, a mobile app has more resources, which it requests directly from the OS instead of via the web browser, and it has more freedom in using those resources.
+How so? And more importantly, why are some mobile apps just so darn <em>huge</em>?</p>
+<p>This and mobile app sandboxing explained next issue.</p>
+<p><strong>Issue summary:</strong> Mobile apps, unlike web apps, can bundle resources and libraries to be installed to a mobile device. They can also request access to storage, and typically have a higher memory limit than web apps.</p>
+<p>Mobile apps are a bit of a weak spot for me since I haven’t had as much experience here as I had in other areas, but nonetheless the limits of sandboxing are pretty visible. For the most part, we have accepted this tradeoff between size and security since storage space became much cheaper. But this tradeoff is also apparent not only in software, but also in business management and other areas: to increase security, we often also have to increase bloat.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S8] Issue 96: Why are mobile apps so large in size?</p>
+<p>Remember the days when most apps we downloaded and installed on a laptop were 2MB or less? Today, mobile apps are many times that size. This is partly because of the way sandboxing is done for mobile apps. How so? I’ll go into more detail next week ;)</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>XSS? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>firmware? [Issue 34]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+<li>What is involved in installing a piece of software? [Issue 48]</li>
+<li>How do apps know where a file starts and ends? [Issue 49]</li>
+<li>What is a password hash? [Issue 63]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2020-11-21T08:00:00+08:00">
+      Sat 21 November 2020
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+    <p>
+        Tags:
+            <a href="/tag/app.html">app</a>
+            <a href="/tag/memory.html">memory</a>
+            <a href="/tag/operating-system.html">operating system</a>
+    </p>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue094.html">
+                Issue 94: Why do web browsers take up so much memory?
+            </a>
+        </li>
+        <li>
+            <a href="/issue096.html">
+                Issue 96: Why are mobile apps so large in size?
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

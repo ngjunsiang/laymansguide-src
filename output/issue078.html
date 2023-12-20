@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 78: uMatrix: voyuering the voyeurs</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+    <meta name="tags" content="cache" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-06.html">Season 06</a></p>
+  <header>
+    <h2>
+      <a href="/issue078.html" rel="bookmark"
+         title="Permalink to Issue 78: uMatrix: voyuering the voyeurs">Issue 78: uMatrix: voyuering the voyeurs</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2020-07-04T08:00:00+08:00">
+    Sat 04 July 2020
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> The default settings of most browsers expose a lot of information to scripts that request it. To prevent such scripts from running, we need services that can filter <strong>the source</strong> of these scripts. These services generally work by matching browser requests against a blacklist, and blocking the request if it comes from a domain known to host malicious scripts.</p>
+<p>Many existing solutions to blocking scripts—let’s call them script-blockers—rely on manually managing a blacklist. That is to be expected, but few of them make it easy to see which domains the scripts are coming from.</p>
+<h2>uMatrix</h2>
+<p>As part of my research for this season, I installed <a href="https://github.com/gorhill/uMatrix">uMatrix</a>, a browser extension for <a href="https://addons.mozilla.org/firefox/addon/umatrix/">Firefox</a>, <a href="https://chrome.google.com/webstore/detail/%C2%B5matrix/ogfcmafjalglgifnmanfmnieipoejdcf">Chrome</a>, and <a href="https://addons.opera.com/en-gb/extensions/details/umatrix/">Opera</a>.</p>
+<p>Once installed, it adds a button beside the address bar. When clicked, this button pops up a matrix showing the number of resources loaded from each domain:</p>
+<p><img alt="Screenshot of uMatrix in Firefox browser, showing default settings." src="/issue078_01.png"><br>
+<em>uMatrix in Firefox showing default settings.<br />Items highlighted in green are permitted to load, items in red are blocked.</em>    </p>
+<h2>Understanding the Matrix</h2>
+<p>Along the top row, the column headers tell us what kind of resources are being requested by the page. A quick refresher:</p>
+<ul>
+<li>cookies are little bits of information that scripts attach to a domain in the browser (<a href="/issue069.html">Issue 69</a>))</li>
+<li>CSS (Cascading Style Sheet) files describe the styling to be applied to the page</li>
+<li>image files need no explanation I hope</li>
+<li>media covers any rich/animated media e.g. videos</li>
+<li>scripts are javascript files containing code to be executed when the page has loaded them</li>
+<li>XHR (XmlHTTPRequests) are requests for other resources—to verify a Captcha, get a winning ad bid (<a href="/issue073.html">Issue 73</a>)) … or something as innocent as getting the weather forecast</li>
+<li>frame refers to iframes (inline frames), which are a way of embedding a webpage inside another. You see this often on sites which display PDF files within their pages. But this can also be used to embed Captcha puzzles within a login box, for instance.</li>
+<li>other: I won’t go into the other esoteric means of loading data onto a webpage; we won’t need that for this issue</li>
+</ul>
+<p>At a glance, I can see that just to load the login, the Dropbox webpage is pulling resources not only from dropbox.com, but also from:</p>
+<ul>
+<li>dropboxcaptcha.com</li>
+<li>dropboxstatic.com</li>
+<li>google.com</li>
+<li>fonts.googleapis.com</li>
+<li>gstatic.com</li>
+<li>googletagmanager.com</li>
+</ul>
+<p>These are represented as row labels.</p>
+<p>The numbers in each cell represent how many resources of each type are being loaded from each domain.</p>
+<p>CSS and images are considered important and quite harmless, and are thus allowed by default. First-party resources (<a href="/issue076.html">Issue 76</a>)) too, since the website itself has full control over them, are considered “secure”, assuming you trust that website enough to be there in the first place.</p>
+<h2>Blacklisting or whitelisting domains</h2>
+<p>By default, some domains known to host scripts for tracking are already blacklisted. googletagmanager.com (highlighted in bold red) is the domain for Google’s Tag Manager platform for measuring and analysing browsing data. It is how their ads can get personalised data on you, so it is on uMatrix’s blacklist once you install it.</p>
+<p>Other third-party domains are blacklisted by default (highlighted in light red) for your safety, but I can choose to whitelist them by clicking on them until they are highlighted in light green.</p>
+<h2>Dissecting page functionality</h2>
+<p>That’s interesting … blocking all third-party resources does not stop the page from loading at all! So what are those resources doing (especially the 63 scripts from cfl.dropboxstatic.com)? Let’s continue using the webpage to find out.</p>
+<p><img alt="Screenshot of Error (405) when logging in with all third-party resources blocked." src="/issue078_02.png"><br>
+<em><code>Error (405)</code> means <code>Method Not Allowed</code>, implying that something is missing from the webpage resulting in it not understanding what to do. Oops.</em>    </p>
+<p>Error 405. Looks like I broke something. This is the tedious part: I whitelist one domain at a time, reloading the page each time to see if anything changes.</p>
+<p>It turns out the Dropbox webpage is doing a surprising number of things behind the scenes! By the time I managed to get a login, uMatrix looked like this:</p>
+<p><img alt="Screenshot of uMatrix in Firefox browser, showing some domains whitelisted." src="/issue078_03.png"><br>
+<em>uMatrix in Firefox showing settings that got Dropbox working.<br />I had to allow embedded frames from dropboxcaptcha.com and google.com as well.</em>    </p>
+<h2>Spotting the patterns</h2>
+<p>If you are thinking of trying this, be warned: this will frustrate your browsing experience for the first week or so (after you take a couple of days to figure out how the uMatrix interface works) while you build up a custom whitelist of domains on your usual online haunts. There is an “off” button for times when you really don’t have the brainspace to be figuring this out (e.g. when you are just tying to get some ibanking done quickly), but it shouldn’t be the default setting.</p>
+<p>I did this because I wanted to know what my web browser is doing. And here are some things I’ve figured out through this exercise:</p>
+<ul>
+<li>Big websites often load their unchanging (static) resources, such as images, CSS files, script files, etc, from a separate domain.<br>
+  Presumably they do this so that this other domain can be set up for caching (<a href="/issue039.html">Issue 39</a>)). Having static files cached on the browser makes the browsing experience much smoother, as static parts such as the icons and stylesheets can be rendered (put on screen) first while waiting for dynamic data to load.<br>
+  Dropbox loads their static resources from dropboxstatic.com.</li>
+<li>Big websites may load their dynamic data from a CDN (<a href="/issue073.html">Issue 73</a>)).<br>
+  Once traffic gets large enough that a single server might not be able to handle peak load, many online services switch to delivering their content through a CDN (such as Squarespace). These resources will appear to be loaded from a third-party. So anything with a “cdn” in the domain is <em>probably</em> safe.</li>
+<li>ReCaptchas don’t always need a pop-up.<br>
+  Some of them run in the background, checking to see if you have already been verified human somewhere else, or verifying you by other means.<br>
+  Dropbox loads its captchas from dropboxcaptcha.com <strong>and</strong> google.com (for Google’s reCaptcha service). Two layers of captchas!</li>
+<li>There are many websites out there that rely on google.com being whitelisted.
+  This is what happens when you have a single company providing so many critical services that their domain has to be whitelisted. If blocked, the webpage will no longer work.</li>
+<li>Some websites rely on “daisy-chaining”, where script A loads script B which loads script C, and so on.<br>
+  You know this because when using uMatrix, you whitelist a domain and reload the page, and another domain appers. You whitelist that domain, and another one appears …</li>
+</ul>
+<p><strong>Issue summary:</strong> Modern webpages rely on many third-party resources for their functionality. Blocking access to some domains may cause these webpages to break and stop working.</p>
+<p>This was fun, in a masochistic sort of way. Most of what I learnt here is not really newsletter-worthy: how prevalent Google is, what a clean webpage looks like in the backend (very few domains), what a massive webpage looks like (lots of domains! E.g. Trello), what the most popular CDNs are, and some dead giveaways of a webpage quickly spiralling out of control (large numbers on a single domain, slow loading with no static domain or CDN) … maybe I’ll figure out the layman-worthy parts of it someday and put it in another  season.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S7] Issue 79: A Base for Data</p>
+<p>Next season, we go back to data again. Specifically, we look at how data is stored and managed for most of the internet: in a database.</p>
+<p>What is a database and why do we need one?</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>XSS? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>firmware? [Issue 34]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+<li>What is involved in installing a piece of software? [Issue 48]</li>
+<li>How do apps know where a file starts and ends? [Issue 49]</li>
+<li>What is a password hash? [Issue 63]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2020-07-04T08:00:00+08:00">
+      Sat 04 July 2020
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+    <p>
+        Tags:
+            <a href="/tag/cache.html">cache</a>
+    </p>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue077.html">
+                Issue 77: Wearing clothes on the Internet
+            </a>
+        </li>
+        <li>
+            <a href="/issue079.html">
+                Issue 79: A Base for Data
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

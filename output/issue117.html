@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 117: Swap space</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+    <meta name="tags" content="cpu" />
+    <meta name="tags" content="memory" />
+    <meta name="tags" content="operating system" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-09.html">Season 09</a></p>
+  <header>
+    <h2>
+      <a href="/issue117.html" rel="bookmark"
+         title="Permalink to Issue 117: Swap space">Issue 117: Swap space</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2021-04-24T08:00:00+08:00">
+    Sat 24 April 2021
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> Hibernation mode causes the computer to store the data configuration into a hibernation file on disk. When powered up, the OS reads the data configuration from the file back into memory. This lets the system avoid having to do a full shutdown and bootup; it performs a shorter version of these two sequences instead.</p>
+<p>In <a href="/issue057.html">Issue 57</a>), I laid out the transfer speeds and latencies for a few places in the computer where data can be stored:</p>
+<ul>
+<li>Hard disk drive (HDD): ≈5 ms response latency, 100 MB/s transfer speed</li>
+<li>Solid state disk (SSD): up to 0.1 ms response latency, 0.5–1+ GB/s transfer speed</li>
+<li>Physical memory (RAM): 0.1 µs (0.0001 ms) response latency, 20GB/s transfer speed</li>
+<li>CPU register: &lt;1 ns (&lt;0.000001 ms) response latency</li>
+</ul>
+<p>Apart from the CPU itself, physical memory is one of the fastest places to store and retrieve data. It’s just such a pity that there’s a limited amount of it, and you really can’t get more than 32GB of it in a single computer (for future readers, this is written in early 2021). If you bought a cheaper computer that only has 8GB or only 4GB, this quickly limits the number of apps you can have open at any single moment.</p>
+<p>What happens when you run out of memory?</p>
+<h2>Running out of memory</h2>
+<p>When a program needs more memory, it requests it from the operating system (OS), and waits for the OS to give that memory. After all, it can’t do anything else until the memory is available.</p>
+<p>The OS, on the other hand, will give that memory if it is available. If not, it will wait for other programs to free up memory before passing that memory to the waiting program. If no program is willing to release memory …</p>
+<p>I guess the computer just hangs 🤷</p>
+<h2>Mitigating out-of-memory problems</h2>
+<p>If memory is limited, what can we do to increase it?</p>
+<p>As it turns out, not all parts of memory are constantly being written to or read from. Lots of it is just sitting there, waiting for that one moment when the data is needed. Kind of wasteful if out of 8GB of memory, only 2GB is actively changing in any hour.</p>
+<p>The OS could write that mostly-static 6GB to disk and free it up for other programs, maybe? Then when the data is needed, the OS reads it back from disk before passing it to the program. Yes, this would mean a slower response time for programs that have been idle for a while, but surely better than hanging because it ran out of memory?</p>
+<p>This is what all modern OSes do. They write unused in-memory data to a file known as the <strong>page file</strong>. In Windows, the page file is <code>C:\pagefile.sys</code>. When data is moved from physical memory to the page file, it is said to be <em>paged out</em>, and when moved from page file to physical memory, it is <em>paged in</em>.</p>
+<p>In older systems or software, you may also see this page file referred to as a <em>swap file</em>, or <em>swap space</em>. On Linux, a subregion of storage space can be set aside as a <em>swap partition</em>.</p>
+<h2>Why is it called the page file?</h2>
+<p>Computer memory is organised into pages, each page typically being 4 KiB (notice that disk sectors are also typically 4 KiB (<a href="/issue106.html">Issue 106</a>)) …). The computer may have only 8GB of physical memory, but present 16GB of virtual memory (<a href="/issue056.html">Issue 56</a>)) to programs. Kind of like how banks only hold some liquidity but present their assets as being much more …</p>
+<p>So the 8GB “shortfall” is actually in the pagefile, not in memory. The pagefile essentially acts like (much slower) memory! The OS reads pages from it and writes pages to it, through virtual memory accesses.</p>
+<h2>This sounds like a waste of space, can I choose not to use it?</h2>
+<p>Though most OSes are configured to use a page file by default, you can configure it to not do so, although this is ill-advised (and I won’t explain why here; this is a newsletter aimed at layfolks). Modern OSes are pretty smart at managing page files, understanding that it is much slower than physical computer memory. They have their own algorithms to decide when to move data to a pagefile, and these days they even forecast when data that was paged out will soon be needed by the program.</p>
+<p>OSes need page space for all kinds of reasons: as a kind of “emergency space” when physical memory is full, as working space for optimising data layout in memory, etc. So that disk space is definitely not going to waste!</p>
+<p><strong>Issue summary:</strong> Operating systems use a page file on the storage disk as a complement to physical memory. This allows OSes to behave more performantly than they would if they did not have a page file. Data that is rarely accessed is moved to the pagefile (“paged out”), and can be paged in when it is needed later, albeit with a performance hit.</p>
+<p>Pagefiles are pretty amazing, even though they used to be a huge pain in older systems, when they were stored on <em>slowwww</em> hard disks. These days, page files stored on solid state disks are pretty fast! While the performance hit of a page miss is still noticeable (like when you switch to a Chrome tab that you haven’t touched in a while), it is far from the groan-inducing wait it used to be.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S10] Issue 118: When I run two file-copy processes at the same time, why are they much slower?</p>
+<p>Next week, a new season! With operating systems much more fleshed out for you (I hope), I can finally delve into the nuts and bolts of the machine itself: the hardware.</p>
+<p>Since this <em>is</em> a layman’s guide, I’m going to focus on the interesting bits, the parts that actually answer long-standing questions :)</p>
+<p>Let’s start with a bang: sometimes you are copying a file from one flash drive to your external hard disk. And you need to copy another file from your external hard disk to the same flash drive (or even a different one). You’re scared; can the computer handle it? But this is taking so long; let’s just try it anyway.</p>
+<p>And you notice the speed suddenly plummets. Why does that happen? Even with 117 issues of Layman’s Guide written, I don’t have enough background laid down to explain this. So let’s delve into the hard disk in the first issue of Season 10.</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>XSS? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+<li>a driver file and why do I need one? [Issue 98]</li>
+<li>a video card? [Issue 113]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2021-04-24T08:00:00+08:00">
+      Sat 24 April 2021
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+    <p>
+        Tags:
+            <a href="/tag/cpu.html">cpu</a>
+            <a href="/tag/memory.html">memory</a>
+            <a href="/tag/operating-system.html">operating system</a>
+    </p>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue116.html">
+                Issue 116: Hibernation
+            </a>
+        </li>
+        <li>
+            <a href="/issue118.html">
+                Issue 118: When I run two file-copy processes at the same time, why are they much slower?
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

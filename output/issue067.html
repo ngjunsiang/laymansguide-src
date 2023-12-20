@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 67: The Innocent Times</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-06.html">Season 06</a></p>
+  <header>
+    <h2>
+      <a href="/issue067.html" rel="bookmark"
+         title="Permalink to Issue 67: The Innocent Times">Issue 67: The Innocent Times</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2020-04-11T08:00:00+08:00">
+    Sat 11 April 2020
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> DoubleClick, the first commercially successfully ad server, launched in 1996. It ran a system that tracked the performance of banner ads across 30 sites, working to optimise their return on investment. This was made possible by standardisation of the web (thanks to the HTTP specification), and the birth of Javascript, a scripting language integrated into the webpage rather than being a separate module from it. All of this happened in 1995–1996.</p>
+<p><a href="https://archive.org/about/">The Internet Archive is a 501(c) non-profit</a> that aims to achieve nothing less than a digital library of the Internet and its artifacts. <a href="https://archive.org/web/">The Wayback Machine</a> is your Google portal to the past. This is where you can type in any URL and see how it looked in the past (as long as The Wayback Machine has a saved copy of it from that time).</p>
+<h2>Advertising in 1996</h2>
+<p>Back <a href="https://web.archive.org/web/19961022175643/http://www10.yahoo.com:80/">in Oct 22, 1996, Yahoo! already had advertising</a> front and centre, right above its search bar. (Google had not even been founded yet.)</p>
+<p><img alt="Screenshot of Yahoo! from Oct 22, 1996" src="/issue067_01.png"><br>
+<em>Yahoo! in 1996 already had advertising right above the search bar</em>    </p>
+<p>The URL of that page was http://www10.yahoo.com:80/, and we can see a few things from that:</p>
+<ol>
+<li>HTTP 1.0 had not been fully effected yet. When it was, port 80 would be standardised as the port for the Internet. Before that happened, though, you sometimes had to specify the port (<a href="/issue033.html">Issue 33</a>)) for your web browser to send the request through.</li>
+<li>The Internet was small, but it was big enough for Yahoo! to need more than 1 server to serve its homepage. Yahoo had one domain name, yahoo.com, to route all internet traffic through, but it had to somehow direct this traffic to multiple servers. 1 such server was www.yahoo.com, the others were named www2.yahoo.com, www3.yahoo.com, ... you get the idea.</li>
+<li>HTTPS was not yet a thing. Privacy was the last thing on peoples’ minds. Who cares what you were searching for? There wasn’t much on the Internet to implicate people with yet. You couldn’t book hotels or buy stuff online or send a tweet. The Internet was an interesting place, far removed from real life.</li>
+</ol>
+<h2>What’s in an ad link?</h2>
+<p>The URL that the ad points to is http://www.yahoo.com/homet/SpaceID=0/AdID=2754/?http://la.yahoo.com. Why does yahoo.com appear twice? What’s going on?</p>
+<p>That link is doing quite a number of things: it is sending an HTTP request to Yahoo’s servers with some information attached:</p>
+<ul>
+<li><strong>SpaceID = 0</strong><br>
+  Website owners categorise ad slots into different “spaces”. The primary, busiest parts of the webpage might have ads categorised as SpaceID 0. Pages with less traffic might have ads categorised as SpaceID 1, and so on. This allows for some limited form of ad targeting, and different pricing tiers: SpaceID 0 would be more expensive, SpaceID 1 less so, and so on.</li>
+<li><strong>AdID = 2754</strong><br>
+  In the table of customers, AdID 2754 would belong to the Yahoo! Los Angeles page.</li>
+<li><strong>http://la.yahoo.com</strong><br>
+  This is the page that users should be redirected to.</li>
+</ul>
+<p>Back in 1996, websites like Yahoo! could already track how many times an ad was clicked before redirecting users to the actual page. But it had no way of knowing anything about the user who clicked it. The only information it would have was the user’s IP address (<a href="/issue027.html">Issue 27</a>)).</p>
+<p>You might find it surprising that none of this requires Javascript; in fact, that page doesn’t have a single scrap of Javascript in it!</p>
+<p>So what does Javascript do for ads?</p>
+<p><strong>Issue summary:</strong> Each click on a link, or even an ad, sends data to the server. This information can include an ID for the link you clicked, or the category of ad you clicked. But without Javascript, the webpage can’t know very much about you.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S6] Issue 68: The Age of Bloat</p>
+<p>Still starting slow ... because the picture of online advertising is not complete yet</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>a cookie? [Issue 8]</li>
+<li>XSS? [Issue 8]</li>
+<li>a CDN? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>firmware? [Issue 34]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+<li>What is involved in installing a piece of software? [Issue 48]</li>
+<li>How do apps know where a file starts and ends? [Issue 49]</li>
+<li>What is a password hash? [Issue 63]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2020-04-11T08:00:00+08:00">
+      Sat 11 April 2020
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue066.html">
+                Issue 66: Before the Cloud
+            </a>
+        </li>
+        <li>
+            <a href="/issue068.html">
+                Issue 68: The Age of Bloat
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

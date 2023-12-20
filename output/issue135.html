@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 135: Part 2 – Unifying the CPU and MCH (post-2008)</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-11.html">Season 11</a></p>
+  <header>
+    <h2>
+      <a href="/issue135.html" rel="bookmark"
+         title="Permalink to Issue 135: Part 2 – Unifying the CPU and MCH (post-2008)">Issue 135: Part 2 – Unifying the CPU and MCH (post-2008)</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2021-08-28T08:00:00+08:00">
+    Sat 28 August 2021
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> Light takes 0.3 ns to travel 10 cm, approximately the distance by wire between the CPU and the MCH. This potentially causes operations between the CPU and MCH to slow down by one cycle, at frequencies above 3 GHz. One way the Intel Core i-series resolves this conundrum is to move the MCH <em>into</em> the CPU.</p>
+<p><img alt="Chipset diagram of ATX systems for Intel Core (i-Series)" src="/issue134_02.gif"><br>
+<em>An Intel Core i-series ATX system chipset diagram.<br />The MCH is merged into the CPU, but still a discrete unit.<br />DDR refers to computer memory, while GDDR refers to graphics card memory (<a href="/issue123.html">Issue123</a>))<br />Source: <a href="https://arstechnica.com/gadgets/2009/09/intel-launches-all-new-pc-architecture-with-core-i5i7-cpus/">Ars</a></em>    </p>
+<p>Time to close up some open plot points from last issue:</p>
+<ol>
+<li>The number of pins on 1st-gen Core i7 is almost triple that of the Pentium 4; what are all those pins for?</li>
+<li>The MCH has been moved into the CPU to improve latencies, but how is it possible to make it small enough to do that?</li>
+<li>Are there any disadvantages?</li>
+</ol>
+<p>I’ll answer the second question first. It’s quite simple really.</p>
+<p>You see, for circuit components, size doesn’t always benefit performance. A large transistor does essentially the same thing as a smaller transistor. So making them smaller is advantageous really; you can fit more into a single chip!</p>
+<h2>Making a modern CPU</h2>
+<p>Modern CPUs are manufactured through a process called <strong>photolithography</strong>—literally it means “etching with light” (Greek; <em>photo-</em> “light” + <em>litho-</em> “stone” + <em>-graphie</em> “to draw”). By layering chemicals over the silicon base, putting a mask over them, and exposing them to light, a series of chemical reactions are induced to create the circuit pattern on the CPU.</p>
+<p>Multiple CPUs are created on a single die this way, then individually cut and processed, in multiple steps spanning several months<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. The precision and fineness of the etching laser determine how small we can create components on this substrate. As the manufacturing process improves, semiconductor manufacturing companies are able to create CPUs that can cram more and more transistors into each square mm (or inch) of silicon die.</p>
+<p>Besides being able to cram more transistors into the same space, it turns out that smaller components also use much less power! So we not only get performance gains, we get power efficiency gains as well—two birds with one stone.</p>
+<p><img alt="CPU diagram of the Intel Core i7 (1st-gen)" src="/issue135_01.jpg"><br>
+<em>CPU diagram of the Intel Core i7 (1st-gen)<br />The memory controller, misc. IO, and QPI areas perform the role that the MCH used to take up<br />Source: <a href="https://www.anandtech.com/print/2658/">AnandTech</a></em>    </p>
+<h2>Moving in</h2>
+<p>Over multiple generations of process improvements, the MCH and the CPU could finally be made small enough that they could both reasonably fit into the same die. There are, of course, <em>implications</em>.</p>
+<p>Previously, the CPU only needed pins to communicate with the MCH. Now, the combined chip needs more pins than before to communicate with the computer memory, graphics processing unit (GPU), and PCH.</p>
+<p>So that answers the first question of what the additional pins are for.</p>
+<h2>Working as one unit</h2>
+<p>Which leaves the third question: besides latency improvements, are there any other advantages?</p>
+<p>Mainboard manufacturers save on the cost of the MCH chipset, <a href="https://www.anandtech.com/show/2824">which works out to about $40</a>. Pretty significant when a mid-range mainboard costs $80–$160.</p>
+<p>With the MCH and its requisite wires gone, the mainboard can be shrunk further; motherboards gradually shrank from ATX and microATX form factor sizes, to smaller form factors, such as ITX and the current popular NUC form factors.</p>
+<p><strong>Mainboard form factors</strong></p>
+<ul>
+<li>ATX: 30×24cm (12×9.6 in)</li>
+<li>microATX: 24×24cm (9.6×9.6 in)</li>
+<li>ITX: 17×17cm (7×7 in)</li>
+<li>NUC: 10×10cm (4×4 in)</li>
+</ul>
+<p>And the disadvantages ... well, none on the consumer side actually. It seems to be positive all around!</p>
+<p>Well actually, complexity rears its ugly head in power-saving features.</p>
+<p>Previously, when the computer is in standby (<a href="/issue115.html">Issue 115</a>)), the CPU could be safely shut down (i.e. cut power to CPU), leaving only the MCH minimally powered so the computer memory retains its information.</p>
+<p>With the MCH and the CPU now sharing the same chip, they have to be put in separate power zones so that the MCH portion remains powered while in standby, while the CPU can be shut down safely, making the chip more complicated than its predecessors.</p>
+<p>But that is of little concern for us layfolks.</p>
+<p><strong>Issue summary:</strong> A modern CPU is manufactured through a process called photolithography, by which the CPU components are etched onto the silicon substrate by successive layers of chemicals, masking, and laser exposure. When the CPU components could be made small enough, the MCH and CPU were designed onto the same chip, and this is the design used by the Intel Core i7 (1st-gen).</p>
+<p>This is where the story stops with Intel for this season; their current-gen Core series still uses much the same chipset diagram, and a similar basic architecture, so there’s little new info of relevance for me to add here.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S10] Issue 136: The mobile workstation – laptops</p>
+<p>To continue the story towards the Apple M1, it’s time to switch our lens to the mobile world: tablets, smartphones, and things smaller than a laptop. How are these things designed? What are their CPUs like? We’ll examine the evolution of the iconic Macbook Air, from 2010 to 2020 (warning: image-heavy!)</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>XSS? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+</ul>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>See <a href="https://www.washingtonpost.com/technology/2021/07/07/making-semiconductors-is-hard/">Three months, 700 steps: Why it takes so long to produce a computer chip (WashPo)</a> for a more comprehensive description of the process&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2021-08-28T08:00:00+08:00">
+      Sat 28 August 2021
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue134.html">
+                Issue 134: Part 1 – the Intel Core i-series launches!
+            </a>
+        </li>
+        <li>
+            <a href="/issue136.html">
+                Issue 136: The mobile workstation – laptops
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

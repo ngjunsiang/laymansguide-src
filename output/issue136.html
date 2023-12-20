@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 136: The mobile workstation – laptops</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-11.html">Season 11</a></p>
+  <header>
+    <h2>
+      <a href="/issue136.html" rel="bookmark"
+         title="Permalink to Issue 136: The mobile workstation – laptops">Issue 136: The mobile workstation – laptops</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2021-09-04T08:00:00+08:00">
+    Sat 04 September 2021
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> A modern CPU is manufactured through a process called photolithography, by which the CPU components are etched onto the silicon substrate by successive layers of chemicals, masking, and laser exposure. When the CPU components could be made small enough, the MCH and CPU were designed onto the same chip, and this is the design used by the Intel Core i7 (1st-gen).</p>
+<p>In the last 4 issues, I walked through the general evolution of desktop computers. Let’s go more mobile, and look at laptops. How does something as big as a desktop shrink down to the size of a laptop? And what are the tradeoffs involved?</p>
+<p>I addressed the power part of the formula in <a href="/issue130.html">Issue 130</a>), on power limits; laptops are slimmer in part because part of them—the AC adapter—lies outside the system.</p>
+<p>Let’s look at the rest of it.</p>
+<h2>Laptops use slimmer components</h2>
+<p>Laptops use slimmer memory than desktops:</p>
+<p><img alt="Desktop memory vs Laptop memory" src="/issue136_01.jpg"><br>
+<em>Desktop memory (DIMM) vs laptop memory (SODIMM)<br />Source: <a href="https://www.quora.com/What-type-of-memory-module-is-used-in-a-desktop-and-laptop-computer">Quora</a></em>    </p>
+<p>On a desktop mainboard, desktop memory sticks out perpendicularly from the mainboard, all the better to cram memory sticks together and maximise the use of space.</p>
+<p>On a laptop mainboard, laptop memory sticks lie parallel to the mainboard, to reduce the mainboard height and allow a slim laptop profile.</p>
+<p>As far as I know ... there aren’t any other significant differences to highlight (besides size). Unless you’re overclocking, just get the kind of memory your computer/laptop needs. These days, small-form-factor desktops use laptop memory (SODIMM) as well!</p>
+<p>Laptops use slimmer hard drives compared to desktops as well:</p>
+<p><img alt="Desktop hard drive vs Laptop hard drive" src="/issue136_02.png"><br>
+<em>Desktop hard drive (3.5″) vs Laptop hard drive (2.5″)<br />Source: <a href="https://www.m2wificards.com/2-5-vs-3-5-hdd/">M2WifiCards</a></em>    </p>
+<p>Desktop hard drives are larger, use larger platters (3.5″ diameter), and hence draw more power (at both 12V and 5V voltages). Laptop hard drives are smaller, use smaller platters (2.5″ diameter), and draw less power (at 5V voltage only). This is why smaller external hard drives, which use laptop hard drives, can be powered over USB, but larger external hard drives, which use desktop hard drives, need an external AC adapter.</p>
+<p>These days, laptops have mostly made the transition to solid state disks, and you are much less likely to see hard drives in laptops.</p>
+<h2>The slim laptop in 2010: Macbook Air</h2>
+<p>Let’s examine how a characteristic slim laptop, the Macbook Air, has changed in the past 10 years.</p>
+<p>In 2010, the Macbook Air had its solid state disk and wifi network card on separate (replaceable) cards. But the CPU, GPU, and memory were all soldered directly onto the motherboard.</p>
+<p><img alt="Solid state disk in the 2010 Macbook Air" src="/issue136_03.jpg"><br>
+<em>The solid state disk in the 2010 Macbook Air<br />Source: <a href="https://www.ifixit.com/Teardown/MacBook+Air+11-Inch+Late+2010+Teardown/3745">iFixit</a></em>    </p>
+<p><img alt="Wifi network card on a 2010 Macbook Air" src="/issue136_04.jpg"><br>
+<em>The wifi network card on the 2010 Macbook Air<br />Source: <a href="https://www.ifixit.com/Teardown/MacBook+Air+11-Inch+Late+2010+Teardown/3745">iFixit</a></em>    </p>
+<p><img alt="CPU and GPU on a 2010 Macbook Air, exposed without cooler" src="/issue136_05.jpg"><br>
+<em>The CPU (left) and GPU (right) on the 2010 Macbook Air<br />Source: <a href="https://www.ifixit.com/Teardown/MacBook+Air+11-Inch+Late+2010+Teardown/3745">iFixit</a></em>    </p>
+<p><img alt="Mainboard of a 2010 Macbook Air" src="/issue136_06.jpg"><br>
+<em>Another view. CPU (red), GPU (orange), and memory (yellow) are directly soldered onto the mainboard<br />Where is the chipset? I don’t know; the Macbook Air does not seem to use the same chipset as Intel-powered desktops<br />Source: <a href="https://www.ifixit.com/Teardown/MacBook+Air+11-Inch+Late+2010+Teardown/3745">iFixit</a></em>    </p>
+<h2>The slim laptop in 2018: also Macbook Air</h2>
+<p>By 2018, while the outside of the Macbook Air still looks much the same, the insides are rather different:</p>
+<p><img alt="Mainboard of a 2018 Macbook Air (top view)" src="/issue136_07.jpg"><br>
+<em>CPU (red) and solid state disk (yellow) are directly soldered onto the mainboard<br />Where’s the chipset? Notice that the CPU seems to have </em>2 chips<em> on it? They are the CPU and chipset; two chips in one CPU package!<br />The next image shows the reverse side. Other chips are ignored here, see the iFixit article for full identification<br />Source: <a href="https://www.ifixit.com/Teardown/MacBook+Air+13-Inch+Retina+2018+Teardown/115201">iFixit</a></em>    </p>
+<p><img alt="Mainboard of a 2018 Macbook Air (bottom view)" src="/issue136_08.jpg"><br>
+<em>Memory (red) and wifi network chip (orange) are </em>also<em> directly soldered onto the mainboard<br />This laptop only had integrated graphics; Intel had upped its integrated graphics performance sufficiently by this point<br />Other chips are ignored here, see the iFixit article for full identification<br />Source: <a href="https://www.ifixit.com/Teardown/MacBook+Air+13-Inch+Retina+2018+Teardown/115201">iFixit</a></em>    </p>
+<p>Components which in the 2010 Air were on separate cards are now all soldered directly to the mainboard! On the one hand, this saves space, which can be used for other features, or just for larger batteries. It also reduces the cost of manufacturing; connectors are costly to engineer and manufacture. On the other hand, it means upgradeability goes out the window.</p>
+<p><strong>Issue summary:</strong> Slim laptops have been undergoing a gradual transition: more and more of their chips are no longer available as a replaceable card, but instead soldered directly to the mainboard. Since 2017/2018, most slim laptops pretty much have CPU, memory, storage, and network chips all soldered directly to the mainboard.</p>
+<p>Sorry about the image dump, I figured it would still be more convenient than having to click-through to see the images :)</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S10] Issue 137: The M1 Macbook Air</p>
+<p>The M1 goes even further than the 2018 Macbook Air, in one pretty significant way. Next issue, we compare how the Intel and M1 Macbooks Air differ!</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>XSS? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2021-09-04T08:00:00+08:00">
+      Sat 04 September 2021
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue135.html">
+                Issue 135: Part 2 – Unifying the CPU and MCH (post-2008)
+            </a>
+        </li>
+        <li>
+            <a href="/issue137.html">
+                Issue 137: The M1 Macbook Air
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

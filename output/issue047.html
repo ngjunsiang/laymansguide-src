@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 47: Lossless compression</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+    <meta name="tags" content="compression" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-04.html">Season 04</a></p>
+  <header>
+    <h2>
+      <a href="/issue047.html" rel="bookmark"
+         title="Permalink to Issue 47: Lossless compression">Issue 47: Lossless compression</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2019-11-16T08:00:00+08:00">
+    Sat 16 November 2019
+  </time></p>
+  <p><strong>Previously:</strong> Computers compress image and audio data through a process similar to summarising: it analyses the data using algorithms that use brightness and colour instead of RGB values for images, and different frequencies of sound rather than samples at different points in time for audio. These algorithms then discard parts of the information that human senses do not perceive easily, and reduce the resolution of other parts that human senses are not as sensitive to.</p>
+<p>I went into quite a bit of technical detail in the last issue, and am loathe to do so again this issue. Let’s see how much math I can avoid explaining this issue.</p>
+<p>Lossless compression is necessary in cases where the information must be stored verbatim. For example, if you are sending a 26MB Powerpoint file to a friend, but GMail’s attachment limit is only 25MB, one thing you might try to do is put it into a compressed ZIP file to see if you can bring the size below 25MB. However, you would not want any information to be lost when it reaches your friend; they must be able to decode the ZIP file to  retrieve the original Powerpoint file.</p>
+<p>While lossy compression depends very much on how our senses (particularly sight and hearing) work and on their deficiencies, lossless compression only depends on the characteristics of the information. Accordingly, a wide variety of lossless compression techniques have been developed, each suited for a particular domain. I will attempt to give a very brief overview of some common techniques before I explain some common things people try to do in compression.</p>
+<h2>Lossless audio compression</h2>
+<p>Your brain works in interesting ways. If it sees two images that are near-identical (like a game of Spot The Difference), it won’t remember it as two separate images, but as one image, and the difference between the two images. So when people try to recall the two images you hear things like “this photo had a cat and a dog staring each other down and it also had [blahblah], the other photo is exactly the same except the cat’s ears were furled back and the dog was drolling”. Certainly a lot faster than describing the second image exactly the same way, with the additional detail!</p>
+<p>Lossless audio compressors work in a similar way. They sample the audio in short segments, and try to see how lazy they can get in describing the next sample. This is known as <strong>predictive coding</strong>, because it is a little similar to the process of trying to “predict” the next sample. For example, based on the past 10 samples, a predictive algorithm might say “the next sample will have 0.09% of sample 1, 1.02% of sample 2, 5.63% of sample 3, …”. Storing those percentages will use a lot less space than storing the entire sample; when decompressing, the algorithm can then multiply the percentages with the respective samples to reconstruct the original sample.</p>
+<p>In lossless compression, the predictive algorithm already knows what the next sample is, so most of the work is in calculating exactly what those percentages are. It does so by making an initial guess, then refining that guess in successive stages of calculation, each stage bringing it closer to the original waveform. This requires a lot of computation time. If such a setting is available, the algorithm can shorten the process, leading to a poorer guess. It then calculates the difference between the best guess and the original sample, and stores the difference between the two. This part is what makes it lossless rather than lossy.</p>
+<h1>Lossless image compression</h1>
+<p>The most common image formats that use compression are GIF (yes, really) and PNG. Some kinds of images, such as screenshots, have patterns that are repeated. The algorithm used in GIF and PNG, LZ77, attempts to spot these patterns, and reduce them to 1) the repeating portion, and 2) the number of repetitions. This is known as <strong>run-length encoding</strong>. The nature of images makes the process easier, as each pixel only has 256 possible values rather than 65536.</p>
+<p>Those patterns are stored in a table, and <em>references</em> to them are used instead. So instead of saying “Pattern 0101011101110110”, the algorithm will store a list of these patterns, and refer to them as Pattern 0, Pattern 1, Pattern 10, Pattern 11, … (these are 1, 2, 3, and 4 respectively, in binary representation (<a href="/issue040.html">Issue 40</a>))).</p>
+<p>This is known as <strong>entropy coding</strong>. By linking the longest pattern with the smallest reference number (i.e. Pattern 0), the next-longest pattern with the next-smallest reference number (Pattern 1, 10, 11, 100, 101, 110, …) you can reduce quite significantly the number of bits needed to represent the image.</p>
+<h1>Text compression</h1>
+<p>Text lends itself very well to compression, since there are so many repeated words and phrases. In general, text compression algorithms will use a combination of entropy coding and run-length encoding to reduce a document of text into repeating patterns, and using shorter references to those patterns rather than the full pattern itself.</p>
+<h1>What is the maximum possible compression?</h1>
+<p>Excellent question. Shannon’s source coding theorem<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> defines a compression limit for each block of information, called Shannon entropy (unbolded, don’t worry!). The source coding theorem says it is impossible to compress data beyond its Shannon entropy.</p>
+<p>So what is the Shannon entropy of the data? That depends on its predictability. A block of text that only consists of the letter ‘e’ would be highly predictable, and therefore have a low Shannon entropy (I will stop using this term and use <strong>predictability limit</strong> instead). A block of text that is just completely random characters would be unpredictable and would therefore have a high Shannon entropy.</p>
+<p><em>tl;dr</em> higher predictability  = higher (lossless) compression, lower predictability = lower (lossless) compression</p>
+<p>And now it is myth-busting time! Well, not really, since most observant folks would have noticed this by now.</p>
+<h1>When I put a zip file in another zip file, why is the second zip file no smaller in size that the first?</h1>
+<p>When the first zip file compressed its contents, the predictability of the resulting data decreased (ever tried compressing shorthand?). You won’t get very far trying to compress unpredictable data.</p>
+<p>If you want greater compression, use a higher compression setting on the original file instead.</p>
+<p><img alt="7zip archive settings, showing options for compression level, compression method, and dictionary size" src="/issue047_01.png"><br>
+<em>7zip archive settings for zip files.<br />Image from <a href="https://en.wikipedia.org/wiki/File:Colorcomp.jpg">Wikimedia Commons</a></em>    </p>
+<p>A higher <em>compression level</em> generally causes the algorithm to try more combinations and iterations of compression, a larger <em>dictionary size</em> enables the algorithm to use more pattern references. Play with these two settings to find the best tradeoff between compression time and compression ratio (the ratio of final filesize to original filesize).</p>
+<h1>Why do Powerpoint files sometimes compress very well and sometimes not at all?</h1>
+<p>Powerpoint is already a compressed file format, so the only filesize gains you will get are from compressing embedded media, such as videos or images. If you used any uncompressed images, you might be able to achieve some filesize gains. But it is better to have Powerpoint handle the compression instead; it offers a <a href="https://highspark.co/how-to-compress-powerpoint/">Compress Pictures</a> option.</p>
+<h1>You talk about your highfalutin Shannon entropy, but I can find so many tiny video and image files online! How do they achieve that?</h1>
+<p>Shannon’s source coding theorem does not claim that you cannot compress data beyond its predictability limit. It only claims that you cannot do so losslessly. Which means you can compress data beyond its predictability limit, <em>lossily</em>.</p>
+<p>You are getting video and image files from those sources with lots of information thrown away. If you can’t tell the difference, good for you.</p>
+<p><strong>Issue summary:</strong> Data cannot be compressed beyond its predictability limit (Shannon entropy) in a lossless fashion. Lossless compression does not discard any information. It generally tries to spot patterns in the data, and represent those patterns with fewer bits, through a combination of predictive coding, run-length encoding, and entropy coding.</p>
+<p><strong>Predictive coding:</strong> express samples as a combination of past samples<br>
+<strong>Run-length encoding:</strong> spot repetitions of patterns in the data<br>
+<strong>Entropy coding:</strong> Store the list of patterns, using a shorter symbol as reference to the pattern</p>
+<hr>
+<p>If the lossy compression articles are hard to read, the lossless compression articles are even worse, because so much of it is math theory. I got the gist of it as best as I can.</p>
+<p>I don’t like the way most layman explanations in the media completely skip over the details; before I understood lossless compression, these explanations were often no help to me. I think at least knowing what kind of patterns can be found in the data would help with imagining the process, hence the crash-course introductions to predictive coding, run-length encoding, and entropy coding.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> Of containers and codecs</p>
+<p>Why have we been talking so much about images and audio and compression? Because I want to get to the meat, which is: video formats! This is probably the single biggest source of confusion for most people who come to look for me regarding file types: “What kind of video file is this? How do I open it? Why can’t it open?” Next issue: a simple way to understand video formats and what they need.</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>a cookie? [Issue 8]</li>
+<li>XSS? [Issue 8]</li>
+<li>a CDN? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>compiling code into an application [Issue 26]?</li>
+<li>firmware? [Issue 34]</li>
+<li>HTML? [Issue 38]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+</ul>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Yes, that’s the same Shannon from Nyquist-Shannon sampling theorem. Claude Shannon is lauded as “the father of information theory” with good reason.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2019-11-16T08:00:00+08:00">
+      Sat 16 November 2019
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+    <p>
+        Tags:
+            <a href="/tag/compression.html">compression</a>
+    </p>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue046.html">
+                Issue 46: Lossy compression
+            </a>
+        </li>
+        <li>
+            <a href="/issue048.html">
+                Issue 48: Of containers and codecs
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 141: The Apple A14 and M1</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-11.html">Season 11</a></p>
+  <header>
+    <h2>
+      <a href="/issue141.html" rel="bookmark"
+         title="Permalink to Issue 141: The Apple A14 and M1">Issue 141: The Apple A14 and M1</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2021-10-09T08:00:00+08:00">
+    Sat 09 October 2021
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> Shared memory is easier to implement when a company has control over the designs of both CPU and GPU.</p>
+<p>So, to recap:</p>
+<p>Most companies design either CPUs or GPUs, but seldom are well-positioned<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> to be excellent in both.</p>
+<p>Among the companies that design both CPUs and GPUs, almost none of them<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> make CPUs for both mobile (smartphones + tablets) as well as laptops (including low- to mid-range desktops).<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
+<p>Which leaves Apple in the (current) position of being the only chip company with a design for both mobile as well as laptop.</p>
+<h2>The difficulties of power scaling</h2>
+<p>It’s not that other companies have not attempted this.</p>
+<p>They have tried to scale down laptop chips to achieve smartphone-like power consumption, but found that laptop chips can’t power down the way smartphone chips can, and require more circuitry to achieve that.</p>
+<p>They have also tried to scale smartphone chips up to achieve laptop-like computational capacity, but found that simply pushing more electrical power doesn’t help all that much. Beyond a certain frequency limit, you simply need more bandwidth and more units, and designing a chip that easily accommodates more units like this just requires a very different design.</p>
+<p>It seems that designing a chip that can go from 4W all the way to 65W (and possibly higher) requires intentional engineering, not simply modifying an existing smartphone/laptop chip design or bolting on/removing features.</p>
+<h2>The Apple A14 vs the Apple M1: similarities</h2>
+<p>Apple has managed to do just this with the Apple A14 and M1. They are, at heart, the same chip design! (In processor parlance, we say they have the same <strong>chip architecture</strong>.)</p>
+<p>Let’s see:</p>
+<p><img alt="Apple A14 hardware overview" src="/issue141_01.jpg"><br>
+<em>The Apple A14’s key hardware.<br />Source: <a href="https://www.electrony.net/350867/%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%84%D8%AC-apple-a14-bionic-%D9%82%D8%AF-%D9%8A%D9%88%D9%81%D8%B1-%D8%A3%D8%AF%D8%A7%D8%A1%D9%8B-%D9%85%D9%85%D8%A7%D8%AB%D9%84%D8%A7%D9%8B-%D9%84%D8%A3%D8%AF%D8%A7/apple-a14/">Apparently an online Arabic image gallery site</a> (I have no idea why this picture is so hard to find!)</em>    </p>
+<p><img alt="Apple M1 hardware overview" src="/issue141_02.jpg"><br>
+<em>The Apple M1’s key hardware.<br />Source: <a href="https://www.techbuzzpro.com/apple-introduces-m1-5nm-octa-core-soc-for-the-mac.html">TechBuzzPro</a></em>    </p>
+<p>We can also compare these features via Wikipedia:</p>
+<p><strong>Apple A14</strong></p>
+<ul>
+<li>6-core CPU (4 low-power<sup id="fnref2:4"><a class="footnote-ref" href="#fn:4">4</a></sup> cores “Icestorm”, <strong>2</strong> high-performance “Firestorm” cores)</li>
+<li><strong>4</strong>-core GPU</li>
+<li><strong>8</strong>-core NPU</li>
+<li>4GB memory (iPhone 12) / 6GB memory (iPhone 12 Pro)</li>
+</ul>
+<p><strong>Apple M1</strong></p>
+<ul>
+<li>8-core CPU (4 low-power<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> cores “Icestorm”, <strong>4</strong> high-performance “Firestorm” cores)</li>
+<li><strong>8</strong>-core GPU</li>
+<li><strong>16</strong>-core NPU</li>
+<li>8GB memory / 16GB memory</li>
+</ul>
+<p>Notice that at heart, they are using the same building blocks: ~~low-power~~ high-efficiency cores, high-performance cores, GPU cores, and NPU cores (I suspect these are GPU-like cores but optimised for machine learning, i.e. they probably power Siri and other parts of the OS which lean on AI features); the A14 and M1 just has different numbers of them.</p>
+<p>So one really amazing thing about the Apple M1 is that it is actually a boosted Apple A14: almost double the hardware!</p>
+<p>It’s like when Magnemites join together and evolve into a Magneton …</p>
+<h2>The Apple A14 vs the Apple M1: differences</h2>
+<p>What’s different between the A14 and M1, besides the number of key chips? Apple isn’t forthcoming with the details, but we can guess about minor details like the image processor (for camera imaging), storage controller (the M1 can use high-power solid-state disks (SSDs) which the A14 can’t).</p>
+<p>The major difference announced between the A14 and M1 launch is that the M1 has unified memory.</p>
+<h2>Unified memory vs CPU–GPU transfers</h2>
+<p>Back in <a href="/issue139.html">Issue 139</a>), I mentioned that unified memory needs really high bandwidth to support access by the SoC components.</p>
+<p>Today, laptop processors use an interface called PCIe to connect CPUs to GPUs. PCIe has a bandwidth of up to 16 GB/s<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>.</p>
+<p>The M1’s unified memory has a bandwidth of up to <em>58 GB/s</em> reading from memory, and <em>36 GB/s</em> writing to memory. Definitely an improvement.</p>
+<h2>Unified memory: what’s yours is also mine</h2>
+<p>The 8GB/16GB of system memory is used by both CPU and GPU. It is not partitioned at boot; both the CPU and GPU (and other parts of the SoC, such as the NPU) have <em>full access to all system memory</em>.</p>
+<p>This greatly simplifies intra-chip communication, as all subchips in the SoC can request access to memory! The GPU no longer needs to keep its own (power-guzzling) memory. This reduces the motherboard space that is needed, lowers power consumption, and decreases latency for data transfer between CPU and GPU (<a href="/issue139.html">Issue 139</a>)): a triple-compounding win.</p>
+<p><strong>Issue summary:</strong> The Apple A14 and Apple M1 are essentially the same chip architecture: they use almost the same building blocks, just with different numbers of them. On top of that, the Apple M1 implements unified memory, allowing the CPU and GPU (and other SoC components) to share the same system memory, greatly facilitating intra-chip communication.</p>
+<p>Some implications of the Apple A14–Apple M1 familial connection: the Apple M1 is truly capable of smartphone-like standby, a feature that Intel’s and AMD’s laptop chips have been striving for but not quite achieved.</p>
+<p>It’s a lot to detail here, so instead I will do so—in a separate issue.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S10] Issue 142: Implications (Part 1) - Software</p>
+<p>Besides the reported fact that the M1 is really very fast (and yes I will spend a little time explaining just how fast), what else does this herald for expectations in the software on devices? Coming up next issue :)</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>XSS? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+</ul>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Companies that achieve both CPU and GPU excellence generally have business incentives that align with that goal (as opposed to, say, making low-power or cheap processors)&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Intel had a short-lived but ultimately doomed attempt at a smartphone chip (it was named Medfield).&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>I‘m going to ignore servers here because I can! And because they’re not really relevant to a discussion on low-power consumer chips.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>These are the same ones labelled “high-efficiency”, which is marketing speak for “designed to use very little power”&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>Bandwidth of 16 GB/s is for PICe 3.0; PCIe 4.0 will support up to 32 GB/s, but graphics cards won’t use that much bandwidth to communicate with the CPU.&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2021-10-09T08:00:00+08:00">
+      Sat 09 October 2021
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue140.html">
+                Issue 140: The shared memory dream
+            </a>
+        </li>
+        <li>
+            <a href="/issue142.html">
+                Issue 142: Implications (Part 1) - Software
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

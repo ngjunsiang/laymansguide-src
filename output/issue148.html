@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 148: History of commercial computing - cohosting</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-12.html">Season 12</a></p>
+  <header>
+    <h2>
+      <a href="/issue148.html" rel="bookmark"
+         title="Permalink to Issue 148: History of commercial computing - cohosting">Issue 148: History of commercial computing - cohosting</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2021-11-27T08:00:00+08:00">
+    Sat 27 November 2021
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> Running a virtual machine is like running a physical machine, but within a window in your OS.</p>
+<h2>Co-located hosting</h2>
+<p>A not-so-long time ago, to run a website, you literally just ran a webserver on your desktop, connected it to the internet, and gave your IP address to other people. This is a pretty unreliable way to host a business website though. A big company would make business arrangements to procure a reliable internet connection, set up the infrastructure (power, cooling, mounting hardware) required to run multiple computers, and then manage their multiple systems with a full IT management team (hardware &amp; software).</p>
+<p>Not every company can afford this. Smaller companies would therefore <strong>co-locate</strong> their computers (called colo boxes) with bigger companies, enjoying service support and infrastructure for a monthly/yearly fee. Some companies decided to just provide these services as their full-time business, and the hosting business was born.</p>
+<h2>The difficulties of troubleshooting remotely</h2>
+<p>Running your computer on someone else’s premises is no joke. If something went wrong, there was no way to do troubleshooting remotely. You had to drive down and do the troubleshooting onsite, usually wasting at least half a day in the process. Unsurprisingly, this was a problem many companies were happy to abstract away by paying more money. Soon, hosting companies offered to rent your <em>their</em> computers, configured to standard specs, <em>and</em> provide basic onsite troubleshooting. You would email/send them the software you wanted to run on those computers, with instructions, and they would do it for you. A huge timesaver; most hardware issues are now out of mind for business owners.</p>
+<p>You still had to worry about OS issues though. If you need to have multiple pieces of software set up and configured, this was something a hosting company could not do for you. And this was where virtual machines (VMs) came in handy. What if you could set up a virtual machine, with virtual CPU and virtual memory, install your OS on a virtual disk, install all your required software in that OS, and then send that virtual disk (as data) to a hosting company? They would then run that disk through their hypervisor, a piece of software that manages virtual machines.</p>
+<h2>The promise of virtualisation</h2>
+<p>This was the promise that virtualisation companies offered to businesses. You could manage your virtual machines remotely, choosing when to boot them up or shut them off, paying only for virtual hardware you requested, without affecting the virtual machines of other companies. Hosting companies could “collect rent” for multiple VMs running on a single computer.</p>
+<p>After all, as long as you have an interface to manage it, and you are able to set up your software on it, does it really matter whether it is a physical or virtual machine?</p>
+<p><strong>Issue summary:</strong> Renting out virtual hardware instead of physical hardware meant that instead of having to move hardware around and manage it, you could send the <em>data</em> for running an OS to the hosting company and have them be responsible for hardware operations.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S12] Issue 149: History of commercial computing - containerisation</p>
+<p>Can we push this further? Could we get hosting companies to not only help us run the hardware, but the operating system as well? Yes, yes we can!</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>XSS? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2021-11-27T08:00:00+08:00">
+      Sat 27 November 2021
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue147.html">
+                Issue 147: Operating systems on virtual hardware
+            </a>
+        </li>
+        <li>
+            <a href="/issue149.html">
+                Issue 149: History of commercial computing - containerisation
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

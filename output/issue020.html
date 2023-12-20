@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 20: Testing</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-02.html">Season 02</a></p>
+  <header>
+    <h2>
+      <a href="/issue020.html" rel="bookmark"
+         title="Permalink to Issue 20: Testing">Issue 20: Testing</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2019-04-27T08:00:00+08:00">
+    Sat 27 April 2019
+  </time></p>
+  <p>Last issue, I introduced <strong>version control</strong>, the idea that you can set things up in a way that lets you see the <strong>change history</strong> of a document. This lets you undo changes which you later come to regret, and compare the document to a previous point in history. If you have a version control system (VCS) set up, you can commit changes to it and view a list of those changes later.</p>
+<p>When one is just starting out in software development, one thing that often happens is this. You start writing code for an app-say, a todo list. You write code to set up a database, display a login and other stuff. You commit the changes to the code. You add core features: add/remove/update a todo item; commit. You come up with more ideas: subtasks, recurring items, tags, filters, and all that jazz. Commit, commit, commit. You now have a complete app with bells and whistles, but the code is a sprawling mess: when you finally test the app, there are strange bugs everywhere, the lists don't filter properly, and the database gets messier and messier.</p>
+<p>Proper planning can make this more orderly to some extent, but it cannot eliminate one fact of programming: that there will always be bugs. And the only way to catch them is to test the app.</p>
+<h2>Manual testing</h2>
+<p>The most straightforward way is, of course, to get a human to test the app. This gets tiring quickly, for obvious reasons. Asking a human to repeatedly carry out a set of procedures to make sure the app returns the correct data is tedious … which makes it perfect for automating!</p>
+<p>If you are testing an app manually, it is human nature to not want to run 200 tests by hand. This leads to people trying to keep the number of tests small, which leads to some bugs not being caught, or they try to go as long as possible without testing, which leads to bugs piling up. Furthermore, manual testing is just slow.</p>
+<p>Being able to speed up the testing rate, and have something else do the testing for you, eliminates these problems and lets you focus on writing code rather than typing inputs and checking outputs.</p>
+<h2>Web testing</h2>
+<p>How exactly do you test a website? While there is no replacement (yet) for a human when it comes to judging look and feel, you can rely on software to get the functional parts tested. Software such as <a href="https://www.seleniumhq.org/">Selenium</a> have a built-in browser that is able to <a href="https://buttondown.email/laymansguide/archive/a6941efd-86bf-4fd8-92c9-009fe14a8c2a">request webpages</a> and check the webpage code to see if what is supposed to be there is actually there.</p>
+<p>For example, after I perform a login, I should be in my Home screen, the main section should display a welcome, my avatar should be in the top right hand corner, etc. All of this can be tested for in the code.</p>
+<h2>Test suites and automated testing</h2>
+<p>So after we have a bunch of tests, what happens? Write code, run the <strong>test suite</strong> (a collection of tests), check the result, and commit the code if the test passes. What happens when we have over 200 tests? Won’t that take a while?</p>
+<p>Yeah it would, but why do you need to test parts of the app that haven’t changed? You can set up your testing so that the basic bits of code (units conversion, time conversion, data cleaning, …) have their own tests. Then the next layer, the main code (data management, login, setup, etc) each have their own tests. The complete app then has more tests. Each layer tests for bugs specific to its level.</p>
+<p>Now you can just run the relevant tests when you change one small part of your code. Or not; you could set your tests up so that once you try to commit, the testing software detects which parts of the code has changed, runs tests for those parts, and only lets your commit through if it passes all the tests.</p>
+<p><strong>Issue summary:</strong> Testing is the only way to know your app really works. Tests can be set up for the different parts of your app, from the basic building blocks to the main code and finally even the interface, including web pages.</p>
+<hr>
+<p>Yeah, almost nobody liked tests and exams in school, I know. But in software, testing is the only way to know your app <em>really</em> works, and not just because you say/think it does.</p>
+<p>Tests are one of those things that beginning programmers tend to neglect until they learn their first hard lessons. I can see there are many ways to apply it outside of programming, particularly in areas where lots of vetting is needed—vetting really is just human testing, isn’t it? When vetting relies on clear rules and has an outcome that you know in advance, you can think of it as a test. Wouldn’t it be nice if parts of that could be automated, so that you can focus on applying human judgement?</p>
+<p>Last issue, I realised that the issues were taking me 1.5 hrs to write, which I think means I am cramming too much content. I promised to keep each issue short and digestible; they are now back to being 1 hour of writing. Again, if you do actually prefer longer issues, drop me an email and let me know!</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> Multiplayer git, and how git stops people from wanting to kill each other</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>a specification? [Issue 6,8]</li>
+<li>a cookie? [Issue 8]</li>
+<li>a cache? [Issue 8]</li>
+<li>XSS? [Issue 8]</li>
+<li>a CDN? [Issue 8]</li>
+<li>Unicode? And what does it have to do with emoji? [Issue 8]</li>
+<li>What are those '\r\n's in the HTTP request packet [Issue 12,17]?</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2019-04-27T08:00:00+08:00">
+      Sat 27 April 2019
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue019.html">
+                Issue 19: Version control and git
+            </a>
+        </li>
+        <li>
+            <a href="/issue021.html">
+                Issue 21: Forking and merging
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

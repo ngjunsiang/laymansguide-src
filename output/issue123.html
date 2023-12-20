@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 123: Graphics cards: The Pixel Factory</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+    <meta name="tags" content="memory" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-10.html">Season 10</a></p>
+  <header>
+    <h2>
+      <a href="/issue123.html" rel="bookmark"
+         title="Permalink to Issue 123: Graphics cards: The Pixel Factory">Issue 123: Graphics cards: The Pixel Factory</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2021-06-05T08:00:00+08:00">
+    Sat 05 June 2021
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> Computers are general-purpose machines that usually process integer calculations. The graphics pipeline requires more specialised hardware that can process decimal number calculations. This is why high-performance graphics usually requires a graphics card.</p>
+<p>So why are gamers so agog over <strong>graphics cards</strong> (also known as video cards)? That’s because they do one thing really well! Unlike CPUs which often have to process an unpredictable workload, the graphics pipeline involves performing the same categories of calculations over and over again.</p>
+<h2>Graphics compute units</h2>
+<p>These calculations, which I gave an overview of in <a href="/issue122.html">Issue 122</a>), take in tables of numbers, crunch them mathematically, and spit out another table of numbers. Since the calculations are predictable, we don't need very complicated hardware that enables switching instructions based on the input. We can used specialised cores—clusters of transistors that are custom-fit for the purpose, cram lots of them into a circuit board, and end up with much better performance for the graphics pipeline compared to the CPU.</p>
+<p>These cores are organised into groups known as <strong>compute units</strong>, and graphics card companies often differentiate the lower-end and higher-end cards by the number of compute units they have, which indicate the computation rate (measured in <strong>flops</strong>, which stand for <strong>fl</strong>oating-point<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <strong>o</strong>perations <strong>p</strong>er <strong>s</strong>econd). Better graphics require more computation, so more flops correlate with better graphics.</p>
+<h2>Graphics memory</h2>
+<p>Graphics cards often come with their own memory chips, based on a different technology (<strong>GDDR</strong>, standing for “graphics double data rate”, vs <strong>DDR</strong> for CPUs). Graphics memory chips (GDDR) are optimised for higher bandwidth (more gigabytes transferred per second), while CPU memory chips (DDR) are optimised for lower latency (lower time to response). These are soldered directly onto the graphics card to keep memory readily accessible by the compute units.</p>
+<h2>Power and heat</h2>
+<p>Unlike CPUs, which (for desktops) seldom draw more than 100W by themselves, graphics cards (for desktops) can draw up to 300W. Correspondingly, more of the space on graphics cards are taken up by components that try to keep this immense power under control. Voltage regulation modules help to adjust input voltages to what the compute units and memory requires.</p>
+<p><img alt="Graphics card without its shroud and cooler" src="/issue123_01.jpg"><br>
+<em>A graphics card, here exposed without its shroud and cooler.<br />The graphics chip is in the middle, surrounded by graphics memory chips (smaller, black squares) close to the edges of the board. The larger protruding gray rectangles are voltage regulation modules.<br />Image from <a href="https://www.gamersnexus.net/guides/2826-differences-between-ddr4-and-gddr5">Gamersnexus</a></em>    </p>
+<h2>Other uses</h2>
+<p>The graphics card excels at carrying out predictable decimal calculations in a pipeline. Besides graphics, what else can it be used for?</p>
+<p>In research, they have been purposed to perform calculations for simulations, which often involve processing the same calculation in bulk.</p>
+<p>For consumer purposes, they have also been used for video decoding (decompressing videos for playback), and lately even video encoding (compressing videos to a smaller size). These also involve performing the same types of calculations in a predictable pipeline.</p>
+<p>Most recently, they are being used for machine learning (also known as “artificial intelligence”) models, again because those involve predictable pipelines (Do you are see a pattern here?)</p>
+<h2>Integrated graphics</h2>
+<p>Not all computers need a full-size GPU to render graphics on screen. Intel processors, and some of the newer AMD ones, contain what is known as <strong>integrated graphics</strong>. That means that these CPUs have a graphics processor unit (GPU) integrated into the same chip. This integrated GPU provides basic capabilities which allow typical users to use a computer, and even run low-end graphics programs, without needing to buy a higher-end graphics card.</p>
+<p>Integrated GPUs do not have their own memory. They share computer memory with the CPU. That means that they reserve a (configurable) amount of computer memory for graphics use (typically up to 128 MB), and video card drivers (<a href="/issue120.html">Issue 120</a>)) enable the GPU to use more system memory (<a href="https://www.intel.sg/content/www/xa/en/support/articles/000020962/graphics.html">up to 50% for Intel integrated graphics</a>). This means that integrated graphics use slower memory compared to dedicated graphics cards that have their own memory.</p>
+<p><strong>Issue summary:</strong> Graphics cards contain lots of tiny cores that are much better at performing the same calculation for lots of decimal numbers. These cores are organised into compute units; a graphics card with more compute units can perform more calculations every second. Graphics cards have their own onboard memory, separate from the CPU. GPU memory is different from computer memory; it is configured for much higher data throughput. Integrated graphics are GPUs that are integrated into a CPU chip; these do not have their own onboard memory, and share memory with the CPU.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S10] Issue 124: Video formats</p>
+<p>I haven’t talked about the last part, because this issue is long enough already, and because the next part can fill a whole issue by itself. Next up, the last stage: actually displaying pixels on a screen.</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>XSS? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+<li>~~a video card? [Issue 113]~~</li>
+</ul>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>“Floating-point” is a fancy term for decimal, so-called because the way they are represented allows the decimal point to be placed differently, unlike with integers.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2021-06-05T08:00:00+08:00">
+      Sat 05 June 2021
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+    <p>
+        Tags:
+            <a href="/tag/memory.html">memory</a>
+    </p>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue122.html">
+                Issue 122: The great flattening
+            </a>
+        </li>
+        <li>
+            <a href="/issue124.html">
+                Issue 124: Video formats
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

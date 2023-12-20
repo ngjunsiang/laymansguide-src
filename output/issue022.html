@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 22: Continuous Integration in software</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-02.html">Season 02</a></p>
+  <header>
+    <h2>
+      <a href="/issue022.html" rel="bookmark"
+         title="Permalink to Issue 22: Continuous Integration in software">Issue 22: Continuous Integration in software</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2019-05-11T08:00:00+08:00">
+    Sat 11 May 2019
+  </time></p>
+  <p>Last week I introduced forking and merging, which are how developers ensure that they don't override other peoples’ work. They fork a repository to create their own copy, make the changes required to introduce the feature they want, and then merge it back with the main repository when it is ready, for the repository owner to review.</p>
+<p>Two weeks ago I introduced the idea of testing, which in programming means writing more code that checks your code so that it is producing the correct output when you give it a certain input.</p>
+<p>By now your idea of a developers’ workflow might look something like this:</p>
+<ol>
+<li>Fork a repository (which creates a <strong>branch</strong>).</li>
+<li>Make changes to code on that branch.</li>
+<li>Test the code on that branch.</li>
+<li>If the tests pass, send a pull request to the repository owner to merge this branch with the main branch.</li>
+</ol>
+<p><img alt="A commit on Github" src="/issue022_01.png"><br>
+<em>Git branching. From <a href="https://www.atlassian.com/git/tutorials/using-branches">Atlassian’s git branch tutorial</a>.</em>    </p>
+<p>You can imagine that steps 2 and 3, the bread and butter of developers everywhere, is really tedious. Write code, test fails. Edit code, test fails again. On and on and on.</p>
+<p>So engineers automate this part. Git (from Issue 19) can run little bits of code (called a <strong>hook</strong>) when a commit is made to carry out this testing. So this lets developers set up repositories in a way that tests every single commit (or series of commits)). The above process now looks like:</p>
+<ol>
+<li>Fork a repository (which creates a <strong>branch</strong>).
+2a. Make changes to code on that branch.
+2b. Git tests the code on that branch and reports the result.</li>
+<li>If the tests pass, send a pull request to the repository owner to merge this branch with the main branch.</li>
+</ol>
+<p>One step less! But the part that developers dread is usually merging, which is where the code conflicts occur …</p>
+<h2>Merge conflicts</h2>
+<p><img alt="A commit on Github" src="/issue022_01.png"><br>
+<em>Git merging. From <a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge">Atlassian’s git merge tutorial</a>.</em>    </p>
+<p>Most development teams organise their work into (at least) 3 types of branches:</p>
+<ol>
+<li><code>master</code>, which is usually production code that is actually being run on the servers.</li>
+<li><code>dev</code>, for code in development that the team is working on.</li>
+<li><code>feature</code>, for code forked from development which a developer or smaller team is editing</li>
+</ol>
+<p>While Alice is working on a <code>feature</code> branch, Bob is working on his <code>feature</code> branch as well, and Charmaine is merging her change to the <code>dev</code> branch. Charmaine’s changes might cause problems with Alice’s code. Alice is not going to know about this until she tries to merge her branchc with <code>dev</code>! So her work process now looks like:</p>
+<ol>
+<li>Fork a repository (which creates a <strong>branch</strong>).
+2a. Make changes to code on that branch.
+2b. A git hook tests the code on that branch and reports the result.
+2c. Pull any changes in the parent branch (automatically or manually) to keep the code current.</li>
+<li>If the tests pass, send a pull request to the repository owner to merge this branch with the main branch.</li>
+</ol>
+<p>This means that on top of just testing her code, Alice (and Bob and Charmaine) need to pull in changes from <code>dev</code> whenever it is updated, to ensure that her own changes still work with the latest copy of <code>dev</code> branch. This can be automated with git hooks (those little bits of code mentioned earlier), but the mental stress from having the code change under you can be pretty draining.</p>
+<p>Big features, in particular, suffer from problems like this because they involve many code changes that accumulate and affect many parts of <code>dev</code>. So some teams have taken to using a process called <strong>Continuous Integration</strong>.</p>
+<h2>Continuous Integration</h2>
+<p>In a nutshell, continuous integration means to keep your code changes as small as possible, and merge your changes into the parent branch as often as possible, instead of letting them pile up to be released in one day.</p>
+<p>Its main advantage is that it allows the process of making a change to be really short. Which then allows these changes to be merged as soon as possible, and be updated to other developers’ branches as soon as possible, so that the latest updates are synchronised to the team, and nobody is working in the dark with an unsynced copy of the base code.</p>
+<p><strong>Issue summary:</strong> Continuous Integration means merging changes back to the main branch as often as possible. This means keeping code changes as small as possible, and using automated testing to speed up the development process.</p>
+<hr>
+<p>When I first learnt about continuous integration, I thought this was something every organisation should know about! Have you had colleagues who tend to do things in the dark, and nobody really knew what they were doing and they seemed to be out of sync with the team? Yeah, continuous integration and help with that.</p>
+<p>Understandably, nobody wants to spend more time in meetings and on communication that is otherwise necessary. But in workplaces where the team shares a common repository (like a shared network folder, or Dropbox folder, or Google Drive folder, …), why not try to automate some of the updates which are done by hand?</p>
+<p>One example: I don’t like it when events are added to a calendar and I only find out much later. So I used <a href="https://ifttt.com/">IFTTT</a>, a web service that lets me set up automated processes, to send myself a Telegram message whenever an event is added to a calendar.</p>
+<p>In a team, automating such updates means somebody is not wasting time typing out these updates to the team. What can your team automate today so that it is easier for everyone to be in sync?</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> Specifications: how developers know what to work on (finally!)</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]
+~~- a specification? [Issue 6,8]~~</li>
+<li>a cookie? [Issue 8]</li>
+<li>a cache? [Issue 8]</li>
+<li>XSS? [Issue 8]</li>
+<li>a CDN? [Issue 8]</li>
+<li>Unicode? And what does it have to do with emoji? [Issue 8]</li>
+<li>those '\r\n's in the HTTP request packet [Issue 12,17]?</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2019-05-11T08:00:00+08:00">
+      Sat 11 May 2019
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue021.html">
+                Issue 21: Forking and merging
+            </a>
+        </li>
+        <li>
+            <a href="/issue023.html">
+                Issue 23: Specifications in software
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

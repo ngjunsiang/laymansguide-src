@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 12: What is HTTPS? How is it different from HTTP?</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-01.html">Season 01</a></p>
+  <header>
+    <h2>
+      <a href="/issue012.html" rel="bookmark"
+         title="Permalink to Issue 12: What is HTTPS? How is it different from HTTP?">Issue 12: What is HTTPS? How is it different from HTTP?</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2019-03-01T08:00:00+08:00">
+    Fri 01 March 2019
+  </time></p>
+  <p>Was the last issue too scary? I hope you haven’t completely lost faith in protecting your privacy on the internet! If you’re close to it, let this issue bring you some hope.</p>
+<p>We are going to get a little technical here, because I want to give you a view of the internet that most layfolks won’t get a chance to see. I just want you to remember something: you don’t need to understand every single bit of it. The things I point out will help you come to useful realisations that help you make good decisions about what you do on the internet.</p>
+<hr>
+<h2>What did the laptop say to the access point?</h2>
+<p>[Insert screenshot of random letters and numbers here ... :D]</p>
+<p>Nah, I won’t do that. It would be merely decorative and not at all illustrative. Instead let’s focus your attention on one particular packet:</p>
+<p><img alt="An HTTP request captured in Wireshark showing my developer API key" src="/issue012_01.png"><br>
+<em>An HTTP request captured in Wireshark. Notice the line <code>Authorization: Bearer [CENSORED]</code>. That’s my developer API key!</em>    </p>
+<p>This screenshot comes from an app called Wireshark, used to “capture” packets received by my laptop. This includes packets that my laptop sends to and receives from the access point, but it also includes packets from surrounding devices, such as my robot vacuum, smartphone, home electricity monitor … let’s see what information is visible from these captured packets. (I say “capture” because I haven’t trapped the packet at all, and other devices connecting to the same access point can read the packet as well.)</p>
+<p>It took some filtering and digging, but I’ve finally found the HTTP request data packet which my laptop sent to the server. It’s the right packet; the request is <code>GET /api/profile HTTP/1.1</code> like we saw in Issue 7. What are those \r\n’s? Not important for now, we’ll eventually get to those sometime.</p>
+<p>Look what else is visible there: my developer API key! Look for the line that starts with <code>Authorization: Bearer [CENSORED]</code>. Even though the API key appears to be hidden in the request header, any device that receives the packet and decodes the header can actually receive my API key, and the user can use it to retrieve my profile data if they know how to :( Or worse, they can intercept the packet, modify the header, and send it to the Hypothes.is server, which will think it is coming from me!</p>
+<h2>HTTPS to the rescue</h2>
+<p>Since wifi works by broadcasting the data packets, I can’t possibly stop other devices receiving my data. How do I protect my identity and prevent other people stealing my API key then?</p>
+<p>The same way we prevent people who can overhear us from understanding what we are saying: by speaking in code.</p>
+<p>How will the server know what I am saying then? The server and my laptop will need to coordinate a way of speaking in code so that any information that is intercepted will make no sense to the interceptor, and if the data is modified by them, my laptop or the server would know when trying to decode the data. These are called cryptography methods, and we will not go into more detail than that for this issue.</p>
+<p>That means we need a slightly different set of rules, that enable us to coordinate such cryptography. This is where HTTPS comes in.</p>
+<h2>What is HTTPS?</h2>
+<p>HTTPS stands for <strong>HTTP Secure</strong>. Why is it secure? I think a screenshot will make it clear. This is a screenshot from Wireshark again, but this time capturing an HTTPS request packet:</p>
+<p><img alt="An HTTPS packet in Wireshark, with the packet data encrypted" src="/issue012_02.png"><br>
+<em>An HTTPS request captured in Wireshark. Notice that the packet header data is now encrypted, and an app would need to know the prearranged encryption code to be able to decode the data.</em>    </p>
+<p>The <code>Authorization: Bearer</code> line is no longer visible; in fact, all the information we saw in the HTTP packet is no longer visible. It has all been encrypted! Any third party intercepting this packet will not be able to decode or modify it without knowing the encryption code that was prearranged between my laptop and the Hypothes.is server.</p>
+<hr>
+<h2>HTTP considered harmful</h2>
+<p>In a more innocent time, it was perfectly all right for passwords to just be sent unencrypted, and for anything and everything to use HTTP. Online shopping wasn’t even a thing then, and there was no financial value to anything that happened on the internet. Hard to believe, I know.</p>
+<p>It is now the year 2018. That is no longer the case. We transmit all kinds of valuable data over the internet: financial transactions and credit card details, home addresses and email addresses and passwords, even pictures. If you are using HTTP, any data you send or receive is being broadcast unencrypted. If you are just browsing and not transmitting critical data, that is fine. But you are really much, much safer using HTTPS.</p>
+<p>Issue summary: HTTPS encrypts the request or response header and body, ensuring that anyone trying to intercept it will not be able to decode the data without knowing the encryption code. It is much safer to use HTTPS in general to protect your personal data from being snooped.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> How do I use HTTPS?</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>a specification? [Issue 6,8]</li>
+<li>a cookie? [Issue 8]</li>
+<li>a cache? [Issue 8]</li>
+<li>XSS? [Issue 8]</li>
+<li>a CDN? [Issue 8]</li>
+<li>Unicode? And what does it have to do with emoji? [Issue 8]</li>
+<li>What are those ‘\r\n’s in the HTTP request packet [Issue 12]?</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2019-03-01T08:00:00+08:00">
+      Fri 01 March 2019
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue011.html">
+                Issue 11: How does wifi work?
+            </a>
+        </li>
+        <li>
+            <a href="/issue013.html">
+                Issue 13: How do I use HTTPS?
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

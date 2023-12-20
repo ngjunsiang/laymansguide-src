@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 83: Structured Query Language</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-07.html">Season 07</a></p>
+  <header>
+    <h2>
+      <a href="/issue083.html" rel="bookmark"
+         title="Permalink to Issue 83: Structured Query Language">Issue 83: Structured Query Language</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2020-08-08T08:00:00+08:00">
+    Sat 08 August 2020
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> A database system follows rules that enable multiple users to send commands to the database at the same time. The system attempts to execute each action one at a time, locking data that is in use by other users, and ensuring that each user does not carry out actions that they are not permitted to. Such systems are better able to prevent data corruption compared to a text-based system.</p>
+<p>Have you experienced the pain of having really huge tables in your spreadsheet, sometimes spanning more than a hundred columns? Then you might know how painful it can be trying to filter data from it, e.g. if your boss just wants a few columns of info from certain rows. Like if he asks for the performance numbers of employees who are up for promotion.</p>
+<p>In a spreadsheet, you would have to apply filters for <code>nextPromoYear</code> to only show the appropriate rows, then you'll have to hide all the other irrelevant columns. Or you'd just copy all more-than-a-hundred columns for those rows into another new spreadsheet, and manually delete the unnecessary columns.</p>
+<p>Database designers don’t want to to do that. You should be able to ask the database to do this querying and filtering for you, and return you only the data you want. But how would that be designed?</p>
+<h2>Structured Query Language: the universal database language</h2>
+<p>Structured Query Language (SQL) is another computer language designed to manage data in databases. It reads <em>almost</em> like English, but more logical and less poetic. It has its own syntax and grammar, which are not the same as in English. And sending a proper SQL query to any database that supports it will get you what you want.</p>
+<p>Here’s what an SQL query for the above info might look like:</p>
+<div class="highlight"><pre><span></span><code>SELECT employeeName, teamName, salesCount, salesTotal FROM SalesData
+WHERE nextPromoYear = 2020
+GROUP BY teamName
+ORDER BY salesTotal;
+</code></pre></div>
+
+<ul>
+<li>The <code>SELECT</code> keyword lets you filter only the columns you want <code>FROM</code> a table</li>
+<li>The <code>WHERE</code> keyword lets you filter only the rows you want, based on one or more criteria</li>
+<li>The <code>GROUP BY</code> keyphrase lets you group the returned data based on values in a column</li>
+<li>The <code>ORDER BY</code> keyphrase lets you sort the returned results according to values in a column</li>
+</ul>
+<h2>A database has no “main view”</h2>
+<p>One difficulty many people have in “upgrading” from a spreadsheet mindset to a database mindset is that they expect to have a “main spreadsheet” where (almost) all the data lives, and where sub-spreadsheets pull data from. In a database, all data lives in separate tables, and are joined only when a query is executed. The only way to get data from a database is to use queries!</p>
+<p>Most websites or software you are using which retrieves data for you usually end up executing one or more queries such as the above to get that data. And the job of the database software is to interpret such commands, pull the data from the various tables together, collate it correctly, and send it to you.</p>
+<h2>A database can give you almost exactly what you want</h2>
+<p>By using these and many other keywords and keyphrases, it is possible to put together a query that gives you only the data you want. SQL has arithmetic functions such as count, average, sum, and it can even return only unique values.</p>
+<p>The tradeoff is that you have to learn another language, and use it regularly enough to understand the ins and outs. This is why every big corporation has a data team that can do this!</p>
+<p><strong>Issue summary:</strong> Structured Query Language (SQL) is a computer language for managing data in databases. It has keywords and keyphrases that let you filter rows and columns, group and order data, perform basic arithmetic on data, and more. It is complex and powerful, but using it in an astute and efficient manner requires specialised training.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S7] Issue 84: JOIN – supercharged VLOOKUP</p>
+<p>I haven’t even touched on SQL’s really powerful features yet. Filtering data from a table is fine, but if my data is spread across many tables, how do I pull that data together? Excel folks have a command they rely on heavily to do this, and it is called <code>VLOOKUP</code>. I’ll show you the SQL version next issue.</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>XSS? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>firmware? [Issue 34]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+<li>What is involved in installing a piece of software? [Issue 48]</li>
+<li>How do apps know where a file starts and ends? [Issue 49]</li>
+<li>What is a password hash? [Issue 63]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2020-08-08T08:00:00+08:00">
+      Sat 08 August 2020
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue082.html">
+                Issue 82: Multiplayer databases
+            </a>
+        </li>
+        <li>
+            <a href="/issue084.html">
+                Issue 84: JOIN – supercharged VLOOKUP
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 48: Of containers and codecs</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+    <meta name="tags" content="compression" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-04.html">Season 04</a></p>
+  <header>
+    <h2>
+      <a href="/issue048.html" rel="bookmark"
+         title="Permalink to Issue 48: Of containers and codecs">Issue 48: Of containers and codecs</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2019-11-23T08:00:00+08:00">
+    Sat 23 November 2019
+  </time></p>
+  <p><strong>Previously:</strong> Data cannot be compressed beyond its predictability limit in a lossless fashion. Lossless compression does not discard any information. It spots patterns in the data and represents them with fewer bits, through a combination of predictive coding, run-length encoding, and entropy coding.</p>
+<p>In past issues this season, I went into some detail about how images and sound are represented as data in computers. I also went into a little detail about lossy compression, in which imperceptible information is discarded, and lossless compression, in which the original information can be reconstructed.</p>
+<p>That progression finally brings me to this issue, where I introduce the first complex data representation: the video file.</p>
+<p>A video file, as we like to think about it, actually is not a simple form of data. It can have one or more of the following:</p>
+<ul>
+<li>video data</li>
+<li>audio data</li>
+<li>subtitles</li>
+<li>annotations (e.g. on Youtube videos)</li>
+<li>chapters (which let you jump to certain points in the video, like a bookmark)</li>
+<li>miscellaneous files (e.g. embedded copyright information)</li>
+</ul>
+<p>These various types of information, if they are time-sensitive (video, audio, and subtitles), have to be presented in synchrony. It’s not like you can just throw them into a simple zip file or folder and the computer knows what to do with them! How does a computer know how to put them together into an engaging movie?</p>
+<h1>The video container</h1>
+<p>What we usually understand as a video file is actually a <strong>video container</strong> format. The common ones we encounter online today are MP4 (<code>.mp4</code>) and Quicktime (<code>.mov</code>). In a more recent past, you would have commonly encountered AVI (<code>.avi</code>), 3GPP (<code>.3gp</code>), and Flash Video (<code>.flv</code>). And if you’re a video techie who dives into DVDs and Blu-ray discs, you would also have seen Video Objects (<code>.vob</code>) and MPEG Transport Streams (<code>.ts</code>) while digging through their contents on a computer.</p>
+<p>The audio, image, and text data in the video container are referred to as <strong>streams</strong>. At the binary level, it’s all 1s and 0s; how does the computer know which part of the file contains audio, image, or text data? This information is in the video container metadata, along with more details on how to load the correct part of the video, audio, or text <em>at the right time</em>.</p>
+<p>If you have come across poorly formed video where the image and audio data is not in sync, or the subtitles come too early/late, you know how critical it is to get this right: the human eye and ear can be pretty sensitive to even slight discrepancies in timing.</p>
+<h1>From still image to video</h1>
+<p>I’ve talked about how pixels are perceived in still image data, now I’ll introduce one more aspect of psychovisuals: how the human eye perceives <em>motion</em>.</p>
+<p>The eye interacts with the brain in strange ways. Over millions of years of evolution, the brain has evolved <a href="https://www.eurekalert.org/pub_releases/2006-07/uops-prc072606.php">a ‘high-power’ and a ‘low-power’ way</a> to receive information from the eye. Under everyday conditions, the brain is able to connect separate frames of image data into a coherent picture and interpretation without being confused by the differences between each frame.</p>
+<p>Decades of experimentation have set the gold standard for motion pictures at 60 frames per second (fps) for a seamless experience. That’s a lot of images per second, and a lot of corresponding video data!</p>
+<p>For everyday purposes, such as online streaming, it is more common to encounter 30 fps, or even 25 fps for older videos. In certain types of video entertainment, such as hand-drawn animation, the human eye can make do with 15 fps and the brain can still piece together an enjoyable performance!</p>
+<h1>Data streams</h1>
+<p>How about the data streams? How are they stored?</p>
+<p>To start with the obvious, they are not stored uncompressed; we saw that a single image of 1920×1080 pixels (that’s 1080p video standard, with 1080 pixels vertically) already requires 6 MiB (<a href="/issue043.html">Issue 43</a>)), while one second of audio requires 86 KiB (<a href="/issue045.html">Issue 45</a>)).</p>
+<p>In addition to the lossy compression techniques I covered in <a href="/issue046.html">Issue 46</a>), software that creates these streams can also compare video frames at different points in time and throw away identical parts (if there’s no scene change, or if the camera is panning slowly, for instance).</p>
+<p>Various video stream formats exist to carry out this lossy compression of video data.</p>
+<ul>
+<li>h264 (a.k.a. AVC, for <strong>A</strong>dvanced <strong>V</strong>ideo <strong>Coding</strong>) is still the most common video stream format in use today.</li>
+<li>h265 (a.k.a. HEVC, for <strong>H</strong>igh <strong>E</strong>fficiency <strong>V</strong>ideo <strong>C</strong>oding) is slated to replace it and is set to become more and more popular.</li>
+<li>Google’s VP9 is attempting to compete with it (with companies such as Netflix already on board).</li>
+<li>FLV (as a video stream format, not a container; I know it’s confusing) is becoming less and less common.</li>
+</ul>
+<p>What about audio? We used to encounter MP3 pretty often, but today most audio stream data is stored as AAC (for <strong>A</strong>dvanced <strong>A</strong>udio <strong>C</strong>oding, the standard that’s meant to replace MP3), Dolby (often on DVDs and Blu-rays), and sometimes Vorbis (<code>.ogg</code>).</p>
+<p>Confused yet? Just remember that the video file you have (carrying the <code>.mp4</code>, <code>.mov</code>, etc file extension) is only the container, and it contains one or more streams of actual data.</p>
+<h1>Encoding and decoding</h1>
+<p>To use these streams, you need a piece of software on your computer. This piece of software en<strong>co</strong>des or <strong>dec</strong>odes the data stream, so it is called a <strong>codec</strong>. If you don’t have the required codecs, you will get an error when you attempt to open a video container file that has one or more streams in that format.</p>
+<p>The operating system you use comes bundled with support for the most common formats, although for free-and-open-source OSes (like some flavours of Linux) this may be hampered by copyright restrictions.</p>
+<p>About a decade ago, when video formats proliferated like a tropical ecosystem, codec packs containing just about every codec you need were a common sight online. Today, with most video moved to online streaming platforms, you no longer need them.</p>
+<h1>MediaInfo: a program to decipher containers and streams</h1>
+<p>You can use a program like <a href="https://mediaarea.net/en/MediaInfo">MediaInfo</a> to help you read the metadata and figure out the container and stream formats. Here’s an example of the information it shows about the only video file on my laptop at the moment:</p>
+<p><img alt="MediaInfo screenshot showing container, video stream, and audio stream information" src="/issue048_01.png"><br>
+<em>Mediainfo screenshot showing metadata for an MP4 file containing an h264 (a.k.a. AVC) video stream and an AAC audio stream.</em>    </p>
+<p><strong>Issue summary:</strong> A video container can hold one or more audio, video, or text data streams. To encode or decode a data stream, you need to have the necessary codec installed<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. Most video runs at 25 or 30 fps, with high-quality video going up to 60 fps. You can use a program like MediaInfo to help you decipher the streams inside a video container file.</p>
+<hr>
+<p>The key part of this issue I really wanted to get to was about codecs. “Why can’t I open this video file?” was a much more popular question in the recent past, but it has gradually faded as more and more video gets moved to Youtube. Today, I suppose the only people who still run into this problem are teachers who come across archives of old videos while hunting for teaching resources.</p>
+<p>But still, I anticipate that I need a gentle introduction to data encapsulation. That’s a complex way of talking about data being nested in a series of shells, like a Matryoshka doll. We’ve seen some examples from the previous season on networking: data stored in an HTTP request, which is encapsulated in a TCP packet, which is encapsulated in an IP packet before it is sent over the Internet.</p>
+<p>Today, I can have video stream information stored in an MP4 container, placed in a folder in a losslessly-compressed ZIP file (for whatever strange reason), and sent over the Internet to somebody else. Data surrounded by shells and more shells. It’s like opening a delivery box: your tiny item inside, surrounded by cardboard packaging, surrounded by bubble wrap, surrounded by a cardboard box, which was probably placed on a pallet and shipped in a shipping container.</p>
+<p>The next few issues will continue to be about encapsulated data, but I’ll start with something simple first: what is a file?</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> What is a file?</p>
+<p>Sometimes, the hardest questions are deceptively simple. We all have an intuitive idea of what a file is. But what actually goes on under the hood?</p>
+<p>See you again next week, next issue.</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>a cookie? [Issue 8]</li>
+<li>XSS? [Issue 8]</li>
+<li>a CDN? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>compiling code into an application [Issue 26]?</li>
+<li>firmware? [Issue 34]</li>
+<li>HTML? [Issue 38]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+<li>What is involved in installing a piece of software? [Issue 48]</li>
+</ul>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Come to think of it, that’s a good topic for a future issue: what goes on when a piece of software is installed on your computer?&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2019-11-23T08:00:00+08:00">
+      Sat 23 November 2019
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+    <p>
+        Tags:
+            <a href="/tag/compression.html">compression</a>
+    </p>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue047.html">
+                Issue 47: Lossless compression
+            </a>
+        </li>
+        <li>
+            <a href="/issue049.html">
+                Issue 49: What is a File?
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

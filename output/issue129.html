@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 129: Cooling</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-10.html">Season 10</a></p>
+  <header>
+    <h2>
+      <a href="/issue129.html" rel="bookmark"
+         title="Permalink to Issue 129: Cooling">Issue 129: Cooling</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2021-07-17T08:00:00+08:00">
+    Sat 17 July 2021
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> Upgradable parts need a slot or socket to be inserted into; these slots/sockets need to be made robust enough, causing them to take up more space than a soldered part. Devices which were designed to be small and portable generally eliminate these as far as possible, opting to have parts directly soldered to the board instead.</p>
+<p>Why do computers need power?</p>
+<p>Other home appliances I can understand. They need to heat up air/water, move air/water around, or extract heat from air/water to move it elsewhere. These things all need energy. But a computer … all it does is move electrons around! All the information in a computer that changes is just electrons moving; that should not need so much power, should it?</p>
+<p>As it turns out, energy-information equivalence theories posit that manipulating information does increase entropy which does involve energy—but this is the Layman’s Guide to Computing, not a physics newsletter. Let’s just say that managing information, in its abstract sense, needs very little energy.</p>
+<h2>Energy usage in computers</h2>
+<p>What happens to all the energy that a computer uses, then? Some miniscule amount of it goes to manipulating information. A tiny amount goes to lighting up LEDs (these devices somehow always have LEDs), and maybe running the cooling fans. The rest of it is wasted as <strong>heat</strong>.</p>
+<p>The history of computing is also a history of less and less wasted heat. The Cray 2 supercomputer, in 1985, needed 195 kW to produce 1.9 gigaflops (1.9 billion <strong>fl</strong>oating-point <strong>o</strong>perations <strong>p</strong>er <strong>s</strong>econd; more context in <a href="/issue123.html">Issue 123</a>)) of computational performance. The iPhone XS, in 2016, needed less than 1 W to produce 1 gigaflop.</p>
+<p>No, I’m not going into the environmental concerns and carbon footprint of computing. We have more tangible and immediate concerns here.</p>
+<p>Because heat is bad for computers. When microprocessor chips heat up, the semiconductor material they are made of no longer behaves as it should; it gets “leaky”, allowing electrons to go where they shouldn’t. The data it handles starts to get corrupted, and it eventually crashes.</p>
+<h2>Thermal throttling</h2>
+<p>In the past, microprocessors were simpler, and had no thermal controls whatsoever; if you allowed them to run as-is, without any cooling assistance, they would just run until they began smoking and sometimes even catch fire (enjoy this <a href="https://www.youtube.com/watch?v=Xf0VuRG7MN4&amp;t=99s">2005 video of a CPU doing just that</a>).</p>
+<p>Today, CPUs are somewhat more sophisticated. Once they start heating up to their thermal limit, onboard thermal control circuitry will attempt to <strong>throttle</strong> the CPU’s performance to keep it at a safe temperature. So you will have a laggy and unresponsive CPU, but at least it’s not on fire!</p>
+<p>Still, most CPUs are going to need some sort of heatsink that helps to draw heat away from it, and dissipate the heat into the surroundings.</p>
+<h2>Getting rid of heat</h2>
+<p>There are two things you need to know about heat loss to the surroundings:</p>
+<ol>
+<li>The larger the surface area, the faster an object loses heat.</li>
+<li>The larger the temperature difference between object and surroundings, the faster the object loses heat.</li>
+</ol>
+<p>CPUs are kind of at a disadvantage here.</p>
+<ol>
+<li>They are really small; the part that is in contact with the heatsink is usually about 400 sq mm (approx. 2 cm by 2 cm, or 0.64 sq in)<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
+<li>The thermal limit for most CPUs is only about 100 °C (212 F), compared to most metals which have theirs in the hundreds or even over a thousand °C</li>
+</ol>
+<h2>Heatsinks</h2>
+<p>In practice, this means that a bare chip can only run about 4 W before it starts to run into its thermal limits (we call this <strong>overheating</strong>). Anything more powerful than a basic home router or smart device (such as the Amazon Echo or Google Home Assistant) will need some sort of heatsink to avoid overheating.</p>
+<p>The simplest way to cool a chip is to slap a piece of metal on it to increase the surface area (factor 2). This is known as <strong>passive cooling</strong>. A paste called <strong>thermal paste</strong> is applied between the heatsink and chip to improve the transfer of heat. To pack as much surface area as possible into a tiny space, this piece of metal usually has long, thin fins, giving the characteristic look of heatsinks:</p>
+<p><img alt="A passive heatsink on a chip" src="/issue129_01.jpg"><br>
+<em>A passive heatsink on the northbridge chip of a computer mainboard<br />Source: found on <a href="https://superuser.com/questions/1043094/difference-between-active-and-passive-heatsink">Superuser</a></em>    </p>
+<p>The effectiveness of passive heatsinks depends on the ambient airflow around it. Some creative setups that manage to get <em>the metal case itself</em> in contact with the CPU can readily cool up to 45 W, with zero fan noise!</p>
+<p>For mobile phones, tablets, and laptops, such heatsinks would add too much to the device thickness. Instead, the CPUs are usually in direct contact with a larger metal surface, sometimes even the metal back of the device; this is why they feel warm to you in the first place. This allows tablets to use up to approx. 8 W of power.</p>
+<p><img alt="Logic board cover in an iPad" src="/issue129_02.jpg"><br>
+<em>The logic board cover in an iPad Pro 11 has copper inside; it helps to spread heat to the rest of the device instead of concentrating it all in one spot<br />Source: <a href="https://www.ifixit.com/Teardown/iPad+Pro+11-Inch+Teardown/115457">iFixit</a></em>    </p>
+<p>Where there isn’t this luxury of space, another option is to use a slim heatsink, and increase its cooling ability by forcing air through it. This form of cooling is called <strong>active cooling</strong>, and usually done with a fan of some sort, a popular option for thicker laptops. This allows laptops to run between 25–45 W, and desktop computers to run 65 W and hotter (with larger heatsinks, of course)</p>
+<p><img alt="An active heatsink on a chip" src="/issue129_03.jpg"><br>
+<em>An active heatsink on the CPU of a computer mainboard<br />Source: found on <a href="https://superuser.com/questions/1043094/difference-between-active-and-passive-heatsink">Superuser</a></em>    </p>
+<p>These numbers are for stereotypical mobile devices, laptops, and desktops; stranger or hybrid designs may have different cooling capacities (e.g. a tiny cube desktop might only have 25–35 W of cooling capacity).</p>
+<p><strong>Issue summary:</strong> The larger the surface area, the faster an object loses heat. The larger the temperature difference between object and surroundings, the faster the object loses heat. Heat is bad for computers, and CPUs will need cooling to be able to process computations quickly. A mobile phone thus typically uses no more than 4 W of power, a laptop can use 25–45 W, and a desktop can usually use 65 W and more. Two popular ways of increasing the cooling capacity of a device is to attach a larger piece of metal to the chip (passive cooling), or use a fan to force air over the heatsink (active cooling).</p>
+<p>If you walk away with only one thing from this issue, it’s that heat dissipation constrains the max performance for any device, and heat dissipation is usually constrained by the surface area available for cooling.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S10] Issue 130: Power limits</p>
+<p>Computers turn electrical power to heat, drawing a miniscule amount off for computation. But where does that power come from? In the last issue of Season 10, I’ll touch on a highly underrated hardware component: the power supply.</p>
+<p>This and more, next issue!</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>XSS? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+</ul>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Multiple CPUs are produced from a single semiconductor wafer. Keeping CPUs small maximises the yield from manufacturing, and reduces the chance of a manufacturing error on any single CPU. This is going to take a whole ’nother season to explain …&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2021-07-17T08:00:00+08:00">
+      Sat 17 July 2021
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue128.html">
+                Issue 128: Upgradeability
+            </a>
+        </li>
+        <li>
+            <a href="/issue130.html">
+                Issue 130: Power limits
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

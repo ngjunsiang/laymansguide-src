@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 44: Image resolution</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-04.html">Season 04</a></p>
+  <header>
+    <h2>
+      <a href="/issue044.html" rel="bookmark"
+         title="Permalink to Issue 44: Image resolution">Issue 44: Image resolution</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2019-10-26T08:00:00+08:00">
+    Sat 26 October 2019
+  </time></p>
+  <p><strong>Previously:</strong> Colour is stored as a combination of red, green, and blue. In a computer system, each
+colour is stored as one byte (8 bits), allowing for 256 different levels. An image is made up of many such pixels of colour.</p>
+<p>An image is two-dimensional and certainly much larger than a single pixel. How do we talk about its size?</p>
+<h2>Image resolution</h2>
+<p>It is common to hear people refer to an image’s size as its pixel size. When we say that an image has a resolution of 1000×3000 pixels, that means it is 1000 pixels wide by 3000 pixels high. In other words, the image is made up of 3 million pixels of colour, arranged in a grid 1000 pixels wide by 3000 pixels tall.</p>
+<p>But how large is this image <em>physically</em>? Well, that’s a harder question to answer …</p>
+<h2>Resizing</h2>
+<p>You see, on a computer, you can resize an image as you like. I’m sure you have done it many times, preparing for a presentation or just creating a document. So you can make that image 1cm×3cm, or 10cm×30cm. But how large is an image originally meant to be?</p>
+<h2>Image resolution: a ratio between dots and inches</h2>
+<p>In more finicky circles, the term “resolution” is used in another way: to refer to the ratio of pixels to a physical dimension, usually in inches (this is a legacy thing, I can’t explain why it’s imperial and not metric).</p>
+<p>For example, if that 1000×3000 image was meant to be displayed as a 10cm×30cm image on screen (approx. 4 inches by 12 inches), it would have a resolution of 250 pixels per inch (<strong>PPI</strong>)— 1000 pixels ÷ 4 inches. If you could see pixels, and you took out a ruler to count the number of dots in a 1-inch line across or down the image, there would be 250 pixels.</p>
+<p>If it was displayed as a 100cm×300cm image instead, that printed image would have a resolution of 25 pixels per inch (1000 pixels ÷ 40 inches). And it would look 10 times blurrier; each image pixel would be about 1mm wide!</p>
+<p>So image resolution, as pixels per inch, also gives a measure of sharpness of the image.</p>
+<p>For printed images, the same idea applies: a 1000×3000 image printed as a 10cm×30cm image has a resolution of 250 dots per inch (<strong>DPI</strong>) — 1000 ÷ 4 inches. It’s dots instead of pixels because a printer lays down dots of colour rather than displaying pixels (I’ll go into more detail in a future season on computer accessories and peripherals).</p>
+<h2>Monitor resolution</h2>
+<p>When you buy or browse computer monitors, you would have heard the monitor’s pixel dimensions (number of pixels across and down) referred to as its resolution. Its measure of sharpness is usually listed under a label like DPI or PPI, if not pixel density. If not, you can calculate the PPI of a monitor yourself: Just take the horizontal pixel dimension (number of pixels in the screen horizontally) and divide it by the display width, or take the vertical pixel dimension and divide by the height.</p>
+<p>Your OS might have a setting for fixing blurry apps, or making small text appear larger. These are typical problems faced on a high-PPI screen. But how high does the PPI need to be for us to get a reasonably sharp image?</p>
+<h2>Retina: a brand name for high pixel density displays</h2>
+<p>In 2010, the late Steve Jobs first used the term Retina referring to the iPhone 4. I suppose he meant to describe a class of devices with a display so sharp that the pixels were practically imperceptible; it wasn’t that long ago that if you squinted a little, you could make out the pixels on your monitor or laptop. High pixel density displays are a lot more common today, so you would probably have to visit the budget section of the computer monitor department in a store to see the low-pixel-density effect again.</p>
+<p>So what’s the minimum PPI required to have a Retina display? Apple doesn’t specifically designate a number, but it appears that <a href="https://en.wikipedia.org/wiki/Retina_display">the minimum PPI of their Retina devices is 218</a>. Devices that will be further to your eye can get away with about 220 PPI, while those that will be closer to your eyes will need a higher PPI (up to 400 on the iPhone 6).</p>
+<p>But all of that is useless if you scale up an image and still view it at a low <em>image PPI</em>!</p>
+<h2>Why do my printed images come out blurry?</h2>
+<p>Here’s a problem I think some of you might have encountered: You are editing a picture on your laptop or computer monitor, and it looks just fine. You send it to the printer and it comes out really blurry. What happened?</p>
+<p>What happened is that the image was presented in two different ways. On a screen, it appears as a grid of pixels. a 14" laptop with a 1920×1080 screen resolution actually only has a screen PPI of 157. An image at 100% zoom (1 image pixel displayed as 1 screen pixel) on such a screen would appear fine, because it would be displayed alongside other screen elements (such as the application window) that appear sharp.</p>
+<p>But once it is printed, it appears as a collection of ink dots on paper. These dots are a lot finer than the pixels on a screen, so any blurriness is immediately apparent. Your computer or laptop screen is a poor device for assessing print sharpness! To get a better sense of print sharpness, you will want to view the image on a high-PPI display (such as an iPad) and adjust the zoom such that the image on screen has the same size when printed.</p>
+<p>For printing images, you will want to make sure your image has a resolution of at least 300 DPI; at least 600 DPI is ideal. You can also calculate this by taking the horizontal pixel dimension of the image, and dividing by the horizontal size you intend to print it at.</p>
+<p><strong>Issue summary:</strong> An image’s resolution describes its dimensions. Its pixel resolution gives an indication of its physical size (if printed or displayed on a screen), and thus its sharpness. A display with imperceptibly small pixels is often referred to as a Retina display (Apple’s branding) or as a high-PPI display; this requires at least 220 PPI nominally. For an image to be printed sharply, it needs at least 300 DPI.</p>
+<hr>
+<p>It took a lot of discipline this time to not burrow down rabbit holes (like image-to-screen pixel grid alignment); that would have taken a lot longer than an hour to write.</p>
+<p>Pixels and dots are an abstraction that anyone working with computers have to think in terms of, and the relationship between them to physical size can be really tricky to articulate clearly. I hope in this issue I have at least introduced you, my dear readers, to PPI and DPI. And if you work with printers, I think knowing what is going on is a big relief, and takes away the stress from guesswork. Many times I have saved myself the stress of trying to get a sharp banner printed by doing the DPI calculations and realising that there is no way that is possible; I would need too large an image!</p>
+<p>Okay, I think we’re done with basic colour and pixel theory! Next up, basic sound theory, and then we can move on the compression :)</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> Audio, a sampling of values</p>
+<p>Sound is so easily taken for granted, but how exactly is it represented in the computer, and how much information is required to store sound? Stay tuned.</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>a cookie? [Issue 8]</li>
+<li>XSS? [Issue 8]</li>
+<li>a CDN? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>compiling code into an application [Issue 26]?</li>
+<li>firmware? [Issue 34]</li>
+<li>What is HTML? [Issue 38]</li>
+<li>What is OpenType? And what are fonts anyway? [Issue 42]</li>
+<li>What is compression? [Issue 43]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2019-10-26T08:00:00+08:00">
+      Sat 26 October 2019
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue043.html">
+                Issue 43: Images, a mosaic of 3 colours
+            </a>
+        </li>
+        <li>
+            <a href="/issue045.html">
+                Issue 45: Audio, a sampling of values
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 54: Compiling programming code into CPU instructions</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+    <meta name="tags" content="cpu" />
+    <meta name="tags" content="memory" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-05.html">Season 05</a></p>
+  <header>
+    <h2>
+      <a href="/issue054.html" rel="bookmark"
+         title="Permalink to Issue 54: Compiling programming code into CPU instructions">Issue 54: Compiling programming code into CPU instructions</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2020-01-04T08:00:00+08:00">
+    Sat 04 January 2020
+  </time></p>
+  <p><strong>Previously:</strong> CPUs are unconscious slaves that simply execute instruction after instruction, at a very fast rate.</p>
+<p>Last issue, I introduced the idea of the CPU has an unconscious instruction-executing machine. It cannot process programming code directly; that code must first be compiled into CPU instructions.</p>
+<h2>The compiler converts programming code to CPU instructions</h2>
+<p>Last issue, I showed you a short snippet of CPU instructions:</p>
+<div class="highlight"><pre><span></span><code><span class="mf">1</span><span class="w"> </span><span class="kr">LOAD</span><span class="w"> </span><span class="mf">1</span><span class="w">   </span><span class="n">R1</span>
+<span class="mf">2</span><span class="w"> </span><span class="n">ADD</span><span class="w">  </span><span class="mf">2</span><span class="w">   </span><span class="n">R1</span><span class="p">,</span><span class="w"> </span><span class="n">R2</span>
+<span class="mf">3</span><span class="w"> </span><span class="n">MOV</span><span class="w">  </span><span class="n">R2</span><span class="p">,</span><span class="w"> </span><span class="n">MEM1011</span>
+</code></pre></div>
+
+<p>But that’s not the kind of code we usually see in movies, on the screens of geeks, and in stock images. What gives?</p>
+<p>Most code we see looks something like (example from Python):</p>
+<div class="highlight"><pre><span></span><code>num1 = 1
+num2 = 2
+sum = num1 + num2
+print(f&#39;The sum of {num1} and {num2} is {sum}&#39;)
+</code></pre></div>
+
+<p>How does that get turned into CPU instructions? That job is performed by a piece of software known as the <strong>compiler</strong>.[^1] The compiler compiles programming code into an <strong>executable file</strong> (sometimes shortened to executable), which contains the actual instructions executed by the CPU. This is why, in Windows, some files have a <code>.exe</code> file extension — those are <strong>exe</strong>cutable files!</p>
+<p>[1]: Purists will argue with me that Python technically runs through an interpreter, not a compiler. At this point, the distinction between the two terms for layfolks is not critical, and I choose clarity over accuracy at this point until I can delve into more detail in a future issue.</p>
+<p>The compiler itself is also a piece of software that reads in programming code (a process known as <strong>parsing</strong>), and follows its own instructions to break it down into CPU instructions.[^2]</p>
+<p>[2]: If you find yourself wondering “how was the first compiler written? Which came first: the compiler code, or the compiler executable? How would a compiler compile its own code into its executable?”, you might be a prime candidate for a Computer Science degree programme :)</p>
+<p>Okay, I think I am done talking about CPU instructions for now. On to the next piece of the puzzle: memory.</p>
+<h2>Computer memory: addressable bytes</h2>
+<p>In the CPU instruction snippet above, there was a line that involved storing data into memory:</p>
+<div class="highlight"><pre><span></span><code><span class="mf">3</span><span class="w"> </span><span class="n">MOV</span><span class="w">  </span><span class="n">R2</span><span class="p">,</span><span class="w"> </span><span class="n">MEM1011</span>
+</code></pre></div>
+
+<p>This line means “store the value in slot R2 into the memory location 1011”. Next issue, I will delve into what these memory locations are, and build out our mental model of how a CPU works.</p>
+<p><strong>Issue summary:</strong> To get useful output from a CPU, we must translate the operations we want it to perform into CPU instructions, in a process known as <strong>compiling</strong>. Most compilers convert programming code into CPU instructions.</p>
+<p>A very short issue, just as I like it :) There’s something philosophical about the process of a CPU beginning with no knowledge of what to do, and slowly bootstrapping a library of code-to-instruction conversions through a compiler. These and other puzzles about information manipulation are what computer scientists love studying! And this is one good reason to differentiate Computer Science from general Computing: if you take up a degree in Computer Science and expect to learn more about general Computing, you might end up being disappointed.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> Addressing memory</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>a cookie? [Issue 8]</li>
+<li>XSS? [Issue 8]</li>
+<li>a CDN? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>~~compiling code into an application [Issue 26]?~~</li>
+<li>firmware? [Issue 34]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+<li>What is involved in installing a piece of software? [Issue 48]</li>
+<li>How do apps know where a file starts and ends? [Issue 49]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2020-01-04T08:00:00+08:00">
+      Sat 04 January 2020
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+    <p>
+        Tags:
+            <a href="/tag/cpu.html">cpu</a>
+            <a href="/tag/memory.html">memory</a>
+    </p>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue053.html">
+                Issue 53: The CPU is an instruction-obeying slave
+            </a>
+        </li>
+        <li>
+            <a href="/issue055.html">
+                Issue 55: Addressing memory
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

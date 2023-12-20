@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 93: What's in a web app?</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+    <meta name="tags" content="app" />
+    <meta name="tags" content="cache" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-08.html">Season 08</a></p>
+  <header>
+    <h2>
+      <a href="/issue093.html" rel="bookmark"
+         title="Permalink to Issue 93: What's in a web app?">Issue 93: What's in a web app?</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2020-11-07T08:00:00+08:00">
+    Sat 07 November 2020
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> Sandboxing is a catch-all term for the concept of ensuring apps don’t have access to resources outside of their privileges. Sandboxed apps are generally safer than non-sandboxed apps in terms of security, and easier to manage, terminate, and uninstall.</p>
+<p>The simplest apps we use do not <em>generate</em> data; think about your calculator, which simply crunches calculations and displays the result (conveniently ignoring the ones with memory slots for storing calculated values …). Or currency converters, or timezone converters … no storage needed.</p>
+<p>So how do web apps store data?</p>
+<h2>Data storage in web apps</h2>
+<p>As a web-first programming language, Javascript programs were not expected to have to access, open, or create files on the device. That would make it really easy for a malicious script to download malware to a folder, where it could be accidentally invoked! Instead, it relies on other features to store and retrieve data for specific purposes:</p>
+<ol>
+<li>To remember user logins (the “Remember me” feature you see on almost every login screen), web apps can set/unset cookies (<a href="/issue069.html">Issue 69</a>)) in the browser.</li>
+<li>To obtain files for use, the web app can invoke a File Select dialog for the user to choose a file, such as for uploading to the server. The web app is not allowed to access arbitrary files this way.</li>
+<li>If data needs to be provided to the user in the form of a file, it can be stored on the disk with the user’s permission through a download dialog.</li>
+<li>The web app can store data through a browser feature called <strong>localstorage</strong>. This is a <em>key-value database</em>, managed by the browser, that allows you to store data (the <em>value</em>) tagged to a <em>key</em>. The same way a hotel lobby holds your luggage for you and lets you access it through a luggage tag, or the way you can rent a locker for storing your stuff (<em>value</em>) and access it through the locker <em>key</em>.</li>
+<li>For data that is only needed in that tab (e.g. partially filled form data), and can be safely deleted when the tab is closed, the browser provides <strong>sessionstorage</strong>. This works similarly to localstorage.</li>
+<li>For more significant amounts of data, web apps can use IndexedDB, a more advanced database also managed in the browser. It is a document database (<a href="/issue088.html">Issue 88</a>)), with each document tagged to a key in a key-object system.</li>
+</ol>
+<p><img alt="Firefox DevTools, showing the Storage tab. Local Storage is selected, displaying a list of keys and values." src="/issue093_01.png"><br>
+<em>DevTools in Firefox lets you inspect the data that web apps keep.<br />The Storage tab shows what is stored in cache, cookies, IndexedDB, localstorage, and sessionstorage.<br />IndexedDB, localstorage, and sessionstorage are key-value databases that store the data (value) tagged to a key.</em>    </p>
+<h2>Requesting and receiving data on a server</h2>
+<p>So a web app doesn’t much in the way of storage access, but they were not designed for that at all. Most of the heavy lifting is not meant to be done in the browser, but elsewhere, on a server. A web app would send heavy workloads to a server (typically owned by the same company) through an API (<a href="/issue004.html">Issue 4</a>)) through a web request (<a href="/issue009.html">Issue 9</a>)), and receive the results through a server response (<a href="/issue008.html">Issue 8</a>)).</p>
+<p>A web app would also need resources for display: images, videos, PDFs, ... these are requested and received via web requests as well.</p>
+<p>Cool, so a web developer can just write Javascript code to get the data and resources it needs, display stuff to the user, wait for the user to interact, and then make more requests to the server to calculate stuff, or send the app more data (such as the user’s tweets or posts or other stuff).</p>
+<p>Just one problem with this: if internet connectivity is intermittent or laggy, none of this is going to work! Even when the internet is fine, it makes for a very slow experience. How do we improve this?</p>
+<p>One way is to cache (<a href="/issue039.html">Issue 39</a>)) as many things as possible: header images, logos, emojis, icons, … these can all be stored in localstorage and accessed even when the app is offline.</p>
+<p>Some apps, such as Google Docs, will also store user data in IndexedDB for a smoother experience—imagine having to wait for a request-response round-trip to the Google servers for every word you type. The data gets modified in IndexedDB first, and then synced to the servers. If the device gets disconnected from the internet, at least you will still be able to read whatever is in IndexedDB (and if you have enabled offline access, you can even edit the data in IndexedDB, and the Docs app will attempt to sync it to the server once connectivity is restored).</p>
+<h2>Running background processes</h2>
+<p>Then what’s with these popups on some websites asking you to install them? And how are some websites actually able to send us notifications? Something has got to be running in the browser background for these to happen, and none of what we have learned so far explains that … what gives?</p>
+<p>Enter <strong>Progressive Web Apps</strong> (PWAs). With some Googling and lots of reading on StackOverflow and other web documents, a web developer can get started meeting the various requirements needed to create a PWA.</p>
+<p>And in exchange for that inconvenience, she can use <strong>service workers</strong>: javascript scripts that run on their own and are not dependent on the browser tab staying open. These service workers can listen for messages from the server, carry out some processing, make requests and receive responses, all independently from the app running in the tab. On mobile devices, they are gradually gaining more features as well, such as access to the Share feature (enabling users to share content with the PWA), and being able to access cameras, microphones, location services, and other things (provided the user grants permission).</p>
+<h2>Installing web apps</h2>
+<p>Okay, wait. WHAT?!</p>
+<p>I imagine most folks would be okay with cookies, with localstorage and even IndexedDB. You want things from an app, you gotta give it space to work, right? That’s fair.</p>
+<p>But service workers, what?! You mean if I click Install, these apps get to run stuff <em>in the background</em> in my browser, even after the tab is closed? If I’m not cool with that, I can just choose not to install and then these service workers won’t get installed, right?</p>
+<p>Umm, I don’t know how to break this to you gently, but nope.</p>
+<p>Once you visit a site (URL) with a registered service worker, your browser automatically registers it. The only thing the Install button does is to add a shortcut on your Desktop/Home Screen, and perhaps enable some features (such as mobile Share). But the service workers are already there.</p>
+<h2>Uninstalling web apps</h2>
+<p>And now the good news.</p>
+<p>Because web apps are so cleanly sandboxed, they don’t stick tendrils into your operating system or device storage (beyond the space reserved by the browser, anyway). Removing apps and their files just involves clearing your browser cache and website storage. You will, however, have to deregister the service workers manually; please google for instructions.</p>
+<p><strong>Issue summary:</strong> Web apps have limited access to the device’ storage, and can only store data in browser-managed databases. Progressive Web Apps (PWAs) can additionally register service workers that run in the background. Because they are so cleanly sandboxed, they can be easily removed by clearing the browser cache and storage, and deregistering any service workers manually.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S8] Issue 94: Why do web browsers take up so much memory?</p>
+<p>I’m finally starting to answer one of the sometime-in-the-future questions below, and can’t wait to get to the meat of “What is involved in installing a piece of software?”; it’ll be a ride! :)</p>
+<p>Before I move on to compare web apps with mobile apps, I’m going to take a short detour next issue and answer a question I hear all too often: “Why do web browsers take up so much memory?”</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>XSS? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>firmware? [Issue 34]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+<li>What is involved in installing a piece of software? [Issue 48]</li>
+<li>How do apps know where a file starts and ends? [Issue 49]</li>
+<li>What is a password hash? [Issue 63]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2020-11-07T08:00:00+08:00">
+      Sat 07 November 2020
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+    <p>
+        Tags:
+            <a href="/tag/app.html">app</a>
+            <a href="/tag/cache.html">cache</a>
+    </p>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue092.html">
+                Issue 92: All about apps
+            </a>
+        </li>
+        <li>
+            <a href="/issue094.html">
+                Issue 94: Why do web browsers take up so much memory?
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

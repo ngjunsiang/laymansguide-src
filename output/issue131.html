@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 131: What do early CPUs and startup founders have in common?</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+    <meta name="tags" content="cache" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-11.html">Season 11</a></p>
+  <header>
+    <h2>
+      <a href="/issue131.html" rel="bookmark"
+         title="Permalink to Issue 131: What do early CPUs and startup founders have in common?">Issue 131: What do early CPUs and startup founders have in common?</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2021-07-31T08:00:00+08:00">
+    Sat 31 July 2021
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> AC power from the wall uses electric current that alternates directions, while DC power from batteries uses electric current that flows in one direction only. All electronics are DC-only, and require an AC-DC adapter to be powered from the wall. The AC-DC conversion produces a significant amount of heat; AC-DC adapters are usually external unless the device has sufficient space or cooling capacity for it.</p>
+<p>This season, let’s open up that computer case and see what’s inside. Where does everything fit, and how does all that information get around? More importantly, how are computers able to cover such a large range of sizes, from towering desktops to tiny smartphones?</p>
+<h2>What a computer wants, what a computer needs</h2>
+<p>The common model of a computer is that it … computes. It calculates. It takes in numbers, and spits out more numbers.</p>
+<p>That’s not quite right.</p>
+<p>While a computer does carry out compute operations, these are far outnumbered by load/store operations (<a href="/issue058.html">Issue 58</a>)). Why so much loading and storing of data?</p>
+<h2>Moving data</h2>
+<p>The CPU itself has precious little storage (&lt;20 MB of cache storage); it is only a wee little chip! Most of the data in a computer is stored in a hard drive or solid state drive; let’s just call them storage drives for now.</p>
+<p>So CPUs have to read data from a storage drive. This is a slow operation, because storage drives are slow; writing to storage drives is even slower than reading from them.</p>
+<p>In the meantime, the CPU needs a place to dump working data; this is computer memory (2–32GB). Memory is slower than the CPU’s cache, but much faster than a storage drive.</p>
+<p>That’s 3 places to stash data so far: storage drives, CPU cache, and computer memory. You with me so far?</p>
+<h2>Pipelines</h2>
+<p>The next place that often requires lots of data is the graphics card (<a href="/issue123.html">Issue 123</a>)). For you to play a video game, the computer has to:</p>
+<ol>
+<li>Load game data from the storage disk,</li>
+<li>Store most of it in memory while it’s doing some number crunching in its cache,</li>
+<li>Get the crunched numbers to the graphics card for rendering graphics (<a href="/issue122.html">Issue 122</a>)),</li>
+<li>Load more data from memory while crunching more numbers, and passing them to the graphics card.</li>
+</ol>
+<p>This involves far more loading and storing than computation. And there are limitations to how quickly data can be transferred.</p>
+<h2>Throughput</h2>
+<p>How does data get transferred? Through very fine wires usually. One side (e.g. the CPU) applies a voltage to the wire, the other side (e.g. memory) checks the voltage on the wire. No applied voltage = 0, applied voltage = 1.</p>
+<p>How does the CPU know when to apply the voltage, and the memory know when to check it? These operations are synchronised through cycles, like a highly coordinated factory. A CPU operates on a frequency of up to billions of cycles per second, each cycle potentially transferring one bit of data (<a href="/issue040.html">Issue 40</a>)) if there are no delays.</p>
+<p>Typically, the transfer rate is somewhat slower; how do we transfer more data per second? By adding more wires! With two wires, we can transfer two bits per cycle; four wires = four bits per second, eight wires = 8 bits per second … at some point, we run into a different problem. The CPU is a small chip, and there is only so much surface area for us to connect wires to.</p>
+<p><img alt="An Intel Skylake CPU, showing the pins underneath" src="/issue131_01.jpg"><br>
+<em>An Intel Skylake desktop CPU.<br />Each gold contact on the under-surface connects to a pin on the motherboard when the CPU is seated properly in its socket<br />Source: <a href="https://en.wikipedia.org/wiki/Skylake_(microarchitecture)">Wikipedia</a></em>    </p>
+<p>Well, that just sucks.</p>
+<h2>The limits of one chip</h2>
+<p>Come to think of it, humans are much the same; we only have two hands and two legs, there are limits to how fast we can do things, and limits to how long we can stay awake working. We mostly get around these limitations by learning to delegate.</p>
+<p>In the same way, computer designs evolved to delegate more work to secondary chips, leaving the CPU to focus on computation. We’ll explore the gradual evolution of these architectures, so you can better appreciate the elegance of the Apple M1’s design ;)</p>
+<p><strong>Issue summary:</strong> CPUs have limited throughput, since there is a max frequency they can operate at, and a limit to the number of wires they can be connected to (throughput = no. of wires × frequency). Later designs of early computers increased the capability of computers by delegating more work to secondary chips.</p>
+<p>The more I learned about computer architecture, the more I see parallels to startups and organisational culture in general. I was really looking at ways of organising information flows, and observing how the computational limitations of different parts influence the design of the whole chip! This is a constant work in progress, which is why we keep seeing new CPU designs emerge each year.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S10] Issue 132: the AT form factor (pre-1995)</p>
+<p>Let’s start from—nah, I wont go all the way back to the beginning, just to the point where computer architecture was already recognisable in its early modern form. Next issue, a big welcome for the AT form factor!</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>XSS? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2021-07-31T08:00:00+08:00">
+      Sat 31 July 2021
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+    <p>
+        Tags:
+            <a href="/tag/cache.html">cache</a>
+    </p>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue130.html">
+                Issue 130: Power limits
+            </a>
+        </li>
+        <li>
+            <a href="/issue132.html">
+                Issue 132: the AT form factor (pre-1995)
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

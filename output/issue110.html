@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 110: Safeguarding against data corruption with a journal</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+    <meta name="tags" content="memory" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-09.html">Season 09</a></p>
+  <header>
+    <h2>
+      <a href="/issue110.html" rel="bookmark"
+         title="Permalink to Issue 110: Safeguarding against data corruption with a journal">Issue 110: Safeguarding against data corruption with a journal</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2021-03-06T08:00:00+08:00">
+    Sat 06 March 2021
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> Fast writes dump the data to a write cache (in computer memory), then update the file table to look like the file is already written to disk. However, if power is cut before all data is properly moved from the write cache to disk, the data in memory is lost, and file corruption usually results.</p>
+<p>Last issue, I showed how a write cache can “speed up” file write operations by allowing data to be dumped to a write cache in memory first. The OS “completes” the operation, making it look the file has been successfully written to disk, when in actuality parts of it are still in memory waiting to be written. This works fine as long as we don’t suffer catastrophic power loss before everything gets put on disk; once power is cut, all the contents of the write cache in memory are lost!</p>
+<p>All right, we are into worst-case scenarios here. How do we recover from something like this?</p>
+<p>The first thing we’ll need to know is what had happened; what data made it through and was written, and what data didn’t make it. We need a record of changes to the disk.</p>
+<h2>File journals</h2>
+<p>This record, in a filesystem, is called a journal. Keeping a journal requires more CPU cycles and can slow down file write operations somewhat, but as disk performance increases, this is increasingly considered a worthwhile tradeoff for data reliability.</p>
+<p>The default filesystems on major OSes today are all journalled, and NTFS is no exception. I’m not going into details of how this is done, and instead will list the things that a journal enables Windows 10 to do.</p>
+<h2>Disk recovery with a journal</h2>
+<p>So what happens when power is cut and a computer reboots? It goes into recovery mode, where it checks the log for incomplete operations, and attempts to complete them. Any files that were “lost” (i.e. file table records that have been separated or desynced from the actual data) get moved to a separate folder, and the disk is considered okay for use again.</p>
+<h2>Disk transaction rollbacks</h2>
+<p>When installing a new application, sometimes you encounter that odd screen where the installation fails because something that needed to happen couldn’t happen. Oh great, the application could not complete installing, and now we have to remove it ... how do we undo all the things that were done?</p>
+<p>The journal lets you see a list of all the changes that were made to the disk from the start of the installation, so that you can perform the equivalent steps to reverse their effect.</p>
+<h2>System restore with journals</h2>
+<p>The same thing happens with some Windows updates. Windows stores a lot of the old data as backup, in case you ever want to roll back some system changes, or return to an older version of Windows (minus some breaking updates, for example). And again, the filesystem journal lets you do that, by identifying which changes were responsible for the update.</p>
+<p><strong>Issue summary:</strong> Filesystem journals are a record of changes made to the disk, so as to enable those changes to be rolled back, or to be completed properly in case of sudden interruption.</p>
+<p>Journals are serious magic, and are what enable OSes to recover gracefully from a crash. They are kind of divorced from everyday experience, because it is usually unwise to mess with them directly, but I hope the past few issues explain why it is important to not get impatient with your computer when it seems a little slow moving data round.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S9] Issue 111: Copying, moving, and deleting files</p>
+<p>I am done with the more technical stuff! Now we can really move on to more everyday experiences, like copying, deleting, and moving files :)</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>XSS? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>firmware? [Issue 34]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+<li>a driver file and why do I need one? [Issue 98]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2021-03-06T08:00:00+08:00">
+      Sat 06 March 2021
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+    <p>
+        Tags:
+            <a href="/tag/memory.html">memory</a>
+    </p>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue109.html">
+                Issue 109: Speeding up data operations
+            </a>
+        </li>
+        <li>
+            <a href="/issue111.html">
+                Issue 111: Copying, moving, and deleting files
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

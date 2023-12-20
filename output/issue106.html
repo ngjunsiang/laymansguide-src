@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 106: Organising storage</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+    <meta name="tags" content="operating system" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-09.html">Season 09</a></p>
+  <header>
+    <h2>
+      <a href="/issue106.html" rel="bookmark"
+         title="Permalink to Issue 106: Organising storage">Issue 106: Organising storage</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2021-02-06T08:00:00+08:00">
+    Sat 06 February 2021
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> The OS takes care of booting up, login and user management, window management, memory allocation, storage interfaces, background services, peripheral management, and much more. Access to these services, where allowed, is provided in the form of software libraries that developers can use.</p>
+<p>So far, what we understand about storage is that apps send data to an operating system (OS), which then stores it on storage devices (such as hard disks, solid state disks, etc) for later retrieval. And in <a href="/issue099.html">Issues 99</a>) &amp; <a href="/issue100.html">100</a>), I explained that eventually everything gets stored as a file.</p>
+<p>What exactly is a file?</p>
+<h2>Files in operating systems</h2>
+<p>Let’s start from what we know about files. When we open File Explorer in Windows and open any folder (aka <strong>directory</strong>), we see a bunch of things with colourful icons, that we know of as files. And we also see things with folder icons that we know as folders (or directories).</p>
+<p>They also have additional details displayed alongside them, such as the date/time (henceforth referred to as datetime) it was created, the last datetime it was modified, and the last datetime it was accessed. You might also get additional information, such as what type of file it is, its size, the user who owns that file, etc—in other words, the <strong>metadata</strong> of the file. That’s a fancy word to refer to data (datetime, filetype, size, …) <em>about</em> the data (the files).</p>
+<p>Now, a brief introduction to the hardware, where the actual files get stored.</p>
+<h2>Introducing storage</h2>
+<p>When you buy a hard drive (or solid state drive) and connect it up to your computer (or laptop), the computer does not have fine-grained control over every bit of storage. Instead, the hard drive gets presented as a huge volume of space, like a warehouse.</p>
+<p>This volume is organised into <strong>sectors</strong> (these days, a modern hard drive sector is 4KiB), which are the smallest unit of storage on a hard disk. If you have to store 1KiB of data, it will still take up an entire sector; the rest of the space is filled with zeroes. This is similar to the way a warehouse is managed by pallets, and not by single cardboard boxes. If your shipment does not fill the entire pallet, the rest of the space is “wasted”.</p>
+<p>Each sector has an address (yes, just like memory!). To store data on the hard disk, the OS has to “tell” the hard disk a) what data to store, and b) the address at which to store the data.</p>
+<p>The hard drive itself does not inherently have any system for managing your files or folders; it can’t tell you where <code>draft1.docx</code> is stored, nor tell you what the size is. It only takes care of storing data at addresses, and retrieving data from addresses!</p>
+<h2>Managing storage</h2>
+<p>And this is where the operating system comes in. An operating system installing itself is like a company occupying a warehouse. You’ve got to impose some kind of order on the space!</p>
+<p>In an operating system, this job is delegated to the <strong>file system</strong>, a sort of facility director who manages the storage space. Windows uses <a href="https://en.wikipedia.org/wiki/NTFS">NT File System</a> (<strong>NTFS</strong>) for its own space, MacOS uses <a href="https://en.wikipedia.org/wiki/High_Performance_File_System">High Performance File System</a> (<strong>HPFS</strong>), while portable storage devices (e.g. USB drives) often use <a href="https://en.wikipedia.org/wiki/File_Allocation_Table">File Allocation Table</a> (FAT).</p>
+<p>An operating system that is not “aware” of other filesystems will not be able to read storage devices formatted with those filesystems. This is why you can’t just take out a disk from a Mac system and expect it to open in Windows when plugged in. Windows can read HPFS disks, but cannot write data to them. Both OSes can handle FAT (phew!), which is why it is possible to pass files from a Windows user to a Mac user with a portable flash disk.</p>
+<h2>How filesystems work</h2>
+<p>Intuitively, we might imagine that the metadata for each file gets stored with its data. This is like storing the shipment details of each package with the package itself. But when you need to find a particular shipment in the warehouse, you can’t be checking every single rack!</p>
+<p>Instead, you would store shipment records in a master file, usually in some kind of separate office, which would list the shipment details alongside the location of the cargo (e.g. by rack number and level). The equivalent of this master file on a filesystem is the <strong>file table</strong>.</p>
+<p>In NTFS, this is the Master File Table (MFT). The MFT lists all the files on the disk (by their full path, e.g. <code>C:\Windows\system32\notepad.exe</code>), along with its metadata. This makes it easy for Windows to show you the data quickly when you open any folder in File Explorer; it can get all this data from the MFT easily!</p>
+<p>Sounds peachy. What can go wrong with this picture?</p>
+<p><strong>Issue summary:</strong> A hard disk is organised into sectors, which are the smallest unit of storage. The OS’s filesystem determines how and where to store each file on the hard disk. The filesystem manages the file metadata in a file table, separate from the actual contents of the file.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S9] Issue 107: The challenges of storage</p>
+<p>This is where I talk about all the ways we make life difficult for computers, but easier for ourselves. Like unplugging USB drives before removing them safely …</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>XSS? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>firmware? [Issue 34]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+<li>~~How do apps know where a file starts and ends? [Issue 49]~~</li>
+<li>a driver file and why do I need one? [Issue 98]</li>
+<li>why does computer memory exist when apps can read directly from the hard disk? [Issue 105]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2021-02-06T08:00:00+08:00">
+      Sat 06 February 2021
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+    <p>
+        Tags:
+            <a href="/tag/operating-system.html">operating system</a>
+    </p>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue105.html">
+                Issue 105: Operating Systems
+            </a>
+        </li>
+        <li>
+            <a href="/issue107.html">
+                Issue 107: The challenges of storage
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

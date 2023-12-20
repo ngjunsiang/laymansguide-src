@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 155: Emulation performance</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-12.html">Season 12</a></p>
+  <header>
+    <h2>
+      <a href="/issue155.html" rel="bookmark"
+         title="Permalink to Issue 155: Emulation performance">Issue 155: Emulation performance</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2022-01-15T08:00:00+08:00">
+    Sat 15 January 2022
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> Programs that were not compiled for the instruction set of the host OS have to go through an emulation layer program. This program translates the instructions of that program into compatible instructions that its own processor can execute.</p>
+<blockquote>
+<p>The Apple M1 is an ARM processor that executes 64-bit ARM instructions. MacOS programs that were compiled for Intel 64-bit x86-64 processors go through the Apple Rosetta 2 emulation layer to run on the M1.</p>
+</blockquote>
+<p>Yes, that’s what I said last issue. But if that were all the Apple Rosetta 2 emulation layer did, The M1 Macbook would not have gotten its rave reviews.</p>
+<h2>The act of translation</h2>
+<p>Think about it: the ARM and x86-64 instruction sets are very different! They have different lengths, different instruction names and bit values, different concepts of operation, … they’re <em>very</em> different. While the Intel Core and ARM processor architectures share <em>some</em> similarities, translating instructions from one set to another, though possible, is still no simple feat.</p>
+<p>Keep in mind that in addition to translating the x86-64 instructions to ARM, the M1 also has to <em>execute them</em>—the program must go on. It should not be surprising at all that there is a performance hit compared with executing native ARM instructions.</p>
+<p>If you were given a set of execution instructions in your native language, you would have little difficulty carrying out the required task. But if the execution instructions are now in alien language? Suppose you were given translation instructions, in your native language, for understanding the alien language. You would definitely be doing it slower than if the execution instructions were in your native language.</p>
+<h2>Just-in-time translation</h2>
+<p>These days, our processors are fast enough that if they are not too bogged down, they can actually read in instructions slightly ahead of time, translate them, and store the translated instructions for a short period of time before they are executed. This way, the operating system remains ever so slightly ahead of the program being translated, in a way reminiscent of our currently strained global supply chain.</p>
+<p>Naturally, it doesn’t make sense to keep doing translation work. As much as possible, we want to minimise it! But how?</p>
+<p><strong>Issue summary:</strong> Translating a set of instructions before executing it will always lead to a slowdown, although sometimes this may not be noticeable to users.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S12] Issue 156: Translation</p>
+<p>In the last issue of season 12, we talk about why app installation or system updates can take so long.</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>XSS? [Issue 8]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2022-01-15T08:00:00+08:00">
+      Sat 15 January 2022
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue154.html">
+                Issue 154: Emulation
+            </a>
+        </li>
+        <li>
+            <a href="/issue156.html">
+                Issue 156: Translation
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 109: Speeding up data operations</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+    <meta name="tags" content="cache" />
+    <meta name="tags" content="memory" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-09.html">Season 09</a></p>
+  <header>
+    <h2>
+      <a href="/issue109.html" rel="bookmark"
+         title="Permalink to Issue 109: Speeding up data operations">Issue 109: Speeding up data operations</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2021-02-27T08:00:00+08:00">
+    Sat 27 February 2021
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> Safe writes ensure that all the data is written to disk sectors properly first before updating the file table. The result is that write operations take a longer time to complete.</p>
+<p>If there’s anything to take away from the previous issue, it’s that <em>doing things the right way takes time</em>. And sometimes we are okay with taking shortcuts to get something done faster, the <em>left</em> way.</p>
+<h2>The write cache</h2>
+<p>If you have a shipment coming in that urgently needs to be dumped into the warehouse quickly (e.g. because the ship needs to leave quickly for another delivery, or to free up space on the docks), how do we speed this up?</p>
+<p>What usually happens is the goods will be offloaded onto some empty space <strong>outside the warehouse</strong>. The ship will leave first, and <em>assume</em> that the warehouse will be able to get the goods in just fine.</p>
+<p>What is the OS equivalent of this? Hard disk writes are actually pretty slow; they can get up to 100 MB/s, but usually hit a sustained speed of 60 MB/s for system disks, and about 20 MB/s over USB. The operating system therefore sets up a “dumping space” in memory; files can be read from other disks at up to 200 MB/s, and written to memory at <strong>a few GB/s</strong>!</p>
+<p>This space is known as the <strong>write cache</strong>. (I’ve previously covered the idea of caches in Issues <a href="/issue039.html">39</a>) and <a href="/issue057.html">57</a>), and the write cache works on a similar idea.)</p>
+<h2>Speeding up file access ... and its drawbacks</h2>
+<p>So how do we speed up the process of copying data to a disk? We could dump the data into the write cache (assuming there is enough space), then update the file table first, and let the OS slowly copy the data from the write cache into the disk. Anyone who needs access to the file records will then be able to go about their merry way, and if they need data from the file, they can just copy it from the disk cache instead of the disk. Easy peasy!</p>
+<p>This was what happened in Windows XP. File copying appears to be speeded up, and users are happy.</p>
+<p>But remember what happens when power to the computer is accidentally cut, or if a program suddenly hangs, or the computer sometimes runs out of memory.</p>
+<p>Yup ... it shuts down (or reboots), and the contents of memory are wiped clean. And any data that has not been written to disk is <em>lost forever</em>. And ... the file table has <strong>already been updated to look like there is valid data</strong>!</p>
+<p>This is when things look really bad.</p>
+<p><strong>Issue summary:</strong> Fast writes dump the data to a write cache (in computer memory), then update the file table to look like the file is already written to disk. However, if power is cut before all data is properly moved from the write cache to disk, the data in memory is lost, and file corruption usually results.</p>
+<p>Well okay ... it’s not a lost cause right? Yup, we do have ways to mitigate this kind of damage, and one such way is called a journal.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S9] Issue 110: Safeguarding against data corruption with a journal</p>
+<p>Woot, answered another sometime-in-the-future question, albeit in a slightly different fashion from how I thought I would do it.</p>
+<p>Next issue, I explain how we can still do things the fast way, <em>carefully</em>.</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>XSS? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>firmware? [Issue 34]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+<li>a driver file and why do I need one? [Issue 98]</li>
+<li>~~why does computer memory exist when apps can read directly from the hard disk? [Issue 105]~~</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2021-02-27T08:00:00+08:00">
+      Sat 27 February 2021
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+    <p>
+        Tags:
+            <a href="/tag/cache.html">cache</a>
+            <a href="/tag/memory.html">memory</a>
+    </p>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue108.html">
+                Issue 108: Safeguarding data operations
+            </a>
+        </li>
+        <li>
+            <a href="/issue110.html">
+                Issue 110: Safeguarding against data corruption with a journal
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

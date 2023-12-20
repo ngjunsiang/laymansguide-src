@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 88: Document Databases</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+    <meta name="tags" content="document" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-07.html">Season 07</a></p>
+  <header>
+    <h2>
+      <a href="/issue088.html" rel="bookmark"
+         title="Permalink to Issue 88: Document Databases">Issue 88: Document Databases</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2020-09-19T08:00:00+08:00">
+    Sat 19 September 2020
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> Relational databases are designed to maintain a well-structured set of data tables through constraint rules. This makes them very useful for preventing accidental inconsistencies in data, but make any changes to the data schema difficult to implement. Changing from one schema to another involves downtime and a migration.</p>
+<p>One problem I keep running into with Excel is when I <em>think</em> the data has a consistent structure, but halfway through I realise that it actually doesn’t: sometimes I might have two students with different categories of accomplishments, and that requires a big change in the way I design the columns.</p>
+<p>Document databases bypass this problem by not enforcing a strict schema on the data. That is not to say you can’t; it is <em>optional</em> and up to you to enforce.</p>
+<h2>Document databases: a collection of fields and values</h2>
+<p>When we think of documents, we usually think of Office documents, or PDFs, or things that are … more associated with the way a workplace works.</p>
+<p>These documents are not the ones I have in mind when talking about document databases. In these databases, <strong>documents</strong> are simply bits of data grouped together. Each bit of data is described by a field. For example, I might start out defining a student document this way:</p>
+<div class="highlight"><pre><span></span><code>{
+  name: &quot;Harry Potter&quot;,
+  school: &quot;Hogwarts School of Witchcraft and Wizardry&quot;,
+  characteristics: &quot;lightning-shaped scar on forehead&quot;
+}
+</code></pre></div>
+
+<p>I can add more fields later, if I wish:</p>
+<div class="highlight"><pre><span></span><code>{
+  name: &quot;Harry Potter&quot;,
+  school: &quot;Hogwarts School of Witchcraft and Wizardry&quot;,
+  characteristics: &quot;lightning-shaped scar on forehead&quot;
+  mother: Lily Potter,
+  father: James Potter,
+  ...
+}
+</code></pre></div>
+
+<p>But what makes document databases truly <em>document-oriented</em> is the way they can be nested. Suppose I want to expand a bit more on this student’s education, to include the years of study. I could expand each entry in the <code>school</code> field to include that:</p>
+<div class="highlight"><pre><span></span><code>{
+<span class="w">  </span><span class="nv">name</span>:<span class="w"> </span><span class="s2">&quot;Harry Potter&quot;</span>,
+<span class="w">  </span><span class="nv">school</span>:<span class="w"> </span>{
+<span class="w">    </span><span class="nv">name</span>:<span class="w"> </span><span class="s2">&quot;Hogwarts School of Witchcraft and Wizardry&quot;</span>,
+<span class="w">    </span><span class="nv">start</span>:<span class="w"> </span><span class="s2">&quot;1991&quot;</span>,
+<span class="w">    </span><span class="k">end</span>:<span class="w"> </span><span class="s2">&quot;1997&quot;</span>
+<span class="w">  </span>}
+<span class="w">  </span><span class="nv">characteristics</span>:<span class="w"> </span><span class="s2">&quot;lightning-shaped scar on forehead&quot;</span>
+}
+</code></pre></div>
+
+<p>Yup, now I’ve just expanded the value of the <code>school</code> field into ... another document! This document has a <code>name</code> field, a <code>start</code> field, and an <code>end</code> field. I can embed documents just about any place I want.</p>
+<p>I can also group multiple values under a field:</p>
+<div class="highlight"><pre><span></span><code>{
+  ...
+  characteristics: [&quot;wears glasses&quot;, &quot;lightning-shaped scar on forehead&quot;]
+}
+</code></pre></div>
+
+<p>I can also group multiple <em>documents</em> under a field. It’s documents all the way down!</p>
+<h2>Collections: the only way to organise documents</h2>
+<p>While relational databases have tables for organising rows, document databases have collections for organising documents.</p>
+<p>Each collection can contain multiple documents. There is no constraint on what kind of documents each collection can contain.</p>
+<p>I could have a collection for teachers containing only teacher documents, a collection for students containing only student documents, a collection for subjects containing only subject documents, … or I could just have a collection for the department containing a mix of all three types of documents.</p>
+<h2>What can I do with a document database?</h2>
+<p>Just about ... anything? If you can think of a way to organise the data as documents, you can put it into a document database.</p>
+<p>A document database lets you find documents based on its fields. I can look up all documents which have a <code>name</code> field, or check that the word "Harry" is in the <code>name</code> field. I could look for students who enrolled in the year <code>"1991"</code> or later, or more specifically students who enrolled in <code>"Hogwarts School of Witchcraft and Wizardry"</code> in <code>"1991"</code> or later.</p>
+<h2>Drawbacks</h2>
+<p>Since this is not a relational database, you don’t have the protection of foreign keys and other features that stop you from making the data inconsistent—there’s no concept of enforced consistency here! You’ll have to write those rules into your app when it accesses the document database; the database won’t enforce them for you.</p>
+<h2>Advantages</h2>
+<p>Data organised as documents tends to be more self-contained. Since the database does not enforce consistency, it has less to worry about when edits or changes are made to the database. In a distributed document database, we thus sacrifice some consistency—unless we make pains to ensure it in our application code.</p>
+<p>This does provide an advantage: when the distributed document database suffers a network outage, causing it to partition into multiple clusters (<a href="/issue086.html">Issue 86</a>)), the database can continue to operate. However, each cluster only has access to its own data, and not data on the other clusters. Over time, each cluster will become less and less consistent, since changes in each cluster are not synchronised to other clusters.</p>
+<p>Once the network issue is resolved and the clusters are synchronised again, these changes can subsequently be merged following rules for resolving conflicts. The database remains operational throughout the ordeal, just with some desynchronisation.</p>
+<p><strong>Issue summary:</strong> Document databases organise data into documents, each containing a number of field-value pairs. Each value can itself be a document, and multiple values/documents can be grouped under a field. Document databases do not enforce data consistency across documents, so those rules need to be managed by the application which is using the database. This allows document databases to continue operating even when partitioned, at the cost of some consistency.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S7] Issue 89: Graph Databases</p>
+<p>Okay, relational and document databases were easy enough. They are more easily mapped to spreadsheets and file/folder hierarchies, respectively.</p>
+<p>But now we go up the abstraction ladder, and get to more abstract ideas of data. In a social network, the user profile is usually the least significant part of the account; what often matters most is how this account is linked to other accounts (followers and following). The study of such interlinked objects is known in mathematics as <strong>graph theory</strong> (nope, not the kind of graphs we are so used to in reports). This is where terms like “social graph”, the representation of your social network on Facebook or Twitter, comes from.</p>
+<p>What is the most intuitive way to represent, store, and modify this kind of graph data? Using a graph database, of course.</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>XSS? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>firmware? [Issue 34]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+<li>What is involved in installing a piece of software? [Issue 48]</li>
+<li>How do apps know where a file starts and ends? [Issue 49]</li>
+<li>What is a password hash? [Issue 63]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2020-09-19T08:00:00+08:00">
+      Sat 19 September 2020
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+    <p>
+        Tags:
+            <a href="/tag/document.html">document</a>
+    </p>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue087.html">
+                Issue 87: Relational Databases
+            </a>
+        </li>
+        <li>
+            <a href="/issue089.html">
+                Issue 89: Graph Databases
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

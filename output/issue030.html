@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 30: Private IP Addresses</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-03.html">Season 03</a></p>
+  <header>
+    <h2>
+      <a href="/issue030.html" rel="bookmark"
+         title="Permalink to Issue 30: Private IP Addresses">Issue 30: Private IP Addresses</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2019-07-20T08:00:00+08:00">
+    Sat 20 July 2019
+  </time></p>
+  <p>Previously: Your web browser resolves a hostname (finds out which IP address a hostname points to) by sending a DNS query to its gateway.</p>
+<p>Back in <a href="/issue027.html">Issue 27</a>), I said this:</p>
+<blockquote>
+<p>If you are good at math, you can work out the total number of available [IP address] combinations: it’s 4,294,967,296 (256^4). It seems like a lot, but we actually have more humans on this planet than we have IP addresses. And if we assign a unique IP address to each device on the Internet, many of us will need multiple IP addresses for our smartphone, laptop, Amazon Echo, smart TV, router, …</p>
+<p>IP addresses are a limited resource! They are really precious!</p>
+</blockquote>
+<p>IP addresses are so precious that your ISP only has a handful, and they will only give you one per subscriber line. Which of your devices are going to receive it?</p>
+<p>Fortunately, there is a way for all of them to share this one IP address.</p>
+<h2>Private IP addresses</h2>
+<p>When you send a data packet through the internet, the data packet gets "stamped" with the destination IP address. The first router it reaches checks its internal forwarding tables (covered in Issue 27) to see if the IP address is there; if it is not, the router forwards it to the router’s gateway, and the process repeats.</p>
+<p>Some IP addresses don’t get treated this way. Data packets sent to the following IP address ranges will <strong>never</strong> be forwarded past a gateway:
+- 10.0.0.0 to 10.255.255.255
+- 172.16.0.0 to 172.31.255.255
+- 192.168.0.0 to 192.168.255.255</p>
+<p>In effect, packets sent to these addresses will never make it out beyond your router, onto the (public) internet. These addresses are known as <strong>private IP addresses</strong>.</p>
+<p>Not too long ago, you configured your router through a webpage. That means you need to enter an IP address into your browser to access the router settings, and there’s no way for you to know that IP address in advance. Most routers are configured to have a default gateway IP address of 192.168.1.1 or 192.168.0.1 (check your router’s manual for the correct one), so you set that as your gateway address in network settings. the private IP address system prevents commands you send to your router from making their way out to the Internet, and potentially leaking your information.</p>
+<p>Imagine how many devices at home are sending data packets to 192.168.0.1 (or 192.168.1.1), to be forwarded to their destinations through the gateway … private IP addresses allow private networks to be separated from the internet. Every device in the private network has an IP address that only the router has a complete list of. You can't send a data packet to a private address (say, 192.168.1.3) on a different private network, since that data packet will never make it past the gateway. The router will simply attempt to send it to 192.68.1.3 within the same private network.</p>
+<p>(A <strong>router</strong> is a <em>device</em> that forwards data packets it receives; a <strong>gateway</strong> is a <em>destination point</em> that a data packet gets sent to as it makes its way across the internet to its destination. I’ll try not to get too philosophical about the difference between them, but I’ll be using them interchangably depending on whether I’m emphasising the device or the network layout.)</p>
+<h2>Handling the complexity: DHCP and NAT</h2>
+<p>It all sounds terribly simple when described this way. And then somebody at the back of the room raises their hand and asks, “so when we want to send a packet to IP address 45.63.153.22, should I send it to 45.63.153.22 (destination) or 192.168.0.1 (gateway)?”</p>
+<p>No spoilers, we’ll cover this a couple issues later. The router juggles between the various IP addresses through a process called Network Address Traversal (NAT). NAT goes hand-in-hand with IP addresses to enable this IP-sharing magic. But first it has to have a public IP address …</p>
+<p>How do our devices get an IP address from the router? How does our router get an IP address from the ISP? This usually occurs according to a set of rules known as Dynamic Host Configuration Protocol (DHCP)—yep, it’s another protocol.</p>
+<h2>An analogy: home addresses and names</h2>
+<p>When someone sends a physical packet to you, they’ll write a home address <em>and</em> a name (To: ). The mailman doesn’t care that much about the name; they just send the packet to the home address. Once it reaches your home, someone in the house (the early riser, or the stay-home one) looks at the name and figures out where the packet should go. If the packet is addressed to “Peter”, it’s natural to assume that it’s meant for Peter-in-this-house and not Peter-5-blocks-down-the-street.</p>
+<p>This system allows multiple people to share one address. That address is like your ISP-given public IP address. The names are like private IP addresses; they are only meaningful within the house, and ambiguous outside of that context.</p>
+<p><strong>Issue summary:</strong> Private IP addresses are special IP addresses that routers will treat as belonging to devices within the private network, and not outside it. Data packets sent to private IP addresses will never make it past the gateway into the internet. This system allows multiple devices within a private network to share a public IP address.</p>
+<hr>
+<p>This was a little longer than I expected, but I’m pretty pleased with it. I hope you found the analogy helpful; it just popped to mind as I was nearing the end of the issue.</p>
+<p>Private IP addresses were something I started learning when I started playing with my home router to try to optimise its performance (this was back in the slow days of 56k ADSL), and it took me weeks to understand all the different knobs and dials in the web interface. If you ever come across them, now you know what’s going on :)</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> How do my devices get an IP address? Dynamic IP addresses and DHCP</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>a cookie? [Issue 8]</li>
+<li>a cache? [Issue 8]</li>
+<li>XSS? [Issue 8]</li>
+<li>a CDN? [Issue 8]</li>
+<li>Unicode? And what does it have to do with emoji? [Issue 8]</li>
+<li>those '\r\n's in the HTTP request packet [Issue 12,17]?</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>ASCII? [Issue 23]</li>
+<li>compiling code into an application [Issue 26]?</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2019-07-20T08:00:00+08:00">
+      Sat 20 July 2019
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue029.html">
+                Issue 29: How to resolve a hostname
+            </a>
+        </li>
+        <li>
+            <a href="/issue031.html">
+                Issue 31: Getting a private IP address: DHCP (and DDNS)
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

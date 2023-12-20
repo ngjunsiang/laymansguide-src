@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 60: CPU Optimisation Part 2 – Speculative Execution and Spectre</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+    <meta name="tags" content="cache" />
+    <meta name="tags" content="cpu" />
+    <meta name="tags" content="operating system" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-05.html">Season 05</a></p>
+  <header>
+    <h2>
+      <a href="/issue060.html" rel="bookmark"
+         title="Permalink to Issue 60: CPU Optimisation Part 2 – Speculative Execution and Spectre">Issue 60: CPU Optimisation Part 2 – Speculative Execution and Spectre</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2020-02-15T08:00:00+08:00">
+    Sat 15 February 2020
+  </time></p>
+  <p><strong>Previously:</strong> A set of instructions can trick a CPU into reordering load instructions so that the data is temporarily loaded into the cache before the instructions are retired. The cache can then be snooped to retrieve the data.</p>
+<p>At the heart of the matter is the fact that the OS has no control over the order in which instructions are carried out. Because of this, hackers who understand how the CPU reorders instructions can write malicious code that tricks the CPU into loading precious data into memory for a fraction of a second, during which they can use cache-snooping techniques to read the data.</p>
+<p>Before I go into the details of one cache-snooping technique, I want to outline another way that malicious code can get their targeted data into the cache. This exploits another feature, known as speculative execution.</p>
+<h2>Speculative execution: the CPU’s way of anticipating</h2>
+<div class="highlight"><pre><span></span><code><span class="mf">010011011011101101000101</span><span class="w"> </span><span class="err">…</span>
+</code></pre></div>
+
+<p>Can you predict the next number in the sequence? Kinda tough …</p>
+<div class="highlight"><pre><span></span><code><span class="mf">1111111111111111</span><span class="w"> </span><span class="err">…</span>
+</code></pre></div>
+
+<p>How about now? Easier?</p>
+<p>We have all been in that workplace situation where we are waiting on a colleague to make a decision. If they choose A, we have to perform one set of routines. If they choose B, we have to perform another set of routines.</p>
+<p>If our past experience with this person tells us that there is no pattern to what they will choose in such a situation, it is very difficult to proceed until they have made their choice. However, if they regularly choose A and occasionally choose B, that’s another story. Especially if they take a long time to make their decision.</p>
+<p>To speed up the process, we might just carry out the set of routines for A, wait for them to say “I choose A”, then give them the results—<em>tada</em>! And if they choose B instead, secretly dump the evidence and curse our luck.</p>
+<h2>Another model: the car valet</h2>
+<p>How would this work with a more concrete example? I could reuse the bank teller model from the Meltdown explanation, but I run the risk of muddling you up since the steps will look very similar. Instead, let’s model a pair of robot car valets instead. This pair still consists of a robot ALU (arithmetic logic unit) and LSU (load-store unit). The ALU, the brains of the pair, gets the car keys and driver’s license from the customer, and asks the customer for his ID number before asking the LSU to retrieve the vehicle. The LSU, the brawns of the pair, well, just parks or retrieves the vehicle.</p>
+<p>Let’s exploit this CPU model to find out what kind of car our secretive neighbour drives. I don’t have my neighbour’s ID, but I do know his ID number (23983698576), and I give it to the CPU. It carries out the following instructions:</p>
+<ol>
+<li><strong>GET</strong> ID number[23983698576] from customer</li>
+<li>Verify if I am the car owner <em>[SLOW]</em></li>
+<li><em>IF</em> verified, <strong>LOAD</strong> car of 23983698576 by driving it to retrieval point and pass keys to customer</li>
+<li><em>IF</em> not verified, dump data and start over with the next customer</li>
+</ol>
+<p>Sounds fair enough. The ALU finds out I am not my neighbour, and I don’t get to see his car. Awww. But let’s wait and see …</p>
+<h2>Speculative valeting</h2>
+<p>10 customers later, the CPU has been processing verified customers only. It goes into speculative execution mode (in a <strong>real CPU</strong>, of course you can’t disable speculative execution just like that; it is always on). Now the CPU works this way:</p>
+<p>[1.] <strong>GET</strong> ID number[23983698576] from customer<br>
+[2a.] <strong>LOAD</strong> car of 23983698576 by driving it to retrieval point<br>
+[2b.] Verify if I am the car owner <em>[SLOW]</em><br>
+[3.] <em>IF</em> verified, pass car keys to customer<br>
+[4.] <em>IF</em> not verified, dump data and start over with the next customer</p>
+<p>2a and 2b are carried out simultaneously. Have you figured out where the cache is in this model? It’s where the car is temporarily held: at the retrieval point.</p>
+<p>10 customers later, the ALU checks my ID, and at the same time the LSU in good faith starts to drive my neighbour’s car to the retrieval point. It is astutely hidden from my direct view. But if I know the mode of operation of this valet beforehand, I have a small window of opportunity to sneak a peek at the car before the ALU figures out I’m not the owner and a cache flush occurs (i.e. the LSU removes the car from the retrieval point). Perhaps I could plant a camera at the retrieval point …</p>
+<p><strong>Issue summary:</strong> Speculative execution is a feature that let’s the CPU speed up execution if it correctly predicts a decision point. The CPU carries out the operations along the predicted decision branch and loads the results if it predicts correctly.</p>
+<p>And there you have it, two CPU features explained with robots. These are well-researched CPU features that have been used in CPUs for a long while … and nobody thought to thoroughly investigate ways in which this might be exploited for malicious intent.</p>
+<p>You might blame this oversight on Intel, but I think I would blame the unpredictable nature of development. Early forts only needed walls, but not roofs, until catapults were invented. Hardware was invented to run fast, and the internet was designed to be robust, and very few people could predict accurately how they would be exploited for ill intent.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S5] Issue 61: Mapping the cache</p>
+<p>Okay, I’m done talking about the exploit part of Meltdown and Spectre. The scene freezes, goes into extreme time slowdown mode … the last 5 transactions are on the bank teller’s paper, and the neighbour’s car is at the retrieval point. The bank teller ALU is looking over my ID, checking various things, and the car valet ALU is verifying my ID … the quarry is at hand! Only a split second before they uncover the truth and the quarry is snatched away!</p>
+<p>How are we going to snoop that precious cargo? You’ve watched enough heist movies, you know these things don’t happen without exhaustively detailed planning.</p>
+<p>Let’s start planning our cache snoop next issue.</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>a cookie? [Issue 8]</li>
+<li>XSS? [Issue 8]</li>
+<li>a CDN? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>firmware? [Issue 34]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+<li>What is involved in installing a piece of software? [Issue 48]</li>
+<li>How do apps know where a file starts and ends? [Issue 49]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2020-02-15T08:00:00+08:00">
+      Sat 15 February 2020
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+    <p>
+        Tags:
+            <a href="/tag/cache.html">cache</a>
+            <a href="/tag/cpu.html">cpu</a>
+            <a href="/tag/operating-system.html">operating system</a>
+    </p>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue059.html">
+                Issue 59: Meltdown
+            </a>
+        </li>
+        <li>
+            <a href="/issue061.html">
+                Issue 61: Mapping the cache
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

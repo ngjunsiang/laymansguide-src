@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 58: CPU Optimisation Part 1 – Out-of-Order Processing</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+    <meta name="tags" content="cache" />
+    <meta name="tags" content="cpu" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-05.html">Season 05</a></p>
+  <header>
+    <h2>
+      <a href="/issue058.html" rel="bookmark"
+         title="Permalink to Issue 58: CPU Optimisation Part 1 – Out-of-Order Processing">Issue 58: CPU Optimisation Part 1 – Out-of-Order Processing</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2020-02-01T08:00:00+08:00">
+    Sat 01 February 2020
+  </time></p>
+  <p><strong>Previously:</strong> The CPU stores data for ready access in the CPU cache. Accessing data from the CPU cache is much faster than accessing data from main memory. When the CPU needs data from a memory address, it looks in the cache first. If the data is not there (a <strong>cache miss</strong>), it will load the data from the memory address, and store a copy in the cache for faster reference in future. The CPU cache is managed by the CPU and is invisible to the OS. Programs that need to ensure the data in the cache is “fresh” can perform a cache flush and reload.</p>
+<p>In this issue, we look at one feature that CPUs use to speed up processing: out-of-order execution. “Out-of-order” makes it sound like something is broken in the CPU, but it really just means that the CPU instructions it is given are not executed in the same order that they were fed to the CPU.</p>
+<p>If you have seen a busy Starbucks joint or Chinese restaurant at work, you would know that menu orders are not always carried out in the same order that they were taken (even if customers are eventually first-come-first-served). A fully staffed Starbucks joint or Chinese restaurant is not a single working unit, but a collection of specialised units.</p>
+<h2>CPU execution units</h2>
+<p>A CPU core is comprised of 3 types of execution units:</p>
+<ul>
+<li><strong>A</strong>rithmetic <strong>L</strong>ogic <strong>U</strong>nit (<strong>ALU</strong>): THE ALU is responsible for carrying out integer calculations</li>
+<li><strong>F</strong>loating <strong>P</strong>oint <strong>U</strong>nit (<strong>FPU</strong>): The FPU is responsible for carrying out decimal calculations</li>
+<li><strong>L</strong>oad/<strong>S</strong>tore <strong>U</strong>nit (<strong>LSU</strong>): The LSU is responsible for loading data from memory into the CPU, or storing data from the CPU into memory (<a href="/issue055.html">Issue 55</a>))</li>
+</ul>
+<p>An instruction decoding unit in the CPU decodes each instruction and sends it to the appropriate execution unit. All these units can work at the same time, and for maximum performance this is what you want to happen.</p>
+<h2>Not all instructions are executed equal(ly)</h2>
+<p>The CPU has an internal clock (called the <strong>CPU clock</strong>) that regulates when things are done in the CPU. Everything in a CPU takes place in cycles. Every operation takes at least one cycle, but some operations which require more steps will require more cycles.</p>
+<p>For instance, the ALU can carry out most operations in one or two cycles, but the FPU often needs four or more cycles to do its work (moving decimals is hard work!). The LSU clock cycle latency varies, depending on which part of the cache you are fetching from (the cache has different regions; some regions are closer to CPU cores while other regions are shared among all the cores and therefore further. I won’t go into deeper detail.)</p>
+<p>Keeping all the execution units busy is getting more complex now, eh?</p>
+<h2>Minimising wait time in a CPU</h2>
+<p>Let’s revisit the instructions from <a href="/issue053.html">Issue 53</a>):</p>
+<div class="highlight"><pre><span></span><code><span class="mf">1</span><span class="w"> </span><span class="kr">LOAD</span><span class="w"> </span><span class="mf">1</span><span class="w">   </span><span class="n">R1</span>
+<span class="mf">2</span><span class="w"> </span><span class="n">ADD</span><span class="w">  </span><span class="mf">2</span><span class="w">   </span><span class="n">R1</span><span class="p">,</span><span class="w"> </span><span class="n">R2</span>
+<span class="mf">3</span><span class="w"> </span><span class="n">MOV</span><span class="w">  </span><span class="n">R2</span><span class="p">,</span><span class="w"> </span><span class="n">MEM1011</span>
+</code></pre></div>
+
+<p>The third instruction is to store data from the CPU register to main memory, and this is gonna take a little while. Sending subsequent instructions to the ALU immediately after the third instruction will result in some wastage of clock cycles: the ALU will just be sitting there, waiting for the data to be available in main memory before it can do its thing.</p>
+<p>Why not schedule an instruction, even from another application, while waiting? It doesn’t matter if the other application’s instruction came later, if it can be executed now we might as well do it.</p>
+<p>This, in a nutshell-issue, is out-of-order execution.</p>
+<h2>Analogy: old-school robot bank teller</h2>
+<p>Let’s model a CPU core as two execution units: an ALU and a LSU. The ALU is a robot bank teller that does what the customer asks, while the LSU is a robot bank teller that retrieves data from and stores data back to the bank’s database (i.e. memory). Two such robot bank tellers work at a teller counter (CPU core).</p>
+<p>If a customer needs to check their bank balance, the following instructions need to happen (like I said, this is old-school; no iBanking or ATMs here, because analogy).</p>
+<ol>
+<li><strong>GET</strong> ID from customer</li>
+<li><strong>LOAD</strong> bank account owner from memory (using ID number)</li>
+<li>Check that customer is the bank account owner (verifying other details) <em>[SLOW]</em></li>
+<li><em>IF</em> verified, <strong>LOAD</strong> bank account balance</li>
+<li><strong>SEND</strong> bank account balance to customer</li>
+</ol>
+<p>If you’re wondering why steps 2 and 4 can’t happen at the same time … congratulations! You already understand out-of-order execution at an intuitive level. If the LSU can carry out steps 2 and 4 at the same time, the ALU can simply provide the bank balance once the customer is authenticated, or discard the information otherwise.</p>
+<p>This frees up the LSU, and if the LSU’s load is low enough we might even reduce robotpower and share one LSU between two teller counters, seeding android fears of restructuring and impending robot retrenchment … but let’s stop the analogy here for today.</p>
+<p><strong>Issue summary:</strong> The CPU comprises different types of execution units. All the execution units can run at the same time, but they may execute instructions over different numbers of clock cycles. To minimise wait time, CPU instructions are carried out in an order that keeps the execution units busy as often as possible.</p>
+<p>Some very smart people might harangue me about micro-ops, or about decode buffers, etc. My only answer to all such concerns are: not necessary at this point. Maybe in a future issue, if it is the linchpin in some layman explanation.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S5] Issue 59: Meltdown</p>
+<p>This little optimisation step, of doing things in an order that keeps the CPU busy, looks innocuous enough. But once we combine it with some features of the cache, it leaves a little loophole that enables an attacker to snoop on data: this is Meltdown. Stay tuned, we’ll get to the meat of Meltdown next issue!</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>a cookie? [Issue 8]</li>
+<li>XSS? [Issue 8]</li>
+<li>a CDN? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>firmware? [Issue 34]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+<li>What is involved in installing a piece of software? [Issue 48]</li>
+<li>How do apps know where a file starts and ends? [Issue 49]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2020-02-01T08:00:00+08:00">
+      Sat 01 February 2020
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+    <p>
+        Tags:
+            <a href="/tag/cache.html">cache</a>
+            <a href="/tag/cpu.html">cpu</a>
+    </p>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue057.html">
+                Issue 57: Cache, the CPU’s working space
+            </a>
+        </li>
+        <li>
+            <a href="/issue059.html">
+                Issue 59: Meltdown
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 62: Cache snooping</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+    <meta name="tags" content="cache" />
+    <meta name="tags" content="cpu" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-05.html">Season 05</a></p>
+  <header>
+    <h2>
+      <a href="/issue062.html" rel="bookmark"
+         title="Permalink to Issue 62: Cache snooping">Issue 62: Cache snooping</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2020-03-03T17:00:00+08:00">
+    Tue 03 March 2020
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> A cache miss is slow, and a cache hit is fast. This difference in cache reading speed can be used to transmit secrets out from the cache, which cannot be read directly by programs.</p>
+<p>Okay, okay, we managed to leak data from memory to the cache, now how do we leak it from the cache to our program?</p>
+<h2>Cache snooping: tapping on tiles</h2>
+<p>Here in Singapore, before moving in to a newly built apartment, we have a “ritual” of tapping each ceramic floor tile to check if they have been properly fastened to the ground.</p>
+<p>Most people don’t actually know what a fastened or unfastened floor tile sounds like. What we do know is that they sound <em>different</em>.</p>
+<p>So we go <em>tok</em>, <em>tok</em>, <em>tok</em>, <em>tok</em>, <em>tok</em>, … <em>tik</em>! Aha, there’s a loosened floor tile!</p>
+<p>That’s kind of what we are going to do to the cache. We are going to load information located in memory cells addressed 1 through 256, and see how long each request takes.</p>
+<p>Address 1: 135 ns<br>
+Address 2: 134 ns<br>
+Address 3: 136 ns<br>
+Address 4: 134 ns<br>
+…<br>
+Address 136: 130 ns<br>
+Address 137: 66 ns<br>
+Address 138: 137 ns<br>
+…<br>
+Address 256: 135 ns</p>
+<p>Can you tell what the secret number is? It’s the one with an <em>obviously lower</em> request latency. In this case, the other addresses didn’t have a copy of their data already in the cache, so they result in a cache miss (<a href="/issue057.html">Issue 57</a>))—the CPU has to go to main memory to read the data again, and that’s slow. Address 137 already had its data loaded before, and a copy of it was already in the cache, so loading it again results in a cache hit and is fast.</p>
+<h2>Treating memory addresses as data</h2>
+<p>One key thing to remember here is that each memory address points to a memory “cell”, which only stores one byte (8 bits), with a value that can run from 0 to 255 to give us 256 (i.e. 2^8) different values.</p>
+<p>Meltdown or Spectre have gotten the secret number (137), but in that small window of opportunity before it gets terminated, it would not have time to even store it into a text file that we can open later. How could we get that secret number without Meltdown or Spectre storing it?</p>
+<p>We can write a snooping program to do the following:</p>
+<p>1) Empty the cache cells for memory addresses 1 to 256, so that loading information from them would result in a cache miss.</p>
+<p>Then instead of storing the value 137 somewhere, we would get Meltdown/Spectre to <strong>load</strong> information from memory address 137. A load operation is much faster than a store operation, and Meltdown/Spectre would be able to pull this off within the window of opportunity. This would cause a copy of the information in memory address 137 to be stored in the cache; the next time any program tries to load information from address 137 again, it will be a cache hit (fast).</p>
+<p>The snooping program would then:</p>
+<p>2) Make requests for information from each of these 256 memory addresses (“tapping on tiles”) and see which request has an <em>obviously lower</em> latency.</p>
+<p>3) Determine that memory address 137 has obviously lower request latency, and store the “transmitted” secret: “137”</p>
+<p>It’s a lot of work to get a single byte (256 possible values), but computers are good at doing lots of tedious work in a short amount of time. Using sample working code that exploits out-of-order execution (<a href="/issue058.html">Issue 58</a>)) and speculative processing (<a href="/issue060.html">Issue 60</a>)), coupled with a snooping program like the one we described above, the Meltdown and Spectre authors are able to leak data at a rate of about 580 KB/s, which seems slow. But there are 86,400 seconds in a day, so that’s roughly 43 GB/day at full exploit speed! (There are 4 videos of demonstration exploits near the bottom of the <a href="https://meltdownattack.com/">Meltdown page</a>.) Malicious actors would probably do it at a slower rate to keep it covert, but in the weeks or months it would take to notice something was amiss with the memory access operations, that’s a lot of data they can siphon off … .</p>
+<p>We’ve covered quite a bit of technical ground, so I’ll summarise.</p>
+<p><strong>Issue summary:</strong>
+To prep the cache, our program empties addresses 1 to 256, so that they are guaranteed to have a cache miss if their information is loaded.</p>
+<p>To cache snoop (after Meltdown/Spectre have “delivered the payload”), we load information from memory addresses 1 to 256 and look for the one with an obviously lower request latency (a cache hit). The memory address itself is the value to keep.</p>
+<p>Okay, that’s it. Secret is leaked, cat is out of the bag, and now you know how Meltdown and Spectre work, without all the technical detail (like how addresses 1 to 256 need to be in separate pages which are 4 KiB each because the CPU will speculatively load adjacent data from memory, <em>yaddah yaddah</em>).</p>
+<p>So what can we do about it? Why hasn’t Intel fixed it after a year? I’m no computer engineer, but I’ll offer some thoughts in the next issue.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S5] Issue 63: Limitations of Meltdown and Spectre</p>
+<p>This isn’t even a fraction of 1% of what happens inside a CPU. It’s hard to convey just how complex CPU design is; no single person can explain in full detail how every part of the CPU works. Much of the design and validation work is already being done by software, but it still takes a human to write the code that does the checking.</p>
+<p>Does it surprise you that a little hack like this can get past so many pairs of eyes? It really shouldn’t.</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>a cookie? [Issue 8]</li>
+<li>XSS? [Issue 8]</li>
+<li>a CDN? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>firmware? [Issue 34]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+<li>What is involved in installing a piece of software? [Issue 48]</li>
+<li>How do apps know where a file starts and ends? [Issue 49]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2020-03-03T17:00:00+08:00">
+      Tue 03 March 2020
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+    <p>
+        Tags:
+            <a href="/tag/cache.html">cache</a>
+            <a href="/tag/cpu.html">cpu</a>
+    </p>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue061.html">
+                Issue 61: Mapping the cache
+            </a>
+        </li>
+        <li>
+            <a href="/issue063.html">
+                Issue 63: Limitations of Meltdown and Spectre
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

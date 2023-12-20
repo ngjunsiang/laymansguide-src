@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 23: Specifications in software</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-02.html">Season 02</a></p>
+  <header>
+    <h2>
+      <a href="/issue023.html" rel="bookmark"
+         title="Permalink to Issue 23: Specifications in software">Issue 23: Specifications in software</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2019-05-18T08:00:00+08:00">
+    Sat 18 May 2019
+  </time></p>
+  <p>Last week, we took a look at part of the (heavily simplified) software development pipeline:</p>
+<p><code>fork a repository → make changes → commit changes (and do automated testing) → merge changes when the branch is ready and all tests pass.</code></p>
+<p>At this point, it is time to ask a stupid question: how do developers know what they need to do?</p>
+<h2>Software requirements</h2>
+<p>When a project is first accepted, the customer will usually have at least a vague idea of what they want the software to do. Hopefully, they will also have a clearer idea of what they want. For example, if they want an online shopping website, they might have some idea of they want shopping categories, a shopping cart, a search bar (with or without advanced search?), the ability to add or customise promotions, guest checkout, and so on.</p>
+<p>Fine decisions, such as the checkout page—the order in which the text fields are arranged, the kind of date/time picker to use for the delivery schedule page, how users should be alerted if there’s an error in the input (alert below the text field or in a warning box at the top), also need to be made. And very often, the customer doesn’t want to make these decisions (which is why they hired a firm like yours to make the website), and so it falls to you (or your designers) to make these decisions instead.</p>
+<p>What your customer wants—those are requirements. How the designers (or project lead, or whoever makes the decisions) decide to meet those requirements—those are called <strong>specifications</strong>.</p>
+<h2>Specifications</h2>
+<p>There are more kinds of specifications than I can cover in detail, but let’s talk about some of the ones you are already familiar with.</p>
+<h3>USB Specification (Hardware)</h3>
+<p>Did you know that USB was a specification? A group of engineers known as the <a href="https://www.usb.org/">USB Implementers Forum</a> decides the specifications that USB devices must meet before they can be certified as USB-compatible.</p>
+<p>The specification covers a few categories:</p>
+<ol>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/USB_hardware#Connectors">Hardware requirements</a>: Shape and dimensions of connectors, which pins (those gold contacts on the USB connector) are for power and which are for data, how to implement backward compatibility with older USB sockets, etc.</p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/USB#Release_versions">Performance requirements</a>: Maximum data transfer rates, maximum charging power, etc.</p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/USB#System_design">Operational requirements</a>: How transfers are to be implemented and carried out, supported types of devices and the type of transfer modes to use, how different features are to be implemented (e.g. audio streaming), etc.</p>
+</li>
+</ol>
+<h3>HTTP Specification</h3>
+<p>The <a href="https://www.w3.org/Protocols/Specs.html">HTTP specifications</a> are maintained by the <a href="https://www.ietf.org/">Internet Engineering Task Force (IETF)</a>, an open community of people who collectively make the technical decisions about what the Internet should be able to do, and how it is going to do them.</p>
+<p><a href="https://www.rfc-editor.org/standards">Take a look at some well-known specifications</a> that they have produced (click the links that say “ASCII”—yeah we’ll talk about ASCII sometime). It’s going to be way over your head, but don’t worry about that. Here’s an example from TCP, the Transmission Control Protocol that describes how packets should be sent over the internet:</p>
+<div class="highlight"><pre><span></span><code><span class="c">3</span><span class="nt">.</span><span class="c">1</span><span class="nt">.</span><span class="c">  Header Format</span>
+
+<span class="c">  TCP segments are sent as internet datagrams</span><span class="nt">.</span><span class="c">  The Internet Protocol</span>
+<span class="c">  header carries several information fields</span><span class="nt">,</span><span class="c"> including the source and</span>
+<span class="c">  destination host addresses </span><span class="k">[</span><span class="c">2</span><span class="k">]</span><span class="nt">.</span><span class="c">  A TCP header follows the internet</span>
+<span class="c">  header</span><span class="nt">,</span><span class="c"> supplying information specific to the TCP protocol</span><span class="nt">.</span><span class="c">  This</span>
+<span class="c">  division allows for the existence of host level protocols other than</span>
+<span class="c">  TCP</span><span class="nt">.</span>
+
+<span class="c">  TCP Header Format</span>
+
+<span class="c">    0                   1                   2                   3   </span>
+<span class="c">    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1</span>
+<span class="c">  </span><span class="nb">+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</span>
+<span class="c">   |          Source Port          |       Destination Port        |</span>
+<span class="c">  </span><span class="nb">+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</span>
+<span class="c">   |                        Sequence Number                        |</span>
+<span class="c">  </span><span class="nb">+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</span>
+<span class="c">   |                    Acknowledgment Number                      |</span>
+<span class="c">  </span><span class="nb">+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</span>
+<span class="c">   |  Data |           |U|A|P|R|S|F|                               |</span>
+<span class="c">   | Offset| Reserved  |R|C|S|S|Y|I|            Window             |</span>
+<span class="c">   |       |           |G|K|H|T|N|N|                               |</span>
+<span class="c">  </span><span class="nb">+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</span>
+<span class="c">   |           Checksum            |         Urgent Pointer        |</span>
+<span class="c">  </span><span class="nb">+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</span>
+<span class="c">   |                    Options                    |    Padding    |</span>
+<span class="c">  </span><span class="nb">+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</span>
+<span class="c">   |                             data                              |</span>
+<span class="c">  </span><span class="nb">+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</span>
+<span class="c">                            TCP Header Format</span>
+
+<span class="c">          Note that one tick mark represents one bit position</span><span class="nt">.</span>
+
+<span class="c">                               Figure 3</span><span class="nt">.</span>
+
+<span class="c">  Source Port:  16 bits</span>
+<span class="c">    The source port number</span><span class="nt">.</span>
+
+<span class="c">  Destination Port:  16 bits</span>
+<span class="c">    The destination port number</span><span class="nt">.</span>
+</code></pre></div>
+
+<p>Look at how specific these documents are about how data should be transmitted and received! These documents are how developers and programmers resolve arguments about who is writing their code correctly and who is responsible for a bug. The requirements have to be specific enough that the expected behaviour for a scenario is clear, yet leave enough room for better implementations to replace old ones.</p>
+<h3>API Specifications</h3>
+<p>We <a href="https://buttondown.email/laymansguide/archive/fe8b59fc-c5fd-49f2-9d01-9f21fa3df95c">discussed APIs in an earlier issue</a>: an API describes how apps/programms should send and request information from each other. They are how web developers of online services know how to get you to use your Facebook account to log in, or how to access your phone contacts. APIs are another type of software specification: your app must communicate in a manner that fits the API specification, or it would not receive the desired response from the server.</p>
+<h3>Time Specifications</h3>
+<p>We don’t think about it very often, but when someone writes 02/03/19, how do we know if they mean March second or February third of 2019? Such ambiguity is often disastrous in software applications, so there are clear specifications about how apps should standardise the commmunication of time between apps and across the Internet (for internet applications, the standard is <a href="https://www.ietf.org/rfc/rfc3339.txt">RFC3339</a>). Because computers and humans do not process time the same way (<a href="https://en.wikipedia.org/wiki/System_time">see Wikipedia’s System time page</a>), there are specifications for how to do the conversion of machine representations to human-readable representations as well. And because this is applicable across many areas and not just in software, some of these specifications are called <strong>standards</strong>: specifications which should be followed by everyone who wishes to communicate clearly.</p>
+<p>Think there are only 24 time zones? Or that time zones are always 1 hour apart? Or that the current timezones are exactly the same as they were 20 years ago? Think a leap second is always one second? That calendar time always moves forwards? That February never has more than 29 days?</p>
+<p>I used to think these things too, until I read <a href="https://zachholman.com/talk/utc-is-enough-for-everyone-right">Zach Holman’s detailed tract on UTC</a>. Fascinating, and ever so slightly disturbing.</p>
+<h2>Why are there so many specifications?!</h2>
+<p>Because they are useful!</p>
+<p>When a developer first learns about specifications, it can be really alarming to find out that they haven’t been following many of them. They may even start feeling oppressed by the number of specifications that must be followed.</p>
+<p>And then the developer advances. They tackle more finicky problems. They tackle problems that require more precision: time to the nearest nanosecond, synchronisation within a fraction of a second, lag time of no more than 200 milliseconds, etc. When they run into sufficiently difficult problems and find that they need help (such as the aforementioned time representations), that is where they will welcome the specification overlords into their life.</p>
+<p>Many specifications were written because similarly talented developers ran into the same issue. And if there is no need to reinvent the wheel, those specifications save you many hours hashing out a suitable specification and implementation (since other developers would have offered sample implementations online), and enable your app to communicate with others who follow the same specification.</p>
+<p>Specifications are part of an engineer’s toolbox in the struggle to create order from chaos, and a well-written specification is a thing of beauty.</p>
+<p><strong>Issue summary:</strong> Specifications describe the details of how a piece of hardware/software should work in order to meet a set of requirements. When well written and well implemented, they aid the coordination of the multitude of devices across the world, enabling them to communicate seamlessly, unambiguously, and unnoticeably with each other. Your devices work because they follow specifications.</p>
+<hr>
+<p>Yay, I finally cleared one item from the "sometime in the future" list! When I first started reading implementations, I found them really intimidating and impossible to get into. It was only when I started programming and having to do things like getting my data from an online service through an API, that specifications started making sense. Hardware specifications were useful too, in trying to understand whether a USB charger will be able to do quick charging or support higher rates of data transfer before I buy it.</p>
+<p>Because making an app from scratch can be so stressful and annoying, developers usually separate the design work from the programming. Creating a specification and design for an app is both a science and an art, and when done well, can make programming a breeze. A developer just needs to read the relevant part of the specification, think about how to implement that section, and get it done.</p>
+<p>Next week, we’ll look at something else that is part of a developer’s life as well: debugging.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> Debugging</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>a cookie? [Issue 8]</li>
+<li>a cache? [Issue 8]</li>
+<li>XSS? [Issue 8]</li>
+<li>a CDN? [Issue 8]</li>
+<li>Unicode? And what does it have to do with emoji? [Issue 8]</li>
+<li>those '\r\n's in the HTTP request packet [Issue 12,17]?</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>ASCII? [Issue 23]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2019-05-18T08:00:00+08:00">
+      Sat 18 May 2019
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue022.html">
+                Issue 22: Continuous Integration in software
+            </a>
+        </li>
+        <li>
+            <a href="/issue024.html">
+                Issue 24: Issue trackers, Bug trackers
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

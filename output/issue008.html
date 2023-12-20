@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 8: HTTP error codes—How does a server let the client know if there’s something wrong with their HTTP request?</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-01.html">Season 01</a></p>
+  <header>
+    <h2>
+      <a href="/issue008.html" rel="bookmark"
+         title="Permalink to Issue 8: HTTP error codes—How does a server let the client know if there’s something wrong with their HTTP request?">Issue 8: HTTP error codes—How does a server let the client know if there’s something wrong with their HTTP request?</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2019-02-02T08:00:00+08:00">
+    Sat 02 February 2019
+  </time></p>
+  <p>Last issue, I said that HTTP is a set of rules for sending and receiving documents that link to other documents. According to those rules, if you want a webpage, you (the client) must send a (HTTP) request to a server, which will return a response.</p>
+<p>I almost forgot one of my rules here, that it is just as important to know <em>why</em> you should do something as to know how to do it. All I need right now is to craft an HTTP request to get my data from Hypothes.is. In fact, HTTP requests and responses form the backbone of everything we do on the internet. Knowing what I know about them, I want to go a little in depth (just one issue, I promise), so that later some of the things I say about internet security will make a little more sense.</p>
+<p>Last thing before the dive: A request or response typically has two parts: a <strong>header</strong> and a <strong>body</strong>. Think of the body as a letter you receive; the header is the envelope that the letter came in. It tells you something about where or who this letter is from, whether it was returned or successfully delivered, maybe even a date stamp.</p>
+<h2>What does an HTTP Response header look like?</h2>
+<p>We'll get to looking at what kind of data goes out in the HTTP request next issue. Right now, the HTTP response is simpler and easier to talk about. This is what an HTTP response from the Hypothes.is API (<a href="https://buttondown.email/laymansguide/archive/fe8b59fc-c5fd-49f2-9d01-9f21fa3df95c">Issue 4</a>) looks like:</p>
+<p><img alt="An HTTP response header from Hypothes.is" src="/issue008_01.png"><br>
+<em>The response header from Hypothes.is</em>    </p>
+<p>Whoa there, I thought this was supposed to be simple to talk about?? It really is! We’re not going to go through all of that, I just wanted to show you an HTTP response first.</p>
+<p>The key parts of the response for us are all in the first three lines:</p>
+<div class="highlight"><pre><span></span><code><span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+<span class="na">Date</span><span class="o">:</span> <span class="l">Sat, 17 Nov 2018 04:01:02 GMT</span>
+<span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/json; charset=UTF-8</span>
+<span class="err">[...]</span>
+</code></pre></div>
+
+<p>In the first line, <code>HTTP/1.1</code> tells us that this is version 1.1 of the HTTP specification (in use since 1990), and the response from the server is <code>200</code> which means OK (more on this below).</p>
+<p>The second line is just the date and time that the response was sent. Nothing new.</p>
+<p>The third line tells is what kind of data was sent with the HTTP response. We’ll have a look at the data after the response and request, but for now we can see that the data is sent in JSON format which I introduced in <a href="https://buttondown.email/laymansguide/archive/fb0c4cc9-040a-4826-b1d0-0cf703c78115">Issue 5</a>.</p>
+<p>UTF-8 stands for “<strong>Unicode</strong> Transformation Format - 8 bit”, which means it is a format for transform letters and symbols into 1s and 0s. <code>charset=UTF-8</code> tells us that the <em>char</em>acters in the data come from this <em>set</em> of tables known as Unicode. The tables matter, because characters not in the table cannot be used. You sometimes see this in webpages as � or □. We’ll talk about Unicode when we get to emojis :)</p>
+<hr>
+<h2>HTTP status codes</h2>
+<p>Phew, that was some unpacking. Now let’s get to the core of this issue: from this response, how would my client (i.e. your web browser) know if there was something wrong with the request?</p>
+<p>It is all in the first line: The <code>200</code> part is what we call a status code, since it is a number code that tells us the status of the request. Like error codes that you get from your electronic devices or appliances, there is <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">a whole list of error codes</a> defined by the HTTP/1.1 specification to tell you the exact status of your request. It looks long and scary, so here’s the gist.</p>
+<p>Status codes are always three digits. The first digit tells you the category of status:</p>
+<p><strong>1XX status codes</strong> are technical, and you should never see them as they are supposed to be invisibly handled by your client (i.e. your web browser).</p>
+<p><strong>2XX status codes</strong> are good news: it means everything is okay! <code>HTTP 200</code> means OK (as you saw above) and is the usual response your client gets when browsing the internet. If you are using an API, you may also get status codes <code>201</code>, <code>202</code>, <code>203</code>, and <code>204</code>. We do not need to go into those today but they are generally good news.</p>
+<p><strong>3XX status codes</strong> are response headers that basically say “your princess is in another castle!” In general, they are usually redirects. If you have noticed your web browser going to a URL and then jumping to another one by itself, you’ve just experienced a redirect. These codes are usually handled invisibly by your client so you shouldn’t run into them often.</p>
+<p><strong>4XX status codes</strong> are bad news, and generally the server’s way of blaming the client.<br>
+<code>400</code> means the server didn’t understand what you meant (I didn’t understand your English).<br>
+<code>401</code> means you don’t have permission (this place is members only; do I know you?).<br>
+<code>403</code> means you don’t have permission and may not ask for permission (These are not the droids you are looking for).<br>
+<code>404</code>, the often-parodied status code, means what you are looking for at that URL didn’t exist.</p>
+<p><strong>5XX status codes</strong> are also bad news, but this time round the server is blaming itself.</p>
+<p><code>500</code> means “something is wrong with me; I can’t fulfill your request” (be right back; learning how to make avocado brioche!).<br>
+<code>501</code> means “I don’t know how to do that yet” (but coming soon to a browser near you!).<br>
+<code>502</code> means “I was trying to help you but when I asked Server C it gave me nonsense so now I can’t help” (please complain to your Member of Parliament on Facebook).<br>
+<code>503</code> usually means “all our customer service officers are currently busy, please try again later.”<br>
+<code>504</code> is the worst: you’ve waited until the request timed out and didn’t get a response. (the lights are on but nobody’s home …)</p>
+<p><img alt="An HTTP response header from Hypothes.is" src="/issue008_02.png"><br>
+<em>A 404 response header from Hypothes.is</em>    </p>
+<hr>
+<p><strong>Issue summary:</strong> A request or a response consists of a header and a body. The response header contains information about the response. The status code in the response header determines if the request was successful or unsuccessful.</p>
+<hr>
+<h3>Bonus: What is a URI?</h3>
+<p>If you scrutinised the rest of the header, you’ll notice terms like “cookie”,  “cache”, “XSS Protection”, and acronyms in the URL such as “cdn” and “uri”. I will get to those other terms in a future issue, but let’s zap one of those now: A <strong>URI</strong> is a Uniform Resource Identifier. It is a string of text that helps to uniquely identify the thing that was tagged with the URI. The URLs (Uniform Resource Locators) we have all come to know and use are a special type of URI that uniquely identifies the page we are visiting.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next few issues:</strong> What does an HTTP request look like? How do I make an HTTP request? What’s the difference between HTTP and HTTPS?</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>a specification? [Issue 6,8]</li>
+<li>a cookie? [Issue 8]</li>
+<li>a cache? [Issue 8]</li>
+<li>XSS? [Issue 8]</li>
+<li>a CDN? [Issue 8]</li>
+<li>Unicode? And what does it have to do with emoji? [Issue 8]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2019-02-02T08:00:00+08:00">
+      Sat 02 February 2019
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue007.html">
+                Issue 7: What is HTTP?
+            </a>
+        </li>
+        <li>
+            <a href="/issue009.html">
+                Issue 9: How do I make an HTTP request?
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

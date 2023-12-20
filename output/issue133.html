@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 133: the ATX form factor (post-1995)</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-11.html">Season 11</a></p>
+  <header>
+    <h2>
+      <a href="/issue133.html" rel="bookmark"
+         title="Permalink to Issue 133: the ATX form factor (post-1995)">Issue 133: the ATX form factor (post-1995)</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2021-08-14T08:00:00+08:00">
+    Sat 14 August 2021
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> Chipsets served as go-betweens in the AT form factor by IBM.</p>
+<p>In 1993, Intel launched its Pentium line of processors; barely two years later, in 1995, Intel launched the ATX form factor. This was the beginning of Intel’s dominance in the desktop space, and they could well afford to dictate most of the standards for this form factor.</p>
+<h2>Chipset diagram</h2>
+<p>Mainboards at this point were complicated enough that as part of the marketing, tech publications had taken to staring at diagrams of how the chips were connected. These diagrams are called <strong>chipset diagrams</strong>.</p>
+<p>This is the chipset diagram of a typical mainboard for the Pentium 4:</p>
+<p><img alt="Chipset diagram of a mainboard for the Pentium 4" src="/issue133_02.jpg"><br>
+<em>I tried to find a chipset diagram that used human terms instead of acronyms.<br />This is the best I could do. Annotations my own.<br />Source: <a href="https://www.hexus.net/tech/reviews/mainboard/635-sis655fx-dual-channel-p4-chipset/?page=2">Hexus</a></em>    </p>
+<p>The <strong>memory controller hub</strong> (MCH) now takes on a much bigger role; it is managing data transfer between the CPU, graphics card, computer memory, <em>and</em> the PCH.</p>
+<p>The <strong>peripheral controller hub</strong> (PCH), while managing connections to many more devices, actually has less work to do; these are all low-throughput devices that don’t send much data to the CPU.</p>
+<h2>ATX mainboard</h2>
+<p>And this is where the components are found on the motherboard:</p>
+<p><img alt="A mainboard for the Pentium 4" src="/issue133_01.jpg"><br>
+<em>A motherboard for the Pentium 4, with key components outlined.<br />Annotations are my own.</em>    </p>
+<p>The CPU clearly draws the most power and produces the most heat here. But notice now that the MCH is no longer bare; it now produces so much heat (<a href="https://hexus.net/tech/news/mainboard/132515-der8auer-examines-amd-x570-chipset-power-consumption/">4–10 W</a>) that it needs to be passively cooled with a heatsink (<a href="/issue129.html">Issue 129</a>)). the PCH, on the other hand, is still chill enough to get by bare naked (4 W or less).</p>
+<p>3D graphics at this point is a rapidly growing industry, especially for videogames. Graphics cards needed much more throughput to the CPU and memory, so the MCH grew to fit into this role as the mediator between these throughput-hungry components</p>
+<p><strong>Issue summary:</strong> The ATX form factor also brought with it a new breed of computers with more specialised chipsets: the memory controller hub (MCH) and peripheral controller hub (PCH). The MCH coordinates high-throughput components, such as computer memory and graphics. The PCH specialises in lower-throughput needs.</p>
+<p>Much as I try to avoid using acronyms, here they are really just easier to read.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S10] Issue 134: Part 1 – the Intel Core i-series launches!</p>
+<p>I don’t know if you noticed, but there seem to be fewer chips here than on the AT board. That’s misleading though; the components that were on the AT board are also on the ATX board, but greatly shrunk. Some of the functionality that used to require multiple chips on AT have been replaced by a single chip in ATX, hence the appearance of simplicity. In reality, the ATX mainboard is more complex!</p>
+<p>Next issue, onward with the integration!</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>XSS? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2021-08-14T08:00:00+08:00">
+      Sat 14 August 2021
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue132.html">
+                Issue 132: the AT form factor (pre-1995)
+            </a>
+        </li>
+        <li>
+            <a href="/issue134.html">
+                Issue 134: Part 1 – the Intel Core i-series launches!
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

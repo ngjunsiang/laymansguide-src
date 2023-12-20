@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 40: Bits and bytes</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-04.html">Season 04</a></p>
+  <header>
+    <h2>
+      <a href="/issue040.html" rel="bookmark"
+         title="Permalink to Issue 40: Bits and bytes">Issue 40: Bits and bytes</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2019-09-28T08:00:00+08:00">
+    Sat 28 September 2019
+  </time></p>
+  <p><strong>Previously:</strong> Networks enable data packets to get from one computer in the network to another through gateways that forward the data packets according to fixed rules. These rules are encoded in the various protocols followed by network systems, and all computers on the network agree to follow the same protocol.</p>
+<p>But what kind of data gets transmitted over the network? And why do strange file-related things happen on my computer? I’ll unpack some of these gradually over the course of this 13-issue season.</p>
+<p>Let’s start Season 4 slow, with a simple question: when I buy a 1TB hard drive, why does my computer say it has only 930GiB available?</p>
+<h2>A bit: the littlest bit of data</h2>
+<p>You know the game Animal, Plant or Mineral, where you ask yes/no questions to guess what the other person has chosen (from the Animal, Plant, or Mineral category)? Each yes/no question narrows down the range of options until you are finally reasonably certain you know what they have in mind.</p>
+<p>It seems everybody knows that all the way down, computers work with 0s and 1s. They work kind of like Yes and No, too, with each digit acting like the answer to a Yes/No question, to narrow down the available information. Quick example:</p>
+<p><strong>Animal</strong></p>
+<ol>
+<li>Does it have more than two legs? → Yes (1)</li>
+<li>Does it have four legs? → No (0)</li>
+<li>Does it crawl on the ground? → No (0)</li>
+<li>Can it jump? → Yes (1)</li>
+</ol>
+<p>With this question sequence, a grasshopper would be represented as YNNY, or <code>1001</code>. A millipede would be represented as <code>1010</code>. A dog would be represented as <code>1101</code>, but so would a cat. 4 digits can help us categorise different animals, but not all. The more questions we can ask, the better we can categorise them.</p>
+<p>The answer to each question has 2 possible outcomes, and gives us a little <em>bit</em> more information. Claude Shannon, the father of modern Information Theory, thus named it the <strong>bit</strong>. What is a bit? It’s a unit of measure for information. Just as we measure weight in units of kilograms, height in units of centimetres, or time in units of seconds, we measure information in bits.</p>
+<p>1 bit of information is enough information to reduce the uncertainty by 50%. Each question you ask in Animal, Plant, or Mineral should reduce the possibilities by half, until the remaining possibilities are small enough to guess.</p>
+<p>So in a computer, a single digit—0 or 1—is a bit.</p>
+<h2>A byte: a convenient cluster of 8 bits</h2>
+<p>In the 1970s, 8-bit microprocessors were all the rage. These were processors that processed everything in clusters of 8 bits. It became convenient to refer to 8 bits as a <strong>byte</strong>, and the term has stuck since. The term didn’t die off because so many things still use clusters of 8 bits to represent information.</p>
+<p>8 bits can store 256 (2^8) unique values, and that turns out to be enough for many purposes. I won’t list examples here, since those examples will come in subsequent issues. If you need greater precision, you can always use 2 bytes.</p>
+<h2>It’s all Greek (prefixes): kilo, mega, giga, tera</h2>
+<p>The metric system gave us nice prefixes to count in thousands (kilo-), millions (mega-), billions (giga-), or trillions (tera-), neatly represented by the letters <em>k</em>, <em>M</em>, <em>G</em>, and <em>T</em> respectively (case-sensitive).</p>
+<p>So a kilobyte is 1,000 bytes, a megabyte is 1,000,000 bytes, a gigabyte is 1,000,000,000 bytes, and a terabyte is 1,000,000,000,000 bytes.</p>
+<h2>Uh oh …</h2>
+<p>Here we run into a little bit of a problem. Computers like to count in powers of two, because increasing the number of bits by one gives us double the number of possible values.</p>
+<p>8 bits gives us a byte. 9 bits gives us two bytes, since the additional bit can be 0 or 1. 10 bits gives us four bytes, since the additional 2 bits can be 00, 01, 10, or 11.</p>
+<p>11 bits: 8 bytes (000, 001, 010, 011, 100, 101, 110, 111)<br>
+12 bits: 16 bytes (I won’t list them from this point onwards; I think you can see the pattern)<br>
+13 bits: 32 bytes<br>
+14 bits: 64 bytes<br>
+15 bits: 128 bytes<br>
+16 bits: 256 bytes<br>
+17 bits: 512 bytes<br>
+18 bits: 1024 bytes  </p>
+<p>1024 bytes is the closest we can come to 1000 bytes.</p>
+<h2>Can’t be unseen</h2>
+<p>If you’re on a Windows computer, go to My Computer. If you’re on another OS, go to whichever app shows you available disk space. Look carefully at the units for free space.</p>
+<p>Disk space is not reported in MB, GB, or TB. It’s reported in MiB (mebibytes), GiB (gibibytes), or TiB (tebibytes)! Those units are not the decimal notations we are used to. We count bits differently from computers.</p>
+<p><strong>Humans:</strong> Since 10^3 is 1000, a kilobyte is 1000 bytes, a megabyte is 1000 kilobytes, a gigabyte is 1000 megabytes, and a terabyte is 1000 gigabytes.<br>
+<strong>Computers:</strong> Since 2^10 is 1024, a kibibyte (kiB, or kilo binary byte) is 1024 bytes, a mebibyte (MiB, or mega binary byte) is 1024 kibibytes, a gibibyte (GiB, or giga binary byte) is 1024 mebibytes, and a tebibyte (TiB, or tera binary byte) is 1024 gibibytes.  </p>
+<p>When you buy a 1TB hard drive, you are buying a 1,000,000,000,000-byte drive.</p>
+<p>1,000,000,000,000 bytes ÷ 1,024 = 976,562,500 kibibytes (kiB)<br>
+976,562,500 kibibytes ÷ 1,024 = 953,674 mebibytes (MiB)<br>
+953,674 mebibytes ÷ 1,024 = 931 gibibytes (GiB)  </p>
+<p>So your computer isn’t lying, it’s just using different units of counting.</p>
+<p><strong>Issue summary:</strong> A bit is a unit of measurement for information. 1 bit of information is enough to reduce the uncertainty by 50%. 8 bits comprise 1 byte. Humans count bytes in multiples of thousands, while computers count bytes in multiples of 1,024.</p>
+<hr>
+<p>There are much shorter versions of this explanation on the Internet, but I found none of them satisfying, because they try to paper over the mathematical detail. While this newsletter is intended for layfellas, the math is something that can be worked out with a calculator, and I found that showing the detail makes it easier to understand.</p>
+<p>There may be a social-construct argument to be made here for units of measurement, but I won’t go into that here. I wanted Issue 40 to start with an example of how things work differently between a human mind and a computer’s “computational mind”, and I hope I’ve achieved that.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> ASCII, the typewriter digitised</p>
+<p>We started with a (figurative) bit of bean-counting, let’s get right into how computers work with text in Issue 41 so that I can finally answer one of the sometime-in-the-future questions below: What is ASCII? And I’ll answer another one in Issue 42: What is Unicode?</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>a cookie? [Issue 8]</li>
+<li>XSS? [Issue 8]</li>
+<li>a CDN? [Issue 8]</li>
+<li>Unicode? And what does it have to do with emoji? [Issue 8]</li>
+<li>those '\r\n’s in the HTTP request packet [Issue 12,17]?</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>ASCII? [Issue 23]</li>
+<li>compiling code into an application [Issue 26]?</li>
+<li>firmware? [Issue 34]</li>
+<li>What is HTML [Issue 38]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2019-09-28T08:00:00+08:00">
+      Sat 28 September 2019
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue039.html">
+                Issue 39: Caches and caching
+            </a>
+        </li>
+        <li>
+            <a href="/issue041.html">
+                Issue 41: ASCII, the typewriter digitised
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 82: Multiplayer databases</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-07.html">Season 07</a></p>
+  <header>
+    <h2>
+      <a href="/issue082.html" rel="bookmark"
+         title="Permalink to Issue 82: Multiplayer databases">Issue 82: Multiplayer databases</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2020-08-01T08:00:00+08:00">
+    Sat 01 August 2020
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> Putting all data into one table results in unnecessary duplication of data. Making data atomic by splitting it up into multiple tables makes the data easier to work with, but requires multiple lookups and joins to get the required data. A standard database language, SQL, makes it possible to write queries that are supported by multiple databases.</p>
+<p>This issue is going to be a short one, because it is simple enough to explain :)</p>
+<blockquote>
+<p>“The action can’t be completed because the file is open. Close the file and try again.”</p>
+</blockquote>
+<p>This happens in File Explorer because the operating system treats a text file as a single block of data. When a user opens this file, they do not expect data inside to change. To prevent other users inadvertently modifying it, the operating system “locks” the file, preventing any changes—including deletion!</p>
+<p>How do we resolve this with a database? In the previous issue (<a href="/issue081.html">Issue 81</a>)), I described the process of making data atomic—breaking it up into the smallest level of detail. By splitting up one huge spreadsheet worth of data into multiple tables representing different things, we allow the database to do the heavy work of data processing for us, while we avoid the tedium of repeating the same data row after row (such as author name for different blog posts).</p>
+<h2>Locking specific data</h2>
+<p>Now that the data is atomic, the database is better able to figure out which data needs to be locked. If a user is requesting data from a particular table and from certain rows only, we do not need to lock the entire database and prevent other users from accessing it. Such systems are called row-locking systems, and some databases (but not all) support this feature.</p>
+<h2>Action deconflicting</h2>
+<p>When multiple users access a database and attempt to write data to it at the same time, the database takes these requests and puts them in a queue, processing them one by one so that no two conflicting actions end up causing the data to be corrupted.</p>
+<p>But sometimes, conflicting actions can end up getting queued. For instance, User 1 might send a command to delete a table while User 2 send a command to retrieve data from that table (because it had not been deleted at the point when User 2 accessed it). User 1’s command gets through first and deletes the table, and when the database reaches User 2’s command, it is no longer able to execute it. What happens then?</p>
+<p>Well, that’s when the database throws an error. A database system is able to detect actions whose logic conflict with other actions. With our previous text-based system, even with the table gone, the program could still continue to search for results, and finding none, return empty data instead of alerting the user.</p>
+<p><strong>Issue summary:</strong> A database system follows rules that enable multiple users to send commands to the database at the same time. The system attempts to execute each action one at a time, locking data that is in use by other users, and ensuring that each user does not carry out actions that they are not permitted to. Such systems are better able to prevent data corruption compared to a text-based system.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S7] Issue 83: Structured Query Language</p>
+<p>If you have an Excel maven in your workplace who writes <code>VLOOKUP</code>s, <code>INDEX-MATCH</code>s and other chained functions with ease, you will know how spreadsheets can do downright amazing things. But wait till you see Structured Query Language (SQL); it will blow your mind! It <em>almost</em> looks like Excel code, except with fewer nested parentheses, and reads a little (deceptively) more like English. I’ll show you next issue.</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>XSS? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>firmware? [Issue 34]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+<li>What is involved in installing a piece of software? [Issue 48]</li>
+<li>How do apps know where a file starts and ends? [Issue 49]</li>
+<li>What is a password hash? [Issue 63]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2020-08-01T08:00:00+08:00">
+      Sat 01 August 2020
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue081.html">
+                Issue 81: Data Normalisation
+            </a>
+        </li>
+        <li>
+            <a href="/issue083.html">
+                Issue 83: Structured Query Language
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>

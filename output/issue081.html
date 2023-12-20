@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Layman's Guide to Computing - Issue 81: Data Normalisation</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Layman's Guide to Computing</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/categories">Seasons</a></li>
+            <li><a href="/tags">Tags</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <p><a href="/category/season-07.html">Season 07</a></p>
+  <header>
+    <h2>
+      <a href="/issue081.html" rel="bookmark"
+         title="Permalink to Issue 81: Data Normalisation">Issue 81: Data Normalisation</a></h2>
+ 
+  </header>
+  <p>Published: <time datetime="2020-07-25T08:00:00+08:00">
+    Sat 25 July 2020
+  </time></p>
+  <p><a href="https://buttondown.email/laymansguide/archive/"><strong>Previously:</strong></a> An index is a separate table containing key terms in the database (usually names, IDs, or some other key identifier), alongside the row numbers where they are found. An index greatly speeds up row lookups, but slows down the writing of new rows.</p>
+<p>In this post, I will use CSV format to describe data, although if you have followed this season from the start you would be aware that in a database, this data would not be in text form. Nonetheless, at this point it would be represented similarly.</p>
+<p>If we were constructing a database of blog posts from multiple authors of a blog, we might organise the post data like this:</p>
+<div class="highlight"><pre><span></span><code>id,author,title,content
+1,knowitall,Why the world is falling apart,blahblahblah…
+2,knowitall,Make the world great again,blahblahblah…
+3,whatsgoingon,Why have things come to this,blahblahblah…
+</code></pre></div>
+
+<p>Later, when the authors start to add avatars and other information to their profile, the table might grow:</p>
+<div class="highlight"><pre><span></span><code>id,author,avatarURL,about,title,content
+1,knowitall,http://avatars.me/knowitall.jpg,I know everything!,Why the world is falling apart,blahblahblah…
+2,knowitall,http://avatars.me/knowitall.jpg,I know everything!,Make the world great again,blahblahblah…
+3,whatsgoingon,http://avatars.me/whatsgoingon.jpg,Curious about the world,Why have things come to this,blahblahblah…
+</code></pre></div>
+
+<p>And when we start to add post tags:</p>
+<div class="highlight"><pre><span></span><code>id,author,avatarURL,about,title,content,tags
+1,knowitall,http://avatars.me/knowitall.jpg,I know everything!,Why the world is falling apart,blahblahblah…,daily+apocalypse
+2,knowitall,http://avatars.me/knowitall.jpg,I know everything!,Make the world great again,blahblahblah…,daily+ambition
+3,whatsgoingon,http://avatars.me/whatsgoingon.jpg,Curious about the world,Why have things come to this,blahblahblah…,essay+apocalypse
+</code></pre></div>
+
+<p>What problems are we going to run into with a table like this?</p>
+<h2>Suboptimal table forms</h2>
+<p>Even with constant-width tables and pre-determined data types, plus speeding up lookups with indexes, we will run into some issues as the number of posts grows:</p>
+<ol>
+<li><strong>Duplication of data</strong><br>
+   The avatar URL and About description (for the author) are repeated in each post. In a real blog, where these are often longer and you might have more contact information about each author (such as contact info), the amount of duplicated data is simply wasteful.</li>
+<li><strong>Difficult data extraction</strong><br>
+   Notice that the tags are all jammed up into one column. How would we search for all posts with the "apocalypse" tag?<br>
+   We would have to retrieve each row one by one, split up the tag strings, and check if "apocalypse" is in there … that’s really slow!</li>
+</ol>
+<h2>Data normalisation: making data atomic</h2>
+<p>When data is really complex, it makes sense to split it up and make it <strong>atomic</strong>. When data is atomic, it means that it has been broken down to the lowest level of detail; typically this would mean individual records that avoid duplication.</p>
+<p>For instance, we might have an <code>Author</code> table:</p>
+<div class="highlight"><pre><span></span><code>ID,name,avatarURL,about
+1,knowitall,http://avatars.me/knowitall.jpg,I know everything!
+2,whatsgoingon,http://avatars.me/whatsgoingon.jpg,Curious about the world
+…
+</code></pre></div>
+
+<p>And a <code>Posts</code> table:</p>
+<div class="highlight"><pre><span></span><code>ID,authorID,title,content
+1,1,Why the world is falling apart,blahblahblah…
+2,1,Make the world great again,blahblahblah…
+3,2,Why have things come to this,blahblahblah…
+…
+</code></pre></div>
+
+<p>What to do with the <code>Tags</code>? Often a database designer will create a <code>Tags</code> table like this:</p>
+<div class="highlight"><pre><span></span><code>ID,tag
+1,daily
+2,apocalypse
+3,ambition
+4,essay
+…
+</code></pre></div>
+
+<p>and a <code>PostTags</code> table like this:</p>
+<div class="highlight"><pre><span></span><code>postID,tagID
+1,1
+1,2
+2,1
+2,3
+3,2
+3,4
+…
+</code></pre></div>
+
+<p>This process of splitting up a complex data set into atomic, related data fields is known as <strong>data normalisation</strong>. A data set that is not normalised will make it difficult to do lookups efficiently as new needs arise later.</p>
+<h2>Advantages of data normalisation</h2>
+<p>The first advantage you can see above is that retrieving author-only data, post-only data, etc is now much faster. We don’t have to pull up a whole lot of other unrelated information, incurring unnecessary data transfer overhead.</p>
+<p>The second advantage you can see is that entities—authors, posts, tags—are now referred to by an ID. An ID is usually a number, which is represented more compactly in a computer in binary form as compared to a name or title in text form (Issue 79). This allows our program to carry out any processing on relationships between these entities much more quickly (e.g. “how many posts does this author have?” “How many posts have this tag?”), with lower data transfer overhead.</p>
+<h2>Disadvantages: greater complexity</h2>
+<p>The disadvantage is that pulling data together to render a blog post on a webpage now involves looking up three different tables and joining the data together. Each query is going to involve multiple lookups and joins, and is going to require many lines of code … if each programming language is going to come up with its own way of writing these lookups and joins, and each new database format also comes up with its own commands, very soon we would have a huge unmaintainable mess of syntax and commands to learn!</p>
+<p>So programmers and database designers came together and came up with a <em>new language</em> to do lookups and joins: Structured Query Language, or <strong>SQL</strong>. This is the reason why today you can write SQL queries that will work on a Microsoft SQL (MSSQL), PostGreSQL, MySQL, or MariaDB database; they all support SQL!</p>
+<p><strong>Issue summary:</strong> Putting all data into one table results in unnecessary duplication of data. Making data atomic by splitting it up into multiple tables makes the data easier to work with, but requires multiple lookups and joins to get the required data. A standard database language, SQL, makes it possible to write queries that are supported by multiple databases.</p>
+<p>I am jumping ahead of myself a little here; I’ll only talk about SQL a couple of issues later. Before I go into what SQL does, there are two features our program does not yet support: allowing multiple users to read and write data, and setting access permissions on data.</p>
+<h2>What I’ll be covering next</h2>
+<p><strong>Next issue:</strong> [LMG S7] Issue 82: Multiplayer databases</p>
+<blockquote>
+<p>“The action can’t be completed because the file is open. Close the file and try again.”</p>
+</blockquote>
+<p>How often have you run into this error on Windows?</p>
+<p>This makes it difficult for multiple users to work on a file at the same time. How do databases work around this? Find out in the next issue!</p>
+<p><strong>Sometime in the future:</strong> What is:</p>
+<ul>
+<li>booting up? [Issue 15]</li>
+<li>XSS? [Issue 8]</li>
+<li>a good reason developers write code and give it away for free online? [Issue 21]</li>
+<li>firmware? [Issue 34]</li>
+<li>OpenType? And what are fonts anyway? [Issue 42]</li>
+<li>What is involved in installing a piece of software? [Issue 48]</li>
+<li>How do apps know where a file starts and ends? [Issue 49]</li>
+<li>What is a password hash? [Issue 63]</li>
+</ul>
+  <footer>
+    <!--     <p>Last updated: <time datetime="2020-07-25T08:00:00+08:00">
+      Sat 25 July 2020
+    </time></p>
+ -->
+    <address>
+      By           <a href="/author/j-s-ng.html">J S Ng</a>
+    </address>
+  </footer>
+  </article>
+<ul>
+        <li>
+            <a href="/issue080.html">
+                Issue 80: Indexing
+            </a>
+        </li>
+        <li>
+            <a href="/issue082.html">
+                Issue 82: Multiplayer databases
+            </a>
+        </li>
+</ul>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>
