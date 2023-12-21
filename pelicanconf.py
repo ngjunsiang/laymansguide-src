@@ -4,6 +4,8 @@ SITEURL = "https://ngjunsiang.github.io/laymansguide"
 STYLESHEET_URL = "theme/css/style.css"
 HTTPS = True
 
+RELATIVE_URLS = True
+
 PATH = "content"
 
 TIMEZONE = 'Asia/Singapore'
