@@ -1,7 +1,7 @@
 AUTHOR = 'J S Ng'
 SITENAME = "Layman's Guide to Computing"
 SITEURL = "https://ngjunsiang.github.io/laymansguide"
-STYLESHEET_URL = "/theme/css/style.css"
+STYLESHEET_URL = "theme/css/style.css"
 HTTPS = True
 
 PATH = "content"

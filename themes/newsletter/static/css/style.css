@@ -1,135 +1,172 @@
-/* attriCSS: https://raj457036.github.io/attriCSS/ */
-
-@import url("https://fonts.googleapis.com/css?family=Nunito");html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,textarea,input,select,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-family:"Nunito",sans-serif;color:#eceff1}
-
-body,html{padding:3%;margin:0;overflow-x:hidden;background-color:#37474f}
-
-nav{font-family:"Nunito",sans-serif;background-color:#212121;color:#fff;display:-webkit-box;display:-ms-flexbox;display:flex}
-
-nav header{padding:8px;display:inline}
-
-nav header a{text-decoration:none;color:#fff}
-
-nav header a:hover{color:#00c853}
-
-nav header+input:checked+div{display:block}
-
-nav div{display:none;margin-left:auto}
-
-nav div ul{list-style:none;display:-webkit-box;display:-ms-flexbox;display:flex;margin:0 10px}
-
-nav div ul li a{display:inline-block;padding:8px;color:#fff;text-decoration:none}
-
-nav div ul li:hover{background-color:#00c853}
-
-nav div ul li ul{right:0;position:relative;background:pink}
-
-@media (max-width: 630px){nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
-
-nav header{text-align:center}
-
-nav div{margin:auto}
-
-nav div ul{padding:0}
-
-nav div ul li{border-top-left-radius:5px;border-top-right-radius:5px}
-
-nav div ul li[active],nav div ul li.active{border:1px solid #00c853;border-bottom:none}
-
-blockquote{border-left:4px solid #00c853;padding:8px 5px;margin:0}
-
-blockquote p{font-size:0.4rem}
-
+body,
+html {
+    padding: 0em;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #061A40;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;;
 }
 
-@media (min-width: 630px){nav div ul li.active,nav div ul li[active]{border:1px solid #00c853;border-bottom:none;border-top:none}
-
-nav header label{display:none}
-
+@media screen and (max-width: 600px){
+    body{
+        font-size: 17px
+    }
 }
 
-section[container]{max-width:38em;margin:auto;padding:5px}
+main{
+    padding: 5%;
+    background-color: #061A40;
+    color: #B9D6F2;
+    line-height: 1.55em;
+    max-width: 32rem;
+}
 
-h1{font-size:2.35em}
+body > header{
+    background-color: #0353A4;
+    border-bottom: 2px dashed #B9D6F2cc;
+    color: white;
+    padding: 2em 5% 1.5em 5%;
+}
 
-h2{font-size:2em}
+header h1{
+  font-weight: 200;  
+  margin: 0px;
+  margin-bottom: 0.75em;
+  line-height: 1.3em;
+}
 
-h3{font-size:1.75em}
+h2{
+    line-height: 1.3em;
+}
 
-h4{font-size:1.5em}
+article{
+    margin: 4em 0em; 
+}
 
-h5{font-size:1.25em}
+h1 a, h2 a, header a, footer a{
+    text-decoration: none;
+}
 
-h6{font-size:1em}
 
-a{color:#00c853}
+a{
+    color: #eee;
+}
 
-a:hover{color:#212121}
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
 
-mark{background-color:#00c853}
+p{
+    margin: 0em 0em 1.75em 0em;
+}
 
-code{font-family:monospace;background-color:#bdbdbd;padding-left:5px;padding-right:5px}
+nav ul{
+    display: flex;
+    padding: 0px;
+    margin-bottom: 0px;
+}
 
-blockquote{border-left:4px solid #00c853;padding:8px 10px;width:100%}
+nav li{
+    padding: 0em 1em 0em 0em;
+    list-style: none;
+    font-weight: 600;
+}
 
-blockquote p{font-style:italic;font-size:1.1rem}
+body > footer{
+    background-color: #0353A4;
+    color: #ddd;
+    padding: 1em 1.5em;
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
 
-blockquote footer::before{content:"\2014 \00A0"}
+body > footer a{
+    color: #B9D6F2;
+    font-weight: 600;
+}
 
-blockquote footer cite{font-style:italic;color:#bdbdbd}
 
-pre{background:#263238;overflow-x:auto;text-align:left;padding:5px}
+/* Styles for post pages */
 
-pre code{display:block;padding:0 10px;background:transparent}
+h2{
+    font-size: 2.1em;
+}
 
-table{display:table;padding:5px;border-collapse:collapse}
+time{
+    font-family: Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+    font-size: 0.8em;
+    margin-left: 0.5em;
+    opacity: 0.7;
+}
 
-table thead,table tbody{text-align:left}
+main ul, ol{
+    margin-bottom: 2.5em;
+}
 
-table tr th,table tr td{padding:5px 10px;border-bottom:1px solid #00c853}
+li{
+    margin-bottom: 1.2em;
+}
 
-div[overflow]{overflow-x:auto;max-width:100vw}
+img{
+    width: 100%;
+}
 
-div[overflow] ::-webkit-scrollbar{height:0}
+figcaption{
+    margin-top: 5px;
+    font-size: 0.8em;
+}
 
-img{max-width:100%;border-radius:5px}
+table {
+    display: table;
+    padding: 5px;
+    border-collapse: collapse
+}
 
-form div{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin:10px 5px}
+table thead,
+table tbody {
+    text-align: left
+}
 
-form div p{margin:0px}
+table tr th,
+table tr td {
+    padding: 5px 10px;
+    border-bottom: 1px solid #00c853
+}
 
-form input,form select{font-size:1rem;padding:5px;border:none;color:#212121}
 
-form input:active,form input:focus,form select:active,form select:focus{outline-color:#00c853}
+pre {
+    background: #111;
+    overflow-x: auto;
+    text-align: left;
+    padding: 1em;
+    font-size: 0.9rem;
+}
 
-form input[type="submit"]{padding:10px;background-color:#00c853;color:#eceff1;border-radius:5px;border:none;cursor:pointer}
+pre code {
+    display: block;
+    padding: 0 10px;
+    background: transparent;
+}
 
-form input[type="submit"]:active,form input[type="submit"]:focus{outline:none}
+code {
+    font-family: monospace;
+    background-color: #B9D6F2;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #061A40;
+    padding: 2px 6px;
+    font-size: 0.9rem;
+}
 
-form input[type="submit"]:active{background-color:#212121;color:#00c853}
+blockquote {
+    border-left: 3px solid #B9D6F2;
+    padding: 0em 0em 0em 1em;
+    margin-bottom: 1.7em;
+    width: 100%
+}
 
-form input[type="submit"]:disabled{background:#bdbdbd;cursor:not-allowed}
-
-form input[type="submit"][secondary]{background-color:#212121;color:#00c853}
-
-form input[type="submit"][secondary]:active{background-color:#00c853;color:initial}
-
-textarea{color:#212121;width:-webkit-fill-available;font-size:1rem;padding:5px}
-
-textarea:active,textarea:focus{outline-color:#00c853}
-
-button{padding:10px;background-color:#00c853;color:#eceff1;border-radius:5px;border:none;cursor:pointer}
-
-button:active,button:focus{outline:none}
-
-button:active{background-color:#212121;color:#00c853}
-
-button:disabled{background:#bdbdbd;cursor:not-allowed}
-
-button[secondary]{background-color:#212121;color:#00c853}
-
-button[secondary]:active{background-color:#00c853;color:initial}
-
-body>footer{background-color:#212121;position:relative;bottom:0;width:100%;padding:5px}
-
-/*# sourceMappingURL=midnight-green.css.map */
+blockquote:last-child{
+    margin-bottom: none;
+}
