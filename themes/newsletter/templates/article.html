@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% block html_lang %}{{ article.lang }}{% endblock %}
 
+{% block custom_css %}
+<link rel="stylesheet" type="text/css" href="theme/css/article.css" />
+{% endblock %}
+
 {% block title %}{{ SITENAME|striptags }} - {{ article.title|striptags  }}{% endblock %}
 
 {% block head %}
