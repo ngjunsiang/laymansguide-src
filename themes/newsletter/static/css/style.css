@@ -87,24 +87,24 @@ body > footer a{
     font-weight: 600;
 }
 
-/* prev/next navigation */
-main > ul {
+/* Prev/Next navigation for articles */
+main > nav > ul {
     list-style: none;
     padding: 0px;
     margin: 0px;
     display: flex;
     justify-content: space-between;
 }
-main > ul li {
+main > nav > ul li {
     margin-right: 10px;
 }
-main > ul li:nth-child(1)::before {
+main > nav > ul li:nth-child(1)::before {
     content: "Prev Issue: ";
 }
-main > ul li:nth-child(2)::before {
+main > nav > ul li:nth-child(2)::before {
     content: "Next Issue: ";
 }
-main > ul li:last-child {
+main > nav > ul li:last-child {
     margin-left: auto;
     margin-right: 0;
 }
