@@ -26,6 +26,22 @@
 {% endblock %}
 
 {% block content %}
+<ul>
+    {% if article.prev_article %}
+        <li>
+            <a href="{{ SITEURL }}/{{ article.prev_article.url}}">
+                {{ article.prev_article.title }}
+            </a>
+        </li>
+    {% endif %}
+    {% if article.next_article %}
+        <li>
+            <a href="{{ SITEURL }}/{{ article.next_article.url}}">
+                {{ article.next_article.title }}
+            </a>
+        </li>
+    {% endif %}
+</ul>
 <article>
   {% if article.category %}
   <p><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>
@@ -63,7 +79,7 @@
     </p>
     {% endif %}
   </footer>
-  </article>
+</article>
 <ul>
     {% if article.prev_article %}
         <li>

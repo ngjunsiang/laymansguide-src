@@ -87,6 +87,27 @@ body > footer a{
     font-weight: 600;
 }
 
+/* prev/next navigation */
+main > ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+main > ul li {
+    margin-right: 10px;
+}
+main > ul li:nth-child(1)::before {
+    content: "Prev Issue: ";
+}
+main > ul li:nth-child(2)::before {
+    content: "Next Issue: ";
+}
+main > ul li:last-child {
+    margin-left: auto;
+    margin-right: 0;
+}
 
 /* Styles for post pages */
 
@@ -147,6 +168,7 @@ pre {
 pre code {
     display: block;
     padding: 0 10px;
+    color: #B9D6F2;
     background: transparent;
 }
 

@@ -42,6 +42,6 @@ THEME = "themes/newsletter"
 
 DISPLAY_CATEGORIES_ON_MENU = False
 MENUITEMS = [
-    ("Seasons", "/categories"),
-    ("Tags", "/tags"),
+    ("Seasons", "categories"),
+    ("Tags", "tags"),
 ]
