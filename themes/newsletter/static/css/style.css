@@ -62,13 +62,13 @@ p{
     margin: 0em 0em 1.75em 0em;
 }
 
-nav ul{
+header > nav ul{
     display: flex;
     padding: 0px;
     margin-bottom: 0px;
 }
 
-nav li{
+header > nav li{
     padding: 0em 1em 0em 0em;
     list-style: none;
     font-weight: 600;
@@ -88,23 +88,23 @@ body > footer a{
 }
 
 /* Prev/Next navigation for articles */
-main > nav > ul {
+main > nav ul {
     list-style: none;
     padding: 0px;
     margin: 0px;
     display: flex;
     justify-content: space-between;
 }
-main > nav > ul li {
+main > nav ul li {
     margin-right: 10px;
 }
-main > nav > ul li:nth-child(1)::before {
+main > nav ul li:nth-child(1)::before {
     content: "Prev Issue: ";
 }
-main > nav > ul li:nth-child(2)::before {
+main > nav ul li:nth-child(2)::before {
     content: "Next Issue: ";
 }
-main > nav > ul li:last-child {
+main > nav ul li:last-child {
     margin-left: auto;
     margin-right: 0;
 }
