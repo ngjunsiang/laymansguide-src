@@ -8,7 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-build/
+# build/ directory removed - contains project source code and metadata
 develop-eggs/
 dist/
 downloads/
