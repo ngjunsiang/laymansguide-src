@@ -11,6 +11,9 @@ from pelicanconf import *
 SITEURL = "https://ngjunsiang.github.io/laymansguide-src"
 RELATIVE_URLS = False
 
+# CSS path will be resolved relative to SITEURL by the template
+STYLESHEET_URL = "theme/css/style.css"
+
 FEED_ALL_ATOM = "feeds/all.atom.xml"
 CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
 
