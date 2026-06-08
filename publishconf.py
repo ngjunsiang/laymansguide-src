@@ -21,11 +21,5 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-# Update menu items to use full URLs for production
-MENUITEMS = [
-    ("Seasons", "https://ngjunsiang.github.io/laymansguide-src/categories"),
-    ("Tags", "https://ngjunsiang.github.io/laymansguide-src/tags"),
-]
-
 # DISQUS_SITENAME = ""
 # GOOGLE_ANALYTICS = ""
