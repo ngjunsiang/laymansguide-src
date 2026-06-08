@@ -6,6 +6,10 @@ HTTPS = True
 
 PATH = "content"
 
+# Static paths configuration
+# Images are stored within individual issue directories, not in a centralized location
+STATIC_PATHS = []
+
 TIMEZONE = 'Asia/Singapore'
 
 DEFAULT_LANG = 'en'
