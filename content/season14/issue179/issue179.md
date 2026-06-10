@@ -4,21 +4,20 @@ Tags:
 Category: Season 14
 Slug: issue179
 Author: J S Ng
-Summary: Agents are software applications that comprise a harness, a runtime, and a model (typically accessed through an API instead of directly executed on the computer). They enable a user to type in a request or send it by other means and thus instruct the agent to carry out a task on the computer until completion. The capabilities of agents are limited by the tools available to them.
-Modified: 
+Summary: Agents are software applications that comprise a harness, a runtime, and a model (typically accessed through an API instead of directly executed on the computer). They enable a user to type in a request or send it by other means and thus instruct the agent to carry out a task on the computer until completion. The capabilities of agents are limited by the tools available to them. 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Thinking/reasoning models are those that have been trained on examples of how to think about different problems in different domains, or plan and execute complex tasks. They often use tools to aid them in goal tracking and updating. The full thinking trace from the model may be removed or hidden to present a more legible response to the user.
 
 Let's review the ingredients we have so far:
 
-1. A large language model (Issue 170) or multimodal model (Issue 177): a next-token predictor that takes input tokens and keeps generating output tokens which feed back to the input
-2. Training data, which the model is trained on to pick up general patterns through unsupervised learning (Issue 171), and then steered to avoid harmful output and generate useful output through the use of labelled training data through supervised learning (Issue 174)
-3. A runtime (Issue 175), which handles multiple responsibilities:
+1. A large language model ([Issue 170]({filename}/season14/issue170/issue170.md)) or multimodal model ([Issue 177]({filename}/season14/issue177/issue177.md)): a next-token predictor that takes input tokens and keeps generating output tokens which feed back to the input
+2. Training data, which the model is trained on to pick up general patterns through unsupervised learning ([Issue 171]({filename}/season14/issue171/issue171.md)), and then steered to avoid harmful output and generate useful output through the use of labelled training data through supervised learning ([Issue 174]({filename}/season14/issue174/issue174.md))
+3. A runtime ([Issue 175]({filename}/season14/issue175/issue175.md)), which handles multiple responsibilities:
    - parsing the model output to block it if found to be harmful
    - formatting the text for display to the user
-   - separating and executing tool calls (typically in an isolated container), and injecting the results back into the input (Issue 175)
-   - processing thinking tokens, removing or hiding them (Issue 178)
-4. Other optional runtime extensions, such as those that add retrieval-augmented generation (RAG) capabilities (Issue 176), or add information that the model remembered about the signed-in user
+   - separating and executing tool calls (typically in an isolated container), and injecting the results back into the input ([Issue 175]({filename}/season14/issue175/issue175.md))
+   - processing thinking tokens, removing or hiding them ([Issue 178]({filename}/season14/issue178/issue178.md))
+4. Other optional runtime extensions, such as those that add retrieval-augmented generation (RAG) capabilities ([Issue 176]({filename}/season14/issue176/issue176.md)), or add information that the model remembered about the signed-in user
 
 What does an agent do?
 
@@ -48,7 +47,7 @@ A runtime used within a harness needs to include additional features: the abilit
 When a user uses agentic software, the harness is what they see. That means the harness handles typical software responsibilities:
 
 - it handles installation and initial setup, allowing the user to select a directory that the agent will begin working from
-- it handles extensions/plugins that the user may wish to install, making the tools/MCPs (Issue 175) available to the runtime
+- it handles extensions/plugins that the user may wish to install, making the tools/MCPs ([Issue 175]({filename}/season14/issue175/issue175.md)) available to the runtime
 - it handles file uploads, request customisation (e.g. enabling extended thinking), other request-related settings
 - it handles the model output through the runtime, displaying to the user tool calls and their results, any visible thinking traces, and any permission requests which come from the runtime (remember that the model remains unaware of these). If the API supports it, the harness streams these to the user, allowing them to see tokens as the model outputs them, without having to wait for the model to finish the entire response
 - it provides an interrupt mechanism for the user to halt the runtime if the model is going off-track, or to queue up more messages for the runtime to inject into the request at an appropriate juncture
@@ -74,7 +73,7 @@ If given the appropriate tools and permissions from the user, the agent can also
 - read, write, and test code
 - push code to a code repository
 - add bug reports or issues to a task board, or read existing ones from it
-- send requests to an API (if authenticated by the user), and thus execute any supported action through the APIs of Google Drive, Dropbox, Notion, and other services (Issue 6)
+- send requests to an API (if authenticated by the user), and thus execute any supported action through the APIs of Google Drive, Dropbox, Notion, and other services ([Issue 6]({filename}season01/issue006/issue006.md))
 
 With more advanced tools or MCP servers that handle the complex details, an agent can even:
 - be registered as a plugin in Adobe or Microsoft Office software, reading and editing documents
@@ -129,4 +128,4 @@ Question 2 has a boring answer and an interesting one. The boring answer is "bec
 
 So let's tackle question 1, which will draw on computing concepts I've covered in earlier issues and give you an idea of the kind of compute and memory capacity needed to run a model.
 
-**Next issue:** [LMG S14] Issue 180: Running a model
+**Next issue:** [Issue 180: Running a model]({filename}/season14/issue180/issue180.md)

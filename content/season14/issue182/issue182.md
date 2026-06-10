@@ -4,8 +4,7 @@ Tags:
 Category: Season 14
 Slug: issue182
 Author: J S Ng
-Summary: Open-weight models range in size from sub-1B to 100+B. A range of device options below SGD6,000 are already capable of running these models, ranging from the humble Raspberry Pi for running harness support to the Mac Studio M3 for running 70B models.
-Modified: 
+Summary: Open-weight models range in size from sub-1B to 100+B. A range of device options below SGD6,000 are already capable of running these models, ranging from the humble Raspberry Pi for running harness support to the Mac Studio M3 for running 70B models. 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Quantization trades parameter precision for a smaller memory footprint and faster inference, making many models feasible for running on user devices. Model capabilities depend on their parameter count and training data. Models with higher parameter counts can represent more patterns, while model capabilities are added by training them on well-labeled data.
 
@@ -34,7 +33,7 @@ I won't give you a comprehensive low-down on what each model is good for, becaus
 
 ## Model capabilities
 
-In Issue 181 I mentioned that **more parameters** lets the model represent more patterns in its weights, while **better training data** determines the model's capabilities. Useful to know as a general pattern, but difficult to apply when deciding on a specific model to run. Should we just run the largest model that our device is capable of running?
+In [Issue 181]({filename}/season14/issue181/issue181.md) I mentioned that **more parameters** lets the model represent more patterns in its weights, while **better training data** determines the model's capabilities. Useful to know as a general pattern, but difficult to apply when deciding on a specific model to run. Should we just run the largest model that our device is capable of running?
 
 As of June 2026,
 - **0.5B–3B** models can handle classification, extraction, summarization tasks and are generally good for single request-response purposes.
@@ -61,7 +60,7 @@ With this in mind, these are some popular options for running models on-device (
 - **Raspberry Pi** (8–16GB RAM): popular for tiny models (2B or smaller), used to generate document embeddings for search, OCR documents and clean up the OCRed text, etc. These form the support system for the agent harness, and usually are not used directly for the agent models.
 - **Mini-PCs** with a sufficiently capable CPU, no dedicated GPU are a decent budget option
   - **AMD Ryzen AI 300-class CPUs, 12 CPU cores, 8–12 GPU compute units & 64GB RAM**: this can run 7B–13B models capably (if slowly), and 34B quantized models at a crawl. [~SGD2,000]
-  - **AMD Ryzen AI MAX+ (Strix Halo) CPUs, 16 CPU cores, 40–48 GPU compute units & 256GB RAM**: this bundles a much more capable integrated GPU (Issue 123) and can run 34B models capably, 70B models at a crawl. [~SGD4,800]
+  - **AMD Ryzen AI MAX+ (Strix Halo) CPUs, 16 CPU cores, 40–48 GPU compute units & 256GB RAM**: this bundles a much more capable integrated GPU ([Issue 123]({filename}season10/issue123/issue123.md)) and can run 34B models capably, 70B models at a crawl. [~SGD4,800]
   - **Mac Mini M4, 12 CPU cores, 10 GPU compute units & 24GB RAM**: despite initial appearances, the Mac Mini is a much more capable little beast than the Ryzen AI 300-class series above, thanks to its unified memory architecture that has much better memory bandwidth (800GB/sec) compared to the Ryzen's DDR4 (256GB/sec). Expect double the Ryzen's performance, although the memory capacity means it runs quantized 34B models at a crawl. [SGD1,299]
   - **Mac Mini M4 Pro, 14 CPU cores, 20 GPU compute units & 48GB RAM**: The same deal as the M4, but with more GPU compute units and more memory, this can run 34B models quite capably. [SGD2,659]
   - **Mac Studio M3 Ultra, 28 CPU cores, 60 GPU compute units & 96GB RAM**: This can run everything mentioned above, and run 70B models decently well. That's what most folks would be buying this for. A higher-end 32 CPU core, 80 GPU compute unit configuration exists if you add SGD2,025—doesn't add new capabilities, makes everything a little faster. [SGD5,199]

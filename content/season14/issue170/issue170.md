@@ -42,7 +42,7 @@ Apple's machine learning models do something similar. An autocorrect model takes
 
 Of course, more complex models do not use a linear equation or a simple mathematical formula anymore. Machine learning researchers first represent more complex relationships using more complex formulas, such as polynomials or decision trees, which use more parameters.
 
-But for other purposes the input may not be a single variable and the output may not be a single variable either. For example, in image recognition, the input is an image (which can be represented as a grid of pixel values), and the output is a label (e.g., "cat", "dog", "car"). An image classifier may have 64 input values (one for each pixel in an 8x8 image) and 10 output values (one for each possible label). The model would learn to map the input pixel values to the correct label based on patterns in the training data. That's 640 parameters (64 input values x 10 output values) that the model would learn to adjust during training.
+But for other purposes the input may not be a single variable and the output may not be a single variable either. For example, in image recognition, the input is an image (which can be represented as a grid of pixel values), and the output is a label (e.g., "cat", "dog", "car"). An image classifier may have 64 input values (one for each pixel in an 8×8 image) and 10 output values (one for each possible label). The model would learn to map the input pixel values to the correct label based on patterns in the training data. That's 640 parameters (64 input values x 10 output values) that the model would learn to adjust during training.
 
 This direct mapping of input to output can only take us so far. Perhaps output 1 doesn't just depend on inputs 1 to 10, but on some intermediate value calculated from them. Now we have to add intermediate **layers** between input and output, which researchers call "hidden layers". These layers allow the model to learn and represent more complex relationships between input and output. Each layer can have its own parameters, and the model learns to adjust these parameters during training to improve its performance.
 
@@ -70,6 +70,6 @@ But between `y = mx + b` and ChatGPT, there is still ... such a huge gulf of com
 
 ## What I’ll be covering next
 
-**Next issue:** [LMG S14] Issue 171: The first Generative Pre-Training model, GPT-1
+**Next issue:** [Issue 171: The first Generative Pre-Training model, GPT-1]({filename}/season14/issue171/issue171.md)
 
 What was the fundamental insight that made GPT and other LLMs possible? Find out next season ;)

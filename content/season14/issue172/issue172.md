@@ -4,8 +4,7 @@ Tags:
 Category: Season 14
 Slug: issue172
 Author: J S Ng
-Summary: A model does not see letters or words, only tokens. These tokens are typically generated from user input through a pre-tokenizer program. Tokens are represented in the model as embeddings, a sequence of numbers representing the token's position in the embedding matrix. The model uses each token's embedding, and its surrounding tokens, to infer its meaning in context.
-Modified: 
+Summary: A model does not see letters or words, only tokens. These tokens are typically generated from user input through a pre-tokenizer program. Tokens are represented in the model as embeddings, a sequence of numbers representing the token's position in the embedding matrix. The model uses each token's embedding, and its surrounding tokens, to infer its meaning in context. 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) The Transformer architecture, unlike previous machine learning model architectures, could generate its next item while processing all previous items at the same time. The technique of unsupervised learning trained models on unlabelled data, letting the model pick up patterns in underlying data instead of having it learn correct answers only, and was much faster than supervised learning. OpenAI applied both these ideas at scale, producing GPT-1, a model that beat best-performing models while requiring relatively little human supervision during training.
 
@@ -56,7 +55,7 @@ There's more to a LLM than this collection of 40,000 embeddings; it forms only a
 
 And because this is a mathematical space with direction (in 768 dimensions), the model can also pick up on analogy to some extent: if you draw a (768-dimensional) arrow pointing `king → queen` and another arrow pointing `father → mother` within this embedding matrix, they end up almost parallel. This means the model can solve SAT vocab pairs, giving you "mother" when you give it "king:queen, father:?"
 
-If an LLM relied only on this embedding matrix, it would not be able to distinguish "bat" as a warm flying mammal from "bat" as a piece of sporting equipment. The rest of the model—using the Transformer architecture, you'll recall from issue 171—uses the tokens surrounding it and their positions to infer the context that "bat" is being used in.
+If an LLM relied only on this embedding matrix, it would not be able to distinguish "bat" as a warm flying mammal from "bat" as a piece of sporting equipment. The rest of the model—using the Transformer architecture, you'll recall from [issue 171]({filename}/season14/issue171/issue171.md)—uses the tokens surrounding it and their positions to infer the context that "bat" is being used in.
 
 ## Model pricing and limits
 
@@ -74,4 +73,4 @@ I would have gone on longer, but I think tokens are a pretty novel concept for m
 
 ## What I’ll be covering next
 
-**Next issue:** [LMG S14] Issue 173: Training, Inference, and Scaling
+**Next issue:** [Issue 173: Training, Inference, and Scaling]({filename}/season14/issue173/issue173.md)

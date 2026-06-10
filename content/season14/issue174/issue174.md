@@ -4,8 +4,7 @@ Tags:
 Category: Season 14
 Slug: issue174
 Author: J S Ng
-Summary: Through reinforcement learning with human feedback (RLHF), the LLM is trained on labelled data until it can reliably follow instructions, avoid harmful output, and follow other desired behavior. A system prompt provides guidelines for output. The user's prompt is inserted into a templated prompt and passed to the LLM, which generates text in a markup format that a display system can understand. A chat interface wraps the entire system to create the illusion of a responsive chatbot.
-Modified: 
+Summary: Through reinforcement learning with human feedback (RLHF), the LLM is trained on labelled data until it can reliably follow instructions, avoid harmful output, and follow other desired behavior. A system prompt provides guidelines for output. The user's prompt is inserted into a templated prompt and passed to the LLM, which generates text in a markup format that a display system can understand. A chat interface wraps the entire system to create the illusion of a responsive chatbot. 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) OpenAI discovered, through models GPT-1 to GPT-3, that scaling compute and (training) data *alone* was sufficient to sharply increase the capabilities of a LLM: the transformer architecture and unsupervised learning together resulted in a model that was alarmingly intelligent.
 
@@ -83,4 +82,4 @@ ChatGPT was the beginning of many other features to follow. Among them: multimod
 
 ## What I’ll be covering next
 
-**Next issue:** [LMG S14] Issue 175: LLM tools
+**Next issue:** [Issue 175: LLM tools]({filename}/season14/issue175/issue175.md)

@@ -4,8 +4,7 @@ Tags:
 Category: Season 14
 Slug: issue180
 Author: J S Ng
-Summary: Proprietary models do not have their weights published publicly, while open-weight models do. Various runtimes are available for download, and can run models that have a compatible file format. But models are extremely compute- and memory-intensive, requiring extremely high-end hardware and capacious memory to run.
-Modified: 
+Summary: Proprietary models do not have their weights published publicly, while open-weight models do. Various runtimes are available for download, and can run models that have a compatible file format. But models are extremely compute- and memory-intensive, requiring extremely high-end hardware and capacious memory to run. 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Agents are software applications that comprise a harness, a runtime, and a model (typically accessed through an API instead of directly executed on the computer). They enable a user to type in a request or send it by other means and thus instruct the agent to carry out a task on the computer until completion. The capabilities of agents are limited by the tools available to them.
 
@@ -21,7 +20,7 @@ For starters, you can't download the GPT-5 or Claude models. They are proprietar
 
 ## The parts: downloading weights
 
-Let's download the currently top-trending model, Google's [`gemma-4-12B-it`](https://huggingface.co/google/gemma-4-12B-it). The model card says that this is a multimodal model (Issue 177) with 11.95 billion (12B) parameters (Issue 170). It has a context length of 256K tokens—important when deciding what kind of tasks it can plausibly take on, since the context length dictates what the total output length (including the input tokens) cannot exceed.
+Let's download the currently top-trending model, Google's [`gemma-4-12B-it`](https://huggingface.co/google/gemma-4-12B-it). The model card says that this is a multimodal model ([Issue 177]({filename}/season14/issue177/issue177.md)) with 11.95 billion (12B) parameters ([Issue 170]({filename}/season14/issue170/issue170.md)). It has a context length of 256K tokens—important when deciding what kind of tasks it can plausibly take on, since the context length dictates what the total output length (including the input tokens) cannot exceed.
 
 Under [Files and versions](https://huggingface.co/google/gemma-4-12B-it/tree/main), we see a whole bunch of files, most of them metadata, configuration information, and other data (such as the token list). The model weights are easy to tell: they are by far the largest file of the collection, weighing in at 23.9GB. We can calculate this: 11.95 billion parameters, with each parameter taking up 16 bits (Issue 40), means 2 bytes per parameter, and thus 23.9 billion bytes for all the parameters --> 23.9GB.
 
@@ -57,4 +56,4 @@ This is the pessimistic view. Next issue, we look at some optimizations that are
 
 ## What I’ll be covering next
 
-**Next issue:** [LMG S14] Issue 181: Quantization
+**Next issue:** [Issue 181: Quantization]({filename}/season14/issue181/issue181.md)

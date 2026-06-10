@@ -4,8 +4,7 @@ Tags:
 Category: Season 14
 Slug: issue177
 Author: J S Ng
-Summary: Multimodal models represent text, image, and audio tokens alongside each other in their embedding space. The model uses the input tokens, regardless of type, to calculate the next output token. Multimodal models typically only output text tokens in their response, delegating to more specialized models for image and audio generation if necessary.
-Modified: 
+Summary: Multimodal models represent text, image, and audio tokens alongside each other in their embedding space. The model uses the input tokens, regardless of type, to calculate the next output token. Multimodal models typically only output text tokens in their response, delegating to more specialized models for image and audio generation if necessary. 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) In retrieval-augmented generation (RAG), the runtime performs a search with the user's request to retrieve relevant chunks from a set of documents from a knowledge base. The chunks may be further re-ranked by the runtime before finally being included in the LLM's input. One alternative to RAG, where information lookup happens outside of LLM generation, is to provide the LLM with search tools instead, and rely on its judgement to use them well.
 
@@ -13,21 +12,21 @@ Multimodal models. Try saying that three times quickly. It's quite a mouthful, b
 
 ## Multimodal models
 
-While a large language model works only with text tokens, a **multimodal model** can work with other types of tokens as well. We've previously covered what text tokens are and how LLMs use them (Issue 172), so let's focus on image and audio tokens.
+While a large language model works only with text tokens, a **multimodal model** can work with other types of tokens as well. We've previously covered what text tokens are and how LLMs use them ([Issue 172]({filename}/season14/issue172/issue172.md)), so let's focus on image and audio tokens.
 
-The approach is similar, really: text gets broken up into common repeating patterns. Image and audio likewise gets broken up into common repeating patterns. Each common repeating pattern is represented by a number, or set of numbers, and located in an embedding space (Issue 172).
+The approach is similar, really: text gets broken up into common repeating patterns. Image and audio likewise gets broken up into common repeating patterns. Each common repeating pattern is represented by a number, or set of numbers, and located in an embedding space ([Issue 172]({filename}/season14/issue172/issue172.md)).
 
 ## Image tokens
 
-There are a variety of approaches for tokenizing images. A common way to do this is to break it up into 16×16-pixel patches. Each pixel has three values representing red+green+blue (Issues 43 & 44), so each patch is a sequence of 16×16×3 = 768 values.
+There are a variety of approaches for tokenizing images. A common way to do this is to break it up into 16×16-pixel patches. Each pixel has three values representing red+green+blue ([Issues 43 & 44]({filename}season04/issue043/issue043.md)), so each patch is a sequence of 16×16×3 = 768 values.
 
 Each unique combination of 768 values constitutes an image token. During training, these image tokens appear alongside other tokens (text, image, audio), and the model adjusts its embedding parameters to locate semantically similar tokens in close proximity.
 
-During inference (Issue 173), hidden layers represent more abstract patterns that the model identifies: lower layers may encode information about edges, while higher layers capture information about shapes, textures, and even objects.
+During inference ([Issue 173]({filename}/season14/issue173/issue173.md)), hidden layers represent more abstract patterns that the model identifies: lower layers may encode information about edges, while higher layers capture information about shapes, textures, and even objects.
 
 ## Audio tokens
 
-While intuitively it seems natural to chunk audio into 1-second or even sub-second samples, in reality 1 second of audio contains 44,100 samples (Issue 45) which is still far too large.
+While intuitively it seems natural to chunk audio into 1-second or even sub-second samples, in reality 1 second of audio contains 44,100 samples ([Issue 45]({filename}season04/issue045/issue045.md)) which is still far too large.
 
 Instead, audio is usually converted from waveform representation (amplitude vs time) into spectrum representation (frequency vs amplitude at a snapshot in time). The spectrogram gets split into shorter windows of a few milliseconds each (a few thousand samples per window). The values of each frequency in that window then naturally form an audio token, which appear alongside other tokens in training and get represented in embedding space the same way as other tokens.
 
@@ -53,7 +52,7 @@ There you go. Multimodal models demystified: once you figure out how to tokenize
 
 ## What I’ll be covering next
 
-**Next issue:** [LMG S14] Issue 178: Model thinking and reasoning
+**Next issue:** [Issue 178: Model thinking and reasoning]({filename}/season14/issue178/issue178.md)
 
 We've covered retrieval-augmented generation (RAG), and now we've covered multimodal models. Text, images, audio: Check check checked. Tools? You bet.
 

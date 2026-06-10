@@ -61,6 +61,6 @@ We're almost at the meaty part! I kinda snuck in 2 ideas today: the Transformer 
 
 ## What I’ll be covering next
 
-**Next issue:** [LMG S14] Issue 172: Tokens, the currency of LLMs
+**Next issue:** [Issue 172: Tokens, the currency of LLMs]({filename}/season14/issue172/issue172.md)
 
 Wait—what exactly does a large language model (LLM) work with? Individual letters? Entire words? Find out next issue!

@@ -4,8 +4,7 @@ Tags:
 Category: Season 14
 Slug: issue181
 Author: J S Ng
-Summary: Quantization trades parameter precision for a smaller memory footprint and faster inference, making many models feasible for running on user devices. Model capabilities depend on their parameter count and training data. Models with higher parameter counts can represent more patterns, while model capabilities are added by training them on well-labeled data.
-Modified: 
+Summary: Quantization trades parameter precision for a smaller memory footprint and faster inference, making many models feasible for running on user devices. Model capabilities depend on their parameter count and training data. Models with higher parameter counts can represent more patterns, while model capabilities are added by training them on well-labeled data. 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) Proprietary models do not have their weights published publicly, while open-weight models do. Various runtimes are available for download, and can run models that have a compatible file format. But models are extremely compute- and memory-intensive, requiring extremely high-end hardware and capacious memory to run.
 
@@ -17,7 +16,7 @@ Enter quantization.
 
 Models are typically trained with full precision, allowing them to store each parameter using 16 bits (2 bytes). This is necessary because the training process results in multiple adjustments to the weights. If the intermediate values are not stored with full precision, subsequent adjustments to those values are not accurately represented, and may result in inaccurate training results.
 
-However, once the model is trained and its weights released, they are effectively "frozen": the weights do not change as the model is used for inference (Issue 173).
+However, once the model is trained and its weights released, they are effectively "frozen": the weights do not change as the model is used for inference ([Issue 173]({filename}/season14/issue173/issue173.md)).
 
 ## Quantizing parameters
 
@@ -67,6 +66,6 @@ Either way, if you have the hardware to support it and manage to get a local age
 
 ## What I’ll be covering next
 
-**Next issue:** [LMG S14] Issue 182: Running a model, part 2
+**Next issue:** [Issue 182: Running a model, part 2]({filename}/season14/issue182/issue182.md)
 
 In the last issue, I'll explore other options for running a model on your device (called **local deployment** in parlance): running smaller models, and other feasible hardware options

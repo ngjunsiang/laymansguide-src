@@ -4,8 +4,7 @@ Tags:
 Category: Season 14
 Slug: issue173
 Author: J S Ng
-Summary: OpenAI discovered, through models GPT-1 to GPT-3, that scaling compute and (training) data *alone* was sufficient to sharply increase the capabilities of a LLM: the transformer architecture and unsupervised learning together resulted in a model that was alarmingly intelligent.
-Modified: 
+Summary: OpenAI discovered, through models GPT-1 to GPT-3, that scaling compute and (training) data *alone* was sufficient to sharply increase the capabilities of a LLM: the transformer architecture and unsupervised learning together resulted in a model that was alarmingly intelligent. 
 
 [**Previously:**](https://buttondown.email/laymansguide/archive/) A model does not see letters or words, only tokens. These tokens are typically generated from user input through a pre-tokenizer program. Tokens are represented in the model as embeddings, a sequence of numbers representing the token's position in the embedding matrix. The model uses each token's embedding, and its surrounding tokens, to infer its meaning in context.
 
@@ -23,7 +22,7 @@ Notice that there's a "forward" step: step 3, where the input "feeds forward" to
 
 Notice also that there's a "backward" step: step 5, where we could adjust model parameters randomly—inefficient! Instead, the mathematical technique of gradient descent gives us a more optimized way to adjust the last hidden layer based on how it would affect the output. The second-to-last hidden layer is then adjusted with the same technique, based on how it would affect the last hidden layer. And this is repeated all the way to the first hidden layer. This "backward trickling" is called **backpropagation**, or "backprop" more informally.
 
-The above steps are repeated *for each input:output data pair* (supervised training) or *for each token sequence run* (unsupervised training). That's **a lot** of repeated steps; researchers often have some shortcuts they take to speed up the process. Even then, it is still too many for a typical CPU to complete in a reasonable time; the big labs use specialized GPUs instead (Issue 123), resulting in training runs that take weeks to months to complete on multiple GPUs for today's state-of-the-art LLMs.
+The above steps are repeated *for each input:output data pair* (supervised training) or *for each token sequence run* (unsupervised training). That's **a lot** of repeated steps; researchers often have some shortcuts they take to speed up the process. Even then, it is still too many for a typical CPU to complete in a reasonable time; the big labs use specialized GPUs instead ([Issue 123]({filename}season10/issue123/issue123.md)), resulting in training runs that take weeks to months to complete on multiple GPUs for today's state-of-the-art LLMs.
 
 This is not a cheap hobby.
 
@@ -80,4 +79,4 @@ This issue covered the miracle story of GPTs 1 to 3. If GPT-3 was a child genius
 
 ## What I’ll be covering next
 
-**Next issue:** [LMG S14] Issue 174: Reinforcement Learning
+**Next issue:** [Issue 174: Reinforcement Learning]({filename}/season14/issue174/issue174.md)
