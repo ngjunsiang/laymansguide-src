@@ -1,5 +1,5 @@
 Title: Issue 182: Running a model, part 2
-Date: 2026-08-10 08:00
+Date: 2026-08-31 08:00
 Tags: 
 Category: Season 14
 Slug: issue182

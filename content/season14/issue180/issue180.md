@@ -1,5 +1,5 @@
 Title: Issue 180: Running a model
-Date: 2026-08-03 08:00
+Date: 2026-08-17 08:00
 Tags: 
 Category: Season 14
 Slug: issue180

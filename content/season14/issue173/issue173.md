@@ -11,6 +11,7 @@ Summary: OpenAI discovered, through models GPT-1 to GPT-3, that scaling compute 
 ## Model Training
 
 In issue 171, I explained a little about how model training happens:
+
 1. we pass tokens generated from text to the input
 2. we pass the expected output (in supervised training), or the subsequent tokens (in unsupervised training)
 3. the model generates output from input

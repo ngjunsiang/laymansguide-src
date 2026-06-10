@@ -1,5 +1,5 @@
 Title: Issue 181: Quantization
-Date: 2026-08-10 08:00
+Date: 2026-08-24 08:00
 Tags: 
 Category: Season 14
 Slug: issue181

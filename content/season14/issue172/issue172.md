@@ -37,9 +37,9 @@ How does the model tell `481`, `326`, and `357` apart? How does it store or repr
 A scatterplot with 2 dimensions  
 Source: https://www.embeddedsource.de/use-a-scatterplot-to-interpret-data/
 
-Well, now imagine a scatterplot with as many data points as tokens. In GPT-1's case, that's approx. 40,000. Yes, I know that's a lot of points, but you can *roughly* visualize that, yes? Good, that's the easy part.
+Now imagine a scatterplot with as many data points as tokens. In GPT-1's case, that's approx. 40,000 tokens—its vocabulary size. Yes, I know that's a lot of points, but you can *roughly* visualize that, yes? Good, that's the easy part.
 
-Now I need you to imagine the scatterplot with ... _\*checks notes\*_—768 dimensions. No, that is not a typo, we *are* talking about a scatterplot with 768 dimensions. Oh, that's too difficult to imagine? Yeah. Sorry, that's why I don't have an image attached.
+Now I need you to imagine the scatterplot with ... _\*checks notes\*_—768 dimensions. No, that is not a typo, we *are* talking about a scatterplot with 768 dimensions. Oh, that's too difficult to imagine? Yeah. Sorry, that's why I don't have an image attached. Just try your best 🙏
 
 Essentially that is what a LLM generates as a result of its training. Each token in its vocabulary becomes a data point, and each data point is represented in this 768-dimensional space using 768 decimal numbers ranging from 0 to 1.0. This positional representation using many decimal numbers is called an **embedding**.
 
@@ -59,7 +59,7 @@ If an LLM relied only on this embedding matrix, it would not be able to distingu
 
 ## Model pricing and limits
 
-Most ChatGPT/Claude users are familiar with those products as subscriptions, where they may a certain price per month to use ChatGPT/Claude for some arbitrary amount, and if they use too much too quickly they hit a usage limit and have to wait for it to reset.
+Most ChatGPT/Claude users are familiar with those products as subscriptions, where they pay a certain price per month to use ChatGPT/Claude for some arbitrary amount, and if they use too much too quickly they hit a usage limit and have to wait for it to reset.
 
 But if you are a business, and using the API instead, you'll be looking at a different page, such as the [API pricing page for OpenAI's API](https://developers.openai.com/api/docs/pricing). Notice that prices are typically quoted in units of "1M tokens", standing for "1 million tokens". Now you know what those tokens are referring to.
 

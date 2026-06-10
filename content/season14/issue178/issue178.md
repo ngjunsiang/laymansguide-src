@@ -1,5 +1,5 @@
 Title: Issue 178: Model thinking and reasoning
-Date: 2026-07-27 08:00
+Date: 2026-08-03 08:00
 Tags: 
 Category: Season 14
 Slug: issue178

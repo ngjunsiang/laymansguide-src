@@ -33,7 +33,7 @@ Before Google's 2017 paper on the attention mechanism, the prevailing machine le
 - they "looked" at input data one item at a time to produce the output, resulting in slow output generation
 - because of the above, data that was processed earlier seldom made it through to the end of the model, resulting in a recency bias: the model tended to focus on the most recent input data and ignore earlier input data
 
-The attention mechanism introduced in Google's 2017 paper allowed models to "look" at all input data at once, speeding up output generation. Through an attention mechanism, it could also compute which parts of the input data were most relevant for producing the output.
+The attention mechanism introduced in Google's 2017 paper allowed models to "look" at all input data at once, speeding up output generation. The same mechanism also computed which parts of the input data were most relevant for producing the output.
 
 Attention was not a new mechanism in machine learning: prior models had used them, but in separate stages, and alongside other mechanisms. Google's paper was the first to ask: "what if we *only used attention everywhere*?" The resulting architecture, which they called the "Transformer", was a breakthrough in speed and simplicity.
 
@@ -41,15 +41,15 @@ Attention was not a new mechanism in machine learning: prior models had used the
 
 Besides the Transformer architecture, another breakthrough was already making its rounds: instead of task-specific datasets, researchers wondered why they needed so many task-specific datasets. Since the data represented different subsets of reality (from different tasks), what if they just trained a single model on a really, really large dataset of text to produce a **base model**? Then they could fine-tune it on smaller task-specific datasets to produce task-specific models.
 
-This technique, called **unsupervised learning** did not require data to be labelled—the model "learns" patterns in the underlying data without human correction, simply trying to predict the next word in the training data given the previous words.
+This technique, called **unsupervised learning**, did not require data to be labelled—the model "learns" patterns in the underlying data without human correction, simply trying to predict the next word in the training data given the previous words.
 
-## Generative Pre-Trained Transformer (GPT)
+## Generative Pre-trained Transformer (GPT)
 
 A few researchers at OpenAI then had the idea to try this pre-training approach on the Transformer architecture. OpenAI built the first **Generative Pre-trained Transformer** (GPT) model, which they released in 2018. **Generative** means the model generates output based on input, producing one output item at a time (but processing all inputs simultaneously). **Pre-trained** means the model was largely trained through unsupervised learning. **Transformer** refers to the underlying architecture.
 
-They went big: GPT-1 trained on a dataset of 7,000 self-published books comprising 985 million words, representing this data using 117 million parameters—an unheard-of scale at the time (but now considered paltry). It attracted attention from the research community not only by improving on best-performing models on various language tasks, but by improving on *all of them*, with *minimal task-specific training*.
+They went *big* on scale: GPT-1 trained on a dataset of 7,000 self-published books comprising 985 million words, representing this data using 117 million parameters—an unheard-of scale at the time (but now considered paltry). It attracted attention from the research community not only by improving on best-performing models on various language tasks, but by improving on *all of them*, with *minimal task-specific training*.
 
-Due to the unprecedented number of parameters used, GPT-1 was considered a *large* language model (LLM), to distinguish it from those that came before. However, this was still a research idea, and nobody except research-minded folks knew how to get GPT-1 running. And thus, this went unnoticed by the public.
+Due to the unprecedented number of parameters used, GPT-1 was considered a **large language model** (LLM), to distinguish it from smaller models that came before. However, this was a research idea, with code that was far from release-ready, and nobody except research-minded folks knew how to get GPT-1 running. And thus, this went unnoticed by the public.
 
 Still, this was a breakthrough: no research lab before OpenAI had the kind of resources that enabled them to try this idea. It did require resources that most labs didn't have at the time: 8 GPUs, when most labs ran their training on a single GPU.
 
