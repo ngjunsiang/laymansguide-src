@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Filesystem journals are a record of changes made to the disk, so as to enable those changes to be rolled back, or to be completed properly in case of sudden interruption.
 Modified: 2021-03-06 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Fast writes dump the data to a write cache (in computer memory), then update the file table to look like the file is already written to disk. However, if power is cut before all data is properly moved from the write cache to disk, the data in memory is lost, and file corruption usually results.
+**Previously:** Fast writes dump the data to a write cache (in computer memory), then update the file table to look like the file is already written to disk. However, if power is cut before all data is properly moved from the write cache to disk, the data in memory is lost, and file corruption usually results.
 
 Last issue, I showed how a write cache can “speed up” file write operations by allowing data to be dumped to a write cache in memory first. The OS “completes” the operation, making it look the file has been successfully written to disk, when in actuality parts of it are still in memory waiting to be written. This works fine as long as we don’t suffer catastrophic power loss before everything gets put on disk; once power is cut, all the contents of the write cache in memory are lost!
 

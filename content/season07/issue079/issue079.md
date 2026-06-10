@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Comma-separated value (CSV) files store all data in text form. Within each row, a separator divides each chunk of data, and rows are separated by a line delimiter. To keep the data compact and read it more quickly, we have to decide beforehand what *data type* each chunk should be, and how much space it is allowed to take up. Such a data form can no longer be opened in a simple text editor program like Notepad.
 Modified: 2020-07-11 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Modern webpages rely on many third-party resources for their functionality. Blocking access to some domains may cause these webpages to break and stop working.
+**Previously:** Modern webpages rely on many third-party resources for their functionality. Blocking access to some domains may cause these webpages to break and stop working.
 
 We start a new season this issue, and now I circle back to the theme of data again. In Season 4, I laid out the broad categories of data, and showed how these basic data types get put together into more complex containers, such as video and documents. Let’s take it one step further.
 

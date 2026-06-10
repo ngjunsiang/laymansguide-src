@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: DoubleClick, the first commercially successful ad server, launched in 1996. It ran a system that tracked the performance of banner ads across 30 sites, working to optimise their return on investment. This was made possible by standardisation of the web (thanks to the HTTP specification), and the birth of Javascript, a scripting language integrated into the webpage rather than being a separate module from it. All of this happened in 1995–1996.
 Modified: 2020-04-04 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Shared memory helps to reduce the amount of memory needed by all the applications running on an operating system. It also allows applications to send data to each other, and to communicate.
+**Previously:** Shared memory helps to reduce the amount of memory needed by all the applications running on an operating system. It also allows applications to send data to each other, and to communicate.
 
 Season 5 focused on the vulnerabilities that arise from optimising CPUs for speed. Speed means sharing; the more easily data is made available to the CPU without all kinds of permission checks, the more quickly the processing that take place.
 

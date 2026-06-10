@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Light takes 0.3 ns to travel 10 cm, approximately the distance by wire between the CPU and the MCH. This potentially causes operations between the CPU and MCH to slow down by one cycle, at frequencies above 3 GHz. One way the Intel Core i-series resolves this conundrum is to move the memory controller *into* the CPU.
 Modified: 2021-08-21 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) The ATX form factor also brought with it a new breed of computers with more specialised chipsets: the memory controller hub (MCH) and peripheral controller hub (PCH). The MCH specialises in high-throughput requirements, such as computer memory and graphics. The PCH specialises in lower-throughput needs.
+**Previously:** The ATX form factor also brought with it a new breed of computers with more specialised chipsets: the memory controller hub (MCH) and peripheral controller hub (PCH). The MCH specialises in high-throughput requirements, such as computer memory and graphics. The PCH specialises in lower-throughput needs.
 
 Last issue, we looked at the ATX form factor by Intel, which replaced the AT form factor by IBM. While the AT could get by with a smattering of chips, which worked fine for mostly text-only computers, the ATX has much higher throughput requirements. To help the CPU focus on serving the user’s applications, two chipsets—the memory controller hub (MCH) and peripheral controller hub (PCH), take charge of managing the data throughput. The MCH manages data between CPU, computer memory, the graphics processor unit (GPU), and the PCH, while the PCH manages data between the peripherals (audio, storage, network, USB, ...) and the MCH.
 

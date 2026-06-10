@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: n 1999, VMware launched VMware Workstation, which allowed multiple operating systems to run off a single machine.
 Modified: 2021-10-30 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) The Apple M1 is a souped-up iPhone processor, with unified memory.
+**Previously:** The Apple M1 is a souped-up iPhone processor, with unified memory.
 
 I want to circle back to talking about processors again in this season, because there are a couple of pretty world-shaking ideas I haven’t fully fleshed out in Layman’s Guide yet.
 

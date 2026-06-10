@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: When browsing a webpage, a tracking script retrieves the browser's existing cookie, if there is one, or sets a cookie for the browser if there isn’t one. The tracking script sends the cookie information back to the originating server, along with many other fragments of information.
 Modified: 2020-05-02 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Cookies are little fragments of information with a name and a value, and associated with a domain address. They are most commonly used to identify new or returning users. This cookie is issued by a website upon the first visit, stored in the browser, and returned to the issuing server whenever the server requests it.
+**Previously:** Cookies are little fragments of information with a name and a value, and associated with a domain address. They are most commonly used to identify new or returning users. This cookie is issued by a website upon the first visit, stored in the browser, and returned to the issuing server whenever the server requests it.
 
 This issue is a short one, just to put one more piece in place. Last issue, I said that `analytics.js` loaded a `_gid` cookie with a value of `GA1.2.1807773255.1584140066`. At that point, the cookie only existed in my web browser. How did it get sent back to Google Analytics for counting?
 

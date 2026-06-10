@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: When write operations are interrupted prematurely, filesystem corruption often results.
 Modified: 2021-02-13 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) A hard disk is organised into sectors, which are the smallest unit of storage. The OS’s filesystem determines how and where to store each file on the hard disk. The filesystem manages the file metadata in a file table, separate from the actual contents of the file.
+**Previously:** A hard disk is organised into sectors, which are the smallest unit of storage. The OS’s filesystem determines how and where to store each file on the hard disk. The filesystem manages the file metadata in a file table, separate from the actual contents of the file.
 
 Last issue I painted the picture of a warehouse, where cargo gets stored in racks, their contents and details are stored in the file table (in the warehouse office), and we can easily look up the details of each shipment of cargo without having to inspect rack by rack.
 

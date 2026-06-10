@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: There are easy and quick ways to check the validity of the most common advice for resolving system slowdown. But it still seems to happen even after these tips have been tried.
 Modified: 2022-03-26 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Linux software is distributed through Linux distros. The maintainers of distros maintain repositories of software that have been tested with the distro. Most users will access software in the distro’s repositories through a program called a package manager. So users have full control over when updates and new software should be installed.
+**Previously:** Linux software is distributed through Linux distros. The maintainers of distros maintain repositories of software that have been tested with the distro. Most users will access software in the distro’s repositories through a program called a package manager. So users have full control over when updates and new software should be installed.
 
 Once your laptop hits the magical 1-year window, it somehow seems to … get slower. And slower. Everything takes just a fraction longer. What used to happen near-instantaneously now seems to take a split-second pause. The loading spinner animation feels like it plays just a little longer. And it just gets worse from there with age.
 

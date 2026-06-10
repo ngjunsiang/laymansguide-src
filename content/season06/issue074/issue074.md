@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: There are two ways your browser can send cookies back to the server:
 Modified: 2020-05-30 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) When a page loads advertisements through header bidding, it sends your cookie along with other information to an ad exchange. The ad exchange conducts automated bidding among the ad-buyers, determines the winner(s), and sends the winning code(s) back to your browser. Your browser then sends these codes to the **CDN**, which sends back the winning ads for your page to render in your browser.
+**Previously:** When a page loads advertisements through header bidding, it sends your cookie along with other information to an ad exchange. The ad exchange conducts automated bidding among the ad-buyers, determines the winner(s), and sends the winning code(s) back to your browser. Your browser then sends these codes to the **CDN**, which sends back the winning ads for your page to render in your browser.
 
 So how does Facebook know what you just bought on Amazon? I hope the previous post sheds some light on that. But not everything is a web browser, and not everything uses cookies (especially apps). This post is about another way that your data gets shuttled along to whoever has a data-sharing agreement with the site you are on.
 

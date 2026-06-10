@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: An app crashes when it encounters a situation it can’t handle, or when it attempts to perform an operation that is disallowed by the operating system.
 Modified: 2021-01-02 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Windows systems categorise data into two types: files, and settings. Files are stored under an appropriate subfolder in `C:\`, while other storage devices and network locations are stored elsewhere or given their own drive letters. Settings are managed through the Windows Registry, which is stored in `C:\Windows\System32\Config\` and `C:\Windows\Users\Name\`.
+**Previously:** Windows systems categorise data into two types: files, and settings. Files are stored under an appropriate subfolder in `C:\`, while other storage devices and network locations are stored elsewhere or given their own drive letters. Settings are managed through the Windows Registry, which is stored in `C:\Windows\System32\Config\` and `C:\Windows\Users\Name\`.
 
 Besides general slowness, two of the most frustrating experiences we have with computers is when they crash, and when they hang.
 

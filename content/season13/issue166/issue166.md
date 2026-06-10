@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Caches speed up app operations by storing temporary data on the device’s storage. This assumes that access to storage is much faster than access to the file’s original source. On Android, users can clear an app’s cache, but not the system cache.
 Modified: 2022-04-02 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) There are easy and quick ways to check the validity of the most common advice for resolving system slowdown. But it still seems to happen even after these tips have been tried.
+**Previously:** There are easy and quick ways to check the validity of the most common advice for resolving system slowdown. But it still seems to happen even after these tips have been tried.
 
 Last issue, I walked through common causes of system slowdown suggested by generic tech websites, and explained simple ways of checking if these are really the cause. Quite often, they are not, especially if you are the kind who is careful about internet usage and does regular system maintenance.
 

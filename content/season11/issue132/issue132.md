@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Chipsets served as go-betweens in the AT form factor by IBM.
 Modified: 2021-08-07 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) CPUs have limited throughput, since there is a max frequency they can operate at, and a limit to the number of wires they can be connected to (throughput = no. of wires × frequency). Later designs of early computers increased the capability of computers by delegating more work to secondary chips.
+**Previously:** CPUs have limited throughput, since there is a max frequency they can operate at, and a limit to the number of wires they can be connected to (throughput = no. of wires × frequency). Later designs of early computers increased the capability of computers by delegating more work to secondary chips.
 
 When computers began hitting the mainstream market, they were designed to be able to use interchangeable parts so as to reduce cost and inventory. To support this effort, manufacturers came up with standards for how to lay out computer components on a mainboard; the different patterns came to be known as **form factors**.
 

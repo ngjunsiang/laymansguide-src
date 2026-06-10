@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Computers are general-purpose machines that usually process integer calculations. The graphics pipeline requires more specialised hardware that can process decimal number calculations. This is why high-performance graphics usually requires a graphics card.
 Modified: 2021-05-29 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) 3D models are represented with vertices (points), edges (line segments between points), and faces in a computer. Images known as textures can be mapped to faces to give the impression of detail.
+**Previously:** 3D models are represented with vertices (points), edges (line segments between points), and faces in a computer. Images known as textures can be mapped to faces to give the impression of detail.
 
 Having a model represented in a computer as a large set of numbers is cool, but nobody does 3D modelling like that. We need something to look at! We need a way to convert our model into a flat picture, ideally displayed on our monitors. And this conversion process needs to be fast enough that as we rotate or change the view of our model, the computer can keep up, displaying the changes in real-time.
 

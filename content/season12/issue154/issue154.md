@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Programs that were not compiled for the instruction set of the host OS have to go through an emulation layer program. This program translates the instructions of that program into compatible instructions that its own processor can execute.
 Modified: 2022-01-08 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) The cloud offers standard digital business services, accessible through a web interface and API, which any developer (with a credit card) can use. Developers don’t have to reinvent the wheel, so long as they know how to use web APIs.
+**Previously:** The cloud offers standard digital business services, accessible through a web interface and API, which any developer (with a credit card) can use. Developers don’t have to reinvent the wheel, so long as they know how to use web APIs.
 
 Virtualisation, particularly system virtualization, is a real game-changer for those of us who like to have our apps all running in the same operating system, instead of switching operating systems all the time through dual-booting (or Apple Parallels).
 

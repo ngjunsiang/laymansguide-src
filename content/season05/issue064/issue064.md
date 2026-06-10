@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Meltdown and Spectre require the programs executing them to have access to kernel memory space. Kernel address isolation attempts to prevent the program from even having access to the kernel address space in the first place. TLB flushing changes the virtual-to-physical memory mapping, disrupting Spectre’s reliance on a consistent virtual-to-physical memory mapping.
 Modified: 2020-03-14 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) For Meltdown and Spectre to work, they need two things: (1) Permission to carry out instructions (i.e. run programs) on the OS, and (2) knowledge of where the kernel address space is.
+**Previously:** For Meltdown and Spectre to work, they need two things: (1) Permission to carry out instructions (i.e. run programs) on the OS, and (2) knowledge of where the kernel address space is.
 
 Last week, I explained two key limitations of Meltdown and Spectre that are needed for an attack to be successfully carried out. Hackers getting permission they shouldn’t have is not a security flaw related to Meltdown and Spectre, so that really belongs in a different season of Layman’s Guide.
 

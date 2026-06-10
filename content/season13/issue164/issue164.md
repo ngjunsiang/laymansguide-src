@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Linux software is distributed through Linux distros. The maintainers of distros maintain repositories of software that have been tested with the distro. Most users will access software in the distro’s repositories through a program called a package manager. So users have full control over when updates and new software should be installed.
 Modified: 2022-03-19 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Software that we use usually comes from the OS makers, or from third-party developers. These two groups of developers are not the same, and might even have conflicting intentions and goals.
+**Previously:** Software that we use usually comes from the OS makers, or from third-party developers. These two groups of developers are not the same, and might even have conflicting intentions and goals.
 
 Last issue, we looked at the following categories of software that an end-user might need:
 

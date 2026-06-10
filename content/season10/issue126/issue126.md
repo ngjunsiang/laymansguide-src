@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: USB is a (licensed) technical standard that describes how devices connect to each other through a cable. USB Type-C is a new connector standard that supports USB 3, DisplayPort, HDMI, and Thunderbolt. It is able to carry multiple types of data simultaneously, in limited combinations. In a USB connection, one device acts as the host while the other acts as the device; the host initiates all communication.
 Modified: 2021-06-26 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Analog formats such as VGA mostly contain the control signals that the CRT needs to operate, while digital formats such as HDMI and DisplayPort contain image data that the device must convert to control signals. Analog signals need a digital-analog-conversion (DAC) chip to be converted to digital signals, hence VGA-HDMI adapters tend to be more costly than DisplayPort-HDMI adapters. Dedicated graphics cards generally support more simultaneous output video streams than integrated graphics cards.
+**Previously:** Analog formats such as VGA mostly contain the control signals that the CRT needs to operate, while digital formats such as HDMI and DisplayPort contain image data that the device must convert to control signals. Analog signals need a digital-analog-conversion (DAC) chip to be converted to digital signals, hence VGA-HDMI adapters tend to be more costly than DisplayPort-HDMI adapters. Dedicated graphics cards generally support more simultaneous output video streams than integrated graphics cards.
 
 This week, I attempt to untangle the confusion around **USB Type-C**, informally also referred to as USB-C.
 

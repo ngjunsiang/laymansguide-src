@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Mobile apps, unlike web apps, can bundle resources and libraries to be installed to a mobile device. They can also request access to storage, and typically have a higher memory limit than web apps.
 Modified: 2020-11-21 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Web apps require the browser to request memory on their behalf, and thus their memory usage shows up under the browser process in the OS Task Manager. Web apps use this data to store a more convenient (but larger) representation of the webpage document, and to store the data needed by the app.
+**Previously:** Web apps require the browser to request memory on their behalf, and thus their memory usage shows up under the browser process in the OS Task Manager. Web apps use this data to store a more convenient (but larger) representation of the webpage document, and to store the data needed by the app.
 
 “Why use the mobile app when there’s already a website?”
 

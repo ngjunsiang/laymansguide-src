@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Shared memory helps to reduce the amount of memory needed by all the applications running on an operating system. It also allows applications to send data to each other, and to communicate.
 Modified: 2020-03-28 17:12
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Meltdown and Spectre require the programs executing them to have access to kernel memory space. Kernel address isolation attempts to prevent the program from even having access to the kernel address space in the first place. TLB flushing changes the virtual-to-physical memory mapping, disrupting Spectre’s reliance on a consistent virtual-to-physical memory mapping.
+**Previously:** Meltdown and Spectre require the programs executing them to have access to kernel memory space. Kernel address isolation attempts to prevent the program from even having access to the kernel address space in the first place. TLB flushing changes the virtual-to-physical memory mapping, disrupting Spectre’s reliance on a consistent virtual-to-physical memory mapping.
 
 One question that makes sense to ask is: if the operating system is supposed to keep the memory used by each program separate, then how is one program able to access the memory of another program? How would a program trying to mount a Meltdown or Spectre attack be able to read the memory of any other program, let alone the operating system?
 

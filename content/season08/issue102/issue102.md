@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Applications are assigned a thread by the OS for running a sequence of instructions. The instructions are executed sequentially, and the app cannot proceed if it gets stuck on any instruction.
 Modified: 2021-01-09 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) An app crashes when it encounters a situation it can’t handle, or when it attempts to perform an operation that is disallowed by the operating system.
+**Previously:** An app crashes when it encounters a situation it can’t handle, or when it attempts to perform an operation that is disallowed by the operating system.
 
 This post is a prelude to talking about app hangs. Hangs are both simple yet complicated to talk about, but there’s a piece of the puzzle that has to come into the picture first. That piece is about how apps work.
 

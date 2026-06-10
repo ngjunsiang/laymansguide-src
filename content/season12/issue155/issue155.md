@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Translating a set of instructions before executing it will always lead to a slowdown, although sometimes this may not be noticeable to users.
 Modified: 2022-01-15 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Programs that were not compiled for the instruction set of the host OS have to go through an emulation layer program. This program translates the instructions of that program into compatible instructions that its own processor can execute.
+**Previously:** Programs that were not compiled for the instruction set of the host OS have to go through an emulation layer program. This program translates the instructions of that program into compatible instructions that its own processor can execute.
 
 > The Apple M1 is an ARM processor that executes 64-bit ARM instructions. MacOS programs that were compiled for Intel 64-bit x86-64 processors go through the Apple Rosetta 2 emulation layer to run on the M1.
 

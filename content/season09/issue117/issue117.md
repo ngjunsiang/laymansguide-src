@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Operating systems use a page file on the storage disk as a complement to physical memory. This allows OSes to behave more performantly than they would if they did not have a page file. Data that is rarely accessed is moved to the pagefile (“paged out”), and can be paged in when it is needed later, albeit with a performance hit.
 Modified: 2021-04-24 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Hibernation mode causes the computer to store the data configuration into a hibernation file on disk. When powered up, the OS reads the data configuration from the file back into memory. This lets the system avoid having to do a full shutdown and bootup; it performs a shorter version of these two sequences instead.
+**Previously:** Hibernation mode causes the computer to store the data configuration into a hibernation file on disk. When powered up, the OS reads the data configuration from the file back into memory. This lets the system avoid having to do a full shutdown and bootup; it performs a shorter version of these two sequences instead.
 
 In [Issue 57]({filename}/season05/issue057/issue057.md)), I laid out the transfer speeds and latencies for a few places in the computer where data can be stored:
 

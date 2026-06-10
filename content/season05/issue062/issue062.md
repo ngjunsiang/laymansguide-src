@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: 
 Modified: 2020-03-03 17:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) A cache miss is slow, and a cache hit is fast. This difference in cache reading speed can be used to transmit secrets out from the cache, which cannot be read directly by programs.
+**Previously:** A cache miss is slow, and a cache hit is fast. This difference in cache reading speed can be used to transmit secrets out from the cache, which cannot be read directly by programs.
 
 Okay, okay, we managed to leak data from memory to the cache, now how do we leak it from the cache to our program?
 

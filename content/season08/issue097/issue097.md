@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: A laptop app can do practically anything, if it is running through the Administrator/root account. Sandboxing is carried out through permission control.
 Modified: 2020-12-05 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Mobile apps are sandboxed by the operating system. As a result, they have to bundle all the libraries they need, and are not allowed to share libraries with other apps. This results in mobile apps with huge filesizes.
+**Previously:** Mobile apps are sandboxed by the operating system. As a result, they have to bundle all the libraries they need, and are not allowed to share libraries with other apps. This results in mobile apps with huge filesizes.
 
 This issue is going to be short, because laptop apps are … well, almost unlimited in what they can do.
 

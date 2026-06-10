@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Sandboxing is a catch-all term for the concept of ensuring apps don’t have access to resources outside of their privileges. Sandboxed apps are generally safer than non-sandboxed apps in terms of security, and easier to manage, terminate, and uninstall.
 Modified: 2020-10-31 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Depending on what you need a database for, there may be online database platforms that can manage and automate much of the work for you. Airtable, Smartsheet, Knack, and Zoho Creator are just 4 of many options that offer an easier way to set up and input your data, then access them through apps or other means.
+**Previously:** Depending on what you need a database for, there may be online database platforms that can manage and automate much of the work for you. Airtable, Smartsheet, Knack, and Zoho Creator are just 4 of many options that offer an easier way to set up and input your data, then access them through apps or other means.
 
 There was a time when apps, short for _applications_, were these files that came on a CD or diskette, usually ending in `.exe` (if your settings enabled you to see file extensions). You double-clicked them or pressed ‘Enter’, and things happened.
 

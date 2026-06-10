@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Document databases organise data into documents, each containing a number of field-value pairs. Each value can itself be a document, and multiple values/documents can be grouped under a field. Document databases do not enforce data consistency across documents, so those rules need to be managed by the application which is using the database. This allows document databases to continue operating even when partitioned, at the cost of some consistency.
 Modified: 2020-09-19 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Relational databases are designed to maintain a well-structured set of data tables through constraint rules. This makes them very useful for preventing accidental inconsistencies in data, but make any changes to the data schema difficult to implement. Changing from one schema to another involves downtime and a migration.
+**Previously:** Relational databases are designed to maintain a well-structured set of data tables through constraint rules. This makes them very useful for preventing accidental inconsistencies in data, but make any changes to the data schema difficult to implement. Changing from one schema to another involves downtime and a migration.
 
 One problem I keep running into with Excel is when I *think* the data has a consistent structure, but halfway through I realise that it actually doesn’t: sometimes I might have two students with different categories of accomplishments, and that requires a big change in the way I design the columns.
 

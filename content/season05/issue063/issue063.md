@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: For Meltdown and Spectre to work, they need two things: (1) Permission to carry out instructions (i.e. run programs) on the OS, and (2) knowledge of where the kernel address space is.
 Modified: 2020-03-07 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) To snoop the cache, we:
+**Previously:** To snoop the cache, we:
 
 1. Flush the cache corresponding to the 256 memory addresses (to get a cache miss when attempting to load the data from memory)
 2. Load the secret value using Meltdown or Spectre attacks (the secret value is only one byte, and cannot be greater than 256, so 256 addresses are sufficient)
