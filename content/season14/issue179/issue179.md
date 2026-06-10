@@ -73,7 +73,7 @@ If given the appropriate tools and permissions from the user, the agent can also
 - read, write, and test code
 - push code to a code repository
 - add bug reports or issues to a task board, or read existing ones from it
-- send requests to an API (if authenticated by the user), and thus execute any supported action through the APIs of Google Drive, Dropbox, Notion, and other services ([Issue 6]({filename}season01/issue006/issue006.md))
+- send requests to an API (if authenticated by the user), and thus execute any supported action through the APIs of Google Drive, Dropbox, Notion, and other services ([Issue 6]({filename}/season01/issue006/issue006.md))
 
 With more advanced tools or MCP servers that handle the complex details, an agent can even:
 - be registered as a plugin in Adobe or Microsoft Office software, reading and editing documents

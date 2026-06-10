@@ -23,7 +23,7 @@ Notice that there's a "forward" step: step 3, where the input "feeds forward" to
 
 Notice also that there's a "backward" step: step 5, where we could adjust model parameters randomly—inefficient! Instead, the mathematical technique of gradient descent gives us a more optimized way to adjust the last hidden layer based on how it would affect the output. The second-to-last hidden layer is then adjusted with the same technique, based on how it would affect the last hidden layer. And this is repeated all the way to the first hidden layer. This "backward trickling" is called **backpropagation**, or "backprop" more informally.
 
-The above steps are repeated *for each input:output data pair* (supervised training) or *for each token sequence run* (unsupervised training). That's **a lot** of repeated steps; researchers often have some shortcuts they take to speed up the process. Even then, it is still too many for a typical CPU to complete in a reasonable time; the big labs use specialized GPUs instead ([Issue 123]({filename}season10/issue123/issue123.md)), resulting in training runs that take weeks to months to complete on multiple GPUs for today's state-of-the-art LLMs.
+The above steps are repeated *for each input:output data pair* (supervised training) or *for each token sequence run* (unsupervised training). That's **a lot** of repeated steps; researchers often have some shortcuts they take to speed up the process. Even then, it is still too many for a typical CPU to complete in a reasonable time; the big labs use specialized GPUs instead ([Issue 123]({filename}/season10/issue123/issue123.md)), resulting in training runs that take weeks to months to complete on multiple GPUs for today's state-of-the-art LLMs.
 
 This is not a cheap hobby.
 

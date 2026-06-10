@@ -18,7 +18,7 @@ The approach is similar, really: text gets broken up into common repeating patte
 
 ## Image tokens
 
-There are a variety of approaches for tokenizing images. A common way to do this is to break it up into 16×16-pixel patches. Each pixel has three values representing red+green+blue ([Issues 43 & 44]({filename}season04/issue043/issue043.md)), so each patch is a sequence of 16×16×3 = 768 values.
+There are a variety of approaches for tokenizing images. A common way to do this is to break it up into 16×16-pixel patches. Each pixel has three values representing red+green+blue ([Issues 43 & 44]({filename}/season04/issue043/issue043.md)), so each patch is a sequence of 16×16×3 = 768 values.
 
 Each unique combination of 768 values constitutes an image token. During training, these image tokens appear alongside other tokens (text, image, audio), and the model adjusts its embedding parameters to locate semantically similar tokens in close proximity.
 
@@ -26,7 +26,7 @@ During inference ([Issue 173]({filename}/season14/issue173/issue173.md)), hidden
 
 ## Audio tokens
 
-While intuitively it seems natural to chunk audio into 1-second or even sub-second samples, in reality 1 second of audio contains 44,100 samples ([Issue 45]({filename}season04/issue045/issue045.md)) which is still far too large.
+While intuitively it seems natural to chunk audio into 1-second or even sub-second samples, in reality 1 second of audio contains 44,100 samples ([Issue 45]({filename}/season04/issue045/issue045.md)) which is still far too large.
 
 Instead, audio is usually converted from waveform representation (amplitude vs time) into spectrum representation (frequency vs amplitude at a snapshot in time). The spectrogram gets split into shorter windows of a few milliseconds each (a few thousand samples per window). The values of each frequency in that window then naturally form an audio token, which appear alongside other tokens in training and get represented in embedding space the same way as other tokens.
 
