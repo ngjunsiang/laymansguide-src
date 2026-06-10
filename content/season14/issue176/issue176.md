@@ -16,7 +16,7 @@ In some cases, the document may be too large. In other cases, a company may have
 
 In such cases, **retrieval-augmented generation** (RAG) provides an alternative way to inject relevant information into the LLM's system prompt.
 
-## Retrieval-Augmented Generation
+## Retrieval-Augmented Generation (RAG)
 
 Like other LLM capabilities, this one comes from the runtime. The LLM plays no part in this and has no control over the process.
 

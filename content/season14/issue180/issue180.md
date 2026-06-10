@@ -20,9 +20,9 @@ For starters, you can't download the GPT-5 or Claude models. They are proprietar
 
 ## The parts: downloading weights
 
-Let's download the currently top-trending model, Google's [`gemma-4-12B-it`](https://huggingface.co/google/gemma-4-12B-it). The model card says that this is a multimodal model ([Issue 177]({filename}/season14/issue177/issue177.md)) with 11.95 billion (12B) parameters ([Issue 170]({filename}/season14/issue170/issue170.md)). It has a context length of 256K tokens—important when deciding what kind of tasks it can plausibly take on, since the context length dictates what the total output length (including the input tokens) cannot exceed.
+Let's download the currently top-trending model, Google's [`gemma-4-12B-it`](https://huggingface.co/google/gemma-4-12B-it). The [model card](https://huggingface.co/google/gemma-4-12B-it) says that this is a multimodal model ([Issue 177]({filename}/season14/issue177/issue177.md)) with 11.95 billion (12B) parameters ([Issue 170]({filename}/season14/issue170/issue170.md)). It has a context length of 256K tokens ([Issue 172]({filename}/season14/issue172/issue172.md))—important when deciding what kind of tasks it can plausibly take on, since the context length dictates what the total output length (including the input tokens) cannot exceed.
 
-Under [Files and versions](https://huggingface.co/google/gemma-4-12B-it/tree/main), we see a whole bunch of files, most of them metadata, configuration information, and other data (such as the token list). The model weights are easy to tell: they are by far the largest file of the collection, weighing in at 23.9GB. We can calculate this: 11.95 billion parameters, with each parameter taking up 16 bits (Issue 40), means 2 bytes per parameter, and thus 23.9 billion bytes for all the parameters --> 23.9GB.
+Under [Files and versions](https://huggingface.co/google/gemma-4-12B-it/tree/main), we see a whole bunch of files, most of them metadata, configuration information, and other data (such as the token list). The model weights are easy to tell: they are by far the largest file of the collection, weighing in at 23.9GB. We can calculate this: 11.95 billion parameters, with each parameter taking up 16 bits ([Issue 40]({filename}/season04/issue040/issue040.md)), means 2 bytes per parameter, and thus 23.9 billion bytes for all the parameters. 23.9GB.
 
 ## The runtime
 
@@ -32,19 +32,23 @@ You have a few options here, listed from easiest to most difficult:
 2. [Ollama](https://ollama.com/) – A commandline program, requiring some terminal chops. Sets up an API server that you can use with many other programs.
 3. [Hugging Face Transformers](https://github.com/huggingface/transformers) – A Python library for working with models, which means it's programmers-only. Great if you are building or customizing your own agent harness, but definitely not ready-to-run as-is.
 4. [llama.cpp](https://github.com/ggml-org/llama.cpp) – The most low-level, close-to-the-metal option. Gives you a commandline program for using the model, but you have to manage all other technical detail on your own. Not for the faint-hearted.
-5. – [vLLM](https://github.com/vllm-project/vllm) – A GPU-only library for serving models over an API. Presumably we do not have 5 thousand bucks to spend on an entry-level GPU for models, such as the RTX 5090 with 32GB of GPU memory, and are running the model on a CPU, so this option is automatically disqualified for us.
+5. [vLLM](https://github.com/vllm-project/vllm) – A GPU-only library for serving models over an API. Presumably we do not have four thousand bucks to spend on an entry-level GPU for models, such as the RTX 4090 with 24GB of GPU memory, and are running the model on a CPU, so this option is automatically disqualified for us.
 
 ## Hardware requirements
 
 Great. So we've downloaded and installed LM Studio, launched it, and then selected our `gemma-4-12B-it` model for loading.
 
+![A screenshot of LM Studio]({attach}/season14/issue180/lm-studio.png)  
+*A screenshot of LM Studio*  
+Source: [LM Studio](https://lmstudio.ai/)
+
 The first thing that would probably happen is your system will complain about insufficient memory and stop. You see, to run this model, we would need to read the model weights (23.9GB) into memory, immediately using up 24GB of memory. Even assuming no other apps are running, we still need more memory for the following:
 - operating system overhead (~1-2GB)
 - memory used by the runtime (1-3GB)
 
-Oh? It didn't crash for you? I see, you had the Macbook Pro with 64GB memory, or something to that effect. Great, let's start prompting your model then. It won't work as quickly as ChatGPT, but it should manage a comfortable ~20–30 tokens/sec, slightly slower than reading speed but useable.
+Oh? It didn't crash for you? I see, you had the Macbook Pro with 64GB memory, or something in that weight class. Great, let's start prompting your model then. It won't work as quickly as ChatGPT, but it should manage a comfortable ~20–30 tokens/sec, slightly slower than reading speed but useable.
 
-Unfortunately, as you ask more and more questions within the same session, it will run more and more slowly, and eventually it will crash. You see, the model generates a representation of the entire input, called the KV cache, which stores its computed values for how each token in the input relates to other tokens in the input. This is estimated to take up ~12GB for 32K tokens, so ~96GB if using the full 256K context length.
+Unfortunately, as you ask more and more questions within the same session, it will run more and more slowly, and eventually it will crash. You see, the model generates a representation of the entire input, called the **KV cache**, which stores its computed values for how each token in the input relates to other tokens in the input. This is estimated to take up ~12GB for 32K tokens, so ~96GB if using the full 256K context length.
 
 Yeah, this isn't for the faint-hearted.
 

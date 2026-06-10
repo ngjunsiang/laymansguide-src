@@ -12,18 +12,20 @@ In this issue we fill in the last piece of the puzzle needed to "unlock untold e
 
 ## Making thinking happen
 
-You're in a lesson. The teacher asks a question, something innocuous really: "\<Name\>, what's the value of X?" All eyes are on you. You reply with the first answer off the top of your head. Wrongly, it turns out.
+You're in a lesson. The teacher asks a question, something innocuous really: "What's the value of X?" All eyes are on you. You reply with the first answer off the top of your head. Wrongly, it turns out.
 
 Your teacher could mock you at this point, but if they decide to get you to think harder instead, what do they say?
 
 As it happens, this trick works on LLMs too. The ways we try to get people to think harder appear to be well-represented in books, on the internet, and in other media that the models are trained on.
 
-What this means is: you add any of the following:
+What this means is that you add any of the following:
+
 - "think step by step."
 - "think carefully."
 - "check your assumptions before you answer."
 
 And it influences the model's next token. It begins to output phrases like:
+
 - "Let's break this down."
 - "First, let's identify what's being asked."
 - "One way to approach this is..."
@@ -44,19 +46,21 @@ So it's back to supervised learning again. Look for examples of how to solve dif
 
 A model that is able to think longer and in a more disciplined way to produce a better answer is able to tackle harder questions. These are the models that were solving olympiad questions that humans struggled to solve.
 
-But this isn't enough for another kind of challenge: long-horizon tasks that involve multiple tool calls, putting together information and feedback from multiple sources, maintaining task coherence and a consistent goal orientation throughout the process, and finally producing output in the correct format. For example, filing tax returns involves digging through a large number of financial documents, remaining aware of legal requirements for filing, extracting relevant information, and putting it together following those requirements. Along the way, detours and failed tool calls threaten to derail the model; it can get stuck researching an edge case rule, debugging a failing tool call, or get distracted by other things.
+But this isn't enough for another kind of challenge: long-horizon tasks that involve multiple tool calls, putting together information and feedback from multiple sources, maintaining task coherence and a consistent goal orientation throughout the process, and finally producing output in the correct format.
+
+For example, filing tax returns involves digging through a large number of financial documents, remaining aware of legal requirements for filing, extracting relevant information, and putting it together following those requirements. None of the steps along the way involve extreme intelligence or genius insight, it's just a lot of tedious steps and details to keep track of. Along the way, detours and failed tool calls threaten to derail the model; it can get stuck researching an edge case rule, debugging a failing tool call, or get distracted by other things.
 
 This requires the model to *plan*. It has to take an end-goal, break it down into phases and steps, think about immediate steps, execute them and observe the result, decide next steps, repeat, .... Along the way, it has to keep track of goals and sub-goals (usually aided by task management tools), be able to tell when they are met and check them off the list.
 
-Again, books and websites seldom contain detailed worked examples of how to do this, so the model has to be trained with labelled data (again!), given examples of planning steps through supervised learning until it is able to reproduce them reliably.
+Books and websites seldom contain detailed worked examples of how to do this, so the model has to be trained with labelled data (again!), given examples of planning steps through supervised learning until it is able to reproduce them reliably.
 
 ## Hidden vs visible thinking
 
 Frontier labs found that showing the full thinking process to users isn't always beneficial. For example, the full thinking trace—tokens that constitute the analysis and are not part of the final answer—could be really lengthy. Users tend not to like that; they want to see the key steps for a quick check, and then the final answer.
 
-This could be because the full thinking trace includes mistakes the model made and corrected later, erroneous tool calls that it subsequently fixed, search tool calls which the user does not need to see the full contents of, etc. In other cases, frontier labs may have found ways for the model to output a more efficient form of thinking with tokens that is not human-readable.
+Perhaps the full thinking trace includes mistakes the model made and corrected later, erroneous tool calls that it subsequently fixed, search tool calls which the user does not need to see the full contents of, etc. In other cases, frontier labs may have found ways for the model to output a more efficient form of thinking with tokens that is not human-readable.
 
-Either way, this means one more step in the runtime: detecting and processing thinking tokens. If the model is trained to demarcate thinking tokens with a special start and end sequence, e.g. `<thinking>...</thinking>`, the runtime may look for it.
+This means one more step in the runtime: detecting and processing thinking tokens. If the model is trained to demarcate thinking tokens with a special start and end sequence, e.g. `<thinking>...</thinking>`, the runtime may look for it.
 
 Once detected, this hidden thinking may be removed, summarized (with a different model), or collapsed to take up less space in the user interface.
 

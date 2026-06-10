@@ -8,7 +8,7 @@ Summary: Quantization trades parameter precision for a smaller memory footprint 
 
 **Previously:** Proprietary models do not have their weights published publicly, while open-weight models do. Various runtimes are available for download, and can run models that have a compatible file format. But models are extremely compute- and memory-intensive, requiring extremely high-end hardware and capacious memory to run.
 
-Great, so a 12B model takes up 24GB of disk space, uses 24GB of RAM, and another 96GB for the KV cache (model's calculated representation of input tokens). That's out of reach for most consumers without AI-grade GPUs, which currently cost thousands per unit.
+Great, so a 12B model takes up 24GB of disk space, uses 24GB of RAM, and up to 96GB for the KV cache (model's calculated representation of input tokens). That's out of reach for most consumers without AI-grade GPUs, which currently cost tens of thousands per unit.
 
 Enter quantization.
 
@@ -24,9 +24,9 @@ Can we reduce the model size and memory footprint by reducing the precision? Yes
 
 This inaccuracy shows up in models not following instructions as well, potentially making mistakes more noticeably, especially on complex tasks, or being less accurate with tool call syntax. However, compared to the alternative of not running the model at all, this is usually an acceptable tradeoff for users running the model on their own computers.
 
-## Running a quantized `gemma-4-12B-it`
+## Running a quantized model
 
-Okay, let's run those numbers on a quantized Gemma 4 12B model. We don't even need to do the quantization ourselves usually: other enthusiasts have already done it, [providing the models on HuggingFace as well](https://huggingface.co/Brunobkr/OFFELLIA_Q4_0_gemma-4-12B-it.gguf) (they can be identified through the `Q4` in the model naming scheme; 8-bit quantized models are labelled `Q8`).
+Okay, let's run those numbers on a quantized Gemma 4 12B model. We don't even need to do the quantization ourselves usually: other enthusiasts have already done it, [providing the models on HuggingFace as well](https://huggingface.co/Brunobkr/OFFELLIA_Q4_0_gemma-4-12B-it.gguf) (they can be identified through the "Q4" in the model naming scheme; 8-bit quantized models are labelled "Q8").
 
 We already see immediate benefits: the 4-bit quantized model weights are only 7GB, a stark contrast to the 24GB of full-precision weights.
 
@@ -68,4 +68,4 @@ Either way, if you have the hardware to support it and manage to get a local age
 
 **Next issue:** [Issue 182: Running a model, part 2]({filename}/season14/issue182/issue182.md)
 
-In the last issue, I'll explore other options for running a model on your device (called **local deployment** in parlance): running smaller models, and other feasible hardware options
+In the last issue, I'll explore other options for running a model on your device (called **local deployment** in parlance): running smaller models, and other feasible hardware options.

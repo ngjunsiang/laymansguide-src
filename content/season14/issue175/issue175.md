@@ -74,7 +74,7 @@ When the user registers a MCP server through a graphical or text-based interface
 
 Notice that none of this is mediated or controlled by the LLM. It follows instructions, generates tool calls with the correct syntax in its output, then sees the result in the next input, seemingly by magic. The LLM is operating in a virtualized environment controlled by an external system that doesn't have a standardized name yet. For now we'll call it the **runtime**.
 
-Tools and toolsets make or break a LLM-based assistant. They are the only way a LLM can take actions, get data, and otherwise make sense of the external world. A LLM without any tools is analogous to a human in a sensory deprivation tank—without information from the outside world, even human beings quickly begin to hallucinate.
+Tools and toolsets make or break a LLM-based assistant. They are the only way a LLM can take actions, get data, and otherwise make sense of the external world. A LLM without any tools is analogous to a human in a sensory deprivation tank—without information from the outside world, even [human beings quickly begin to hallucinate](https://en.wikipedia.org/wiki/Sensory_deprivation).
 
 ---
 
@@ -82,7 +82,7 @@ Tools and toolsets make or break a LLM-based assistant. They are the only way a 
 
 ---
 
-From here it's another 3 issues before we get to the topic of the year: agents. Before I get there I want to cover three more buzzphrases: **retrieval-augmented generation** (RAG),**multimodal** models, and **reasoning/thinking** models.
+From here it's another 3 issues before we get to the topic of the year: AI agents. Before I get there I want to cover three more buzzphrases: **retrieval-augmented generation** (RAG), **multimodal** models, and **reasoning/thinking** models.
 
 By now I hope you're starting to see that LLMs really are next-token predictors underneath, and all their actual capabilities—the ones that let them know what is happening in real-time and change things in the world—are provided through the runtime. As the runtime grows more powerful and capable, LLMs must also be post-trained (using reinforcement learning a.k.a. RLHF) to use them well.
 

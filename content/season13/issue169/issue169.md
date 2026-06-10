@@ -53,4 +53,12 @@ You might have noticed how often I am linking to past issues, because so many co
 
 The main bottleneck for this had been content: it’s rather overwhelming to think about where and even how to start. And that was how this newsletter was born. Thanks to Layman’s Guide, I now have a steady base of content for publishing Layman’s Wiki, and work on it has been slow but progressing. I’ll put up a link through this newsletter once it is ready for more eyes :)
 
+## What I'll be covering next
+
+**Next issue:** [Issue 170: Machine learning models]({filename}/season14/issue170/issue170.md)
+
+After a long hiatus, Layman's Guide returns with Season 14! But first, let's understand what models are and how they work.
+
+---
+
 As always, thank you for reading!

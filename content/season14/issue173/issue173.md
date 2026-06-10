@@ -55,7 +55,7 @@ These findings prompted Rich Sutton, an influential machine learning researcher,
 
 A tenfold increase in model parameters and training data led to a surprising leap in capability. OpenAI and other researchers wondered: What if we pushed this to its logical conclusion, and threw more compute and more data into machine learning training?
 
-In Jun 2020, [OpenAI released GPT-3](https://web.archive.org/web/20200611150951/https://openai.com/blog/openai-api/), available through their web API ([Issue 4]({filename}/season1/issue004/issue004.md)). GPT-3 had 175 billion parameters (175B, a hundredfold increase in model size), was trained on a mix of books and websites totalling 300 billion tokens, took weeks to train on hundreds of GPUs, and cost OpenAI up to $12 mil to train.
+In Jun 2020, [OpenAI released GPT-3](https://web.archive.org/web/20200611150951/https://openai.com/blog/openai-api/), available through their web API ([Issue 4]({filename}/season01/issue004/issue004.md)). GPT-3 had 175 billion parameters (175B, a hundredfold increase in model size), was trained on a mix of books and websites totalling 300 billion tokens, took weeks to train on hundreds of GPUs, and cost OpenAI up to $12 mil to train.
 
 GPT-3 could:
 

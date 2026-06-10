@@ -24,7 +24,7 @@ I am not a machine learning researcher and can't tell you what the prevailing *r
 
 This technique of using labelled data to train the model is called **supervised learning**, because of the need to tweak the model's parameters (under human supervision) to match the expected output.
 
-There were (and still are) many machine learning models trained this way and used. For example, tesseract is an open-source OCR engine that was first released in 2005. It was trained on a dataset of scanned documents and their corresponding text, and has been used in various applications for OCR tasks. Another example is the ResNet architecture for image classification, which was introduced in 2015 and has been widely used for image recognition tasks.
+There were (and still are) many machine learning models trained this way and used. For example, [tesseract](https://tesseractocr.org/) is an open-source OCR engine that was first released in 2005. It was trained on a dataset of scanned documents and their corresponding text, and has been used in various applications for OCR tasks. Another example is the ResNet architecture for image classification, which was introduced in 2015 and has been widely used for image recognition tasks.
 
 ## The Transformer architecture
 
