@@ -102,11 +102,12 @@ time{
 }
 
 main ul, ol{
+    margin-top: 1.5em;
     margin-bottom: 2.5em;
 }
 
 li{
-    margin-bottom: 1.2em;
+    margin-bottom: 0.2em;
 }
 
 img{
