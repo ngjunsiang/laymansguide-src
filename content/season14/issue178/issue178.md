@@ -6,7 +6,7 @@ Slug: issue178
 Author: J S Ng
 Summary: Thinking/reasoning models are those that have been trained on examples of how to think about different problems in different domains, or plan and execute complex tasks. They often use tools to aid them in goal tracking and updating. The full thinking trace from the model may be removed or hidden to present a more legible response to the user. 
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Multimodal models represent text, image, and audio tokens alongside each other in their embedding space. The model uses the input tokens, regardless of type, to calculate the next output token. Multimodal models typically only output text tokens in their response, delegating to more specialized models for image and audio generation if necessary.
+**Previously:** Multimodal models represent text, image, and audio tokens alongside each other in their embedding space. The model uses the input tokens, regardless of type, to calculate the next output token. Multimodal models typically only output text tokens in their response, delegating to more specialized models for image and audio generation if necessary.
 
 In this issue we fill in the last piece of the puzzle needed to "unlock untold economic value", if the AI labs are to be believed. Let's talk about how models "think".
 

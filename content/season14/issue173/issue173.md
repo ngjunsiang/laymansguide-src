@@ -6,7 +6,7 @@ Slug: issue173
 Author: J S Ng
 Summary: OpenAI discovered, through models GPT-1 to GPT-3, that scaling compute and (training) data *alone* was sufficient to sharply increase the capabilities of a LLM: the transformer architecture and unsupervised learning together resulted in a model that was alarmingly intelligent. 
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) A model does not see letters or words, only tokens. These tokens are typically generated from user input through a pre-tokenizer program. Tokens are represented in the model as embeddings, a sequence of numbers representing the token's position in the embedding matrix. The model uses each token's embedding, and its surrounding tokens, to infer its meaning in context.
+**Previously:** A model does not see letters or words, only tokens. These tokens are typically generated from user input through a pre-tokenizer program. Tokens are represented in the model as embeddings, a sequence of numbers representing the token's position in the embedding matrix. The model uses each token's embedding, and its surrounding tokens, to infer its meaning in context.
 
 ## Model Training
 
@@ -29,7 +29,7 @@ This is not a cheap hobby.
 
 ## Inference
 
-Fortunately, using a model is a different affair, involving only steps 1 and 3 of the above. No backpropagation, no repeated runs, just pass the input in, run one forward step per output token, repeat until done. This process is called **inference**, and is what happens when we users send a request to ChatGPT or Claude.
+Fortunately, using a model is a different affair, involving only steps 1 and 3 of the above. No backpropagation, no repeated runs. Just pass the input in, run one forward step per output token, repeat until done. This process is called **inference**, and is what happens when we users send a request to ChatGPT or Claude.
 
 (Hang on, how does a model "know" when it is "done generating text"? In model training, a special token, e.g. `<EOS>` for end-of-sequence, is inserted at the end of text. When this token is detected in the program, it stops invoking the model.)
 
@@ -39,24 +39,26 @@ Needless to say, inference is much cheaper than training, which is why we are ab
 
 GPT-1 had 117 million parameters, was trained on ~7,000 books (about 5GB), took a few days to complete training on 8 GPUs, costing $0.5 mil or less.
 
-In 2019, OpenAI released GPT-2, which was the first large language model to capture public attention. GPT-2 had 1.5 billion parameters (1.5B), was trained on ~40GB of text from the web, and took a few weeks to train on hundreds of GPUs, costing OpenAI $1 mil to $5 mil to train.
+In Nov 2019, [OpenAI released GPT-2](https://openai.com/index/gpt-2-1-5b-release/), which was the first large language model to capture some public attention. GPT-2 had 1.5 billion parameters (1.5B), was trained on ~40GB of text from the web, and took a few weeks to train on hundreds of GPUs, costing OpenAI $1 mil to $5 mil to train.
 
 GPT-2 was the same architecture that GPT-1 used, only with a larger model (tenfold) and with more training data (eightfold). What they got was a model that:
+
 - could perform tasks it was never explicitly trained on (zero-shot learning): answer questions, understand text, summarize, translate (rudimentarily)
 - could generalize from examples given in user input (one-shot/few-shot learning) without needing supervised learning
 - showed emerging ability on non-language tasks: counting, basic arithmetic, even some attempts at simple proofs
 
-These are capabilities we take for granted today, but in early 2019 this was cutting-edge performance never demonstrated by any other machine learning model, and certainly not with so little human supervision. This discovery was scary enough that it took OpenAI nine months to fully release GPT-2's weights, fearing how its capabilities might be misused.
+These are capabilities we take for granted today, but in early 2019 this was cutting-edge performance never demonstrated by any other machine learning model, and certainly not with so little human supervision. This discovery was scary enough that it took OpenAI nine months to fully release GPT-2's weights, fearing how its capabilities might be misused. The Verge reported: "[OpenAI has published the text-generating AI it said was too dangerous to share](https://www.theverge.com/2019/11/7/20953040/openai-text-generation-ai-gpt-2-full-model-release-1-5b-parameters)", but fortunately in the same article "the lab says it's seen 'no strong evidence of misuse so far'".
 
 ## The bitter lesson, and GPT-3
 
-These findings prompted Rich Sutton, an influential machine learning researcher to write [a blog post published on 13 March 2019](http://www.incompleteideas.net/IncIdeas/BitterLesson.html), where he summed up this finding in a single sentence: "The bitter lesson is that general methods that leverage computation are ultimately the most effective, and by a large margin. [...] Seeking an improvement that makes a difference in the shorter term, researchers seek to leverage their human knowledge of the domain, but the only thing that matters in the long run is the leveraging of computation."
+These findings prompted Rich Sutton, an influential machine learning researcher, to write [a blog post published on 13 March 2019](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) where he summed up this finding in a single sentence: "The bitter lesson is that general methods that leverage computation are ultimately the most effective, and by a large margin." Elaborating, he adds "seeking an improvement that makes a difference in the shorter term, researchers seek to leverage their human knowledge of the domain, but the only thing that matters in the long run is the leveraging of computation."
 
 A tenfold increase in model parameters and training data led to a surprising leap in capability. OpenAI and other researchers wondered: What if we pushed this to its logical conclusion, and threw more compute and more data into machine learning training?
 
-In 2020, OpenAI released GPT-3. GPT-3 had 175 billion parameters (175B, a hundredfold increase in model size), was trained on a mix of books and websites totalling 300 billion tokens, took weeks to train on hundreds of GPUs, and cost OpenAI up to $12 mil to train.
+In Jun 2020, [OpenAI released GPT-3](https://web.archive.org/web/20200611150951/https://openai.com/blog/openai-api/), available through their web API ([Issue 4]({filename}/season1/issue004/issue004.md)). GPT-3 had 175 billion parameters (175B, a hundredfold increase in model size), was trained on a mix of books and websites totalling 300 billion tokens, took weeks to train on hundreds of GPUs, and cost OpenAI up to $12 mil to train.
 
 GPT-3 could:
+
 - take instructions given in natural language
 - *reliably* tackle many tasks zero-shot (with no examples)
 - *reliably* adapt examples given in the user input, and generalize from patterns

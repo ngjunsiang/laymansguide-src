@@ -6,7 +6,7 @@ Slug: issue180
 Author: J S Ng
 Summary: Proprietary models do not have their weights published publicly, while open-weight models do. Various runtimes are available for download, and can run models that have a compatible file format. But models are extremely compute- and memory-intensive, requiring extremely high-end hardware and capacious memory to run. 
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Agents are software applications that comprise a harness, a runtime, and a model (typically accessed through an API instead of directly executed on the computer). They enable a user to type in a request or send it by other means and thus instruct the agent to carry out a task on the computer until completion. The capabilities of agents are limited by the tools available to them.
+**Previously:** Agents are software applications that comprise a harness, a runtime, and a model (typically accessed through an API instead of directly executed on the computer). They enable a user to type in a request or send it by other means and thus instruct the agent to carry out a task on the computer until completion. The capabilities of agents are limited by the tools available to them.
 
 As of June 2026, OpenAI and Anthropic charge about $20/mth for their Pro/Plus plan, and about $200/mth for their Max plan. For those of us who like to stay on free tiers, it can be pretty annoying to hit the dreaded "You have reached the limit for Free plan", but what can we do short of shelling out for a higher tier?
 

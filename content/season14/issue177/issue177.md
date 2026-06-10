@@ -6,7 +6,7 @@ Slug: issue177
 Author: J S Ng
 Summary: Multimodal models represent text, image, and audio tokens alongside each other in their embedding space. The model uses the input tokens, regardless of type, to calculate the next output token. Multimodal models typically only output text tokens in their response, delegating to more specialized models for image and audio generation if necessary. 
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) In retrieval-augmented generation (RAG), the runtime performs a search with the user's request to retrieve relevant chunks from a set of documents from a knowledge base. The chunks may be further re-ranked by the runtime before finally being included in the LLM's input. One alternative to RAG, where information lookup happens outside of LLM generation, is to provide the LLM with search tools instead, and rely on its judgement to use them well.
+**Previously:** In retrieval-augmented generation (RAG), the runtime performs a search with the user's request to retrieve relevant chunks from a set of documents from a knowledge base. The chunks may be further re-ranked by the runtime before finally being included in the LLM's input. One alternative to RAG, where information lookup happens outside of LLM generation, is to provide the LLM with search tools instead, and rely on its judgement to use them well.
 
 Multimodal models. Try saying that three times quickly. It's quite a mouthful, but if you've managed to keep up so far, it's really not complicated, so I don't expect this to be a long issue.
 

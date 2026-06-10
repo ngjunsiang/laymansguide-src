@@ -6,7 +6,7 @@ Slug: issue179
 Author: J S Ng
 Summary: Agents are software applications that comprise a harness, a runtime, and a model (typically accessed through an API instead of directly executed on the computer). They enable a user to type in a request or send it by other means and thus instruct the agent to carry out a task on the computer until completion. The capabilities of agents are limited by the tools available to them. 
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Thinking/reasoning models are those that have been trained on examples of how to think about different problems in different domains, or plan and execute complex tasks. They often use tools to aid them in goal tracking and updating. The full thinking trace from the model may be removed or hidden to present a more legible response to the user.
+**Previously:** Thinking/reasoning models are those that have been trained on examples of how to think about different problems in different domains, or plan and execute complex tasks. They often use tools to aid them in goal tracking and updating. The full thinking trace from the model may be removed or hidden to present a more legible response to the user.
 
 Let's review the ingredients we have so far:
 

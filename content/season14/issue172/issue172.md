@@ -6,7 +6,7 @@ Slug: issue172
 Author: J S Ng
 Summary: A model does not see letters or words, only tokens. These tokens are typically generated from user input through a pre-tokenizer program. Tokens are represented in the model as embeddings, a sequence of numbers representing the token's position in the embedding matrix. The model uses each token's embedding, and its surrounding tokens, to infer its meaning in context. 
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) The Transformer architecture, unlike previous machine learning model architectures, could generate its next item while processing all previous items at the same time. The technique of unsupervised learning trained models on unlabelled data, letting the model pick up patterns in underlying data instead of having it learn correct answers only, and was much faster than supervised learning. OpenAI applied both these ideas at scale, producing GPT-1, a model that beat best-performing models while requiring relatively little human supervision during training.
+**Previously:** The Transformer architecture, unlike previous machine learning model architectures, could generate its next item while processing all previous items at the same time. The technique of unsupervised learning trained models on unlabelled data, letting the model pick up patterns in underlying data instead of having it learn correct answers only, and was much faster than supervised learning. OpenAI applied both these ideas at scale, producing GPT-1, a model that beat best-performing models while requiring relatively little human supervision during training.
 
 Wait—what exactly does a large language model (LLM) work with? Individual letters? Entire words? No, they work with—
 
@@ -34,8 +34,8 @@ Now you understand a little better why ChatGPT struggles to count Rs in "strawbe
 How does the model tell `481`, `326`, and `357` apart? How does it store or represent them within itself? Here, I am going to need you to use your imagination. You are familiar with the concept of a scatter plot, yes? A graph that looks like this:
 
 ![A scatterplot with 2 dimensions]({attach}/season14/issue172/scatter-plot.png)  
-A scatterplot with 2 dimensions  
-Source: https://www.embeddedsource.de/use-a-scatterplot-to-interpret-data/
+*A scatterplot with 2 dimensions*  
+Source: [EmbeddedSource](https://www.embeddedsource.de/use-a-scatterplot-to-interpret-data/)
 
 Now imagine a scatterplot with as many data points as tokens. In GPT-1's case, that's approx. 40,000 tokens—its vocabulary size. Yes, I know that's a lot of points, but you can *roughly* visualize that, yes? Good, that's the easy part.
 

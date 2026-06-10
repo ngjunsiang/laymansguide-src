@@ -6,7 +6,7 @@ Slug: issue174
 Author: J S Ng
 Summary: Through reinforcement learning with human feedback (RLHF), the LLM is trained on labelled data until it can reliably follow instructions, avoid harmful output, and follow other desired behavior. A system prompt provides guidelines for output. The user's prompt is inserted into a templated prompt and passed to the LLM, which generates text in a markup format that a display system can understand. A chat interface wraps the entire system to create the illusion of a responsive chatbot. 
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) OpenAI discovered, through models GPT-1 to GPT-3, that scaling compute and (training) data *alone* was sufficient to sharply increase the capabilities of a LLM: the transformer architecture and unsupervised learning together resulted in a model that was alarmingly intelligent.
+**Previously:** OpenAI discovered, through models GPT-1 to GPT-3, that scaling compute and (training) data *alone* was sufficient to sharply increase the capabilities of a LLM: the transformer architecture and unsupervised learning together resulted in a model that was alarmingly intelligent.
 
 Mechanistically, a LLM is a next-token predictor: from a set of parameters, and an input sequence of tokens, a program continually calculates the next token, which gets appended to the input sequence, and the new sequence gets fed in as the input again, until a stop token is generated.
 
@@ -36,7 +36,7 @@ This need for new, novel data sources still drives frontier machine learning lab
 
 InstructGPT was ready to take instructions. But ... how do we get instructions from the user? How do we pass the responses back to them? The model was trained, the API was ready ... but OpenAI needed a graphical interface, a familiar mental model of interaction that the public could use intuitively.
 
-One already existed: chat apps like WhatsApp were already popular, and users intuitively understood a chat input when they saw one. But how could OpenAI get InstructGPT to respond reliably like a chat assistant with a consistent personality and style?
+One already existed: chat apps like WhatsApp were popular at the time, and users intuitively understood a chat input when they saw one. But how could OpenAI get InstructGPT to respond reliably like a chat assistant with a consistent personality and style?
 
 It turned out the answer was already in the training data.
 
@@ -44,7 +44,7 @@ It turned out the answer was already in the training data.
 
 There was a lot of training data in the form of interviews, movie scripts, things that look like:
 
-> Alice: Why do cats like to jump on furniture?
+> Alice: Why do cats like to jump on furniture?  
 > Bob: ...
 
 And in many cases, arranging the user's question along with a system prompt like so was enough to have the LLM roleplay a helpful assistant:
@@ -72,7 +72,7 @@ Even with the API in place, some window dressing is still needed. The LLM, being
 
 The wrapper can also do some helpful things, like filter the LLM's output for harmful text and block it from appearing, as a kind of last-layer defence against offensive output. Add a login screen, a way for users to access past chats, a few other niceties ...
 
-Finally OpenAI launched ChatGPT in November 2022. And the world as we knew it changed forever.
+Finally, [OpenAI launched ChatGPT in November 2022](https://openai.com/index/chatgpt/). And the world as we knew it changed forever.
 
 **Issue summary:** Through reinforcement learning with human feedback (RLHF), the LLM is trained on labelled data until it can reliably follow instructions, avoid harmful output, and follow other desired behavior. A system prompt provides guidelines for output. The user's prompt is inserted into a templated prompt and passed to the LLM, which generates text in a markup format that a display system can understand. A chat interface wraps the entire system to create the illusion of a responsive chatbot.
 

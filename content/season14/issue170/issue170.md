@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Models simplify and represent a relationship between input values and output values. The more complex the relationship, the more parameters the model needs to learn. Models are simplifications of reality, and their performance depends on how well they capture underlying patterns in the data, as well as the quality and quantity of the dataset.
 Modified: 2026-06-08 11:30
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) By better understanding how search bots categorise pages, a website owner can use keywords and other techniques to optimise the ranking of their page for specific search terms.
+**Previously:** By better understanding how search bots categorise pages, a website owner can use keywords and other techniques to optimise the ranking of their page for specific search terms.
 
 **[Editor's Note]** Layman's Guide to Computing went on hiatus after its 13th season, because my promise when I began was to write only things widespread enough that I thought layfolks should have an accessible-yet-useful introduction to.
 

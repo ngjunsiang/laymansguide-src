@@ -6,7 +6,7 @@ Slug: issue181
 Author: J S Ng
 Summary: Quantization trades parameter precision for a smaller memory footprint and faster inference, making many models feasible for running on user devices. Model capabilities depend on their parameter count and training data. Models with higher parameter counts can represent more patterns, while model capabilities are added by training them on well-labeled data. 
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Proprietary models do not have their weights published publicly, while open-weight models do. Various runtimes are available for download, and can run models that have a compatible file format. But models are extremely compute- and memory-intensive, requiring extremely high-end hardware and capacious memory to run.
+**Previously:** Proprietary models do not have their weights published publicly, while open-weight models do. Various runtimes are available for download, and can run models that have a compatible file format. But models are extremely compute- and memory-intensive, requiring extremely high-end hardware and capacious memory to run.
 
 Great, so a 12B model takes up 24GB of disk space, uses 24GB of RAM, and another 96GB for the KV cache (model's calculated representation of input tokens). That's out of reach for most consumers without AI-grade GPUs, which currently cost thousands per unit.
 

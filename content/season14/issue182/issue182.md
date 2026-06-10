@@ -6,7 +6,7 @@ Slug: issue182
 Author: J S Ng
 Summary: Open-weight models range in size from sub-1B to 100+B. A range of device options below SGD6,000 are already capable of running these models, ranging from the humble Raspberry Pi for running harness support to the Mac Studio M3 for running 70B models. 
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Quantization trades parameter precision for a smaller memory footprint and faster inference, making many models feasible for running on user devices. Model capabilities depend on their parameter count and training data. Models with higher parameter counts can represent more patterns, while model capabilities are added by training them on well-labeled data.
+**Previously:** Quantization trades parameter precision for a smaller memory footprint and faster inference, making many models feasible for running on user devices. Model capabilities depend on their parameter count and training data. Models with higher parameter counts can represent more patterns, while model capabilities are added by training them on well-labeled data.
 
 Last issue, we discovered that there are quantized models that can actually run on laptops. (You can also run GPT-1 and GPT-2 on a laptop, but you would likely be disappointed in their performance today given the leaps-and-bounds improvement in AI capability that have happened since 2022.)
 

@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: The Transformer architecture, unlike previous machine learning model architectures, could generate its next item while processing all previous items at the same time. The technique of unsupervised learning trained models on unlabelled data, letting the model pick up patterns in underlying data instead of having it learn correct answers only, and was much faster than supervised learning. OpenAI applied both these ideas at scale, producing GPT-1, a model that beat best-performing models while requiring relatively little human supervision during training.
 Modified: 2026-06-08 16:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Models simplify and represent a relationship between input values and output values. The more complex the relationship, the more parameters the model needs to learn. Models are simplifications of reality, and their performance depends on how well they capture underlying patterns in the data, as well as the quality and quantity of the dataset.
+**Previously:** Models simplify and represent a relationship between input values and output values. The more complex the relationship, the more parameters the model needs to learn. Models are simplifications of reality, and their performance depends on how well they capture underlying patterns in the data, as well as the quality and quantity of the dataset.
 
 We are going to set aside image and audio models for today, and narrow down to focus on **language models** in particular, because that's what sparked off the AI craze.
 
