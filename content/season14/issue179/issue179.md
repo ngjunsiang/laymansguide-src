@@ -52,7 +52,7 @@ When a user uses agentic software, the harness is what they see. That means the 
 - it handles the model output through the runtime, displaying to the user tool calls and their results, any visible thinking traces, and any permission requests which come from the runtime (remember that the model remains unaware of these). If the API supports it, the harness streams these to the user, allowing them to see tokens as the model outputs them, without having to wait for the model to finish the entire response
 - it provides an interrupt mechanism for the user to halt the runtime if the model is going off-track, or to queue up more messages for the runtime to inject into the request at an appropriate juncture
 - some harnesses may support agent memory features, giving the agent tools to write information to its internal memory, and retrieve the information when required
-- harnesses for continuously running agents may include features for setting the wake-up interval of the agent, e.g. invoking the agent every 30 seconds with standard intructions to check for outstanding tasks and complete them
+- harnesses for continuously running agents may include features for setting the wake-up interval of the agent, e.g. invoking the agent every 30 seconds with standard instructions to check for outstanding tasks and complete them
 - harnesses that integrate with external services will include features for receiving requests via email, WhatsApp, Telegram, or other channels, passing them to the agent and returning the response when it is ready.
 
 ## What an agent does
