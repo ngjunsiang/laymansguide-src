@@ -18,7 +18,7 @@ The approach is similar, really: text gets broken up into common repeating patte
 
 ## Image tokens
 
-There are a variety of approaches for tokenizing images. A common way to do this is to break it up into 16×16-pixel patches. Each pixel has three values representing red+green+blue ([Issues 43 & 44]({filename}/season04/issue043/issue043.md)), so each patch is a sequence of 16×16×3 = 768 values.
+There are a variety of approaches for tokenizing images. A common way to do this is to break it up into 16×16-pixel patches. Each pixel has three values representing red+green+blue ([Issues 43]({filename}/season04/issue043/issue043.md) & [44]({filename}/season04/issue044/issue044.md)), so each patch is a sequence of 16×16×3 = 768 values.
 
 Each unique combination of 768 values constitutes an image token. During training, these image tokens appear alongside other tokens (text, image, audio), and the model adjusts its embedding parameters to locate semantically similar tokens in close proximity.
 
