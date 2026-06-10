@@ -1,8 +1,8 @@
 AUTHOR = 'J S Ng'
 SITENAME = "Layman's Guide to Computing"
-SITEURL = "https://ngjunsiang.github.io/laymansguide"
+SITEURL = "http://127.0.0.1:8000"
 STYLESHEET_URL = "theme/css/style.css"
-HTTPS = True
+HTTPS = False
 
 PATH = "content"
 
@@ -13,6 +13,9 @@ STATIC_PATHS = []
 TIMEZONE = 'Asia/Singapore'
 
 DEFAULT_LANG = 'en'
+
+# Apply typographical improvements
+TYPOGRIFY = True
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -43,7 +46,7 @@ MARKDOWN = {
 }
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+RELATIVE_URLS = False
 
 THEME = "themes/newsletter"
 

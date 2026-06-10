@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Windows systems categorise data into two types: files, and settings. Files are stored under an appropriate subfolder in `C:\`, while other storage devices and network locations are stored elsewhere or given their own drive letters. Settings are managed through the Windows Registry, which is stored in `C:\Windows\System32\Config\` and `C:\Windows\Users\Name\`.
 Modified: 2020-12-26 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) MacOS, Linux, and other similar systems treat everything as a file, organised into appropriate subfolders.
+**Previously:** MacOS, Linux, and other similar systems treat everything as a file, organised into appropriate subfolders.
 
 Previous issue: Mac- and Linux-like systems. Since the key points are so short, let’s summarise:
 

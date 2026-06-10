@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: 
 Modified: 2021-10-23 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Using the same hardware for both smartphones and laptops would make it much easier to write apps for both platforms. The closer they are in features, hardware, and software support, the easier things will be for developers.
+**Previously:** Using the same hardware for both smartphones and laptops would make it much easier to write apps for both platforms. The closer they are in features, hardware, and software support, the easier things will be for developers.
 
 So, let’s get some Likely-Asked-Questions (LAQs) out of the way in this last issue.
 

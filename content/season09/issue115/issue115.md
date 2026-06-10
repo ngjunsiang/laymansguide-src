@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: When you shut a computer down, it sends an exit signal to all running programs to get them to do their exit routine. This process can sometimes take a long time. To preserve the data configuration in memory while minimising power draw, a computer can go into standby mode: all hardware except the memory gets powered down, until the computer is woken up from standby.
 Modified: 2021-04-10 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Embedded operating systems are unlike user operating systems. They are designed to run the software needed for an appliance’s operation, and are not meant to be used by users directly. Since they are considered somewhere between software and hardware, they are usually referred to as firmware.
+**Previously:** Embedded operating systems are unlike user operating systems. They are designed to run the software needed for an appliance’s operation, and are not meant to be used by users directly. Since they are considered somewhere between software and hardware, they are usually referred to as firmware.
 
 In [Issue 112]({filename}/season09/issue112/issue112.md)), I described the bootup process, and what a process it is! We have sayings in the English language that talk about things taking years to build up, but only seconds to destroy, and that’s certainly the case here. It takes so many steps to get data into computer memory in a way that makes it useable for us humans, and the mere press of a power switch wipes that data configuration once computer memory loses power.
 

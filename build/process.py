@@ -119,7 +119,7 @@ class ContentProcessor:
     def _lmg_slug2_sub(self, match) -> str:
         """Convert LMG URL (season 1 format) to local markdown reference."""
         i_num = int(match.group(1))
-        return f"({{filename}}/season1/issue{i_num:03}/issue{i_num:03}.md)"
+        return f"({{filename}}/season01/issue{i_num:03}/issue{i_num:03}.md)"
 
     def _lmg_img_sub(self, match) -> str:
         """Convert GitHub image URL to local static file reference."""

@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: QuantCast gathers a large amount of data on internet users directly through its **cookie** (which other publishers serve through their websites), and also by cross-checking it against data which it purchases from other **data brokers** who gather their information through other means, such as internet activity and credit card transactions.
 Modified: 2020-05-16 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) In 2006, Quantcast offered complete audience analytics for any site that puts _their_ cookie on the site. In this way, they managed to gather information on a wider audience than they, or any single website, could reach on their own.
+**Previously:** In 2006, Quantcast offered complete audience analytics for any site that puts _their_ cookie on the site. In this way, they managed to gather information on a wider audience than they, or any single website, could reach on their own.
 
 I’m almost about to begin talking about Quantcast’s proposition to advertisers, and how that led to the ad exchange, and what an ad exchange is, but to avoid confusing you, I had better talk about data brokers and what they are first.
 

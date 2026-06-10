@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: The ATX form factor also brought with it a new breed of computers with more specialised chipsets: the memory controller hub (MCH) and peripheral controller hub (PCH). The MCH coordinates high-throughput components, such as computer memory and graphics. The PCH specialises in lower-throughput needs.
 Modified: 2021-08-14 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Chipsets served as go-betweens in the AT form factor by IBM.
+**Previously:** Chipsets served as go-betweens in the AT form factor by IBM.
 
 In 1993, Intel launched its Pentium line of processors; barely two years later, in 1995, Intel launched the ATX form factor. This was the beginning of Intel’s dominance in the desktop space, and they could well afford to dictate most of the standards for this form factor.
 

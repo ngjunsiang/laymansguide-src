@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Cross-site scripting attacks occur when a webpage loads malicious code from a third-party, usually carried out by a script in the page. Today, websites are protected from loading unauthorised scripts through cross-origin resource sharing (CORS) policy implemented in browsers, which only allows a website to load scripts from authorised domains.
 Modified: 2022-02-26 08:59
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) A content delivery network comprises multiple servers around the world that are able to quickly distribute static content (typically images and video) to viewers that request it. This avoids overloading the hosting server, which would otherwise have to serve data over the network, possibly through many intermediary hops.
+**Previously:** A content delivery network comprises multiple servers around the world that are able to quickly distribute static content (typically images and video) to viewers that request it. This avoids overloading the hosting server, which would otherwise have to serve data over the network, possibly through many intermediary hops.
 
 When you load a modern webpage with all its bells and whistles, it is usually loading its content from a content delivery network (CDN; see previous issue). At the same time, it is running scripts that came with the webpage. These scripts may load other scripts on the same server (first-party scripts), or scripts on other servers (third-party scripts).
 

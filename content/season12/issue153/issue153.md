@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: The cloud offers standard digital business services, accessible through a web interface and API, which any developer (with a credit card) can use. Developers don’t have to reinvent the wheel, so long as they know how to use web APIs.
 Modified: 2022-01-01 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Actually making a web application requires you to set up lots of supporting software and carry out lots of steps to create a suitable app environment.
+**Previously:** Actually making a web application requires you to set up lots of supporting software and carry out lots of steps to create a suitable app environment.
 
 Last issue, I described the whole host of things that need to be done just to make a web application work on another server, different from where you did your programming.
 

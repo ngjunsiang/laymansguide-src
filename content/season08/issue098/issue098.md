@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Apps generally handle three categories of files: its own (permanent) app files, (shared) user files, and (ephemeral) temporary files.
 Modified: 2020-12-12 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) A laptop app can do practically anything, if it is running through the Administrator/root account. Sandboxing is carried out through permission control.
+**Previously:** A laptop app can do practically anything, if it is running through the Administrator/root account. Sandboxing is carried out through permission control.
 
 Thus far, I’ve summarised the salient differences between web apps, mobile apps, and laptop apps (my own terminology). I think we can move on to talking about their similarities.
 

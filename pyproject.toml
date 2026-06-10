@@ -14,6 +14,7 @@ bs4 = "^0.0.1"
 invoke = "^2.2.0"
 pelican-neighbors = "1.2.0"
 pymdown-extensions = "^10.21.3"
+typogrify = "^2.1.0"
 
 [tool.pyright]
 # https://github.com/microsoft/pyright/blob/main/docs/configuration.md
@@ -28,3 +29,7 @@ ignore = ['W291', 'W292', 'W293']
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+[dependency-groups]
+dev = [
+    "playwright (>=1.60.0,<2.0.0)"
+]

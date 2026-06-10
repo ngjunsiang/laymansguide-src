@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Mobile apps are sandboxed by the operating system. As a result, they have to bundle all the libraries they need, and are not allowed to share libraries with other apps. This results in mobile apps with huge filesizes.
 Modified: 2020-11-28 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Mobile apps, unlike web apps, can bundle resources and libraries to be installed to a mobile device. They can also request access to storage, and typically have a higher memory limit than web apps.
+**Previously:** Mobile apps, unlike web apps, can bundle resources and libraries to be installed to a mobile device. They can also request access to storage, and typically have a higher memory limit than web apps.
 
 In the process of creating an app, a developer often needs to use libraries ([Issue 17]({filename}/season02/issue017/issue017.md))), which are ready-packaged chunks of code she can run without having to write the code herself. Some provide core functions (e.g. sending information via the Internet, or checking if a data connection is available), while some provide optional features (e.g. mobile payments, or user feedback systems).
 

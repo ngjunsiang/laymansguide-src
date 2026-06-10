@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Forms that naïvely inject user-submitted data into a SQL query template may end up sending valid (but otherwise unathorised) SQL commands to the database, with disastrous consequences.
 Modified: 2020-08-29 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) SQL queries let you join multiple tables based on specified conditions using the JOIN keyword. This enables crafting complex queries to return only the specific data that is required.
+**Previously:** SQL queries let you join multiple tables based on specified conditions using the JOIN keyword. This enables crafting complex queries to return only the specific data that is required.
 
 SQL databases are really powerful; this is usually a good thing since it allows developers to do amazing things with the data inside. But it can also lead to disastrous consequences in the unsupervised hands of inexperienced developers. And matters can be even worse if these powers are not carefully granted. A malicious actor could “borrow” these powers to wreak havoc on the database!
 

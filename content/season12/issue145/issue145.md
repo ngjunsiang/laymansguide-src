@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Programs do not usually deal with the gnarly details of hardware, but instead access it through an interface. They access storage devices through a filesystem, and access hardware through drivers.
 Modified: 2021-11-06 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) In 1999, VMware launched VMware Workstation, which allowed multiple operating systems to run off a single machine.
+**Previously:** In 1999, VMware launched VMware Workstation, which allowed multiple operating systems to run off a single machine.
 
 In Season 5 ([Issue 53]({filename}/season05/issue054/issue054.md))), I went into some detail on how our programs work. The programming language they are written in gets _compiled_ into CPU instructions, which get carried out by the CPU.
 

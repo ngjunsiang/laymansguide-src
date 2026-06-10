@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: An index is a separate table containing key terms in the database (usually names, IDs, or some other key identifier), alongside the row numbers where they are found. An index greatly speeds up row lookups, but slows down the writing of new rows.
 Modified: 2020-07-18 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Comma-separated value (CSV) files store all data in text form. Within each row, a separator divides each chunk of data, and rows are separated by a line delimiter. To keep the data compact and read it more quickly, we have to decide beforehand what *data type* each chunk should be, and how much space it is allowed to take up. Such a data form can no longer be opened in a simple text editor program like Notepad.
+**Previously:** Comma-separated value (CSV) files store all data in text form. Within each row, a separator divides each chunk of data, and rows are separated by a line delimiter. To keep the data compact and read it more quickly, we have to decide beforehand what *data type* each chunk should be, and how much space it is allowed to take up. Such a data form can no longer be opened in a simple text editor program like Notepad.
 
 Last issue, we were still looking at how to speed up a text-based data storage solution. When we finished, we had a program that could skip the process of reading every single line and counting line breaks, but it could no longer be opened in Notepad. (That’s not a big loss really; Notepad can’t really handle text files larger than 0.5–1 GB anyway …)
 

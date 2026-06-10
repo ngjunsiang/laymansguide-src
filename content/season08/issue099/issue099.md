@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: MacOS, Linux, and other similar systems treat everything as a file, organised into appropriate subfolders.
 Modified: 2020-12-19 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Apps generally handle three categories of files: its own (permanent) app files, (shared) user files, and (ephemeral) temporary files.
+**Previously:** Apps generally handle three categories of files: its own (permanent) app files, (shared) user files, and (ephemeral) temporary files.
 
 What we are here to find out is: where do these apps keep their data, and how can we get rid of them (if we really want to)?
 

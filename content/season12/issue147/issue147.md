@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Running a virtual machine is like running a physical machine, but within a window in your OS.
 Modified: 2021-11-20 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Virtual hardware can be created in the form of drivers that respond to a program’s requests for hardware resources. If a bootup program enumerates hardware devices and receives a response, then as long as it continues to receive valid and correct responses, it can work with the virtual hardware to run an operating system.
+**Previously:** Virtual hardware can be created in the form of drivers that respond to a program’s requests for hardware resources. If a bootup program enumerates hardware devices and receives a response, then as long as it continues to receive valid and correct responses, it can work with the virtual hardware to run an operating system.
 
 So ... what is it like to run an operating system (OS) on virtual hardware? I promised screenshots, but they probably won’t be as exciting as you expect—it looks quite normal!
 

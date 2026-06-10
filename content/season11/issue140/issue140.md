@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Shared memory is easier to implement when a company has control over the designs of both CPU and GPU.
 Modified: 2021-10-02 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Around 2015, the high-performance computer industry quickly realised that this would be much more efficient if the CPU and GPU could *share the same memory*. This idea was labelled heterogeneous systems architecture (HSA).
+**Previously:** Around 2015, the high-performance computer industry quickly realised that this would be much more efficient if the CPU and GPU could *share the same memory*. This idea was labelled heterogeneous systems architecture (HSA).
 
 Let’s rewind a bit further from last issue. That was in 2015.
 

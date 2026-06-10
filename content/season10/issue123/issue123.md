@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Graphics cards contain lots of tiny cores that are much better at performing the same calculation for lots of decimal numbers. These cores are organised into compute units; a graphics card with more compute units can perform more calculations every second. Graphics cards have their own onboard memory, separate from the CPU. GPU memory is different from computer memory; it is configured for much higher data throughput. Integrated graphics are GPUs that are integrated into a CPU chip; these do not have their own onboard memory, and share memory with the CPU.
 Modified: 2021-06-05 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Computers are general-purpose machines that usually process integer calculations. The graphics pipeline requires more specialised hardware that can process decimal number calculations. This is why high-performance graphics usually requires a graphics card.
+**Previously:** Computers are general-purpose machines that usually process integer calculations. The graphics pipeline requires more specialised hardware that can process decimal number calculations. This is why high-performance graphics usually requires a graphics card.
 
 So why are gamers so agog over **graphics cards** (also known as video cards)? That’s because they do one thing really well! Unlike CPUs which often have to process an unpredictable workload, the graphics pipeline involves performing the same categories of calculations over and over again.
 

@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: CPUs have limited throughput, since there is a max frequency they can operate at, and a limit to the number of wires they can be connected to (throughput = no. of wires × frequency). Later designs of early computers increased the capability of computers by delegating more work to secondary chips.
 Modified: 2021-07-31 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) AC power from the wall uses electric current that alternates directions, while DC power from batteries uses electric current that flows in one direction only. All electronics are DC-only, and require an AC-DC adapter to be powered from the wall. The AC-DC conversion produces a significant amount of heat; AC-DC adapters are usually external unless the device has sufficient space or cooling capacity for it.
+**Previously:** AC power from the wall uses electric current that alternates directions, while DC power from batteries uses electric current that flows in one direction only. All electronics are DC-only, and require an AC-DC adapter to be powered from the wall. The AC-DC conversion produces a significant amount of heat; AC-DC adapters are usually external unless the device has sufficient space or cooling capacity for it.
 
 This season, let’s open up that computer case and see what’s inside. Where does everything fit, and how does all that information get around? More importantly, how are computers able to cover such a large range of sizes, from towering desktops to tiny smartphones?
 

@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Slim laptops have been undergoing a gradual transition: more and more of their chips are no longer available as a replaceable card, but instead soldered directly to the mainboard. Since 2017/2018, most slim laptops pretty much have CPU, memory, storage, and network chips all soldered directly to the mainboard.
 Modified: 2021-09-04 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) A modern CPU is manufactured through a process called photolithography, by which the CPU components are etched onto the silicon substrate by successive layers of chemicals, masking, and laser exposure. When the CPU components could be made small enough, the MCH and CPU were designed onto the same chip, and this is the design used by the Intel Core i7 (1st-gen).
+**Previously:** A modern CPU is manufactured through a process called photolithography, by which the CPU components are etched onto the silicon substrate by successive layers of chemicals, masking, and laser exposure. When the CPU components could be made small enough, the MCH and CPU were designed onto the same chip, and this is the design used by the Intel Core i7 (1st-gen).
 
 In the last 4 issues, I walked through the general evolution of desktop computers. Let’s go more mobile, and look at laptops. How does something as big as a desktop shrink down to the size of a laptop? And what are the tradeoffs involved?
 

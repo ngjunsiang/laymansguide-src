@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Web apps have limited access to the device’ storage, and can only store data in browser-managed databases. Progressive Web Apps (PWAs) can additionally register service workers that run in the background. Because they are so cleanly sandboxed, they can be easily removed by clearing the browser cache and storage, and deregistering any service workers manually.
 Modified: 2020-11-07 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Sandboxing is a catch-all term for the concept of ensuring apps don’t have access to resources outside of their privileges. Sandboxed apps are generally safer than non-sandboxed apps in terms of security, and easier to manage, terminate, and uninstall.
+**Previously:** Sandboxing is a catch-all term for the concept of ensuring apps don’t have access to resources outside of their privileges. Sandboxed apps are generally safer than non-sandboxed apps in terms of security, and easier to manage, terminate, and uninstall.
 
 The simplest apps we use do not _generate_ data; think about your calculator, which simply crunches calculations and displays the result (conveniently ignoring the ones with memory slots for storing calculated values …). Or currency converters, or timezone converters … no storage needed.
 

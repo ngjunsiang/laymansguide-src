@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: A search engine uses bots to build up a database of URLs and their contents. The search engine uses various algorithms to determine the most relevant results for a search request.
 Modified: 2022-04-16 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) Fragmentation is likely a contributor of system slowdown, particularly for mobile devices: the database used by most mobile apps tend to store data in many small chunks rather than fewer big chunks, which slows down data search operations. The most effective measure for improving device responsiveness is usually to clear the app cache, so the app does not attempt to read previous data from storage.
+**Previously:** Fragmentation is likely a contributor of system slowdown, particularly for mobile devices: the database used by most mobile apps tend to store data in many small chunks rather than fewer big chunks, which slows down data search operations. The most effective measure for improving device responsiveness is usually to clear the app cache, so the app does not attempt to read previous data from storage.
 
 Last issue, we shed a little light on the mystery of why phone and laptop systems slow down over time—apparently the way a file database works is to blame?
 

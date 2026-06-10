@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: n 2006, Quantcast offered complete audience analytics for any site that puts their cookie on the site. Websites would know more about their audience than they could otherwise gather through their site alone. But Quantcast would make most of their money through their offering to advertisers.
 Modified: 2020-05-09 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) A tracking script retrieves the existing cookie on a web domain if there is one, or sets a cookie on a webpage if there isn’t an existing one. The tracking script sends the cookie information back to the originating server, along with many other fragments of information.
+**Previously:** A tracking script retrieves the existing cookie on a web domain if there is one, or sets a cookie on a webpage if there isn’t an existing one. The tracking script sends the cookie information back to the originating server, along with many other fragments of information.
 
 A quick refresher from [Issue 68]({filename}/season06/issue068/issue068.md)): it is 2006. The market had just recovered, shaken itself out from the dot-com bust which started at the turn of the century and lasted about two years.
 

@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: By better understanding how search bots categorise pages, a website owner can use keywords and other techniques to optimise the ranking of their page for specific search terms.
 Modified: 2022-04-23 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) A search engine uses bots to build up a database of URLs and their contents. The search engine uses various algorithms to determine the most relevant results for a search request.
+**Previously:** A search engine uses bots to build up a database of URLs and their contents. The search engine uses various algorithms to determine the most relevant results for a search request.
 
 Let’s get to it: why are search results so bad so often?
 
@@ -52,5 +52,13 @@ Code refactoring is when developers reorganise and rewrite their code in a way t
 You might have noticed how often I am linking to past issues, because so many concepts in computing build on each other. I knew this was going to be a problem when trying to explain computing to anyone, and I had initially envisioned some kind of wiki where pages will link to each other so you can theoretically start exploring from any topic and unpack technical terms as you go.
 
 The main bottleneck for this had been content: it’s rather overwhelming to think about where and even how to start. And that was how this newsletter was born. Thanks to Layman’s Guide, I now have a steady base of content for publishing Layman’s Wiki, and work on it has been slow but progressing. I’ll put up a link through this newsletter once it is ready for more eyes :)
+
+## What I'll be covering next
+
+**Next issue:** [Issue 170: Machine learning models]({filename}/season14/issue170/issue170.md)
+
+After a long hiatus, Layman's Guide returns with Season 14! But first, let's understand what models are and how they work.
+
+---
 
 As always, thank you for reading!

@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: Actually making a web application requires you to set up lots of supporting software and carry out lots of steps to create a suitable app environment.
 Modified: 2021-12-25 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) The Java Runtime Environment (JRE) bundles the Java VM and supporting libraries. The JRE has to be installed on the user’s system for Java programs to work, unless the program bundles the supporting libraries. Solo programmers can start programming with OpenJDK for free with fewer features and less support, while commercial companies can license Oracle JDK for better support and features.
+**Previously:** The Java Runtime Environment (JRE) bundles the Java VM and supporting libraries. The JRE has to be installed on the user’s system for Java programs to work, unless the program bundles the supporting libraries. Solo programmers can start programming with OpenJDK for free with fewer features and less support, while commercial companies can license Oracle JDK for better support and features.
 
 So you started taking up programming. Maybe you went to a class, where everything was set up for you and you didn’t have to worry about installing and configuring necessary software. Or you took an online course, where step-by-step instructions were provided and you mostly didn’t have to spend time scratching your head. That’s how it should be; you paid to learn *programming*, not to learn how to configure a software development environment.
 

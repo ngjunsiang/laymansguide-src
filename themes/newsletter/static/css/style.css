@@ -102,11 +102,12 @@ time{
 }
 
 main ul, ol{
+    margin-top: 1.5em;
     margin-bottom: 2.5em;
 }
 
 li{
-    margin-bottom: 1.2em;
+    margin-bottom: 0.2em;
 }
 
 img{
@@ -148,6 +149,7 @@ pre code {
     display: block;
     padding: 0 10px;
     background: transparent;
+    color: #B9D6F2;
 }
 
 code {

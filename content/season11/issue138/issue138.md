@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: A system-on-chip (SoC) combines the core functionality of a system—processing, graphics, memory, and control—into a single chip package.
 Modified: 2021-09-18 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) The M1 goes one step further: not only does it make do with fewer chips, it does so with passive cooling.
+**Previously:** The M1 goes one step further: not only does it make do with fewer chips, it does so with passive cooling.
 
 In [Issue 136]({filename}/season11/issue136/issue136.md)), I showed the miniaturisation of the Macbook mainboard through a series of pictures. While the laptop has remained the same size mostly (apart from getting slimmer), that is not the case with its components. The bigger components, like memory and storage, changed from being separate discrete parts to being another component soldered directly to the mainboard.
 

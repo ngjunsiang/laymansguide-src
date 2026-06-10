@@ -7,7 +7,7 @@ Author: J S Ng
 Summary: 
 Modified: 2021-01-23 08:00
 
-[**Previously:**](https://buttondown.email/laymansguide/archive/) A race condition happens when threads depend on instructions happening with coincidental timing for success. When instructions are not executed with appropriate timing, one or more threads can get stuck waiting on a response that never comes.
+**Previously:** A race condition happens when threads depend on instructions happening with coincidental timing for success. When instructions are not executed with appropriate timing, one or more threads can get stuck waiting on a response that never comes.
 
 To wrap up this season on how apps work, I’m going to try answering a question I had on my mind as I was still new to computers: where do my secrets get stored? If I don’t want them to be stored, what are my options?
 
