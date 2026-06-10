@@ -8,7 +8,7 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
-SITEURL = "https://ngjunsiang.github.io/laymansguide-src"
+SITEURL = "https://ngjunsiang.github.io/laymansguide"
 RELATIVE_URLS = False
 
 # CSS path will be resolved relative to SITEURL by the template
