@@ -23,25 +23,25 @@ Notice that there's a "forward" step: step 3, where the input "feeds forward" to
 
 Notice also that there's a "backward" step: step 5, where we could adjust model parameters randomly—inefficient! Instead, the mathematical technique of gradient descent gives us a more optimized way to adjust the last hidden layer based on how it would affect the output. The second-to-last hidden layer is then adjusted with the same technique, based on how it would affect the last hidden layer. And this is repeated all the way to the first hidden layer. This "backward trickling" is called **backpropagation**, or "backprop" more informally.
 
-The above steps are repeated *for each input:output data pair* (supervised training) or *for each token sequence run* (unsupervised training). That's **a lot** of repeated steps; researchers often have some shortcuts they take to speed up the process. Even then, it is still too many for a typical CPU to complete in a reasonable time; the big labs use specialized GPUs instead ([Issue 123]({filename}/season10/issue123/issue123.md)), resulting in training runs that take weeks to months to complete on multiple GPUs for today's state-of-the-art LLMs.
+The above steps are repeated *for each input:output data pair* (supervised training) or *for each token sequence run* (unsupervised training). That's **a lot** of repeated steps; researchers often have some shortcuts they take to speed up the process. Even then, it is still too many for a typical CPU to complete in a reasonable time; the big AI labs use specialized GPUs instead ([Issue 123]({filename}/season10/issue123/issue123.md)), resulting in training runs that take weeks to months to complete on multiple GPUs for today's state-of-the-art LLMs.
 
 This is not a cheap hobby.
 
 ## Inference
 
-Fortunately, using a model is a different affair, involving only steps 1 and 3 of the above. No backpropagation, no repeated runs. Just pass the input in, run one forward step per output token, repeat until done. This process is called **inference**, and is what happens when we users send a request to ChatGPT or Claude.
+Fortunately, using a model is a different affair, involving only steps 1 and 3 of the above. No backpropagation, no repeated runs. Just pass the input in, run one forward step per output token, repeat until done. This process is called **inference**, and is what happens when users send a request to ChatGPT or Claude.
 
 (Hang on, how does a model "know" when it is "done generating text"? In model training, a special token, e.g. `<EOS>` for end-of-sequence, is inserted at the end of text. When this token is detected in the program, it stops invoking the model.)
 
-Needless to say, inference is much cheaper than training, which is why we are able to enjoy many of these models for free.
+Without backpropagation, inference is much cheaper than training, which is why we are able to enjoy many of these models for free.
 
 ## Scaling up to GPT-2
 
-GPT-1 had 117 million parameters, was trained on ~7,000 books (about 5GB), took a few days to complete training on 8 GPUs, costing $0.5 mil or less.
+GPT-1 had 117 million parameters, was trained on ~7,000 books (about 5GB), took a few days to complete training on 8 GPUs, and cost $0.5 mil or less to train.
 
-In Nov 2019, [OpenAI released GPT-2](https://openai.com/index/gpt-2-1-5b-release/), which was the first large language model to capture some public attention. GPT-2 had 1.5 billion parameters (1.5B), was trained on ~40GB of text from the web, and took a few weeks to train on hundreds of GPUs, costing OpenAI $1 mil to $5 mil to train.
+In Nov 2019, [OpenAI released GPT-2](https://openai.com/index/gpt-2-1-5b-release/), which was the first large language model to capture some public attention. GPT-2 had 1.5 billion parameters (1.5B), was trained on ~40GB of text from the web, took a few weeks to train on hundreds of GPUs, and cost OpenAI $1 mil to $5 mil to train.
 
-GPT-2 was the same architecture that GPT-1 used, only with a larger model (tenfold) and with more training data (eightfold). What they got was a model that:
+GPT-2 used the same architecture as GPT-1, only with a larger model (tenfold) and with more training data (eightfold). What they got was a model that:
 
 - could perform tasks it was never explicitly trained on (zero-shot learning): answer questions, understand text, summarize, translate (rudimentarily)
 - could generalize from examples given in user input (one-shot/few-shot learning) without needing supervised learning
@@ -77,7 +77,8 @@ It would be some time before ChatGPT could even launch without dragging OpenAI d
 
 ---
 
-We are getting closer to the LLMs we know and love/hate today. 
+We are getting closer to the LLMs we know and love/hate today.
+
 This issue covered the miracle story of GPTs 1 to 3. If GPT-3 was a child genius, ChatGPT is GPT-3 dressed up for work. Let's talk about what OpenAI had to do to it for public release—next issue.
 
 ## What I’ll be covering next
