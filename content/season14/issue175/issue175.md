@@ -54,7 +54,7 @@ Providing a rich set of tools without using up too many tokens is a tricky desig
 
 ## Invoking the tools
 
-At the point when the model outputs the stop token and the program stops using it to calculate more output tokens, its involvement stops. The program interprets the model's output, separating the tool calls out, and passes them to another system.
+At the point when the model outputs the stop token, its involvement ceases and the program stops using it to calculate more output tokens. The program interprets the model's output, separating the tool calls out, and passes them to another system.
 
 You see, tool calls can be pretty dangerous, especially if they enable the model to carry out destructive actions. A shell command like `rm -rf /` on Linux or Mac could delete the entire operating system, or important subdirectories. A `delete_database` tool could do what it says, but with the wrong target specified. So it's common to have a system that examines the tool call and attempts to determine if it is safe. In a code assistant, this tool call might be shown to the user for explicit approval. In a web-based chatbot like ChatGPT, tool safety is usually handled by another system instead.
 
