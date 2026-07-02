@@ -11,7 +11,7 @@ Summary: Agents are software applications that comprise a harness, a runtime, an
 Let's review the ingredients we have so far:
 
 1. A large language model ([Issue 170]({filename}/season14/issue170/issue170.md)) or multimodal model ([Issue 177]({filename}/season14/issue177/issue177.md)): a next-token predictor that takes input tokens and keeps generating output tokens which feed back to the input
-2. Training data, which the model is trained on to pick up general patterns through unsupervised learning ([Issue 171]({filename}/season14/issue171/issue171.md)), and then steered to avoid harmful output and generate useful output through the use of labelled training data through supervised learning ([Issue 174]({filename}/season14/issue174/issue174.md))
+2. Training data, which the model is trained on to pick up general patterns through unsupervised learning ([Issue 171]({filename}/season14/issue171/issue171.md)). The model is steered to avoid harmful output and generate useful output through the use of labelled training data in supervised learning ([Issue 174]({filename}/season14/issue174/issue174.md))
 3. A runtime ([Issue 175]({filename}/season14/issue175/issue175.md)), which handles multiple responsibilities:
     * parsing the model output to block it if found to be harmful
     * formatting the text for display to the user
@@ -26,21 +26,21 @@ What does an agent do?
 > agent(n.)  
 > late 15c., "one who acts," from Latin *agentem* (nominative *agens*) "effective, powerful," present participle of *agere* "to set in motion, drive forward; to do, perform; keep in movement" (from PIE root **\*ag-** "to drive, draw out or forth, move").
 
-The term "agent" means "one who acts". So agents are software applications, comprising a trained model and a runtime. We can broadly think of the model as the "brains" of the partnership, and the runtime as the "body".
+The term "agent" means "one who acts". So agents are software applications, comprising a trained model and a runtime, that takes actions based on the user prompt. We can broadly think of the model as the "brains" of the partnership, and the runtime as the "body".
 
-Because agents need a computer (physical or virtual) to "act", these software applications are typically installed on a computer, although they may also include a web interface to allow users to control them remotely.
+Because agents need a computer (physical or virtual) to "act", these software applications are typically installed on a computer, rather than presented as online services. However, they may also include a web interface to allow users to control them remotely.
 
-The model has remained conceptually similar as I went from Issue 170 to here, but the runtime is picking up more and more responsibilities. So as not to muddy the terms, I'll keep the runtime focused on the model: processing the output, executing tool calls and injecting results, re-invoking the model if it has not reached a stop token, and any RAG if implemented. Everything else that we are adding today, that makes the agent an effective partner and piece of software, I'll explain under the label **harness**.
+The model has remained conceptually similar as I went from Issue 170 to here, but the runtime is picking up more and more responsibilities. So as not to muddy the terms, I'll keep the runtime focused on the model: processing the output, executing tool calls and injecting results, re-invoking the model if it has not reached a stop token, and any RAG if implemented. Everything else we are adding today, that makes the agent an effective partner and piece of software, I'll explain under the label **harness**.
 
 ## The model
 
-Some harnesses make it easy to swap out the underlying model, allowing the model to run the agent harness with different models. Many model providers have standardized on OpenAI's API ([Issue 4]({filename}/season01/issue004/issue004.md)) so as to make their models easily accessible to programmers.
+Some harnesses make it easy to swap out the underlying model, allowing the harness to run using different models. Many model providers have standardized on OpenAI's API ([Issue 4]({filename}/season01/issue004/issue004.md)) so as to make their models easily accessible to programmers.
 
-While state-of-the-art models are capable enough to not require a more specialized version for agentic use, the agent harness usually provides a special system prompt for this purpose. This special prompt includes information on the use context, on the tools available to the model, and other pertinent information to guide the model and keep it on task.
+State-of-the-art models are capable enough to not require a more specialized version for agentic use. Still, the agent harness usually provides a special system prompt for this purpose. This special prompt includes information on the use context, on the tools available to the model, and other pertinent information to guide the model and keep it on task.
 
 ## The runtime
 
-A runtime used within a harness needs to include additional features: the ability to pause or stop the model, to understand access control configuration (which tool calls require user approval) and route matching tool calls to the user for permission grants, and introspectability: allowing the harness program to check the state of the runtime and model.
+A runtime used within a harness needs to include additional features: the ability to pause or stop the model, to understand access control (which tool calls require user approval and which ones are automatically allowed) and re-route tool calls to the user for permission grants, and introspectability allowing the harness program to check the state of the runtime and model.
 
 ## The harness
 
@@ -49,15 +49,15 @@ When a user uses agentic software, the harness is what they see. That means the 
 - it handles installation and initial setup, allowing the user to select a directory that the agent will begin working from
 - it handles extensions/plugins that the user may wish to install, making the tools/MCPs ([Issue 175]({filename}/season14/issue175/issue175.md)) available to the runtime
 - it handles file uploads (and any necessary format conversion or resizing), request customisation (e.g. enabling extended thinking), other request-related settings
-- it handles the model output through the runtime, displaying to the user tool calls and their results, any visible thinking traces, and any permission requests which come from the runtime (remember that the model remains unaware of these). If the API supports it, the harness streams these to the user, allowing them to see tokens as the model outputs them, without having to wait for the model to finish the entire response
+- it handles the model output through the runtime, displaying tool calls and their results, any visible thinking traces, and any permission requests which come from the runtime (remember that the model remains unaware of these). If the API supports it, the harness streams these to the user, allowing them to see tokens as the model outputs them, without having to wait for the model to finish the entire response
 - it provides an interrupt mechanism for the user to halt the runtime if the model is going off-track, or to queue up more messages for the runtime to inject into the request at an appropriate juncture
 - some harnesses may support agent memory features, giving the agent tools to write information to its internal memory, and retrieve the information when required
-- harnesses for continuously running agents may include features for setting the wake-up interval of the agent, e.g. invoking the agent every 30 seconds with standard instructions to check for outstanding tasks and complete them
+- harnesses for continuously-running agents may include features for setting the wake-up interval of the agent, e.g. invoking the agent every 30 seconds with standard instructions to check for outstanding tasks and complete them
 - harnesses that integrate with external services will include features for receiving requests via email, WhatsApp, Telegram, or other channels, passing them to the agent and returning the response when it is ready.
 
 ## What an agent does
 
-... I don't know what to say here. By itself, a model can do nothing besides generate text. When embedded in a harness+runtime, what it can do is limited by the tools it has available—remember that the model relies on the runtime executing its tool calls to have any effect on the world.
+... There's so much that could happen here. By itself, a model can do nothing besides generate text. When embedded in a harness+runtime, what it can do is limited by the tools it has available—remember that the model relies on the runtime executing its tool calls to have any effect on the world.
 
 With simple toolsets (primarily a commandline tool), the agent can plausibly:
 
