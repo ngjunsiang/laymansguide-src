@@ -11,7 +11,7 @@ Summary: Agents are software applications that comprise a harness, a runtime, an
 Let's review the ingredients we have so far:
 
 1. A large language model ([Issue 170]({filename}/season14/issue170/issue170.md)) or multimodal model ([Issue 177]({filename}/season14/issue177/issue177.md)): a next-token predictor that takes input tokens and keeps generating output tokens which feed back to the input
-2. Training data, which the model is trained on to pick up general patterns through unsupervised learning ([Issue 171]({filename}/season14/issue171/issue171.md)). The model is steered to avoid harmful output and generate useful output through the use of labelled training data in supervised learning ([Issue 174]({filename}/season14/issue174/issue174.md))
+2. Training data, which the model is trained on to pick up general patterns through unsupervised learning ([Issue 171]({filename}/season14/issue171/issue171.md)). The model is steered to avoid harmful output and generate useful output through the use of labelled training data in supervised learning ([Issue 174]({filename}/season14/issue174/issue174.md)).
 3. A runtime ([Issue 175]({filename}/season14/issue175/issue175.md)), which handles multiple responsibilities:
     * parsing the model output to block it if found to be harmful
     * formatting the text for display to the user
@@ -57,7 +57,7 @@ When a user uses agentic software, the harness is what they see. That means the 
 
 ## What an agent does
 
-... There's so much that could happen here. By itself, a model can do nothing besides generate text. When embedded in a harness+runtime, what it can do is limited by the tools it has available—remember that the model relies on the runtime executing its tool calls to have any effect on the world.
+There's so much that could happen here. By itself, a model can do nothing besides generate text. When embedded in a harness+runtime, what it can do is limited by the tools it has available—remember that the model relies on the runtime executing its tool calls to have any effect on the world.
 
 With simple toolsets (primarily a commandline tool), the agent can plausibly:
 
