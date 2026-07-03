@@ -26,7 +26,7 @@ What does an agent do?
 > agent(n.)  
 > late 15c., "one who acts," from Latin *agentem* (nominative *agens*) "effective, powerful," present participle of *agere* "to set in motion, drive forward; to do, perform; keep in movement" (from PIE root **\*ag-** "to drive, draw out or forth, move").
 
-The term "agent" means "one who acts". So agents are software applications, comprising a trained model and a runtime, that takes actions based on the user prompt. We can broadly think of the model as the "brains" of the partnership, and the runtime as the "body".
+The term "agent" means "one who acts". So agents are software applications, comprising a trained model and a runtime, that take actions based on the user prompt. We can broadly think of the model as the "brains" of the partnership, and the runtime as the "body".
 
 Because agents need a computer (physical or virtual) to "act", these software applications are typically installed on a computer, rather than presented as online services. However, they may also include a web interface to allow users to control them remotely.
 
