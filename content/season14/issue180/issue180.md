@@ -43,6 +43,7 @@ Great. So we've downloaded and installed LM Studio, launched it, and then select
 Source: [LM Studio](https://lmstudio.ai/)
 
 The first thing that would probably happen is your system will complain about insufficient memory and stop. You see, to run this model, we would need to read the model weights (23.9GB) into memory, immediately using up 24GB of memory. Even assuming no other apps are running, we still need more memory for the following:
+
 - operating system overhead (~1-2GB)
 - memory used by the runtime (1-3GB)
 
