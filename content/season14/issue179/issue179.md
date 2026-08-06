@@ -36,7 +36,7 @@ The model has remained conceptually similar as I went from Issue 170 to here, bu
 
 Some harnesses make it easy to swap out the underlying model, allowing the harness to run using different models. Many model providers have standardized on OpenAI's API ([Issue 4]({filename}/season01/issue004/issue004.md)) so as to make their models easily accessible to programmers.
 
-State-of-the-art models are capable enough to not require a more specialized version for agentic use. Still, the agent harness usually provides a special system prompt for this purpose. This special prompt includes information on the use context, on the tools available to the model, and other pertinent information to guide the model and keep it on task.
+State-of-the-art models are capable enough to not require additional training for agentic use. Still, the agent harness usually provides a special system prompt for this purpose. This special prompt includes information on the use context, on the tools available to the model, and other pertinent information to guide the model and keep it on task.
 
 ## The runtime
 
@@ -95,19 +95,19 @@ Because most people aren't using them!
 
 ... Just kidding, there are other reasons too. For example:
 
-- Most complex tasks aren't described in skill files that are agent-readable, or are not well described
-- Many of the advanced tools or MCP servers that are needed don't exist, e.g. those for editing PDF files reliably. If they exist they aren't always reliable
-- The really effective tools might be hyper-customized for the tool author and not as useful for others
-- Most users are used to doing things themselves, and don't have enough experience with an agent harness to be accustomed to instructing one
-- Users might not know that it is possible to do something, and have not considered asking an agent to do it
-- Agent models still have limited context windows (even a context window of 1 million tokens can fill up quickly with a sufficiently complex task), and ways to enable a model to keep relevant task details in context while removing irrelevant details are still being studied
-- The model might not have been trained on a particular task, and its general reasoning capabilities might not be sufficient to carry out the task effectively
-- Agent harnesses tend to run in the commandline, or be designed primarily for programmer use, thus scaring layfolks away
-- ...
+- Most complex tasks aren't described in skill files that are agent-readable, or are not well described; they often live in peoples' heads.
+- Many of the advanced tools or MCP servers that are needed don't exist, e.g. those for editing PDF files reliably. If they exist they aren't always reliable.
+- The really effective tools might be hyper-customized for the tool author and not as useful for others.
+- Most users are used to doing things themselves, and don't have enough experience with an agent harness to be accustomed to instructing one.
+- Users might not know that it is possible to do something, and have not considered asking an agent to do it.
+- Agent models still have limited context windows (even a context window of 1 million tokens can fill up quickly with a sufficiently complex task). Ways to enable a model to keep relevant task details in context while removing irrelevant details are still being studied.
+- The model might not have been trained on a particular task, and its general reasoning capabilities might not be sufficient to carry out the task effectively.
+- Agent harnesses tend to run in the commandline, or be designed primarily for programmer use, thus scaring layfolks away.
+- ... etc
 
-Agent capabilities tend to be emergent. That means researchers and frontier labs can train a model to carry out tasks A, B, and C, and a user giving the agent a different kind of task *discovers* that it is also effective at task D but not task E.
+Agent capabilities tend to be emergent. That means researchers and frontier labs can train a model to carry out tasks A, B, and C, and a user giving the agent a different kind of task *discovers* that it is also effective at task D, but not at task E.
 
-Generally, a question can "can an agent do F?" can't be answered definitively prior to actually asking the model to do F. And even if one person fails to get the agent to execute the task successfully, another person might succeed, because they asked differently, because they are familiar with the terminology required to instruct the agent, or for some other reason.
+A question like "can an agent do F?" can't be answered definitively prior to actually asking the model to do F. And even if one person fails to get the agent to execute the task successfully, another person might succeed, because they asked differently, because they are familiar with the terminology required to instruct the agent, because they provided the right context to the agent, or for some other reason.
 
 All of this is still ongoing research work: agents only really took off in 2025, when [Anthropic released Claude Code](https://www.anthropic.com/news/claude-3-7-sonnet) which became the first generally capable agent. Since then, every day users are discovering new things that it can do. The things that it can't, Anthropic and other frontier labs are still training it to be able to do them.
 
